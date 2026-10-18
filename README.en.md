@@ -6,7 +6,7 @@
 
 CineBox helps camera teams define shooting requirements, reuse past project configurations, select equipment, and export kit lists. Project dates, shooting specifications, and equipment choices stay together for review during preparation.
 
-[简体中文](README.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [MIT License](LICENSE)
+[Live site](https://utiwaaaaaien.github.io/CineBox/) · [简体中文](README.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [MIT License](LICENSE)
 
 ![Version V6](https://img.shields.io/badge/version-V6-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
@@ -82,7 +82,9 @@ Do not edit generated catalog files directly. Equipment identity changes must pr
 
 The app uses TypeScript, React 19, Next.js 16 application APIs, [vinext](https://github.com/cloudflare/vinext), Vite 8, and Tailwind CSS 4, with a Cloudflare Workers entry point and build configuration. SheetJS handles Excel import, `write-excel-file` handles Excel export, and PDF.js extracts PDF text.
 
-D1 and R2 bindings are disabled in `.openai/hosting.json`; the database scaffolding in `db/` does not store project data. Self-hosting requires configuring the hosting environment and verifying the build output. This repository does not claim direct GitHub Pages compatibility or provide an already published public demo URL.
+The public site is built and published automatically by GitHub Actions to [GitHub Pages](https://utiwaaaaaien.github.io/CineBox/). `pnpm run build:pages` produces static files in `dist/client/` and verifies project paths, assets, the PDF worker, and analytics configuration. The default base path is `/CineBox/`; a custom domain can use an empty `NEXT_PUBLIC_BASE_PATH`. See [deployment and analytics](docs/github-pages.md).
+
+D1 and R2 bindings are disabled in `.openai/hosting.json`; the database scaffolding in `db/` does not store project data. GitHub Pages serves static files. Each visitor keeps their projects in browser storage.
 
 ```text
 app/             UI, project logic, import/export, generated catalog

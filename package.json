@@ -16,7 +16,8 @@
     "catalog:build": "node scripts/build-canonical-catalog.mjs",
     "catalog:check": "node scripts/build-canonical-catalog.mjs --check",
     "catalog:cards:check": "node scripts/catalog-card-specs.mjs --check --require-reviewed",
-    "catalog:cards:complete": "node scripts/catalog-card-specs.mjs --check --require-complete"
+    "catalog:cards:complete": "node scripts/catalog-card-specs.mjs --check --require-complete",
+    "build:pages": "node scripts/build-pages.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

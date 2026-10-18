@@ -1,32 +1,34 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./macos.css";
+import { publicAsset, siteUrl } from "./site-config";
+import { UmamiAnalytics } from "./umami-analytics";
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cinebox.utiwaaien.chatgpt.site"),
+  metadataBase: new URL(siteUrl),
   title: "CineBox",
   description: "摄影器材 · 项目工作台。管理拍摄项目，复用历史配置、直接选材、核对配套并导出专业器材单。",
-  manifest: "/site-v2.webmanifest",
+  manifest: publicAsset("/site-v2.webmanifest"),
   icons: {
     icon: [
-      { url: "/brand/favicon-v2-32.png", type: "image/png", sizes: "32x32" },
-      { url: "/brand/favicon-v2-48.png", type: "image/png", sizes: "48x48" },
-      { url: "/brand/icon-v2-192.png", type: "image/png", sizes: "192x192" },
+      { url: publicAsset("/brand/favicon-v2-32.png"), type: "image/png", sizes: "32x32" },
+      { url: publicAsset("/brand/favicon-v2-48.png"), type: "image/png", sizes: "48x48" },
+      { url: publicAsset("/brand/icon-v2-192.png"), type: "image/png", sizes: "192x192" },
     ],
-    shortcut: "/brand/favicon-v2-32.png",
-    apple: [{ url: "/brand/apple-touch-icon-v2.png", sizes: "180x180" }],
+    shortcut: publicAsset("/brand/favicon-v2-32.png"),
+    apple: [{ url: publicAsset("/brand/apple-touch-icon-v2.png"), sizes: "180x180" }],
   },
   openGraph: {
     title: "CineBox",
     description: "管理项目、复用历史器材单，按品类与品牌快速选材。",
-    images: [{ url: "/brand/icon-v2-1024.png", width: 1024, height: 1024, alt: "CineBox Logo · 摄影器材与项目工作台" }],
+    images: [{ url: publicAsset("/brand/icon-v2-1024.png"), width: 1024, height: 1024, alt: "CineBox Logo · 摄影器材与项目工作台" }],
   },
   twitter: {
     card: "summary",
     title: "CineBox",
     description: "项目管理、历史配置复用、按品类与品牌选材及 Excel 导出。",
-    images: ["/brand/icon-v2-1024.png"],
+    images: [publicAsset("/brand/icon-v2-1024.png")],
   },
 };
 
@@ -57,6 +59,7 @@ export default function RootLayout({
     <html lang="zh-CN" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitializationScript }} />
+        <UmamiAnalytics />
       </head>
       <body>
         {children}

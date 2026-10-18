@@ -6,7 +6,7 @@
 
 CineBox 帮助摄影团队整理拍摄需求、复用历史项目、挑选器材并导出清单。把项目排期、拍摄规格和器材配置放在同一个工作台，方便筹备时逐项核对。
 
-[English](README.en.md) · [版本记录](CHANGELOG.md) · [参与贡献](CONTRIBUTING.md) · [MIT 许可证](LICENSE)
+[在线使用](https://utiwaaaaaien.github.io/CineBox/) · [English](README.en.md) · [版本记录](CHANGELOG.md) · [参与贡献](CONTRIBUTING.md) · [MIT 许可证](LICENSE)
 
 ![Version V6](https://img.shields.io/badge/version-V6-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
@@ -82,7 +82,9 @@ pnpm start
 
 项目使用 TypeScript、React 19、Next.js 16 的应用接口、[vinext](https://github.com/cloudflare/vinext)、Vite 8 和 Tailwind CSS 4，包含 Cloudflare Workers 入口与构建配置。Excel 导入使用 SheetJS，Excel 导出使用 `write-excel-file`，文字 PDF 解析使用 PDF.js。
 
-当前 `.openai/hosting.json` 的 D1、R2 绑定均未启用，`db/` 中的数据库脚手架不承担项目保存。自行部署需要配置托管环境并验证构建产物；本仓库没有承诺可直接部署到 GitHub Pages，也没有在此提供已经发布的公开演示站点。
+公开站点通过 GitHub Actions 自动构建并发布到 [GitHub Pages](https://utiwaaaaaien.github.io/CineBox/)。`pnpm run build:pages` 输出可静态托管的 `dist/client/`，并检查项目子路径、资源、PDF Worker 与统计配置。默认使用 `/CineBox/` 子路径；独立域名可使用空的 `NEXT_PUBLIC_BASE_PATH`。详见 [部署与访问统计](docs/github-pages.md)。
+
+当前 `.openai/hosting.json` 的 D1、R2 绑定均未启用，`db/` 中的数据库脚手架不承担项目保存。GitHub Pages 只托管静态文件；网站项目数据保存在各访问者的浏览器中。
 
 ```text
 app/             界面、项目逻辑、导入导出与生成目录

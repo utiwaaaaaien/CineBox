@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, type ChangeEvent, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import Image from "next/image";
+import { publicAsset } from "./site-config";
 import { canonicalEquipment, publishedEquipment, canonicalBrandLabels, canonicalEquipmentRedirects } from "./equipment-catalog.canonical";
 import { equipmentCardData } from "./equipment-card-data.generated";
 import { historyCameraModel } from "./history-camera";
@@ -1387,7 +1388,7 @@ export default function Home() {
       <a className="skip-link" href="#workspace-content" inert={modalOpen}>跳到工作区</a>
       <aside className="sidebar" inert={modalOpen}>
         <button className="brand-lockup" onClick={() => setView("projects")} aria-label="返回项目管理">
-          <span className="brand-mark" aria-hidden="true"><Image src="/brand/cinebox-logo-v2-128.png" width={44} height={44} alt="" unoptimized /></span>
+          <span className="brand-mark" aria-hidden="true"><Image src={publicAsset("/brand/cinebox-logo-v2-128.png")} width={44} height={44} alt="" unoptimized /></span>
           <span><strong>CineBox</strong><small>摄影器材 · 项目工作台</small></span>
         </button>
 
