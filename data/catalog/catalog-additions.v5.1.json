@@ -1,0 +1,1693 @@
+{
+  "version": "V5.1",
+  "rows": [
+    {
+      "id": "v51-arri-alexa-265",
+      "brand": "ARRI",
+      "name": "ARRI ALEXA 265",
+      "category": "摄影机",
+      "subcategory": "电影摄影机",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "ALEXA",
+        "model": "265",
+        "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-265",
+        "language": "en"
+      },
+      "lensMount": "unknown"
+    },
+    {
+      "id": "v51-arri-alexa-35-xtreme",
+      "brand": "ARRI",
+      "name": "ARRI ALEXA 35 Xtreme",
+      "category": "摄影机",
+      "subcategory": "电影摄影机",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "ALEXA",
+        "model": "35 Xtreme",
+        "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-35-xtreme",
+        "language": "en"
+      },
+      "lensMount": "unknown"
+    },
+    {
+      "id": "v51-canon-eos-c400",
+      "brand": "Canon",
+      "name": "Canon EOS C400",
+      "category": "摄影机",
+      "subcategory": "全画幅 高端电影摄影机/现场制作/虚拟制作",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "EOS",
+        "model": "C400",
+        "source": "https://www.canon.com.cn/product/eosc400/",
+        "language": "zh-CN"
+      },
+      "lensMount": "RF"
+    },
+    {
+      "id": "v51-canon-eos-c50",
+      "brand": "Canon",
+      "name": "Canon EOS C50",
+      "category": "摄影机",
+      "subcategory": "全画幅 紧凑型电影摄影机/照片视频混合",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "EOS",
+        "model": "C50",
+        "source": "https://www.canon.com.cn/product/eosc50/",
+        "language": "zh-CN"
+      },
+      "lensMount": "RF"
+    },
+    {
+      "id": "v51-canon-eos-r6-mark-iii",
+      "brand": "Canon",
+      "name": "Canon EOS R6 Mark III",
+      "category": "摄影机",
+      "subcategory": "全画幅 照片视频混合机/影视副机",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "EOS",
+        "model": "R6 Mark III",
+        "source": "https://www.canon.com.cn/product/r6iii/index.html",
+        "language": "zh-CN"
+      },
+      "lensMount": "RF"
+    },
+    {
+      "id": "v51-panasonic-lumix-gh7",
+      "brand": "Panasonic",
+      "name": "Panasonic LUMIX GH7",
+      "category": "摄影机",
+      "subcategory": "视频混合机",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "LUMIX",
+        "model": "GH7",
+        "source": "https://na.panasonic.com/news/panasonic-announces-new-lumix-gh7-micro-four-thirds-mirrorless-camera",
+        "language": "en"
+      },
+      "lensMount": "MFT"
+    },
+    {
+      "id": "v51-panasonic-lumix-s1ii",
+      "brand": "Panasonic",
+      "name": "Panasonic LUMIX S1II",
+      "category": "摄影机",
+      "subcategory": "全画幅 专业照片视频混合机，偏视频",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "LUMIX",
+        "model": "S1II",
+        "source": "https://consumer.panasonic.cn/product/cameras-camcorders/lumix-series/lumix-s-series/dc-s1m2gk.html",
+        "language": "zh-CN"
+      },
+      "lensMount": "L"
+    },
+    {
+      "id": "v51-panasonic-lumix-s1rii",
+      "brand": "Panasonic",
+      "name": "Panasonic LUMIX S1RII",
+      "category": "摄影机",
+      "subcategory": "全画幅 高像素照片视频混合机",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "LUMIX",
+        "model": "S1RII",
+        "source": "https://consumer.panasonic.cn/product/cameras-camcorders/lumix-series/lumix-s-series/dc-s1rm2.html",
+        "language": "zh-CN"
+      },
+      "lensMount": "L"
+    },
+    {
+      "id": "v51-sony-alpha-7r-vi",
+      "brand": "SONY",
+      "name": "SONY Alpha 7R VI",
+      "category": "摄影机",
+      "subcategory": "全画幅 高像素照片视频混合机",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Alpha",
+        "model": "7R VI",
+        "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2026/20260513-2.html",
+        "language": "zh-CN"
+      },
+      "lensMount": "E"
+    },
+    {
+      "id": "v51-sony-ilme-fx2",
+      "brand": "SONY",
+      "name": "SONY ILME-FX2",
+      "category": "摄影机",
+      "subcategory": "全画幅 紧凑型电影摄影机；补充当前 FX 线，不标作 FX5 后继",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "ILME-FX2",
+        "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2025/20250529-1.html",
+        "language": "zh-CN"
+      },
+      "lensMount": "E"
+    },
+    {
+      "id": "v51-insta360-x6",
+      "brand": "Insta360",
+      "name": "Insta360 X6",
+      "category": "摄影机",
+      "subcategory": "8K 全景相机",
+      "unit": "台",
+      "costTier": 1,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "X6",
+        "source": "https://news.insta360.com/insta360x6/",
+        "language": "en"
+      },
+      "lensMount": "fixed"
+    },
+    {
+      "id": "v51-freefly-ember-s2-5k",
+      "brand": "Freefly",
+      "name": "Freefly EMBER S2.5K",
+      "category": "摄影机",
+      "subcategory": "高速电影摄影机",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "EMBER",
+        "model": "S2.5K",
+        "source": "https://freeflysystems.com/knowledge-base/2026-nab-faq",
+        "language": "en"
+      },
+      "lensMount": "unknown"
+    },
+    {
+      "id": "v51-gopro-hero13-black",
+      "brand": "GoPro",
+      "name": "GoPro HERO13 Black",
+      "category": "摄影机",
+      "subcategory": "运动/辅助拍摄",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "HERO13 Black",
+        "source": "https://gopro.com/en/us/shop/cameras/learn/hero13black/CHDHX-131-master.html",
+        "language": "en"
+      },
+      "lensMount": "fixed"
+    },
+    {
+      "id": "v51-gopro-mission-1-pro",
+      "brand": "GoPro",
+      "name": "GoPro MISSION 1 PRO",
+      "category": "摄影机",
+      "subcategory": "紧凑型电影摄影机",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "MISSION 1",
+        "model": "PRO",
+        "source": "https://gopro.com/en/us/news/mission-1-series-now-available",
+        "language": "en"
+      },
+      "lensMount": "fixed"
+    },
+    {
+      "id": "v51-phantom-tmx-7510",
+      "brand": "Phantom",
+      "name": "Phantom TMX 7510",
+      "category": "摄影机",
+      "subcategory": "超高速工业/科研摄影机，不等同于 Flex4K 电影机",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "TMX",
+        "model": "7510",
+        "source": "https://www.phantomhighspeed.com/zh-cn/products/cameras/tmx/7510",
+        "language": "en"
+      },
+      "lensMount": "unknown"
+    },
+    {
+      "id": "v51-red-v-raptor-x-8k-vv",
+      "brand": "RED",
+      "name": "RED V-RAPTOR [X] 8K VV",
+      "category": "摄影机",
+      "subcategory": "旗舰电影摄影机",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "V-RAPTOR",
+        "model": "[X] 8K VV",
+        "source": "https://docs.red.com/955-0225/955-0225_V2.0%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20%5BX%5D%208K%20VV%20Operation%20Guide/Content/B_TechSpecs/Specs_V-RAPTOR%20%5BX%5D.htm",
+        "language": "en"
+      },
+      "lensMount": "unknown"
+    },
+    {
+      "id": "v51-red-komodo-x-6k-s35",
+      "brand": "RED",
+      "name": "RED KOMODO-X 6K S35",
+      "category": "摄影机",
+      "subcategory": "紧凑型电影摄影机",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "KOMODO-X 6K S35",
+        "source": "https://www.red.com/camera/KOMODO",
+        "language": "en"
+      },
+      "lensMount": "RF"
+    },
+    {
+      "id": "v51-arri-skypanel-s60-pro",
+      "brand": "ARRI",
+      "name": "ARRI SkyPanel S60 Pro",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "SkyPanel",
+        "model": "S60 Pro",
+        "source": "https://www.arri.com/en/lighting/led-panel-lights/skypanel-pro",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-arri-skypanel-x21",
+      "brand": "ARRI",
+      "name": "ARRI SkyPanel X21",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "SkyPanel",
+        "model": "X21",
+        "source": "https://www.arri.com/en/lighting/led-panel-lights/skypanel-x",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-arri-skypanel-x22",
+      "brand": "ARRI",
+      "name": "ARRI SkyPanel X22",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "SkyPanel",
+        "model": "X22",
+        "source": "https://www.arri.com/en/lighting/led-panel-lights/skypanel-x",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-arri-skypanel-x23",
+      "brand": "ARRI",
+      "name": "ARRI SkyPanel X23",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "SkyPanel",
+        "model": "X23",
+        "source": "https://www.arri.com/en/lighting/led-panel-lights/skypanel-x",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-arri-omnibar-2",
+      "brand": "ARRI",
+      "name": "ARRI Omnibar 2",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "根",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Omnibar",
+        "model": "2",
+        "source": "https://www.arri.com/en/lighting/led-linear-lights/omnibar",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-arri-omnibar-4",
+      "brand": "ARRI",
+      "name": "ARRI Omnibar 4",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "根",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Omnibar",
+        "model": "4",
+        "source": "https://www.arri.com/en/lighting/led-linear-lights/omnibar",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-storm-80c",
+      "brand": "Aputure",
+      "name": "Aputure STORM 80c",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "STORM",
+        "model": "80c",
+        "source": "https://aputure.com/en-US/products/storm-80c",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-storm-400x",
+      "brand": "Aputure",
+      "name": "Aputure STORM 400x",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "STORM",
+        "model": "400x",
+        "source": "https://aputure.com/en-US/products/storm-400x",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-storm-700x",
+      "brand": "Aputure",
+      "name": "Aputure STORM 700x",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "STORM",
+        "model": "700x",
+        "source": "https://aputure.com/en-US/products/storm-700x",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-storm-1000c",
+      "brand": "Aputure",
+      "name": "Aputure STORM 1000c",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "STORM",
+        "model": "1000c",
+        "source": "https://aputure.com/en-US/products/storm-1000c",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-storm-1200x",
+      "brand": "Aputure",
+      "name": "Aputure STORM 1200x",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "STORM",
+        "model": "1200x",
+        "source": "https://aputure.com/en-US/products/storm-1200x",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-storm-cs32",
+      "brand": "Aputure",
+      "name": "Aputure STORM CS32",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "STORM",
+        "model": "CS32",
+        "source": "https://aputure.com/en-US/products/storm-cs32",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-storm-xt52",
+      "brand": "Aputure",
+      "name": "Aputure STORM XT52",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "STORM",
+        "model": "XT52",
+        "source": "https://aputure.com/en-US/products/storm-xt52",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-nova-ii-1x1",
+      "brand": "Aputure",
+      "name": "Aputure NOVA II 1x1",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "NOVA II",
+        "model": "1x1",
+        "source": "https://aputure.com/en-US/products/nova-ii-1x1",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-nova-ii-2x1",
+      "brand": "Aputure",
+      "name": "Aputure NOVA II 2x1",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "NOVA II",
+        "model": "2x1",
+        "source": "https://aputure.com/en-US/products/nova-ii-2x1",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-amaran-halo-600x",
+      "brand": "amaran",
+      "name": "amaran Halo 600x",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Halo",
+        "model": "600x",
+        "source": "https://amarancreators.com/pages/amaran-halo-600x",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-amaran-ray-60c",
+      "brand": "amaran",
+      "name": "amaran Ray 60c",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Ray",
+        "model": "60c",
+        "source": "https://amarancreators.com/pages/amaran-ray",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-amaran-ray-120c",
+      "brand": "amaran",
+      "name": "amaran Ray 120c",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Ray",
+        "model": "120c",
+        "source": "https://amarancreators.com/pages/amaran-ray",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-amaran-ray-360c",
+      "brand": "amaran",
+      "name": "amaran Ray 360c",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Ray",
+        "model": "360c",
+        "source": "https://amarancreators.com/pages/amaran-ray",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-amaran-ray-660c",
+      "brand": "amaran",
+      "name": "amaran Ray 660c",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Ray",
+        "model": "660c",
+        "source": "https://amarancreators.com/pages/amaran-ray",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-nanlite-pavotube-ii-6xr",
+      "brand": "Nanlite",
+      "name": "Nanlite PavoTube II 6XR",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "根",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "PavoTube II",
+        "model": "6XR",
+        "source": "https://nanliteus.com/products/pavotube-ii-6xr-10-rgbww-led-pixel-tube-with-built-in-crmx",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-nanlite-forza-500b-ii",
+      "brand": "Nanlite",
+      "name": "Nanlite Forza 500B II",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Forza",
+        "model": "500B II",
+        "source": "https://nanliteus.com/products/forza-500b-ii-led-spotlight",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-nanlite-forza-720b",
+      "brand": "Nanlite",
+      "name": "Nanlite Forza 720B",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Forza",
+        "model": "720B",
+        "source": "https://nanliteus.com/products/forza-720b-bi-color-led-spotlight",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-nanlite-fc-720c",
+      "brand": "Nanlite",
+      "name": "Nanlite FC 720C",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "FC",
+        "model": "720C",
+        "source": "https://nanliteus.com/products/fc-720c-rgbw-color-led-spotlight",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-nanlite-fc-500c",
+      "brand": "Nanlite",
+      "name": "Nanlite FC 500C",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "FC",
+        "model": "500C",
+        "source": "https://nanliteus.com/products/fc-500c-rgbw-color-led-spotlight",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-nanlite-fs-300c",
+      "brand": "Nanlite",
+      "name": "Nanlite FS 300C",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "FS",
+        "model": "300C",
+        "source": "https://nanliteus.com/products/fs-300c-ac-powered-rgbw-color-led-monolight",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-nanlite-fc-720b",
+      "brand": "Nanlite",
+      "name": "Nanlite FC 720B",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "FC",
+        "model": "720B",
+        "source": "https://nanlite.jp/blogs/news/fc-720b-fc-720c",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-nanlux-evoke-5000b",
+      "brand": "NANLUX",
+      "name": "NANLUX Evoke 5000B",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Evoke",
+        "model": "5000B",
+        "source": "https://cdn-aliyun.nanlux.com/release/1742897497202-098104-11338836370-Nanlux_Evoke5000B_DMXCharts_EN_V1.1_20250211.pdf",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-creamsource-vortex-2",
+      "brand": "Creamsource",
+      "name": "Creamsource Vortex 2",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Vortex",
+        "model": "2",
+        "source": "https://creamsource.com/product/vortex2/",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-creamsource-vortex-2-soft",
+      "brand": "Creamsource",
+      "name": "Creamsource Vortex 2 Soft",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Vortex",
+        "model": "2 Soft",
+        "source": "https://creamsource.com/product/vortex2/",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-dedolight-neo-dled7n-bi",
+      "brand": "Dedolight",
+      "name": "Dedolight NEO DLED7N-BI",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "NEO",
+        "model": "DLED7N-BI",
+        "source": "https://www.dedoweigertfilm.de/dwf-en/products/Price-Lists/dedolight_neo_Pricelist_0924_Customer.pdf",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-lightstar-luxed-pro-p12",
+      "brand": "Lightstar",
+      "name": "Lightstar LUXED PRO-P12",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "LUXED",
+        "model": "PRO-P12",
+        "source": "https://lightstar-lights.com/luxed-p12-pro/",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-lightstar-painter-lmat-p12",
+      "brand": "Lightstar",
+      "name": "Lightstar PAINTER LMAT-P12",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "PAINTER",
+        "model": "LMAT-P12",
+        "source": "https://www.lightstar.net.cn/a/LIGHTMANxl/PAINTER-P400/800.html",
+        "language": "zh-CN",
+        "brandZh": "莱斯达"
+      }
+    },
+    {
+      "id": "v51-lightstar-luxbeam-12",
+      "brand": "Lightstar",
+      "name": "Lightstar LUXBEAM 12",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "LUXBEAM",
+        "model": "12",
+        "source": "https://www.lightstar.net.cn/a/LIGHTMANxl/dgljgdxl/834.html",
+        "language": "zh-CN",
+        "brandZh": "莱斯达"
+      }
+    },
+    {
+      "id": "v51-rosco-dmg-dash",
+      "brand": "Rosco",
+      "name": "Rosco DMG DASH",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "DMG",
+        "model": "DASH",
+        "source": "https://us.rosco.com/en/products/brand/dmg-dash",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-rosco-dmg-sl1-switch",
+      "brand": "Rosco",
+      "name": "Rosco DMG SL1 SWITCH",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "DMG",
+        "model": "SL1 SWITCH",
+        "source": "https://us.rosco.com/en/products/brand/dmg-lighting",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-rosco-dmg-lion",
+      "brand": "Rosco",
+      "name": "Rosco DMG LION",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "DMG",
+        "model": "LION",
+        "source": "https://lion.rosco.com/wp-content/uploads/2024/11/Rosco_DMG_LION_2024_Data_Sheet-12_24_web.pdf",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-falcon-eyes-rollflex-iii-rx-18tdx-iii",
+      "brand": "Falcon Eyes",
+      "name": "Falcon Eyes ROLLFLEX III RX-18TDX III",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "ROLLFLEX III",
+        "model": "RX-18TDX III",
+        "source": "https://www.falconeyeshk.com/falconeyes-flexlight",
+        "language": "en",
+        "brandZh": "锐鹰"
+      }
+    },
+    {
+      "id": "v51-falcon-eyes-rollflex-iii-rx-120tdx-iii",
+      "brand": "Falcon Eyes",
+      "name": "Falcon Eyes ROLLFLEX III RX-120TDX III",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "ROLLFLEX III",
+        "model": "RX-120TDX III",
+        "source": "https://www.falconeyeshk.com/falconeyes-flexlight",
+        "language": "en",
+        "brandZh": "锐鹰"
+      }
+    },
+    {
+      "id": "v51-canon-eos-r1",
+      "brand": "Canon",
+      "name": "Canon EOS R1",
+      "category": "摄影机",
+      "subcategory": "全画幅 全画幅无反摄影机",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "lensMount": "RF",
+      "officialProduct": {
+        "series": "EOS",
+        "model": "R1",
+        "source": "https://www.canon.com.cn/product/r1/",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "v51-insta360-ace-pro-2",
+      "brand": "Insta360",
+      "name": "Insta360 Ace Pro 2",
+      "category": "摄影机",
+      "subcategory": "运动相机",
+      "unit": "台",
+      "costTier": 1,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "lensMount": "fixed",
+      "officialProduct": {
+        "series": "Ace",
+        "model": "Pro 2",
+        "source": "https://www.insta360.com/cn/product/insta360-ace-pro2",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "v51-gopro-mission-1-pro-ils",
+      "brand": "GoPro",
+      "name": "GoPro MISSION 1 PRO ILS",
+      "category": "摄影机",
+      "subcategory": "可换镜头紧凑电影摄影机",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "lensMount": "MFT",
+      "officialProduct": {
+        "series": "MISSION 1",
+        "model": "PRO ILS",
+        "source": "https://gopro.com/en/us/shop/learn-cameras/mission-1-pro-ils",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-red-v-raptor-xe-8k-vv",
+      "brand": "RED",
+      "name": "RED V-RAPTOR XE 8K VV",
+      "category": "摄影机",
+      "subcategory": "电影摄影机",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "lensMount": "unknown",
+      "officialProduct": {
+        "series": "V-RAPTOR",
+        "model": "XE 8K VV",
+        "source": "https://docs.red.com/955-0233/955-0233_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XE%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20XE.htm",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-arri-l5-c-plus",
+      "brand": "ARRI",
+      "name": "ARRI L5-C Plus",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "L5-C Plus",
+        "source": "https://www.arri.com/en/lighting/led-spotlights/l-series-plus/sizes",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-arri-l7-c-plus",
+      "brand": "ARRI",
+      "name": "ARRI L7-C Plus",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "L7-C Plus",
+        "source": "https://www.arri.com/en/lighting/led-spotlights/l-series-plus/sizes",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-creamsource-vortex-24",
+      "brand": "Creamsource",
+      "name": "Creamsource Vortex 24",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Vortex",
+        "model": "24",
+        "source": "https://creamsource.com/product/vortex24/",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-creamsource-vortex-24-soft",
+      "brand": "Creamsource",
+      "name": "Creamsource Vortex 24 Soft",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Vortex",
+        "model": "24 Soft",
+        "source": "https://knowledge.creamsource.com/specs-for-the-vortex24-soft",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-astera-quikspot",
+      "brand": "Astera",
+      "name": "Astera QuikSpot",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "QuikSpot",
+        "source": "https://astera-led.com/products/quikspot/specs/",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-astera-quikbeam",
+      "brand": "Astera",
+      "name": "Astera QuikBeam",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "QuikBeam",
+        "source": "https://www.bellaliteblack.se/storage/38E3F77465D2EA4F40B98A8AB84FB30C80F36231F82FA866719864605BCD9F84/d85f4b9b7ae14ec69975fe645bac4ff5/pdf/media/06adf014995a41b7a5f239ce3c980c60/AST-QUKBM-STD_file_manual1.pdf",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-kino-flo-celeb-ikon-12",
+      "brand": "Kino Flo",
+      "name": "Kino Flo Celeb IKON 12",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Celeb IKON",
+        "model": "12",
+        "source": "https://kinoflo.com/celeb-ikon-12/",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-kino-flo-celeb-ikon-6",
+      "brand": "Kino Flo",
+      "name": "Kino Flo Celeb IKON 6",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Celeb IKON",
+        "model": "6",
+        "source": "https://kinoflo.com/celeb-ikon6/",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-kino-flo-diva-lux-4",
+      "brand": "Kino Flo",
+      "name": "Kino Flo Diva Lux 4",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Diva Lux",
+        "model": "4",
+        "source": "https://kinoflo.com/diva-lux-4/",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-kino-flo-mimik-120",
+      "brand": "Kino Flo",
+      "name": "Kino Flo MIMIK 120",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "MIMIK",
+        "model": "120",
+        "source": "https://kinoflo.com/mimik-120/",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-ls-600c-pro-ii",
+      "brand": "Aputure",
+      "name": "Aputure 光风暴 LS 600c Pro II",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "光风暴",
+        "model": "LS 600c Pro II",
+        "source": "https://aputure.com/en-US/products/ls-600c-pro-ii",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-nova-9-2x1",
+      "brand": "Aputure",
+      "name": "Aputure NOVA 9° 2x1",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "NOVA 9°",
+        "model": "2x1",
+        "source": "https://aputure.com/en-US/products/nova-9-2x1",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-infinibar-pb3",
+      "brand": "Aputure",
+      "name": "Aputure INFINIBAR PB3",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "根",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "INFINIBAR",
+        "model": "PB3",
+        "source": "https://aputure.com/en-US/products/infinibar-pb3",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-infinibar-pb6",
+      "brand": "Aputure",
+      "name": "Aputure INFINIBAR PB6",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "根",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "INFINIBAR",
+        "model": "PB6",
+        "source": "https://aputure.com/en-US/products/infinibar-pb6",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-infinibar-pb12",
+      "brand": "Aputure",
+      "name": "Aputure INFINIBAR PB12",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "根",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "INFINIBAR",
+        "model": "PB12",
+        "source": "https://aputure.com/en-US/products/infinibar-pb12",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-lishuai-focus-2000xpro",
+      "brand": "利帅",
+      "name": "利帅 FOCUS 2000Xpro",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "FOCUS",
+        "model": "2000Xpro",
+        "source": "https://www.lishuai.com.cn/product/focus-jiao-dian-xi-lie/1000w-zhuan-ye-ji-da-gong-lyu-ju-guang-deng.html",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "v51-1-2",
+      "brand": "通用",
+      "name": "通用 爱拍乐气垫灯 1×2",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "LED Air Cushion Lamp 爱拍乐气垫灯1*2"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed"
+    },
+    {
+      "id": "v51-2-2",
+      "brand": "通用",
+      "name": "通用 爱拍乐气垫灯 2×2",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "LED Air Cushion Lamp 爱拍乐气垫灯2*2"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed"
+    },
+    {
+      "id": "v51-4-4",
+      "brand": "通用",
+      "name": "通用 爱拍乐气垫灯 4×4",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "LED Air Cushion Lamp 爱拍乐气垫灯4*4"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed"
+    },
+    {
+      "id": "v51-4-8",
+      "brand": "通用",
+      "name": "通用 爱拍乐气垫灯 4×8",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "LED Air Cushion Lamp 爱拍乐气垫灯4*8"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed"
+    },
+    {
+      "id": "v51-aputure-2",
+      "brand": "Aputure",
+      "name": "Aputure 2尺棒灯",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed"
+    },
+    {
+      "id": "v51-aputure-4",
+      "brand": "Aputure",
+      "name": "Aputure 4尺棒灯",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed"
+    },
+    {
+      "id": "v51-aputure-ls-600d",
+      "brand": "Aputure",
+      "name": "Aputure 光风暴 LS 600d",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "光风暴",
+        "model": "LS 600d",
+        "source": "https://aputure.com/en-US/products/ls-600d",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-infinimat-20x20-with-clear-softbox",
+      "brand": "Aputure",
+      "name": "Aputure INFINIMAT 20x20 with Clear Softbox",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "INFINIMAT",
+        "model": "20x20 with Clear Softbox",
+        "source": "https://aputure.com/en-US/products/aputure-infinimat-20x20-with-clear-softbox",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-electro-storm-cs15",
+      "brand": "Aputure",
+      "name": "Aputure Electro Storm CS15",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Electro Storm",
+        "model": "CS15",
+        "source": "https://aputure.com/en-US/products/electro-storm-cs15",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-aputure-electro-storm-xt26",
+      "brand": "Aputure",
+      "name": "Aputure Electro Storm XT26",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 5,
+      "aliases": [],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "Electro Storm",
+        "model": "XT26",
+        "source": "https://aputure.com/en-US/products/electro-storm-xt26",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-astera-fp2",
+      "brand": "Astera",
+      "name": "Astera Helios Tube",
+      "category": "灯光器材",
+      "subcategory": "像素灯管",
+      "unit": "根",
+      "costTier": 2,
+      "aliases": [
+        "FP2"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "Helios Tube",
+        "source": "https://www.koto-jp.com/en/wp-content/uploads/2022/03/ASTERA-CATALOG-2025.03_WEB.pdf",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-astera-fp1",
+      "brand": "Astera",
+      "name": "Astera Titan Tube",
+      "category": "灯光器材",
+      "subcategory": "像素灯管",
+      "unit": "根",
+      "costTier": 2,
+      "aliases": [
+        "FP1"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "Titan Tube",
+        "source": "https://www.koto-jp.com/en/wp-content/uploads/2022/03/ASTERA-CATALOG-2025.03_WEB.pdf",
+        "language": "en"
+      }
+    },
+    {
+      "id": "v51-astera-fp3",
+      "brand": "Astera",
+      "name": "Astera Hyperion Tube",
+      "category": "灯光器材",
+      "subcategory": "像素灯管",
+      "unit": "根",
+      "costTier": 2,
+      "aliases": [
+        "FP3"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "officialProduct": {
+        "series": "",
+        "model": "Hyperion Tube",
+        "source": "https://www.koto-jp.com/en/wp-content/uploads/2022/03/ASTERA-CATALOG-2025.03_WEB.pdf",
+        "language": "en"
+      }
+    }
+  ]
+}

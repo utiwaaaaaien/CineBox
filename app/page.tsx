@@ -1,0 +1,2002 @@
+"use client";
+
+import { useEffect, useMemo, useRef, useState, type ChangeEvent, type KeyboardEvent as ReactKeyboardEvent } from "react";
+import Image from "next/image";
+import { canonicalEquipment, publishedEquipment, canonicalBrandLabels, canonicalEquipmentRedirects } from "./equipment-catalog.canonical";
+import { equipmentCardData } from "./equipment-card-data.generated";
+import { historyCameraModel } from "./history-camera";
+import { resolveCatalogId, migrateCatalogProjects, migrateCatalogHistory } from "./catalog-identity";
+import { buildEquipmentSeries, type EquipmentSeries } from "./equipment-series";
+import { buildCameraSystemChecks, type CameraSystemCheck, type RuleAddition } from "./camera-system-rules";
+import { appVersion, releaseNotes } from "./release";
+import { SpecField } from "./spec-field";
+import { resolutionOptions, aspectRatioOptions, projectFpsOptions, highSpeedFpsOptions } from "./project-specs";
+import { BrandFilter } from "./brand-filter";
+import { ActionMenu } from "./action-menu";
+import { brandMenuLabels } from "./catalog-brands";
+import { categoryBrands, filterCatalog, copyHistoricalKit, basicSystemProject } from "./direct-selection";
+import { formatShootRange } from "./excel-export";
+import {
+  analyzeHistoryProjectText,
+  extractHistoryProjectFile,
+  formatHistoryProjectName,
+  sanitizeHistoryOverrides,
+  isImportedHistoryId,
+  projectTypeForReuse,
+  type HistoryProjectProfile,
+} from "./project-history";
+import {
+  sanitizeProjectRecords,
+  type ProjectCustomEquipment,
+  type ProjectKitItem,
+  type ProjectStateRecord,
+} from "./project-state";
+
+type View = "projects" | "history" | "library" | "catalog" | "kit";
+import { completeKitAdditions, addKitSelection, recordKitChange, travelKitHistory, describeKitChange, frameSelection, type KitHistory } from "./kit-workflow";
+
+type ThemePreference = "system" | "light" | "dark";
+type EquipmentCategory =
+  | "摄影机"
+  | "镜头"
+  | "滤镜"
+  | "摄影机附件"
+  | "监看"
+  | "移动器材"
+  | "灯光器材"
+  | "录音器材"
+  | "其他";
+
+type Equipment = (typeof canonicalEquipment)[number];
+
+type CustomEquipment = ProjectCustomEquipment<EquipmentCategory>;
+type KitItem = ProjectKitItem<EquipmentCategory>;
+
+type ProjectForm = {
+  recommendationMode: "history" | "manual";
+  historyProfileId: string;
+  name: string;
+  type: string;
+  category: string;
+  shootDate: string;
+  dop: string;
+  contact: string;
+  days: number;
+  cameraCount: number;
+  scale: string;
+  captureStyle: string[];
+  monitoring: string;
+  cameraBrand: string;
+  lensStyle: string;
+  screenFormat: string;
+  lightNeed: string;
+  audioNeed: boolean;
+  budget: string;
+  narrativeViewpoint: string;
+  aspectRatio: string;
+  visualTone: string;
+  contrastStyle: string;
+  movementIntent: string;
+  sceneConditions: string[];
+  baseFps: number;
+  highSpeedFps: number;
+  resolution: string;
+  recordingFormat: string;
+  shootingRatio: number;
+  hoursPerDay: number;
+  powerAccess: string;
+  notes: string;
+};
+
+type ProjectRecord = ProjectStateRecord<ProjectForm, EquipmentCategory>;
+
+type SaveFileHandle = {
+  createWritable: () => Promise<{
+    write: (data: Blob) => Promise<void>;
+    close: () => Promise<void>;
+  }>;
+};
+
+type SaveFilePickerWindow = Window & {
+  showSaveFilePicker?: (options: {
+    suggestedName: string;
+    types: Array<{
+      description: string;
+      accept: Record<string, string[]>;
+    }>;
+  }) => Promise<SaveFileHandle>;
+};
+
+type HistoryProfile = HistoryProjectProfile;
+type HistoryPreviewState = {
+  targetId: string;
+  profile: HistoryProfile;
+  mode: "view" | "analysis";
+  record?: ProjectRecord;
+};
+
+const themeOptions: Array<{ value: ThemePreference; label: string }> = [
+  { value: "system", label: "跟随系统" },
+  { value: "light", label: "浅色模式" },
+  { value: "dark", label: "深色模式" },
+];
+
+function ThemeIcon({ mode }: { mode: ThemePreference }) {
+  const iconProps = { className: "theme-icon", viewBox: "0 0 20 20", fill: "none", stroke: "currentColor", strokeWidth: 1.6, width: 18, height: 18, "aria-hidden": true } as const;
+  if (mode === "light") {
+    return (
+      <svg {...iconProps}>
+        <circle cx="10" cy="10" r="3.25" />
+        <path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.35 4.35l1.4 1.4M14.25 14.25l1.4 1.4M15.65 4.35l-1.4 1.4M5.75 14.25l-1.4 1.4" />
+      </svg>
+    );
+  }
+  if (mode === "dark") {
+    return (
+      <svg {...iconProps}>
+        <path d="M15.9 12.8A6.4 6.4 0 0 1 7.2 4.1 6.4 6.4 0 1 0 15.9 12.8Z" />
+      </svg>
+    );
+  }
+  return (
+    <svg {...iconProps}>
+      <rect x="2.5" y="3.5" width="15" height="10.5" rx="2" />
+      <path d="M7 17h6M10 14v3" />
+    </svg>
+  );
+}
+
+function NavigationIcon({ view }: { view: View }) {
+  const paths: Record<View, string> = {
+    projects: "M3 7h7l2-3h8a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z M3 9h18",
+    history: "M9 4H5a1 1 0 0 0-1 1v15h16V5a1 1 0 0 0-1-1h-4 M9 3h6v4H9V3Z M8 12h8 M8 16h6",
+    kit: "M9 4H5a1 1 0 0 0-1 1v15h16V5a1 1 0 0 0-1-1h-4 M9 3h6v4H9V3Z M8 14l3 3 5-6",
+    library: "M4 5h16v14H4V5Z M4 10h16 M9 10v9 M15 10v9 M9 5v5",
+    catalog: "M4 4h6v6H4V4Z M14 4h6v6h-6V4Z M4 14h6v6H4v-6Z M14 14h6v6h-6v-6Z",
+  };
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[view]} /></svg>;
+}
+
+function ControlIcon({ kind }: { kind: "search" | "undo" | "redo" | "close" | "plus" }) {
+  const paths = {
+    search: "M9 3a6 6 0 1 0 0 12A6 6 0 0 0 9 3Z M13.5 13.5 18 18",
+    undo: "M7 3 3 7l4 4 M3 7h9a5 5 0 0 1 0 10h-2",
+    redo: "m13 3 4 4-4 4 M17 7H8a5 5 0 0 0 0 10h2",
+    close: "m5 5 10 10 M15 5 5 15",
+    plus: "M10 3v14 M3 10h14",
+  };
+  return <svg className="control-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[kind]} /></svg>;
+}
+
+function handleRadioKeys(event: ReactKeyboardEvent<HTMLDivElement>) {
+  const keys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"];
+  if (!keys.includes(event.key)) return;
+  const choices = Array.from(event.currentTarget.querySelectorAll<HTMLButtonElement>('button[role="radio"]:not(:disabled)'));
+  const index = choices.indexOf(event.target as HTMLButtonElement);
+  if (index < 0) return;
+  event.preventDefault();
+  const next = event.key === "Home" ? 0 : event.key === "End" ? choices.length - 1
+    : (index + (event.key === "ArrowLeft" || event.key === "ArrowUp" ? -1 : 1) + choices.length) % choices.length;
+  choices[next]?.focus();
+  choices[next]?.click();
+}
+
+const categories: EquipmentCategory[] = [
+  "摄影机",
+  "镜头",
+  "滤镜",
+  "摄影机附件",
+  "监看",
+  "移动器材",
+  "灯光器材",
+  "录音器材",
+  "其他",
+];
+
+const equipment: Equipment[] = publishedEquipment.map(item => ({
+  ...item,
+  aliases: [...(item.aliases ?? []), equipmentCardData[item.id]?.name || item.name],
+}));
+const equipmentMap = new Map(canonicalEquipment.map((item) => [item.id, item]));
+for (const [oldId, newId] of Object.entries(canonicalEquipmentRedirects)) {
+  const item = equipmentMap.get(newId);
+  if (item) equipmentMap.set(oldId, item);
+}
+const equipmentIds = new Set(canonicalEquipment.map((item) => item.id));
+const equipmentSeries = buildEquipmentSeries(equipment);
+const emptyKit: KitItem[] = [];
+const maxBackupFileBytes = 10 * 1024 * 1024;
+
+const builtInHistoryProfiles: HistoryProfile[] = [
+  {
+    id: "chen-derong",
+    label: "艺人视频器材单",
+    projectName: "艺人视频",
+    type: "艺人视频",
+    subtitle: "单机位、竖屏、快速转场，人物肤色与机动性优先",
+    scale: "轻量",
+    cameraCount: 1,
+    styles: ["稳定器", "竖屏"],
+    lensStyle: "轻量变焦",
+    screenFormat: "竖屏",
+    items: [
+      "cam-sony-fx3",
+      "lens-sony-2470",
+      "lens-sony-85",
+      "filter-cpl",
+      "filter-glimmer",
+      "video-dji-monitor",
+      "video-dji-transmission",
+      "grip-teris",
+      "grip-rs4",
+      "light-amaran300c",
+      "light-nanlite60c",
+      "other-cart",
+      "other-gaffer",
+    ],
+  },
+  {
+    id: "jinnuo-property",
+    label: "企业宣传片器材单",
+    projectName: "宣传片",
+    type: "企业宣传片",
+    subtitle: "主副机协作、焦段覆盖完整，兼顾空间与人物",
+    scale: "标准",
+    cameraCount: 2,
+    styles: ["稳定器", "滑轨"],
+    lensStyle: "轻量变焦",
+    screenFormat: "横屏",
+    items: [
+      "cam-sony-burano",
+      "cam-sony-fx3",
+      "lens-sony-1635",
+      "lens-sony-2470",
+      "lens-sony-70200",
+      "lens-sony-50",
+      "filter-cpl",
+      "filter-glimmer",
+      "accessory-cinesaddle",
+      "accessory-labouee",
+      "video-dji-monitor",
+      "video-dji-transmission",
+      "grip-teris",
+      "grip-slider",
+      "grip-rs4",
+      "other-cart",
+      "other-gaffer",
+    ],
+  },
+  {
+    id: "meishu-tvc",
+    label: "TVC 器材单",
+    projectName: "PV",
+    type: "TVC",
+    subtitle: "微距产品、精细移动与完整客户监看",
+    scale: "完整",
+    cameraCount: 1,
+    styles: ["滑轨", "轨道车", "伸缩摇臂", "微距产品"],
+    lensStyle: "微距特殊",
+    screenFormat: "横屏",
+    items: [
+      "cam-ronin4d",
+      "accessory-prossd",
+      "accessory-tb50",
+      "lens-nisi-athena",
+      "lens-dzo-gnosis",
+      "lens-dzo-xtract",
+      "filter-bpm",
+      "accessory-focus-pro",
+      "accessory-cinesaddle",
+      "video-dji-monitor",
+      "video-dji-transmission",
+      "video-dm240",
+      "video-smallhd702",
+      "grip-teris",
+      "grip-slider",
+      "grip-dolly",
+      "grip-track",
+      "grip-howmoco",
+      "other-applebox",
+    ],
+  },
+  {
+    id: "duanpian",
+    label: "剧情片器材单（多机位）",
+    projectName: "毕业联合作业",
+    type: "剧情片",
+    subtitle: "三机位、复古定焦、多岗位监看与重型调度",
+    scale: "完整",
+    cameraCount: 3,
+    styles: ["轨道车", "稳定器", "滑轨", "伸缩摇臂", "弱光夜景"],
+    lensStyle: "复古柔和",
+    screenFormat: "横屏",
+    items: [
+      "cam-alexa-mini",
+      "cam-ronin4d",
+      "lens-zeiss-super-speed",
+      "lens-angenieux-24290",
+      "lens-nisi-athena",
+      "filter-bpm",
+      "filter-nd",
+      "filter-cpl",
+      "eq-通用-4-5-65-filter-clear-滤镜",
+      "accessory-lmb25",
+      "accessory-wcu4",
+      "eq-arri-arri-ff-4-ff-5-follow-focus-kit-摄影机附件",
+      "accessory-cinesaddle",
+      "accessory-labouee",
+      "video-vaxis2000",
+      "video-vaxis072",
+      "video-dm240",
+      "video-smallhd702",
+      "grip-oconnor2575",
+      "grip-ronford-legs",
+      "grip-ronin2",
+      "eq-dji-dji-master-wheels-摄影机附件",
+      "grip-slider",
+      "grip-dolly",
+      "grip-track",
+      "grip-howmoco",
+      "other-applebox",
+    ],
+    quantities: {
+      "cam-alexa-mini": 2,
+      "video-vaxis2000": 4,
+      "video-vaxis072": 7,
+      "video-dm240": 2,
+      "video-smallhd702": 4,
+      "grip-oconnor2575": 2,
+      "grip-ronford-legs": 2,
+    },
+  },
+  {
+    id: "intern-cupid",
+    label: "TVC 器材单",
+    projectName: "TVC",
+    type: "TVC",
+    subtitle: "Mini LF、变形宽银幕、特殊镜头与完整重型调度",
+    scale: "完整",
+    cameraCount: 1,
+    styles: ["稳定器", "滑轨", "轨道车", "伸缩摇臂", "微距产品"],
+    lensStyle: "变形宽银幕",
+    screenFormat: "横屏",
+    items: [
+      "cam-alexa-mini-lf",
+      "lens-atlas-mercury",
+      "lens-angenieux-ez1",
+      "eq-laowa-老蛙12mm-镜头",
+      "lens-dzo-gnosis",
+      "lens-dzo-xtract",
+      "filter-nd",
+      "filter-cpl",
+      "eq-通用-4-5-65-filter-clear-滤镜",
+      "accessory-lmb25",
+      "accessory-wcu4",
+      "eq-arri-arri-ff-4-ff-5-follow-focus-kit-摄影机附件",
+      "accessory-cinesaddle",
+      "accessory-labouee",
+      "video-vaxis2000",
+      "video-vaxis072",
+      "video-dm240",
+      "video-smallhd702",
+      "grip-oconnor2575",
+      "grip-ronford-legs",
+      "grip-jib",
+      "grip-ronin2",
+      "eq-dji-dji-master-wheels-摄影机附件",
+      "grip-slider",
+      "grip-dolly",
+      "grip-track",
+      "other-applebox",
+    ],
+    quantities: {
+      "video-vaxis2000": 2,
+      "video-vaxis072": 6,
+      "video-dm240": 2,
+      "video-smallhd702": 2,
+      "grip-jib": 2,
+    },
+  },
+
+];
+const builtInHistoryProfileIds = new Set(builtInHistoryProfiles.map((profile) => profile.id));
+
+function historyProjectName(profile: HistoryProfile) {
+  return profile.projectName?.trim() || profile.customName?.trim() || "自定义导入项目";
+}
+
+const captureOptions = [
+  ["稳定器", "手持稳定运动"],
+  ["滑轨", "短距离精细移动"],
+  ["轨道车", "长距离调度"],
+  ["伸缩摇臂", "升降、穿越与遥控机头"],
+  ["微距产品", "微距、探针或特写镜头"],
+  ["弱光夜景", "高速镜头与夜景补充"],
+  ["高帧率", "升格或高速摄影"],
+  ["竖屏", "竖屏安装与轻量配置"],
+];
+
+const sceneConditionOptions = [
+  ["日外", "自然光与 ND 控制"],
+  ["日内", "窗光、混合色温与控光"],
+  ["夜外", "低照度、供电与大功率灯具"],
+  ["夜内", "实景光源与暗部层次"],
+  ["狭小空间", "机身尺寸与调度半径受限"],
+  ["反光材质", "玻璃、水面、车漆或产品表面"],
+  ["风沙/飞沫", "镜头前组与机身防护"],
+];
+
+const statusLabels: Record<NonNullable<KitItem["status"]>, string> = {
+  confirmed: "已确认",
+  recommended: "历史 / 配套",
+  pending: "待确认",
+  manual: "手动添加",
+};
+
+const defaultProject: ProjectForm = {
+  recommendationMode: "manual",
+  historyProfileId: "",
+  name: "未命名项目",
+  type: "企业宣传片",
+  category: "商业项目",
+  shootDate: "",
+  dop: "",
+  contact: "",
+  days: 1,
+  cameraCount: 1,
+  scale: "标准",
+  captureStyle: [],
+  monitoring: "标准监看",
+  cameraBrand: "自动匹配",
+  lensStyle: "自动匹配",
+  screenFormat: "横屏",
+  lightNeed: "不含灯光",
+  audioNeed: false,
+  budget: "不限制",
+  narrativeViewpoint: "混合视点",
+  aspectRatio: "16:9",
+  visualTone: "自然中性",
+  contrastStyle: "自然反差",
+  movementIntent: "人物跟随",
+  sceneConditions: [],
+  baseFps: 25,
+  highSpeedFps: 0,
+  resolution: "UHD 4K 3840 × 2160",
+  recordingFormat: "高质量母版",
+  shootingRatio: 10,
+  hoursPerDay: 10,
+  powerAccess: "部分市电",
+  notes: "",
+};
+
+function createId(prefix: string) {
+  return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+}
+
+function sanitizeProjects(value: unknown, reservedIds?: Iterable<string>) {
+  return sanitizeProjectRecords<ProjectForm, EquipmentCategory>(migrateCatalogProjects(value), {
+    defaultForm: defaultProject,
+    isKnownEquipmentId: (id) => equipmentMap.has(id),
+    isCategory: (value): value is EquipmentCategory => categories.includes(value as EquipmentCategory),
+    createId,
+    reservedIds,
+    numericBounds: {
+      days: [1, 60],
+      cameraCount: [1, 8],
+      baseFps: [1, 1_000],
+      highSpeedFps: [0, 10_000],
+      shootingRatio: [1, 100],
+      hoursPerDay: [1, 24],
+    },
+    numericPrecision: { baseFps: 3, highSpeedFps: 3 },
+    allowedStringValues: {
+      recommendationMode: ["history", "manual"],
+      type: ["企业宣传片", "艺人视频", "TVC", "剧情片", "MV", "纪录片"],
+      category: ["商业项目", "剧情项目", "艺人内容", "纪录内容", "个人创作", "其他"],
+      scale: ["轻量", "标准", "完整"],
+      monitoring: ["精简监看", "标准监看", "完整监看"],
+      cameraBrand: ["自动匹配", "ARRI", "SONY", "RED", "DJI"],
+      lensStyle: ["自动匹配", "现代干净", "复古柔和", "变形宽银幕", "轻量变焦", "微距特殊"],
+      screenFormat: ["横屏", "竖屏", "横竖双版本"],
+      lightNeed: ["不含灯光", "轻量灯光", "完整灯光"],
+      budget: ["不限制", "3千以内", "3千–8千", "8千–1.5万", "1.5万以上"],
+      narrativeViewpoint: ["客观观察", "人物主观", "混合视点"],
+      visualTone: ["自然中性", "低饱和柔和", "冷暖对照", "高饱和风格化"],
+      contrastStyle: ["低反差", "自然反差", "高反差"],
+      movementIntent: ["克制固定", "人物跟随", "流动调度", "机械精确", "混合"],
+      recordingFormat: ["轻量代理", "高质量母版", "RAW / 高码率"],
+      powerAccess: ["稳定市电", "部分市电", "无市电"],
+    },
+    allowedArrayValues: {
+      captureStyle: captureOptions.map(([value]) => value),
+      sceneConditions: sceneConditionOptions.map(([value]) => value),
+    },
+  });
+}
+
+function createProject(name = "未命名项目"): ProjectRecord {
+  const now = new Date().toISOString();
+  return {
+    id: createId("project"),
+    form: { ...defaultProject, name },
+    kit: [],
+    basicInfoConfirmed: false,
+    status: "active",
+    createdAt: now,
+    updatedAt: now,
+  };
+}
+
+const initialProject: ProjectRecord = {
+  id: "project-initial",
+  form: { ...defaultProject },
+  kit: [],
+  basicInfoConfirmed: false,
+  status: "active",
+  createdAt: "1970-01-01T00:00:00.000Z",
+  updatedAt: "1970-01-01T00:00:00.000Z",
+};
+
+function clampInteger(value: number, min: number, max: number) {
+  return Math.min(max, Math.max(min, Number.isFinite(value) ? Math.round(value) : min));
+}
+
+function formatCount(value: number) {
+  return String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function equipmentById(id: string) {
+  return equipmentMap.get(resolveCatalogId(id));
+}
+
+function resolveKitEquipment(row: KitItem): Pick<Equipment, "id" | "name" | "brand" | "category" | "subcategory" | "unit" | "costTier"> | undefined {
+  const item = equipmentById(row.id);
+  if (item) return item;
+  if (!row.custom) return undefined;
+  return { id: row.id, ...row.custom, costTier: 1 };
+}
+
+function ruleAdditionToKit(addition: RuleAddition, reason: string): KitItem {
+  return {
+    id: addition.id,
+    qty: addition.qty,
+    note: addition.note,
+    reason,
+    status: "pending",
+    custom: addition.custom as CustomEquipment | undefined,
+  };
+}
+
+function addSystemRuleRows(kit: KitItem[], additions: RuleAddition[], reason: string) {
+  const rows = additions.filter(addition => addition.custom || equipmentById(addition.id)?.published)
+    .map(addition => ruleAdditionToKit(addition, reason));
+  return completeKitAdditions(kit, rows);
+}
+
+function completeEssentialCameraSystem(project: ProjectForm, kit: KitItem[]) {
+  const checks = buildCameraSystemChecks(basicSystemProject(project), kit, canonicalEquipment);
+  return checks
+    .filter((check) => check.autoAdd && check.missing.length)
+    .reduce((current, check) => addSystemRuleRows(current, check.missing, `站内系统检查：${check.title}`), kit);
+}
+
+function kitChecks(project: ProjectForm, kit: KitItem[]) {
+  const resolved = kit.map(resolveKitEquipment).filter(Boolean);
+  const hasCategory = (category: EquipmentCategory) => resolved.some((item) => item?.category === category);
+  const text = resolved.map((item) => item?.name).join(" ");
+  const checks: { level: "warning" | "info"; text: string }[] = [];
+  if (!hasCategory("摄影机")) checks.push({ level: "warning", text: "尚未选择摄影机机身。" });
+  if (!hasCategory("镜头")) checks.push({ level: "warning", text: "尚未选择镜头或镜头组。" });
+  if (!hasCategory("移动器材")) checks.push({ level: "warning", text: "缺少基础云台、脚架或机身支撑。" });
+  if (!hasCategory("监看")) checks.push({ level: "warning", text: "缺少机头或导演监看方案。" });
+  if (hasCategory("摄影机") && !/电池|battery|供电|v口|gold mount/i.test(text)) {
+    checks.push({ level: "info", text: "请确认电池数量、充电器、供电线和机身电压。" });
+  }
+  if (hasCategory("摄影机") && !/ssd|储存|存储|cfexpress|codex|prossd|卡/i.test(text)) {
+    checks.push({ level: "info", text: "请确认录制介质、读卡器与每日素材容量。" });
+  }
+  if (project.cameraCount > 1 && !/时码|timecode|tentacle|锁相|genlock/i.test(text)) {
+    checks.push({ level: "info", text: "多机位项目建议确认时码同步与机间色彩测试。" });
+  }
+  return checks;
+}
+
+function kitItemStatus(row: KitItem): NonNullable<KitItem["status"]> {
+  if (row.status && statusLabels[row.status]) return row.status;
+  const reason = typeof row.reason === "string" ? row.reason : "";
+  if (row.custom) return reason.includes("系统检查") ? "pending" : "manual";
+  return reason.includes("手动") || reason.includes("器材库") || reason.includes("分类配置") || reason.includes("系列")
+    ? "manual"
+    : "recommended";
+}
+
+export default function Home() {
+  const [view, setView] = useState<View>("projects");
+  const [themePreference, setThemePreference] = useState<ThemePreference | null>(null);
+  const [projects, setProjects] = useState<ProjectRecord[]>(() => [initialProject]);
+  const [activeProjectId, setActiveProjectId] = useState(initialProject.id);
+  const [hydrated, setHydrated] = useState(false);
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState<"全部" | EquipmentCategory>("全部");
+  const [brand, setBrand] = useState("全部");
+  const [namingFilter, setNamingFilter] = useState("全部");
+  const [visibleCount, setVisibleCount] = useState(72);
+  const [seriesVisibleCount, setSeriesVisibleCount] = useState(12);
+  const [editingBasics, setEditingBasics] = useState(false);
+  const [kitQuery, setKitQuery] = useState("");
+  const [kitScope, setKitScope] = useState<"all" | "pending">("all");
+  const [kitCategory, setKitCategory] = useState<"全部" | EquipmentCategory>("全部");
+  const [kitHistories, setKitHistories] = useState<Record<string, KitHistory<EquipmentCategory>>>({});
+  const [swapPreview, setSwapPreview] = useState<{ rows: KitItem[]; name: string } | null>(null);
+  const [projectFilter, setProjectFilter] = useState<"all" | "active" | "archived">("active");
+  const [projectQuery, setProjectQuery] = useState("");
+  const [customDraft, setCustomDraft] = useState<CustomEquipment>({
+    name: "",
+    brand: "通用",
+    category: "其他",
+    subcategory: "自定义",
+    unit: "件",
+  });
+  const [toast, setToast] = useState("");
+  const [swapTargetId, setSwapTargetId] = useState<string | null>(null);
+  const [swapQuery, setSwapQuery] = useState("");
+  const swapComposing = useRef(false);
+  const [swapCustom, setSwapCustom] = useState<CustomEquipment | null>(null);
+  const [swapScope, setSwapScope] = useState<"recommended" | "brand" | "all">("recommended");
+  const [exportingExcel, setExportingExcel] = useState(false);
+  const [historyOverrides, setHistoryOverrides] = useState<Record<string, HistoryProfile>>({});
+  const [historyOverridesHydrated, setHistoryOverridesHydrated] = useState(false);
+  const [historyPreview, setHistoryPreview] = useState<HistoryPreviewState | null>(null);
+  const [historyImportTargetId, setHistoryImportTargetId] = useState<string | null>(null);
+  const [analyzingHistory, setAnalyzingHistory] = useState(false);
+  const importBackupRef = useRef<HTMLInputElement>(null);
+  const importHistoryRef = useRef<HTMLInputElement>(null);
+  const dialogTriggerRef = useRef<HTMLElement | null>(null);
+  const modalOpen = Boolean(swapTargetId || historyPreview);
+
+  const activeProject = projects.find((item) => item.id === activeProjectId) ?? projects[0];
+  const project = activeProject?.form ?? defaultProject;
+  const kit = activeProject?.kit ?? emptyKit;
+
+  useEffect(() => {
+    const saved = document.documentElement.dataset.themePreference;
+    const preference = saved === "light" || saved === "dark" ? saved : "system";
+    const timer = window.setTimeout(() => setThemePreference(preference), 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!themePreference) return;
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+    const applyTheme = () => {
+      const resolvedTheme = themePreference === "system"
+        ? (systemTheme.matches ? "dark" : "light")
+        : themePreference;
+      document.documentElement.dataset.theme = resolvedTheme;
+      document.documentElement.dataset.themePreference = themePreference;
+    };
+    applyTheme();
+    try {
+      window.localStorage.setItem("cinbox-theme-preference", themePreference);
+    } catch {
+      // Theme still applies for this session when browser storage is unavailable.
+    }
+    if (themePreference !== "system") return;
+    systemTheme.addEventListener("change", applyTheme);
+    return () => systemTheme.removeEventListener("change", applyTheme);
+  }, [themePreference]);
+
+  useEffect(() => {
+    const saved = window.localStorage.getItem("cinbox-projects-v2");
+    if (saved) {
+      try {
+        const state = JSON.parse(saved) as { projects?: unknown; activeProjectId?: unknown };
+        const validProjects = sanitizeProjects(state.projects);
+        const savedActiveProjectId = typeof state.activeProjectId === "string" ? state.activeProjectId : "";
+        if (validProjects.length) {
+          // eslint-disable-next-line react-hooks/set-state-in-effect
+          setProjects(validProjects);
+          setActiveProjectId(savedActiveProjectId && validProjects.some((item) => item.id === savedActiveProjectId) ? savedActiveProjectId : validProjects[0].id);
+          setHydrated(true);
+          return;
+        }
+      } catch {
+        window.localStorage.removeItem("cinbox-projects-v2");
+      }
+    }
+
+    const legacy = window.localStorage.getItem("cinbox-project");
+    if (legacy) {
+      try {
+        const state = JSON.parse(legacy) as { project?: Partial<ProjectForm>; kit?: KitItem[] };
+        const migrated = createProject(state.project?.name || "迁移项目");
+        const [sanitized] = sanitizeProjects([{ ...migrated, form: { ...defaultProject, ...state.project }, kit: state.kit }]);
+        if (sanitized) {
+          setProjects([sanitized]);
+          setActiveProjectId(sanitized.id);
+          setHydrated(true);
+          return;
+        }
+      } catch {
+        window.localStorage.removeItem("cinbox-project");
+      }
+    }
+    setProjects((current) => {
+      const first = current[0] ?? createProject();
+      setActiveProjectId(first.id);
+      return [first];
+    });
+    setHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    try {
+      const saved = window.localStorage.getItem("cinbox-history-overrides-v1");
+      if (saved) {
+        const parsed: unknown = JSON.parse(saved);
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setHistoryOverrides(sanitizeHistoryOverrides(migrateCatalogHistory(parsed), builtInHistoryProfileIds, equipmentIds));
+      }
+    } catch {
+      window.localStorage.removeItem("cinbox-history-overrides-v1");
+    }
+    setHistoryOverridesHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    let failureNotice: number | undefined;
+    try {
+      window.localStorage.setItem("cinbox-projects-v2", JSON.stringify({ projects, activeProjectId }));
+    } catch {
+      failureNotice = window.setTimeout(() => setToast("当前设备存储空间不足，请先导出项目备份"), 0);
+    }
+    return () => {
+      if (failureNotice !== undefined) window.clearTimeout(failureNotice);
+    };
+  }, [activeProjectId, hydrated, projects]);
+
+  useEffect(() => {
+    if (!historyOverridesHydrated) return;
+    try {
+      window.localStorage.setItem("cinbox-history-overrides-v1", JSON.stringify(historyOverrides));
+    } catch {
+      const timer = window.setTimeout(() => setToast("历史项目保存失败：当前设备存储空间不足"), 0);
+      return () => window.clearTimeout(timer);
+    }
+  }, [historyOverrides, historyOverridesHydrated]);
+
+  useEffect(() => {
+    if (!toast) return;
+    const timer = window.setTimeout(() => setToast(""), 2400);
+    return () => window.clearTimeout(timer);
+  }, [toast]);
+
+  useEffect(() => {
+    if (!modalOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    const previousFocus = dialogTriggerRef.current ?? document.activeElement as HTMLElement | null;
+    const dialog = document.querySelector<HTMLElement>(".swap-dialog, .history-preview-dialog");
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not(:disabled), a[href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), summary, [tabindex="0"]',
+    ) ?? []).filter((element) => element.getClientRects().length > 0);
+    if (dialog && !dialog.contains(document.activeElement)) focusable()[0]?.focus();
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSwapTargetId(null);
+        setHistoryPreview(null);
+      } else if (event.key === "Tab") {
+        const controls = focusable();
+        const first = controls[0];
+        const last = controls[controls.length - 1];
+        if (event.shiftKey && (document.activeElement === first || !dialog?.contains(document.activeElement))) {
+          event.preventDefault(); last?.focus();
+        } else if (!event.shiftKey && (document.activeElement === last || !dialog?.contains(document.activeElement))) {
+          event.preventDefault(); first?.focus();
+        }
+      }
+    };
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", closeOnEscape);
+      if (previousFocus?.isConnected) previousFocus.focus();
+      dialogTriggerRef.current = null;
+    };
+  }, [modalOpen]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [activeProjectId, view]);
+
+  const menuLabels = useMemo(() => brandMenuLabels(equipment, canonicalBrandLabels), []);
+  const brands = useMemo(() => categoryBrands(equipment, category, menuLabels), [category, menuLabels]);
+  const filteredEquipment = useMemo(
+    () => filterCatalog(equipment, { category, brand, query, namingFilter }),
+    [brand, category, query, namingFilter],
+  );
+
+  const filteredSeries = useMemo(() => {
+    const resultIds = new Set(filteredEquipment.map((item) => item.id));
+    return equipmentSeries.map(series => namingFilter === "全部" ? series : {
+      ...series, items: series.items.filter(item => namingFilter === "official-model" ? item.brand !== "通用" : item.brand === "通用"),
+    }).filter((series) =>
+      (category === "全部" || series.category === category) &&
+      (brand === "全部" || series.brand === brand) &&
+      series.items.some((item) => resultIds.has(item.id)),
+    );
+  }, [brand, category, filteredEquipment, namingFilter]);
+
+  const groupedKit = useMemo(
+    () =>
+      categories
+        .map((name) => ({
+          name,
+          rows: kit.filter((row) => resolveKitEquipment(row)?.category === name),
+        }))
+        .filter((group) => group.rows.length),
+    [kit],
+  );
+
+  const historyProfiles = useMemo(
+    () => [...builtInHistoryProfiles.map((profile) => historyOverrides[profile.id] ?? profile),
+      ...Object.values(historyOverrides).filter((profile) => isImportedHistoryId(profile.id))],
+    [historyOverrides],
+  );
+  const selectedUnits = kit.reduce((sum, item) => sum + item.qty, 0);
+  const statusCounts = kit.reduce(
+    (counts, row) => {
+      counts[kitItemStatus(row)] += 1;
+      return counts;
+    },
+    { confirmed: 0, recommended: 0, pending: 0, manual: 0 },
+  );
+  const checks = useMemo(() => kitChecks(project, kit), [kit, project]);
+  const systemChecks = useMemo(() => buildCameraSystemChecks(basicSystemProject(project), kit, canonicalEquipment), [kit, project]);
+  const missingSystemChecks = systemChecks.filter((check) => check.missing.length);
+  const passedSystemChecks = systemChecks.length - missingSystemChecks.length;
+  const swapTarget = kit.find((row) => row.id === swapTargetId);
+  const swapTargetItem = swapTarget ? resolveKitEquipment(swapTarget) : undefined;
+  const swapCategory = swapTargetItem?.category;
+  const swapSubcategory = swapTargetItem?.subcategory;
+  const swapBrand = swapTargetItem?.brand;
+  const swapCostTier = swapTargetItem?.costTier ?? 3;
+  const swapCandidates = (() => {
+    if (!swapCategory) return [];
+    const normalized = swapQuery.trim().toLowerCase();
+    const existing = new Set(kit.map((row) => row.id));
+    return equipment
+      .filter((item) => item.category === swapCategory && !existing.has(item.id))
+      .filter((item) => !normalized || [item.name, item.brand, item.subcategory, ...(item.aliases ?? [])].join(" ").toLowerCase().includes(normalized))
+      .filter((item) => normalized || swapScope === "all" || (swapScope === "brand" ? item.brand === swapBrand : item.subcategory === swapSubcategory || item.brand === swapBrand))
+      .sort((left, right) => {
+        const leftScore = (left.subcategory === swapSubcategory ? 10 : 0) + (left.brand === swapBrand ? 4 : 0) - Math.abs(left.costTier - swapCostTier);
+        const rightScore = (right.subcategory === swapSubcategory ? 10 : 0) + (right.brand === swapBrand ? 4 : 0) - Math.abs(right.costTier - swapCostTier);
+        return rightScore - leftScore || left.name.localeCompare(right.name, "zh-CN");
+      })
+      .slice(0, swapScope === "all" || normalized ? 24 : 12);
+  })();
+  const filteredProjects = useMemo(() => {
+    const normalized = projectQuery.trim().toLowerCase();
+    return projects
+      .filter((item) => projectFilter === "all" || item.status === projectFilter)
+      .filter((item) => !normalized || [item.form.name, item.form.type, item.form.category, item.form.dop].join(" ").toLowerCase().includes(normalized))
+      .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+  }, [projectFilter, projectQuery, projects]);
+
+  function updateActive(mutator: (current: ProjectRecord) => ProjectRecord) {
+    if (!activeProject) return;
+    setProjects((current) =>
+      current.map((item) =>
+        item.id === activeProject.id ? { ...mutator(item), updatedAt: new Date().toISOString() } : item,
+      ),
+    );
+  }
+
+  function updateProject(patch: Partial<ProjectForm>) {
+    const affectsKit = Object.keys(patch).some((key) => ["cameraCount", "aspectRatio", "screenFormat", "baseFps", "highSpeedFps", "resolution"].includes(key) && JSON.stringify(project[key as keyof ProjectForm]) !== JSON.stringify(patch[key as keyof ProjectForm]));
+    updateActive((current) => ({ ...current, form: { ...current.form, ...patch }, requirementsChanged: current.requirementsChanged || (affectsKit && current.kit.length > 0) }));
+  }
+
+  function openHistoryProjectPreview(profile: HistoryProfile, trigger: HTMLElement) {
+    dialogTriggerRef.current = trigger;
+    setHistoryPreview({ targetId: profile.id, profile, mode: "view" });
+  }
+
+  function openSavedProjectPreview(record: ProjectRecord, trigger: HTMLElement) {
+    dialogTriggerRef.current = trigger;
+    setHistoryPreview({ targetId: record.id, record, mode: "view", profile: {
+      id: record.id, label: record.form.type, projectName: record.form.name,
+      type: record.form.type, subtitle: `${record.form.days} 天 · ${record.form.cameraCount} 机位`,
+      scale: record.form.scale, cameraCount: record.form.cameraCount, styles: [],
+      lensStyle: "", screenFormat: record.form.screenFormat,
+      items: record.kit.map((row) => row.id),
+      quantities: Object.fromEntries(record.kit.map((row) => [row.id, row.qty])),
+    } });
+  }
+
+  function chooseHistoryProjectFile(targetId: string, trigger?: HTMLElement) {
+    if (!modalOpen && trigger) dialogTriggerRef.current = trigger;
+    if (analyzingHistory) return;
+    setHistoryImportTargetId(targetId);
+    importHistoryRef.current?.click();
+  }
+
+  async function importHistoryProject(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    event.target.value = "";
+    const targetId = historyImportTargetId;
+    if (!file || !targetId) return;
+    setAnalyzingHistory(true);
+    try {
+      const extracted = await extractHistoryProjectFile(file);
+      if (!extracted.text.trim()) throw new Error("文件中没有可分析的文字内容");
+      const analyzed = analyzeHistoryProjectText(extracted.text, file.name, extracted.format, equipment);
+      setHistoryPreview({
+        targetId,
+        mode: "analysis",
+        profile: { ...analyzed, id: targetId, projectName: projects.find((record) => record.id === targetId)?.form.name ?? analyzed.projectName ?? analyzed.customName },
+      });
+      setToast(analyzed.items.length ? `分析完成：识别 ${analyzed.items.length} 项标准器材` : "分析完成，但未识别出标准器材");
+    } catch (error) {
+      setToast(error instanceof Error ? error.message : "文件分析失败，请检查格式后重试");
+    } finally {
+      setAnalyzingHistory(false);
+      setHistoryImportTargetId(null);
+    }
+  }
+
+  function confirmHistoryProjectReplacement() {
+    if (!historyPreview || historyPreview.mode !== "analysis" || !historyPreview.profile.items.length) return;
+    const customName = historyPreview.profile.projectName?.trim() ?? historyPreview.profile.customName?.trim() ?? "";
+    const replacement: HistoryProfile = {
+      ...historyPreview.profile,
+      label: formatHistoryProjectName(historyPreview.profile.type),
+      projectName: customName || "自定义导入项目",
+      customName: customName || undefined,
+    };
+    const saved = projects.find((record) => record.id === historyPreview.targetId);
+    if (saved) {
+      const type = projectTypeForReuse(replacement.type, saved.form.type);
+      const needsReview = saved.requirementsChanged || saved.form.cameraCount !== replacement.cameraCount || saved.form.type !== type;
+      setKitHistories((current) => ({ ...current, [saved.id]: recordKitChange(current[saved.id] ?? { past: [], future: [] }, saved.kit, "上传替换器材单", undefined, needsReview) }));
+      setProjects((current) => current.map((record) => record.id !== saved.id ? record : {
+        ...record, updatedAt: new Date().toISOString(),
+        form: { ...record.form, name: replacement.projectName || record.form.name, type, cameraCount: replacement.cameraCount },
+        kit: copyHistoricalKit(replacement, equipmentMap), requirementsChanged: true,
+      }));
+    } else {
+      setHistoryOverrides((current) => ({ ...current, [historyPreview.targetId]: replacement }));
+    }
+    setHistoryPreview(null);
+    setToast(`${isImportedHistoryId(replacement.id) && !historyOverrides[replacement.id] ? "已新增历史项目" : "已替换"}：${historyProjectName(replacement)}`);
+  }
+
+  function restoreBuiltInHistoryProject(targetId: string) {
+    const builtIn = builtInHistoryProfiles.find((profile) => profile.id === targetId);
+    setHistoryOverrides((current) => {
+      const next = { ...current };
+      delete next[targetId];
+      return next;
+    });
+    setHistoryPreview(builtIn ? { targetId, profile: builtIn, mode: "view" } : null);
+    setToast("已恢复内置历史项目");
+  }
+
+  const currentHistory = kitHistories[activeProjectId] ?? { past: [], future: [] };
+  const visibleKitGroups = groupedKit.map((group) => ({ ...group, rows: group.rows.filter((row) => {
+    const item = resolveKitEquipment(row);
+    return (kitScope === "all" || kitItemStatus(row) === "pending") &&
+      (kitCategory === "全部" || item?.category === kitCategory) &&
+      (!kitQuery.trim() || `${item?.name} ${item?.brand} ${row.note}`.toLowerCase().includes(kitQuery.trim().toLowerCase()));
+  }) })).filter((group) => group.rows.length);
+
+  function setKit(next: KitItem[] | ((current: KitItem[]) => KitItem[]), label = "调整器材单", group?: string) {
+    const rows = typeof next === "function" ? next(kit) : next;
+    if (rows === kit || JSON.stringify(rows) === JSON.stringify(kit)) return;
+    setKitHistories((current) => ({ ...current, [activeProjectId]: recordKitChange(current[activeProjectId] ?? { past: [], future: [] }, kit, label, group, activeProject?.requirementsChanged) }));
+    updateActive((current) => ({ ...current, kit: rows }));
+  }
+
+  function travelKit(direction: "undo" | "redo") {
+    const change = travelKitHistory(currentHistory, kit, direction, activeProject?.requirementsChanged);
+    if (!change) return;
+    setKitHistories((current) => ({ ...current, [activeProjectId]: change.history }));
+    updateActive((current) => ({ ...current, kit: change.rows, requirementsChanged: change.requirementsChanged }));
+    setToast(`${direction === "undo" ? "已撤销" : "已重做"}：${change.label}`);
+  }
+
+  useEffect(() => {
+    const shortcut = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement;
+      if (modalOpen || target.closest('input, textarea, select, [contenteditable="true"]') || !(event.metaKey || event.ctrlKey) || event.key.toLowerCase() !== "z") return;
+      event.preventDefault();
+      travelKit(event.shiftKey ? "redo" : "undo");
+    };
+    window.addEventListener("keydown", shortcut);
+    return () => window.removeEventListener("keydown", shortcut);
+  });
+
+  function addToKit(id: string, reason = "手动选材") {
+    if (!activeProject?.basicInfoConfirmed) {
+      setQuery(equipmentById(id)?.name || "");
+      setCategory("全部"); setBrand("全部"); setEditingBasics(true); setView("library");
+      setToast("请先保存当前项目的基本信息，再加入此器材");
+      return;
+    }
+    if (!equipmentById(id)?.published) return;
+    setKit((current) => addKitSelection(current, [{ id, qty: 1, note: "", reason, status: "manual" }]), `加入 ${equipmentById(id)?.name ?? "器材"}`);
+    setToast("已加入器材单；数量在清单中调整");
+  }
+
+  function toggleSeries(series: EquipmentSeries) {
+    setKit((current) => addKitSelection(current, series.items.map((item) => ({ id: item.id, qty: 1, note: "", reason: `系列：${series.name}`, status: "manual" }))), `加入 ${series.name} 缺少的器材`);
+    setToast(`已补入 ${series.name} 中未选的器材；原有数量和备注已保留`);
+  }
+
+  function toggleSeriesItem(item: Equipment, seriesName: string) {
+    addToKit(item.id, `系列单选：${seriesName}`);
+  }
+
+  function projectSelect(label: string, key: keyof ProjectForm, options: string[]) {
+    return <label><span>{label}</span><select value={String(project[key])} onChange={(event) => updateProject({ [key]: event.target.value })}>{options.map((value) => <option key={value}>{value}</option>)}</select></label>;
+  }
+  function addCustomItem() {
+    if (!customDraft.name.trim()) {
+      setToast("请先填写自定义器材名称");
+      return;
+    }
+    const id = createId("custom");
+    setKit((current) => [
+      ...current,
+      { id, qty: 1, note: "", reason: "摄影指导自定义补充", status: "manual", custom: { ...customDraft, name: customDraft.name.trim() } },
+    ]);
+    setCustomDraft({ name: "", brand: "通用", category: "其他", subcategory: "自定义", unit: "件" });
+    setToast("已添加自定义器材");
+  }
+
+  function updateKit(id: string, patch: Partial<KitItem>) {
+    setKit((current) => current.map((row) => (row.id === id ? { ...row, ...patch, userAdjusted: true } : row)), `修改 ${resolveKitEquipment(kit.find((row) => row.id === id)!)?.name ?? "器材"}`, `${id}:${Object.keys(patch).join(",")}`);
+  }
+
+  function openSwap(id: string, trigger: HTMLElement) {
+    dialogTriggerRef.current = trigger;
+    setSwapCustom(null);
+    setSwapPreview(null);
+    swapComposing.current = false;
+    setSwapTargetId(id);
+    setSwapQuery("");
+    setSwapScope("recommended");
+  }
+
+  function replaceWithCustom() {
+    if (!swapTarget || !swapCustom?.name.trim()) return;
+    const custom = { ...swapCustom, name: swapCustom.name.trim(), brand: swapCustom.brand.trim() || "通用", unit: swapCustom.unit.trim() || "件" };
+    setKit((current) => current.map((row) => row.id === swapTarget.id ? {
+      ...row, id: createId("custom"), custom, status: "pending", userAdjusted: true,
+      reason: `自定义替换：${swapTargetItem?.name} → ${custom.name}`,
+    } : row));
+    setSwapTargetId(null);
+    setSwapCustom(null);
+    setToast(`已替换为 ${custom.name}，数量和备注已保留`);
+  }
+
+  function replaceKitItem(nextId: string, strategy: "single" | "system" = "single") {
+    if (!swapTarget || !swapTargetItem) return;
+    const replacement = equipmentById(nextId);
+    if (!replacement?.published) return;
+    if (strategy === "system" && swapTargetItem.category === "摄影机") {
+        const replaced = kit.map((row) => row.id === swapTarget.id ? {
+          ...row,
+          id: replacement.id,
+          custom: undefined,
+          status: "pending" as const,
+          userAdjusted: true,
+          reason: `联动替换：${swapTargetItem.name} → ${replacement.name}`,
+        } : row);
+        setSwapPreview({ rows: completeEssentialCameraSystem(project, replaced), name: replacement.name });
+        return;
+    } else {
+      setKit((current) => current.map((row) => row.id === swapTarget.id ? {
+        ...row,
+        id: replacement.id,
+        custom: undefined,
+        status: "pending",
+        userAdjusted: true,
+        reason: `只替换此项：${swapTargetItem.name} → ${replacement.name}`,
+      } : row));
+    }
+    setSwapTargetId(null);
+    setSwapQuery("");
+    setToast(strategy === "system" && swapTargetItem.category === "摄影机" ? `已围绕 ${replacement.name} 联动重算系统` : `已替换为 ${replacement.name}；请检查兼容提示`);
+  }
+
+  function addMissingSystemRule(check: CameraSystemCheck) {
+    setKit((current) => addSystemRuleRows(current, check.missing, `站内系统检查：${check.title}`));
+    setToast(`已补齐：${check.title}`);
+  }
+
+  function completeAllSystemRules() {
+    const next = missingSystemChecks.reduce((rows, check) => addSystemRuleRows(rows, check.missing, `站内系统检查：${check.title}`), kit);
+    setKit(next, "一键补齐配套项目");
+    setToast("已将缺少的配套项加入器材单，请确认兼容性与数量");
+  }
+
+  function saveProjectBasics() {
+    if (!project.name.trim()) return;
+    updateActive((current) => ({ ...current, form: { ...current.form, name: current.form.name.trim() }, basicInfoConfirmed: true }));
+    setEditingBasics(false);
+    setView("library");
+    setToast("项目基本信息已保存，请选择器材");
+  }
+
+  function reuseHistoryProject(profile: HistoryProfile) {
+    const next = createProject(`${historyProjectName(profile)} · 新项目`);
+    next.form = { ...next.form, type: projectTypeForReuse(profile.type), cameraCount: profile.cameraCount,
+      screenFormat: profile.screenFormat, recommendationMode: "history", historyProfileId: profile.id };
+    next.kit = copyHistoricalKit(profile, equipmentMap);
+    setProjects((current) => [next, ...current]);
+    setActiveProjectId(next.id);
+    next.basicInfoConfirmed = true;
+    setEditingBasics(false);
+    setHistoryPreview(null);
+    setView("kit");
+    setToast(`已复用 ${historyProjectName(profile)}，可在项目中编辑本次拍摄信息`);
+  }
+
+  function reuseSavedProject(record: ProjectRecord) {
+    const next = createProject(`${record.form.name} · 新项目`);
+    next.form = { ...record.form, name: next.form.name, shootDate: "", dop: "", contact: "", recommendationMode: "manual" };
+    next.kit = record.kit.map((row) => ({ ...row, custom: row.custom ? { ...row.custom } : undefined }));
+    setProjects((current) => [next, ...current]);
+    setActiveProjectId(next.id);
+    next.basicInfoConfirmed = true;
+    setEditingBasics(false);
+    setView("kit");
+    setToast(`已复用 ${record.form.name}，可在项目中编辑本次拍摄信息`);
+  }
+
+  function editProjectBasics(id = activeProjectId) {
+    setActiveProjectId(id);
+    setEditingBasics(true);
+    setView("library");
+  }
+
+  function createNewProject() {
+    const next = createProject(`新项目 ${new Date().toLocaleDateString("zh-CN")}`);
+    setProjects((current) => [next, ...current]);
+    setActiveProjectId(next.id);
+    setEditingBasics(true);
+    setView("library");
+    setToast("已创建新项目");
+  }
+
+  function selectProject(id: string, nextView: View = "library") {
+    setActiveProjectId(id);
+    setEditingBasics(nextView === "library");
+    setView(nextView);
+  }
+
+  function duplicateProject(record: ProjectRecord) {
+    const now = new Date().toISOString();
+    const copy: ProjectRecord = {
+      ...record,
+      id: createId("project"),
+      form: { ...record.form, name: `${record.form.name} 副本` },
+      kit: record.kit.map((row) => ({ ...row, custom: row.custom ? { ...row.custom } : undefined })),
+      status: "active",
+      createdAt: now,
+      updatedAt: now,
+    };
+    setProjects((current) => [copy, ...current]);
+    setActiveProjectId(copy.id);
+    setToast("已复制项目");
+  }
+
+  function toggleArchive(record: ProjectRecord) {
+    setProjects((current) =>
+      current.map((item) =>
+        item.id === record.id
+          ? { ...item, status: item.status === "active" ? "archived" : "active", updatedAt: new Date().toISOString() }
+          : item,
+      ),
+    );
+    setToast(record.status === "active" ? "项目已归档" : "项目已恢复");
+  }
+
+  function deleteProject(record: ProjectRecord) {
+    if (!window.confirm(`确定删除“${record.form.name}”？此操作无法撤销。`)) return;
+    const remaining = projects.filter((item) => item.id !== record.id);
+    if (!remaining.length) {
+      const replacement = createProject();
+      setProjects([replacement]);
+      setActiveProjectId(replacement.id);
+    } else {
+      setProjects(remaining);
+      if (activeProjectId === record.id) setActiveProjectId(remaining[0].id);
+    }
+    setToast("项目已删除");
+  }
+
+  async function exportExcel() {
+    if (!kit.length) {
+      setToast("器材单为空，暂时无法导出");
+      return;
+    }
+    if (exportingExcel) return;
+
+    setExportingExcel(true);
+    try {
+      const [{ default: writeXlsxFile }, { buildEquipmentWorkbook }] = await Promise.all([
+        import("write-excel-file/browser"),
+        import("./excel-export"),
+      ]);
+      const workbook = buildEquipmentWorkbook(
+        project,
+        groupedKit.map((group) => ({
+          name: group.name,
+          rows: group.rows.map((row) => {
+            const item = resolveKitEquipment(row)!;
+            return { name: item.name, qty: row.qty, unit: item.unit, note: row.note };
+          }),
+        })),
+        {
+          statusSummary: `${activeProject?.requirementsChanged ? "拍摄规格已修改，请复核清单。 " : ""}已确认 ${statusCounts.confirmed} · 历史 / 配套 ${statusCounts.recommended} · 待确认 ${statusCounts.pending} · 手动添加 ${statusCounts.manual}`,
+          checks: systemChecks.map((check) => ({
+            title: check.title,
+            level: check.missing.length ? (check.severity === "warning" ? "待确认" : "建议") : "已覆盖",
+            detail: check.detail,
+            missing: check.missing.map((item) => `${item.label}${item.qty > 1 ? ` ×${item.qty}` : ""}`).join("、"),
+          })),
+          equipment: kit.map((row) => ({
+            name: resolveKitEquipment(row)?.name ?? row.id,
+            status: statusLabels[kitItemStatus(row)],
+            reason: row.reason,
+          })),
+        },
+      );
+      const savePickerWindow = window as SaveFilePickerWindow;
+      const fileHandle = savePickerWindow.showSaveFilePicker
+        ? await savePickerWindow.showSaveFilePicker({
+            suggestedName: workbook.fileName,
+            types: [
+              {
+                description: "Excel 工作簿",
+                accept: {
+                  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [".xlsx"],
+                },
+              },
+            ],
+          })
+        : null;
+      const blob = await writeXlsxFile(workbook.sheets, {
+        fontFamily: "Arial",
+        fontSize: 10,
+      }).toBlob();
+
+      if (fileHandle) {
+        const writable = await fileHandle.createWritable();
+        await writable.write(blob);
+        await writable.close();
+        setToast("Excel 已保存到所选位置");
+      } else {
+        const url = URL.createObjectURL(blob);
+        const anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = workbook.fileName;
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+        window.setTimeout(() => URL.revokeObjectURL(url), 1_000);
+        setToast("Excel 已下载；保存位置由浏览器设置决定");
+      }
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") {
+        setToast("已取消保存");
+      } else {
+        console.error("Excel export failed", error);
+        setToast("Excel 生成失败，请重试");
+      }
+    } finally {
+      setExportingExcel(false);
+    }
+  }
+
+  function exportProjectBackup() {
+    const payload = JSON.stringify({ version: 2, exportedAt: new Date().toISOString(), projects, historyOverrides }, null, 2);
+    const blob = new Blob([payload], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = `CineBox-项目备份-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1_000);
+    setToast("项目备份已导出");
+  }
+
+  async function importProjectBackup(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    event.target.value = "";
+    if (!file) return;
+    if (file.size > maxBackupFileBytes) {
+      setToast("无法导入：项目备份不能超过 10 MB");
+      return;
+    }
+    try {
+      const rawPayload: unknown = JSON.parse(await file.text());
+      if (!rawPayload || typeof rawPayload !== "object" || Array.isArray(rawPayload)) throw new Error("invalid backup");
+      const payload = rawPayload as { version?: unknown; projects?: unknown; historyOverrides?: unknown };
+      if (payload.version !== undefined && payload.version !== 2) throw new Error("unsupported backup");
+      const imported = sanitizeProjects(payload.projects, projects.map((item) => item.id));
+      if (!imported.length) throw new Error("empty backup");
+      const importedHistory = sanitizeHistoryOverrides(migrateCatalogHistory(payload.historyOverrides), builtInHistoryProfileIds, equipmentIds);
+      setProjects((current) => [...imported, ...current]);
+      setHistoryOverrides((current) => ({ ...current, ...importedHistory }));
+      setActiveProjectId(imported[0].id);
+      setView("projects");
+      const historyLabel = Object.keys(importedHistory).length ? `，含 ${Object.keys(importedHistory).length} 个自定义历史项目` : "";
+      setToast(`已导入并合并 ${imported.length} 个项目${historyLabel}`);
+    } catch {
+      setToast("无法导入：请选择 CineBox 导出的项目备份");
+    }
+  }
+
+  function renderProjectBasics(destination: "library" | "history") {
+    const ready = Boolean(activeProject?.basicInfoConfirmed);
+    return <details className="project-basics" open={!ready || editingBasics} onToggle={(event) => { if (ready) setEditingBasics(event.currentTarget.open); }}>
+      <summary><div><strong>{ready && !editingBasics ? project.name : "项目基本信息"}</strong><span>{project.days} 天 · {project.cameraCount} 机位 · {project.resolution} / {project.aspectRatio} / {project.baseFps}fps</span></div><b>{ready ? editingBasics ? "收起" : "编辑" : "填写后开始"}</b></summary>
+      <form className="questionnaire-form basics-form" onSubmit={(event) => { event.preventDefault(); saveProjectBasics(); }}>
+        <fieldset><legend>项目与排期</legend><div className="form-grid four">
+          <label className="wide-field"><span>项目名称</span><input required maxLength={200} value={project.name} onChange={(event) => updateProject({ name: event.target.value })} placeholder="例如：品牌春季 TVC" /></label>
+          {projectSelect("项目类型", "type", ["企业宣传片", "艺人视频", "TVC", "剧情片", "MV", "纪录片"])}
+          {projectSelect("项目分类", "category", ["商业项目", "剧情项目", "艺人内容", "纪录内容", "个人创作", "其他"])}
+          <label><span>拍摄开始日期</span><input type="date" value={project.shootDate} onInput={(event) => updateProject({ shootDate: event.currentTarget.value })} onChange={(event) => updateProject({ shootDate: event.target.value })} /><small>{project.shootDate ? `拍摄周期：${formatShootRange(project.shootDate, project.days)}` : "日期待定时可留空"}</small></label>
+          <label><span>拍摄天数</span><input type="number" min={1} max={60} value={project.days} onChange={(event) => updateProject({ days: clampInteger(Number(event.target.value), 1, 60) })} /></label>
+          <label><span>机位数量</span><select value={project.cameraCount} onChange={(event) => updateProject({ cameraCount: Number(event.target.value) })}>{[1,2,3,4,5,6,7,8].map((value) => <option key={value} value={value}>{value === 1 ? "单机" : value === 2 ? "双机" : `${value} 机位`}</option>)}</select></label>
+        </div></fieldset>
+        <fieldset><legend>拍摄规格</legend><div className="form-grid four">
+          <SpecField key={`${activeProjectId}-resolution`} label="分辨率" value={project.resolution} options={resolutionOptions} onChange={(value) => updateProject({ resolution: String(value) })} placeholder="例如 2880 × 1920 或 5.7K" />
+          <SpecField key={`${activeProjectId}-ratio`} label="画幅比" value={project.aspectRatio} options={aspectRatioOptions} onChange={(value) => updateProject(frameSelection(String(value)))} placeholder="例如 2.20:1" pattern="[0-9]+(\.[0-9]+)?\s*[:：]\s*[0-9]+(\.[0-9]+)?" />
+          <SpecField key={`${activeProjectId}-fps`} label="项目帧率" value={project.baseFps} options={projectFpsOptions} numeric min={1} max={1000} onChange={(value) => updateProject({ baseFps: Number(value) })} />
+          <SpecField key={`${activeProjectId}-speed`} label="升格采集帧率" value={project.highSpeedFps} options={highSpeedFpsOptions} numeric min={1} max={10000} onChange={(value) => updateProject({ highSpeedFps: Number(value) })} />
+
+        </div><p className="spec-note">项目帧率用于时间线与交付；升格为采集帧率。实际录制规格与升格上限，请按机型、传感器模式及编码格式确认。</p></fieldset>
+        <details className="form-disclosure"><summary><strong>联络与备注</strong><span>{project.dop || "摄影指导待定"}</span></summary><div className="form-grid four">
+          <label className="wide-field"><span>摄影指导</span><input value={project.dop} onChange={(event) => updateProject({ dop: event.target.value })} /></label>
+          <label className="wide-field"><span>联系方式</span><input value={project.contact} onChange={(event) => updateProject({ contact: event.target.value })} /></label>
+          <label className="full-field"><span>补充说明</span><textarea value={project.notes} onChange={(event) => updateProject({ notes: event.target.value })} rows={3} /></label>
+        </div></details>
+        <div className="basics-submit"><small>器材单将使用以上项目信息。</small><button className="button primary" type="submit" disabled={!project.name.trim()}>{destination === "history" ? "保存基本信息" : ready ? "保存并继续选器材" : "开始选择器材"}</button></div>
+      </form>
+    </details>;
+  }
+
+  const pageTitle: Record<View, string> = {
+    projects: "项目管理",
+    history: "历史项目",
+    library: editingBasics || !activeProject?.basicInfoConfirmed ? "项目信息" : "选择器材",
+    catalog: "总器材库",
+    kit: "当前项目",
+  };
+
+  return (
+    <main className="app-shell">
+      <a className="skip-link" href="#workspace-content" inert={modalOpen}>跳到工作区</a>
+      <aside className="sidebar" inert={modalOpen}>
+        <button className="brand-lockup" onClick={() => setView("projects")} aria-label="返回项目管理">
+          <span className="brand-mark" aria-hidden="true"><Image src="/brand/cinebox-logo-v2-128.png" width={44} height={44} alt="" unoptimized /></span>
+          <span><strong>CineBox</strong><small>摄影器材 · 项目工作台</small></span>
+        </button>
+
+        <details className="release-disclosure">
+          <summary>{appVersion}<span>更新内容</span></summary>
+          <div>{releaseNotes.map((release) => <section key={release.version}><strong>{release.version}<time>{release.date}</time></strong><ul>{release.items.map((item) => <li key={item}>{item}</li>)}</ul></section>)}</div>
+        </details>
+        <nav className="main-nav" aria-label="主要功能">
+          {([
+            ["projects", "项目管理"],
+            ["history", "历史项目"],
+            ["catalog", "总器材库"],
+          ] as [View, string][]).map(([target, label]) => (
+            <button key={target} className={view === target || target === "projects" && view === "library" ? "nav-item active" : "nav-item"} aria-current={view === target || target === "projects" && view === "library" ? "page" : undefined} onClick={() => {
+              if (target === "catalog") {
+                setCategory("全部"); setBrand("全部"); setQuery(""); setNamingFilter("全部");
+                setVisibleCount(72); setSeriesVisibleCount(12);
+              }
+              setView(target);
+            }}>
+              <span className="nav-index"><NavigationIcon view={target} /></span>
+              <span>{label}</span>
+              {target === "catalog" && <em>{equipment.length}</em>}
+              {target === "projects" && <em>{projects.filter((item) => item.status === "active").length}</em>}
+            </button>
+          ))}
+        </nav>
+
+        <div className="sidebar-project">
+          <span>当前项目</span>
+          <button className={view === "kit" ? "current-project-link active" : "current-project-link"} aria-current={view === "kit" ? "page" : undefined} onClick={() => setView("kit")}>
+            <strong>{project.name}</strong>
+            <small>{project.days} 天 · {project.cameraCount} 机位 · {kit.length} 项器材</small>
+            <span>打开项目</span>
+          </button>
+        </div>
+
+        <div className="sidebar-foot">
+          <span className="status-dot" />
+          <span>项目自动保存在当前设备</span>
+        </div>
+      </aside>
+
+      <section className="workspace" id="workspace-content" tabIndex={-1} aria-label={pageTitle[view]} inert={modalOpen}>
+        <header className="workspace-header">
+          <div>
+            <h1>{pageTitle[view]}</h1>
+          </div>
+          <div className="header-actions">
+            <button className="header-project" onClick={() => setView("kit")} aria-label={`打开当前器材单：${project.name}，${kit.length} 项器材`} title={project.name}><span>当前器材单 · {kit.length} 项</span><strong>{project.name}</strong></button>
+            <ActionMenu className="theme-menu" label="颜色模式" trigger={<ThemeIcon mode={themePreference ?? "system"} />} chevron={false}>
+            <div className="theme-switcher" role="radiogroup" aria-label="颜色模式" onKeyDown={handleRadioKeys}>
+              {themeOptions.map((option) => (
+                <button
+                  key={option.value}
+                  type="button"
+                  role="radio"
+                  aria-checked={(themePreference ?? "system") === option.value}
+                  tabIndex={(themePreference ?? "system") === option.value ? 0 : -1}
+                  className={(themePreference ?? "system") === option.value ? "active" : ""}
+                  title={option.label}
+                  aria-label={option.label}
+                  onClick={() => setThemePreference(option.value)}
+                >
+                  <ThemeIcon mode={option.value} />
+                  <span>{option.label}</span>
+                </button>
+              ))}
+            </div>
+            </ActionMenu>
+            <div className="undo-controls" role="group" aria-label="器材单修改历史">
+              <button disabled={!currentHistory.past.length} onClick={() => travelKit("undo")} aria-label="撤销清单修改" title={`撤销：${currentHistory.past.at(-1)?.label ?? "暂无修改"} · ⌘Z`}><ControlIcon kind="undo" /></button>
+              <button disabled={!currentHistory.future.length} onClick={() => travelKit("redo")} aria-label="重做清单修改" title="重做 · ⇧⌘Z"><ControlIcon kind="redo" /></button>
+            </div>
+          </div>
+        </header>
+
+        {view === "projects" && (
+          <section className="projects-view">
+            <div className="page-lead">
+              <div>
+                <h2>你的项目</h2>
+                <div className="project-shortcuts" aria-label="选择器材方式">
+                  <button onClick={() => setView("history")}>复用项目</button>
+                </div>
+              </div>
+              <div className="lead-actions">
+                <ActionMenu label="项目备份" trigger="备份">
+                  <button className="button ghost" onClick={exportProjectBackup}>导出项目备份</button>
+                  <button className="button ghost" onClick={() => importBackupRef.current?.click()}>导入并合并</button>
+                </ActionMenu>
+                <input ref={importBackupRef} className="visually-hidden" type="file" accept="application/json,.json" onChange={importProjectBackup} />
+                <button className="button primary" onClick={createNewProject}><ControlIcon kind="plus" />新建项目</button>
+              </div>
+            </div>
+
+            <div className="project-toolbar">
+              <div className="segmented">
+                {([["active", "进行中"], ["archived", "已归档"], ["all", "全部"]] as const).map(([value, label]) => (
+                  <button key={value} className={projectFilter === value ? "active" : ""} onClick={() => setProjectFilter(value)}>
+                    {label}
+                    <span>{value === "all" ? projects.length : projects.filter((item) => item.status === value).length}</span>
+                  </button>
+                ))}
+              </div>
+              <label className="search-field compact">
+                <ControlIcon kind="search" />
+                <input value={projectQuery} onChange={(event) => setProjectQuery(event.target.value)} placeholder="搜索项目、类型、摄影指导" aria-label="搜索项目" />
+              </label>
+            </div>
+
+            <div className="project-grid">
+              {filteredProjects.map((record) => (
+                <article className={record.id === activeProjectId ? "project-card current" : "project-card"} key={record.id}>
+                  <div className="project-card-top">
+                    <span className="project-type">{record.form.category}</span>
+                    <div className="project-card-badges">
+                      {record.id === activeProjectId && <span className="project-current">当前项目</span>}
+                      <span className={record.status === "archived" ? "project-status archived" : "project-status"}>{record.status === "archived" ? "已归档" : "进行中"}</span>
+                    </div>
+                  </div>
+                  <button className="project-open" onClick={() => selectProject(record.id)}>
+                    <h3>{record.form.name}</h3>
+                    <p>{record.form.type} · {record.form.days} 天 · {record.form.cameraCount} 机位</p>
+                    <span className="project-open-hint">填写信息 / 选器材 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" /></svg></span>
+                  </button>
+                  <dl>
+                    <div><dt>器材项目</dt><dd>{record.kit.length}</dd></div>
+                    <div><dt>拍摄日期</dt><dd>{record.form.shootDate || "待定"}</dd></div>
+                    <div><dt>摄影指导</dt><dd>{record.form.dop || "待定"}</dd></div>
+                  </dl>
+                  <div className="project-card-actions">
+                    <button onClick={() => editProjectBasics(record.id)}>编辑</button>
+                    <button onClick={() => duplicateProject(record)}>复制</button>
+                    <button onClick={() => toggleArchive(record)}>{record.status === "active" ? "归档" : "恢复"}</button>
+                    <button className="danger" onClick={() => deleteProject(record)}>删除</button>
+                  </div>
+                </article>
+              ))}
+            </div>
+            {!filteredProjects.length && <div className="empty-state"><strong>没有匹配的项目</strong><span>调整筛选，或创建一个新项目。</span></div>}
+          </section>
+        )}
+
+        {view === "history" && (
+          <section className="history-view">
+            <div className="page-lead"><p>预览器材配置，复用为新项目。</p><button className="button primary" disabled={analyzingHistory} onClick={(event) => chooseHistoryProjectFile(createId("imported-history"), event.currentTarget)}><ControlIcon kind="plus" />上传历史项目</button></div>
+            <input ref={importHistoryRef} className="visually-hidden" type="file"
+              accept=".pdf,.xls,.xlsx,.xlsm,.xlsb,.ods,.csv,.json,.txt,.md,application/pdf,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/csv,text/plain,application/json"
+              onChange={importHistoryProject} />
+            <div className="history-card-grid">
+              {projects.filter((record) => record.kit.length).map((record) => <article className="history-card" key={record.id}>
+                <h3>{record.form.name}</h3>
+                <dl className="history-card-stats">
+                  <div><dt>器材</dt><dd>{record.kit.length}<span>项</span></dd></div>
+                  <div><dt>机位</dt><dd>{record.form.cameraCount}<span>个</span></dd></div>
+                  <div><dt>型号</dt><dd className="history-camera-model">{historyCameraModel(record.kit, equipmentMap) || "—"}</dd></div>
+                </dl>
+                <div className="history-card-actions">
+                  <button aria-label={`预览${record.form.name}`} onClick={(event) => openSavedProjectPreview(record, event.currentTarget)}>预览</button>
+                  <button disabled={analyzingHistory} onClick={(event) => chooseHistoryProjectFile(record.id, event.currentTarget)}>{analyzingHistory && historyImportTargetId === record.id ? "正在分析…" : "上传替换"}</button>
+                  <button className="history-reuse" onClick={() => reuseSavedProject(record)}>复用该项目</button>
+                </div>
+              </article>)}
+              {historyProfiles.map((profile) => <article className="history-card" key={profile.id}>
+                <h3>{historyProjectName(profile)}</h3>
+                <dl className="history-card-stats">
+                  <div><dt>器材</dt><dd>{profile.items.length}<span>项</span></dd></div>
+                  <div><dt>机位</dt><dd>{profile.cameraCount}<span>个</span></dd></div>
+                  <div><dt>型号</dt><dd className="history-camera-model">{historyCameraModel(profile.items.map(id => ({ id })), equipmentMap) || "—"}</dd></div>
+                </dl>
+                <div className="history-card-actions">
+                  <button aria-label={`预览${historyProjectName(profile)}`} onClick={(event) => openHistoryProjectPreview(profile, event.currentTarget)}>预览</button>
+                  <button disabled={analyzingHistory} onClick={(event) => chooseHistoryProjectFile(profile.id, event.currentTarget)}>{analyzingHistory && historyImportTargetId === profile.id ? "正在分析…" : "上传替换"}</button>
+                  <button className="history-reuse" disabled={!profile.items.length} onClick={() => reuseHistoryProject(profile)}>复用该项目</button>
+                </div>
+              </article>)}
+            </div>
+            <p className="history-local-note">支持 Excel 与文字 PDF。文件在当前浏览器解析，核对后生成或替换历史项目；扫描 PDF 请先转为可识别文字。</p>
+          </section>
+        )}
+
+        {(view === "library" || view === "catalog") && (
+          <section className="library-view">
+            {view === "catalog" && <div className="page-lead"><p>按品类与品牌浏览全部器材。</p></div>}
+            {view === "library" && <div className="project-flow-bar"><button onClick={() => setView("projects")}>返回项目管理</button><button onClick={() => setView("kit")}>查看该项目器材单 · {kit.length} 项</button></div>}
+            {view === "library" && renderProjectBasics("library")}
+            {(view === "catalog" || activeProject?.basicInfoConfirmed && !editingBasics) && <>
+
+            <div className="filter-bar">
+              <label className="search-field">
+                <ControlIcon kind="search" />
+                <input value={query} onChange={(event) => { setQuery(event.target.value); setVisibleCount(72); setSeriesVisibleCount(12); }} placeholder="搜索品牌、系列、型号、中英文旧名称或用途" aria-label="搜索器材" />
+              </label>
+              <label className="select-field">
+                <span>器材类型</span>
+                <select aria-label="器材类型" value={namingFilter} onChange={(event) => { setNamingFilter(event.target.value); setVisibleCount(72); setSeriesVisibleCount(12); }}>
+                  <option value="全部">全部</option><option value="official-model">品牌型号</option><option value="generic">通用器材</option>
+                </select>
+              </label>
+              <button className="button ghost" onClick={() => { setQuery(""); setCategory("全部"); setBrand("全部"); setNamingFilter("全部"); setVisibleCount(72); setSeriesVisibleCount(12); }}>清除</button>
+            </div>
+
+            <div className="category-picker">
+              <label className="select-field"><span>品类</span>
+                <select aria-label="选择器材品类" value={category} onChange={(event) => { setCategory(event.target.value as typeof category); setBrand("全部"); setVisibleCount(72); setSeriesVisibleCount(12); }}>
+                  {["全部", ...categories].map((name) => <option key={name} value={name}>{name} · {name === "全部" ? equipment.length : equipment.filter((item) => item.category === name).length}</option>)}
+                </select>
+              </label>
+            </div>
+            <div className="category-strip" aria-label="器材分类">
+              <button className={category === "全部" ? "category-tab active" : "category-tab"} aria-pressed={category === "全部"} onClick={() => { setCategory("全部"); setBrand("全部"); setVisibleCount(72); setSeriesVisibleCount(12); }}>
+                <span>全部</span><b>{equipment.length}</b>
+              </button>
+              {categories.map((name) => (
+                <button key={name} className={category === name ? "category-tab active" : "category-tab"} aria-pressed={category === name} onClick={() => { setCategory(name); setBrand("全部"); setVisibleCount(72); setSeriesVisibleCount(12); }}>
+                  <span>{name}</span><b>{equipment.filter((item) => item.category === name).length}</b>
+                </button>
+              ))}
+            </div>
+
+            <BrandFilter key={category} brands={brands} labels={menuLabels} category={category} selected={brand} onSelect={(name) => { setBrand(name); setVisibleCount(72); setSeriesVisibleCount(12); }} />
+
+            {view === "library" && !!filteredSeries.length && (
+              <details className="series-browser" >
+                <summary className="series-heading">
+                  <h3 id="series-heading">按系列补充器材</h3>
+                  <span>{filteredSeries.length} 个系列</span>
+                  <b className="series-expand">展开</b><b className="series-collapse">收起</b>
+                </summary>
+                <div className="series-grid">
+                  {filteredSeries.slice(0, seriesVisibleCount).map((series) => {
+                    const selectedCount = series.items.filter((item) => kit.some((row) => row.id === item.id)).length;
+                    const allSelected = selectedCount === series.items.length;
+                    return (
+                      <article className="series-card" key={series.id} data-series-id={series.id}>
+                        <div className="series-card-head">
+                          <div className="series-title"><span>{canonicalBrandLabels[series.brand] ?? series.brand}</span><h4>{series.name}</h4><small>{selectedCount} / {series.items.length} 已选</small></div>
+                          <button className={allSelected ? "series-all selected" : "series-all"} disabled={allSelected} onClick={() => toggleSeries(series)} aria-label={`补入 ${series.name} 未选器材`}>
+                            {allSelected ? "已全部加入" : `补入 ${series.items.length - selectedCount} 项`}
+                          </button>
+                        </div>
+                        <details className="series-details">
+                          <summary>选择其中几件 <span>⌄</span></summary>
+                          <div className="series-items">
+                            {series.items.map((item) => {
+                              const selected = kit.some((row) => row.id === item.id);
+                              return (
+                                <button key={item.id} className={selected ? "series-item selected" : "series-item"} disabled={selected} onClick={() => toggleSeriesItem(item, series.name)} aria-pressed={selected}>
+                                  <span className="selection-box">{selected ? "✓" : ""}</span><span><strong>{item.name}</strong><small>{item.unit}</small></span>
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </details>
+                      </article>
+                    );
+                  })}
+                </div>
+                {seriesVisibleCount < filteredSeries.length && <button className="series-more" onClick={() => setSeriesVisibleCount((count) => count + 12)}>再显示 12 个系列</button>}
+              </details>
+            )}
+
+            <div className="result-meta">
+              <span>找到 <b>{formatCount(filteredEquipment.length)}</b> 个标准条目</span>
+              <span>已加入的器材不会重复增加数量</span>
+            </div>
+
+            <div className="equipment-list">
+              <div className="equipment-list-head"><span>器材名称 / 技术指标</span><span>操作</span></div>
+              {filteredEquipment.slice(0, visibleCount).map((item) => {
+                const inKit = kit.some((row) => row.id === item.id);
+                const card = equipmentCardData[item.id];
+                const name = card?.name || item.name;
+                const specs = card?.technicalSpecs || [];
+                return (
+                  <article className="equipment-row" key={item.id}>
+                    <div className="equipment-name">
+                      <h3>{name}</h3>
+                      <dl className="equipment-specs" aria-label="技术指标">
+                        {specs.map(spec => <div key={spec.label} title={spec.scope === "series" ? `${card.seriesLabel} · 系列参考，具体库存配置需核对` : spec.provenance === "inventory" ? "依据现有库存记录" : "依据厂商技术资料"}><dt>{spec.label}</dt><dd>{spec.value}</dd></div>)}
+                      </dl>
+                    </div>
+                    <div className="equipment-actions">
+                      <button className={inKit ? "row-add added" : "row-add"} disabled={inKit} aria-label={`${inKit ? "已加入" : "加入"}${name}`} onClick={() => addToKit(item.id)}>{inKit ? "已加入" : "加入"}</button>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+
+            {visibleCount < filteredEquipment.length && (
+              <button className="load-more" onClick={() => setVisibleCount((count) => count + 72)}>
+                显示更多 · 还剩 {formatCount(filteredEquipment.length - visibleCount)} 条
+              </button>
+            )}
+            {!filteredEquipment.length && <div className="empty-state"><strong>没有找到匹配器材</strong><span>试试旧称、英文型号或更换品牌筛选。</span></div>}
+            </>}
+          </section>
+        )}
+
+        {view === "kit" && (
+          <section className="kit-view">
+            <div className="kit-overview">
+              <div>
+                <h2>{project.name}</h2>
+                <p>{project.type} · {project.days} 天 · {project.cameraCount} 机位 · {project.resolution} · {project.aspectRatio} · {project.baseFps}fps</p>
+              </div>
+              <div className="kit-metrics">
+                <div><strong>{kit.length}</strong><span>器材项目</span></div>
+                <div><strong>{selectedUnits}</strong><span>合计数量</span></div>
+
+              </div>
+              <div className="kit-actions">
+                <button className="button ghost" onClick={() => editProjectBasics()}>项目基本信息</button>
+                <button className="button ghost" onClick={() => setView("library")}>添加器材</button>
+                <span className={missingSystemChecks.length ? "inline-audit-status warning" : "inline-audit-status"}>配套覆盖 {passedSystemChecks}/{systemChecks.length || "—"} · 待确认 {statusCounts.pending}
+                </span>
+                <button
+                  className="button primary"
+                  onClick={exportExcel}
+                  disabled={exportingExcel || !kit.length}
+                  aria-busy={exportingExcel}
+                  title="生成 .xlsx 并选择保存位置"
+                >
+                  {exportingExcel ? "正在生成…" : "导出 Excel"}
+                </button>
+              </div>
+            </div>
+
+            {!!kit.length && <div className="kit-review-toolbar">
+              <label className="search-field"><ControlIcon kind="search" /><input aria-label="搜索当前器材单" value={kitQuery} onChange={(event) => setKitQuery(event.target.value)} placeholder="搜索型号或备注" /></label>
+              <div className="segmented" role="group" aria-label="清单筛选">
+                <button aria-pressed={kitScope === "all"} className={kitScope === "all" ? "active" : ""} onClick={() => setKitScope("all")}>全部 {kit.length}</button>
+                <button aria-pressed={kitScope === "pending"} className={kitScope === "pending" ? "active" : ""} onClick={() => setKitScope("pending")}>待确认 {statusCounts.pending}</button>
+              </div>
+              <select aria-label="筛选清单类别" value={kitCategory} onChange={(event) => setKitCategory(event.target.value as typeof kitCategory)}>{["全部", ...categories].map((name) => <option key={name}>{name}</option>)}</select>
+              <small>导出包含完整器材清单</small>
+            </div>}
+
+            {activeProject?.requirementsChanged && <div className="requirements-notice" role="status"><div><strong>拍摄规格已修改</strong><p>请核对现有器材与最新的机位、分辨率及帧率要求。</p></div><button className="button ghost" onClick={() => updateActive((current) => ({ ...current, requirementsChanged: false }))}>已核对清单</button></div>}
+            {!!kit.length && (
+              <details className="kit-brief-details"><summary>项目基本信息 · {project.resolution} / {project.aspectRatio} / {project.baseFps}fps</summary><section className="decision-brief-strip" aria-label="项目基本信息摘要">
+                <div><span>拍摄周期</span><strong>{formatShootRange(project.shootDate, project.days)}</strong><small>{project.days} 天 · {project.cameraCount} 机位</small></div>
+                <div><span>拍摄参数</span><strong>{project.resolution} · {project.aspectRatio}</strong><small>{project.baseFps}fps{project.highSpeedFps > project.baseFps ? ` / 升格 ${project.highSpeedFps}fps` : ""}</small></div>
+                <div><span>摄影指导</span><strong>{project.dop || "待定"}</strong><small>{project.contact || "联系方式待定"}</small></div>
+                <div className="decision-statuses"><span>清单状态</span><strong>{statusCounts.confirmed} 已确认 · {statusCounts.pending} 待确认</strong><small>{statusCounts.manual} 手动添加</small></div>
+              </section></details>
+            )}
+
+            {!!kit.length && missingSystemChecks.length > 0 && (
+              <section className="system-audit-panel has-missing">
+                <header>
+                  <div><h3>{missingSystemChecks.length} 组配套项目待补充</h3><p>补充后可撤销，兼容性与数量仍需确认。</p></div>
+                  <button className="button primary" onClick={completeAllSystemRules}>一键补齐</button>
+                </header>
+                <details className="system-audit-details"><summary>查看缺少项目与配置依据</summary><div className="system-audit-grid">
+                    {missingSystemChecks.map((check) => (
+                      <article className={check.severity} key={check.id}>
+                        <div><span>{check.severity === "warning" ? "必需检查" : "建议检查"}</span><h4>{check.title}</h4><p>{check.detail}</p></div>
+                        <div className="missing-items"><span>当前缺少</span><strong>{check.missing.map((item) => `${item.label}${item.qty > 1 ? ` ×${item.qty}` : ""}`).join("、")}</strong></div>
+                        <details><summary>配置依据</summary><p>{check.evidence}</p></details>
+                        <button onClick={() => addMissingSystemRule(check)}>{check.autoAdd ? "补齐配套项" : "加入待确认清单"} · {check.missing.length} 项</button>
+                      </article>
+                    ))}
+                  </div></details>
+              </section>
+            )}
+
+            {!!kit.length && !missingSystemChecks.length && (
+              <section className={statusCounts.pending ? "audit-pass-strip has-pending" : "audit-pass-strip"} aria-label="摄影系统基础覆盖">
+                <span className="audit-pass-icon">{statusCounts.pending ? "!" : "✓"}</span>
+                <div><strong>{statusCounts.pending ? `基础配套已列入；还有 ${statusCounts.pending} 项待确认` : "基础配套已列入"}</strong><small>供电、存储、镜头控制、监看与承托均已有对应项；“待确认”器材仍需在测试日和租赁方复核。</small></div>
+                <b>{passedSystemChecks}/{systemChecks.length}</b>
+              </section>
+            )}
+
+            {!!kit.length && checks.length > 0 && (
+              <div className={checks.some((item) => item.level === "warning") ? "dop-checks has-warning" : "dop-checks"}>
+                <div><strong>{checks.length ? "发单前还有几项需要确认" : "基础配置检查通过"}</strong></div>
+                <ul>{checks.map((check) => <li className={check.level} key={check.text}>{check.text}</li>)}</ul>
+              </div>
+            )}
+
+            <details className="custom-item-panel">
+              <summary><strong>添加库外器材或消耗品</strong><b>展开</b></summary>
+              <div className="custom-item-fields">
+                <input aria-label="库外器材名称" value={customDraft.name} onChange={(event) => setCustomDraft({ ...customDraft, name: event.target.value })} placeholder="器材名称" />
+                <input aria-label="库外器材品牌" value={customDraft.brand} onChange={(event) => setCustomDraft({ ...customDraft, brand: event.target.value })} placeholder="品牌" />
+                <select aria-label="库外器材类别" value={customDraft.category} onChange={(event) => setCustomDraft({ ...customDraft, category: event.target.value as EquipmentCategory })}>
+                  {categories.map((name) => <option key={name}>{name}</option>)}
+                </select>
+                <input aria-label="库外器材单位" value={customDraft.unit} onChange={(event) => setCustomDraft({ ...customDraft, unit: event.target.value })} placeholder="单位" />
+                <button className="button ghost" onClick={addCustomItem}>加入器材单</button>
+              </div>
+            </details>
+
+            {!kit.length ? (
+              <div className="empty-state large">
+                <strong>当前器材单为空</strong>
+                <span>填写项目基本信息后，从器材库选择，或复用历史项目。</span>
+                <button className="button primary" onClick={() => setView("library")}>直接选择器材</button>
+              </div>
+            ) : (
+              <div className="kit-groups">
+                {!visibleKitGroups.length && <div className="empty-state"><strong>没有符合筛选的器材</strong><button className="button ghost" onClick={() => { setKitQuery(""); setKitScope("all"); setKitCategory("全部"); }}>显示全部器材</button></div>}
+                {visibleKitGroups.map((group, groupIndex) => (
+                  <section className="kit-group" key={group.name}>
+                    <header><div><span>{String(groupIndex + 1).padStart(2, "0")}</span><h3>{group.name}</h3></div><small>{group.rows.length} 项</small></header>
+                    <div className="kit-table-head"><span>设备名称</span><span>数量</span><span>单位</span><span>备注</span><span>操作</span></div>
+                    {group.rows.map((row) => {
+                      const item = resolveKitEquipment(row)!;
+                      return (
+                        <div className="kit-row" key={row.id}>
+                          <div className="kit-item-name">
+                            <div className="kit-name-line">
+                              <strong>{item.name}</strong>
+                              <select
+                                className={`kit-status status-${kitItemStatus(row)}`}
+                                aria-label={`${item.name}确认状态`}
+                                value={kitItemStatus(row)}
+                                onChange={(event) => updateKit(row.id, { status: event.target.value as KitItem["status"] })}
+                              >
+                                {(Object.keys(statusLabels) as Array<NonNullable<KitItem["status"]>>).map((status) => <option key={status} value={status}>{statusLabels[status]}</option>)}
+                              </select>
+                            </div>
+                            <small>{item.brand} · {item.subcategory}</small><em>{row.reason}</em>
+                          </div>
+                          <input aria-label={`${item.name}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} />
+                          <span>{item.unit}</span>
+                          <input aria-label={`${item.name}备注`} value={row.note} onChange={(event) => updateKit(row.id, { note: event.target.value })} placeholder="添加备注" />
+                          <div className="kit-row-actions">
+                            <button className="swap-button" onClick={(event) => openSwap(row.id, event.currentTarget)}>更换</button>
+                            <button className="remove-button" aria-label={`删除${item.name}`} onClick={() => { setKit((current) => current.filter((itemRow) => itemRow.id !== row.id), `移除 ${item.name}`); setToast(`已移除 ${item.name}，可撤销`); }}><ControlIcon kind="close" /></button>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </section>
+                ))}
+              </div>
+            )}
+          </section>
+        )}
+      </section>
+
+      {swapTarget && swapTargetItem && (
+        <div className="swap-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setSwapTargetId(null); }}>
+          <section className="swap-dialog" role="dialog" aria-modal="true" aria-labelledby="swap-title">
+            <header>
+              <div><h2 id="swap-title">替换 {swapTargetItem.name}</h2><p>{swapTargetItem.category === "摄影机" ? "联动替换先预览清单变化；仅换机身会标为待确认。数量和备注保留。" : "系统保留数量与备注，并优先显示同子类别、同品牌及相近配置强度的器材。"}</p></div>
+              <button aria-label="关闭替换面板" onClick={() => setSwapTargetId(null)}><ControlIcon kind="close" /></button>
+            </header>
+            {!swapCustom && !swapPreview && <><label className="swap-search"><ControlIcon kind="search" /><input autoFocus defaultValue="" onCompositionStart={() => { swapComposing.current = true; }} onCompositionEnd={(event) => { swapComposing.current = false; setSwapQuery(event.currentTarget.value); }} onChange={(event) => { if (!swapComposing.current) setSwapQuery(event.target.value); }} placeholder={`搜索${swapTargetItem.category}中的可替换器材`} aria-label="搜索替换器材" /></label>
+            <div className="swap-scope" role="group" aria-label="替换范围">
+              {([[
+                "recommended", "相近器材"
+              ], ["brand", `同品牌 · ${swapTargetItem.brand}`], ["all", `全部${swapTargetItem.category}`]] as const).map(([scope, label]) => (
+                <button key={scope} type="button" aria-pressed={swapScope === scope} className={swapScope === scope ? "active" : ""} onClick={() => setSwapScope(scope)}>{label}</button>
+              ))}
+              <span>{swapCandidates.length} 个结果</span>
+            </div>
+            </>}
+            {!swapCustom && !swapPreview && <div className="swap-results">
+              {swapCandidates.map((candidate) => {
+                const matchLabel = candidate.subcategory === swapTargetItem.subcategory ? "同子类别" : candidate.brand === swapTargetItem.brand ? "同品牌" : "同大类";
+                return (
+                  <article className="swap-candidate" key={candidate.id}>
+                    <span className="candidate-brand">{canonicalBrandLabels[candidate.brand] ?? candidate.brand}</span>
+                    <span><strong>{candidate.name}</strong><small>{matchLabel} · {candidate.subcategory} · 配置强度 {candidate.costTier}/5</small></span>
+                    <div>
+                      {swapTargetItem.category === "摄影机" && <button className="swap-system" onClick={() => replaceKitItem(candidate.id, "system")}>预览联动替换</button>}
+                      <button onClick={() => replaceKitItem(candidate.id, "single")}>{swapTargetItem.category === "摄影机" ? "仅换机身" : "替换"}</button>
+                    </div>
+                  </article>
+                );
+              })}
+              {!swapCandidates.length && <div className="swap-empty">没有找到未在清单中的同类器材。可以使用下方的“自定义器材”。</div>}
+            </div>}
+            {swapPreview && <div className="swap-change-preview">
+              <h3>检查换机后的清单变化</h3>
+              <p>替换为 {swapPreview.name}。已保留人工调整、数量和备注；请核对移除项和新增配套。</p>
+              {([['added', '新增'], ['removed', '移除'], ['changed', '调整']] as const).map(([key, label]) => {
+                const rows = describeKitChange(kit, swapPreview.rows)[key];
+                return <section key={key}><h4>{label} {rows.length} 项</h4><ul>{rows.map((row) => {
+                  const before = kit.find((item) => item.id === row.id);
+                  return <li key={row.id}><strong>{resolveKitEquipment(row)?.name}</strong> × {row.qty} · {statusLabels[kitItemStatus(row)]}
+                    {key === "changed" && before && <small>原数量 {before.qty} · 原状态 {statusLabels[kitItemStatus(before)]}{before.note !== row.note ? ` · 备注：${before.note || "空"} → ${row.note || "空"}` : ""}</small>}
+                  </li>;
+                })}</ul></section>;
+              })}
+              <button className="button ghost" onClick={() => setSwapPreview(null)}>返回选型</button>
+              <button autoFocus className="button primary" onClick={() => { setKit(swapPreview.rows, `联动替换 ${swapPreview.name}`); setSwapTargetId(null); setSwapPreview(null); setToast("换机完成；可撤销，兼容项仍需复核"); }}>应用这些变化</button>
+            </div>}
+            {swapCustom && <form id="swap-custom-form" className="swap-custom-form" onSubmit={(event) => { event.preventDefault(); replaceWithCustom(); }}>
+              <p>将当前项目中的此项替换为自定义器材，保留数量和备注。器材兼容性需自行确认。</p>
+              <label>器材名称<input autoFocus required maxLength={200} value={swapCustom.name} onChange={(event) => setSwapCustom({ ...swapCustom, name: event.target.value })} /></label>
+              <label>品牌<input maxLength={120} value={swapCustom.brand} onChange={(event) => setSwapCustom({ ...swapCustom, brand: event.target.value })} /></label>
+              <label>类别<select value={swapCustom.category} onChange={(event) => setSwapCustom({ ...swapCustom, category: event.target.value as EquipmentCategory })}>{categories.map((item) => <option key={item}>{item}</option>)}</select></label>
+              <label>单位<input required maxLength={20} value={swapCustom.unit} onChange={(event) => setSwapCustom({ ...swapCustom, unit: event.target.value })} /></label>
+            </form>}
+            {!swapPreview && <footer className="swap-footer">
+              {swapCustom ? <><button type="button" className="button ghost" onClick={() => { setSwapCustom(null); setSwapQuery(""); }}>直接选择器材</button><button className="button primary" type="submit" form="swap-custom-form" disabled={!swapCustom.name.trim() || !swapCustom.unit.trim()}>确认自定义替换</button></> : <button type="button" className="button ghost" onClick={() => setSwapCustom({ name: swapQuery, brand: "", category: swapTargetItem.category, subcategory: "自定义", unit: swapTargetItem.unit })}><ControlIcon kind="plus" />自定义器材</button>}
+            </footer>}
+          </section>
+        </div>
+      )}
+
+      {historyPreview && (
+        <div className="history-preview-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setHistoryPreview(null); }}>
+          <section className="history-preview-dialog" role="dialog" aria-modal="true" aria-labelledby="history-preview-title">
+            <header>
+              <div>
+                <h2 id="history-preview-title">{historyPreview.mode === "analysis" ? isImportedHistoryId(historyPreview.targetId) && !historyOverrides[historyPreview.targetId] ? "确认新增历史项目" : "确认上传替换" : historyProjectName(historyPreview.profile)}</h2>
+                <p>{historyPreview.mode === "analysis" ? "核对识别的器材、数量与项目名称，再保存为历史项目。" : `历史项目 · ${historyProjectName(historyPreview.profile)}｜${historyPreview.profile.subtitle}`}</p>
+              </div>
+              <button aria-label="关闭历史项目预览" onClick={() => setHistoryPreview(null)}><ControlIcon kind="close" /></button>
+            </header>
+
+            <div className="history-preview-body">
+              <section className="history-analysis-summary">
+                <div className="history-analysis-status">
+                  <span>{historyPreview.record ? "已保存项目" : historyPreview.profile.source ? "已导入项目" : "历史底稿"}</span>
+                  {historyPreview.profile.source && <b>识别置信度 {historyPreview.profile.source.confidence}</b>}
+                </div>
+                {historyPreview.mode === "analysis" && (
+                  <label className="history-custom-name">
+                    <span>历史项目名称（可选）</span>
+                    <input
+                      value={historyPreview.profile.projectName ?? historyPreview.profile.customName ?? ""}
+                      onChange={(event) => {
+                        const projectName = event.target.value;
+                        setHistoryPreview((current) => current ? {
+                          ...current,
+                          profile: {
+                            ...current.profile,
+                            projectName,
+                            customName: projectName,
+                            label: formatHistoryProjectName(current.profile.type),
+                          },
+                        } : current);
+                      }}
+                      placeholder="例如：春季品牌广告"
+                      maxLength={80}
+                    />
+                    <small>名称将显示在历史项目卡片顶部；留空时显示“自定义导入项目”。</small>
+                  </label>
+                )}
+                <dl>
+                  <div><dt>项目类型</dt><dd>{historyPreview.profile.type}</dd></div>
+                  <div><dt>机位数量</dt><dd>{historyPreview.profile.cameraCount}</dd></div>
+                  <div><dt>画面方向</dt><dd>{historyPreview.profile.screenFormat}</dd></div>
+                  {historyPreview.record && <div><dt>拍摄天数</dt><dd>{historyPreview.record.form.days} 天</dd></div>}
+                </dl>
+                {historyPreview.profile.source && (
+                  <div className="history-source-line">
+                    <span>导入信息</span>
+                    <strong>{historyPreview.profile.source.format} 文件</strong>
+                    <small>{new Date(historyPreview.profile.source.importedAt).toLocaleString("zh-CN")}</small>
+                  </div>
+                )}
+              </section>
+
+              <section className="history-equipment-preview">
+                <header><div><h3>器材清单</h3></div><strong>{historyPreview.profile.items.length}<small> 项</small></strong></header>
+                <div>
+                  {historyPreview.profile.items.map((id, index) => {
+                    const row = historyPreview.record?.kit[index];
+                    const item = row ? resolveKitEquipment(row) : equipmentById(id);
+                    if (!item) return null;
+                    return (
+                      <article key={id}>
+                        <span>{String(index + 1).padStart(2, "0")}</span>
+                        <div><strong>{item.name}</strong><small>{item.category}{row?.note ? ` · ${row.note}` : ""}</small></div>
+                        <b>×{historyPreview.profile.quantities?.[id] ?? 1}</b>
+                      </article>
+                    );
+                  })}
+                  {!historyPreview.profile.items.length && (
+                    <div className="history-analysis-empty">
+                      <strong>尚未识别出站内标准器材</strong>
+                      <span>请检查文件是否包含清晰的器材名称或型号；此结果不能用于替换。</span>
+                    </div>
+                  )}
+                </div>
+              </section>
+
+            </div>
+
+            <footer>
+              <div>
+                {historyPreview.profile.source && historyPreview.mode === "view" && builtInHistoryProfiles.some((profile) => profile.id === historyPreview.targetId) && (
+                  <button type="button" className="danger-link" onClick={() => restoreBuiltInHistoryProject(historyPreview.targetId)}>恢复内置项目</button>
+                )}
+              </div>
+              <div>
+                <button type="button" className="button ghost" onClick={() => setHistoryPreview(null)}>{historyPreview.mode === "analysis" ? "取消" : "关闭"}</button>
+                {historyPreview.mode === "analysis" ? (
+                  <button type="button" className="button primary" disabled={!historyPreview.profile.items.length} onClick={confirmHistoryProjectReplacement}>{isImportedHistoryId(historyPreview.targetId) && !historyOverrides[historyPreview.targetId] ? "保存历史项目" : "确认分析并替换"}</button>
+                ) : (
+                  <button type="button" className="button primary" disabled={analyzingHistory} onClick={() => chooseHistoryProjectFile(historyPreview.targetId)}>上传并替换</button>
+                )}
+              </div>
+            </footer>
+          </section>
+        </div>
+      )}
+
+      {toast && <div className="toast" role="status">{toast}</div>}
+    </main>
+  );
+}

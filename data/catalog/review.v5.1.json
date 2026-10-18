@@ -1,0 +1,4753 @@
+{
+  "version": "V5.1",
+  "checkedAt": "2026-10-07",
+  "scope": {
+    "namingRowsScanned": 2013,
+    "cameraBrands": 10,
+    "lightingManufacturerBrands": 12,
+    "basis": "库内现有品牌及通用记录中可识别厂商；代表系列复核，非所有历史SKU穷举",
+    "namingRowsAfterReview": 2099,
+    "newManufacturerModels": 83,
+    "splitSelectionRecords": 6
+  },
+  "brands": [
+    {
+      "brand": "ARRI",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 6,
+      "newIds": [
+        "v51-arri-alexa-265",
+        "v51-arri-alexa-35-xtreme"
+      ],
+      "representativeIds": [
+        "v51-arri-alexa-265",
+        "v51-arri-alexa-35-xtreme"
+      ],
+      "sources": [
+        "https://www.arri.com/en/cine-systems/cine-cameras/alexa-265",
+        "https://www.arri.com/en/cine-systems/cine-cameras/alexa-35-xtreme",
+        "https://www.arri.com/en/cine-systems/cine-cameras"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Canon",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 8,
+      "newIds": [
+        "v51-canon-eos-c400",
+        "v51-canon-eos-c50",
+        "v51-canon-eos-r1",
+        "v51-canon-eos-r6-mark-iii"
+      ],
+      "representativeIds": [
+        "v51-canon-eos-c400",
+        "v51-canon-eos-c50",
+        "v51-canon-eos-r1",
+        "v51-canon-eos-r6-mark-iii"
+      ],
+      "sources": [
+        "https://www.canon.com.cn/product/eosc400/",
+        "https://www.canon.com.cn/product/eosc50/",
+        "https://www.canon.com.cn/product/r1/",
+        "https://www.canon.com.cn/product/r6iii/index.html",
+        "https://www.canon.com.cn/product/eosc400/spec.html",
+        "https://www.canon.com.cn/product/eosc50/spec.html",
+        "https://www.canon.com.cn/info/products/2932.html",
+        "https://www.canon.com.cn/product/r1/spec.html"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "DJI",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 12,
+      "newIds": [],
+      "representativeIds": [
+        "cam-dji-action2",
+        "eq-通用-飞机御2pro-移动器材",
+        "eq-通用-飞机御3pro-移动器材",
+        "v5-dji-mavic-4-pro",
+        "cam-dji-osmo-360-ii",
+        "v5-dji-osmo-action-6",
+        "v5-dji-osmo-pocket-4p",
+        "cam-ronin4d",
+        "cam-dji-ronin4d-8k"
+      ],
+      "sources": [
+        "https://www.dji.com/products/osmo",
+        "https://www.dji.com/ronin-4d",
+        "https://repair.dji.com/help/content?customId=01700006555&documentType=&lang=en&paperDocType=ARTICLE&re=US&spaceId=17",
+        "https://www.dji.com/media-center/announcements/dji-release-osmo-360-2"
+      ],
+      "conclusion": "现有代表系列已覆盖本轮确认的在售型号，未发现有充分官方依据的缺项。",
+      "notes": []
+    },
+    {
+      "brand": "Freefly",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 2,
+      "newIds": [
+        "v51-freefly-ember-s2-5k"
+      ],
+      "representativeIds": [
+        "v51-freefly-ember-s2-5k"
+      ],
+      "sources": [
+        "https://freeflysystems.com/knowledge-base/2026-nab-faq",
+        "https://freeflysystems.com/ember-s5k"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "GoPro",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 6,
+      "newIds": [
+        "v51-gopro-hero13-black",
+        "v51-gopro-mission-1-pro",
+        "v51-gopro-mission-1-pro-ils"
+      ],
+      "representativeIds": [
+        "v51-gopro-hero13-black",
+        "v51-gopro-mission-1-pro",
+        "v51-gopro-mission-1-pro-ils"
+      ],
+      "sources": [
+        "https://gopro.com/en/us/shop/cameras/learn/hero13black/CHDHX-131-master.html",
+        "https://gopro.com/en/us/news/mission-1-series-now-available",
+        "https://gopro.com/en/us/shop/learn-cameras/mission-1-pro-ils",
+        "https://gopro.com/en/us/news",
+        "https://gopro.com/en/us/news/gopro-announces-hero13-black-and-tiny-hero-camera"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Insta360",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 2,
+      "newIds": [
+        "v51-insta360-ace-pro-2",
+        "v51-insta360-x6"
+      ],
+      "representativeIds": [
+        "v51-insta360-ace-pro-2",
+        "v51-insta360-x6"
+      ],
+      "sources": [
+        "https://www.insta360.com/cn/product/insta360-ace-pro2",
+        "https://news.insta360.com/insta360x6/",
+        "https://www.insta360.com/cn/",
+        "https://www.insta360.com/cn/product/compare",
+        "https://onlinemanual.insta360.com/x3/zh-cn/specs/hardware"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Panasonic",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 3,
+      "newIds": [
+        "v51-panasonic-lumix-gh7",
+        "v51-panasonic-lumix-s1ii",
+        "v51-panasonic-lumix-s1rii"
+      ],
+      "representativeIds": [
+        "v51-panasonic-lumix-gh7",
+        "v51-panasonic-lumix-s1ii",
+        "v51-panasonic-lumix-s1rii"
+      ],
+      "sources": [
+        "https://na.panasonic.com/news/panasonic-announces-new-lumix-gh7-micro-four-thirds-mirrorless-camera",
+        "https://consumer.panasonic.cn/product/cameras-camcorders/lumix-series/lumix-s-series/dc-s1m2gk.html",
+        "https://consumer.panasonic.cn/product/cameras-camcorders/lumix-series/lumix-s-series/dc-s1rm2.html",
+        "https://consumer.panasonic.cn/product/cameras-camcorders/lumix-series/lumix-s-series/"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Phantom",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 1,
+      "newIds": [
+        "v51-phantom-tmx-7510"
+      ],
+      "representativeIds": [
+        "v51-phantom-tmx-7510"
+      ],
+      "sources": [
+        "https://www.phantomhighspeed.com/zh-cn/products/cameras/tmx/7510",
+        "https://www.phantomhighspeed.com/products/cameras/tmx/7510",
+        "https://www.phantomhighspeed.com/products/cameras/tmx"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": [
+        "TMX为工业/科研超高速成像分支，不称为Flex4K的后继。"
+      ]
+    },
+    {
+      "brand": "RED",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 6,
+      "newIds": [
+        "v51-red-komodo-x-6k-s35",
+        "v51-red-v-raptor-x-8k-vv",
+        "v51-red-v-raptor-xe-8k-vv"
+      ],
+      "representativeIds": [
+        "v51-red-komodo-x-6k-s35",
+        "v51-red-v-raptor-x-8k-vv",
+        "v51-red-v-raptor-xe-8k-vv"
+      ],
+      "sources": [
+        "https://www.red.com/camera/KOMODO",
+        "https://docs.red.com/955-0225/955-0225_V2.0%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20%5BX%5D%208K%20VV%20Operation%20Guide/Content/B_TechSpecs/Specs_V-RAPTOR%20%5BX%5D.htm",
+        "https://docs.red.com/955-0233/955-0233_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XE%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20XE.htm",
+        "https://www.red.com/press-category",
+        "https://www.red.com/stories/red-at-broadcast-india",
+        "https://www.red.com/downloads/v-raptor-xe"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "SONY",
+      "category": "摄影机",
+      "scope": "manufacturer",
+      "beforeRows": 14,
+      "newIds": [
+        "v51-sony-alpha-7r-vi",
+        "v51-sony-ilme-fx2"
+      ],
+      "representativeIds": [
+        "v51-sony-alpha-7r-vi",
+        "v51-sony-ilme-fx2"
+      ],
+      "sources": [
+        "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2026/20260513-2.html",
+        "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2025/20250529-1.html",
+        "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2026/20260724-1.html",
+        "https://www.sony.com.cn/content/professional/products/professional-cameras/digital-cinema-cameras-series/digital-cinema-cameras.html"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "通用",
+      "category": "摄影机",
+      "scope": "generic",
+      "beforeRows": 1,
+      "newIds": [],
+      "representativeIds": [
+        "cam-360-unspecified"
+      ],
+      "sources": [],
+      "conclusion": "按功能、型号线索和尺寸复核；通用标签不推定厂商。气垫灯及棒灯分列，品牌线索有证据时另核。",
+      "notes": []
+    },
+    {
+      "brand": "ARRI",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 29,
+      "newIds": [
+        "v51-arri-l5-c-plus",
+        "v51-arri-l7-c-plus",
+        "v51-arri-omnibar-2",
+        "v51-arri-omnibar-4",
+        "v51-arri-skypanel-s60-pro",
+        "v51-arri-skypanel-x21",
+        "v51-arri-skypanel-x22",
+        "v51-arri-skypanel-x23"
+      ],
+      "representativeIds": [
+        "v51-arri-l5-c-plus",
+        "v51-arri-l7-c-plus",
+        "v51-arri-omnibar-2",
+        "v51-arri-omnibar-4",
+        "v51-arri-skypanel-s60-pro",
+        "v51-arri-skypanel-x21",
+        "v51-arri-skypanel-x22",
+        "v51-arri-skypanel-x23"
+      ],
+      "sources": [
+        "https://www.arri.com/en/lighting/led-spotlights/l-series-plus/sizes",
+        "https://www.arri.com/en/lighting/led-linear-lights/omnibar",
+        "https://www.arri.com/en/lighting/led-panel-lights/skypanel-pro",
+        "https://www.arri.com/en/lighting/led-panel-lights/skypanel-x",
+        "https://www.arri.com/en/lighting/led-panel-lights",
+        "https://www.arri.com/en/company/press/press-releases-2026/arri-unveils-omnibar-compact-modular-battery-powered-ip65-led-bars-with-precise-pixel-control",
+        "https://www.arri.com/en/lighting/led-spotlights/l-series-plus",
+        "https://www.arri.com/en/company/press/press-releases-2024/arri-upgrades-its-led-fresnels-to-the-new-l-series-plus",
+        "https://www.arri.com/resource/blob/368318/a01831be8048cbfa9e3f3908aa597a91/arri-l-series-l7-c-plus-data-sheet-en-apr2024-data.pdf",
+        "https://www.arri.com/en/lighting/led-spotlights/l-series-plus/faq",
+        "https://www.arri.com/en/lighting/led-spotlights/discontinued/l-series-c/l10-c"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Aputure",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 13,
+      "newIds": [
+        "v51-aputure-2",
+        "v51-aputure-4",
+        "v51-aputure-ls-600c-pro-ii",
+        "v51-aputure-ls-600d",
+        "v51-aputure-electro-storm-cs15",
+        "v51-aputure-electro-storm-xt26",
+        "v51-aputure-infinibar-pb12",
+        "v51-aputure-infinibar-pb3",
+        "v51-aputure-infinibar-pb6",
+        "v51-aputure-infinimat-20x20-with-clear-softbox",
+        "v51-aputure-nova-9-2x1",
+        "v51-aputure-nova-ii-1x1",
+        "v51-aputure-nova-ii-2x1",
+        "v51-aputure-storm-1000c",
+        "v51-aputure-storm-1200x",
+        "v51-aputure-storm-400x",
+        "v51-aputure-storm-700x",
+        "v51-aputure-storm-80c",
+        "v51-aputure-storm-cs32",
+        "v51-aputure-storm-xt52"
+      ],
+      "representativeIds": [
+        "v51-aputure-2",
+        "v51-aputure-4",
+        "v51-aputure-ls-600c-pro-ii",
+        "v51-aputure-ls-600d",
+        "v51-aputure-electro-storm-cs15",
+        "v51-aputure-electro-storm-xt26",
+        "v51-aputure-infinibar-pb12",
+        "v51-aputure-infinibar-pb3",
+        "v51-aputure-infinibar-pb6",
+        "v51-aputure-infinimat-20x20-with-clear-softbox",
+        "v51-aputure-nova-9-2x1",
+        "v51-aputure-nova-ii-1x1",
+        "v51-aputure-nova-ii-2x1",
+        "v51-aputure-storm-1000c",
+        "v51-aputure-storm-1200x",
+        "v51-aputure-storm-400x",
+        "v51-aputure-storm-700x",
+        "v51-aputure-storm-80c",
+        "v51-aputure-storm-cs32",
+        "v51-aputure-storm-xt52"
+      ],
+      "sources": [
+        "https://aputure.com/en-US/products/ls-600c-pro-ii",
+        "https://aputure.com/en-US/products/ls-600d",
+        "https://aputure.com/en-US/products/electro-storm-cs15",
+        "https://aputure.com/en-US/products/electro-storm-xt26",
+        "https://aputure.com/en-US/products/infinibar-pb12",
+        "https://aputure.com/en-US/products/infinibar-pb3",
+        "https://aputure.com/en-US/products/infinibar-pb6",
+        "https://aputure.com/en-US/products/aputure-infinimat-20x20-with-clear-softbox",
+        "https://aputure.com/en-US/products/nova-9-2x1",
+        "https://aputure.com/en-US/products/nova-ii-1x1",
+        "https://aputure.com/en-US/products/nova-ii-2x1",
+        "https://aputure.com/en-US/products/storm-1000c",
+        "https://aputure.com/en-US/products/storm-1200x",
+        "https://aputure.com/en-US/products/storm-400x",
+        "https://aputure.com/en-US/products/storm-700x",
+        "https://aputure.com/en-US/products/storm-80c",
+        "https://aputure.com/en-US/products/storm-cs32",
+        "https://aputure.com/en-US/products/storm-xt52",
+        "https://aputure.com/EN-US/products/storm-xt52?Style=w%2Fo+Flight+Case+%28Bare+Leads%29",
+        "https://help.aputure.com/en/storm-xt52",
+        "https://aputure.com/EN-US/products/storm-1200x",
+        "https://aputure.com/en-US/product-families/storm",
+        "https://aputure.com/EN-US/product-families/storm",
+        "https://aputure.com/en-US/products/storm-xt52-lamp-head",
+        "https://aputure.com/en-US/collections/storm",
+        "https://aputure.com/en-US/collections/nova-ii"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": [
+        "XT52部分SKU缺货；主审依据官方完整灯具购买页及用户固件支持判为已上市。2尺/4尺库存泛称不映射INFINIBAR。600X不推定Pro。"
+      ]
+    },
+    {
+      "brand": "Astera",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 4,
+      "newIds": [
+        "v51-astera-fp2",
+        "v51-astera-fp3",
+        "v51-astera-quikbeam",
+        "v51-astera-quikspot",
+        "v51-astera-fp1"
+      ],
+      "representativeIds": [
+        "v51-astera-fp2",
+        "v51-astera-fp3",
+        "v51-astera-quikbeam",
+        "v51-astera-quikspot",
+        "v51-astera-fp1"
+      ],
+      "sources": [
+        "https://www.koto-jp.com/en/wp-content/uploads/2022/03/ASTERA-CATALOG-2025.03_WEB.pdf",
+        "https://www.bellaliteblack.se/storage/38E3F77465D2EA4F40B98A8AB84FB30C80F36231F82FA866719864605BCD9F84/d85f4b9b7ae14ec69975fe645bac4ff5/pdf/media/06adf014995a41b7a5f239ce3c980c60/AST-QUKBM-STD_file_manual1.pdf",
+        "https://astera-led.com/products/quikspot/specs/",
+        "https://update.astera-led.com/firmwares/current/release_notes.html",
+        "https://www.isp-audio.com/en/new-product/lighting-product/12616-quikbeam-astera-s-new-compact-and-powerful-fresnel-spotlight",
+        "https://www.linkedin.com/posts/asteraofficial_astera-quikbeam-quikbrick-activity-7424096700622974976-ixnG",
+        "https://www.astera-led.com.cn/products/",
+        "https://astera-led.com/fr/products/helios-tube/specs/",
+        "https://astera-led.com/quikbeam",
+        "https://www.mediatec.de/astera-quikbeam-ast-qukbm-std/",
+        "https://cdn.menziebz.ch/media/b1/86/27/1770045062/Datasheet_QuikBeam_QuikBrick_V1.pdf?ts=1770045062",
+        "https://www.bellaliteblack.se/storage/9C753F2E01F77DDE6C2EFF11C582778428CA84EAB2400640E0B347EFB4C99E40/5c7b611a20254f208f4b90741f527b87/pdf/media/c4e457ee44d649ccbc38cc96e580adde/AST-QUKBM-QBK_file_manual1.pdf"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": [
+        "新增Helios/Titan/Hyperion官方名称；旧2FT/4FT/8FT库存俗称保留，未按名义长度推定SKU或套装。QuikBeam依据厂家编写但经销商托管的手册。"
+      ]
+    },
+    {
+      "brand": "Cardellini",
+      "category": "灯光器材",
+      "scope": "lighting-support",
+      "beforeRows": 1,
+      "newIds": [],
+      "representativeIds": [
+        "eq-cardellini-cardellini-clamp-灯光器材"
+      ],
+      "sources": [],
+      "conclusion": "为灯架、卡具或支撑用品标签，非发光灯具制造商；保留明确功能，未猜测最新灯具型号。",
+      "notes": []
+    },
+    {
+      "brand": "Century",
+      "category": "灯光器材",
+      "scope": "lighting-support",
+      "beforeRows": 3,
+      "newIds": [],
+      "representativeIds": [
+        "eq-century-century-stand-20-灯光器材",
+        "eq-century-century-stand-40-灯光器材",
+        "eq-century-century-stand-cart-灯光器材"
+      ],
+      "sources": [],
+      "conclusion": "为灯架、卡具或支撑用品标签，非发光灯具制造商；保留明确功能，未猜测最新灯具型号。",
+      "notes": []
+    },
+    {
+      "brand": "Creamsource",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 1,
+      "newIds": [
+        "v51-creamsource-vortex-2",
+        "v51-creamsource-vortex-2-soft",
+        "v51-creamsource-vortex-24",
+        "v51-creamsource-vortex-24-soft"
+      ],
+      "representativeIds": [
+        "v51-creamsource-vortex-2",
+        "v51-creamsource-vortex-2-soft",
+        "v51-creamsource-vortex-24",
+        "v51-creamsource-vortex-24-soft"
+      ],
+      "sources": [
+        "https://creamsource.com/product/vortex2/",
+        "https://creamsource.com/product/vortex24/",
+        "https://knowledge.creamsource.com/specs-for-the-vortex24-soft",
+        "https://creamsource.com/press/",
+        "https://creamsource.com/",
+        "https://knowledge.creamsource.com/specs-for-the-vortex24",
+        "https://knowledge.creamsource.com/part-numbers",
+        "https://knowledge.creamsource.com/creamos-firmware-v3.1.0",
+        "https://www.newsshooter.com/2025/09/10/creamsource-vortex24-soft/"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": [
+        "C3未上市，未进入任何数据库入口。"
+      ]
+    },
+    {
+      "brand": "Dedolight",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 2,
+      "newIds": [
+        "v51-dedolight-neo-dled7n-bi"
+      ],
+      "representativeIds": [
+        "v51-dedolight-neo-dled7n-bi"
+      ],
+      "sources": [
+        "https://www.dedoweigertfilm.de/dwf-en/products/Price-Lists/dedolight_neo_Pricelist_0924_Customer.pdf",
+        "https://dedolight.com/",
+        "https://www.kenko-pi.co.jp/brands/dedolight/dedolight-ledneo.html",
+        "https://dedolightcalifornia.com/collections/dedolight-neo"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Falcon Eyes",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 0,
+      "newIds": [
+        "v51-falcon-eyes-rollflex-iii-rx-120tdx-iii",
+        "v51-falcon-eyes-rollflex-iii-rx-18tdx-iii"
+      ],
+      "representativeIds": [
+        "v51-falcon-eyes-rollflex-iii-rx-120tdx-iii",
+        "v51-falcon-eyes-rollflex-iii-rx-18tdx-iii"
+      ],
+      "sources": [
+        "https://www.falconeyeshk.com/falconeyes-flexlight",
+        "https://www.falconeyeshk.com/catalogue-download",
+        "https://www.falconeyeshk.com/product-page/rx-ob",
+        "https://www.falconeyes.net/post/rollflex-ii-is-coming-up-soon-1"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Gator",
+      "category": "灯光器材",
+      "scope": "lighting-support",
+      "beforeRows": 1,
+      "newIds": [],
+      "representativeIds": [
+        "eq-gator-gator-clamp-灯光器材"
+      ],
+      "sources": [],
+      "conclusion": "为灯架、卡具或支撑用品标签，非发光灯具制造商；保留明确功能，未猜测最新灯具型号。",
+      "notes": []
+    },
+    {
+      "brand": "Jem",
+      "category": "灯光器材",
+      "scope": "unresolved-inventory-label",
+      "beforeRows": 3,
+      "newIds": [],
+      "representativeIds": [
+        "eq-jem-jem-ball-1-2-1-8k-灯光器材",
+        "eq-jem-jem-ball-2-5-4k-灯光器材",
+        "eq-jem-jem-ball-6k-灯光器材"
+      ],
+      "sources": [],
+      "conclusion": "已搜索但未确认该库存品牌标签对应的现行厂商产品线；保留原可用名称及配置，不虚构最新型号。",
+      "notes": []
+    },
+    {
+      "brand": "Kino Flo",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 9,
+      "newIds": [
+        "v51-kino-flo-celeb-ikon-12",
+        "v51-kino-flo-celeb-ikon-6",
+        "v51-kino-flo-diva-lux-4",
+        "v51-kino-flo-mimik-120"
+      ],
+      "representativeIds": [
+        "v51-kino-flo-celeb-ikon-12",
+        "v51-kino-flo-celeb-ikon-6",
+        "v51-kino-flo-diva-lux-4",
+        "v51-kino-flo-mimik-120"
+      ],
+      "sources": [
+        "https://kinoflo.com/celeb-ikon-12/",
+        "https://kinoflo.com/celeb-ikon6/",
+        "https://kinoflo.com/diva-lux-4/",
+        "https://kinoflo.com/mimik-120/",
+        "https://kinoflo.com/",
+        "https://kinoflo.com/product-category/new/",
+        "https://kinoflo.com/blog/announcements/litegear-joins-kino-flo/",
+        "https://kinoflo.com/blog/celeb-ikon-12-a-familiar-light-a-brighter-return/",
+        "https://kinoflo.com/about/",
+        "https://kinoflo.com/blog/quarterly-on-sets-rekap/new-led-engine-goes-to-next-level-delivering-full-power-to-all-five-colors/",
+        "https://kinoflo.com/ikon/",
+        "https://kinoflo.com/blog/diva-lux-4-engineered-for-broadcast-built-for-brilliance/",
+        "https://kinoflo.com/downloads/"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "LIGHTMAN",
+      "category": "灯光器材",
+      "scope": "unresolved-inventory-label",
+      "beforeRows": 4,
+      "newIds": [],
+      "representativeIds": [
+        "eq-lightman-lightman-airlite-1000-lantern-灯光器材",
+        "eq-lightman-lightman-airlite-1000-rgb-lantern-灯光器材",
+        "eq-lightman-lightman-airlite-1000-tube-灯光器材",
+        "eq-lightman-lightman-airlite-500-rgb-lantern-灯光器材"
+      ],
+      "sources": [
+        "https://www.lightstar.net.cn/",
+        "https://www.lightstarusa.com/welcome/",
+        "https://www.lightstarusa.com/shop/airlite/",
+        "https://www.lightmanled.com/en/about/"
+      ],
+      "conclusion": "已搜索但未确认该库存品牌标签对应的现行厂商产品线；保留原可用名称及配置，不虚构最新型号。",
+      "notes": []
+    },
+    {
+      "brand": "Lightstar",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 34,
+      "newIds": [
+        "v51-lightstar-luxbeam-12",
+        "v51-lightstar-painter-lmat-p12",
+        "v51-lightstar-luxed-pro-p12"
+      ],
+      "representativeIds": [
+        "v51-lightstar-luxbeam-12",
+        "v51-lightstar-painter-lmat-p12",
+        "v51-lightstar-luxed-pro-p12"
+      ],
+      "sources": [
+        "https://www.lightstar.net.cn/a/LIGHTMANxl/dgljgdxl/834.html",
+        "https://www.lightstar.net.cn/a/LIGHTMANxl/PAINTER-P400/800.html",
+        "https://lightstar-lights.com/luxed-p12-pro/",
+        "https://lightstar-lights.com/luxed-lights/",
+        "https://www.lightstarusa.com/shop/luxed/",
+        "https://www.lightstar.net.cn/",
+        "https://lightstar-lights.com/luxed-p/"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Luminys",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 0,
+      "newIds": [],
+      "representativeIds": [
+        "eq-通用-100kw-softsun-灯光器材",
+        "eq-通用-50kw-softsun-灯光器材"
+      ],
+      "sources": [
+        "https://www.luminyscorp.com/wp-content/uploads/2014/07/SoftSuns1001.pdf",
+        "https://luminyscorp.com/wp-content/uploads/2014/07/SoftSuns501.pdf",
+        "https://www.luminyscorp.com/wp-content/uploads/2014/07/SoftSuns251.pdf",
+        "https://www.cirrolite.com/products/200k-softsun-system/",
+        "https://www.cirrolite.com/products/40k-l",
+        "https://www.cirrolite.com/products-by-luminys-systems/lightning-strikes-systems",
+        "https://www.luminyscorp.com/wp-content/uploads/2014/07/100K-Comparison.pdf"
+      ],
+      "conclusion": "50K/100K SoftSun根据官方资料纠正厂商；200K未取得厂家直接资料，不新增；现行最新发售日期未确认。",
+      "notes": []
+    },
+    {
+      "brand": "NANLUX",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 2,
+      "newIds": [
+        "v51-nanlux-evoke-5000b"
+      ],
+      "representativeIds": [
+        "v51-nanlux-evoke-5000b"
+      ],
+      "sources": [
+        "https://cdn-aliyun.nanlux.com/release/1742897497202-098104-11338836370-Nanlux_Evoke5000B_DMXCharts_EN_V1.1_20250211.pdf",
+        "https://www.nanlite.com/about-us"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Nanlite",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 11,
+      "newIds": [
+        "v51-nanlite-fc-500c",
+        "v51-nanlite-fc-720b",
+        "v51-nanlite-fc-720c",
+        "v51-nanlite-forza-500b-ii",
+        "v51-nanlite-forza-720b",
+        "v51-nanlite-fs-300c",
+        "v51-nanlite-pavotube-ii-6xr"
+      ],
+      "representativeIds": [
+        "v51-nanlite-fc-500c",
+        "v51-nanlite-fc-720b",
+        "v51-nanlite-fc-720c",
+        "v51-nanlite-forza-500b-ii",
+        "v51-nanlite-forza-720b",
+        "v51-nanlite-fs-300c",
+        "v51-nanlite-pavotube-ii-6xr"
+      ],
+      "sources": [
+        "https://nanliteus.com/products/fc-500c-rgbw-color-led-spotlight",
+        "https://nanlite.jp/blogs/news/fc-720b-fc-720c",
+        "https://nanliteus.com/products/fc-720c-rgbw-color-led-spotlight",
+        "https://nanliteus.com/products/forza-500b-ii-led-spotlight",
+        "https://nanliteus.com/products/forza-720b-bi-color-led-spotlight",
+        "https://nanliteus.com/products/fs-300c-ac-powered-rgbw-color-led-monolight",
+        "https://nanliteus.com/products/pavotube-ii-6xr-10-rgbww-led-pixel-tube-with-built-in-crmx",
+        "https://www.nanlite.com/about-us",
+        "https://cdn-aliyun.nanlite.com/release/1691141369371-776251-1124121241519342-PavoTube_T8-7X_DMX_REFERENCE_GUIDE_EN%281%29.pdf",
+        "https://cdn-aliyun.nanlite.com/release/1744281499913-422061-1124121241519342-Nanlite_PavoTubeII6XR_DMXCharts_EN_V1.0_20241211.pdf",
+        "https://nanliteus.com/blogs/learn/the-new-pavotube-ii-6xr-our-10-inch-led-tube-improves",
+        "https://nanliteus.com/shop/by-collection/monolight-style/forza-720-720b/",
+        "https://nanliteus.com/blogs/learn/color-unleashed-the-new-fc-500c-led-spotlight-fc-powercontroller",
+        "https://nanlite.jp/collections/fs/products/fs-300c",
+        "https://nanlite.jp/blogs/news/newitem-blog",
+        "https://www.nanlite.com.tr/products/detail/MixPanel.html",
+        "https://nanliteus.com/products/nanlink-ws-tb-1-transmitter-box"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "Polyform",
+      "category": "灯光器材",
+      "scope": "lighting-support",
+      "beforeRows": 1,
+      "newIds": [],
+      "representativeIds": [
+        "eq-polyform-polyform-holder-灯光器材"
+      ],
+      "sources": [],
+      "conclusion": "为灯架、卡具或支撑用品标签，非发光灯具制造商；保留明确功能，未猜测最新灯具型号。",
+      "notes": []
+    },
+    {
+      "brand": "Rosco",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 3,
+      "newIds": [
+        "v51-rosco-dmg-dash",
+        "v51-rosco-dmg-lion",
+        "v51-rosco-dmg-sl1-switch"
+      ],
+      "representativeIds": [
+        "v51-rosco-dmg-dash",
+        "v51-rosco-dmg-lion",
+        "v51-rosco-dmg-sl1-switch"
+      ],
+      "sources": [
+        "https://us.rosco.com/en/products/brand/dmg-dash",
+        "https://lion.rosco.com/wp-content/uploads/2024/11/Rosco_DMG_LION_2024_Data_Sheet-12_24_web.pdf",
+        "https://us.rosco.com/en/products/brand/dmg-lighting",
+        "https://lion.rosco.com/wp-content/uploads/2024/03/Rosco_DMG_LION_2024_Data_Sheet-3_24.pdf"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "amaran",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 1,
+      "newIds": [
+        "v51-amaran-halo-600x",
+        "v51-amaran-ray-120c",
+        "v51-amaran-ray-360c",
+        "v51-amaran-ray-60c",
+        "v51-amaran-ray-660c"
+      ],
+      "representativeIds": [
+        "v51-amaran-halo-600x",
+        "v51-amaran-ray-120c",
+        "v51-amaran-ray-360c",
+        "v51-amaran-ray-60c",
+        "v51-amaran-ray-660c"
+      ],
+      "sources": [
+        "https://amarancreators.com/pages/amaran-halo-600x",
+        "https://amarancreators.com/pages/amaran-ray",
+        "https://amarancreators.com/pages/amaran-halo",
+        "https://help.amarancreators.com/en/amaran-ray/specifications"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": []
+    },
+    {
+      "brand": "利帅",
+      "category": "灯光器材",
+      "scope": "manufacturer",
+      "beforeRows": 0,
+      "newIds": [
+        "v51-lishuai-focus-2000xpro"
+      ],
+      "representativeIds": [
+        "v51-lishuai-focus-2000xpro"
+      ],
+      "sources": [
+        "https://www.lishuai.com.cn/product/focus-jiao-dian-xi-lie/1000w-zhuan-ye-ji-da-gong-lyu-ju-guang-deng.html"
+      ],
+      "conclusion": "已补充官方在售代表系列或新型号；历史代际和具体配置保留。范围为代表产品线覆盖，不声称穷尽所有SKU。",
+      "notes": [
+        "FOCUS 2000Xpro型号与官网1000W文字不一致，未添加额定功率字段。旧利帅S30-C库存名称不猜品牌/型号映射。"
+      ]
+    },
+    {
+      "brand": "通用",
+      "category": "灯光器材",
+      "scope": "generic",
+      "beforeRows": 217,
+      "newIds": [
+        "v51-1-2",
+        "v51-2-2",
+        "v51-4-4",
+        "v51-4-8"
+      ],
+      "representativeIds": [
+        "v51-1-2",
+        "v51-2-2",
+        "v51-4-4",
+        "v51-4-8"
+      ],
+      "sources": [],
+      "conclusion": "按功能、型号线索和尺寸复核；通用标签不推定厂商。气垫灯及棒灯分列，品牌线索有证据时另核。",
+      "notes": []
+    }
+  ],
+  "patches": [
+    {
+      "id": "eq-nanlite-南光rgb板灯-灯光器材",
+      "set": {
+        "model": "RGB 板灯"
+      },
+      "englishName": "NANLITE RGB Panel Light",
+      "addAliases": [
+        "南光 NANLITE RGB 板灯"
+      ],
+      "evidence": {
+        "url": "https://www.nanlite.com/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "当前规范名在英文品牌后重复“南光”，英文行将具体板灯功能泛化为 Lighting Equipment；只清理名称并作功能性英文翻译，不确认具体型号。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-通用-阿童木小监-监看",
+      "set": {},
+      "englishName": "Small Monitor",
+      "reason": "英文行重复 Monitor（Monitor Monitor）；名称“阿童木小监”属于需要保留的现场昵称。仅修正功能翻译。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-通用-尊正大监视器-监看",
+      "set": {},
+      "englishName": "Large Monitor",
+      "reason": "英文行重复 Monitor；保留“尊正大监视器”库存描述，不补系列型号。仅修正功能翻译。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-vaxis-威固无线小监视-监看",
+      "set": {},
+      "englishName": "Vaxis Wireless Monitor",
+      "reason": "英文行重复 Monitor；仅修正功能翻译，保留原始类别和型号状态。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-通用-moon-light-灯光器材",
+      "set": {},
+      "englishName": "Moon Light Stand Kit",
+      "reason": "英文行出现 Light Stand Kit Lighting Equipment 重复类别词；保留“月亮灯架套件”现场叫法。仅修正功能翻译。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "light-dedolight-unspecified",
+      "set": {},
+      "englishName": "Dedolight Light",
+      "reason": "英文行重复 Light / Lighting Equipment；保留“特图利灯具”原名及待核验状态，不补型号。仅修正功能翻译。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-通用-锐鹰18td小布灯-灯光器材",
+      "set": {},
+      "englishName": "18TD Flexible LED Panel Light",
+      "reason": "英文行重复 Lighting Equipment；保留 18TD 和“小布灯”描述，不将该具体条目与笼统 LED 布灯排除项合并。仅修正功能翻译。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-arri-arri-matte-box-smb-1-arri-摄影机附件",
+      "set": {
+        "model": "Matte Box SMB-1"
+      },
+      "englishName": "ARRI Matte Box SMB-1",
+      "reason": "末尾 ARRI 与品牌字段重复；保留 SMB-1 型号，删除重复厂商词。名称清理不代表官方型号全字段已核验。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hme-hme-mb300-wireless-headset-system-hme-摄影机附件",
+      "set": {
+        "model": "MB300 Wireless Headset System"
+      },
+      "englishName": "HME MB300 Wireless Headset System",
+      "reason": "末尾 HME 与品牌字段重复；保留 MB300 型号和产品类别。名称清理不改核验状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-eartec-eartec-the-hub-wireless-headset-system-hub-摄影机附件",
+      "set": {
+        "model": "The HUB Wireless Headset System"
+      },
+      "englishName": "Eartec The HUB Wireless Headset System",
+      "reason": "HUB 已在 The HUB 型号中出现，末尾 HUB 重复；保留专名 The HUB。名称清理不改核验状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-gfm-gfm-u-bangi-u-bangi-移动器材",
+      "set": {
+        "model": "U-Bangi"
+      },
+      "englishName": "GFM U-Bangi",
+      "reason": "规范名将品牌名和库存型号重复拼接；只去掉尾部重复词，保留型号、臂长和现场简称，不改变核验状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-arri-internal-arri-wrs-摄影机附件",
+      "set": {
+        "series": "WRS",
+        "model": "Internal"
+      },
+      "englishName": "ARRI WRS Internal",
+      "reason": "Internal ARRI WRS 中品牌词 ARRI 被重复，建议按系列 WRS + 配置 Internal 重排。该身份与配置应沿用原记录，不提升核验状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-sony-索尼-罗德机头麦-录音器材",
+      "set": {
+        "brand": "通用",
+        "brandZh": "通用",
+        "brandEn": "",
+        "series": "",
+        "model": "索尼 / 罗德机头麦"
+      },
+      "reason": "来源同时写“索尼/罗德机头麦”，无法判定库存有两种品牌、其中一个是相机品牌，或这是一个组合；暂以通用库存名称保留两个品牌线索，不拆库存、不确认具体麦克风型号。RØDE官网用语“机上麦克风”。",
+      "functionalTranslationOnly": true,
+      "englishName": "Sony / RØDE On-camera Microphone",
+      "evidence": {
+        "url": "https://rode.com/cn-cn/microphones/on-camera",
+        "scope": "function",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "eq-cooke-tls-cooke-speed-panchro-100mm-t2-8-镜头",
+      "set": {
+        "series": "Speed Panchro",
+        "model": "TLS 100mm T2.8"
+      },
+      "englishName": "Cooke Speed Panchro TLS 100mm T2.8",
+      "evidence": {
+        "url": "https://cookeoptics.com/lens/speed-panchro/",
+        "scope": "series",
+        "language": "en"
+      },
+      "reason": "品牌词 Cooke 被库存前缀 TLS Cooke 再次写入；将 Speed Panchro 放入系列字段，保留 TLS 改装标识及全部焦段/光圈。旧名仍作 alias；此结构修正不证明 TLS 改装配置是厂商原厂型号。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-cooke-tls-cooke-speed-panchro-18mm-t2-2-镜头",
+      "set": {
+        "series": "Speed Panchro",
+        "model": "TLS 18mm T2.2"
+      },
+      "englishName": "Cooke Speed Panchro TLS 18mm T2.2",
+      "evidence": {
+        "url": "https://cookeoptics.com/lens/speed-panchro/",
+        "scope": "series",
+        "language": "en"
+      },
+      "reason": "品牌词 Cooke 被库存前缀 TLS Cooke 再次写入；将 Speed Panchro 放入系列字段，保留 TLS 改装标识及全部焦段/光圈。旧名仍作 alias；此结构修正不证明 TLS 改装配置是厂商原厂型号。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-cooke-tls-cooke-speed-panchro-203mm-t4-5-镜头",
+      "set": {
+        "series": "Speed Panchro",
+        "model": "TLS 203mm T4.5"
+      },
+      "englishName": "Cooke Speed Panchro TLS 203mm T4.5",
+      "evidence": {
+        "url": "https://cookeoptics.com/lens/speed-panchro/",
+        "scope": "series",
+        "language": "en"
+      },
+      "reason": "品牌词 Cooke 被库存前缀 TLS Cooke 再次写入；将 Speed Panchro 放入系列字段，保留 TLS 改装标识及全部焦段/光圈。旧名仍作 alias；此结构修正不证明 TLS 改装配置是厂商原厂型号。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-cooke-tls-cooke-speed-panchro-25mm-t2-2-镜头",
+      "set": {
+        "series": "Speed Panchro",
+        "model": "TLS 25mm T2.2"
+      },
+      "englishName": "Cooke Speed Panchro TLS 25mm T2.2",
+      "evidence": {
+        "url": "https://cookeoptics.com/lens/speed-panchro/",
+        "scope": "series",
+        "language": "en"
+      },
+      "reason": "品牌词 Cooke 被库存前缀 TLS Cooke 再次写入；将 Speed Panchro 放入系列字段，保留 TLS 改装标识及全部焦段/光圈。旧名仍作 alias；此结构修正不证明 TLS 改装配置是厂商原厂型号。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-cooke-tls-cooke-speed-panchro-32mm-t2-3-镜头",
+      "set": {
+        "series": "Speed Panchro",
+        "model": "TLS 32mm T2.3"
+      },
+      "englishName": "Cooke Speed Panchro TLS 32mm T2.3",
+      "evidence": {
+        "url": "https://cookeoptics.com/lens/speed-panchro/",
+        "scope": "series",
+        "language": "en"
+      },
+      "reason": "品牌词 Cooke 被库存前缀 TLS Cooke 再次写入；将 Speed Panchro 放入系列字段，保留 TLS 改装标识及全部焦段/光圈。旧名仍作 alias；此结构修正不证明 TLS 改装配置是厂商原厂型号。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-cooke-tls-cooke-speed-panchro-40mm-t2-3-镜头",
+      "set": {
+        "series": "Speed Panchro",
+        "model": "TLS 40mm T2.3"
+      },
+      "englishName": "Cooke Speed Panchro TLS 40mm T2.3",
+      "evidence": {
+        "url": "https://cookeoptics.com/lens/speed-panchro/",
+        "scope": "series",
+        "language": "en"
+      },
+      "reason": "品牌词 Cooke 被库存前缀 TLS Cooke 再次写入；将 Speed Panchro 放入系列字段，保留 TLS 改装标识及全部焦段/光圈。旧名仍作 alias；此结构修正不证明 TLS 改装配置是厂商原厂型号。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-cooke-tls-cooke-speed-panchro-50mm-t2-3-镜头",
+      "set": {
+        "series": "Speed Panchro",
+        "model": "TLS 50mm T2.3"
+      },
+      "englishName": "Cooke Speed Panchro TLS 50mm T2.3",
+      "evidence": {
+        "url": "https://cookeoptics.com/lens/speed-panchro/",
+        "scope": "series",
+        "language": "en"
+      },
+      "reason": "品牌词 Cooke 被库存前缀 TLS Cooke 再次写入；将 Speed Panchro 放入系列字段，保留 TLS 改装标识及全部焦段/光圈。旧名仍作 alias；此结构修正不证明 TLS 改装配置是厂商原厂型号。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-cooke-tls-cooke-speed-panchro-75mm-t2-3-镜头",
+      "set": {
+        "series": "Speed Panchro",
+        "model": "TLS 75mm T2.3"
+      },
+      "englishName": "Cooke Speed Panchro TLS 75mm T2.3",
+      "evidence": {
+        "url": "https://cookeoptics.com/lens/speed-panchro/",
+        "scope": "series",
+        "language": "en"
+      },
+      "reason": "品牌词 Cooke 被库存前缀 TLS Cooke 再次写入；将 Speed Panchro 放入系列字段，保留 TLS 改装标识及全部焦段/光圈。旧名仍作 alias；此结构修正不证明 TLS 改装配置是厂商原厂型号。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-100mm-macro-t2-9-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 100mm macro T2.9"
+      },
+      "englishName": "Leica R TLS 100mm macro T2.9",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-135mm-t2-9-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 135mm T2.9"
+      },
+      "englishName": "Leica R TLS 135mm T2.9",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-15mm-t4-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 15mm T4"
+      },
+      "englishName": "Leica R TLS 15mm T4",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-180mm-t2-9-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 180mm T2.9"
+      },
+      "englishName": "Leica R TLS 180mm T2.9",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-19mm-t2-9-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 19mm T2.9"
+      },
+      "englishName": "Leica R TLS 19mm T2.9",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-24mm-t2-9-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 24mm T2.9"
+      },
+      "englishName": "Leica R TLS 24mm T2.9",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-28mm-t2-9-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 28mm T2.9"
+      },
+      "englishName": "Leica R TLS 28mm T2.9",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-35mm-t1-5-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 35mm T1.5"
+      },
+      "englishName": "Leica R TLS 35mm T1.5",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-50mm-t1-5-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 50mm T1.5"
+      },
+      "englishName": "Leica R TLS 50mm T1.5",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-60mm-macro-t2-9-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 60mm macro T2.9"
+      },
+      "englishName": "Leica R TLS 60mm macro T2.9",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-80mm-t1-5-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 80mm T1.5"
+      },
+      "englishName": "Leica R TLS 80mm T1.5",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-leica-tls-leica-r-90mm-t2-1-镜头",
+      "set": {
+        "series": "R",
+        "model": "TLS 90mm T2.1"
+      },
+      "englishName": "Leica R TLS 90mm T2.1",
+      "evidence": {
+        "url": "https://www.leica-camera.cn/",
+        "scope": "brand",
+        "language": "zh-CN"
+      },
+      "reason": "名称已有“TLS LEICA R”；将 Leica R 解析为系列、TLS保留为库存配置，避免第二次出现 Leica。具体改装名与 T 值仍待核验，不提升状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-107mm-t2-8-镜头",
+      "set": {
+        "series": "645",
+        "model": "TLS 107mm T2.8"
+      },
+      "englishName": "Mamiya 645 TLS 107mm T2.8",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-150mm-t3-镜头",
+      "set": {
+        "series": "645",
+        "model": "TLS 150mm T3"
+      },
+      "englishName": "Mamiya 645 TLS 150mm T3",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-17mm-t3-3-镜头",
+      "set": {
+        "series": "645",
+        "model": "TLS 17mm T3.3"
+      },
+      "englishName": "Mamiya 645 TLS 17mm T3.3",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-25mm-t2-8-镜头",
+      "set": {
+        "series": "645",
+        "model": "TLS 25mm T2.8"
+      },
+      "englishName": "Mamiya 645 TLS 25mm T2.8",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-32mm-t2-3-镜头",
+      "set": {
+        "series": "645",
+        "model": "TLS 32mm T2.3"
+      },
+      "englishName": "Mamiya 645 TLS 32mm T2.3",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-39mm-t2-3-镜头",
+      "set": {
+        "series": "645",
+        "model": "TLS 39mm T2.3"
+      },
+      "englishName": "Mamiya 645 TLS 39mm T2.3",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-50mm-t2-3-镜头",
+      "set": {
+        "series": "645",
+        "model": "TLS 50mm T2.3"
+      },
+      "englishName": "Mamiya 645 TLS 50mm T2.3",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-57mm-t1-6-镜头",
+      "set": {
+        "series": "645",
+        "model": "TLS 57mm T1.6"
+      },
+      "englishName": "Mamiya 645 TLS 57mm T1.6",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "v5-restored-7",
+      "set": {
+        "series": "645",
+        "model": "TLS 57mm T2.3"
+      },
+      "englishName": "Mamiya 645 TLS 57mm T2.3",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-78mm-t2-3-镜头",
+      "set": {
+        "series": "645",
+        "model": "TLS 78mm T2.3"
+      },
+      "englishName": "Mamiya 645 TLS 78mm T2.3",
+      "evidence": {
+        "url": "https://www.mamiya.com/",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "Mamiya 645 是库存记录中的格式标记，Mamiya 在品牌和型号前缀中重复；保留 645、TLS改装标记、焦段与光圈。该字段重排不将改装镜头称为原厂镜头，状态维持 pending。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-schneider-138mm-schneider-1-滤镜",
+      "set": {
+        "model": "138mm 1"
+      },
+      "englishName": "Schneider 138mm 1",
+      "reason": "Schneider 在品牌字段及 model 中重复；仅删除重复厂商词，保留 138mm 与等级文字，不推测滤镜系列。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-schneider-138mm-schneider-1-2-滤镜",
+      "set": {
+        "model": "138mm 1/2"
+      },
+      "englishName": "Schneider 138mm 1/2",
+      "reason": "Schneider 在品牌字段及 model 中重复；仅删除重复厂商词，保留 138mm 与等级文字，不推测滤镜系列。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-schneider-138mm-schneider-2-滤镜",
+      "set": {
+        "model": "138mm 2"
+      },
+      "englishName": "Schneider 138mm 2",
+      "reason": "Schneider 在品牌字段及 model 中重复；仅删除重复厂商词，保留 138mm 与等级文字，不推测滤镜系列。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-schneider-138mm-schneider-3-滤镜",
+      "set": {
+        "model": "138mm 3"
+      },
+      "englishName": "Schneider 138mm 3",
+      "reason": "Schneider 在品牌字段及 model 中重复；仅删除重复厂商词，保留 138mm 与等级文字，不推测滤镜系列。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-scorpio-super-scorpio-crane-10-移动器材",
+      "set": {
+        "model": "10′ Telescopic Crane"
+      },
+      "englishName": "Scorpio 10′ Telescopic Crane",
+      "evidence": {
+        "url": "https://scorpio.servicevision.es/en/sales/cranes-and-heads/",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "Scorpio 在品牌与型号名称中重复；官方目录把该系列列在伸缩炮产品下。保留原有长度，英文功能词仅补足器材类型。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-scorpio-super-scorpio-crane-23-移动器材",
+      "set": {
+        "model": "23′ Telescopic Crane"
+      },
+      "englishName": "Scorpio 23′ Telescopic Crane",
+      "evidence": {
+        "url": "https://scorpio.servicevision.es/en/sales/cranes-and-heads/",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "Scorpio 在品牌与型号名称中重复；官方目录把该系列列在伸缩炮产品下。保留原有长度，英文功能词仅补足器材类型。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-scorpio-super-scorpio-crane-45-移动器材",
+      "set": {
+        "model": "45′ Telescopic Crane"
+      },
+      "englishName": "Scorpio 45′ Telescopic Crane",
+      "evidence": {
+        "url": "https://scorpio.servicevision.es/en/sales/cranes-and-heads/",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "Scorpio 在品牌与型号名称中重复；官方目录把该系列列在伸缩炮产品下。保留原有长度，英文功能词仅补足器材类型。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-gfm-gfm-gf-16-16m-gf-16-移动器材",
+      "set": {
+        "model": "GF-16 16M"
+      },
+      "englishName": "GFM GF-16 16M",
+      "reason": "规范名将品牌名和库存型号重复拼接；只去掉尾部重复词，保留型号、臂长和现场简称，不改变核验状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-gfm-gfm-gf-8-xten-11m-gf-8-移动器材",
+      "set": {
+        "model": "GF-8 Xten 11M"
+      },
+      "englishName": "GFM GF-8 Xten 11M",
+      "reason": "规范名将品牌名和库存型号重复拼接；只去掉尾部重复词，保留型号、臂长和现场简称，不改变核验状态。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-通用-movie-tech-3-waycamera-leveling-mount-movie-tech-移动器材",
+      "set": {
+        "brand": "Movietech",
+        "brandZh": "",
+        "brandEn": "Movietech",
+        "model": "3-way Camera Leveling Mount"
+      },
+      "englishName": "Movietech 3-way Camera Leveling Mount",
+      "reason": "库存名内 Movie Tech 同时作为品牌与产品短语重复；按品牌字段统一大小写和空格，不更动三向/四向配置与水平调平用途。该品牌文字来自库存别名，仍需品牌官网核对。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-通用-movie-tech-4-waycamera-leveling-mount-movie-tech-移动器材",
+      "set": {
+        "brand": "Movietech",
+        "brandZh": "",
+        "brandEn": "Movietech",
+        "model": "4-way Camera Leveling Mount"
+      },
+      "englishName": "Movietech 4-way Camera Leveling Mount",
+      "reason": "库存名内 Movie Tech 同时作为品牌与产品短语重复；按品牌字段统一大小写和空格，不更动三向/四向配置与水平调平用途。该品牌文字来自库存别名，仍需品牌官网核对。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-110mm-t3-1-hawk-镜头",
+      "set": {
+        "series": "74",
+        "model": "110mm T3.1"
+      },
+      "englishName": "HAWK 74 110mm T3.1",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-140mm-t3-7-hawk-镜头",
+      "set": {
+        "series": "74",
+        "model": "140mm T3.7"
+      },
+      "englishName": "HAWK 74 140mm T3.7",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-28mm-t2-3-hawk-镜头",
+      "set": {
+        "series": "74",
+        "model": "28mm T2.3"
+      },
+      "englishName": "HAWK 74 28mm T2.3",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-35mm-t2-3-hawk-镜头",
+      "set": {
+        "series": "74",
+        "model": "35mm T2.3"
+      },
+      "englishName": "HAWK 74 35mm T2.3",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-45mm-t2-3-hawk-镜头",
+      "set": {
+        "series": "74",
+        "model": "45mm T2.3"
+      },
+      "englishName": "HAWK 74 45mm T2.3",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-55mm-t2-3-hawk-镜头",
+      "set": {
+        "series": "74",
+        "model": "55mm T2.3"
+      },
+      "englishName": "HAWK 74 55mm T2.3",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-65mm-t2-3-hawk-镜头",
+      "set": {
+        "series": "74",
+        "model": "65mm T2.3"
+      },
+      "englishName": "HAWK 74 65mm T2.3",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-80mm-t2-3-hawk-镜头",
+      "set": {
+        "series": "74",
+        "model": "80mm T2.3"
+      },
+      "englishName": "HAWK 74 80mm T2.3",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-zoom-45-90mm-t2-9-hawk-镜头",
+      "set": {
+        "series": "74-Zoom",
+        "model": "45-90mm T2.9"
+      },
+      "englishName": "HAWK 74-Zoom 45-90mm T2.9",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-74-zoom-80-180mm-t2-9-hawk-镜头",
+      "set": {
+        "series": "74-Zoom",
+        "model": "80-180mm T2.9"
+      },
+      "englishName": "HAWK 74-Zoom 80-180mm T2.9",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-v-plus-zoom-45-90mm-t2-8-hawk-镜头",
+      "set": {
+        "series": "V-Plus",
+        "model": "zoom 45-90mm T2.8"
+      },
+      "englishName": "HAWK V-Plus zoom 45-90mm T2.8",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-hawk-hawk-v-plus-zoom-80-180mm-t2-8-hawk-镜头",
+      "set": {
+        "series": "V-Plus",
+        "model": "zoom 80-180mm T2.8"
+      },
+      "englishName": "HAWK V-Plus zoom 80-180mm T2.8",
+      "reason": "规范名和英文名末尾的 HAWK 重复品牌词；将现有系列简写和规格分别入字段，保留 V-Plus / 74 原标签及全部焦段光圈。不会把 74 自动扩成 Vintage’74 的具体镜头配置，不改待核验状态。 仅整理库存名称；租赁目录不作为官方系列核验来源。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-dji-ready-rig-摄影机附件",
+      "set": {
+        "brand": "Ready Rig",
+        "brandZh": "",
+        "brandEn": "Ready Rig",
+        "series": "",
+        "model": "Camera Support Vest"
+      },
+      "englishName": "Ready Rig Camera Support Vest",
+      "evidence": {
+        "url": "https://www.ready-rig.com/pages/welcome",
+        "scope": "brand",
+        "language": "en"
+      },
+      "reason": "原记录把 Ready Rig 错挂在 DJI 品牌。厂商页面确认 Ready Rig 为独立品牌，并列出多个不同型号/套装；本条没有型号证据，改正品牌并保留泛称用途，不补 GS 或 GS+ProArms。旧名继续保留为 alias。",
+      "functionalTranslationOnly": true
+    },
+    {
+      "id": "eq-lightstar-lightstar-luxed-1-rbg-led-灯光器材",
+      "set": {
+        "model": "1 RGB LED",
+        "namingStatus": "pending",
+        "verified": false,
+        "identityBasis": "specific-inventory",
+        "series": "LUXED"
+      },
+      "englishName": "Lightstar LUXED 1 RGB LED",
+      "addAliases": [
+        "Lightstar - LUXED 1 RGB LED"
+      ],
+      "reason": "库存中的 RBG 是 RGB 常见拼写转置，建议作显示拼写修正并保留旧写法 alias。官方资料把 LUXED 普通系列列为双色温、LUXED-P列为RGBWW，因此这条库存具体属于哪款灯仍需核对；本拼写修正不提升 verified/namingStatus。 官方普通LUXED为双色温，库存RGB指代尚不能判断是否LUXED-P，保留库存标记，不升级核验。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-lightstar-lightstar-luxed-12-rbg-led-灯光器材",
+      "set": {
+        "model": "12 RGB LED",
+        "namingStatus": "pending",
+        "verified": false,
+        "identityBasis": "specific-inventory",
+        "series": "LUXED"
+      },
+      "englishName": "Lightstar LUXED 12 RGB LED",
+      "addAliases": [
+        "Lightstar - LUXED 12 RGB LED"
+      ],
+      "reason": "库存中的 RBG 是 RGB 常见拼写转置，建议作显示拼写修正并保留旧写法 alias。官方资料把 LUXED 普通系列列为双色温、LUXED-P列为RGBWW，因此这条库存具体属于哪款灯仍需核对；本拼写修正不提升 verified/namingStatus。 官方普通LUXED为双色温，库存RGB指代尚不能判断是否LUXED-P，保留库存标记，不升级核验。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-lightstar-lightstar-luxed-3-rbg-led-灯光器材",
+      "set": {
+        "model": "3 RGB LED",
+        "namingStatus": "pending",
+        "verified": false,
+        "identityBasis": "specific-inventory",
+        "series": "LUXED"
+      },
+      "englishName": "Lightstar LUXED 3 RGB LED",
+      "addAliases": [
+        "Lightstar - LUXED 3 RGB LED"
+      ],
+      "reason": "库存中的 RBG 是 RGB 常见拼写转置，建议作显示拼写修正并保留旧写法 alias。官方资料把 LUXED 普通系列列为双色温、LUXED-P列为RGBWW，因此这条库存具体属于哪款灯仍需核对；本拼写修正不提升 verified/namingStatus。 官方普通LUXED为双色温，库存RGB指代尚不能判断是否LUXED-P，保留库存标记，不升级核验。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-lightstar-lightstar-luxed-4-rbg-led-灯光器材",
+      "set": {
+        "model": "4 RGB LED",
+        "namingStatus": "pending",
+        "verified": false,
+        "identityBasis": "specific-inventory",
+        "series": "LUXED"
+      },
+      "englishName": "Lightstar LUXED 4 RGB LED",
+      "addAliases": [
+        "Lightstar - LUXED 4 RGB LED"
+      ],
+      "reason": "库存中的 RBG 是 RGB 常见拼写转置，建议作显示拼写修正并保留旧写法 alias。官方资料把 LUXED 普通系列列为双色温、LUXED-P列为RGBWW，因此这条库存具体属于哪款灯仍需核对；本拼写修正不提升 verified/namingStatus。 官方普通LUXED为双色温，库存RGB指代尚不能判断是否LUXED-P，保留库存标记，不升级核验。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "eq-lightstar-lightstar-luxed-9-rbg-led-灯光器材",
+      "set": {
+        "model": "9 RGB LED",
+        "namingStatus": "pending",
+        "verified": false,
+        "identityBasis": "specific-inventory",
+        "series": "LUXED"
+      },
+      "englishName": "Lightstar LUXED 9 RGB LED",
+      "addAliases": [
+        "Lightstar - LUXED 9 RGB LED"
+      ],
+      "reason": "库存中的 RBG 是 RGB 常见拼写转置，建议作显示拼写修正并保留旧写法 alias。官方资料把 LUXED 普通系列列为双色温、LUXED-P列为RGBWW，因此这条库存具体属于哪款灯仍需核对；本拼写修正不提升 verified/namingStatus。 官方普通LUXED为双色温，库存RGB指代尚不能判断是否LUXED-P，保留库存标记，不升级核验。",
+      "functionalTranslationOnly": false
+    },
+    {
+      "id": "v5-restored-30",
+      "set": {
+        "model": "苹果箱 5cm"
+      },
+      "englishName": "5cm Apple Box",
+      "reason": "通用尺寸明确；删除重复苹果箱文字，不改变尺寸或套组单位"
+    },
+    {
+      "id": "v5-restored-27",
+      "set": {
+        "model": "苹果箱 10cm"
+      },
+      "englishName": "10cm Apple Box",
+      "reason": "通用尺寸明确；删除重复苹果箱文字，不改变尺寸或套组单位"
+    },
+    {
+      "id": "v5-restored-28",
+      "set": {
+        "model": "苹果箱 20cm"
+      },
+      "englishName": "20cm Apple Box",
+      "reason": "通用尺寸明确；删除重复苹果箱文字，不改变尺寸或套组单位"
+    },
+    {
+      "id": "v5-restored-29",
+      "set": {
+        "model": "苹果箱 30cm"
+      },
+      "englishName": "30cm Apple Box",
+      "reason": "通用尺寸明确；删除重复苹果箱文字，不改变尺寸或套组单位"
+    },
+    {
+      "id": "cam-sony-fx5",
+      "set": {
+        "lensMount": "E"
+      },
+      "reason": "索尼官方发布及E卡口镜头支持；显式记录原生卡口以免沿用品牌推断",
+      "evidence": {
+        "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2026/20260724-1.html",
+        "scope": "model",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "eq-通用-50kw-softsun-灯光器材",
+      "set": {
+        "brand": "Luminys",
+        "brandZh": "",
+        "brandEn": "Luminys",
+        "series": "SoftSun",
+        "model": "50K"
+      },
+      "englishName": "Luminys SoftSun 50K",
+      "evidence": {
+        "url": "https://luminyscorp.com/wp-content/uploads/2014/07/SoftSuns501.pdf",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "SoftSun为Luminys厂商系列，50K/100K有对应官方规格文档；旧称美国太阳灯保留为搜索别名，不推定当前租赁可得性"
+    },
+    {
+      "id": "eq-通用-100kw-softsun-灯光器材",
+      "set": {
+        "brand": "Luminys",
+        "brandZh": "",
+        "brandEn": "Luminys",
+        "series": "SoftSun",
+        "model": "100K"
+      },
+      "englishName": "Luminys SoftSun 100K",
+      "evidence": {
+        "url": "https://www.luminyscorp.com/wp-content/uploads/2014/07/SoftSuns1001.pdf",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "SoftSun为Luminys厂商系列，50K/100K有对应官方规格文档；旧称美国太阳灯保留为搜索别名，不推定当前租赁可得性"
+    },
+    {
+      "id": "v51-1-2",
+      "set": {
+        "brandZh": "通用",
+        "brandEn": "",
+        "series": "",
+        "model": "爱拍乐气垫灯 1×2",
+        "published": true,
+        "namingStatus": "pending",
+        "verified": false,
+        "identityBasis": "specific-inventory"
+      },
+      "englishName": "Air Cushion LED Light 1×2",
+      "reason": "由原库存明确尺寸别名分列；尺寸单位和制造商尚不能确认，不推测英尺、米或品牌"
+    },
+    {
+      "id": "v51-2-2",
+      "set": {
+        "brandZh": "通用",
+        "brandEn": "",
+        "series": "",
+        "model": "爱拍乐气垫灯 2×2",
+        "published": true,
+        "namingStatus": "pending",
+        "verified": false,
+        "identityBasis": "specific-inventory"
+      },
+      "englishName": "Air Cushion LED Light 2×2",
+      "reason": "由原库存明确尺寸别名分列；尺寸单位和制造商尚不能确认，不推测英尺、米或品牌"
+    },
+    {
+      "id": "v51-4-4",
+      "set": {
+        "brandZh": "通用",
+        "brandEn": "",
+        "series": "",
+        "model": "爱拍乐气垫灯 4×4",
+        "published": true,
+        "namingStatus": "pending",
+        "verified": false,
+        "identityBasis": "specific-inventory"
+      },
+      "englishName": "Air Cushion LED Light 4×4",
+      "reason": "由原库存明确尺寸别名分列；尺寸单位和制造商尚不能确认，不推测英尺、米或品牌"
+    },
+    {
+      "id": "v51-4-8",
+      "set": {
+        "brandZh": "通用",
+        "brandEn": "",
+        "series": "",
+        "model": "爱拍乐气垫灯 4×8",
+        "published": true,
+        "namingStatus": "pending",
+        "verified": false,
+        "identityBasis": "specific-inventory"
+      },
+      "englishName": "Air Cushion LED Light 4×8",
+      "reason": "由原库存明确尺寸别名分列；尺寸单位和制造商尚不能确认，不推测英尺、米或品牌"
+    },
+    {
+      "id": "eq-通用-led-air-cushion-lamp-灯光器材",
+      "set": {
+        "replacementIds": [
+          "v51-1-2",
+          "v51-2-2",
+          "v51-4-4",
+          "v51-4-8"
+        ]
+      },
+      "reason": "原记录混合四种尺寸，分列以避免选材规格不明；保留旧项目原记录"
+    },
+    {
+      "id": "v51-aputure-2",
+      "set": {
+        "model": "2尺棒灯",
+        "published": true,
+        "verified": false,
+        "namingStatus": "pending",
+        "identityBasis": "specific-inventory"
+      },
+      "englishName": "Aputure 2ft Tube Light",
+      "reason": "原库存明确2尺/4尺长度，分列保留；不据长度猜测INFINIBAR或具体型号。英文ft沿用片场英尺规格俗称，实际尺寸待量测"
+    },
+    {
+      "id": "v51-aputure-4",
+      "set": {
+        "model": "4尺棒灯",
+        "published": true,
+        "verified": false,
+        "namingStatus": "pending",
+        "identityBasis": "specific-inventory"
+      },
+      "englishName": "Aputure 4ft Tube Light",
+      "reason": "原库存明确2尺/4尺长度，分列保留；不据长度猜测INFINIBAR或具体型号。英文ft沿用片场英尺规格俗称，实际尺寸待量测"
+    },
+    {
+      "id": "eq-aputure-爱图仕-棒灯-4尺-2尺-灯光器材",
+      "set": {
+        "replacementIds": [
+          "v51-aputure-2",
+          "v51-aputure-4"
+        ]
+      },
+      "reason": "原记录混合2尺/4尺两种长度，分别用于选材；旧项目不自动分配型号或数量"
+    },
+    {
+      "id": "eq-aputure-爱图仕600d-600x-灯光器材",
+      "set": {
+        "replacementIds": [
+          "v51-aputure-ls-600d",
+          "eq-aputure-aputure-bi-color-ls-600x-灯光器材"
+        ]
+      },
+      "reason": "600D/600X为不同灯具，保留已有600X库存名称并新增官方600d选项；不推定历史库存Pro版本"
+    },
+    {
+      "id": "eq-dji-dji-master-wheels-摄影机附件",
+      "set": {
+        "category": "移动器材"
+      },
+      "addAliases": [
+        "DJI Master Wheels",
+        "DJI Master Wheels 大疆摇轮",
+        "大疆 DJI 摇轮",
+        "大疆摇轮",
+        "大疆大师摇轮"
+      ],
+      "evidence": {
+        "url": "https://www.dji.com/master-wheels",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "同厂商完整型号、同单位、无记录中的配置差别；统一移动器材分类后按完整身份去重，保留旧ID跳转"
+    },
+    {
+      "id": "eq-dji-大疆摇轮-移动器材",
+      "set": {
+        "category": "移动器材"
+      },
+      "addAliases": [
+        "DJI Master Wheels",
+        "DJI Master Wheels 大疆摇轮",
+        "大疆 DJI 摇轮",
+        "大疆摇轮",
+        "大疆大师摇轮"
+      ],
+      "evidence": {
+        "url": "https://www.dji.com/master-wheels",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "同厂商完整型号、同单位、无记录中的配置差别；统一移动器材分类后按完整身份去重，保留旧ID跳转"
+    },
+    {
+      "id": "eq-tilta-tilta-armor-man-3-0-摄影机附件",
+      "set": {
+        "category": "移动器材"
+      },
+      "addAliases": [
+        "铁头 TILTA Armor-man 3.0",
+        "Tilta Armor-man 3.0",
+        "Tilta Armor-man 3.0 铁甲战士 3.0",
+        "铁头铁甲战士三代",
+        "铁头 TILTA Max Armor Man 3.0",
+        "Tilta Max Armor Man 3.0",
+        "铁头 机械臂 · Tilta Max Armor Man 3.0"
+      ],
+      "evidence": {
+        "url": "https://tilta.com/shop/armor-man-3-0-gimbal-support-system/",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "同厂商完整型号、同单位、无记录中的配置差别；统一移动器材分类后按完整身份去重，保留旧ID跳转"
+    },
+    {
+      "id": "eq-通用-tilta-max-armor-man-3-0-移动器材",
+      "set": {
+        "category": "移动器材"
+      },
+      "addAliases": [
+        "铁头 TILTA Armor-man 3.0",
+        "Tilta Armor-man 3.0",
+        "Tilta Armor-man 3.0 铁甲战士 3.0",
+        "铁头铁甲战士三代",
+        "铁头 TILTA Max Armor Man 3.0",
+        "Tilta Max Armor Man 3.0",
+        "铁头 机械臂 · Tilta Max Armor Man 3.0"
+      ],
+      "evidence": {
+        "url": "https://tilta.com/shop/armor-man-3-0-gimbal-support-system/",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "同厂商完整型号、同单位、无记录中的配置差别；统一移动器材分类后按完整身份去重，保留旧ID跳转"
+    },
+    {
+      "id": "eq-oconnor-o-connor-2560-fluid-head-摄影机附件",
+      "set": {
+        "category": "移动器材"
+      },
+      "addAliases": [
+        "O'Connor 2560 Fluid Head",
+        "O'Connor 2560 Fluid Head 欧科诺2560云台",
+        "O'Connor 2560D 重型液压云台 · O'Connor 2560 Fluid Head"
+      ],
+      "evidence": {
+        "url": "https://www.ocon.com/products/fluid-heads/2560/",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "同厂商完整型号、同单位、无记录中的配置差别；统一移动器材分类后按完整身份去重，保留旧ID跳转"
+    },
+    {
+      "id": "eq-oconnor-o-connor-2560-fluid-head-移动器材",
+      "set": {
+        "category": "移动器材"
+      },
+      "addAliases": [
+        "O'Connor 2560 Fluid Head",
+        "O'Connor 2560 Fluid Head 欧科诺2560云台",
+        "O'Connor 2560D 重型液压云台 · O'Connor 2560 Fluid Head"
+      ],
+      "evidence": {
+        "url": "https://www.ocon.com/products/fluid-heads/2560/",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "同厂商完整型号、同单位、无记录中的配置差别；统一移动器材分类后按完整身份去重，保留旧ID跳转"
+    },
+    {
+      "id": "v5-aputure-mc-12-kit",
+      "set": {},
+      "evidence": {
+        "url": "https://aputure.com/en-US/products/mc-12-light-production-kit",
+        "scope": "model",
+        "language": "en"
+      },
+      "reason": "补充对应套装的精确官方产品页，避免仅使用产品集合页"
+    },
+    {
+      "id": "eq-gfm-gfm-low-shot-rig-gfm-移动器材",
+      "set": {
+        "model": "Low Shot Rig"
+      },
+      "englishName": "GFM Low Shot Rig",
+      "reason": "删除尾部重复品牌和无意义分隔符；保留库存型号，不提升核验状态"
+    },
+    {
+      "id": "lens-zeiss-supreme",
+      "set": {},
+      "englishName": "ZEISS Supreme Prime Lens Set",
+      "reason": "Supreme Prime已含Prime，英文套组后缀使用Lens Set，删除重复Prime"
+    },
+    {
+      "id": "eq-denzhead-denz-denzhead-dutch-head-移动器材",
+      "set": {
+        "brand": "Denz",
+        "brandZh": "",
+        "brandEn": "Denz",
+        "model": "Denzhead Dutch Head"
+      },
+      "englishName": "Denz Denzhead Dutch Head",
+      "reason": "把原库存名称中明确的Denz前缀独立为品牌，Denzhead保留产品名称；未取得厂商型号资料，保持待核验"
+    },
+    {
+      "id": "eq-arri-lightstar-arri-24kw-fresnel-灯光器材",
+      "set": {
+        "brand": "通用",
+        "brandZh": "通用",
+        "brandEn": "",
+        "model": "Lightstar / ARRI 24kW Fresnel"
+      },
+      "englishName": "Lightstar / ARRI 24kW Fresnel",
+      "reason": "原记录同时写Lightstar和ARRI，不能确定厂商归属；保留24kW聚光灯指代及两品牌线索，不冒充ARRI已核验型号"
+    }
+  ],
+  "preservedNicknames": [
+    {
+      "id": "eq-通用-铁甲战士-移动器材",
+      "name": "通用 铁甲战士",
+      "brand": "通用",
+      "category": "移动器材",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    },
+    {
+      "id": "grip-fishhook-5-unspecified",
+      "name": "通用 五代鱼钩",
+      "brand": "通用",
+      "category": "移动器材",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    },
+    {
+      "id": "eq-sony-索尼小蜜蜂-录音器材",
+      "name": "索尼 SONY 小蜜蜂",
+      "brand": "SONY",
+      "category": "录音器材",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    },
+    {
+      "id": "eq-通用-阿童木小监-监看",
+      "name": "通用 阿童木小监",
+      "brand": "通用",
+      "category": "监看",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    },
+    {
+      "id": "eq-通用-尊正大监视器-监看",
+      "name": "通用 尊正大监视器",
+      "brand": "通用",
+      "category": "监看",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    },
+    {
+      "id": "video-smallhd-unspecified",
+      "name": "SmallHD 小监视器",
+      "brand": "SmallHD",
+      "category": "监看",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    },
+    {
+      "id": "eq-通用-360head-360-摄影机附件",
+      "name": "通用 360Head 360 云台",
+      "brand": "通用",
+      "category": "摄影机附件",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    },
+    {
+      "id": "eq-通用-centipede-of-2-移动器材",
+      "name": "通用 Centipede of 2",
+      "brand": "通用",
+      "category": "移动器材",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    },
+    {
+      "id": "eq-通用-low-angle-rock-移动器材",
+      "name": "通用 Low Angle Rock",
+      "brand": "通用",
+      "category": "移动器材",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    },
+    {
+      "id": "eq-通用-selfie-swimming-ring-摄影机附件",
+      "name": "通用 Selfie swimming ring",
+      "brand": "通用",
+      "category": "摄影机附件",
+      "published": true,
+      "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+    }
+  ],
+  "limitations": [
+    "官方型号存在不代表供应商已有租赁库存；新增条目库存可得性未确认。",
+    "第三方改装、套组配置及行业昵称保留原指代，不推测未记载型号。",
+    "未上市产品不加入目录；Creamsource C3预计2027Q2出货，仅记录在复核报告。",
+    "LIGHTMAN Airlite品牌归属尚无确定证据，保留原名；Luminys未确认200K为当前官方在售新品。",
+    "costTier为内部相对排序等级，采用同类现有器材的档位；不代表厂商数据、租赁报价或已证实库存。新增器材未写入供应商数量。"
+  ],
+  "excludedAnnouncements": [
+    {
+      "brand": "Creamsource",
+      "model": "C3",
+      "reason": "未上市；2027Q2预计出货",
+      "source": "https://creamsource.com/wp-content/uploads/2026/09/Press-Release_Meet-C3-a-New-Flavour-of-Fresnel-from-Creamsource.pdf"
+    }
+  ],
+  "lightingReview": {
+    "initial": [
+      {
+        "brand": "ARRI",
+        "coverage": "缺最新代表产品；现库有 L5/L7/L10、Orbiter、SkyPanel Classic S30/S60/S120/S360，未见新SkyPanel Pro、SkyPanel X、Omnibar。",
+        "missing": [
+          {
+            "name": "阿莱 ARRI SkyPanel Pro S60 Pro",
+            "series": "SkyPanel Pro",
+            "model": "S60 Pro",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "官方称下一代S60-C，Series Pro是当前家族之一"
+          },
+          {
+            "name": "阿莱 ARRI SkyPanel X X21",
+            "series": "SkyPanel X",
+            "model": "X21",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "当前模块化全气候代表型号；X22/X23是不同模块配置，可以另列"
+          },
+          {
+            "name": "阿莱 ARRI Omnibar 2",
+            "series": "Omnibar",
+            "model": "2",
+            "category": "灯光器材",
+            "unit": "根",
+            "verified": true,
+            "reason": "2026新系列，2ft；另加Omnibar 4（4ft）保留不同长度"
+          }
+        ],
+        "urls": [
+          "https://www.arri.com/en/lighting/led-panel-lights/skypanel-pro",
+          "https://www.arri.com/en/lighting/led-panel-lights",
+          "https://www.arri.com/en/company/press/press-releases-2026/arri-unveils-omnibar-compact-modular-battery-powered-ip65-led-bars-with-precise-pixel-control",
+          "https://www.arri.com/en/lighting/led-linear-lights/omnibar"
+        ],
+        "source_note": "官网比较SkyPanel X21与S60 Pro; SkyPanel X系列也X22/X23三种形式。Omnibar官方发布2026-05-05，官网列2/4英尺可售。"
+      },
+      {
+        "brand": "Aputure",
+        "coverage": "XT52缺；另当前产品族有STORM 1200x、CS32。",
+        "missing": [
+          {
+            "name": "爱图仕 Aputure STORM XT52",
+            "series": "STORM",
+            "model": "XT52",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "5200W调白点光源，用户指出是XT52，需按官方名保留，不能改成XT26"
+          },
+          {
+            "name": "爱图仕 Aputure STORM 1200x",
+            "series": "STORM",
+            "model": "1200x",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "现行1200W高显指点光源，目录不见"
+          }
+        ],
+        "urls": [
+          "https://aputure.com/EN-US/products/storm-xt52?Style=w%2Fo+Flight+Case+%28Bare+Leads%29",
+          "https://help.aputure.com/en/storm-xt52",
+          "https://aputure.com/EN-US/products/storm-1200x",
+          "https://aputure.com/en-US/product-families/storm"
+        ]
+      },
+      {
+        "brand": "amaran",
+        "coverage": "当前仅300c，未覆盖现行Halo、Ray系列。",
+        "missing": [
+          {
+            "name": "艾蒙拉 amaran Halo 600x",
+            "series": "Halo",
+            "model": "600x",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "Halo系列最大型号；已官方产品页确认"
+          },
+          {
+            "name": "艾蒙拉 amaran Ray 660c",
+            "series": "Ray",
+            "model": "660c",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "Ray系列最大型号代表项；应官方页再次确认名称拼写和功率后入库"
+          }
+        ],
+        "urls": [
+          "https://amarancreators.com/pages/amaran-halo",
+          "https://amarancreators.com/pages/amaran-halo-600x",
+          "https://amarancreators.com/pages/amaran-ray"
+        ],
+        "source_note": "Halo页明列60x/100x/200x/300x/600x；Ray页描述系列从60c到660c。"
+      },
+      {
+        "brand": "Nanlite",
+        "coverage": "现有 Forza、MixPanel和老LED数字命名灯具；没有证据证明系列最新具体型号。厂商官方历程将Evoke 5000B发布归属NANLUX品牌，而非NANLITE。",
+        "missing": [
+          {
+            "name": "南光 NANLITE PavoTube II 6XR",
+            "series": "PavoTube II",
+            "model": "6XR",
+            "category": "灯光器材",
+            "unit": "根",
+            "verified": "系列/型号须以官方产品详情确认",
+            "reason": "建议对Nanlite灯管线补一条当前产品；本轮只发现较旧官方T8-7X文档，未验证6XR为最新"
+          },
+          {
+            "name": "南光 NANLITE Evoke 5000B",
+            "series": "Evoke",
+            "model": "5000B",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "可能由NANLITE品牌字段误归属；历史页把Evoke5000B标注NANLITE? 数据需谨慎，先保留为NANLUX，勿双建"
+          }
+        ],
+        "urls": [
+          "https://www.nanlite.com/about-us",
+          "https://cdn-aliyun.nanlite.com/release/1691141369371-776251-1124121241519342-PavoTube_T8-7X_DMX_REFERENCE_GUIDE_EN%281%29.pdf",
+          "https://cdn-aliyun.nanlite.com/release/1744281499913-422061-1124121241519342-Nanlite_PavoTubeII6XR_DMXCharts_EN_V1.0_20241211.pdf"
+        ],
+        "source_note": "南光官网时间线2025-02发布Evoke5000B，但这款正式商品在NANLUX官方产品系；NANLITE/NANLUX均作为独立品牌字段存在，Evoke5000B应只归NANLUX。"
+      },
+      {
+        "brand": "NANLUX",
+        "coverage": "现有Evoke1200、Evoke900C，缺2025旗舰。",
+        "missing": [
+          {
+            "name": "南光 NANLUX Evoke 5000B",
+            "series": "Evoke",
+            "model": "5000B",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "官方时间线记载2025-02发布，功率级代表最新"
+          }
+        ],
+        "urls": [
+          "https://www.nanlite.com/about-us",
+          "https://cdn-aliyun.nanlux.com/release/1742897497202-098104-11338836370-Nanlux_Evoke5000B_DMXCharts_EN_V1.1_20250211.pdf"
+        ],
+        "source_note": "精确Nanlux产品URL搜索结果不稳定；先用南光官网关于页及其官方CDN DMX图表 https://cdn-aliyun.nanlux.com/release/1742897497202-098104-11338836370-Nanlux_Evoke5000B_DMXCharts_EN_V1.1_20250211.pdf 证明型号存在。"
+      },
+      {
+        "brand": "Astera",
+        "coverage": "现有Titan 2/4/8ft tubes、Wireless system；缺Quik家族的新Fresnel。",
+        "missing": [
+          {
+            "name": "阿斯特拉 Astera QuikBeam",
+            "series": "Quik",
+            "model": "QuikBeam",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": "待官方页复核",
+            "reason": "2026年新成员，公开展会发布资料称13-60°电池供电Fresnel；本轮Astera官网被robots阻挡，只发现官方固件版本对Quik系列的支持，未获得可直接引用的产品详情页"
+          }
+        ],
+        "urls": [
+          "https://update.astera-led.com/firmwares/current/release_notes.html",
+          "https://www.isp-audio.com/en/new-product/lighting-product/12616-quikbeam-astera-s-new-compact-and-powerful-fresnel-spotlight"
+        ],
+        "source_note": "如要求严格仅厂商一手证明，QuikBeam暂待核验；行业展会/媒体来源不能作为verified=true唯一依据。"
+      },
+      {
+        "brand": "Creamsource",
+        "coverage": "只见Vortex8；2026已有Vortex2系列和C3。",
+        "missing": [
+          {
+            "name": "Creamsource C3 3000W",
+            "series": "C3",
+            "model": "3000W",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "2026-09官方新闻称新品Fresnel"
+          },
+          {
+            "name": "Creamsource Vortex2",
+            "series": "Vortex",
+            "model": "2",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "2026-06新产品系列，还可单独加入Vortex2 Soft"
+          }
+        ],
+        "urls": [
+          "https://creamsource.com/press/",
+          "https://creamsource.com/product/vortex2/",
+          "https://creamsource.com/"
+        ],
+        "source_note": "Vortex2和2 Soft是不同硬/软光版本；现有Vortex8与其不同代/功率，应保留。"
+      },
+      {
+        "brand": "Dedolight",
+        "coverage": "有150W(3 lamps)清单和待确认特图利灯具；本轮未找到厂商官方可确认的2025/2026新系列型号。",
+        "missing": [],
+        "urls": [
+          "https://dedolight.com/"
+        ],
+        "source_note": "不以零售页面断定厂商最新SKU；以具体库存记录保留，不能做最新型号推断。"
+      },
+      {
+        "brand": "Kino Flo",
+        "coverage": "现有Freestyle C250/C450Q/C850Q/S301等旧记录。遗漏2026新品系列和产品。",
+        "missing": [
+          {
+            "name": "Kino Flo Celeb IKON 12",
+            "series": "Celeb IKON",
+            "model": "12",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "官网称2026-05新品"
+          },
+          {
+            "name": "Kino Flo Diva Lux 4",
+            "series": "Diva Lux",
+            "model": "4",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "2026-01新品"
+          },
+          {
+            "name": "Kino Flo MIMIK 120",
+            "series": "MIMIK",
+            "model": "120",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "虚拟制片成像照明砖，官网标注新品"
+          }
+        ],
+        "urls": [
+          "https://kinoflo.com/",
+          "https://kinoflo.com/product-category/new/",
+          "https://kinoflo.com/mimik-120/",
+          "https://kinoflo.com/blog/announcements/litegear-joins-kino-flo/"
+        ],
+        "source_note": "2026-09-10 Kino Flo收购LiteGear产品线并称LiteMat、LiteTile、LiteRibbon、Auroris将以Kino Flo brand销售；若覆盖全部代表系列，应额外选择每个现行线的一个代表SKU，而不是误认为全库旧名字已覆盖。Celeb Ikon 6亦为新品，可与12分别列。"
+      },
+      {
+        "brand": "Lightstar（国际品牌字段）",
+        "coverage": "产品涵盖LUXED、LUXED-P等，并大多没中文官方品牌名；LUXED-P12等是现有目录但需核清是否与中国莱斯达同名型号可映射。",
+        "missing": [],
+        "urls": [
+          "https://lightstar-lights.com/luxed-lights/",
+          "https://www.lightstarusa.com/shop/luxed/",
+          "https://www.lightstar.net.cn/"
+        ],
+        "source_note": "lightstar.net.cn属于北京莱斯达，其官方中文系列含PAINTER/LMAT-P、LUXBEAM；Lightstar Lights/US网站是LUXED系列。两套网页资料不能直接当成同一型号别名。"
+      },
+      {
+        "brand": "莱斯达 Lightstar（中国厂商品牌线索）",
+        "coverage": "在通用灯光条目中并无明确专属brand fields，仅有多个SKU名称/别名。官方中文官网可以确认其PAINTER、LUXBEAM、LIGHTSTAR等真实灯具系列。",
+        "missing": [
+          {
+            "name": "莱斯达 Lightstar PAINTER LMAT-P12",
+            "series": "PAINTER",
+            "model": "LMAT-P12",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "官方中文页，2160W RGBWW，当前首页列为最大款"
+          },
+          {
+            "name": "莱斯达 Lightstar LUXBEAM 12",
+            "series": "LUXBEAM",
+            "model": "12",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "官方中文页确认1000W"
+          }
+        ],
+        "urls": [
+          "https://www.lightstar.net.cn/a/LIGHTMANxl/PAINTER-P400/800.html",
+          "https://www.lightstar.net.cn/a/LIGHTMANxl/dgljgdxl/834.html",
+          "https://www.lightstar.net.cn/"
+        ],
+        "source_note": "品牌实际中文官方名为莱斯达，产品资料自称PAINTER系列；对应库存中可能LUXED P型号相近，但不要直接合并。"
+      },
+      {
+        "brand": "LIGHTMAN",
+        "coverage": "目录中4条Airlite产品均把品牌字段设为LIGHTMAN，但Airlite不是北京莱斯达官网LIGHTMAN系列品类。检索显示Airlite是Lightstar产品线；该字段强疑似归属错误。",
+        "missing": [],
+        "ids_to_correct": [
+          "eq-lightman-lightman-airlite-1000-lantern-灯光器材",
+          "eq-lightman-lightman-airlite-1000-rgb-lantern-灯光器材",
+          "eq-lightman-lightman-airlite-1000-tube-灯光器材",
+          "eq-lightman-lightman-airlite-500-rgb-lantern-灯光器材"
+        ],
+        "urls": [
+          "https://www.lightstar.net.cn/",
+          "https://www.lightstarusa.com/welcome/",
+          "https://www.lightstarusa.com/shop/airlite/",
+          "https://www.lightmanled.com/en/about/"
+        ],
+        "source_note": "要区分两家同名/近似：北京莱斯达官网有LIGHTMAN系列「特效PAR灯」；深圳市Lightman Optoelectronics做建筑/办公LED面板；Lightstar USA的Airlite页面称Lightstar Airlite balloon/tube。库存名“LIGHTMAN AIRLITE”更像误拼品牌。需由原票据确认。"
+      },
+      {
+        "brand": "Rosco",
+        "coverage": "现有DMG Maxi/Mini/SL1，无DMG DASH便携灯与DMG LION；系列页显示DASH。",
+        "missing": [
+          {
+            "name": "Rosco DMG DASH",
+            "series": "DMG DASH",
+            "model": "DASH",
+            "category": "灯光器材",
+            "unit": "套",
+            "verified": true,
+            "reason": "官方在册的小型电池灯产品系列"
+          },
+          {
+            "name": "Rosco DMG SL1 SWITCH",
+            "series": "DMG",
+            "model": "SL1 SWITCH",
+            "category": "灯光器材",
+            "unit": "台",
+            "verified": true,
+            "reason": "官方在册的双色温灯，与既有SL1 MIX不相同"
+          }
+        ],
+        "urls": [
+          "https://us.rosco.com/en/products/brand/dmg-lighting",
+          "https://us.rosco.com/en/products/brand/dmg-dash"
+        ],
+        "source_note": "官方DMG Lighting产品组页面还列DMG LION firmware，但产品页未直接核实其新型号，不建议先加入LION作为灯具SKU。"
+      }
+    ],
+    "followup": [
+      {
+        "brand": "NANLITE",
+        "coverage": "Forza, PavoTube, FC, FS, MixPanel",
+        "findings": [
+          {
+            "series": "PavoTube",
+            "model": "PavoTube II 6XR",
+            "status": "product page listed; no global newest claim",
+            "catalogAction": "Specific model is suitable as a distinct compact tube representative if absent; avoid kit SKU. Preserve older tube models.",
+            "sources": [
+              "https://nanliteus.com/products/pavotube-ii-6xr-10-rgbww-led-pixel-tube-with-built-in-crmx",
+              "https://nanliteus.com/blogs/learn/the-new-pavotube-ii-6xr-our-10-inch-led-tube-improves"
+            ]
+          },
+          {
+            "series": "Forza",
+            "model": "Forza 500B II; Forza 720B",
+            "status": "500B II product page listed; 720B page listed; no family-wide newest assertion",
+            "catalogAction": "Forza 500B II is a clear second-generation candidate if absent. 720B is a high-output line representative. Do not fabricate Forza 720B II.",
+            "sources": [
+              "https://nanliteus.com/products/forza-500b-ii-led-spotlight",
+              "https://nanliteus.com/products/forza-720b-bi-color-led-spotlight",
+              "https://nanliteus.com/shop/by-collection/monolight-style/forza-720-720b/"
+            ]
+          },
+          {
+            "series": "FC",
+            "model": "FC-720B; FC-720C; FC-500C",
+            "status": "official product pages/listing; FC-720B/C Japanese launch news states sales began 2026-02-18",
+            "catalogAction": "FC-720C and FC-500C are valid distinct models. FC-720B/C should be included if absent. These are published products, not mere announcements.",
+            "sources": [
+              "https://nanliteus.com/products/fc-720c-rgbw-color-led-spotlight",
+              "https://nanliteus.com/products/fc-500c-rgbw-color-led-spotlight",
+              "https://nanlite.jp/blogs/news/fc-720b-fc-720c",
+              "https://nanliteus.com/blogs/learn/color-unleashed-the-new-fc-500c-led-spotlight-fc-powercontroller"
+            ]
+          },
+          {
+            "series": "FS",
+            "model": "FS-300C",
+            "status": "official product page and official Japanese launch source found",
+            "catalogAction": "Include as identifiable color model/representative; no claim that it is the newest FS model.",
+            "sources": [
+              "https://nanliteus.com/products/fs-300c-ac-powered-rgbw-color-led-monolight",
+              "https://nanlite.jp/collections/fs/products/fs-300c",
+              "https://nanlite.jp/blogs/news/newitem-blog"
+            ]
+          },
+          {
+            "series": "MixPanel",
+            "model": "MixPanel 60 / MixPanel 150",
+            "status": "manufacturer localized product listing and official accessory support page found; current-generation status/date not established",
+            "catalogAction": "Preserve exact existing MixPanel 150; do not duplicate. Keep 60 and 150 separate if inventory supports both.",
+            "sources": [
+              "https://www.nanlite.com.tr/products/detail/MixPanel.html",
+              "https://nanliteus.com/products/nanlink-ws-tb-1-transmitter-box"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "Astera",
+        "coverage": "QuikBeam/QuikSpot; Helios/Titan/Hyperion",
+        "findings": [
+          {
+            "series": "Quik",
+            "model": "QuikBeam (AST-QUKBM); QuikSpot (AST-QUKSP)",
+            "status": "QuikBeam manufacturer account announced as a new QuikFamily member; official-linked manual gives model/order code. QuikSpot appears in manufacturer-content 2025 catalog and official firmware notes.",
+            "catalogAction": "Can add as confirmed products. Do not label either as merely an alias of Titan Tube. Avoid an absolute newest claim.",
+            "sources": [
+              "https://www.linkedin.com/posts/asteraofficial_astera-quikbeam-quikbrick-activity-7424096700622974976-ixnG",
+              "https://www.bellaliteblack.se/storage/38E3F77465D2EA4F40B98A8AB84FB30C80F36231F82FA866719864605BCD9F84/d85f4b9b7ae14ec69975fe645bac4ff5/pdf/media/06adf014995a41b7a5f239ce3c980c60/AST-QUKBM-STD_file_manual1.pdf",
+              "https://www.koto-jp.com/en/wp-content/uploads/2022/03/ASTERA-CATALOG-2025.03_WEB.pdf",
+              "https://update.astera-led.com/firmwares/current/release_notes.html"
+            ]
+          },
+          {
+            "series": "Tube family",
+            "model": "Helios Tube FP2 (550 mm); Titan Tube (1035 mm); Hyperion Tube (2031 mm)",
+            "status": "Chinese Astera catalog lists all three as distinct products with separate lengths; official Helios spec confirms FP2.",
+            "catalogAction": "Correct existing stock rows with aliases TITAN 2FT/4FT/8FT cautiously: 2ft row likely Helios; 4ft likely Titan; 8ft row should be Hyperion family only if physical stock identity can be matched, because official stated length 2031mm differs from exact 8ft. Keep size alias and add review note if SKU not conclusive. Do not name all as Titan.",
+            "sources": [
+              "https://www.astera-led.com.cn/products/",
+              "https://astera-led.com/fr/products/helios-tube/specs/"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "Dedolight",
+        "coverage": "NEO / DLED",
+        "findings": [
+          {
+            "series": "NEO",
+            "model": "DLED7N-BI",
+            "status": "official distributor lists NEO bi-color model still available; DLED7N-C marked discontinued 2026-03-31",
+            "catalogAction": "Use DLED7N-BI as a confirmed NEO representative. Do not add discontinued DLED7N-C as a current model. Do not claim absolute newest without a current manufacturer SKU catalog.",
+            "sources": [
+              "https://www.kenko-pi.co.jp/brands/dedolight/dedolight-ledneo.html",
+              "https://dedolightcalifornia.com/collections/dedolight-neo",
+              "https://www.dedoweigertfilm.de/dwf-en/products/Price-Lists/dedolight_neo_Pricelist_0924_Customer.pdf"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "Lightstar",
+        "coverage": "LUXED family",
+        "findings": [
+          {
+            "series": "LUXED PRO",
+            "model": "LUXED PRO-P12",
+            "status": "manufacturer product page and family page list PRO variants",
+            "catalogAction": "Add PRO-P12 as a separate SKU if absent; preserve plain LUXED-P12 and array variants. Do not merge PRO-P12 with LUXED-P12.",
+            "sources": [
+              "https://lightstar-lights.com/luxed-p12-pro/",
+              "https://lightstar-lights.com/luxed-p/"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "LIGHTMAN",
+        "coverage": "identity status",
+        "findings": [
+          {
+            "series": "Unresolved",
+            "model": null,
+            "status": "No authoritative source located in this follow-up establishing LIGHTMAN as a current lighting-equipment brand matching the catalog row.",
+            "catalogAction": "Leave brand string and model untouched as pending; no rebrand/correction without item-level evidence.",
+            "sources": []
+          }
+        ]
+      },
+      {
+        "brand": "Falcon Eyes / 銳鷹",
+        "coverage": "ROLLFLEX RX",
+        "findings": [
+          {
+            "series": "ROLLFLEX III",
+            "model": "RX-120TDX III; RX-48TDX III; RX-24TDX III; RX-18TDX III",
+            "status": "official store currently presents third-generation ROLLFLEX III models. Catalog download page also lists 2026 IBC leaflet updated Sep 2026 and RX-18TDX III-K2/RX-718 III-K2 catalogue.",
+            "catalogAction": "For an existing RX-12TD/TDX inventory row, preserve exact old model if inventory requires it; add appropriate III size/model only when catalog scope expects current line representative. Do not rename RX-12TD to RX-12TDX III. Official page supplied by parent as falconeyes.com.hk appears older/noncanonical; current manufacturer storefront found at falconeyeshk.com.",
+            "sources": [
+              "https://www.falconeyeshk.com/falconeyes-flexlight",
+              "https://www.falconeyeshk.com/catalogue-download",
+              "https://www.falconeyeshk.com/product-page/rx-ob",
+              "https://www.falconeyes.net/post/rollflex-ii-is-coming-up-soon-1"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "Luminys Systems",
+        "coverage": "SoftSun and Lightning Strikes",
+        "findings": [
+          {
+            "series": "SoftSun",
+            "model": "25K / 50K / 100K / 200K",
+            "status": "manufacturer-published Luminys PDFs confirm 25K, 50K, 100K models; authorized dealer listing has 200K SoftSun SKU LU-SYS-200K",
+            "catalogAction": "These are distinct scale/model entries where catalog records specific inventory. SoftSun is Luminys product family, not a generic light type. Verify 200K with official direct documentation before marking manufacturer-verified.",
+            "sources": [
+              "https://www.luminyscorp.com/wp-content/uploads/2014/07/SoftSuns1001.pdf",
+              "https://luminyscorp.com/wp-content/uploads/2014/07/SoftSuns501.pdf",
+              "https://www.luminyscorp.com/wp-content/uploads/2014/07/SoftSuns251.pdf",
+              "https://www.cirrolite.com/products/200k-softsun-system/"
+            ]
+          },
+          {
+            "series": "Lightning Strikes",
+            "model": "40K-L; LU-1500WLED",
+            "status": "Luminys brand/product relationship confirmed by Luminys corporate copy and dealer product listings; precise new/current lineup uncertain.",
+            "catalogAction": "Treat Lighting Strikes as Luminys product family, not maker. Keep actual specific models, avoid inventing a latest SKU.",
+            "sources": [
+              "https://www.cirrolite.com/products/40k-l",
+              "https://www.cirrolite.com/products-by-luminys-systems/lightning-strikes-systems",
+              "https://www.luminyscorp.com/wp-content/uploads/2014/07/100K-Comparison.pdf"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "Rosco",
+        "coverage": "DMG LION",
+        "findings": [
+          {
+            "series": "DMG",
+            "model": "DMG LION with MIX LED Engine (29822600A002) or PUNCH LED Engine (29822600A003); fixture without engine 29822600A001",
+            "status": "Confirmed real released product by official Rosco datasheet, dated 2024 editions. It is a fixture accepting two interchangeable engine SKUs, not a made-up/series duplicate.",
+            "catalogAction": "If not present, add fixture DMG LION as model and optionally represent engine configurations as distinct variants only if inventory/requisition uses them; do not create DMG LION LION.",
+            "sources": [
+              "https://lion.rosco.com/wp-content/uploads/2024/11/Rosco_DMG_LION_2024_Data_Sheet-12_24_web.pdf",
+              "https://lion.rosco.com/wp-content/uploads/2024/03/Rosco_DMG_LION_2024_Data_Sheet-3_24.pdf"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "Aputure / 愛图仕",
+        "coverage": "STORM, NOVA II",
+        "findings": [
+          {
+            "series": "STORM",
+            "model": "STORM 80c, 400x, 700x, 1000c, 1200x, CS32, XT52",
+            "status": "Manufacturer family page lists the named product family. Product pages show sale/cart for most models; CS32 page showed Backorder at crawl. XT52 page shows lamp head add-to-cart. Separate product model evidence found.",
+            "catalogAction": "Check missing specific models individually; prioritize CS32 and XT52, plus 700x/1000c/1200x. These are different models, not interchangeable duplicates. For official naming retain STORM + model once.",
+            "sources": [
+              "https://aputure.com/EN-US/product-families/storm",
+              "https://aputure.com/en-US/products/storm-cs32",
+              "https://aputure.com/en-US/products/storm-xt52-lamp-head",
+              "https://aputure.com/en-US/products/storm-700x",
+              "https://aputure.com/en-US/products/storm-1000c",
+              "https://aputure.com/EN-US/products/storm-1200x",
+              "https://aputure.com/en-US/collections/storm"
+            ]
+          },
+          {
+            "series": "NOVA II",
+            "model": "NOVA II 1x1 (500W); NOVA II 2x1 (1000W)",
+            "status": "Both direct product pages, retail prices, manuals/firmware present; current released products.",
+            "catalogAction": "If absent, add as separate sizes/models. Existing legacy NOVA P300c/P600c should remain. Do not treat NOVA as product brand or duplicate NOVA II in series and model fields.",
+            "sources": [
+              "https://aputure.com/en-US/products/nova-ii-1x1",
+              "https://aputure.com/en-US/products/nova-ii-2x1",
+              "https://aputure.com/en-US/collections/nova-ii"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "amaran / 艾蒙拉",
+        "coverage": "Ray",
+        "findings": [
+          {
+            "series": "Ray",
+            "model": "Ray 60c; Ray 120c; Ray 360c; Ray 660c",
+            "status": "Official Ray family page and technical specification page list exact four models; product links/prices are present for all on family page.",
+            "catalogAction": "Add any missing model individually; retain naming format “艾蒙拉 amaran Ray 60c” etc. Do not normalize as just Ray, or duplicate “Ray Ray 60c”.",
+            "sources": [
+              "https://amarancreators.com/pages/amaran-ray",
+              "https://help.amarancreators.com/en/amaran-ray/specifications"
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Current V5 catalogue has an Astera nomenclature issue: stock rows called Astera Titan 2FT/4FT/8FT should be mapped cautiously to distinct official Helios/Titan/Hyperion families, preserving aliases and exact known dimensions.",
+      "Current V5 catalogue has many Lightstar entries that appear generic wattage/fixture types (e.g. 300W Fresnel, 5KW Fresnel, 4-bank, Jem Ball). This follow-up only confirms Lightstar LUXED PRO; do not assert the generic entries are models from the LUXED maker or brand without matching source.",
+      "Falcon Eyes evidence suggests current official storefront domain is falconeyeshk.com; provided falconeyes.com.hk may be a legacy domain. Storefront itself labels the products FalconEyes / 銳鷹影視器材.",
+      "Luminys official corporate PDFs found are older. Newer 200K/40K model page details cited here are from authorized dealer Cirro Lite and need a direct manufacturer source before verified=true.",
+      "Creamsource C3 from parent is preliminary announced product, orderable from Nov 2026 and first shipments expected Q2 2027. As of 2026-10-07 it is pre-release, not an available current model; keep in review pending user policy."
+    ]
+  },
+  "namingReview": {
+    "version": "5.1 naming and ambiguity review",
+    "checkedAt": "2026-10-07",
+    "scope": {
+      "file": "data/catalog/equipment.v5.json",
+      "rowsScanned": 2013,
+      "publishedRows": 2001,
+      "namingModule": "scripts/catalog-naming.mjs",
+      "releaseModule": "scripts/catalog-publication-policy.mjs",
+      "readOnly": true
+    },
+    "metrics": {
+      "totalRows": 2013,
+      "publishedRows": 2001,
+      "unpublishedRows": 12,
+      "verifiedRows": 558,
+      "publishedPendingRows": 888,
+      "cameraRows": 61,
+      "cameraBrands": [
+        "ARRI",
+        "Canon",
+        "DJI",
+        "Freefly",
+        "GoPro",
+        "Insta360",
+        "Panasonic",
+        "Phantom",
+        "RED",
+        "SONY",
+        "通用"
+      ],
+      "lightingRows": 339,
+      "lightingBrands": [
+        "ARRI",
+        "Aputure",
+        "Astera",
+        "Cardellini",
+        "Century",
+        "Creamsource",
+        "Dedolight",
+        "Gator",
+        "Jem",
+        "Kino Flo",
+        "LIGHTMAN",
+        "Lightstar",
+        "NANLUX",
+        "Nanlite",
+        "Polyform",
+        "Rosco",
+        "amaran",
+        "通用"
+      ],
+      "namingStatus": {
+        "official-model": 558,
+        "pending": 899,
+        "official-series": 108,
+        "generic": 448
+      },
+      "exactDuplicateGroups": 0,
+      "nearDuplicateNameGroups": 14,
+      "duplicateAliasStrings": 34,
+      "repeatedBrandCandidates": 57,
+      "englishLinesContainingChinese": 0,
+      "meaning": "Counts reflect full generated catalog snapshot; near-name and alias collision candidates are not automatically duplicates.",
+      "lightingExplicitExclusions": [
+        {
+          "id": "eq-通用-锐鹰rgb大布灯-灯光器材",
+          "name": "通用 锐鹰RGB大布灯",
+          "reason": "按用户已确认的笼统灯具边界"
+        },
+        {
+          "id": "light-led-on-camera-bicolor",
+          "name": "通用 双色温 LED 机头灯(型号待确认)",
+          "reason": "按用户已确认的笼统灯具边界"
+        },
+        {
+          "id": "light-led-mat-unspecified",
+          "name": "通用 LED 布灯(型号待确认)",
+          "reason": "按用户已确认的笼统灯具边界"
+        },
+        {
+          "id": "light-rgb-tube-unspecified",
+          "name": "通用 RGB 棒灯(型号待确认)",
+          "reason": "按用户已确认的笼统灯具边界"
+        }
+      ],
+      "lightingSupersededRows": [
+        {
+          "id": "eq-aputure-aputure-led-灯光器材",
+          "name": "爱图仕 Aputure LED",
+          "reason": "拆分历史记录，不计入四条排除"
+        }
+      ],
+      "patchCount": 72,
+      "explicitBrandNormalizationPatches": 72,
+      "lightstarRgbSpellingCandidates": 5,
+      "catalogRowsWithReferenceLinks": 1033,
+      "catalogRowsWithoutReferenceLinks": 980,
+      "categoryOnlyOrGenericPending": 888
+    },
+    "splitRecommendations": [
+      {
+        "id": "eq-通用-led-air-cushion-lamp-灯光器材",
+        "action": "split",
+        "aliases": [
+          "LED Air Cushion Lamp 爱拍乐气垫灯1*2",
+          "LED Air Cushion Lamp 爱拍乐气垫灯2*2",
+          "LED Air Cushion Lamp 爱拍乐气垫灯4*4",
+          "LED Air Cushion Lamp 爱拍乐气垫灯4*8"
+        ],
+        "proposedVariants": [
+          "1*2",
+          "2*2",
+          "4*4",
+          "4*8"
+        ],
+        "unit": "沿用原单位“套”，不得推断套内灯具数量或尺寸单位",
+        "reason": "四种尺寸在同一 alias 列表中，属于可分开的规格；保持原名称作父记录/历史引用，并分别提供 1×2、2×2、4×4、4×8 选项。没有品牌官方型号证据，不补 Pheon Lux/Godox 等品牌。",
+        "evidence": {
+          "url": "https://www.pheonlux.com/color_light_series/8087.html",
+          "scope": "series",
+          "language": "en",
+          "note": "仅确认该厂商存在名为 Air Cushion Lamp 的品类，不足以确认这条库存属于其品牌；尺寸来源是现有 aliases。"
+        }
+      },
+      {
+        "id": "eq-aputure-爱图仕600d-600x-灯光器材",
+        "action": "split",
+        "aliases": [
+          "600D",
+          "600X"
+        ],
+        "proposedVariants": [
+          "Aputure LS 600d",
+          "Aputure LS 600x"
+        ],
+        "unit": "原记录单位套，拆分后数量未明，不复制数量",
+        "reason": "单条名称合并两个不同灯具型号；只有核对源库存数量后拆分。官方目录将 LS 600d 与 LS 600x 分列。",
+        "evidence": {
+          "url": "https://aputure.com/en-US/pages/downloads?resources_sort=%7B%22prop%22%3A%22date%22%2C%22direction%22%3A%22desc%22%7D",
+          "scope": "model",
+          "language": "en"
+        }
+      },
+      {
+        "id": "Lightstar LUXED RBG entries",
+        "action": "hold-for-identity-check",
+        "relatedIds": [
+          "eq-lightstar-lightstar-luxed-1-rbg-led-灯光器材",
+          "eq-lightstar-lightstar-luxed-12-rbg-led-灯光器材",
+          "eq-lightstar-lightstar-luxed-3-rbg-led-灯光器材",
+          "eq-lightstar-lightstar-luxed-4-rbg-led-灯光器材",
+          "eq-lightstar-lightstar-luxed-9-rbg-led-灯光器材"
+        ],
+        "reason": "5 条把拼写 RBG 与 LUXED 型号合并。官方 Lightstar 将普通 LUXED 标为双色温，将全彩系列标为 LUXED-P / RGBWW，且未见 LUXED-P1。不能机械把 RBG 改成 RGB；先核对实物/原清单是否 P 系列及真实尺寸数量。",
+        "evidence": {
+          "url": "https://lightstar-lights.com/luxed-p-series/",
+          "scope": "series",
+          "language": "en"
+        }
+      },
+      {
+        "id": "eq-nanlite-南光rgb板灯-灯光器材",
+        "action": "keep-generic",
+        "reason": "当前名称是有用途的板灯类别，不属于“笼统 RGB 棒灯/LED 布灯”排除规则；去重中文品牌回声即可，不补具体面板 SKU。"
+      }
+    ],
+    "manualReviewGroups": {
+      "Cooke TLS Speed Panchro": [
+        {
+          "id": "eq-cooke-tls-cooke-speed-panchro-100mm-t2-8-镜头",
+          "name": "库克 Cooke TLS Cooke Speed Panchro 100mm T2.8",
+          "englishName": "Cooke TLS Cooke Speed Panchro 100mm T2.8",
+          "proposedName": "库克 Cooke Speed Panchro 100mm T2.8 TLS Rehoused",
+          "reason": "Cooke appears both in brand fields and “TLS Cooke” model; retain TLS configuration but move it after optical model. Catalog source alone does not prove factory origin."
+        },
+        {
+          "id": "eq-cooke-tls-cooke-speed-panchro-18mm-t2-2-镜头",
+          "name": "库克 Cooke TLS Cooke Speed Panchro 18mm T2.2",
+          "englishName": "Cooke TLS Cooke Speed Panchro 18mm T2.2",
+          "proposedName": "库克 Cooke Speed Panchro 18mm T2.2 TLS Rehoused",
+          "reason": "Cooke appears both in brand fields and “TLS Cooke” model; retain TLS configuration but move it after optical model. Catalog source alone does not prove factory origin."
+        },
+        {
+          "id": "eq-cooke-tls-cooke-speed-panchro-203mm-t4-5-镜头",
+          "name": "库克 Cooke TLS Cooke Speed Panchro 203mm T4.5",
+          "englishName": "Cooke TLS Cooke Speed Panchro 203mm T4.5",
+          "proposedName": "库克 Cooke Speed Panchro 203mm T4.5 TLS Rehoused",
+          "reason": "Cooke appears both in brand fields and “TLS Cooke” model; retain TLS configuration but move it after optical model. Catalog source alone does not prove factory origin."
+        },
+        {
+          "id": "eq-cooke-tls-cooke-speed-panchro-25mm-t2-2-镜头",
+          "name": "库克 Cooke TLS Cooke Speed Panchro 25mm T2.2",
+          "englishName": "Cooke TLS Cooke Speed Panchro 25mm T2.2",
+          "proposedName": "库克 Cooke Speed Panchro 25mm T2.2 TLS Rehoused",
+          "reason": "Cooke appears both in brand fields and “TLS Cooke” model; retain TLS configuration but move it after optical model. Catalog source alone does not prove factory origin."
+        },
+        {
+          "id": "eq-cooke-tls-cooke-speed-panchro-32mm-t2-3-镜头",
+          "name": "库克 Cooke TLS Cooke Speed Panchro 32mm T2.3",
+          "englishName": "Cooke TLS Cooke Speed Panchro 32mm T2.3",
+          "proposedName": "库克 Cooke Speed Panchro 32mm T2.3 TLS Rehoused",
+          "reason": "Cooke appears both in brand fields and “TLS Cooke” model; retain TLS configuration but move it after optical model. Catalog source alone does not prove factory origin."
+        },
+        {
+          "id": "eq-cooke-tls-cooke-speed-panchro-40mm-t2-3-镜头",
+          "name": "库克 Cooke TLS Cooke Speed Panchro 40mm T2.3",
+          "englishName": "Cooke TLS Cooke Speed Panchro 40mm T2.3",
+          "proposedName": "库克 Cooke Speed Panchro 40mm T2.3 TLS Rehoused",
+          "reason": "Cooke appears both in brand fields and “TLS Cooke” model; retain TLS configuration but move it after optical model. Catalog source alone does not prove factory origin."
+        },
+        {
+          "id": "eq-cooke-tls-cooke-speed-panchro-50mm-t2-3-镜头",
+          "name": "库克 Cooke TLS Cooke Speed Panchro 50mm T2.3",
+          "englishName": "Cooke TLS Cooke Speed Panchro 50mm T2.3",
+          "proposedName": "库克 Cooke Speed Panchro 50mm T2.3 TLS Rehoused",
+          "reason": "Cooke appears both in brand fields and “TLS Cooke” model; retain TLS configuration but move it after optical model. Catalog source alone does not prove factory origin."
+        },
+        {
+          "id": "eq-cooke-tls-cooke-speed-panchro-75mm-t2-3-镜头",
+          "name": "库克 Cooke TLS Cooke Speed Panchro 75mm T2.3",
+          "englishName": "Cooke TLS Cooke Speed Panchro 75mm T2.3",
+          "proposedName": "库克 Cooke Speed Panchro 75mm T2.3 TLS Rehoused",
+          "reason": "Cooke appears both in brand fields and “TLS Cooke” model; retain TLS configuration but move it after optical model. Catalog source alone does not prove factory origin."
+        }
+      ],
+      "Mamiya TLS 645": [
+        {
+          "id": "eq-mamiya-tls-mamiya-645-107mm-t2-8-镜头",
+          "name": "Mamiya TLS Mamiya 645 107mm T2.8",
+          "englishName": "Mamiya TLS Mamiya 645 107mm T2.8",
+          "proposedName": "Mamiya 645 107mm TLS Rehoused T2.8",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        },
+        {
+          "id": "eq-mamiya-tls-mamiya-645-150mm-t3-镜头",
+          "name": "Mamiya TLS Mamiya 645 150mm T3",
+          "englishName": "Mamiya TLS Mamiya 645 150mm T3",
+          "proposedName": "Mamiya 645 150mm TLS Rehoused T3",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        },
+        {
+          "id": "eq-mamiya-tls-mamiya-645-17mm-t3-3-镜头",
+          "name": "Mamiya TLS Mamiya 645 17mm T3.3",
+          "englishName": "Mamiya TLS Mamiya 645 17mm T3.3",
+          "proposedName": "Mamiya 645 17mm TLS Rehoused T3.3",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        },
+        {
+          "id": "eq-mamiya-tls-mamiya-645-25mm-t2-8-镜头",
+          "name": "Mamiya TLS Mamiya 645 25mm T2.8",
+          "englishName": "Mamiya TLS Mamiya 645 25mm T2.8",
+          "proposedName": "Mamiya 645 25mm TLS Rehoused T2.8",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        },
+        {
+          "id": "eq-mamiya-tls-mamiya-645-32mm-t2-3-镜头",
+          "name": "Mamiya TLS Mamiya 645 32mm T2.3",
+          "englishName": "Mamiya TLS Mamiya 645 32mm T2.3",
+          "proposedName": "Mamiya 645 32mm TLS Rehoused T2.3",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        },
+        {
+          "id": "eq-mamiya-tls-mamiya-645-39mm-t2-3-镜头",
+          "name": "Mamiya TLS Mamiya 645 39mm T2.3",
+          "englishName": "Mamiya TLS Mamiya 645 39mm T2.3",
+          "proposedName": "Mamiya 645 39mm TLS Rehoused T2.3",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        },
+        {
+          "id": "eq-mamiya-tls-mamiya-645-50mm-t2-3-镜头",
+          "name": "Mamiya TLS Mamiya 645 50mm T2.3",
+          "englishName": "Mamiya TLS Mamiya 645 50mm T2.3",
+          "proposedName": "Mamiya 645 50mm TLS Rehoused T2.3",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        },
+        {
+          "id": "eq-mamiya-tls-mamiya-645-57mm-t1-6-镜头",
+          "name": "Mamiya TLS Mamiya 645 57mm T1.6",
+          "englishName": "Mamiya TLS Mamiya 645 57mm T1.6",
+          "proposedName": "Mamiya 645 57mm TLS Rehoused T1.6",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        },
+        {
+          "id": "v5-restored-7",
+          "name": "Mamiya TLS Mamiya 645 57mm T2.3",
+          "englishName": "Mamiya TLS Mamiya 645 57mm T2.3",
+          "proposedName": "Mamiya 645 57mm TLS Rehoused T2.3",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        },
+        {
+          "id": "eq-mamiya-tls-mamiya-645-78mm-t2-3-镜头",
+          "name": "Mamiya TLS Mamiya 645 78mm T2.3",
+          "englishName": "Mamiya TLS Mamiya 645 78mm T2.3",
+          "proposedName": "Mamiya 645 78mm TLS Rehoused T2.3",
+          "reason": "Repeated Mamiya; preserve 645 format and TLS rehousing marker. Do not combine different focal lengths/apertures."
+        }
+      ],
+      "HAWK 74": [
+        {
+          "id": "eq-hawk-hawk-74-110mm-t3-1-hawk-镜头",
+          "name": "HAWK 74 110mm T3.1 HAWK",
+          "englishName": "HAWK 74 110mm T3.1 HAWK",
+          "proposedName": "HAWK 74 110mm T3.1",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-74-140mm-t3-7-hawk-镜头",
+          "name": "HAWK 74 140mm T3.7 HAWK",
+          "englishName": "HAWK 74 140mm T3.7 HAWK",
+          "proposedName": "HAWK 74 140mm T3.7",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-74-28mm-t2-3-hawk-镜头",
+          "name": "HAWK 74 28mm T2.3 HAWK",
+          "englishName": "HAWK 74 28mm T2.3 HAWK",
+          "proposedName": "HAWK 74 28mm T2.3",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-74-35mm-t2-3-hawk-镜头",
+          "name": "HAWK 74 35mm T2.3 HAWK",
+          "englishName": "HAWK 74 35mm T2.3 HAWK",
+          "proposedName": "HAWK 74 35mm T2.3",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-74-45mm-t2-3-hawk-镜头",
+          "name": "HAWK 74 45mm T2.3 HAWK",
+          "englishName": "HAWK 74 45mm T2.3 HAWK",
+          "proposedName": "HAWK 74 45mm T2.3",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-74-55mm-t2-3-hawk-镜头",
+          "name": "HAWK 74 55mm T2.3 HAWK",
+          "englishName": "HAWK 74 55mm T2.3 HAWK",
+          "proposedName": "HAWK 74 55mm T2.3",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-74-65mm-t2-3-hawk-镜头",
+          "name": "HAWK 74 65mm T2.3 HAWK",
+          "englishName": "HAWK 74 65mm T2.3 HAWK",
+          "proposedName": "HAWK 74 65mm T2.3",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-74-80mm-t2-3-hawk-镜头",
+          "name": "HAWK 74 80mm T2.3 HAWK",
+          "englishName": "HAWK 74 80mm T2.3 HAWK",
+          "proposedName": "HAWK 74 80mm T2.3",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-74-zoom-45-90mm-t2-9-hawk-镜头",
+          "name": "HAWK 74-Zoom 45-90mm T2.9 HAWK",
+          "englishName": "HAWK 74-Zoom 45-90mm T2.9 HAWK",
+          "proposedName": "HAWK 74-Zoom 45-90mm T2.9",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-74-zoom-80-180mm-t2-9-hawk-镜头",
+          "name": "HAWK 74-Zoom 80-180mm T2.9 HAWK",
+          "englishName": "HAWK 74-Zoom 80-180mm T2.9 HAWK",
+          "proposedName": "HAWK 74-Zoom 80-180mm T2.9",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-v-plus-zoom-45-90mm-t2-8-hawk-镜头",
+          "name": "HAWK V-plus zoom 45-90mm T2.8 HAWK",
+          "englishName": "HAWK V-plus zoom 45-90mm T2.8 HAWK",
+          "proposedName": "HAWK V-plus zoom 45-90mm T2.8",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        },
+        {
+          "id": "eq-hawk-hawk-v-plus-zoom-80-180mm-t2-8-hawk-镜头",
+          "name": "HAWK V-plus zoom 80-180mm T2.8 HAWK",
+          "englishName": "HAWK V-plus zoom 80-180mm T2.8 HAWK",
+          "proposedName": "HAWK V-plus zoom 80-180mm T2.8",
+          "reason": "Trailing HAWK duplicates the brand/product line already at the beginning. Keep the existing focal lengths, apertures and Vintage 74 shorthand; no specification inference."
+        }
+      ],
+      "Schneider filter": [
+        {
+          "id": "eq-schneider-138mm-schneider-1-滤镜",
+          "name": "Schneider 138mm Schneider 1",
+          "englishName": "Schneider 138mm Schneider 1",
+          "proposedName": "Schneider 138mm 1",
+          "reason": "Second Schneider duplicates the English brand; retain numeric filter grade exactly."
+        },
+        {
+          "id": "eq-schneider-138mm-schneider-1-2-滤镜",
+          "name": "Schneider 138mm Schneider 1/2",
+          "englishName": "Schneider 138mm Schneider 1/2",
+          "proposedName": "Schneider 138mm 1/2",
+          "reason": "Second Schneider duplicates the English brand; retain numeric filter grade exactly."
+        },
+        {
+          "id": "eq-schneider-138mm-schneider-2-滤镜",
+          "name": "Schneider 138mm Schneider 2",
+          "englishName": "Schneider 138mm Schneider 2",
+          "proposedName": "Schneider 138mm 2",
+          "reason": "Second Schneider duplicates the English brand; retain numeric filter grade exactly."
+        },
+        {
+          "id": "eq-schneider-138mm-schneider-3-滤镜",
+          "name": "Schneider 138mm Schneider 3",
+          "englishName": "Schneider 138mm Schneider 3",
+          "proposedName": "Schneider 138mm 3",
+          "reason": "Second Schneider duplicates the English brand; retain numeric filter grade exactly."
+        }
+      ],
+      "tiffenRepeatCheck": {
+        "result": "0 canonical display names repeat Tiffen after the brand field; retain the names and filter strengths unchanged. Tiffen aliases in split/legacy rows are cross-record search aliases, not duplicate brand text."
+      }
+    },
+    "nearDuplicateGroups": [
+      [
+        {
+          "id": "eq-dji-dji-master-wheels-摄影机附件",
+          "name": "大疆 DJI Master Wheels",
+          "brand": "DJI",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-dji-大疆摇轮-移动器材",
+          "name": "大疆 DJI Master Wheels",
+          "brand": "DJI",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-dji-ready-rig-摄影机附件",
+          "name": "大疆 DJI Ready Rig",
+          "brand": "DJI",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-dji-大疆readyrig-移动器材",
+          "name": "大疆 DJI readyrig",
+          "brand": "DJI",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-tilta-tilta-armor-man-3-0-摄影机附件",
+          "name": "铁头 TILTA Armorman 3.0",
+          "brand": "TILTA",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-tilta-max-armor-man-3-0-移动器材",
+          "name": "铁头 TILTA Armorman 3.0",
+          "brand": "TILTA",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-french-flag-w-arm-摄影机附件",
+          "name": "通用 带臂遮光旗",
+          "brand": "通用",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-french-flag-w-arm-监看",
+          "name": "通用 带臂遮光旗",
+          "brand": "通用",
+          "category": "监看",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-hi-hat-摄影机附件",
+          "name": "通用 低脚架",
+          "brand": "通用",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-hi-hat-移动器材",
+          "name": "通用 低脚架",
+          "brand": "通用",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-shoulder-摄影机附件",
+          "name": "通用 肩架",
+          "brand": "通用",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-肩架-移动器材",
+          "name": "通用 肩架",
+          "brand": "通用",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-wooden-triangle-摄影机附件",
+          "name": "通用 三角木",
+          "brand": "通用",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-wooden-triangle-移动器材",
+          "name": "通用 三角木",
+          "brand": "通用",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-walk-up-scaffold-1m-1m-摄影机附件",
+          "name": "通用 移动脚手架 1M×1M",
+          "brand": "通用",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-walk-up-scaffold-1m-1m1m-1m-移动器材",
+          "name": "通用 移动脚手架 1M×1M",
+          "brand": "通用",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-magliner-magliner-trolley-摄影机附件",
+          "name": "Magliner Trolley",
+          "brand": "Magliner",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-magliner-trolley-监看",
+          "name": "Magliner Trolley",
+          "brand": "Magliner",
+          "category": "监看",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-oconnor-o-connor-2560-fluid-head-摄影机附件",
+          "name": "OConnor 2560 Fluid Head",
+          "brand": "OConnor",
+          "category": "摄影机附件",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-oconnor-o-connor-2560-fluid-head-移动器材",
+          "name": "OConnor 2560 Fluid Head",
+          "brand": "OConnor",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-teleprompter-监看",
+          "name": "通用 题字器",
+          "brand": "通用",
+          "category": "监看",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-题字器-其他",
+          "name": "通用 题字器",
+          "brand": "通用",
+          "category": "其他",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-aluminum-tube-移动器材",
+          "name": "通用 铝管",
+          "brand": "通用",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-aluminum-pipe-灯光器材",
+          "name": "通用 铝管",
+          "brand": "通用",
+          "category": "灯光器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-walk-up-scaffolds-移动器材",
+          "name": "通用 移动脚手架",
+          "brand": "通用",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        },
+        {
+          "id": "eq-通用-walk-up-scaffold-灯光器材",
+          "name": "通用 移动脚手架",
+          "brand": "通用",
+          "category": "灯光器材",
+          "unit": "套",
+          "published": true
+        }
+      ],
+      [
+        {
+          "id": "eq-gfm-gf-primo-dolly-移动器材",
+          "name": "GFM GF-Primo Dolly",
+          "brand": "GFM",
+          "category": "移动器材",
+          "unit": "节",
+          "published": true
+        },
+        {
+          "id": "eq-gfm-gf-primo-dollyprimo-移动器材",
+          "name": "GFM GF-Primo Dolly",
+          "brand": "GFM",
+          "category": "移动器材",
+          "unit": "套",
+          "published": true
+        }
+      ]
+    ],
+    "englishLinesWithChinese": [],
+    "retainedNicknames": [
+      {
+        "id": "eq-通用-铁甲战士-移动器材",
+        "name": "通用 铁甲战士",
+        "brand": "通用",
+        "category": "移动器材",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      },
+      {
+        "id": "grip-fishhook-5-unspecified",
+        "name": "通用 五代鱼钩",
+        "brand": "通用",
+        "category": "移动器材",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      },
+      {
+        "id": "eq-sony-索尼小蜜蜂-录音器材",
+        "name": "索尼 SONY 小蜜蜂",
+        "brand": "SONY",
+        "category": "录音器材",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      },
+      {
+        "id": "eq-通用-阿童木小监-监看",
+        "name": "通用 阿童木小监",
+        "brand": "通用",
+        "category": "监看",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      },
+      {
+        "id": "eq-通用-尊正大监视器-监看",
+        "name": "通用 尊正大监视器",
+        "brand": "通用",
+        "category": "监看",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      },
+      {
+        "id": "video-smallhd-unspecified",
+        "name": "SmallHD 小监视器",
+        "brand": "SmallHD",
+        "category": "监看",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      },
+      {
+        "id": "eq-通用-360head-360-摄影机附件",
+        "name": "通用 360Head 360 云台",
+        "brand": "通用",
+        "category": "摄影机附件",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      },
+      {
+        "id": "eq-通用-centipede-of-2-移动器材",
+        "name": "通用 Centipede of 2",
+        "brand": "通用",
+        "category": "移动器材",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      },
+      {
+        "id": "eq-通用-low-angle-rock-移动器材",
+        "name": "通用 Low Angle Rock",
+        "brand": "通用",
+        "category": "移动器材",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      },
+      {
+        "id": "eq-通用-selfie-swimming-ring-摄影机附件",
+        "name": "通用 Selfie swimming ring",
+        "brand": "通用",
+        "category": "摄影机附件",
+        "published": true,
+        "why": "有明确现场用途/对象，保留原昵称并将英文行译成功能；不据此推断官方SKU。"
+      }
+    ],
+    "uncertainties": [
+      "此子任务未改目录、代码、网站或发布版本；建议均待主 Agent 汇总后审阅。",
+      "“复古改装/stock shorthand”来源不能证明官方型号；TLS、Mamiya 645、Leica R、HAWK Vintage’74 标签保留后仍应标待核验。",
+      "别名同串跨器材记录有 34 组；其中大疆泛称→系列新型号、Tiffen 多规格拆分、MOVMAX 别名拆分属于预期搜索映射，不应全局消重删除。",
+      "跨类别近名组不能单凭名称相同就合并；应对照用途、单位、旧项目数量与恢复映射。"
+    ],
+    "categoryDedupeCandidates": [
+      {
+        "name": "Master Wheels",
+        "ids": [
+          "eq-dji-dji-master-wheels-摄影机附件",
+          "eq-dji-大疆摇轮-移动器材"
+        ],
+        "current": [
+          {
+            "category": "摄影机附件",
+            "brand": "DJI",
+            "unit": "套",
+            "name": "大疆 DJI Master Wheels",
+            "published": true
+          },
+          {
+            "category": "移动器材",
+            "brand": "DJI",
+            "unit": "套",
+            "name": "大疆 DJI Master Wheels",
+            "published": true
+          }
+        ],
+        "recommendedCategory": "移动器材",
+        "reason": "官方 DJI 产品型号；建议规范归“移动器材”后查同单位、同名再合并。",
+        "evidence": {
+          "url": "https://www.dji.com/ronin-2",
+          "scope": "model",
+          "language": "en"
+        },
+        "requiredSafety": "保留两个旧 ID 的跳转映射，核对套装/数量备注；如 unit 不一致则维持拆分。"
+      },
+      {
+        "name": "Tilta Armorman 3.0",
+        "ids": [
+          "eq-tilta-tilta-armor-man-3-0-摄影机附件",
+          "eq-通用-tilta-max-armor-man-3-0-移动器材"
+        ],
+        "current": [
+          {
+            "category": "摄影机附件",
+            "brand": "TILTA",
+            "unit": "套",
+            "name": "铁头 TILTA Armorman 3.0",
+            "published": true
+          },
+          {
+            "category": "移动器材",
+            "brand": "TILTA",
+            "unit": "套",
+            "name": "铁头 TILTA Armorman 3.0",
+            "published": true
+          }
+        ],
+        "recommendedCategory": "移动器材",
+        "reason": "两条名称相同，后者旧 brand=通用 且标题保留铁头；按来源校正品牌并统一归“移动器材”，对照单位和配置后合并。",
+        "evidence": {
+          "url": "https://tilta.com/shop/armor-man-3-0-gimbal-support-system/",
+          "scope": "model",
+          "language": "en"
+        },
+        "requiredSafety": "保留两个旧 ID 的跳转映射，核对套装/数量备注；如 unit 不一致则维持拆分。"
+      },
+      {
+        "name": "OConnor 2560 Fluid Head",
+        "ids": [
+          "eq-oconnor-o-connor-2560-fluid-head-摄影机附件",
+          "eq-oconnor-o-connor-2560-fluid-head-移动器材"
+        ],
+        "current": [
+          {
+            "category": "摄影机附件",
+            "brand": "OConnor",
+            "unit": "套",
+            "name": "OConnor 2560 Fluid Head",
+            "published": true
+          },
+          {
+            "category": "移动器材",
+            "brand": "OConnor",
+            "unit": "套",
+            "name": "OConnor 2560 Fluid Head",
+            "published": true
+          }
+        ],
+        "recommendedCategory": "移动器材",
+        "reason": "名称、品牌和单位相同，仅分类不同；统一归“移动器材”后可去重。",
+        "evidence": {
+          "url": "https://www.ocon.com/",
+          "scope": "model",
+          "language": "en"
+        },
+        "requiredSafety": "保留两个旧 ID 的跳转映射，核对套装/数量备注；如 unit 不一致则维持拆分。"
+      }
+    ]
+  },
+  "cameraFollowup": {
+    "scope": "Research-only verification of four proposed camera additions. No project catalog files were modified.",
+    "as_of": "2026-10-07",
+    "items": [
+      {
+        "brand": "Canon 佳能",
+        "exact_official_name": "EOS R1",
+        "category": "full-frame mirrorless still camera",
+        "official_chinese_product_url": "https://www.canon.com.cn/product/r1/",
+        "official_chinese_spec_url": "https://www.canon.com.cn/product/r1/spec.html",
+        "native_mount_or_lens": "Canon RF mount",
+        "sensor_format": "36 × 24 mm full frame",
+        "released_and_on_sale": true,
+        "availability_evidence": "Official Canon China product page has an immediate purchase link; official specifications identify EOS R1 and RF mount.",
+        "recommendation": "Include. Use the official model name EOS R1; do not add a guessed suffix."
+      },
+      {
+        "brand": "Insta360 影石",
+        "exact_official_name": "Insta360 Ace Pro 2",
+        "category": "action camera",
+        "official_chinese_product_url": "https://www.insta360.com/cn/product/insta360-ace-pro2",
+        "official_chinese_specs_url": "https://onlinemanual.insta360.com/acepro/zh-cn/specs/hardware",
+        "official_chinese_store_url": "https://store.insta360.com/cn/product/ace-pro-2?c=3611&from=products",
+        "native_mount_or_lens": "Fixed integrated Leica Summarit lens; no interchangeable lens mount",
+        "sensor_format": "1/1.3-inch sensor",
+        "released_and_on_sale": true,
+        "availability_evidence": "Official product page offers immediate purchase; official store lists the product for sale and shipping.",
+        "recommendation": "Include as Insta360 Ace Pro 2. Do not create separate model records for manufacturing or cosmetic variants unless their equipment identity/specification materially differs."
+      },
+      {
+        "brand": "GoPro",
+        "exact_official_name": "MISSION 1 PRO ILS",
+        "category": "interchangeable-lens compact cinema camera",
+        "official_product_url": "https://gopro.com/en/us/shop/learn-cameras/mission-1-pro-ils",
+        "official_purchase_url": "https://gopro.com/en/us/shop/buy-cameras/mission-1-series?option-id=CHDHW-001-master",
+        "official_release_url": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Launches-MISSION-1-PRO-ILS-the-Worlds-Smallest-Most-Rugged-Compact-Cinema-Camera-with-Interchangeable-Lenses/default.aspx",
+        "official_availability_update_url": "https://gopro.com/en/us/news/mission-1-series-now-available",
+        "native_mount_or_lens": "Micro Four Thirds (MFT) mount; official specs describe manual focus and manual aperture control, without electronic lens contacts",
+        "sensor_format": "1-inch sensor",
+        "released_and_on_sale": true,
+        "availability_evidence": "The 2026-08-26 announcement said September retail availability; the official availability update originally placed ILS in Q3 2026. As of 2026-10-07, GoPro's official product/purchase page is live with Buy Now and current price, and the official homepage promotes MISSION 1 PRO ILS as here/Buy Now. Thus this is no longer supported only by a preview or announcement.",
+        "recommendation": "Include. Use exact name MISSION 1 PRO ILS and MFT mount. Preserve the historical announcement forecast in audit notes; current direct GoPro purchase status is the decisive on-sale evidence."
+      },
+      {
+        "brand": "RED",
+        "exact_official_name": "V-RAPTOR XE 8K VV",
+        "category": "cinema camera",
+        "official_product_story_url": "https://www.red.com/stories/red-at-broadcast-india",
+        "official_support_downloads_url": "https://www.red.com/downloads/v-raptor-xe",
+        "official_specs_url": "https://docs.red.com/955-0233/955-0233_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XE%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20XE.htm",
+        "official_lens_compatibility_url": "https://docs.red.com/955-0233/955-0233_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XE%20Operation%20Guide%20HTML/Content/3_Components/Lenses.htm",
+        "native_mount_or_lens": "Separate factory-native RF-mount and Nikon Z-mount variants. The guide explicitly distinguishes the Z Mount model from the RF Mount model. Record the mount variant only when known; do not infer one from the brand or product family.",
+        "sensor_format": "8K VV, 35.4 MP global-shutter CMOS",
+        "released_and_on_sale": true,
+        "availability_evidence": "RED's official product story described the XE as just released and available to order, with customer shipments starting in 2025. RED's official downloads page still lists the V-RAPTOR XE 8K VV and current firmware dated 2026-05-18. The official operation guide identifies the exact model/specs and mount variants. I did not find a current RED direct checkout page, so current direct-to-consumer stock is not confirmed; the evidence establishes released product status and continued official support, rather than current inventory at a particular seller.",
+        "recommendation": "Include the released model family as V-RAPTOR XE 8K VV. If database records distinguish native mounts, use separate RF and Nikon Z entries only where the actual variant is known. Avoid treating the model as merely announced or unreleased."
+      }
+    ]
+  },
+  "lightingExtra": {
+    "createdAt": "2026-10-07",
+    "scope": "Follow-up evidence only; no catalog edits. Unreleased products must not be added.",
+    "items": [
+      {
+        "brand": "ARRI",
+        "family": "L-Series Plus",
+        "models": [
+          {
+            "model": "L7-C Plus",
+            "status": "Released; ARRI announcement says available June 2024; product page offers ordering.",
+            "action": "Add if missing as the Plus large-size representative.",
+            "sources": [
+              "https://www.arri.com/en/lighting/led-spotlights/l-series-plus",
+              "https://www.arri.com/en/lighting/led-spotlights/l-series-plus/sizes",
+              "https://www.arri.com/en/company/press/press-releases-2024/arri-upgrades-its-led-fresnels-to-the-new-l-series-plus",
+              "https://www.arri.com/resource/blob/368318/a01831be8048cbfa9e3f3908aa597a91/arri-l-series-l7-c-plus-data-sheet-en-apr2024-data.pdf"
+            ]
+          },
+          {
+            "model": "L10-C Plus",
+            "status": "No such Plus model in current range. Official FAQ says Plus comprises L5 and L7 only; L7-C Plus approaches legacy L10-C output. Legacy L10-C is discontinued.",
+            "action": "Do not add L10-C Plus. Preserve L10-C as legacy inventory only; do not remap it to L7-C Plus.",
+            "sources": [
+              "https://www.arri.com/en/lighting/led-spotlights/l-series-plus/faq",
+              "https://www.arri.com/en/lighting/led-spotlights/discontinued/l-series-c/l10-c",
+              "https://www.arri.com/en/company/press/press-releases-2024/arri-upgrades-its-led-fresnels-to-the-new-l-series-plus"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "Creamsource",
+        "family": "Vortex24 / Vortex24 Soft",
+        "models": [
+          {
+            "model": "Vortex24",
+            "status": "Current official fixture page/specification; Essentials kit code K-CSV-24-ESS.",
+            "action": "Add/retain exact Vortex24 separately from Soft.",
+            "sources": [
+              "https://creamsource.com/product/vortex24/",
+              "https://knowledge.creamsource.com/specs-for-the-vortex24",
+              "https://knowledge.creamsource.com/part-numbers"
+            ]
+          },
+          {
+            "model": "Vortex24 Soft (specification table model Vortex24S)",
+            "status": "Announced 2025-09-10; current official product specs and part number K-CSV-24S-ESS; CreamOS V3.1 released Aug 2025 supports Vortex24S. Secondary launch coverage reports shipping began early Q4 2025; official support docs confirm production product.",
+            "action": "Add as a distinct released model if missing. Do not claim it is latest across all Creamsource families; 2026 Vortex2 / Vortex2 Soft exist.",
+            "sources": [
+              "https://creamsource.com/press/",
+              "https://knowledge.creamsource.com/specs-for-the-vortex24-soft",
+              "https://knowledge.creamsource.com/part-numbers",
+              "https://knowledge.creamsource.com/creamos-firmware-v3.1.0",
+              "https://www.newsshooter.com/2025/09/10/creamsource-vortex24-soft/"
+            ]
+          }
+        ]
+      },
+      {
+        "brand": "Astera",
+        "family": "QuikBeam / QuikSpot / QuikBrick",
+        "models": [
+          {
+            "model": "QuikSpot (AST-QUKSP)",
+            "status": "Manufacturer own-domain specs page confirms name, order code, Titan LED Engine, LED power and specifications. Official firmware notes also refer to QuikSpot.",
+            "action": "Add as a fixture if missing; do not merge with QuikBeam.",
+            "sources": [
+              "https://astera-led.com/products/quikspot/specs/",
+              "https://update.astera-led.com/firmwares/current/release_notes.html"
+            ]
+          },
+          {
+            "model": "QuikBeam (AST-QUKBM; battery bundle AST-QUKBM-STD)",
+            "status": "Official manufacturer manual v2.0 dated 2026-01-26 identifies codes and specs; manual carries Astera imprint and links to astera-led.com/quikbeam, but hosted by distributor. Astera own-domain pages were blocked by robots in this check. Current authorized retailer shows battery bundle in stock.",
+            "action": "Add QuikBeam fixture if missing. Include -STD only where battery bundle is a tracked SKU.",
+            "sources": [
+              "https://astera-led.com/quikbeam",
+              "https://www.bellaliteblack.se/storage/38E3F77465D2EA4F40B98A8AB84FB30C80F36231F82FA866719864605BCD9F84/d85f4b9b7ae14ec69975fe645bac4ff5/pdf/media/06adf014995a41b7a5f239ce3c980c60/AST-QUKBM-STD_file_manual1.pdf",
+              "https://www.mediatec.de/astera-quikbeam-ast-qukbm-std/",
+              "https://www.linkedin.com/posts/asteraofficial_astera-quikbeam-quikbrick-activity-7424096700622974976-ixnG"
+            ]
+          },
+          {
+            "model": "QuikBrick for QuikBeam (AST-QUKBM-QBK)",
+            "status": "Replaceable battery accessory, not a fixture. Manufacturer datasheet/manual copy found on dealer-hosted PDF; manufacturer official QuikBeam manual/release identifies it.",
+            "action": "Exclude from fixture database unless accessory equipment is in scope.",
+            "sources": [
+              "https://astera-led.com/quikbeam",
+              "https://cdn.menziebz.ch/media/b1/86/27/1770045062/Datasheet_QuikBeam_QuikBrick_V1.pdf?ts=1770045062",
+              "https://www.bellaliteblack.se/storage/9C753F2E01F77DDE6C2EFF11C582778428CA84EAB2400640E0B347EFB4C99E40/5c7b611a20254f208f4b90741f527b87/pdf/media/c4e457ee44d649ccbc38cc96e580adde/AST-QUKBM-QBK_file_manual1.pdf"
+            ]
+          }
+        ],
+        "sourceLimit": "QuikSpot direct specs page is accessible on Astera domain. Direct QuikBeam/QuikBrick pages are blocked by robots; do not describe the reseller-hosted manual/data sheet as hosted by Astera."
+      },
+      {
+        "brand": "Kino Flo",
+        "family": "Celeb IKON / Diva Lux",
+        "models": [
+          {
+            "model": "Celeb IKON 12",
+            "status": "Official product page and launch post May 2026; launched, 1200W.",
+            "action": "Add if missing as exact distinct fixture.",
+            "sources": [
+              "https://kinoflo.com/celeb-ikon-12/",
+              "https://kinoflo.com/blog/celeb-ikon-12-a-familiar-light-a-brighter-return/",
+              "https://kinoflo.com/about/"
+            ]
+          },
+          {
+            "model": "Celeb IKON 6",
+            "status": "Official product page and June 4, 2025 launch post; launched, 600W.",
+            "action": "Add if missing as separate model.",
+            "sources": [
+              "https://kinoflo.com/celeb-ikon6/",
+              "https://kinoflo.com/blog/quarterly-on-sets-rekap/new-led-engine-goes-to-next-level-delivering-full-power-to-all-five-colors/",
+              "https://kinoflo.com/ikon/"
+            ]
+          },
+          {
+            "model": "Diva Lux 4",
+            "status": "Official product page; Dec 10, 2025 launch post explicitly says now available and shipping.",
+            "action": "Add if missing; keep distinct from legacy Diva-Lite 4.",
+            "sources": [
+              "https://kinoflo.com/diva-lux-4/",
+              "https://kinoflo.com/blog/diva-lux-4-engineered-for-broadcast-built-for-brilliance/",
+              "https://kinoflo.com/downloads/"
+            ]
+          }
+        ]
+      }
+    ],
+    "releaseBoundary": [
+      "Do not add Creamsource C3; parent evidence says it is pre-release with preliminary specifications.",
+      "Vortex24 Soft has 2025 launch, current official spec/part number and firmware support, and reported Q4 2025 shipping.",
+      "Diva Lux 4 explicitly available and shipping.",
+      "QuikBeam manual v2.0 dated Jan 2026 plus current retailer stock indicate released; no Astera-hosted manual URL could be fetched in this check."
+    ],
+    "additionalChecks": [
+      {
+        "brand": "Aputure",
+        "family": "STORM XT52",
+        "status": "Aputure official April 2025 “Introducing the STORM XT52” content calls it the new flagship; official product page lists the fixture with sale purchase options, and manufacturer manual, datasheet, and firmware releases establish a production product. However the current full kit configuration page is marked Backorder. I did not find a manufacturer statement with an explicit first shipment date or unambiguous “now shipping” statement in this check.",
+        "recommendation": "Because the user says unreleased products must not enter, safest catalog decision is pending release-status confirmation; do not rely on Add to Cart. The evidence indicates an announced/currently supported product, but current Backorder does not itself prove never shipped. If strict proof of delivery is required, keep it out until Aputure confirms shipment/availability.",
+        "sources": [
+          "https://www.youtube.com/watch?v=DAO09AeuklQ",
+          "https://aputure.com/EN-US/products/storm-xt52?Style=w%2Fo+Flight+Case+%28Bare+Leads%29",
+          "https://help.aputure.com/en/storm-xt52",
+          "https://aputure.com/en-US/pages/downloads?resources_sort=%7B%22prop%22%3A%22date%22%2C%22direction%22%3A%22desc%22%7D",
+          "https://aputure.com/en-US/products/storm-xt52-lamp-head"
+        ]
+      },
+      {
+        "brand": "Aputure",
+        "family": "STORM CS32",
+        "status": "Official product page and manufacturer manuals/firmware present; official Aputure channel link says “STORM CS32 | Now Available”. Current direct product page displays Backorder, so it is a released model with current stock unavailability, not unreleased.",
+        "recommendation": "May be included as released model; note availability is currently Backorder on manufacturer storefront.",
+        "sources": [
+          "https://aputure.com/en-US/products/storm-cs32",
+          "https://aputure.com/en-US/pages/downloads?resources_sort=%7B%22prop%22%3A%22date%22%2C%22direction%22%3A%22desc%22%7D",
+          "https://linktr.ee/aputuretech"
+        ]
+      },
+      {
+        "brand": "利帅 / Lishuai",
+        "family": "FOCUS焦点系列",
+        "status": "Manufacturer Chinese site names registered entity 余姚利帅影视器材有限公司 and features current FOCUS 2000Xpro product page; the page describes it as 1000W pro spotlight and provides a “购买” (buy) path. Current product index also lists FOCUS 1000Dpro, FOCUS 1000Xpro and multiple FOCUS models.",
+        "recommendation": "Brand is genuine film-lighting maker; if filling brand’s current high-output representative, FOCUS 2000Xpro is a direct official model, but note official specification text says 1000W despite “2000” in model string; do not normalize/rename without manufacturer clarification. Existing LED LITE 利帅 S30-C entry may conflate ARRI SkyPanel S30-C (ARRI official product page confirms that distinct model); inspect ID/source before assigning to Lishuai.",
+        "sources": [
+          "https://www.lishuai.com.cn/product/focus-jiao-dian-xi-lie/1000w-zhuan-ye-ji-da-gong-lyu-ju-guang-deng.html",
+          "https://www.lishuai.com.cn/product/",
+          "https://www.lishuai.com.cn/",
+          "https://www.arri.com/en/lighting/led/skypanel/L1.0003358"
+        ]
+      },
+      {
+        "brand": "PHEON LUX",
+        "inventory clue": "“爱拍乐气垫灯”",
+        "status": "Official Chinese site displays brand name PHEON LUX in English; official company materials identify legal maker as 东莞汇莞文化科技有限公司 (Dongguan Huiguan Culture Technology Co., Ltd.). No official source found translating the brand as “爱拍乐”. Manufacturer official Chinese site lists Pixel Inflatable Light M-Max and other lines, but ambiguous inventory phrase alone cannot establish same brand/product.",
+        "recommendation": "Do not rewrite “爱拍乐气垫灯” to PHEON LUX or a specific model solely from phonetic similarity. If identity is otherwise matched, use official brand PHEON LUX and manufacturer model from exact record.",
+        "sources": [
+          "https://www.pheonlux.com/cn/",
+          "https://www.pheonlux.com/company/",
+          "https://www.pheonlux.com/uploadfiles/20240530/6657f868d31b5.pdf",
+          "https://www.pheonlux.com/uploadfiles/20260205/69840d79d8cde.pdf",
+          "https://www.pheonlux.com/uploadfiles/20240520/664afe50dd585.pdf"
+        ]
+      }
+    ]
+  },
+  "splitReview": {
+    "date": "2026-10-07",
+    "scope": "Research support only; no repository or catalog files changed.",
+    "sourceFilesReviewed": [
+      "data/catalog/equipment.v5.json",
+      "data/catalog/v4-inventory.json"
+    ],
+    "splitCases": [
+      {
+        "case": "Aputure 600D / 600X combined stock label",
+        "sourceId": "eq-aputure-爱图仕600d-600x-灯光器材",
+        "sourceName": "爱图仕 Aputure 600D 600X",
+        "sourceUnit": "套",
+        "sourceAliases": [
+          "爱图仕600D 600X"
+        ],
+        "sourceInventoryNotes": null,
+        "status": "proposed split; both model identities are plausible, but the X target needs primary-source confirmation before marking independently verified",
+        "children": [
+          {
+            "id": "v5-aputure-ls-600d",
+            "name": "爱图仕 Aputure 光风暴 LS 600d",
+            "englishName": "Aputure Light Storm LS 600d",
+            "brandZh": "爱图仕",
+            "brandEn": "Aputure",
+            "series": "光风暴",
+            "model": "LS 600d",
+            "unit": "套",
+            "size": null,
+            "oldAliases": [],
+            "targetExistingId": null,
+            "suggestedReplacementIds": [
+              "v5-aputure-ls-600d",
+              "eq-aputure-aputure-bi-color-ls-600x-灯光器材"
+            ],
+            "officialSource": "https://aputure.com/en-US/products/ls-600d",
+            "sourceSupports": "Aputure product page calls the model LS 600d, lists 600W daylight balance, and separately names LS 600d Pro as its predecessor. It supports the non-Pro model identifier, but the inventory shorthand alone does not establish that it is the stocked variant.",
+            "stockQuantityAction": "Do not copy quantity from the combined source row; split stock count is unknown."
+          },
+          {
+            "id": "eq-aputure-aputure-bi-color-ls-600x-灯光器材",
+            "name": "爱图仕 Aputure 光风暴 Bi Color LS 600X",
+            "englishName": "Aputure Light Storm Bi Color LS 600X",
+            "brandZh": "爱图仕",
+            "brandEn": "Aputure",
+            "series": "光风暴",
+            "model": "Bi Color LS 600X",
+            "unit": "套",
+            "size": null,
+            "oldAliases": [],
+            "targetExistingId": "eq-aputure-aputure-bi-color-ls-600x-灯光器材",
+            "suggestedReplacementIds": [
+              "v5-aputure-ls-600d",
+              "eq-aputure-aputure-bi-color-ls-600x-灯光器材"
+            ],
+            "officialSource": null,
+            "sourceSupports": "An existing catalog row already represents the Bi Color LS 600X and is the natural landing target for the X half. Its current reference is only Aputure's brand homepage, so keep its verification state unchanged until a model-specific Aputure source is located. Do not map it to LS 600x Pro.",
+            "stockQuantityAction": "Do not copy quantity from the combined source row; split stock count is unknown."
+          }
+        ],
+        "quantityAndAliasCaution": "Keep the shared combined alias on the superseded source record for lookup. Do not attach that ambiguous alias to both child records or copy the old quantity to either child.",
+        "primaryEvidence": [
+          {
+            "url": "https://aputure.com/en-US/products/ls-600d",
+            "scope": "exact model LS 600d; official manufacturer page"
+          },
+          {
+            "url": "https://aputure.com/en-US/products/ls-600x-pro",
+            "scope": "exact model LS 600x Pro; demonstrates why bare 600X must not be upgraded to Pro"
+          }
+        ],
+        "replacementIds": [
+          "v5-aputure-ls-600d",
+          "eq-aputure-aputure-bi-color-ls-600x-灯光器材"
+        ]
+      },
+      {
+        "case": "Aputure LED kit labels",
+        "sourceId": "eq-aputure-aputure-led-灯光器材",
+        "sourceName": "爱图仕 Aputure LED",
+        "sourceUnit": "套",
+        "sourceAliases": [
+          "APUTURE LED",
+          "APUTURE LED 爱图仕B7C 8件套（爱图仕全彩灯泡套装）",
+          "APUTURE LED 爱图仕MC 12件套"
+        ],
+        "sourceInventoryNotes": null,
+        "status": "already split in V5; do not create extra rows",
+        "children": [
+          {
+            "id": "v5-aputure-b7c-8-kit",
+            "name": "爱图仕 Aputure Accent B7c 8-Light Kit",
+            "englishName": "Aputure Accent B7c 8-Light Kit",
+            "brandZh": "爱图仕",
+            "brandEn": "Aputure",
+            "series": "Accent",
+            "model": "B7c 8-Light Kit",
+            "unit": "套",
+            "size": null,
+            "oldAliases": [
+              "APUTURE LED 爱图仕B7C 8件套（爱图仕全彩灯泡套装）"
+            ],
+            "targetExistingId": "v5-aputure-b7c-8-kit",
+            "suggestedReplacementIds": [
+              "v5-aputure-b7c-8-kit",
+              "v5-aputure-mc-12-kit"
+            ],
+            "officialSource": "https://aputure.com/en-US/products/accent-b7c-8-light-kit",
+            "sourceSupports": "Official page identifies the B7c 8-Light Kit and its eight bulbs plus charging case."
+          },
+          {
+            "id": "v5-aputure-mc-12-kit",
+            "name": "爱图仕 Aputure MC 12-Light Production Kit",
+            "englishName": "Aputure MC 12-Light Production Kit",
+            "brandZh": "爱图仕",
+            "brandEn": "Aputure",
+            "series": "MC",
+            "model": "12-Light Production Kit",
+            "unit": "套",
+            "size": null,
+            "oldAliases": [
+              "APUTURE LED 爱图仕MC 12件套"
+            ],
+            "targetExistingId": "v5-aputure-mc-12-kit",
+            "suggestedReplacementIds": [
+              "v5-aputure-b7c-8-kit",
+              "v5-aputure-mc-12-kit"
+            ],
+            "officialSource": "https://aputure.com/en-US/products/mc-12-light-production-kit",
+            "sourceSupports": "Official product page describes a 12-light kit; confirms the label refers to a kit rather than one LED fixture."
+          }
+        ],
+        "quantityAndAliasCaution": "The original row is unpublished and superseded with both replacement IDs already set. Keep its broad APUTURE LED alias on the superseded row; the two specific aliases already reside on their matching children. Do not copy source quantity.",
+        "replacementIds": [
+          "v5-aputure-b7c-8-kit",
+          "v5-aputure-mc-12-kit"
+        ]
+      },
+      {
+        "case": "Air Cushion Lamp explicit dimensions",
+        "sourceId": "eq-通用-led-air-cushion-lamp-灯光器材",
+        "sourceName": "通用 LED Air Cushion Lamp",
+        "sourceUnit": "套",
+        "sourceAliases": [
+          "LED Air Cushion Lamp",
+          "LED Air Cushion Lamp 爱拍乐气垫灯1*2",
+          "LED Air Cushion Lamp 爱拍乐气垫灯2*2",
+          "LED Air Cushion Lamp 爱拍乐气垫灯4*4",
+          "LED Air Cushion Lamp 爱拍乐气垫灯4*8"
+        ],
+        "sourceInventoryNotes": null,
+        "status": "proposed split based on explicit size aliases; retain generic maker identity and do not infer units",
+        "children": [
+          {
+            "id": "v5-air-cushion-lamp-1x2",
+            "name": "通用 LED Air Cushion Lamp 1×2",
+            "englishName": "LED Air Cushion Lamp 1×2",
+            "brandZh": "通用",
+            "brandEn": "",
+            "series": "",
+            "model": "LED Air Cushion Lamp 1×2",
+            "unit": "套",
+            "size": "1×2 (unit unspecified)",
+            "oldAliases": [
+              "LED Air Cushion Lamp 爱拍乐气垫灯1*2"
+            ],
+            "targetExistingId": null,
+            "suggestedReplacementIds": [
+              "v5-air-cushion-lamp-1x2",
+              "v5-air-cushion-lamp-2x2",
+              "v5-air-cushion-lamp-4x4",
+              "v5-air-cushion-lamp-4x8"
+            ],
+            "officialSource": null,
+            "sourceSupports": "Size comes directly from the historic alias only; no manufacturer identity or measurement unit is established."
+          },
+          {
+            "id": "v5-air-cushion-lamp-2x2",
+            "name": "通用 LED Air Cushion Lamp 2×2",
+            "englishName": "LED Air Cushion Lamp 2×2",
+            "brandZh": "通用",
+            "brandEn": "",
+            "series": "",
+            "model": "LED Air Cushion Lamp 2×2",
+            "unit": "套",
+            "size": "2×2 (unit unspecified)",
+            "oldAliases": [
+              "LED Air Cushion Lamp 爱拍乐气垫灯2*2"
+            ],
+            "targetExistingId": null,
+            "suggestedReplacementIds": [
+              "v5-air-cushion-lamp-1x2",
+              "v5-air-cushion-lamp-2x2",
+              "v5-air-cushion-lamp-4x4",
+              "v5-air-cushion-lamp-4x8"
+            ],
+            "officialSource": null,
+            "sourceSupports": "Size comes directly from the historic alias only; no manufacturer identity or measurement unit is established."
+          },
+          {
+            "id": "v5-air-cushion-lamp-4x4",
+            "name": "通用 LED Air Cushion Lamp 4×4",
+            "englishName": "LED Air Cushion Lamp 4×4",
+            "brandZh": "通用",
+            "brandEn": "",
+            "series": "",
+            "model": "LED Air Cushion Lamp 4×4",
+            "unit": "套",
+            "size": "4×4 (unit unspecified)",
+            "oldAliases": [
+              "LED Air Cushion Lamp 爱拍乐气垫灯4*4"
+            ],
+            "targetExistingId": null,
+            "suggestedReplacementIds": [
+              "v5-air-cushion-lamp-1x2",
+              "v5-air-cushion-lamp-2x2",
+              "v5-air-cushion-lamp-4x4",
+              "v5-air-cushion-lamp-4x8"
+            ],
+            "officialSource": null,
+            "sourceSupports": "Size comes directly from the historic alias only; no manufacturer identity or measurement unit is established."
+          },
+          {
+            "id": "v5-air-cushion-lamp-4x8",
+            "name": "通用 LED Air Cushion Lamp 4×8",
+            "englishName": "LED Air Cushion Lamp 4×8",
+            "brandZh": "通用",
+            "brandEn": "",
+            "series": "",
+            "model": "LED Air Cushion Lamp 4×8",
+            "unit": "套",
+            "size": "4×8 (unit unspecified)",
+            "oldAliases": [
+              "LED Air Cushion Lamp 爱拍乐气垫灯4*8"
+            ],
+            "targetExistingId": null,
+            "suggestedReplacementIds": [
+              "v5-air-cushion-lamp-1x2",
+              "v5-air-cushion-lamp-2x2",
+              "v5-air-cushion-lamp-4x4",
+              "v5-air-cushion-lamp-4x8"
+            ],
+            "officialSource": null,
+            "sourceSupports": "Size comes directly from the historic alias only; no manufacturer identity or measurement unit is established."
+          }
+        ],
+        "quantityAndAliasCaution": "Do not infer feet, meters, 尺, or manufacturer from the aliases. Keep the unsized generic alias on the old record pending resolution. Do not copy quantity to each child.",
+        "replacementIds": [
+          "v5-air-cushion-lamp-1x2",
+          "v5-air-cushion-lamp-2x2",
+          "v5-air-cushion-lamp-4x4",
+          "v5-air-cushion-lamp-4x8"
+        ]
+      },
+      {
+        "case": "MOVMAX broad inventory label",
+        "sourceId": "eq-movmax-movmax-移动器材",
+        "sourceName": "MOVMAX 型号待核验",
+        "sourceUnit": "套",
+        "sourceAliases": [
+          "MOVMAX",
+          "MOVMAX滑轨",
+          "MOVMAX吸盘",
+          "MOVMAX 滑轨"
+        ],
+        "sourceInventoryNotes": null,
+        "status": "already split in V5 into functional labels; do not create extra rows or infer models",
+        "children": [
+          {
+            "id": "v5-movmax-slider-label",
+            "name": "MOVMAX 滑轨",
+            "englishName": "MOVMAX Slider",
+            "brandZh": "",
+            "brandEn": "MOVMAX",
+            "series": "",
+            "model": "滑轨",
+            "unit": "套",
+            "size": null,
+            "oldAliases": [
+              "MOVMAX滑轨",
+              "MOVMAX 滑轨"
+            ],
+            "targetExistingId": "v5-movmax-slider-label",
+            "suggestedReplacementIds": [
+              "v5-movmax-slider-label",
+              "v5-movmax-suction-label"
+            ],
+            "officialSource": null,
+            "sourceSupports": "Inventory alias identifies a slider function but does not identify a model."
+          },
+          {
+            "id": "v5-movmax-suction-label",
+            "name": "MOVMAX 吸盘",
+            "englishName": "MOVMAX Suction Cup",
+            "brandZh": "",
+            "brandEn": "MOVMAX",
+            "series": "",
+            "model": "吸盘",
+            "unit": "套",
+            "size": null,
+            "oldAliases": [
+              "MOVMAX吸盘"
+            ],
+            "targetExistingId": "v5-movmax-suction-label",
+            "suggestedReplacementIds": [
+              "v5-movmax-slider-label",
+              "v5-movmax-suction-label"
+            ],
+            "officialSource": null,
+            "sourceSupports": "Inventory alias identifies a suction-cup function but does not identify a model."
+          }
+        ],
+        "quantityAndAliasCaution": "The old source row is unpublished and already points to both replacements. Keep the bare MOVMAX alias only on the superseded row; do not make it an alias of both children. Do not copy quantity.",
+        "replacementIds": [
+          "v5-movmax-slider-label",
+          "v5-movmax-suction-label"
+        ]
+      }
+    ],
+    "dedupeCases": [
+      {
+        "name": "DJI Master Wheels",
+        "sourceIds": [
+          "eq-dji-dji-master-wheels-摄影机附件",
+          "eq-dji-大疆摇轮-移动器材"
+        ],
+        "canonicalName": "大疆 DJI Master Wheels",
+        "unitCheck": {
+          "left": "套",
+          "right": "套",
+          "same": true
+        },
+        "inventoryNotesCheck": "Neither V4 nor V5 row has an inventoryNotes field. Both have the same unit and same product identity with no recorded configuration distinction; absence of notes is not proof of identical physical bundles.",
+        "categoryRecommendation": "移动器材",
+        "keepId": "eq-dji-大疆摇轮-移动器材",
+        "retireId": "eq-dji-dji-master-wheels-摄影机附件",
+        "replacementIds": [
+          "eq-dji-大疆摇轮-移动器材"
+        ],
+        "officialProductPage": "https://www.dji.com/master-wheels",
+        "evidenceScope": "Official DJI product page for Master Wheels.",
+        "preserveAliases": [
+          "DJI Master Wheels",
+          "DJI Master Wheels 大疆摇轮",
+          "大疆 DJI 摇轮",
+          "大疆摇轮",
+          "大疆大师摇轮"
+        ]
+      },
+      {
+        "name": "Tilta Armorman 3.0",
+        "sourceIds": [
+          "eq-tilta-tilta-armor-man-3-0-摄影机附件",
+          "eq-通用-tilta-max-armor-man-3-0-移动器材"
+        ],
+        "canonicalName": "铁头 TILTA Armorman 3.0",
+        "unitCheck": {
+          "left": "套",
+          "right": "套",
+          "same": true
+        },
+        "inventoryNotesCheck": "Neither V4 nor V5 row has an inventoryNotes field. Both have the same unit and the exact system name; neither records different included components. This does not establish the physical kit contents in the inventory.",
+        "categoryRecommendation": "移动器材",
+        "keepId": "eq-通用-tilta-max-armor-man-3-0-移动器材",
+        "retireId": "eq-tilta-tilta-armor-man-3-0-摄影机附件",
+        "replacementIds": [
+          "eq-通用-tilta-max-armor-man-3-0-移动器材"
+        ],
+        "officialProductPage": "https://tilta.com/shop/armor-man-3-0-gimbal-support-system/",
+        "evidenceScope": "Official Tilta model page for the complete Armorman 3.0 Gimbal Support System, SKU ARM-T03. Do not use the separate arm-component page as evidence for the whole system.",
+        "preserveAliases": [
+          "铁头 TILTA Armor-man 3.0",
+          "Tilta Armor-man 3.0",
+          "Tilta Armor-man 3.0 铁甲战士 3.0",
+          "铁头铁甲战士三代",
+          "铁头 TILTA Max Armor Man 3.0",
+          "Tilta Max Armor Man 3.0",
+          "铁头 机械臂 · Tilta Max Armor Man 3.0"
+        ]
+      },
+      {
+        "name": "OConnor 2560 Fluid Head",
+        "sourceIds": [
+          "eq-oconnor-o-connor-2560-fluid-head-摄影机附件",
+          "eq-oconnor-o-connor-2560-fluid-head-移动器材"
+        ],
+        "canonicalName": "OConnor 2560 Fluid Head",
+        "unitCheck": {
+          "left": "套",
+          "right": "套",
+          "same": true
+        },
+        "inventoryNotesCheck": "Neither V4 nor V5 row has an inventoryNotes field. Both have the same unit and model. The second alias includes the text 2560D, but the primary model is 2560 and no different package/configuration is recorded; keep 2560D as an alias clue only, not as the canonical model.",
+        "categoryRecommendation": "移动器材",
+        "keepId": "eq-oconnor-o-connor-2560-fluid-head-移动器材",
+        "retireId": "eq-oconnor-o-connor-2560-fluid-head-摄影机附件",
+        "replacementIds": [
+          "eq-oconnor-o-connor-2560-fluid-head-移动器材"
+        ],
+        "officialProductPage": "https://www.ocon.com/products/fluid-heads/2560/",
+        "evidenceScope": "Official OConnor model page explicitly identifies model 2560 and lists its head package. The OConnor homepage is not model-level evidence.",
+        "preserveAliases": [
+          "O'Connor 2560 Fluid Head",
+          "O'Connor 2560 Fluid Head 欧科诺2560云台",
+          "O'Connor 2560D 重型液压云台 · O'Connor 2560 Fluid Head"
+        ]
+      }
+    ],
+    "alreadySeparatedTubeLengths": [
+      {
+        "id": "eq-nanlite-led-rgb-1-灯光器材",
+        "name": "南光 NANLITE RGB 1尺灯管",
+        "unit": "套"
+      },
+      {
+        "id": "eq-nanlite-led-rgb-2-灯光器材",
+        "name": "南光 NANLITE RGB 2尺灯管",
+        "unit": "套"
+      },
+      {
+        "id": "eq-nanlite-led-rgb-4-灯光器材",
+        "name": "南光 NANLITE RGB 4尺灯管",
+        "unit": "套"
+      }
+    ],
+    "uncertainties": [
+      "The combined Aputure stock label does not specify Pro, battery mount, or quantity by variant. Split IDs do not imply quantities.",
+      "A model-specific primary Aputure page for the existing base LS 600X row was not confirmed in this pass. Do not map bare 600X to LS 600x Pro.",
+      "Air Cushion Lamp aliases prove four dimension labels only; dimensions' units and actual manufacturer are unknown.",
+      "For Master Wheels, Armorman 3.0, and OConnor 2560, same-unit duplicate rows and no configuration conflict support dedupe, but source inventories contain no component-list or quantity notes proving identical physical packages. Preserve both old IDs as redirects and do not sum or duplicate stock quantities without inventory reconciliation.",
+      "Nanlite 1尺/2尺/4尺 RGB tube labels remain separate; do not infer INFINIBAR series identity from length alone."
+    ]
+  },
+  "releaseDecisions": [
+    {
+      "brand": "Aputure",
+      "model": "STORM XT52",
+      "decision": "include-released",
+      "sources": [
+        "https://aputure.com/EN-US/products/storm-xt52?Style=w%2Fo+Flight+Case+%28Bare+Leads%29",
+        "https://help.aputure.com/en/storm-xt52/firmware-update-v1.9"
+      ],
+      "reason": "主审复核：官方完整灯具购买页当前为Add to Cart，2025手册及2026面向既有用户的连续固件支持。结合官方在售目录判定已上市；部分款式Backorder属于缺货，不据此当作未上市。未确认首批发货日期，不作该日期断言。"
+    },
+    {
+      "brand": "利帅",
+      "model": "FOCUS 2000Xpro",
+      "decision": "include-released",
+      "reason": "按官方型号字符串收录；官网文本同时写1000W，不推定其额定功率是2000W",
+      "source": "https://www.lishuai.com.cn/product/focus-jiao-dian-xi-lie/1000w-zhuan-ye-ji-da-gong-lyu-ju-guang-deng.html"
+    }
+  ],
+  "cameraReview": [
+    {
+      "brand": "ARRI",
+      "existingSeries": [
+        {
+          "series": "ALEXA",
+          "models": [
+            "ALEXA 35",
+            "ALEXA LF",
+            "ALEXA Mini",
+            "ALEXA Mini LF",
+            "ALEXA SXT Plus"
+          ],
+          "assessment": "已有历史与现役机型；目录缺少目前官方页面列出的 ALEXA 35 Xtreme 与 ALEXA 265。"
+        },
+        {
+          "series": "AMIRA",
+          "models": [
+            "AMIRA"
+          ],
+          "assessment": "已覆盖；官方当前 cine-camera 目录仍列 AMIRA。"
+        }
+      ],
+      "missing": [
+        "ALEXA 35 Xtreme",
+        "ALEXA 265"
+      ],
+      "officialSources": [
+        "https://www.arri.com/en/cine-systems/cine-cameras",
+        "https://www.arri.com/en/cine-systems/cine-cameras/alexa-35-xtreme",
+        "https://www.arri.com/en/cine-systems/cine-cameras/alexa-265"
+      ],
+      "note": "ALEXA 35 Xtreme 是更新后的 ALEXA 35 系列相机，官方称可作为新机购买或升级现有 ALEXA 35；仍建议新增不同型号记录，保留 cam-alexa-35 的旧项目身份。ALEXA 265 是独立的 65 mm 机型。具体购置套装与卡口需按套装选择核对。"
+    },
+    {
+      "brand": "DJI",
+      "existingSeries": [
+        {
+          "series": "Mavic",
+          "models": [
+            "Mavic 2 Pro",
+            "Mavic 3 Pro",
+            "Mavic 4 Pro"
+          ],
+          "assessment": "代表系列最新型号 Mavic 4 Pro 已收录。"
+        },
+        {
+          "series": "Osmo Action",
+          "models": [
+            "Action 2",
+            "Osmo Action 6"
+          ],
+          "assessment": "最新 Action 6 已收录；Action 2 保留历史身份。"
+        },
+        {
+          "series": "Osmo Pocket",
+          "models": [
+            "Osmo Pocket 4P"
+          ],
+          "assessment": "Pocket 4P 已收录；Pocket 未指定型的旧库存需保留原身份。"
+        },
+        {
+          "series": "Osmo 360",
+          "models": [
+            "Osmo 360 II"
+          ],
+          "assessment": "最新 Osmo 360 II 已收录。"
+        },
+        {
+          "series": "Ronin 4D",
+          "models": [
+            "Ronin 4D",
+            "Ronin 4D-8K"
+          ],
+          "assessment": "官方现列 6K Combo 与 8K Combo，目录已有 6K/8K 记录；需要校对“Ronin 4D-8K”是否应与官方套装名称对齐，避免把套装名误作独立机身型号。"
+        }
+      ],
+      "missing": [],
+      "officialSources": [
+        "https://www.dji.com/products/osmo",
+        "https://www.dji.com/ronin-4d",
+        "https://repair.dji.com/help/content?customId=01700006555&documentType=&lang=en&paperDocType=ARTICLE&re=US&spaceId=17",
+        "https://www.dji.com/media-center/announcements/dji-release-osmo-360-2"
+      ],
+      "corrections": [
+        {
+          "id": "cam-dji-ronin4d-8k",
+          "finding": "官方产品页描述为 Ronin 4D 的 6K Combo 与 8K Combo，并说明 8K 是搭载 Zenmuse X9-8K 云台相机的组合；宜保留套装/相机头配置差异，核对名称是否应标为‘DJI Ronin 4D 8K Combo’或‘Zenmuse X9-8K’。不应将其与 4D-6K 合并。",
+          "source": "https://www.dji.com/ronin-4d"
+        }
+      ]
+    },
+    {
+      "brand": "Canon",
+      "existingSeries": [
+        {
+          "series": "Cinema EOS",
+          "models": [
+            "EOS C300 Mark II",
+            "EOS C300 Mark III",
+            "EOS C500 Mark II",
+            "EOS C80"
+          ],
+          "assessment": "目录缺少仍在售且代表当前产品线的 EOS C400 与较新发布的 EOS C50。保留旧世代。"
+        },
+        {
+          "series": "EOS R",
+          "models": [
+            "EOS R5",
+            "EOS R5 C",
+            "EOS R5 Mark II"
+          ],
+          "assessment": "目录缺少当前旗舰 EOS R1 与新一代 EOS R6 Mark III。"
+        },
+        {
+          "series": "EOS 5D",
+          "models": [
+            "EOS 5D Mark IV"
+          ],
+          "assessment": "历史单反型号保留。"
+        }
+      ],
+      "missing": [
+        "EOS C400",
+        "EOS C50",
+        "EOS R1",
+        "EOS R6 Mark III"
+      ],
+      "officialSources": [
+        "https://www.canon.com.cn/product/eosc400/",
+        "https://www.canon.com.cn/product/eosc400/spec.html",
+        "https://www.canon.com.cn/product/eosc50/",
+        "https://www.canon.com.cn/product/eosc50/spec.html",
+        "https://www.canon.com.cn/product/r6iii/index.html",
+        "https://www.canon.com.cn/info/products/2932.html",
+        "https://www.canon.com.cn/product/r1/",
+        "https://www.canon.com.cn/product/r1/spec.html"
+      ],
+      "note": "EOS C400 与 EOS C50 是不同级别和发布时间的现行 Cinema EOS 型号，不能只凭较新发布时间把 C400 当作 C50 的重复。两者固定 RF 卡口、全画幅；EOS C400 支持 PL-RF/EF 转接，EOS C50 官方规格标记不可更换卡口。EOS R1/R6 Mark III 属 EOS R 拍照/视频混合机，适合影视副机/摄影用途。EOS R1 官方中国来源本次检索未取得可直达产品页，建议由主审补查 Canon CN 产品页后录入；Canon CN 官方新闻目前已可确认 R6 Mark III。"
+    },
+    {
+      "brand": "Panasonic",
+      "existingSeries": [
+        {
+          "series": "LUMIX GH",
+          "models": [
+            "GH5",
+            "GH5S"
+          ],
+          "assessment": "代表视频混合机最新型号 GH7 缺失。"
+        },
+        {
+          "series": "LUMIX S",
+          "models": [
+            "S1H"
+          ],
+          "assessment": "目录缺少当前 S 系列新款视频/混合机 S1II，以及高像素视频混合机 S1RII。"
+        }
+      ],
+      "missing": [
+        "LUMIX GH7",
+        "LUMIX S1II",
+        "LUMIX S1RII"
+      ],
+      "officialSources": [
+        "https://na.panasonic.com/news/panasonic-announces-new-lumix-gh7-micro-four-thirds-mirrorless-camera",
+        "https://consumer.panasonic.cn/product/cameras-camcorders/lumix-series/lumix-s-series/dc-s1m2gk.html",
+        "https://consumer.panasonic.cn/product/cameras-camcorders/lumix-series/lumix-s-series/dc-s1rm2.html",
+        "https://consumer.panasonic.cn/product/cameras-camcorders/lumix-series/lumix-s-series/"
+      ],
+      "note": "GH7 为 MFT 卡口。S1II 与 S1RII 为 L 卡口全画幅，前者偏视频速度/动态范围，后者为 8K 和高像素混合机。官方中国产品目录同时列出 S1II、S1IIE、S1RII；若覆盖同系列完整新代组合，可再评估是否加入 S1IIE。原 S1H 保留历史，不在未发现 S1H 后继型号时推断其替代。"
+    },
+    {
+      "brand": "SONY",
+      "existingSeries": [
+        {
+          "series": "CineAlta",
+          "models": [
+            "CineAltaV",
+            "CineAltaV 2",
+            "CineAltaB"
+          ],
+          "assessment": "已覆盖三个主要电影机系列型号。CineAltaB 的英文名称字段为 SONY BURANO，符合海外正式名；中国官方以 CineAltaB 为本地名称。"
+        },
+        {
+          "series": "FX",
+          "models": [
+            "ILME-FX3",
+            "ILME-FX5",
+            "ILME-FX6",
+            "PXW-FX9"
+          ],
+          "assessment": "FX5 已纳入且为 2026 新产品；FX2 是 2025 现行型号但缺失，可作为补充机型，不是 FX5 的替代项。"
+        },
+        {
+          "series": "α7",
+          "models": [
+            "α7 III",
+            "α7 IV",
+            "α7 V"
+          ],
+          "assessment": "α7 V 已覆盖标准 α7 支线最新型号。"
+        },
+        {
+          "series": "α7R",
+          "models": [],
+          "assessment": "缺少 2026 年发布的 Alpha 7R VI。"
+        },
+        {
+          "series": "α7S",
+          "models": [
+            "α7S II",
+            "α7S III"
+          ],
+          "assessment": "α7S III 仍为已核实的该支线最新型号；本轮未找到官方后继。"
+        }
+      ],
+      "missing": [
+        "Alpha 7R VI",
+        "ILME-FX2"
+      ],
+      "officialSources": [
+        "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2026/20260513-2.html",
+        "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2026/20260724-1.html",
+        "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2025/20250529-1.html",
+        "https://www.sony.com.cn/content/professional/products/professional-cameras/digital-cinema-cameras-series/digital-cinema-cameras.html"
+      ],
+      "corrections": [
+        {
+          "id": "cam-sony-fx5",
+          "finding": "型号 ILME-FX5 与官方索尼中国发布的 FX5 对应；目录现有型号已纳入。官方中文公告明确 FX5 是 FX 系列首款 Open Gate 机型。建议以官方原生 E 卡口规格字段补齐该记录（卡口未出现在目录可见名称/模型字段时不应默认为已核验）。",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2026/20260724-1.html"
+        }
+      ],
+      "note": "α7R VI 中国型号名为 Alpha 7R VI，机身型号 ILCE-7RM6，E 卡口全画幅。FX2 为现行全画幅 FX 系列电影摄影机，官方发布资料应补型号/类别后新增。"
+    },
+    {
+      "brand": "Insta360",
+      "existingSeries": [
+        {
+          "series": "X",
+          "models": [
+            "X3"
+          ],
+          "assessment": "目录缺少官方目前列出的 X6 全景旗舰；X6 于 2026-08-12 上市。"
+        },
+        {
+          "series": "Ace",
+          "models": [],
+          "assessment": "代表运动相机线 Ace Pro 2 当前在售，目录未收入。"
+        },
+        {
+          "series": "品牌泛称",
+          "models": [
+            "影石 Insta360 运动相机"
+          ],
+          "assessment": "按此前用户决定保留原名称；不根据泛称自动改写为某一个产品系列。"
+        }
+      ],
+      "missing": [
+        "Insta360 X6",
+        "Insta360 Ace Pro 2"
+      ],
+      "officialSources": [
+        "https://www.insta360.com/cn/",
+        "https://www.insta360.com/cn/product/compare",
+        "https://onlinemanual.insta360.com/x3/zh-cn/specs/hardware"
+      ],
+      "note": "X6 与 Ace Pro 2 是不同相机系列，建议分别新增稳定 ID；不要把现有 X3 库存身份重写为 X6。X6 为固定镜头全景机，Ace Pro 2 为固定镜头运动相机；均无可更换摄影镜头卡口。官网 X6 规格页有传感器信息可供再核对。"
+    },
+    {
+      "brand": "Freefly",
+      "existingSeries": [
+        {
+          "series": "EMBER",
+          "models": [
+            "EMBER S5K"
+          ],
+          "assessment": "当前 S5K 已在目录中；官方 2026 NAB FAQ 还确认 S2.5K 作为现售型号。建议补 S2.5K 以覆盖产品分支。"
+        },
+        {
+          "series": "Wave",
+          "models": [
+            "Wave"
+          ],
+          "assessment": "保留历史身份；本轮未核实为 Ember 的替代产品。"
+        }
+      ],
+      "missing": [
+        "EMBER S2.5K"
+      ],
+      "officialSources": [
+        "https://freeflysystems.com/knowledge-base/2026-nab-faq",
+        "https://freeflysystems.com/ember-s5k"
+      ],
+      "note": "S2.5K 与 S5K 是不同分辨率/配置型号，不应合并。原生卡口依采购配置可选 EF/L-Mount，需按官方具体配置及库存再确认；S5K 官方页面确认 5K 高速摄影机。"
+    },
+    {
+      "brand": "GoPro",
+      "existingSeries": [
+        {
+          "series": "HERO",
+          "models": [
+            "HERO5 Black",
+            "HERO6 Black",
+            "HERO7 Black",
+            "HERO8 Black",
+            "HERO9 Black"
+          ],
+          "assessment": "现行 HERO 旗舰仍为 HERO13 Black；目录缺失。"
+        },
+        {
+          "series": "MISSION 1",
+          "models": [],
+          "assessment": "GoPro 2026 新推出的专业紧凑电影机系列，目录缺失。"
+        },
+        {
+          "series": "品牌泛称",
+          "models": [
+            "GoPro 运动相机"
+          ],
+          "assessment": "按此前用户决定保留原名称，不将品牌泛称推定为 HERO 或 MISSION 型号。"
+        }
+      ],
+      "missing": [
+        "HERO13 Black",
+        "MISSION 1 PRO",
+        "MISSION 1 PRO ILS"
+      ],
+      "officialSources": [
+        "https://gopro.com/en/us/news",
+        "https://gopro.com/en/us/news/gopro-announces-hero13-black-and-tiny-hero-camera",
+        "https://gopro.com/en/us/news/mission-1-series-now-available",
+        "https://gopro.com/en/us/shop/learn-cameras/mission-1-pro-ils"
+      ],
+      "note": "MISSION 1 PRO 是固定镜头专业电影机；MISSION 1 PRO ILS 为 Micro Four Thirds 原生卡口的可换镜头版本；两者不是同规格记录。HERO13 Black 为固定镜头运动相机。官网称 HERO13 Black 当前仍列为 HERO 系列主力；无 HERO14 的官方依据。GoPro 现已拥有专业电影机线，目录应按实际系列区分。"
+    },
+    {
+      "brand": "Phantom / Vision Research",
+      "existingSeries": [
+        {
+          "series": "Flex",
+          "models": [
+            "Flex4K"
+          ],
+          "assessment": "Flex4K 是电影制作高速摄影机系列的型号；本轮未找到可证明其已由 TMX 系列取代的资料，保留其独立身份。"
+        },
+        {
+          "series": "TMX",
+          "models": [],
+          "assessment": "TMX 超高速科学/工业成像系列缺失；TMX 7510 为当前明确的代表高性能型号。"
+        }
+      ],
+      "missing": [
+        "TMX 7510"
+      ],
+      "officialSources": [
+        "https://www.phantomhighspeed.com/products/cameras/tmx/7510",
+        "https://www.phantomhighspeed.com/products/cameras/tmx",
+        "https://www.phantomhighspeed.com/zh-cn/products/cameras/tmx/7510"
+      ],
+      "note": "建议新增类别/子类为超高速摄影机，型号 TMX 7510，单位台；官方列出 1 Mpx BSI、全分辨率 1280×800 时 76,000 fps。标准 Nikon F 卡口，可选 Canon EOS、PL、C、M42。TMX 与 Flex 系列用途和型号体系不同，不称为 Flex4K 的后继。"
+    },
+    {
+      "brand": "RED",
+      "existingSeries": [
+        {
+          "series": "V-RAPTOR",
+          "models": [
+            "V-RAPTOR 8K VV",
+            "V-RAPTOR XL 8K VV"
+          ],
+          "assessment": "目录缺少 V-RAPTOR [X] 与较新的 V-RAPTOR XE。它们是不同配置和档位，不合并现有通用 V-RAPTOR 行。"
+        },
+        {
+          "series": "KOMODO",
+          "models": [
+            "KOMODO"
+          ],
+          "assessment": "目录缺少当前 KOMODO-X。"
+        },
+        {
+          "series": "DSMC2 / 传感器型号",
+          "models": [
+            "EPIC-W 5K S35 GEMINI",
+            "HELIUM 8K",
+            "MONSTRO 8K VV"
+          ],
+          "assessment": "保留历史机型；未作最新型号推断。"
+        }
+      ],
+      "missing": [
+        "V-RAPTOR [X] 8K VV",
+        "V-RAPTOR XE 8K VV",
+        "KOMODO-X 6K S35"
+      ],
+      "officialSources": [
+        "https://www.red.com/press-category",
+        "https://www.red.com/stories/red-at-broadcast-india",
+        "https://www.red.com/downloads/v-raptor-xe",
+        "https://www.red.com/camera/KOMODO",
+        "https://docs.red.com/955-0225/955-0225_V2.0%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20%5BX%5D%208K%20VV%20Operation%20Guide/Content/B_TechSpecs/Specs_V-RAPTOR%20%5BX%5D.htm"
+      ],
+      "note": "V-RAPTOR XE 支持 RF 或 Nikon Z 原生配置，适配器可用 PL；V-RAPTOR [X] 也需保留原生 RF/Z 配置差异。KOMODO-X 为独立型号，不等同于 KOMODO。传感器格式型号中 VV/S35 应明示。建议采集条目不虚构中文音译品牌名，也不复用不匹配的卡口。"
+    }
+  ]
+}

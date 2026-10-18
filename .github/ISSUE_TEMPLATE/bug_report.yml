@@ -1,0 +1,24 @@
+name: Bug report / 问题反馈
+description: Report a reproducible problem / 报告可复现的问题
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove private project data and contact details. / 请移除私人项目资料和联系方式。"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior / 预期与实际结果
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Version, browser, OS / 版本、浏览器与系统
+    validations:
+      required: true

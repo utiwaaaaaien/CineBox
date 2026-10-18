@@ -1,0 +1,5092 @@
+{
+  "rows": [
+    {
+      "id": "v51-arri-alexa-265",
+      "technicalSpecs": [
+        {
+          "label": "传感器有效点数",
+          "value": "6560×3100（6.5K）",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-265",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "15 stops",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-265",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器帧率",
+          "value": "0.75–60 fps",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-265",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-alexa-35",
+      "technicalSpecs": [
+        {
+          "label": "有效感光点",
+          "value": "4608×3164",
+          "source": "https://www.arri.com/en/camera-systems/cameras/alexa-35",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "17 stops",
+          "source": "https://www.arri.com/en/camera-systems/cameras/alexa-35",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器帧率",
+          "value": "最高120 fps（常规模式）",
+          "source": "https://www.arri.com/en/camera-systems/cameras/alexa-35",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-arri-alexa-35-xtreme",
+      "technicalSpecs": [
+        {
+          "label": "有效感光点",
+          "value": "4608×3164",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-35-xtreme",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "最高17 stops（至330 fps）",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-35-xtreme",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器帧率",
+          "value": "最高330 fps；Sensor Overdrive最高660 fps",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-35-xtreme",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-alexa-lf",
+      "technicalSpecs": [
+        {
+          "label": "有效感光点",
+          "value": "4448×3096（4.5K）",
+          "source": "https://www.arri.com/en/learn/camera-systems/frequently-asked-questions/alexa-lf-faq",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器帧率",
+          "value": "0.75–150 fps",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-lf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "14+ stops",
+          "source": "https://www.arri.com/en/learn/camera-systems/frequently-asked-questions/alexa-lf-faq",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-alexa-mini",
+      "technicalSpecs": [
+        {
+          "label": "有效感光点",
+          "value": "3424×2202（3.4K）",
+          "source": "https://www.arri.com/en/camera-systems/cameras/alexa-mini",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器帧率",
+          "value": "0.75–200 fps",
+          "source": "https://www.arri.com/en/camera-systems/cameras/alexa-mini",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "14+ stops",
+          "source": "https://www.arri.com/en/camera-systems/cameras/alexa-mini",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-alexa-mini-lf",
+      "technicalSpecs": [
+        {
+          "label": "有效感光点",
+          "value": "4448×3096（4.5K）",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-mini-lf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高传感器帧率",
+          "value": "90 fps",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-mini-lf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "机身重量",
+          "value": "约2.6 kg（含LPL卡口）",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-mini-lf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-alexa-sxt-plus",
+      "technicalSpecs": [
+        {
+          "label": "有效感光点",
+          "value": "3424×2202",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/legacy-cine-cameras/alexa-sxt-w",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "传感器帧率",
+          "value": "最高120 fps",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/legacy-cine-cameras/alexa-sxt-w",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "动态范围",
+          "value": "14+ stops",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/legacy-cine-cameras/alexa-sxt-w",
+          "provenance": "manufacturer",
+          "scope": "series"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17",
+      "seriesLabel": "ARRI ALEXA SXT 系列"
+    },
+    {
+      "id": "cam-arri-amira",
+      "technicalSpecs": [
+        {
+          "label": "有效感光点",
+          "value": "3200×1800（Super 35）",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/amira",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器帧率",
+          "value": "0.75–200 fps",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/amira",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "14+ stops",
+          "source": "https://www.arri.com/en/cine-systems/cine-cameras/amira",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-dji-action2",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "1/1.7-inch CMOS",
+          "source": "https://www.dji.com/support/product/dji-action-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K 4:3最高60 fps；4K 16:9最高120 fps",
+          "source": "https://www.dji.com/support/product/dji-action-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "机身重量",
+          "value": "56 g（相机单元）",
+          "source": "https://www.dji.com/support/product/dji-action-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-飞机御2pro-移动器材",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "1-inch CMOS",
+          "source": "https://www.dji.com/mavic-2/info",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "有效像素",
+          "value": "20 MP",
+          "source": "https://www.dji.com/mavic-2/info",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K视频录制",
+          "source": "https://www.dji.com/mavic-2/info",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-飞机御3pro-移动器材",
+      "technicalSpecs": [
+        {
+          "label": "哈苏主摄像素",
+          "value": "20 MP（4/3 CMOS）",
+          "source": "https://www.dji.com/mavic-3-pro/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "中长焦像素",
+          "value": "48 MP（1/1.3-inch CMOS）",
+          "source": "https://www.dji.com/mavic-3-pro/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "主摄5.1K最高50 fps；4K最高120 fps",
+          "source": "https://www.dji.com/mavic-3-pro/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v5-dji-mavic-4-pro",
+      "technicalSpecs": [
+        {
+          "label": "哈苏主摄像素",
+          "value": "100 MP（4/3 CMOS）",
+          "source": "https://store.dji.com/jp/product/dji-mavic-4-pro?set_region=JP&vid=189291",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "6K/60 fps HDR",
+          "source": "https://store.dji.com/jp/product/dji-mavic-4-pro?set_region=JP&vid=189291",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "最高15.5 stops",
+          "source": "https://store.dji.com/jp/product/dji-mavic-4-pro?set_region=JP&vid=189291",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-dji-osmo-360-ii",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "1-inch square HDR imaging sensor",
+          "source": "https://www.dji.com/media-center/announcements/dji-release-osmo-360-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "8K/60 fps 360° video",
+          "source": "https://www.dji.com/media-center/announcements/dji-release-osmo-360-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "14.5 stops",
+          "source": "https://www.dji.com/media-center/announcements/dji-release-osmo-360-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v5-dji-osmo-action-6",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "1/1.1-inch CMOS",
+          "source": "https://www.dji.com/osmo-action-6/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "8K/30 fps；4K/120 fps",
+          "source": "https://www.dji.com/osmo-action-6/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "13.5 stops",
+          "source": "https://www.dji.com/osmo-action-6/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v5-dji-osmo-pocket-4p",
+      "technicalSpecs": [
+        {
+          "label": "广角相机传感器",
+          "value": "1-inch CMOS",
+          "source": "https://store.dji.com/uk/product/osmo-pocket-4p?set_region=GB",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "17 stops",
+          "source": "https://store.dji.com/uk/product/osmo-pocket-4p?set_region=GB",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "广角4K/240 fps；中长焦4K/200 fps",
+          "source": "https://store.dji.com/uk/product/osmo-pocket-4p?set_region=GB",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-ronin4d",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "Full-frame CMOS (Zenmuse X9-6K)",
+          "source": "https://www.dji.com/ronin-4d/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "14+ stops",
+          "source": "https://www.dji.com/ronin-4d/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "6K最高60 fps；4K最高120 fps",
+          "source": "https://www.dji.com/ronin-4d/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-dji-ronin4d-8k",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "44.7 MP（Zenmuse X9-8K）",
+          "source": "https://www.dji.com/ronin-4d/faq",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "全画幅8K最高60 fps；4K最高120 fps",
+          "source": "https://store.dji.com/product/dji-ronin-4d-8k",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "内置ND",
+          "value": "9档物理ND（ND 2至ND 512）",
+          "source": "https://www.dji.com/ronin-4d/specs",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-canon-5dm4",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约3040万像素",
+          "source": "https://www.canon.com.cn/product/eos5d4/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器",
+          "value": "全画幅 CMOS，36×24 mm",
+          "source": "https://www.canon.com.cn/product/eos5d4/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "DCI 4K 4096×2160，最高约30 fps",
+          "source": "https://www.canon.com.cn/product/eos5d4/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-canon-c300m2",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "Super 35mm CMOS",
+          "source": "https://www.canon.com.cn/product/eosc300markii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K 4096×2160录制",
+          "source": "https://www.canon.com.cn/product/eosc300markii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "高帧率",
+          "value": "最高120 fps（指定分辨率/裁切模式）",
+          "source": "https://www.canon.com.cn/product/eosc300markii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-canon-c300m3",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "Super 35mm DGO CMOS",
+          "source": "https://www.canon.com.cn/product/eosc300markiii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K 120 fps",
+          "source": "https://www.canon.com.cn/product/eosc300markiii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "高帧率",
+          "value": "2K Super 16最高180 fps",
+          "source": "https://www.canon.com.cn/product/eosc300markiii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-canon-eos-c400",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "全画幅背照堆栈式 CMOS",
+          "source": "https://www.canon.com.cn/product/eosc400/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "6K 60 fps RAW",
+          "source": "https://www.canon.com.cn/product/eosc400/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "高帧率",
+          "value": "4K Super 35最高120 fps",
+          "source": "https://www.canon.com.cn/product/eosc400/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-canon-eos-c50",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "全画幅 CMOS",
+          "source": "https://www.canon.com.cn/product/eosc50/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "7K 60P",
+          "source": "https://www.canon.com.cn/product/eosc50/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "有效像素",
+          "value": "约3200万像素（静态）",
+          "source": "https://www.canon.com.cn/product/eosc50/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-canon-c500m2",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "5.9K全画幅 CMOS",
+          "source": "https://www.canon.com.cn/product/eosc500markii/info2.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "记录格式",
+          "value": "Cinema RAW Light / XF-AVC",
+          "source": "https://www.canon.com.cn/product/eosc500markii/info2.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "Canon Log 2：15+ stops（ISO 800）",
+          "source": "https://www.usa.canon.com/support/p/eos-c500-mark-ii",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-canon-c80",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "全画幅约1905万（6008×3170）",
+          "source": "https://www.canon.com.cn/product/eosc80/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "6K RAW最高29.97P",
+          "source": "https://www.canon.com.cn/product/eosc80/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "高帧率",
+          "value": "4K最高120 fps",
+          "source": "https://www.canon.com.cn/product/eosc80/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-canon-eos-r1",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约2420万",
+          "source": "https://www.canon.com.cn/product/r1/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "6K RAW机内记录",
+          "source": "https://www.canon.com.cn/product/r1/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "连拍",
+          "value": "最高40 fps（电子快门）",
+          "source": "https://www.canon.com.cn/product/r1/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-canon-r5",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约4500万",
+          "source": "https://www.canon.com.cn/product/r5/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "8K RAW；4K最高120P",
+          "source": "https://www.canon.com.cn/product/r5/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器",
+          "value": "全画幅 CMOS",
+          "source": "https://www.canon.com.cn/product/r5/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-canon-r5c",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约4500万",
+          "source": "https://www.canon.com.cn/product/r5c/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "8K/60P RAW（外接电源）；4K/120P",
+          "source": "https://www.canon.com.cn/product/r5c/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器",
+          "value": "全画幅 CMOS",
+          "source": "https://www.canon.com.cn/product/r5c/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-canon-r5m2",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约4500万",
+          "source": "https://www.canon.com.cn/product/r5ii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "8K 60P RAW；4K 120P",
+          "source": "https://www.canon.com.cn/product/r5ii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器",
+          "value": "全画幅背照堆栈式 CMOS",
+          "source": "https://www.canon.com.cn/product/r5ii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-canon-eos-r6-mark-iii",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "全画幅 CMOS",
+          "source": "https://www.canon.com.cn/product/r6iii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "7K RAW；4K 120P",
+          "source": "https://www.canon.com.cn/product/r6iii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "连拍",
+          "value": "最高约40 fps（电子快门）",
+          "source": "https://www.canon.com.cn/product/r6iii/spec.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-panasonic-gh5",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约2030万",
+          "source": "https://www.panasonic.com/global/consumer/lumix/gh5.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K 60p/50p",
+          "source": "https://www.panasonic.com/global/consumer/lumix/gh5.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "连拍",
+          "value": "最高约12 fps",
+          "source": "https://www.panasonic.com/global/consumer/lumix/gh5.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-panasonic-gh5s",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约1028万",
+          "source": "https://www.panasonic.com/global/consumer/lumix/gh5s.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K 60p/50p 10-bit HDMI输出",
+          "source": "https://www.panasonic.com/global/consumer/lumix/gh5s.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器",
+          "value": "Micro Four Thirds MOS",
+          "source": "https://www.panasonic.com/global/consumer/lumix/gh5s.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-panasonic-lumix-gh7",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约2520万",
+          "source": "https://www.panasonic.com/nl/consumer/cameras-camcorder/lumix-g-systeemcameras/dc-gh7.specs.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "5.7K最高60p",
+          "source": "https://www.panasonic.com/nl/consumer/cameras-camcorder/lumix-g-systeemcameras/dc-gh7.specs.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器",
+          "value": "Micro Four Thirds CMOS",
+          "source": "https://www.panasonic.com/nl/consumer/cameras-camcorder/lumix-g-systeemcameras/dc-gh7.specs.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-panasonic-s1h",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约2420万",
+          "source": "https://www.panasonic.com/in/consumer/cameras-camcorders/camera/s/dc-s1h.specs.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "V-Log 14+ stops",
+          "source": "https://www.panasonic.com/in/consumer/cameras-camcorders/camera/s/dc-s1h.specs.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "6K/24p；5.9K/30p",
+          "source": "https://www.panasonic.com/in/consumer/cameras-camcorders/camera/s/dc-s1h.specs.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-panasonic-lumix-s1ii",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约2410万",
+          "source": "https://na.panasonic.com/news/panasonic-announces-two-new-full-frame-mirrorless-cameras-lumix-s1ii-and-lumix-s1iie-and-new-lumix-s-24-60mm-f2.8-lens",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K/120p；5.8K/60p",
+          "source": "https://na.panasonic.com/news/panasonic-announces-two-new-full-frame-mirrorless-cameras-lumix-s1ii-and-lumix-s1iie-and-new-lumix-s-24-60mm-f2.8-lens",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "Dynamic Range Boost最高15 stops（30p以下）",
+          "source": "https://na.panasonic.com/news/panasonic-announces-two-new-full-frame-mirrorless-cameras-lumix-s1ii-and-lumix-s1iie-and-new-lumix-s-24-60mm-f2.8-lens",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-panasonic-lumix-s1rii",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约4430万",
+          "source": "https://na.panasonic.com/news/panasonic-announces-new-lumix-s1rii-full-frame-mirrorless-camera",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "8K录制；Open Gate 6.4K",
+          "source": "https://na.panasonic.com/news/panasonic-announces-new-lumix-s1rii-full-frame-mirrorless-camera",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "8K视频14 stops",
+          "source": "https://na.panasonic.com/news/panasonic-announces-new-lumix-s1rii-full-frame-mirrorless-camera",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-sony-alpha-7r-vi",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "静态照片最高约66.8 MP",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm6/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器尺寸",
+          "value": "35.9×24.0 mm 全画幅",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm6/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "机身防抖",
+          "value": "中心最高8.5档（CIPA 2024）",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm6/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-burano",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "8.6K full-frame sensor",
+          "source": "https://pro.sony/ue_US/products/digital-cinema-cameras/burano",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "16 stops",
+          "source": "https://pro.sony/ue_US/products/digital-cinema-cameras/burano",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "8.6K最高30 fps；4K最高120 fps",
+          "source": "https://pro.sony/ue_US/products/digital-cinema-cameras/burano",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-venice",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "6K full-frame sensor",
+          "source": "https://pro.sony/ue_US/products/digital-cinema-cameras/venice",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "15+ stops",
+          "source": "https://pro.sony/ue_US/products/digital-cinema-cameras/venice",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K最高120 fps",
+          "source": "https://pro.sony/ue_US/products/digital-cinema-cameras/venice",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-venice2",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "8.6K或6K全画幅传感器（型号版本不同）",
+          "source": "https://pro.sony/ue_US/products/digital-cinema-cameras/venice-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "16 stops",
+          "source": "https://pro.sony/ue_US/products/digital-cinema-cameras/venice-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "8.6K最高30 fps；4K最高120 fps",
+          "source": "https://pro.sony/ue_US/products/digital-cinema-cameras/venice-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-sony-ilme-fx2",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "静态33.0 MP；视频27.6 MP",
+          "source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx2b/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "15+ stops (S-Log3)",
+          "source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx2b/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K最高59.94p / 50p",
+          "source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx2b/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-fx3",
+      "technicalSpecs": [
+        {
+          "label": "有效像素（静态）",
+          "value": "约12.1 MP",
+          "source": "https://www.sony.com/electronics/support/camcorders-interchangeable-lens-camcorders/ilme-fx3/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高视频录制",
+          "value": "4K 120p",
+          "source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "机身重量",
+          "value": "约630 g（不含电池和存储卡）",
+          "source": "https://www.sony.com/electronics/support/camcorders-interchangeable-lens-camcorders/ilme-fx3/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-fx5",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "最高约16.6 MP",
+          "source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx5/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "15+ stops（S-Log3）",
+          "source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx5/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器尺寸",
+          "value": "35.9×24.0 mm 全画幅",
+          "source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx5/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-fx6",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "10.2 MP全画幅背照式Exmor R CMOS",
+          "source": "https://pro.sony/en_HK/press/electronics-launches-fx6-full-frame-professional-camera-expand-cinema-line",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "DCI 4K最高60p；QFHD 4K最高120p；FHD最高240p",
+          "source": "https://pro.sony/en_HK/press/electronics-launches-fx6-full-frame-professional-camera-expand-cinema-line",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "15+ stops",
+          "source": "https://pro.sony/en_HK/press/electronics-launches-fx6-full-frame-professional-camera-expand-cinema-line",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-fs7m2",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "Super 35 Exmor CMOS",
+          "source": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-fs7m2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "有效像素",
+          "value": "约11.6 MP",
+          "source": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-fs7m2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "高帧率",
+          "value": "4K最高60 fps；HD最高180 fps",
+          "source": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-fs7m2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-fx9",
+      "technicalSpecs": [
+        {
+          "label": "传感器/超采样",
+          "value": "全画幅6K传感器，超采样4K录制",
+          "source": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-fx9",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "4K Super 35",
+          "value": "支持4K Super 35录制",
+          "source": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-fx9",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "15+ stops",
+          "source": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-fx9",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-z280",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "1/2-inch 3CMOS",
+          "source": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-z280",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K最高60p",
+          "source": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-z280",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "镜头变焦",
+          "value": "17×光学变焦",
+          "source": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-z280",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-a7m3",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约24.2 MP",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高视频录制",
+          "value": "4K 30p",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "连拍速度",
+          "value": "最高10 fps",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-a7m4",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约33.0 MP",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7m4-series/ilce-7m4/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高视频录制",
+          "value": "4K 60p（Super 35裁切）",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7m4-series/ilce-7m4/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "连拍速度",
+          "value": "最高10 fps",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7m4-series/ilce-7m4/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-a7m5",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约33.0 MP",
+          "source": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7m5-b",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K 120p",
+          "source": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7m5-b",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "最高16 stops",
+          "source": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7m5-b",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-a7s2",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "约1220万",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm2/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器",
+          "value": "全画幅 Exmor CMOS",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm2/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "4K内部录制",
+          "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm2/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-sony-a7s3",
+      "technicalSpecs": [
+        {
+          "label": "有效像素（静态）",
+          "value": "约12.1 MP",
+          "source": "https://www.sony.com/electronics/support/alpha-mirrorless-interchangeable-lens-cameras-ilce-7-series/ilce-7sm3/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高视频录制",
+          "value": "4K 120p",
+          "source": "https://www.sony.com/electronics/support/alpha-mirrorless-interchangeable-lens-cameras-ilce-7-series/ilce-7sm3/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器尺寸",
+          "value": "35.6×23.8 mm 全画幅",
+          "source": "https://www.sony.com/electronics/support/alpha-mirrorless-interchangeable-lens-cameras-ilce-7-series/ilce-7sm3/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-360-unspecified",
+      "technicalSpecs": [
+        {
+          "label": "视场类型",
+          "value": "360°全景",
+          "source": "data/catalog/published.v5.json#cam-360-unspecified",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "cam-insta360-unspecified",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "v51-insta360-ace-pro-2",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "1/1.3英寸",
+          "source": "https://www.insta360.com/cn/product/insta360-ace-pro2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频分辨率/帧率",
+          "value": "8K 30fps",
+          "source": "https://www.insta360.com/cn/product/insta360-ace-pro2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "最高13.5档",
+          "source": "https://www.insta360.com/cn/product/insta360-ace-pro2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-insta360-x3",
+      "technicalSpecs": [
+        {
+          "label": "全景视频分辨率",
+          "value": "最高5.7K（5760×2880）",
+          "source": "https://www.insta360.com/cn/product/insta360-x3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传感器",
+          "value": "双1/2英寸传感器",
+          "source": "https://www.insta360.com/cn/product/insta360-x3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "广角视频",
+          "value": "单镜头最高4K 30 fps",
+          "source": "https://onlinemanual.insta360.com/x3/en-us/faq/feature/shootingmode?to=Q8",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-insta360-x6",
+      "technicalSpecs": [
+        {
+          "label": "全景视频",
+          "value": "8K 7680×3840，最高50 fps",
+          "source": "https://www.insta360.com/cn/product/insta360-x6?from=nav&most-popular=",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "全景照片",
+          "value": "120 MP，15520×7760",
+          "source": "https://www.insta360.com/jp/product/insta360-x6?from=nav&most-popular=",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "机身重量",
+          "value": "约196 g",
+          "source": "https://onlinemanual.insta360.com/x6/en-us/specs/hardware",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-freefly-ember-s2-5k",
+      "technicalSpecs": [
+        {
+          "label": "全分辨率传感器",
+          "value": "2560×2048（2.5K）",
+          "source": "https://freeflysystems.com/ember-s2-5k",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "全分辨率帧率",
+          "value": "2277 fps",
+          "source": "https://freeflysystems.com/ember-s2-5k",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "3563 fps",
+          "source": "https://freeflysystems.com/ember-s2-5k",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-freefly-ember-s5k",
+      "technicalSpecs": [
+        {
+          "label": "5K最高帧率",
+          "value": "600 fps",
+          "source": "https://freeflysystems.com/ember-s5k",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "4K最高帧率",
+          "value": "800 fps",
+          "source": "https://freeflysystems.com/ember-s5k",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "重量",
+          "value": "800 g",
+          "source": "https://freeflysystems.com/ember-s5k",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-freefly-wave",
+      "technicalSpecs": [
+        {
+          "label": "4K最高帧率",
+          "value": "422 fps",
+          "source": "https://freeflysystems.com/wave",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率（2048×128）",
+          "value": "9259 fps",
+          "source": "https://freeflysystems.com/wave",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "重量",
+          "value": "600 g",
+          "source": "https://freeflysystems.com/wave",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-gopro-unspecified",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "v51-gopro-hero13-black",
+      "technicalSpecs": [
+        {
+          "label": "视频分辨率/帧率",
+          "value": "5.3K 60fps；4K 120fps",
+          "source": "https://gopro.com/en/us/shop/cameras/learn/hero13black/CHDHX-131-master.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "短时升格",
+          "value": "最高400fps（720p）",
+          "source": "https://gopro.com/en/us/shop/cameras/learn/hero13black/CHDHX-131-master.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "防水深度",
+          "value": "10 m（33 ft）",
+          "source": "https://gopro.com/en/us/shop/cameras/learn/hero13black/CHDHX-131-master.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-gopro-hero5",
+      "technicalSpecs": [
+        {
+          "label": "视频规格",
+          "value": "4K/30 fps",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2016/GoPros-New-HERO5-Lineup-Hits-Retail-Shelves-Today/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "照片像素",
+          "value": "12 MP",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2016/GoPros-New-HERO5-Lineup-Hits-Retail-Shelves-Today/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "防水深度",
+          "value": "10 m（无防护壳）",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2016/GoPros-New-HERO5-Lineup-Hits-Retail-Shelves-Today/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-gopro-hero6",
+      "technicalSpecs": [
+        {
+          "label": "视频规格",
+          "value": "4K/60 fps；1080p/240 fps",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2017/With-HERO6-GoPro-Sets-New-Bar-For-Image-Quality-Stabilization-And-Simplicity/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "图像处理器",
+          "value": "GP1",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2017/With-HERO6-GoPro-Sets-New-Bar-For-Image-Quality-Stabilization-And-Simplicity/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "防护",
+          "value": "防水机身",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2017/With-HERO6-GoPro-Sets-New-Bar-For-Image-Quality-Stabilization-And-Simplicity/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-gopro-hero7",
+      "technicalSpecs": [
+        {
+          "label": "视频规格",
+          "value": "4K/60 fps；1080p/240 fps",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2018/Shaky-Video-is-Dead-GoPro-HERO7-Black-Features-Gimbal-Like-Video-Stabilization-In-Camera/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "照片像素",
+          "value": "12 MP",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2018/Shaky-Video-is-Dead-GoPro-HERO7-Black-Features-Gimbal-Like-Video-Stabilization-In-Camera/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "防水深度",
+          "value": "10 m（无防护壳）",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2018/Shaky-Video-is-Dead-GoPro-HERO7-Black-Features-Gimbal-Like-Video-Stabilization-In-Camera/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-gopro-hero8",
+      "technicalSpecs": [
+        {
+          "label": "视频规格",
+          "value": "4K/60 fps；1080p/240 fps",
+          "source": "https://community.gopro.com/s/article/HERO8-Black-Video-Resolutions?language=en_US",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频码率",
+          "value": "HEVC最高100 Mbps",
+          "source": "https://community.gopro.com/s/article/HERO8-Black-Video-Resolutions?language=en_US",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "防水深度",
+          "value": "10 m（HERO8官方发布规格）",
+          "source": "https://community.gopro.com/s/article/HERO8-Black-Video-Resolutions?language=en_US",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-gopro-hero9",
+      "technicalSpecs": [
+        {
+          "label": "视频规格",
+          "value": "5K/30 fps；4K/60 fps；1080p/240 fps",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2020/GoPro-Packs-More-of-Everything-into-New-HERO9-Black/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "照片像素",
+          "value": "20 MP",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2020/GoPro-Packs-More-of-Everything-into-New-HERO9-Black/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "防水深度",
+          "value": "10 m",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2020/GoPro-Packs-More-of-Everything-into-New-HERO9-Black/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-gopro-mission-1-pro",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "1英寸，50 MP",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-New-MISSION-1-Line-of-Professional-8K-and-4K-Open-Gate-Compact-Cinema-Cameras-for-Filmmakers-Creators-and-Aspiring-Enthusiasts/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "视频规格",
+          "value": "8K/60；4K/240（16:9）",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-New-MISSION-1-Line-of-Professional-8K-and-4K-Open-Gate-Compact-Cinema-Cameras-for-Filmmakers-Creators-and-Aspiring-Enthusiasts/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "Open Gate",
+          "value": "8K/30；4K/120（4:3）",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-New-MISSION-1-Line-of-Professional-8K-and-4K-Open-Gate-Compact-Cinema-Cameras-for-Filmmakers-Creators-and-Aspiring-Enthusiasts/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-gopro-mission-1-pro-ils",
+      "technicalSpecs": [
+        {
+          "label": "传感器",
+          "value": "1英寸，50 MP",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-New-MISSION-1-Line-of-Professional-8K-and-4K-Open-Gate-Compact-Cinema-Cameras-for-Filmmakers-Creators-and-Aspiring-Enthusiasts/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "原生卡口",
+          "value": "Micro Four Thirds（MFT）",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-New-MISSION-1-Line-of-Professional-8K-and-4K-Open-Gate-Compact-Cinema-Cameras-for-Filmmakers-Creators-and-Aspiring-Enthusiasts/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "防抖",
+          "value": "机内HyperSmooth，适用于直线投影定焦镜头",
+          "source": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-New-MISSION-1-Line-of-Professional-8K-and-4K-Open-Gate-Compact-Cinema-Cameras-for-Filmmakers-Creators-and-Aspiring-Enthusiasts/default.aspx",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-phantom-flex4k",
+      "technicalSpecs": [
+        {
+          "label": "最大分辨率",
+          "value": "4096×2304",
+          "source": "https://www.phantomhighspeed.com/-/media/project/ameteksxa/visionresearch/documents/datasheets/web/wdsflex4k.pdf?download=1",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "4K DCI帧率",
+          "value": "4096×2160 / 1000 fps",
+          "source": "https://www.phantomhighspeed.com/-/media/project/ameteksxa/visionresearch/documents/datasheets/web/wdsflex4k.pdf?download=1",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "采样位深",
+          "value": "12-bit",
+          "source": "https://www.phantomhighspeed.com/-/media/project/ameteksxa/visionresearch/documents/datasheets/web/wdsflex4k.pdf?download=1",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-phantom-tmx-7510",
+      "technicalSpecs": [
+        {
+          "label": "传感器分辨率",
+          "value": "1280×800",
+          "source": "https://www.phantomhighspeed.com/products/cameras/tmx/7510",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "全分辨率帧率",
+          "value": "76,000 fps",
+          "source": "https://www.phantomhighspeed.com/products/cameras/tmx/7510",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "采样位深",
+          "value": "12-bit",
+          "source": "https://www.phantomhighspeed.com/products/cameras/tmx/7510",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-red-gemini",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "5120×3000（15.4 MP）",
+          "source": "https://docs.red.com/955-0169/DSMC2_GEMINI_Operation_Guide_v7_1.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "16.5+ stops",
+          "source": "https://docs.red.com/955-0169/DSMC2_GEMINI_Operation_Guide_v7_1.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "5K全画幅96 fps；5K 2.4:1 120 fps",
+          "source": "https://docs.red.com/955-0169/DSMC2_GEMINI_Operation_Guide_v7_1.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-red-red-helium-8k-摄影机",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "8192×4320（35.4 MP）",
+          "source": "https://docs.red.com/955-0156_v7.4/WEAPON_HELIUM_8K_S35_Operation_Guide/Content/A_TechSpecs/Specs_HELIUM.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "16.5+ stops",
+          "source": "https://docs.red.com/955-0156_v7.4/WEAPON_HELIUM_8K_S35_Operation_Guide/Content/A_TechSpecs/Specs_HELIUM.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "8K全画幅60 fps",
+          "source": "https://docs.red.com/955-0156_v7.4/WEAPON_HELIUM_8K_S35_Operation_Guide/Content/A_TechSpecs/Specs_HELIUM.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-red-komodo",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "6144×3240（19.9 MP）",
+          "source": "https://docs.red.com/955-0190_v1.4/955-0190_v1.4.1_REV-1.1_RED_PS_KOMODO_Operation_Guide/Content/A_TechSpecs/Specs_KOMODO_6K.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "16+ stops",
+          "source": "https://docs.red.com/955-0190_v1.4/955-0190_v1.4.1_REV-1.1_RED_PS_KOMODO_Operation_Guide/Content/A_TechSpecs/Specs_KOMODO_6K.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "6K 17:9 40 fps；4K 60 fps；2K 120 fps",
+          "source": "https://docs.red.com/955-0190_v1.4/955-0190_v1.4.1_REV-1.1_RED_PS_KOMODO_Operation_Guide/Content/A_TechSpecs/Specs_KOMODO_6K.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-red-komodo-x-6k-s35",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "6144×3240（19.9 MP）",
+          "source": "https://docs.red.com/955-0219/955-0219_V1.0%20Rev-B%20RED%20PS%2C%20KOMODO-X%20Operation%20Guide%20HTML/Content/A_TechSpecs/Specs_KOMODO-X.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "16.5+ stops",
+          "source": "https://docs.red.com/955-0219/955-0219_V1.0%20Rev-B%20RED%20PS%2C%20KOMODO-X%20Operation%20Guide%20HTML/Content/A_TechSpecs/Specs_KOMODO-X.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "6K 17:9 80 fps；4K 120 fps",
+          "source": "https://docs.red.com/955-0219/955-0219_V1.0%20Rev-B%20RED%20PS%2C%20KOMODO-X%20Operation%20Guide%20HTML/Content/A_TechSpecs/Specs_KOMODO-X.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-red-monstro",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "8192×4320（35.4 MP）",
+          "source": "https://docs.red.com/955-0160/WEAPONMONSTRO8KVVOperationGuide/de/Content/A_TechSpecs/Specs_WEAPON_8K_VV.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "17+ stops",
+          "source": "https://docs.red.com/955-0160/WEAPONMONSTRO8KVVOperationGuide/de/Content/A_TechSpecs/Specs_WEAPON_8K_VV.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "8K全画幅60 fps；8K 2.4:1 75 fps",
+          "source": "https://docs.red.com/955-0160/WEAPONMONSTRO8KVVOperationGuide/de/Content/A_TechSpecs/Specs_WEAPON_8K_VV.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-red-v-raptor-x-8k-vv",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "8192×4320",
+          "source": "https://docs.red.com/955-0225/955-0225_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20%5BX%5D%208K%20VV%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20%5BX%5D.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "17+ stops",
+          "source": "https://docs.red.com/955-0225/955-0225_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20%5BX%5D%208K%20VV%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20%5BX%5D.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "8K 17:9 120 fps",
+          "source": "https://docs.red.com/955-0225/955-0225_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20%5BX%5D%208K%20VV%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20%5BX%5D.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-red-vraptor",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "8192×4320（35.4 MP）",
+          "source": "https://docs.red.com/955-0199/955-0199_V1.3_Rev-A_RED_PS_V-RAPTOR_8K_VV_Operation_Guide/Content/C_TechSpecs/Specs_V-RAPTOR.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "17+ stops",
+          "source": "https://docs.red.com/955-0199/955-0199_V1.3_Rev-A_RED_PS_V-RAPTOR_8K_VV_Operation_Guide/Content/C_TechSpecs/Specs_V-RAPTOR.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "8K 17:9 120 fps",
+          "source": "https://docs.red.com/955-0199/955-0199_V1.3_Rev-A_RED_PS_V-RAPTOR_8K_VV_Operation_Guide/Content/C_TechSpecs/Specs_V-RAPTOR.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "v51-red-v-raptor-xe-8k-vv",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "8192×4320",
+          "source": "https://docs.red.com/955-0233/955-0233_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XE%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20XE.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "17+ stops",
+          "source": "https://docs.red.com/955-0233/955-0233_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XE%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20XE.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "8K 17:9 60 fps",
+          "source": "https://docs.red.com/955-0233/955-0233_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XE%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20XE.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "cam-red-vraptor-xl",
+      "technicalSpecs": [
+        {
+          "label": "有效像素",
+          "value": "8192×4320（35.4 MP）",
+          "source": "https://docs.red.com/955-0203/955-0203_V1.6%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XL%208K%20VV%20Operation%20Guide%20HTML/Content/C_TechSpecs/Specs_V-RAPTOR_XL.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "动态范围",
+          "value": "17+ stops",
+          "source": "https://docs.red.com/955-0203/955-0203_V1.6%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XL%208K%20VV%20Operation%20Guide%20HTML/Content/C_TechSpecs/Specs_V-RAPTOR_XL.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最高帧率",
+          "value": "8K 17:9 120 fps",
+          "source": "https://docs.red.com/955-0203/955-0203_V1.6%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XL%208K%20VV%20Operation%20Guide%20HTML/Content/C_TechSpecs/Specs_V-RAPTOR_XL.htm",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "video-dji-monitor",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "7″ wide-gamut touchscreen",
+          "source": "https://store.dji.com/no/product/dji-high-bright-remote-monitor",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "亮度",
+          "value": "最高1500 nits",
+          "source": "https://store.dji.com/no/product/dji-high-bright-remote-monitor",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "录制回放",
+          "value": "1080p/60 fps H.264内录与回放",
+          "source": "https://store.dji.com/no/product/dji-high-bright-remote-monitor",
+          "provenance": "manufacturer",
+          "scope": "series"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17",
+      "seriesLabel": "DJI High-Bright Remote Monitor（DJI Transmission配套）"
+    },
+    {
+      "id": "video-dji-transmission",
+      "technicalSpecs": [
+        {
+          "label": "视频传输",
+          "value": "1080p/60 fps，最高40 Mbps",
+          "source": "https://www.dji.com/transmission",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "传输距离",
+          "value": "最高6 km（FCC，无遮挡/低干扰测试）",
+          "source": "https://www.dji.com/transmission",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "传输延迟",
+          "value": "70 ms（1080p/60 fps，官方支持页测试值）",
+          "source": "https://www.dji.com/support/product/transmission",
+          "provenance": "manufacturer",
+          "scope": "series"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17",
+      "seriesLabel": "DJI Transmission 系列"
+    },
+    {
+      "id": "eq-swit-swit-5-hd-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "5″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-swit-swit-7-hd-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "7″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-sony-sony-17-monitor-stand-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-sony-sony-17-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "17″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-sony-sony-24-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "24″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-sony-sony-25-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "25″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-sony-索尼大监视器-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-sony-sony-pvm-a170-17-hd-oled-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "面板/尺寸",
+          "value": "OLED；16.5英寸",
+          "source": "https://pro.sony/ue_US/products/broadcastpromonitors/pvm-a170-v2.0",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "分辨率",
+          "value": "1920×1080 Full HD",
+          "source": "https://pro.sony/ue_US/products/broadcastpromonitors/pvm-a170-v2.0",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板驱动",
+          "value": "RGB 10-bit",
+          "source": "https://pro.sony/ue_US/products/broadcastpromonitors/pvm-a170-v2.0",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-sony-sony-pvm-a250-25-hd-oled-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "面板/尺寸",
+          "value": "OLED；24.6英寸",
+          "source": "https://pro.sony/ue_US/products/broadcastpromonitors/pvm-a170-v2.0",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "分辨率",
+          "value": "1920×1080 Full HD",
+          "source": "https://pro.sony/ue_US/products/broadcastpromonitors/pvm-a170-v2.0",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板驱动",
+          "value": "RGB 10-bit",
+          "source": "https://pro.sony/ue_US/products/broadcastpromonitors/pvm-a170-v2.0",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-4-5-6-lightweight-rain-deflector-监看",
+      "technicalSpecs": [
+        {
+          "label": "规格尺寸",
+          "value": "4″×5.6″",
+          "source": "data/catalog/published.v5.json#eq-通用-4-5-6-lightweight-rain-deflector-监看",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "video-generic-5-sdi-hdmi",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "5″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        },
+        {
+          "label": "SDI输入",
+          "value": "支持",
+          "source": "data/catalog/published.v5.json#video-generic-5-sdi-hdmi",
+          "provenance": "inventory",
+          "scope": "model"
+        },
+        {
+          "label": "HDMI输入",
+          "value": "支持",
+          "source": "data/catalog/published.v5.json#video-generic-5-sdi-hdmi",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-6-6-6-6-rain-deflector-监看",
+      "technicalSpecs": [
+        {
+          "label": "规格尺寸",
+          "value": "6.6″×6.6″",
+          "source": "data/catalog/published.v5.json#eq-通用-6-6-6-6-rain-deflector-监看",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "video-generic-7-sdi-hdmi",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "7″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        },
+        {
+          "label": "SDI输入",
+          "value": "支持",
+          "source": "data/catalog/published.v5.json#video-generic-7-sdi-hdmi",
+          "provenance": "inventory",
+          "scope": "model"
+        },
+        {
+          "label": "HDMI输入",
+          "value": "支持",
+          "source": "data/catalog/published.v5.json#video-generic-7-sdi-hdmi",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-阿童木小监-监看",
+      "technicalSpecs": [
+        {
+          "label": "对焦辅助",
+          "value": "峰值、画面放大",
+          "source": "https://www.atomos.com/get-prepped-for-post-with-atomos/",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "曝光监看",
+          "value": "波形、伪色、斑马纹",
+          "source": "https://www.atomos.com/get-prepped-for-post-with-atomos/",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "色彩预览",
+          "value": "3D LUT",
+          "source": "https://www.atomos.com/wp-content/uploads/2023/07/Shinobi_One-sheet.pdf",
+          "provenance": "manufacturer",
+          "scope": "series"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17",
+      "seriesLabel": "ATOMOS Ninja / Shinobi机顶监视器系列",
+      "displayName": {
+        "value": "ATOMOS 机顶监视器（阿童木小监）",
+        "source": "https://www.atomos.com/get-prepped-for-post-with-atomos/",
+        "reason": "库存品牌或系列别名规范显示，保持旧ID与型号未定身份"
+      }
+    },
+    {
+      "id": "eq-通用-french-flag-w-arm-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-director-s-chair-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-dust-cover-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-rian-cover-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-monitor-stand-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-flat-screen-monitor-mount-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-teleprompter-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-尊正大监视器-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-interphone-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-ko-director-s-chair-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-ko-monitor-car-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-video-emhancer-aja-3g-hd-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "技术指标",
+          "reason": "库存未注明AJA转换/分配/增强器具体型号；3G是视频接口速率标识，不能解释为重量。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-waveform-monitor-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-wireless-video-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-vaxis-vaxis-2000-wireless-transmitter-监看",
+      "technicalSpecs": [
+        {
+          "label": "发射接口",
+          "value": "SDI输入/环出、HDMI输入",
+          "source": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "接收输出",
+          "value": "2×SDI、HDMI",
+          "source": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传输延迟",
+          "value": "0 s（厂商标称）",
+          "source": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-vaxis-vaxis-5-6-wireless-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "5.6″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-vaxis-vaxis-7-wireless-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "7″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "video-vaxis-702-unspecified",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存702未注明完整厂商系列和代际，不能直接等同072/072PRO；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-vaxis-weigu-storm-058-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "传输距离",
+          "value": "200 m（厂商标称）",
+          "source": "https://www.vaxis.cn/product/showproduct.php?id=3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传输延迟",
+          "value": "0延时（厂商标称）",
+          "source": "https://www.vaxis.cn/product/showproduct.php?id=3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "音频接口",
+          "value": "3.5 mm耳机接口",
+          "source": "https://www.vaxis.cn/product/showproduct.php?id=3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "video-vaxis072",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "7″ IPS",
+          "source": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "分辨率",
+          "value": "1080P Full HD",
+          "source": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "亮度",
+          "value": "1500 nit",
+          "source": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+          "provenance": "manufacturer",
+          "scope": "series"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17",
+      "seriesLabel": "VAXIS STORM 072"
+    },
+    {
+      "id": "video-vaxis2000",
+      "technicalSpecs": [
+        {
+          "label": "发射接口",
+          "value": "SDI输入/环出、HDMI输入",
+          "source": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "接收输出",
+          "value": "2×SDI、HDMI",
+          "source": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传输延迟",
+          "value": "0 s（厂商标称）",
+          "source": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-vaxis-威固无线图传-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-vaxis-威固无线小监5寸-7寸-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-vaxis-威固无线小监视-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-vaxis-vaxis-cine-8-wireless-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "面板分辨率",
+          "value": "2560×1600",
+          "source": "https://www.vaxis.cn/product/showproduct.php?id=74",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "屏幕亮度",
+          "value": "1500 cd/m²",
+          "source": "https://www.vaxis.cn/product/showproduct.php?id=74",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "净重",
+          "value": "816 g",
+          "source": "https://www.vaxis.cn/product/showproduct.php?id=74",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-zunzheng-fsi-lcd-am210-21-监看",
+      "technicalSpecs": [
+        {
+          "label": "尺寸/分辨率",
+          "value": "21.5″，1920×1080",
+          "source": "https://www.flandersscientific.com/index/uploads/FSIUserManual.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板",
+          "value": "8-bit LCD，Rec.709",
+          "source": "https://www.flandersscientific.com/index/uploads/FSIUserManual.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "对比度",
+          "value": "1000:1",
+          "source": "https://www.flandersscientific.com/index/uploads/FSIUserManual.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-zunzheng-fsi-oled-am250-25-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕尺寸",
+          "value": "24.5″",
+          "source": "https://zunzheng.com/monitor-comparison/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "分辨率",
+          "value": "1920×1080",
+          "source": "https://zunzheng.com/monitor-comparison/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "峰值亮度",
+          "value": "≥350 nits（L40）",
+          "source": "https://zunzheng.com/monitor-comparison/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-zunzheng-fsi-oled-cm250-25-监看",
+      "technicalSpecs": [
+        {
+          "label": "尺寸/分辨率",
+          "value": "24.5″ OLED，1920×1080",
+          "source": "https://www.flandersscientific.com/index/uploads/FSIUserManual.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "信号处理",
+          "value": "12-bit video processing；10-bit OLED panel",
+          "source": "https://www.flandersscientific.com/index/uploads/FSIUserManual.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "输入格式",
+          "value": "支持HD、2K及12-bit 4:4:4 / XYZ",
+          "source": "https://www.flandersscientific.com/index/uploads/FSIUserManual.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-zunzheng-lm-0750w-7-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕尺寸",
+          "value": "7″",
+          "source": "https://www.flandersscientific.com/uploads/PrintFriendlyManual.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板分辨率",
+          "value": "800×480",
+          "source": "https://www.flandersscientific.com/uploads/PrintFriendlyManual.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板位深",
+          "value": "8-bit",
+          "source": "https://www.flandersscientific.com/uploads/PrintFriendlyManual.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "video-atomos-ninja-v",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "5.2″ IPS，1920×1080",
+          "source": "https://www.atomos.com/product/ninja/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "1000 nits",
+          "source": "https://www.atomos.com/product/ninja/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "录制能力",
+          "value": "ProRes RAW最高6Kp30；4Kp60",
+          "source": "https://www.atomos.com/product/ninja/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "video-atomos-shinobi",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "5.2″ IPS，1920×1080",
+          "source": "https://support.atomos.com/hc/article_attachments/12582253824655",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "1000 nits ±10%",
+          "source": "https://support.atomos.com/hc/article_attachments/12582253824655",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "色深",
+          "value": "10-bit（8+2 FRC）",
+          "source": "https://support.atomos.com/hc/article_attachments/12582253824655",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-atomos-shogun-4k-recorder-监看",
+      "technicalSpecs": [
+        {
+          "label": "视频输入",
+          "value": "SDI、HDMI",
+          "source": "https://www.atomos.com/tech-specs/shogun/",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "记录编码",
+          "value": "Apple ProRes",
+          "source": "https://www.atomos.com/tech-specs/shogun/",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "色彩预览",
+          "value": "3D LUT（.cube）",
+          "source": "https://www.atomos.com/tech-specs/shogun/",
+          "provenance": "manufacturer",
+          "scope": "series"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17",
+      "seriesLabel": "ATOMOS Shogun监视记录系列"
+    },
+    {
+      "id": "eq-atomos-atomos-shogun-flame-19-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕尺寸",
+          "value": "7″",
+          "source": "https://www.atomos-japan.com/wp-content/uploads/2023/10/SHOGUN_FLAME_spec.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板分辨率",
+          "value": "1920×1200",
+          "source": "https://www.atomos-japan.com/wp-content/uploads/2023/10/SHOGUN_FLAME_spec.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "屏幕亮度",
+          "value": "1500 nit（±10%）",
+          "source": "https://www.atomos-japan.com/wp-content/uploads/2023/10/SHOGUN_FLAME_spec.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-atomos-sumo-19-4k-60p-hdr-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕尺寸",
+          "value": "19″",
+          "source": "https://support.atomos.com/hc/en-us/article_attachments/12582157729551",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板分辨率",
+          "value": "1920×1080",
+          "source": "https://support.atomos.com/hc/en-us/article_attachments/12582157729551",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "屏幕亮度",
+          "value": "1200 nit（±10%）",
+          "source": "https://support.atomos.com/hc/en-us/article_attachments/12582157729551",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-eartec-real-time-walkie-talkie-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "video-dm240",
+      "technicalSpecs": [
+        {
+          "label": "屏幕尺寸",
+          "value": "24″",
+          "source": "https://www.flandersscientific.com/catalog/catalog.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板分辨率",
+          "value": "1920×1200",
+          "source": "https://www.flandersscientific.com/catalog/catalog.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板位深",
+          "value": "10-bit",
+          "source": "https://www.flandersscientific.com/catalog/catalog.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-hme-real-time-walkie-talkie-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-magliner-trolley-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-moma-moma-7-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "7″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-red-red-touch-screen-7-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "7″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "video-smallhd702",
+      "technicalSpecs": [
+        {
+          "label": "屏幕尺寸",
+          "value": "7″",
+          "source": "https://www.dev.smallhd.com/community/7-reasons-shooters-want-the-702-bright",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "1000 nits",
+          "source": "https://www.dev.smallhd.com/community/7-reasons-shooters-want-the-702-bright",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "分辨率",
+          "value": "1920×1080",
+          "source": "https://www.dev.smallhd.com/community/wp-content/uploads/2015/11/Bright_ifg_mono.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "video-smallhd-unspecified",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-smallhd-small-hd-17-monitor-17-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "17″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-smallhd-small-hd-503-monitor-5-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "5″ IPS LCD，1920×1080",
+          "source": "https://smallhd.com/products/503-ultra-bright-professional-on-camera-field-monitor",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "最高2200 nits",
+          "source": "https://smallhd.com/products/503-ultra-bright-professional-on-camera-field-monitor",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "色域/位深",
+          "value": "100% Rec.709；10-bit Color Intelligence Engine",
+          "source": "https://smallhd.com/products/503-ultra-bright-professional-on-camera-field-monitor",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-smallhd-small-hd-703-bright-daylight-touch-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "7.02″ LTPS LCD，1920×1080",
+          "source": "https://smallhd.com/products/703-ultra-bright-professional-on-camera-field-monitor",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "最高2200 nits",
+          "source": "https://smallhd.com/products/703-ultra-bright-professional-on-camera-field-monitor",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "色域/位深",
+          "value": "100% Rec.709；10-bit Color Intelligence Engine",
+          "source": "https://smallhd.com/products/703-ultra-bright-professional-on-camera-field-monitor",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-smallhd-small-hd-703-monitor-7-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "7.02″ LTPS LCD，1920×1080",
+          "source": "https://smallhd.com/products/703-ultra-bright-professional-on-camera-field-monitor",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "最高2200 nits",
+          "source": "https://smallhd.com/products/703-ultra-bright-professional-on-camera-field-monitor",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "色域/位深",
+          "value": "100% Rec.709；10-bit Color Intelligence Engine",
+          "source": "https://smallhd.com/products/703-ultra-bright-professional-on-camera-field-monitor",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-transvideo-transvideo-starlite-hd-5-5-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕类型",
+          "value": "5″ AMOLED",
+          "source": "https://www.transvideo.eu/sites/default/files/pdf/QuickStart-5HD.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "图像区域分辨率",
+          "value": "1280×720",
+          "source": "https://www.transvideo.eu/sites/default/files/pdf/QuickStart-5HD.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最大亮度",
+          "value": "380 nit",
+          "source": "https://www.transvideo.eu/sites/default/files/pdf/QuickStart-5HD.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17",
+      "displayName": {
+        "value": "Transvideo StarliteHD 5″",
+        "source": "https://www.transvideo.eu/sites/default/files/pdf/QuickStart-5HD.pdf",
+        "reason": "官方快速指南将StarliteHD标为5英寸，清除库存5′′5中的重复数字"
+      }
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-17-monitor-17-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "17″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-18-2-monitor-18-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "18.2″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-24-6-monitor-25-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "24.6″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-5-8-hd-monitor-058a-5-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕/规格尺寸",
+          "value": "5.8″（库存名称）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存058A与VFM-058W不能直接等同，需确认完整型号；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-7-5-hd-monitor-f-7h-7-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "7″ FHD 1920×1080",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=100",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "3600 cd/m²",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=100",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "接口",
+          "value": "3G-SDI输入/输出；HDMI输入/输出",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=100",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-监看",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-7-5-hd-monitor-075a-7-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "7″ FHD 1920×1080",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=75",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "600 cd/m²",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=75",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "对比度",
+          "value": "800:1",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=75",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-5-5-hd-monitor-055a-5-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "5.5″ OLED 1920×1080",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=92",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "350 cd/m²",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=92",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "对比度",
+          "value": "17000:1",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=92",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-5-6-hd-monitor-056w-5-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "5.6″ 1280×800",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=1",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "色深",
+          "value": "16.7M colors",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=1",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "接口",
+          "value": "3G/HD/SD-SDI；HDMI",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=1",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-tv-logic-vfm-056wp-5-6-lcd-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "5.6″ 1280×800",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=34",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "300 cd/m²",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=34",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "接口",
+          "value": "3G-SDI及HDMI输入；3G-SDI输出",
+          "source": "https://tvlogic.tv/new/M_Spec.asp?sidx=34",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-tv-logic-vfm-058-5-6-lcd-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "5.5″ FHD 1920×1080",
+          "source": "https://tvlogic.tv/New/M_Spec.asp?sidx=49",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "450 cd/m²",
+          "source": "https://tvlogic.tv/New/M_Spec.asp?sidx=49",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "对比度",
+          "value": "1000:1",
+          "source": "https://tvlogic.tv/New/M_Spec.asp?sidx=49",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic058-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕尺寸",
+          "value": "5.5″",
+          "source": "https://www.tvlogic.tv/New/M_Spec.asp?sidx=49",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板分辨率",
+          "value": "1920×1080",
+          "source": "https://www.tvlogic.tv/New/M_Spec.asp?sidx=49",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "屏幕亮度",
+          "value": "450 cd/m²",
+          "source": "https://www.tvlogic.tv/New/M_Spec.asp?sidx=49",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-tvlogic-tvlogic-5-8-hd-monitor-058w-5-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕",
+          "value": "5.5″ FHD 1920×1080",
+          "source": "https://tvlogic.tv/New/M_Spec.asp?sidx=49",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "亮度",
+          "value": "450 cd/m²",
+          "source": "https://tvlogic.tv/New/M_Spec.asp?sidx=49",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "对比度",
+          "value": "1000:1",
+          "source": "https://tvlogic.tv/New/M_Spec.asp?sidx=49",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-video-device-pix-e5-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕尺寸",
+          "value": "5″ IPS触摸屏",
+          "source": "https://cdn.sounddevices.com/wp-content/uploads/2019/04/PIX-E5-UGv350.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板分辨率",
+          "value": "1920×1080",
+          "source": "https://cdn.sounddevices.com/wp-content/uploads/2019/04/PIX-E5-UGv350.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "屏幕亮度",
+          "value": "500 nit",
+          "source": "https://cdn.sounddevices.com/wp-content/uploads/2019/04/PIX-E5-UGv350.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-video-devices-video-devices-pix-e7-monitor-监看",
+      "technicalSpecs": [
+        {
+          "label": "屏幕尺寸",
+          "value": "7″ IPS触摸屏",
+          "source": "https://cdn.sounddevices.com/wp-content/uploads/2019/04/PIX-E7-UGv350.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "面板分辨率",
+          "value": "1920×1200",
+          "source": "https://cdn.sounddevices.com/wp-content/uploads/2019/04/PIX-E7-UGv350.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "屏幕亮度",
+          "value": "500 nit",
+          "source": "https://cdn.sounddevices.com/wp-content/uploads/2019/04/PIX-E7-UGv350.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "audio-dji-mic-unspecified",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-罗兰r44录音机-录音器材",
+      "technicalSpecs": [
+        {
+          "label": "通道数",
+          "value": "4通道",
+          "source": "https://proav.roland.com/de/products/r-44/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "录音规格",
+          "value": "WAV/BWF，16/24-bit，44.1–192 kHz（192 kHz限2通道）",
+          "source": "https://proav.roland.com/de/products/r-44/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "频率响应/动态范围",
+          "value": "20 Hz–40 kHz；AD动态范围100 dB",
+          "source": "https://proav.roland.com/de/products/r-44/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-sony-索尼无线麦-录音器材",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-sony-索尼无线手持麦-录音器材",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-sony-索尼小蜜蜂-录音器材",
+      "technicalSpecs": [
+        {
+          "label": "传输频段",
+          "value": "UHF（频点随地区版本）",
+          "source": "https://pro.sony/s3/cms-static-content/file/18/1237485315518.pdf",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "拾音胶囊",
+          "value": "全向/单向领夹可选（随套装）",
+          "source": "https://pro.sony/s3/cms-static-content/file/18/1237485315518.pdf",
+          "provenance": "manufacturer",
+          "scope": "series"
+        },
+        {
+          "label": "接收音频输出",
+          "value": "3.5 mm非平衡接口",
+          "source": "https://pro.sony/s3/cms-static-content/file/18/1237485315518.pdf",
+          "provenance": "manufacturer",
+          "scope": "series"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17",
+      "seriesLabel": "SONY UWP / UWP-D领夹系统（库存代际未定）",
+      "displayName": {
+        "value": "索尼 SONY 无线领夹系统（小蜜蜂）",
+        "source": "https://pro.sony/s3/cms-static-content/file/18/1237485315518.pdf",
+        "reason": "库存品牌或系列别名规范显示，保持旧ID与型号未定身份"
+      }
+    },
+    {
+      "id": "eq-sony-sony-uwp-d11-监看",
+      "technicalSpecs": [
+        {
+          "label": "接收机频响",
+          "value": "23 Hz–18 kHz（典型）",
+          "source": "https://pro.sony/en_CL/pdf/products/broadcastaudiouwpdseriesmicpackages/uwp-d11",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "接收机信噪比",
+          "value": "96 dB（A计权，最大频偏）",
+          "source": "https://pro.sony/en_CL/pdf/products/broadcastaudiouwpdseriesmicpackages/uwp-d11",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "音频延迟",
+          "value": "约0.35 ms",
+          "source": "https://pro.sony/en_CL/pdf/products/broadcastaudiouwpdseriesmicpackages/uwp-d11",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-录音机-h6n-录音器材",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "H6N不是可确认的厂商型号，无法判断是H6、H6essential或其他设备；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-森海塞尔-416话筒-挑杆-录音器材",
+      "technicalSpecs": [
+        {
+          "label": "频响",
+          "value": "40 Hz–20 kHz",
+          "source": "https://docs.cloud.sennheiser.com/en-us/mkh-416-mkh-418-s/specs-mkh-416.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "灵敏度",
+          "value": "25 mV/Pa ±1 dB（1 kHz）",
+          "source": "https://docs.cloud.sennheiser.com/en-us/mkh-416-mkh-418-s/specs-mkh-416.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最大声压级",
+          "value": "130 dB SPL",
+          "source": "https://docs.cloud.sennheiser.com/en-us/mkh-416-mkh-418-s/specs-mkh-416.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "audio-timecode-unspecified",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-sony-索尼-罗德机头麦-录音器材",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-章鱼时码器-录音器材",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-rode-vider-mic-rycote-录音器材",
+      "technicalSpecs": [
+        {
+          "label": "指向性",
+          "value": "超心形",
+          "source": "https://edge.rode.com/pdf/products/637/VideoMic_Datasheet_05_FA.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "频率范围",
+          "value": "40 Hz–20 kHz",
+          "source": "https://edge.rode.com/pdf/products/637/VideoMic_Datasheet_05_FA.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最大声压级",
+          "value": "134 dB SPL",
+          "source": "https://edge.rode.com/pdf/products/637/VideoMic_Datasheet_05_FA.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-f8录音机-录音器材",
+      "technicalSpecs": [
+        {
+          "label": "输入通道",
+          "value": "8路模拟输入",
+          "source": "https://zoomcorp.com/en/gb/field-recorders/field-recorders/f8/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最大同时录音轨数",
+          "value": "10轨",
+          "source": "https://zoomcorp.com/en/gb/field-recorders/field-recorders/f8/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "录音规格",
+          "value": "最高24-bit/192 kHz",
+          "source": "https://zoomcorp.com/en/gb/field-recorders/field-recorders/f8/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "eq-通用-h6录音机-录音器材",
+      "technicalSpecs": [
+        {
+          "label": "最大同时录音轨数",
+          "value": "6轨",
+          "source": "https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h6/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "录音采样率",
+          "value": "最高96 kHz（WAV）",
+          "source": "https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h6/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "话筒输入",
+          "value": "4个XLR/TRS组合输入",
+          "source": "https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h6/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "other-gaoshi-t80",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "接口/编码/推流规格",
+          "reason": "已检索高视T80直播盒子的型号资料，未找到能可靠对应库存名称的厂商规格表；不采用其他T80同名设备参数。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "source-unavailable"
+    },
+    {
+      "id": "other-sony-mcx500",
+      "technicalSpecs": [
+        {
+          "label": "视频输入",
+          "value": "4×SDI + 2×HDMI + 2×复合视频",
+          "source": "https://pro.sony/en_GW/products/video-switchers/mcx-500",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "音频混音",
+          "value": "5路立体声",
+          "source": "https://pro.sony/en_GW/products/video-switchers/mcx-500",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "系统格式",
+          "value": "1080/59.94i、1080/50i",
+          "source": "https://pro.sony/en_GW/products/video-switchers/mcx-500",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "other-tianchuang-capture",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-采集卡-其他",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-鼓风机-其他",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "other-gaffer",
+      "technicalSpecs": [
+        {
+          "label": "基材",
+          "value": "布基",
+          "source": "data/catalog/published.v5.json#other-gaffer",
+          "provenance": "inventory",
+          "scope": "model"
+        },
+        {
+          "label": "颜色",
+          "value": "黑色",
+          "source": "data/catalog/published.v5.json#other-gaffer",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "v5-restored-27",
+      "technicalSpecs": [
+        {
+          "label": "尺寸",
+          "value": "10 cm（库存名称明示）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "v5-restored-28",
+      "technicalSpecs": [
+        {
+          "label": "尺寸",
+          "value": "20 cm（库存名称明示）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "v5-restored-29",
+      "technicalSpecs": [
+        {
+          "label": "尺寸",
+          "value": "30 cm（库存名称明示）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "v5-restored-30",
+      "technicalSpecs": [
+        {
+          "label": "尺寸",
+          "value": "5 cm（库存名称明示）",
+          "source": "data/catalog/published.v5.json",
+          "provenance": "inventory",
+          "scope": "model"
+        }
+      ],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "other-applebox",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "other-cart",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-摄影头盔-其他",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-题字器-其他",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-小米对讲机-其他",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-烟机-其他",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    },
+    {
+      "id": "eq-通用-阅流nbox-pro2-其他",
+      "technicalSpecs": [
+        {
+          "label": "视频接口",
+          "value": "SDI、HDMI输入与环出",
+          "source": "https://yueliu.cn/case/34",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "代理素材编码",
+          "value": "HEVC，最高32 Mbps",
+          "source": "https://yueliu.cn/case/34",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "内置存储",
+          "value": "128 GB",
+          "source": "https://yueliu.cn/case/34",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "missing": [],
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "id": "other-nbox-unspecified",
+      "technicalSpecs": [],
+      "missing": [
+        {
+          "field": "未确认的技术指标",
+          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
+        }
+      ],
+      "checkedAt": "2026-10-17",
+      "reviewStatus": "identity-required"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.arri.com/en/camera-systems/cameras/alexa-35",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.arri.com/en/learn/camera-systems/frequently-asked-questions/alexa-lf-faq",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-mini-lf",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "data/catalog/published.v5.json",
+      "type": "inventory",
+      "note": "库存/发布名称中明确写出的数值或单位；不据型号编码推算"
+    },
+    {
+      "url": "https://www.panasonic.com/global/consumer/lumix/gh7.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm6/specifications",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/camcorders-interchangeable-lens-camcorders/ilme-fx3/specifications",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/specifications",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx5/specifications",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/articles/00253975",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7m4-series/ilce-7m4/specifications",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/alpha-mirrorless-interchangeable-lens-cameras-ilce-7-series/ilce-7sm3/specifications",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.vaxis.cn/product/",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://zunzheng.com/monitor-comparison/",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.dev.smallhd.com/community/7-reasons-shooters-want-the-702-bright",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.dev.smallhd.com/community/wp-content/uploads/2015/11/Bright_ifg_mono.pdf",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h6/",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://zoomcorp.com/en/gb/field-recorders/field-recorders/f8/",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-265",
+      "type": "manufacturer",
+      "note": "厂商官方产品规格页或官方技术资料，仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.insta360.com/cn/product/insta360-x3",
+      "type": "manufacturer",
+      "note": "厂商官方产品规格页或官方技术资料，仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://www.insta360.com/cn/product/insta360-ace-pro2",
+      "type": "manufacturer",
+      "note": "厂商官方产品规格页或官方技术资料，仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://freeflysystems.com/ember-s2-5k",
+      "type": "manufacturer",
+      "note": "厂商官方产品规格页或官方技术资料，仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://freeflysystems.com/ember-s5k",
+      "type": "manufacturer",
+      "note": "厂商官方产品规格页或官方技术资料，仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://freeflysystems.com/wave",
+      "type": "manufacturer",
+      "note": "厂商官方产品规格页或官方技术资料，仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://gopro.com/en/us/shop/cameras/learn/hero13black/CHDHX-131-master.html",
+      "type": "manufacturer",
+      "note": "厂商官方产品规格页或官方技术资料，仅用于该记录列明的指标"
+    },
+    {
+      "url": "https://community.gopro.com/s/article/HERO8-Black-Video-Resolutions?language=en_US",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://docs.red.com/955-0190_v1.4/955-0190_v1.4.1_REV-1.1_RED_PS_KOMODO_Operation_Guide/Content/A_TechSpecs/Specs_KOMODO_6K.htm",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://investor.gopro.com/press-releases/press-release-details/2016/GoPros-New-HERO5-Lineup-Hits-Retail-Shelves-Today/default.aspx",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://investor.gopro.com/press-releases/press-release-details/2017/With-HERO6-GoPro-Sets-New-Bar-For-Image-Quality-Stabilization-And-Simplicity/default.aspx",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://investor.gopro.com/press-releases/press-release-details/2018/Shaky-Video-is-Dead-GoPro-HERO7-Black-Features-Gimbal-Like-Video-Stabilization-In-Camera/default.aspx",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://investor.gopro.com/press-releases/press-release-details/2020/GoPro-Packs-More-of-Everything-into-New-HERO9-Black/default.aspx",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://na.panasonic.com/news/panasonic-announces-new-lumix-s1rii-full-frame-mirrorless-camera",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://na.panasonic.com/news/panasonic-announces-two-new-full-frame-mirrorless-cameras-lumix-s1ii-and-lumix-s1iie-and-new-lumix-s-24-60mm-f2.8-lens",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://pro.sony/ue_US/products/digital-cinema-cameras/burano",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://pro.sony/ue_US/products/digital-cinema-cameras/venice",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://pro.sony/ue_US/products/digital-cinema-cameras/venice-2",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-fs7m2",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-z280",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://store.dji.com/jp/product/dji-mavic-4-pro?set_region=JP&vid=189291",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://store.dji.com/uk/product/osmo-pocket-4p?set_region=GB",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.arri.com/en/camera-systems/cameras/alexa-mini",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-35-xtreme",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.arri.com/en/cine-systems/cine-cameras/alexa-lf",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.arri.com/en/cine-systems/cine-cameras/amira",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.arri.com/en/cine-systems/cine-cameras/legacy-cine-cameras/alexa-sxt-w",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/eos5d4/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/eosc300markii/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/eosc300markiii/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/eosc400/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/eosc50/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/eosc500markii/info2.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/eosc80/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/r1/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/r5/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/r5c/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/r5ii/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.canon.com.cn/product/r6iii/spec.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.dji.com/mavic-2/info",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.dji.com/mavic-3-pro/specs",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.dji.com/media-center/announcements/dji-release-osmo-360-2",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.dji.com/osmo-action-6/specs",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.dji.com/ronin-4d/specs",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.dji.com/support/product/dji-action-2",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.panasonic.com/global/consumer/lumix/gh5.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.panasonic.com/global/consumer/lumix/gh5s.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.panasonic.com/in/consumer/cameras-camcorders/camera/s/dc-s1h.specs.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.panasonic.com/nl/consumer/cameras-camcorder/lumix-g-systeemcameras/dc-gh7.specs.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx2b/specifications",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm2/specifications",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、支持页或官方手册；仅用于对应记录明确列出的规格"
+    },
+    {
+      "url": "https://docs.cloud.sennheiser.com/en-us/mkh-416-mkh-418-s/specs-mkh-416.html",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://proav.roland.com/de/products/r-44/",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://rode.com/en-au/products/videomic-pro",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://smallhd.com/products/503-ultra-bright-professional-on-camera-field-monitor",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://smallhd.com/products/703-ultra-bright-professional-on-camera-field-monitor",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://tvlogic.tv/New/M_Spec.asp?sidx=49",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://tvlogic.tv/new/M_Spec.asp?sidx=1",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://tvlogic.tv/new/M_Spec.asp?sidx=100",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://tvlogic.tv/new/M_Spec.asp?sidx=34",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://tvlogic.tv/new/M_Spec.asp?sidx=75",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://tvlogic.tv/new/M_Spec.asp?sidx=92",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://www.flandersscientific.com/index/uploads/FSIUserManual.pdf",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://zoomcorp.com/documents/3190/E_H6_Specifications.pdf",
+      "type": "manufacturer",
+      "note": "厂商产品规格页、官方手册或官方支持页，支持相关记录中明确列出的指标"
+    },
+    {
+      "url": "https://docs.red.com/955-0156_v7.4/WEAPON_HELIUM_8K_S35_Operation_Guide/Content/A_TechSpecs/Specs_HELIUM.htm",
+      "type": "manufacturer",
+      "note": "RED官方技术规格/操作指南；用于对应RED型号的有效像素、动态范围及帧率"
+    },
+    {
+      "url": "https://docs.red.com/955-0160/WEAPONMONSTRO8KVVOperationGuide/de/Content/A_TechSpecs/Specs_WEAPON_8K_VV.htm",
+      "type": "manufacturer",
+      "note": "RED官方技术规格/操作指南；用于对应RED型号的有效像素、动态范围及帧率"
+    },
+    {
+      "url": "https://docs.red.com/955-0169/DSMC2_GEMINI_Operation_Guide_v7_1.pdf",
+      "type": "manufacturer",
+      "note": "RED官方技术规格/操作指南；用于对应RED型号的有效像素、动态范围及帧率"
+    },
+    {
+      "url": "https://docs.red.com/955-0199/955-0199_V1.3_Rev-A_RED_PS_V-RAPTOR_8K_VV_Operation_Guide/Content/C_TechSpecs/Specs_V-RAPTOR.htm",
+      "type": "manufacturer",
+      "note": "RED官方技术规格/操作指南；用于对应RED型号的有效像素、动态范围及帧率"
+    },
+    {
+      "url": "https://docs.red.com/955-0203/955-0203_V1.6%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XL%208K%20VV%20Operation%20Guide%20HTML/Content/C_TechSpecs/Specs_V-RAPTOR_XL.htm",
+      "type": "manufacturer",
+      "note": "RED官方技术规格/操作指南；用于对应RED型号的有效像素、动态范围及帧率"
+    },
+    {
+      "url": "https://docs.red.com/955-0219/955-0219_V1.0%20Rev-B%20RED%20PS%2C%20KOMODO-X%20Operation%20Guide%20HTML/Content/A_TechSpecs/Specs_KOMODO-X.htm",
+      "type": "manufacturer",
+      "note": "RED官方技术规格/操作指南；用于对应RED型号的有效像素、动态范围及帧率"
+    },
+    {
+      "url": "https://docs.red.com/955-0225/955-0225_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20%5BX%5D%208K%20VV%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20%5BX%5D.htm",
+      "type": "manufacturer",
+      "note": "RED官方技术规格/操作指南；用于对应RED型号的有效像素、动态范围及帧率"
+    },
+    {
+      "url": "https://docs.red.com/955-0233/955-0233_V2.1%20Rev-A%20RED%20PS%2C%20V-RAPTOR%20XE%20Operation%20Guide%20HTML/Content/B_TechSpecs/Specs_V-RAPTOR%20XE.htm",
+      "type": "manufacturer",
+      "note": "RED官方技术规格/操作指南；用于对应RED型号的有效像素、动态范围及帧率"
+    },
+    {
+      "url": "https://store.dji.com/no/product/dji-high-bright-remote-monitor",
+      "type": "manufacturer",
+      "note": "对应产品/系列官方规格或手册；scope字段标示型号与系列的适用范围"
+    },
+    {
+      "url": "https://support.atomos.com/hc/article_attachments/12582253824655",
+      "type": "manufacturer",
+      "note": "对应产品/系列官方规格或手册；scope字段标示型号与系列的适用范围"
+    },
+    {
+      "url": "https://www.atomos.com/product/ninja/",
+      "type": "manufacturer",
+      "note": "对应产品/系列官方规格或手册；scope字段标示型号与系列的适用范围"
+    },
+    {
+      "url": "https://www.dji.com/support/product/transmission",
+      "type": "manufacturer",
+      "note": "对应产品/系列官方规格或手册；scope字段标示型号与系列的适用范围"
+    },
+    {
+      "url": "https://www.dji.com/transmission",
+      "type": "manufacturer",
+      "note": "对应产品/系列官方规格或手册；scope字段标示型号与系列的适用范围"
+    },
+    {
+      "url": "https://www.vaxis.cn/pdf/VAXIS%20Wireless%20Video%20System%20Brochure.pdf",
+      "type": "manufacturer",
+      "note": "对应产品/系列官方规格或手册；scope字段标示型号与系列的适用范围"
+    },
+    {
+      "url": "https://www.dji.com/ronin-4d/faq",
+      "type": "manufacturer",
+      "note": "官方产品页或技术资料；支持对应记录中的指标"
+    },
+    {
+      "url": "https://store.dji.com/product/dji-ronin-4d-8k",
+      "type": "manufacturer",
+      "note": "官方产品页或技术资料；支持对应记录中的指标"
+    },
+    {
+      "url": "https://pro.sony/en_HK/press/electronics-launches-fx6-full-frame-professional-camera-expand-cinema-line",
+      "type": "manufacturer",
+      "note": "官方产品页或技术资料；支持对应记录中的指标"
+    },
+    {
+      "url": "https://pro.sony/ue_US/products/handheld-camcorders/pxw-fx9",
+      "type": "manufacturer",
+      "note": "官方产品页或技术资料；支持对应记录中的指标"
+    },
+    {
+      "url": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7m5-b",
+      "type": "manufacturer",
+      "note": "官方产品页或技术资料；支持对应记录中的指标"
+    },
+    {
+      "url": "https://pro.sony/ue_US/products/broadcastpromonitors/pvm-a170-v2.0",
+      "type": "manufacturer",
+      "note": "Sony官方型号技术规格页"
+    },
+    {
+      "url": "https://investor.gopro.com/press-releases/press-release-details/2026/GoPro-Announces-New-MISSION-1-Line-of-Professional-8K-and-4K-Open-Gate-Compact-Cinema-Cameras-for-Filmmakers-Creators-and-Aspiring-Enthusiasts/default.aspx",
+      "checkedAt": "2026-10-17",
+      "scope": "model",
+      "note": "复核型号明确的尚缺项，不套用其他代际"
+    },
+    {
+      "url": "https://www.insta360.com/cn/product/insta360-x6?from=nav&most-popular=",
+      "checkedAt": "2026-10-17",
+      "scope": "model",
+      "note": "复核型号明确的尚缺项，不套用其他代际"
+    },
+    {
+      "url": "https://www.insta360.com/jp/product/insta360-x6?from=nav&most-popular=",
+      "checkedAt": "2026-10-17",
+      "scope": "model",
+      "note": "复核型号明确的尚缺项，不套用其他代际"
+    },
+    {
+      "url": "https://onlinemanual.insta360.com/x6/en-us/specs/hardware",
+      "checkedAt": "2026-10-17",
+      "scope": "model",
+      "note": "复核型号明确的尚缺项，不套用其他代际"
+    },
+    {
+      "url": "https://www.phantomhighspeed.com/-/media/project/ameteksxa/visionresearch/documents/datasheets/web/wdsflex4k.pdf?download=1",
+      "type": "manufacturer",
+      "note": "已逐条核对产品页或官方规格表；仅适用该记录列明指标"
+    },
+    {
+      "url": "https://www.phantomhighspeed.com/products/cameras/tmx/7510",
+      "type": "manufacturer",
+      "note": "已逐条核对产品页或官方规格表；仅适用该记录列明指标"
+    },
+    {
+      "url": "https://pro.sony/en_CL/pdf/products/broadcastaudiouwpdseriesmicpackages/uwp-d11",
+      "type": "manufacturer",
+      "note": "已逐条核对产品页或官方规格表；仅适用该记录列明指标"
+    },
+    {
+      "url": "https://pro.sony/en_GW/products/video-switchers/mcx-500",
+      "type": "manufacturer",
+      "note": "已逐条核对产品页或官方规格表；仅适用该记录列明指标"
+    },
+    {
+      "url": "https://edge.rode.com/pdf/products/637/VideoMic_Datasheet_05_FA.pdf",
+      "type": "manufacturer",
+      "note": "已逐条核对产品页或官方规格表；仅适用该记录列明指标"
+    },
+    {
+      "url": "https://yueliu.cn/case/34",
+      "type": "manufacturer",
+      "note": "已逐条核对产品页或官方规格表；仅适用该记录列明指标"
+    },
+    {
+      "url": "https://www.flandersscientific.com/catalog/catalog.pdf",
+      "type": "manufacturer",
+      "note": "已核对官方产品页/说明书，指标适用范围见记录"
+    },
+    {
+      "url": "https://support.atomos.com/hc/en-us/article_attachments/12582157729551",
+      "type": "manufacturer",
+      "note": "已核对官方产品页/说明书，指标适用范围见记录"
+    },
+    {
+      "url": "https://www.atomos-japan.com/wp-content/uploads/2023/10/SHOGUN_FLAME_spec.pdf",
+      "type": "manufacturer",
+      "note": "已核对官方产品页/说明书，指标适用范围见记录"
+    },
+    {
+      "url": "https://www.vaxis.cn/product/showproduct.php?id=74",
+      "type": "manufacturer",
+      "note": "已核对官方产品页/说明书，指标适用范围见记录"
+    },
+    {
+      "url": "https://www.vaxis.cn/product/showproduct.php?id=3",
+      "type": "manufacturer",
+      "note": "已核对官方产品页/说明书，指标适用范围见记录"
+    },
+    {
+      "url": "https://cdn.sounddevices.com/wp-content/uploads/2019/04/PIX-E7-UGv350.pdf",
+      "type": "manufacturer",
+      "note": "已核对官方产品页/说明书，指标适用范围见记录"
+    },
+    {
+      "url": "https://cdn.sounddevices.com/wp-content/uploads/2019/04/PIX-E5-UGv350.pdf",
+      "type": "manufacturer",
+      "note": "已核对官方产品页/说明书，指标适用范围见记录"
+    },
+    {
+      "url": "https://www.tvlogic.tv/New/M_Spec.asp?sidx=49",
+      "type": "manufacturer",
+      "note": "已核对官方产品页/说明书，指标适用范围见记录"
+    },
+    {
+      "url": "https://www.transvideo.eu/sites/default/files/pdf/QuickStart-5HD.pdf",
+      "type": "manufacturer",
+      "note": "已核对官方产品页/说明书，指标适用范围见记录"
+    },
+    {
+      "url": "https://www.atomos.com/get-prepped-for-post-with-atomos/",
+      "type": "manufacturer",
+      "note": "厂商系列公共技术特性；不指定未知库存型号或代际"
+    },
+    {
+      "url": "https://www.atomos.com/wp-content/uploads/2023/07/Shinobi_One-sheet.pdf",
+      "type": "manufacturer",
+      "note": "厂商系列公共技术特性；不指定未知库存型号或代际"
+    },
+    {
+      "url": "https://pro.sony/s3/cms-static-content/file/18/1237485315518.pdf",
+      "type": "manufacturer",
+      "note": "厂商系列公共技术特性；不指定未知库存型号或代际"
+    },
+    {
+      "url": "https://www.atomos.com/tech-specs/shogun/",
+      "type": "manufacturer",
+      "note": "厂商系列公共技术特性；不指定未知库存型号或代际"
+    },
+    {
+      "url": "https://www.flandersscientific.com/uploads/PrintFriendlyManual.pdf",
+      "type": "manufacturer",
+      "note": "Flanders Scientific原厂说明书LM-0750W规格表；尊正官网LM系列手册及使用案例明确同型号名称，不使用型号后缀推断功率。"
+    },
+    {
+      "url": "https://onlinemanual.insta360.com/x3/en-us/faq/feature/shootingmode?to=Q8",
+      "type": "manufacturer",
+      "note": "按型号专属模式表核对，避免把同页对比型号/全景模式规格移用到本机单镜头模式"
+    },
+    {
+      "url": "https://www.usa.canon.com/support/p/eos-c500-mark-ii",
+      "type": "manufacturer",
+      "note": "按型号专属模式表核对，避免把同页对比型号/全景模式规格移用到本机单镜头模式"
+    }
+  ],
+  "notes": [
+    "逐条检查发布目录中摄影机、监看、录音器材和其他共189条；按型号或系列复用厂商页面时，只录入页面直接支持的规格。",
+    "库存名称中的尺寸、功率、分辨率标注只作为库存证据保存；没有依据的型号编码没有转换成规格值。",
+    "缺少三项的记录保留已证实规格，并在missing列出待补字段与原因；缺项不是零值。",
+    "本轮进一步查阅 ARRI、DJI、Canon、Panasonic、Sony、GoPro 与 RED 的型号级官方规格页及支持资料；每项均保留直接来源。",
+    "ALEXA 35 Xtreme 将动态范围与帧率拆为不同技术指标；型号页面说明最高330 fps保留17 stops，Sensor Overdrive最高660 fps但降低动态范围。",
+    "库存别名含具体型号但原条目身份冲突或不能确定设备版本时，保留库存证据并在missing说明；不得把同系列不同传感器/配置参数移植到该条目。",
+    "新增核查检索记录：ARRI ALEXA Mini/SXT/AMIRA/Xtreme；DJI Action 2、Mavic 2 Pro/3 Pro/4 Pro、Osmo Action 6/360 II/Pocket 4P、Ronin 4D；Canon Cinema EOS 与 EOS R 系列；Panasonic GH/S1 系列；Sony Cinema Line、FX、FS、Z 系列；GoPro HERO5–9；RED KOMODO；SmallHD、TVLogic、FSI/Zunzheng；Zoom、Roland、Sennheiser、RØDE。检索和数值核对均以各行 source 字段的厂商页面/手册为准。",
+    "RED已确定型号逐台按官方操作指南核对：GEMINI、HELIUM、MONSTRO、KOMODO/KOMODO-X、V-RAPTOR/V-RAPTOR [X]/XE/XL；记录的是各自传感器及最高RAW帧率规格，不能用通用系列页替代具体款。",
+    "个别条目保留型号身份缺口：例如库存“H6N”无法确认对应 Zoom H6/H6n/H6 Black，未将任一版本官方参数移植到该记录。",
+    "系列级检索另核对 DJI Transmission、DJI High-Bright Remote Monitor 和 VAXIS STORM 072。只有库存标识能指向该系列/型号时才使用系列规格；相关记录均有 seriesLabel 和 scope=series。"
+  ]
+}

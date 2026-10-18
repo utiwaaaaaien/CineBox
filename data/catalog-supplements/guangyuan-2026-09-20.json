@@ -1,0 +1,3793 @@
+{
+  "batch": "guangyuan-2026-09-20",
+  "sourceTitle": "光园影视 器材租赁清单",
+  "sourceUrl": "https://mp.weixin.qq.com/s/UXTQP7zz7jNgt8gAmohL0A",
+  "sourceFileSha256": "79f4ff2fb9c3a5ec133b73bce3e7bc34c7e18d793ab7bff236389646a0be8cf5",
+  "receivedAt": "2026-09-20",
+  "sourcePublishedAt": null,
+  "costTierPolicy": "按现库同类条目估计内部档位，不代表光园报价",
+  "additions": [
+    {
+      "id": "cam-freefly-ember-s5k",
+      "name": "Freefly EMBER S5K",
+      "brand": "Freefly",
+      "category": "摄影机",
+      "subcategory": "高速摄影机",
+      "unit": "台",
+      "costTier": 4,
+      "aliases": [
+        "EMBER S5K 高速机",
+        "Freefly Ember"
+      ],
+      "verified": true
+    },
+    {
+      "id": "cam-sony-fx5",
+      "name": "SONY ILME-FX5",
+      "brand": "SONY",
+      "category": "摄影机",
+      "subcategory": "全画幅电影摄影机",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [
+        "索尼 FX5",
+        "SONY FX5"
+      ],
+      "verified": true
+    },
+    {
+      "id": "cam-sony-a7m5",
+      "name": "SONY α7 V",
+      "brand": "SONY",
+      "category": "摄影机",
+      "subcategory": "全画幅微单相机",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "索尼 A7M5",
+        "SONY A7 V",
+        "ILCE-7M5",
+        "Alpha 7 V"
+      ],
+      "verified": true
+    },
+    {
+      "id": "cam-canon-r5m2",
+      "name": "Canon EOS R5 Mark II",
+      "brand": "Canon",
+      "category": "摄影机",
+      "subcategory": "全画幅微单相机",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "佳能 R5二代",
+        "R5 II",
+        "R5Ⅱ",
+        "R5M2"
+      ],
+      "verified": true
+    },
+    {
+      "id": "cam-canon-c80",
+      "name": "Canon EOS C80",
+      "brand": "Canon",
+      "category": "摄影机",
+      "subcategory": "全画幅电影摄影机",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [
+        "佳能 C80",
+        "CANON C80"
+      ],
+      "verified": true
+    },
+    {
+      "id": "cam-dji-osmo-pocket-unspecified",
+      "name": "DJI Osmo Pocket（代际待确认）",
+      "brand": "DJI",
+      "category": "摄影机",
+      "subcategory": "口袋摄影机",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [
+        "DJI OSMO Pocket口袋机"
+      ],
+      "verified": false
+    },
+    {
+      "id": "cam-insta360-unspecified",
+      "name": "Insta360 运动相机（型号待确认）",
+      "brand": "Insta360",
+      "category": "摄影机",
+      "subcategory": "运动相机",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [
+        "Insta360 系列运动相机"
+      ],
+      "verified": false
+    },
+    {
+      "id": "cam-dji-osmo-action-unspecified",
+      "name": "DJI Osmo Action（代际待确认）",
+      "brand": "DJI",
+      "category": "摄影机",
+      "subcategory": "运动相机",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [
+        "DJI Osmo Action"
+      ],
+      "verified": false
+    },
+    {
+      "id": "cam-dji-osmo-360-ii",
+      "name": "DJI Osmo 360 II",
+      "brand": "DJI",
+      "category": "摄影机",
+      "subcategory": "全景相机",
+      "unit": "台",
+      "costTier": 1,
+      "aliases": [
+        "大疆 osmo 360 二代",
+        "Osmo 360 2"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-arri-signature-prime-set",
+      "name": "ARRI Signature Prime T1.8 全画幅定焦组",
+      "brand": "ARRI",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头组",
+      "unit": "组",
+      "costTier": 4,
+      "aliases": [
+        "阿莱 SP 全画幅定焦镜头组",
+        "ARRI SP T1.8"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-cooke-panchro-ff-set",
+      "name": "Cooke Panchro 全画幅定焦组（配置待确认）",
+      "brand": "Cooke",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头组",
+      "unit": "组",
+      "costTier": 4,
+      "aliases": [
+        "库克 Panchro FF T2.2"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-cooke-sp3-18",
+      "name": "Cooke SP3 18mm T2.4",
+      "brand": "Cooke",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "库克 SP3 18mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-cooke-sp3-25",
+      "name": "Cooke SP3 25mm T2.4",
+      "brand": "Cooke",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "库克 SP3 25mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-cooke-sp3-32",
+      "name": "Cooke SP3 32mm T2.4",
+      "brand": "Cooke",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "库克 SP3 32mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-cooke-sp3-50",
+      "name": "Cooke SP3 50mm T2.4",
+      "brand": "Cooke",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "库克 SP3 50mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-cooke-sp3-75",
+      "name": "Cooke SP3 75mm T2.4",
+      "brand": "Cooke",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "库克 SP3 75mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-cooke-sp3-100",
+      "name": "Cooke SP3 100mm T2.4",
+      "brand": "Cooke",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "库克 SP3 100mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-nisi-athena-18",
+      "name": "NiSi ATHENA Prime 18mm T2.2",
+      "brand": "NiSi",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "雅典娜 18mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-nisi-athena-40",
+      "name": "NiSi ATHENA Prime 40mm T1.9",
+      "brand": "NiSi",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "雅典娜 40mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-nisi-athena-135",
+      "name": "NiSi ATHENA Prime 135mm T2.2",
+      "brand": "NiSi",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "雅典娜 135mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-nisi-athena-detuned-set",
+      "name": "NiSi ATHENA 特调版 14/25/35/50/85mm 定焦组（配置待确认）",
+      "brand": "NiSi",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头组",
+      "unit": "组",
+      "costTier": 2,
+      "aliases": [
+        "雅典娜特调版",
+        "雅典娜全国限量特调版"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-thypoch-simera-c-16-e",
+      "name": "Thypoch Simera-C 16mm T1.9 E口",
+      "brand": "Thypoch",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "叙 Simera-C 16mm",
+        "东正叙 16mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-thypoch-simera-c-21-e",
+      "name": "Thypoch Simera-C 21mm T1.5 E口",
+      "brand": "Thypoch",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "叙 Simera-C 21mm",
+        "东正叙 21mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-thypoch-simera-c-28-e",
+      "name": "Thypoch Simera-C 28mm T1.5 E口",
+      "brand": "Thypoch",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "叙 Simera-C 28mm",
+        "东正叙 28mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-thypoch-simera-c-35-e",
+      "name": "Thypoch Simera-C 35mm T1.5 E口",
+      "brand": "Thypoch",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "叙 Simera-C 35mm",
+        "东正叙 35mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-thypoch-simera-c-50-e",
+      "name": "Thypoch Simera-C 50mm T1.5 E口",
+      "brand": "Thypoch",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "叙 Simera-C 50mm",
+        "东正叙 50mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-thypoch-simera-c-75-e",
+      "name": "Thypoch Simera-C 75mm T1.5 E口",
+      "brand": "Thypoch",
+      "category": "镜头",
+      "subcategory": "全画幅定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "叙 Simera-C 75mm",
+        "东正叙 75mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-zhile-15-set",
+      "name": "至乐 1.5× 45/65/100mm 全画幅变形镜头组（系列待确认）",
+      "brand": "至乐",
+      "category": "镜头",
+      "subcategory": "全画幅变形镜头组",
+      "unit": "组",
+      "costTier": 2,
+      "aliases": [
+        "至乐 1.5X 45/65/ 100 全画幅变宽"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-zhile-133-set",
+      "name": "至乐 1.33× 25/35/50/75/100mm 全画幅变形镜头组（系列待确认）",
+      "brand": "至乐",
+      "category": "镜头",
+      "subcategory": "全画幅变形镜头组",
+      "unit": "组",
+      "costTier": 2,
+      "aliases": [
+        "至乐 1.33X 25/35/50/75/100 全画幅变宽"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-sirui-saturn-35-e",
+      "name": "SIRUI Saturn 35mm T2.9 1.6× E口",
+      "brand": "SIRUI",
+      "category": "镜头",
+      "subcategory": "全画幅变形镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "思锐 土星 35mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-sirui-saturn-50-e",
+      "name": "SIRUI Saturn 50mm T2.9 1.6× E口",
+      "brand": "SIRUI",
+      "category": "镜头",
+      "subcategory": "全画幅变形镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "思锐 土星 50mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-sirui-saturn-75-e",
+      "name": "SIRUI Saturn 75mm T2.9 1.6× E口",
+      "brand": "SIRUI",
+      "category": "镜头",
+      "subcategory": "全画幅变形镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "思锐 土星 75mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-sirui-150-anamorphic-e",
+      "name": "SIRUI 150mm 1.6× E口（系列待确认）",
+      "brand": "SIRUI",
+      "category": "镜头",
+      "subcategory": "全画幅变形镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "思锐 150mm 变形镜头"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-petzval-27",
+      "name": "Petzval 27mm f/1.7（版本待确认）",
+      "brand": "Lomography",
+      "category": "镜头",
+      "subcategory": "全画幅特效定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "匹兹瓦 27mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-petzval-35",
+      "name": "Petzval 35mm f/2（版本待确认）",
+      "brand": "Lomography",
+      "category": "镜头",
+      "subcategory": "全画幅特效定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "匹兹瓦 35mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-petzval-55",
+      "name": "Petzval 55mm f/1.7（版本待确认）",
+      "brand": "Lomography",
+      "category": "镜头",
+      "subcategory": "全画幅特效定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "匹兹瓦 55mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-petzval-80-5",
+      "name": "Petzval 80.5mm f/1.9（版本待确认）",
+      "brand": "Lomography",
+      "category": "镜头",
+      "subcategory": "全画幅特效定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "匹兹瓦 80.5mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-7artisans-floral-37",
+      "name": "7Artisans 繁花 37mm T2.9",
+      "brand": "7Artisans",
+      "category": "镜头",
+      "subcategory": "全画幅特效定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "七工匠 繁花 37mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-7artisans-floral-57",
+      "name": "7Artisans 繁花 57mm T2.9",
+      "brand": "7Artisans",
+      "category": "镜头",
+      "subcategory": "全画幅特效定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "七工匠 繁花 57mm"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-angenieux-ez3-ff",
+      "name": "Angénieux Type EZ-3 68-250mm T3.5-4.5",
+      "brand": "Angénieux",
+      "category": "镜头",
+      "subcategory": "全画幅变焦镜头",
+      "unit": "颗",
+      "costTier": 3,
+      "aliases": [
+        "安琴 EZ3 全画幅 68-250"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-tokina-atx-100-pl",
+      "name": "Tokina AT-X 100mm f/2.8 PL口（改口配置待确认）",
+      "brand": "Tokina",
+      "category": "镜头",
+      "subcategory": "微距镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "图丽 AT-X PL 100mm f2.8"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-laowa-8-15-pl",
+      "name": "Laowa 8-15mm T2.9 PL口",
+      "brand": "LAOWA",
+      "category": "镜头",
+      "subcategory": "鱼眼变焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "老蛙 PL 8-15 T2.9"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-angenieux-ez3-s35",
+      "name": "Angénieux Type EZ-3 45-165mm T2.3-3",
+      "brand": "Angénieux",
+      "category": "镜头",
+      "subcategory": "Super 35 变焦镜头",
+      "unit": "颗",
+      "costTier": 3,
+      "aliases": [
+        "安琴 EZ3 45-165"
+      ],
+      "verified": true
+    },
+    {
+      "id": "lens-teleconverter-2x-pl",
+      "name": "PL口 2× 增倍镜（型号待确认）",
+      "brand": "通用",
+      "category": "镜头",
+      "subcategory": "增倍镜",
+      "unit": "个",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "lens-teleconverter-2x-ef",
+      "name": "EF口 2× 增倍镜（型号待确认）",
+      "brand": "通用",
+      "category": "镜头",
+      "subcategory": "增倍镜",
+      "unit": "个",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "lens-teleconverter-2x-e",
+      "name": "E口 2× 增倍镜（型号待确认）",
+      "brand": "通用",
+      "category": "镜头",
+      "subcategory": "增倍镜",
+      "unit": "个",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "lens-sony-2870-f2",
+      "name": "SONY FE 28-70mm F2 GM",
+      "brand": "SONY",
+      "category": "镜头",
+      "subcategory": "摄影变焦镜头",
+      "unit": "颗",
+      "costTier": 3,
+      "aliases": [
+        "索尼 28-70 f2"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-sony-50150-f2",
+      "name": "SONY FE 50-150mm F2 GM",
+      "brand": "SONY",
+      "category": "镜头",
+      "subcategory": "摄影变焦镜头",
+      "unit": "颗",
+      "costTier": 3,
+      "aliases": [
+        "索尼 50-150 f2"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-sony-200600",
+      "name": "SONY FE 200-600mm F5.6-6.3 G OSS",
+      "brand": "SONY",
+      "category": "镜头",
+      "subcategory": "摄影变焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "索尼 200-600mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-canon-rf-35",
+      "name": "Canon RF 35mm（版本待确认）",
+      "brand": "Canon",
+      "category": "镜头",
+      "subcategory": "摄影定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "佳能 RF 35mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-canon-rf-50",
+      "name": "Canon RF 50mm F1.2",
+      "brand": "Canon",
+      "category": "镜头",
+      "subcategory": "摄影定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "佳能 RF 50mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-canon-rf-85",
+      "name": "Canon RF 85mm F1.2（版本待确认）",
+      "brand": "Canon",
+      "category": "镜头",
+      "subcategory": "摄影定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "佳能 RF 85mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-canon-rf-100",
+      "name": "Canon RF 100mm F2.8 Macro",
+      "brand": "Canon",
+      "category": "镜头",
+      "subcategory": "摄影微距镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "佳能 RF 100mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-canon-rf-15-35",
+      "name": "Canon RF 15-35mm F2.8",
+      "brand": "Canon",
+      "category": "镜头",
+      "subcategory": "摄影变焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "佳能 RF 15-35mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-canon-rf-24-70",
+      "name": "Canon RF 24-70mm F2.8",
+      "brand": "Canon",
+      "category": "镜头",
+      "subcategory": "摄影变焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "佳能 RF 24-70mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-canon-rf-70-200",
+      "name": "Canon RF 70-200mm F2.8（版本待确认）",
+      "brand": "Canon",
+      "category": "镜头",
+      "subcategory": "摄影变焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "佳能 RF 70-200mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "lens-canon-rf-100-500",
+      "name": "Canon RF 100-500mm F4.5-7.1",
+      "brand": "Canon",
+      "category": "镜头",
+      "subcategory": "摄影变焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "佳能 RF 100-500mm"
+      ],
+      "verified": false
+    },
+    {
+      "id": "audio-dji-mic-unspecified",
+      "name": "DJI 无线麦克风（代际待确认）",
+      "brand": "DJI",
+      "category": "录音器材",
+      "subcategory": "无线麦克风",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "DJI大疆无线麦"
+      ],
+      "verified": false
+    },
+    {
+      "id": "audio-timecode-unspecified",
+      "name": "时码器（型号待确认）",
+      "brand": "通用",
+      "category": "录音器材",
+      "subcategory": "时码同步设备",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "时码器"
+      ],
+      "verified": false
+    },
+    {
+      "id": "light-aputure-300d-ii",
+      "name": "Aputure LS C300d II",
+      "brand": "Aputure",
+      "category": "灯光器材",
+      "subcategory": "日光 LED 灯具",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "爱图仕 300d二代",
+        "LS 300d II"
+      ],
+      "verified": false
+    },
+    {
+      "id": "light-led-on-camera-bicolor",
+      "name": "双色温 LED 机头灯（型号待确认）",
+      "brand": "通用",
+      "category": "灯光器材",
+      "subcategory": "机头灯",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "LED双色温机头灯"
+      ],
+      "verified": false
+    },
+    {
+      "id": "light-rgb-tube-unspecified",
+      "name": "RGB 棒灯（型号待确认）",
+      "brand": "通用",
+      "category": "灯光器材",
+      "subcategory": "RGB 棒灯",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "RGB棒灯"
+      ],
+      "verified": false
+    },
+    {
+      "id": "light-led-mat-unspecified",
+      "name": "LED 布灯（型号待确认）",
+      "brand": "通用",
+      "category": "灯光器材",
+      "subcategory": "柔性 LED 灯具",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "LED 布灯"
+      ],
+      "verified": false
+    },
+    {
+      "id": "light-dedolight-unspecified",
+      "name": "特图利灯具（型号待确认）",
+      "brand": "Dedolight",
+      "category": "灯光器材",
+      "subcategory": "聚光灯",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "特图利"
+      ],
+      "verified": false
+    },
+    {
+      "id": "accessory-tilta-zoom-servo",
+      "name": "Tilta 变焦伺服（型号待确认）",
+      "brand": "TILTA",
+      "category": "摄影机附件",
+      "subcategory": "变焦控制器",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "铁头 变焦伺服"
+      ],
+      "verified": false
+    },
+    {
+      "id": "video-vaxis-702-unspecified",
+      "name": "Vaxis 702 无线监视器（型号待确认）",
+      "brand": "Vaxis",
+      "category": "监看",
+      "subcategory": "无线监视器",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "威固702无线小监"
+      ],
+      "verified": false
+    },
+    {
+      "id": "video-smallhd-unspecified",
+      "name": "SmallHD 小监视器（型号待确认）",
+      "brand": "SmallHD",
+      "category": "监看",
+      "subcategory": "机头监视器",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "smallHD小监"
+      ],
+      "verified": false
+    },
+    {
+      "id": "video-atomos-ninja-v",
+      "name": "Atomos Ninja V 5英寸监视记录仪",
+      "brand": "ATOMOS",
+      "category": "监看",
+      "subcategory": "机头监视记录仪",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "阿童木 忍者V"
+      ],
+      "verified": false
+    },
+    {
+      "id": "video-atomos-shinobi",
+      "name": "Atomos Shinobi 5英寸监视器",
+      "brand": "ATOMOS",
+      "category": "监看",
+      "subcategory": "机头监视器",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "阿童木 史努比"
+      ],
+      "verified": false
+    },
+    {
+      "id": "video-generic-5-sdi-hdmi",
+      "name": "5英寸 SDI/HDMI 监视器（型号待确认）",
+      "brand": "通用",
+      "category": "监看",
+      "subcategory": "机头监视器",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "video-generic-7-sdi-hdmi",
+      "name": "7英寸 SDI/HDMI 监视器（型号待确认）",
+      "brand": "通用",
+      "category": "监看",
+      "subcategory": "机头监视器",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "cam-dji-mavic-unspecified",
+      "name": "DJI Mavic 御系列无人机（型号待确认）",
+      "brand": "DJI",
+      "category": "摄影机",
+      "subcategory": "航拍无人机",
+      "unit": "台",
+      "costTier": 3,
+      "aliases": [
+        "大疆御 无人机"
+      ],
+      "verified": false
+    },
+    {
+      "id": "grip-dji-rs-unspecified",
+      "name": "DJI RS 系列稳定器（型号待确认）",
+      "brand": "DJI",
+      "category": "移动器材",
+      "subcategory": "手持稳定器",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "如影RS 系列稳定器"
+      ],
+      "verified": false
+    },
+    {
+      "id": "grip-fishhook-5-unspecified",
+      "name": "五代鱼钩（品牌型号待确认）",
+      "brand": "通用",
+      "category": "移动器材",
+      "subcategory": "减重支撑系统",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "五代鱼钩"
+      ],
+      "verified": false
+    },
+    {
+      "id": "grip-45-tilt-plate",
+      "name": "45度翘板",
+      "brand": "通用",
+      "category": "移动器材",
+      "subcategory": "俯仰支撑附件",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "45度翘板"
+      ],
+      "verified": false
+    },
+    {
+      "id": "grip-wonderland-handheld",
+      "name": "万德兰手持小斯（型号待确认）",
+      "brand": "万德兰",
+      "category": "移动器材",
+      "subcategory": "手持稳定器",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "万德兰手持小斯"
+      ],
+      "verified": false
+    },
+    {
+      "id": "grip-shark-slider-80",
+      "name": "鲨鱼 80cm 滑轨",
+      "brand": "鲨鱼",
+      "category": "移动器材",
+      "subcategory": "滑轨",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "grip-shark-slider-120",
+      "name": "鲨鱼 120cm 滑轨",
+      "brand": "鲨鱼",
+      "category": "移动器材",
+      "subcategory": "滑轨",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "grip-shark-light-jib",
+      "name": "鲨鱼轻型小摇臂（型号待确认）",
+      "brand": "鲨鱼",
+      "category": "移动器材",
+      "subcategory": "摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "grip-qingniu-motor-slider",
+      "name": "青牛电动滑轨（型号待确认）",
+      "brand": "青牛",
+      "category": "移动器材",
+      "subcategory": "电动滑轨",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "grip-360-selfie-system",
+      "name": "360度旋转自拍系统（型号待确认）",
+      "brand": "通用",
+      "category": "移动器材",
+      "subcategory": "旋转拍摄系统",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "360旋转自拍系统"
+      ],
+      "verified": false
+    },
+    {
+      "id": "grip-qingfeng-track",
+      "name": "青峰轨道",
+      "brand": "青峰",
+      "category": "移动器材",
+      "subcategory": "轨道",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "grip-qingfeng-heavy-track",
+      "name": "青峰重型轨道",
+      "brand": "青峰",
+      "category": "移动器材",
+      "subcategory": "重型轨道",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "grip-qingfeng-jib",
+      "name": "青峰小摇臂（型号待确认）",
+      "brand": "青峰",
+      "category": "移动器材",
+      "subcategory": "摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "grip-robot-vision-moco",
+      "name": "Robot Vision MOCO 机械臂拍摄系统（型号待确认）",
+      "brand": "Robot Vision",
+      "category": "移动器材",
+      "subcategory": "运动控制机械臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "robot vision moco 机械臂拍摄系统（影视飓风同款）"
+      ],
+      "verified": false
+    },
+    {
+      "id": "grip-scorpio-23",
+      "name": "天蝎 23尺伸缩炮（型号待确认）",
+      "brand": "通用",
+      "category": "移动器材",
+      "subcategory": "伸缩摇臂",
+      "unit": "套",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "grip-qingfeng-15",
+      "name": "青峰 15尺伸缩炮",
+      "brand": "青峰",
+      "category": "移动器材",
+      "subcategory": "伸缩摇臂",
+      "unit": "套",
+      "costTier": 4,
+      "aliases": [],
+      "verified": false
+    },
+    {
+      "id": "grip-next-fly",
+      "name": "NEXT FLY 飞猫（型号待确认）",
+      "brand": "NEXT FLY",
+      "category": "移动器材",
+      "subcategory": "索道摄影系统",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "NEXT FLY飞猫"
+      ],
+      "verified": false
+    },
+    {
+      "id": "grip-tilta-car-arm",
+      "name": "Tilta 车拍减震臂（型号待确认）",
+      "brand": "TILTA",
+      "category": "移动器材",
+      "subcategory": "车拍减震系统",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "铁头车拍减震臂"
+      ],
+      "verified": false
+    },
+    {
+      "id": "filter-peacock-flare",
+      "name": "炫光孔雀镜（规格待确认）",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "特效滤镜",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "炫光孔雀镜"
+      ],
+      "verified": false
+    },
+    {
+      "id": "filter-kaleidoscope",
+      "name": "万花筒滤镜（规格待确认）",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "特效滤镜",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "万花筒滤镜"
+      ],
+      "verified": false
+    },
+    {
+      "id": "accessory-moma-intercom",
+      "name": "猛犸三方通话系统（型号待确认）",
+      "brand": "MOMA",
+      "category": "摄影机附件",
+      "subcategory": "无线通话系统",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "猛犸三方通话"
+      ],
+      "verified": false
+    },
+    {
+      "id": "other-sony-mcx500",
+      "name": "SONY MCX-500 切换台",
+      "brand": "SONY",
+      "category": "其他",
+      "subcategory": "直播导播设备",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "索尼 MCX500"
+      ],
+      "verified": false
+    },
+    {
+      "id": "other-tianchuang-capture",
+      "name": "天创恒达采集卡（型号待确认）",
+      "brand": "天创恒达",
+      "category": "其他",
+      "subcategory": "直播导播设备",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "天创恒大采集卡"
+      ],
+      "verified": false
+    },
+    {
+      "id": "other-gaoshi-t80",
+      "name": "高视 T80 直播盒子",
+      "brand": "高视",
+      "category": "其他",
+      "subcategory": "直播导播设备",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "高视T80"
+      ],
+      "verified": false
+    },
+    {
+      "id": "other-nbox-unspecified",
+      "name": "阅流 NBOX 云监看（版本待确认）",
+      "brand": "阅流",
+      "category": "其他",
+      "subcategory": "云监看设备",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "阅流 nbox 云监看"
+      ],
+      "verified": false
+    }
+  ],
+  "patches": [
+    {
+      "id": "lens-dzo-xtract",
+      "set": {
+        "name": "DZOFilm X-tract 18-28mm T8",
+        "verified": true
+      },
+      "removeAliases": [],
+      "addAliases": [
+        "东正探针 18-28 T8",
+        "X-tract 0° 90° 360°"
+      ]
+    },
+    {
+      "id": "eq-atomos-atomos-shogun-flame-19-监看",
+      "set": {
+        "name": "Atomos Shogun Flame 7英寸监视记录仪"
+      },
+      "removeAliases": [],
+      "addAliases": [
+        "阿童木 7寸将军烈焰"
+      ]
+    },
+    {
+      "id": "cam-alexa-mini-lf",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "ARRI ALEXAMINI LF"
+      ]
+    },
+    {
+      "id": "cam-alexa-mini",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "ARRI ALEXAMINI"
+      ]
+    },
+    {
+      "id": "cam-alexa-35",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "ARRI ALEXA35"
+      ]
+    },
+    {
+      "id": "cam-red-vraptor",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "RED VV 迅猛龙"
+      ]
+    },
+    {
+      "id": "cam-sony-burano",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "SONY CINE Alta B"
+      ]
+    },
+    {
+      "id": "cam-sony-fx6",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY FX6"
+      ]
+    },
+    {
+      "id": "cam-sony-fx3",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY FX3"
+      ]
+    },
+    {
+      "id": "cam-sony-a7s3",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼 SONY A7S3"
+      ]
+    },
+    {
+      "id": "lens-zeiss-supreme",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "蔡司ZEISS SP全画幅定焦镜头组T1.5"
+      ]
+    },
+    {
+      "id": "eq-canon-佳能fd15-17-20-24-28-35-55-85-100-135-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "佳能FD 15/17/20/24/28/35/55/85/100/135"
+      ]
+    },
+    {
+      "id": "lens-nisi-athena",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "NISI雅典娜 14(T2.4)/25/35/50/85/T1.9"
+      ]
+    },
+    {
+      "id": "lens-atlas-mercury",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "ATLAS Mercury 1.5X 36mm/42mm/72mm 全画幅变宽T2.2"
+      ]
+    },
+    {
+      "id": "eq-angenieux-angenieux-type-ez-2-22-60mm-t3-0-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "安琴全画幅22-60/T3.0"
+      ]
+    },
+    {
+      "id": "lens-angenieux-ez1",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "安琴全画幅45-135/T3.0"
+      ]
+    },
+    {
+      "id": "eq-leica-leica-macro-60mm-t2-8-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "莱卡Leica 60微距/T2.8"
+      ]
+    },
+    {
+      "id": "eq-cooke-cooke-panchro-i-classic-65mm-macro-t2-4-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "库克 cooke panchro 65mm 微距/T2.4"
+      ]
+    },
+    {
+      "id": "eq-nikon-尼康8mm鱼眼-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "尼康8mm鱼眼（PL）/f2.8"
+      ]
+    },
+    {
+      "id": "eq-canon-canon-tls-50mm-t0-95-lpl-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "佳能暗夜之神（ LPL ）50mm T0.95"
+      ]
+    },
+    {
+      "id": "eq-laowa-laowa-ff-24mm-2x-macro-pro2be-t8-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "老蛙24mm探针/T8"
+      ]
+    },
+    {
+      "id": "eq-laowa-老蛙9mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "老蛙 E口9mm/f5.6"
+      ]
+    },
+    {
+      "id": "eq-通用-lowa-12mm-t2-9-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "老蛙12mm/T2.9"
+      ]
+    },
+    {
+      "id": "eq-arri-arri-mp-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "阿莱 ARRI MP 基本组 /T1.3"
+      ]
+    },
+    {
+      "id": "eq-arri-arri-up-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "阿莱ARRI UP基本组/T1.9"
+      ]
+    },
+    {
+      "id": "eq-arri-arri-ultra-prime-12mm-t2-0-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "阿莱 ARRI UP12mm/T2.0"
+      ]
+    },
+    {
+      "id": "eq-arri-arri-18-80mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "阿莱 ARRI 18-80mm /T2.6"
+      ]
+    },
+    {
+      "id": "eq-arri-arri-fujinon-alura-zoom-45-250mm-t2-6-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "阿莱 ARRI 45-250mm/T2.6"
+      ]
+    },
+    {
+      "id": "eq-angenieux-安琴15-40-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "安琴15-40/T2.0"
+      ]
+    },
+    {
+      "id": "eq-angenieux-安琴30-90-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "安琴30-90/T2.0"
+      ]
+    },
+    {
+      "id": "eq-lensbaby-lensbaby-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "lensbaby移轴镜头"
+      ]
+    },
+    {
+      "id": "eq-sony-sony28-135mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼 SONY 28-135mm/f4"
+      ]
+    },
+    {
+      "id": "eq-sony-sony-fe-12-24mm-f-2-8-gm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY 12-24mm/f2.8"
+      ]
+    },
+    {
+      "id": "eq-sony-sony-16-35mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼 SONY 16-35mm/f2.8"
+      ]
+    },
+    {
+      "id": "eq-sony-sony24-70mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼 SONY 24-70mm/f2.8"
+      ]
+    },
+    {
+      "id": "eq-sony-sony70-200mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼 SONY 70-200mm/f2.8"
+      ]
+    },
+    {
+      "id": "eq-sony-sony-14mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY 14mm"
+      ]
+    },
+    {
+      "id": "eq-sony-sony-24mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY 24mm"
+      ]
+    },
+    {
+      "id": "eq-sony-sony-35mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY 35mm"
+      ]
+    },
+    {
+      "id": "eq-sony-sony-50mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY 50mm"
+      ]
+    },
+    {
+      "id": "eq-sony-sony-85mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼 SONY 85mm"
+      ]
+    },
+    {
+      "id": "eq-sony-sony-90mm-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY 90mm微距/f2.8"
+      ]
+    },
+    {
+      "id": "eq-sony-sony-135-镜头",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY 135mm/f1.8"
+      ]
+    },
+    {
+      "id": "eq-通用-罗兰r44录音机-录音器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "罗兰R44"
+      ]
+    },
+    {
+      "id": "eq-通用-f8录音机-录音器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "ZOOM F8"
+      ]
+    },
+    {
+      "id": "eq-通用-h6录音机-录音器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "ZOOM H6"
+      ]
+    },
+    {
+      "id": "eq-sony-索尼无线麦-录音器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY 无线麦"
+      ]
+    },
+    {
+      "id": "eq-sony-索尼无线手持麦-录音器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼SONY无线手持麦"
+      ]
+    },
+    {
+      "id": "eq-通用-森海塞尔-416话筒-挑杆-录音器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "森海塞尔416话筒/挑杆"
+      ]
+    },
+    {
+      "id": "eq-sony-索尼-罗德机头麦-录音器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "索尼/罗德机头麦"
+      ]
+    },
+    {
+      "id": "eq-aputure-爱图仕1200d-灯光器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "爱图仕1200D"
+      ]
+    },
+    {
+      "id": "eq-aputure-aputure-bi-color-ls-300x-灯光器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "爱图仕300X"
+      ]
+    },
+    {
+      "id": "eq-aputure-爱图仕mc-灯光器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "爱图仕MC"
+      ]
+    },
+    {
+      "id": "eq-通用-led可变色温-30cm-30cm-灯光器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "LED 可变色温（30cm*30cm）"
+      ]
+    },
+    {
+      "id": "eq-通用-led可变色温-30cm-60cm-灯光器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "LED 可变色温（30cm*60cm）"
+      ]
+    },
+    {
+      "id": "eq-arri-arri-sxu-1-摄影机附件",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "ARRI SXU-1单轴无线跟焦器"
+      ]
+    },
+    {
+      "id": "accessory-wcu4",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "ARRI WCU-4三轴无线跟焦器"
+      ]
+    },
+    {
+      "id": "eq-通用-铁头无线跟焦-摄影机附件",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "铁头无线跟焦"
+      ]
+    },
+    {
+      "id": "eq-vaxis-威固无线图传-监看",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "威固无线图传"
+      ]
+    },
+    {
+      "id": "video-dji-transmission",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "大疆Transmission无线图传"
+      ]
+    },
+    {
+      "id": "grip-ronin2",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "大疆如影2稳定器"
+      ]
+    },
+    {
+      "id": "eq-dji-大疆摇轮-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "大疆大师摇轮"
+      ]
+    },
+    {
+      "id": "accessory-focus-pro",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "大疆 focus pro 自动跟焦系统"
+      ]
+    },
+    {
+      "id": "eq-tilta-tilta-armor-man-2-0-摄影机附件",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "铁头铁甲战士二代"
+      ]
+    },
+    {
+      "id": "eq-tilta-tilta-armor-man-3-0-摄影机附件",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "铁头铁甲战士三代"
+      ]
+    },
+    {
+      "id": "eq-nikon-movcam-先锋t-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "莫孚康movcam 先锋 T 重型斯坦尼康"
+      ]
+    },
+    {
+      "id": "eq-通用-黄包车-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "黄包车"
+      ]
+    },
+    {
+      "id": "eq-通用-selfie-stand-摄影机附件",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "自拍架"
+      ]
+    },
+    {
+      "id": "eq-通用-subjective-helmet-摄影机附件",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "主观头盔"
+      ]
+    },
+    {
+      "id": "eq-通用-鲨鱼三轴电动轨-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "鲨鱼三轴电动滑轨"
+      ]
+    },
+    {
+      "id": "eq-gfm-gfm滑轨-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "GFM小滑轨"
+      ]
+    },
+    {
+      "id": "eq-movmax-movmax-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "MOVMAX 滑轨"
+      ]
+    },
+    {
+      "id": "eq-gfm-gfm-u-bangi-u-bangi-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "GFM U-Bang滑轨"
+      ]
+    },
+    {
+      "id": "eq-通用-皮轮车带气压立柱-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "GFM皮轮车带气压立柱"
+      ]
+    },
+    {
+      "id": "eq-通用-centipede-of-2-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "千足虫"
+      ]
+    },
+    {
+      "id": "eq-movmax-movmax-n2-arm-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "MOVMAX N2空气减震臂"
+      ]
+    },
+    {
+      "id": "eq-通用-n2mini-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "MOVMAX N2mini空气减震车拍系统"
+      ]
+    },
+    {
+      "id": "eq-gfm-gf-primo-dolly-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "GFM Primo Dolly车"
+      ]
+    },
+    {
+      "id": "eq-通用-车载吸盘-车载侧挂-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "车载吸盘/车载侧挂"
+      ]
+    },
+    {
+      "id": "eq-通用-轻型脚架-独脚架-移动器材",
+      "set": {},
+      "removeAliases": [],
+      "addAliases": [
+        "轻型脚架/独脚架"
+      ]
+    },
+    {
+      "id": "grip-howmoco",
+      "set": {},
+      "removeAliases": [
+        "SCORPIO 10 Stretch Rocker 天蝎10尺伸缩炮",
+        "SCORPIO 17 Stretch Rocker 天蝎17尺伸缩炮",
+        "SCORPIO 23 Stretch Rocker 天蝎23尺伸缩炮",
+        "SCORPIO 30 Stretch Rocker 天蝎30尺伸缩炮",
+        "SCORPIO 45 Stretch Rocker 天蝎45尺伸缩炮",
+        "SCORPIO 50 Stretch Rocker 天蝎50尺伸缩炮",
+        "天蝎23尺伸缩炮"
+      ],
+      "addAliases": []
+    }
+  ],
+  "sourceRows": [
+    {
+      "line": 1,
+      "section": "摄影机",
+      "text": "ARRI ALEXAMINI LF",
+      "recordIds": [
+        "cam-alexa-mini-lf"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 2,
+      "section": "摄影机",
+      "text": "ARRI ALEXAMINI",
+      "recordIds": [
+        "cam-alexa-mini"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 3,
+      "section": "摄影机",
+      "text": "ARRI ALEXA35",
+      "recordIds": [
+        "cam-alexa-35"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 4,
+      "section": "摄影机",
+      "text": "RED VV 迅猛龙",
+      "recordIds": [
+        "cam-red-vraptor"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 5,
+      "section": "摄影机",
+      "text": "SONY CINE Alta B",
+      "recordIds": [
+        "cam-sony-burano"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 6,
+      "section": "摄影机",
+      "text": "大疆DJI 如影4D(6K/8K)",
+      "recordIds": [
+        "cam-ronin4d",
+        "cam-dji-ronin4d-8k"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 7,
+      "section": "摄影机",
+      "text": "Freefly EMBER S5K 高速机",
+      "recordIds": [
+        "cam-freefly-ember-s5k"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://freeflysystems.com/ember-s5k"
+      ]
+    },
+    {
+      "line": 8,
+      "section": "摄影机",
+      "text": "索尼SONY FX6",
+      "recordIds": [
+        "cam-sony-fx6"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 9,
+      "section": "摄影机",
+      "text": "索尼SONY FX3",
+      "recordIds": [
+        "cam-sony-fx3"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 10,
+      "section": "摄影机",
+      "text": "索尼 SONY fx5",
+      "recordIds": [
+        "cam-sony-fx5"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2026/20260724-1.html"
+      ]
+    },
+    {
+      "line": 11,
+      "section": "摄影机",
+      "text": "索尼 SONY A7S3",
+      "recordIds": [
+        "cam-sony-a7s3"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 12,
+      "section": "摄影机",
+      "text": "索尼 SONY A7M5",
+      "recordIds": [
+        "cam-sony-a7m5"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2025/20251202.html"
+      ]
+    },
+    {
+      "line": 13,
+      "section": "摄影机",
+      "text": "佳能 CANON R5/R5Ⅱ",
+      "recordIds": [
+        "cam-canon-r5",
+        "cam-canon-r5m2"
+      ],
+      "status": "mixed",
+      "note": "",
+      "officialSources": [
+        "https://www.canon.com.cn/product/r5ii/"
+      ]
+    },
+    {
+      "line": 14,
+      "section": "摄影机",
+      "text": "佳能 CANON C80",
+      "recordIds": [
+        "cam-canon-c80"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://www.canon.com.cn/product/eosc80/index.html"
+      ]
+    },
+    {
+      "line": 15,
+      "section": "摄影机",
+      "text": "DJI OSMO Pocket口袋机",
+      "recordIds": [
+        "cam-dji-osmo-pocket-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 16,
+      "section": "摄影机",
+      "text": "Insta360 系列运动相机",
+      "recordIds": [
+        "cam-insta360-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 17,
+      "section": "摄影机",
+      "text": "DJI Osmo Action",
+      "recordIds": [
+        "cam-dji-osmo-action-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 18,
+      "section": "摄影机",
+      "text": "大疆 osmo 360 二代",
+      "recordIds": [
+        "cam-dji-osmo-360-ii"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://www.dji.com/media-center/announcements/dji-release-osmo-360-2"
+      ]
+    },
+    {
+      "line": 19,
+      "section": "全画幅镜头",
+      "text": "阿莱ARRI SP全画幅定焦镜头组T1.8",
+      "recordIds": [
+        "lens-arri-signature-prime-set"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 20,
+      "section": "全画幅镜头",
+      "text": "蔡司ZEISS SP全画幅定焦镜头组T1.5",
+      "recordIds": [
+        "lens-zeiss-supreme"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 21,
+      "section": "全画幅镜头",
+      "text": "莱卡Leica M0.8 21/24/28/35/50(T0.9)/75/90 T1.4",
+      "recordIds": [
+        "eq-leica-徕卡m0-8电影镜头-21mm-24mm-28mm-35mm-50mm-0-95-75mm-90mm-镜头"
+      ],
+      "status": "existing",
+      "note": "清单将各焦段光圈合写，沿用现有镜头组，不统一覆盖各焦段光圈。",
+      "officialSources": []
+    },
+    {
+      "line": 22,
+      "section": "全画幅镜头",
+      "text": "佳能FD 15/17/20/24/28/35/55/85/100/135",
+      "recordIds": [
+        "eq-canon-佳能fd15-17-20-24-28-35-55-85-100-135-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 23,
+      "section": "全画幅镜头",
+      "text": "库克cooke panchro FF 全画幅定焦组 T2.2",
+      "recordIds": [
+        "lens-cooke-panchro-ff-set"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 24,
+      "section": "全画幅镜头",
+      "text": "库克 cooke sp3 18/25/32/50/75/100/T2.4",
+      "recordIds": [
+        "lens-cooke-sp3-18",
+        "lens-cooke-sp3-25",
+        "lens-cooke-sp3-32",
+        "lens-cooke-sp3-50",
+        "lens-cooke-sp3-75",
+        "lens-cooke-sp3-100"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://cookeoptics.com/es/lens/sp3/"
+      ]
+    },
+    {
+      "line": 25,
+      "section": "全画幅镜头",
+      "text": "NISI雅典娜 14(T2.4)/25/35/50/85/T1.9",
+      "recordIds": [
+        "lens-nisi-athena"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 26,
+      "section": "全画幅镜头",
+      "text": "NISI雅典娜 18mm T2.2/40mm T1.9/135mm T2.2",
+      "recordIds": [
+        "lens-nisi-athena-18",
+        "lens-nisi-athena-40",
+        "lens-nisi-athena-135"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://www.nisioptics.com/athena"
+      ]
+    },
+    {
+      "line": 27,
+      "section": "全画幅镜头",
+      "text": "雅典娜全国限量特调版 14/25/35/50/85",
+      "recordIds": [
+        "lens-nisi-athena-detuned-set"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 28,
+      "section": "全画幅镜头",
+      "text": "东正叙 E口 16/21/28/35/50/75 T1.5",
+      "recordIds": [
+        "lens-thypoch-simera-c-16-e",
+        "lens-thypoch-simera-c-21-e",
+        "lens-thypoch-simera-c-28-e",
+        "lens-thypoch-simera-c-35-e",
+        "lens-thypoch-simera-c-50-e",
+        "lens-thypoch-simera-c-75-e"
+      ],
+      "status": "added",
+      "note": "叙品牌规范为 Thypoch；16mm 官网为 T1.9，其他列明焦段为 T1.5。",
+      "officialSources": [
+        "https://thypoch.com/en/newsroom/120"
+      ]
+    },
+    {
+      "line": 29,
+      "section": "全画幅镜头",
+      "text": "ATLAS Mercury 1.5X 36mm/42mm/72mm 全画幅变宽T2.2",
+      "recordIds": [
+        "lens-atlas-mercury"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 30,
+      "section": "全画幅镜头",
+      "text": "至乐 1.5X 45/65/ 100 全画幅变宽",
+      "recordIds": [
+        "lens-zhile-15-set"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 31,
+      "section": "全画幅镜头",
+      "text": "至乐 1.33X 25/35/50/75/100 全画幅变宽",
+      "recordIds": [
+        "lens-zhile-133-set"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 32,
+      "section": "全画幅镜头",
+      "text": "思锐 E口土星1.6X变宽 35/50/75/150mm",
+      "recordIds": [
+        "lens-sirui-saturn-35-e",
+        "lens-sirui-saturn-50-e",
+        "lens-sirui-saturn-75-e",
+        "lens-sirui-150-anamorphic-e"
+      ],
+      "status": "added",
+      "note": "官网 Saturn 为 35/50/75mm，150mm 在 Venus 系列；原文将其合并写为土星，150mm 保留系列待确认。",
+      "officialSources": [
+        "https://store.sirui.com/products/venus-150mm-t2-9-1-6x-full-frame-anamorphic-lens",
+        "https://store.sirui.com/ja/blogs/guides/sirui-saturn-1-6x-review-the-lightest-full-frame-anamorphic-lens"
+      ]
+    },
+    {
+      "line": 33,
+      "section": "全画幅镜头",
+      "text": "Petzval 匹兹瓦 27mm f1.7/35mm f2/55mm f1.7/80.5mm f1.9",
+      "recordIds": [
+        "lens-petzval-27",
+        "lens-petzval-35",
+        "lens-petzval-55",
+        "lens-petzval-80-5"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://www.lomography.com/art-lenses"
+      ]
+    },
+    {
+      "line": 34,
+      "section": "全画幅镜头",
+      "text": "七工匠繁花 37mm f2.9/57mm f2.9",
+      "recordIds": [
+        "lens-7artisans-floral-37",
+        "lens-7artisans-floral-57"
+      ],
+      "status": "added",
+      "note": "原文 f2.9 按官方说明书修正为 T2.9。",
+      "officialSources": [
+        "https://www.7artisans.com/cpsms.aspx?nid=28&typeid=145"
+      ]
+    },
+    {
+      "line": 35,
+      "section": "全画幅镜头",
+      "text": "安琴全画幅22-60/T3.0",
+      "recordIds": [
+        "eq-angenieux-angenieux-type-ez-2-22-60mm-t3-0-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 36,
+      "section": "全画幅镜头",
+      "text": "安琴全画幅45-135/T3.0",
+      "recordIds": [
+        "lens-angenieux-ez1"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 37,
+      "section": "全画幅镜头",
+      "text": "安琴 全画幅 68-250/ T3.5-4",
+      "recordIds": [
+        "lens-angenieux-ez3-ff"
+      ],
+      "status": "added",
+      "note": "原文 T3.5-4 按官网更正为 T3.5-4.5。",
+      "officialSources": [
+        "https://www.angenieux.com/lenses/type-ez-series/"
+      ]
+    },
+    {
+      "line": 38,
+      "section": "全画幅镜头",
+      "text": "东正微距 24/32/65/90",
+      "recordIds": [
+        "eq-通用-东正24-32-65微距-镜头",
+        "lens-dzo-gnosis"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 39,
+      "section": "全画幅镜头",
+      "text": "莱卡Leica 60微距/T2.8",
+      "recordIds": [
+        "eq-leica-leica-macro-60mm-t2-8-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 40,
+      "section": "全画幅镜头",
+      "text": "图丽 AT-X PL 100mm/f2.8",
+      "recordIds": [
+        "lens-tokina-atx-100-pl"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 41,
+      "section": "全画幅镜头",
+      "text": "库克 cooke panchro 65mm 微距/T2.4",
+      "recordIds": [
+        "eq-cooke-cooke-panchro-i-classic-65mm-macro-t2-4-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 42,
+      "section": "全画幅镜头",
+      "text": "尼康8mm鱼眼（PL）/f2.8",
+      "recordIds": [
+        "eq-nikon-尼康8mm鱼眼-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 43,
+      "section": "全画幅镜头",
+      "text": "佳能暗夜之神（ LPL ）50mm T0.95",
+      "recordIds": [
+        "eq-canon-canon-tls-50mm-t0-95-lpl-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 44,
+      "section": "全画幅镜头",
+      "text": "老蛙24mm探针/T8",
+      "recordIds": [
+        "eq-laowa-laowa-ff-24mm-2x-macro-pro2be-t8-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 45,
+      "section": "全画幅镜头",
+      "text": "东正探针 18-28 T8（0° 90° 360°）",
+      "recordIds": [
+        "lens-dzo-xtract"
+      ],
+      "status": "existing",
+      "note": "现库写为 18-24mm；供应商清单和官网均为 18-28mm，同 ID 纠正焦段。",
+      "officialSources": [
+        "https://store.dzofilm.com/es/products/dzofilm-x-tract"
+      ]
+    },
+    {
+      "line": 46,
+      "section": "全画幅镜头",
+      "text": "老蛙 E口9mm/f5.6",
+      "recordIds": [
+        "eq-laowa-老蛙9mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 47,
+      "section": "全画幅镜头",
+      "text": "老蛙PL 8-15 T2.9",
+      "recordIds": [
+        "lens-laowa-8-15-pl"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 48,
+      "section": "全画幅镜头",
+      "text": "老蛙12mm/T2.9",
+      "recordIds": [
+        "eq-通用-lowa-12mm-t2-9-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 49,
+      "section": "Super 35 镜头",
+      "text": "阿莱 ARRI MP 基本组 /T1.3",
+      "recordIds": [
+        "eq-arri-arri-mp-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 50,
+      "section": "Super 35 镜头",
+      "text": "阿莱ARRI MP100mm微距/T1.3",
+      "recordIds": [
+        "eq-arri-arri-master-macro-100mm-t2-0-镜头"
+      ],
+      "status": "existing",
+      "note": "用户明确确认是 ARRI Master Macro 100mm T2.0；复用现有 ID，不保留原文错误的 T1.3 搜索别名。",
+      "officialSources": [
+        "https://www.arri.com/en/cine-lenses/arri-zeiss-fujinon-lenses/master-primes/master-macro-100"
+      ]
+    },
+    {
+      "line": 51,
+      "section": "Super 35 镜头",
+      "text": "阿莱ARRI UP基本组/T1.9",
+      "recordIds": [
+        "eq-arri-arri-up-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 52,
+      "section": "Super 35 镜头",
+      "text": "阿莱 ARRI UP12mm/T2.0",
+      "recordIds": [
+        "eq-arri-arri-ultra-prime-12mm-t2-0-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 53,
+      "section": "Super 35 镜头",
+      "text": "阿莱 ARRI 18-80mm /T2.6",
+      "recordIds": [
+        "eq-arri-arri-18-80mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 54,
+      "section": "Super 35 镜头",
+      "text": "阿莱 ARRI 45-250mm/T2.6",
+      "recordIds": [
+        "eq-arri-arri-fujinon-alura-zoom-45-250mm-t2-6-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 55,
+      "section": "Super 35 镜头",
+      "text": "安琴15-40/T2.0",
+      "recordIds": [
+        "eq-angenieux-安琴15-40-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 56,
+      "section": "Super 35 镜头",
+      "text": "安琴30-90/T2.0",
+      "recordIds": [
+        "eq-angenieux-安琴30-90-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 57,
+      "section": "Super 35 镜头",
+      "text": "安琴 45-165mm",
+      "recordIds": [
+        "lens-angenieux-ez3-s35"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://www.angenieux.com/lenses/type-ez-series/"
+      ]
+    },
+    {
+      "line": 58,
+      "section": "Super 35 镜头",
+      "text": "lensbaby移轴镜头",
+      "recordIds": [
+        "eq-lensbaby-lensbaby-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 59,
+      "section": "Super 35 镜头",
+      "text": "PL/EF/E 2倍增倍镜",
+      "recordIds": [
+        "lens-teleconverter-2x-pl",
+        "lens-teleconverter-2x-ef",
+        "lens-teleconverter-2x-e"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 60,
+      "section": "相机镜头",
+      "text": "索尼 sony 28-70 f2",
+      "recordIds": [
+        "lens-sony-2870-f2"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://www.sonystyle.com.cn/products/lenses/sel2870gm/sel2870gm_feature.html"
+      ]
+    },
+    {
+      "line": 61,
+      "section": "相机镜头",
+      "text": "索尼 sony 50-150 f2",
+      "recordIds": [
+        "lens-sony-50150-f2"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": [
+        "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2025/20250423-1.html"
+      ]
+    },
+    {
+      "line": 62,
+      "section": "相机镜头",
+      "text": "索尼 SONY 28-135mm/f4",
+      "recordIds": [
+        "eq-sony-sony28-135mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 63,
+      "section": "相机镜头",
+      "text": "索尼SONY 12-24mm/f2.8",
+      "recordIds": [
+        "eq-sony-sony-fe-12-24mm-f-2-8-gm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 64,
+      "section": "相机镜头",
+      "text": "索尼 SONY 16-35mm/f2.8",
+      "recordIds": [
+        "eq-sony-sony-16-35mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 65,
+      "section": "相机镜头",
+      "text": "索尼 SONY 24-70mm/f2.8",
+      "recordIds": [
+        "eq-sony-sony24-70mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 66,
+      "section": "相机镜头",
+      "text": "索尼 SONY 70-200mm/f2.8",
+      "recordIds": [
+        "eq-sony-sony70-200mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 67,
+      "section": "相机镜头",
+      "text": "索尼 SONY 200-600mm/f5.6-6.3",
+      "recordIds": [
+        "lens-sony-200600"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 68,
+      "section": "相机镜头",
+      "text": "索尼SONY 14mm",
+      "recordIds": [
+        "eq-sony-sony-14mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 69,
+      "section": "相机镜头",
+      "text": "索尼SONY 24mm",
+      "recordIds": [
+        "eq-sony-sony-24mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 70,
+      "section": "相机镜头",
+      "text": "索尼SONY 35mm",
+      "recordIds": [
+        "eq-sony-sony-35mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 71,
+      "section": "相机镜头",
+      "text": "索尼SONY 50mm",
+      "recordIds": [
+        "eq-sony-sony-50mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 72,
+      "section": "相机镜头",
+      "text": "索尼 SONY 85mm",
+      "recordIds": [
+        "eq-sony-sony-85mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 73,
+      "section": "相机镜头",
+      "text": "索尼SONY 90mm微距/f2.8",
+      "recordIds": [
+        "eq-sony-sony-90mm-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 74,
+      "section": "相机镜头",
+      "text": "索尼SONY 135mm/f1.8",
+      "recordIds": [
+        "eq-sony-sony-135-镜头"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 75,
+      "section": "相机镜头",
+      "text": "佳能CANON RF 35mm",
+      "recordIds": [
+        "lens-canon-rf-35"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 76,
+      "section": "相机镜头",
+      "text": "佳能CANON RF 50mm/f1.2",
+      "recordIds": [
+        "lens-canon-rf-50"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 77,
+      "section": "相机镜头",
+      "text": "佳能CANON RF 85mm/f1.2",
+      "recordIds": [
+        "lens-canon-rf-85"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 78,
+      "section": "相机镜头",
+      "text": "佳能CANON RF 100微距/f2.8",
+      "recordIds": [
+        "lens-canon-rf-100"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 79,
+      "section": "相机镜头",
+      "text": "佳能CANON RF 15-35mm/f2.8",
+      "recordIds": [
+        "lens-canon-rf-15-35"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 80,
+      "section": "相机镜头",
+      "text": "佳能CANON RF 24-70mm/f2.8",
+      "recordIds": [
+        "lens-canon-rf-24-70"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 81,
+      "section": "相机镜头",
+      "text": "佳能CANON RF 70-200mm/f2.8",
+      "recordIds": [
+        "lens-canon-rf-70-200"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 82,
+      "section": "相机镜头",
+      "text": "佳能CANON RF 100-500mm/f4.5-7.1",
+      "recordIds": [
+        "lens-canon-rf-100-500"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 83,
+      "section": "录音设备",
+      "text": "罗兰R44",
+      "recordIds": [
+        "eq-通用-罗兰r44录音机-录音器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 84,
+      "section": "录音设备",
+      "text": "ZOOM F8",
+      "recordIds": [
+        "eq-通用-f8录音机-录音器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 85,
+      "section": "录音设备",
+      "text": "ZOOM H6",
+      "recordIds": [
+        "eq-通用-h6录音机-录音器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 86,
+      "section": "录音设备",
+      "text": "索尼SONY 无线麦",
+      "recordIds": [
+        "eq-sony-索尼无线麦-录音器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 87,
+      "section": "录音设备",
+      "text": "索尼SONY无线手持麦",
+      "recordIds": [
+        "eq-sony-索尼无线手持麦-录音器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 88,
+      "section": "录音设备",
+      "text": "DJI大疆无线麦",
+      "recordIds": [
+        "audio-dji-mic-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 89,
+      "section": "录音设备",
+      "text": "森海塞尔416话筒/挑杆",
+      "recordIds": [
+        "eq-通用-森海塞尔-416话筒-挑杆-录音器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 90,
+      "section": "录音设备",
+      "text": "索尼/罗德机头麦",
+      "recordIds": [
+        "eq-sony-索尼-罗德机头麦-录音器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 91,
+      "section": "录音设备",
+      "text": "时码器",
+      "recordIds": [
+        "audio-timecode-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 92,
+      "section": "灯光设备",
+      "text": "ARRI SkyPanelS30",
+      "recordIds": [
+        "eq-arri-arri-skypanel-s30-c-灯光器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 93,
+      "section": "灯光设备",
+      "text": "ARRI SkyPanelS60",
+      "recordIds": [
+        "eq-arri-arri-skypanel-s60-c-灯光器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 94,
+      "section": "灯光设备",
+      "text": "爱图仕1200D",
+      "recordIds": [
+        "eq-aputure-爱图仕1200d-灯光器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 95,
+      "section": "灯光设备",
+      "text": "爱图仕600D",
+      "recordIds": [
+        "light-aputure-600d-pro"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 96,
+      "section": "灯光设备",
+      "text": "爱图仕600X",
+      "recordIds": [
+        "eq-aputure-aputure-bi-color-ls-600x-灯光器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 97,
+      "section": "灯光设备",
+      "text": "爱图仕300X",
+      "recordIds": [
+        "eq-aputure-aputure-bi-color-ls-300x-灯光器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 98,
+      "section": "灯光设备",
+      "text": "爱图仕300d二代",
+      "recordIds": [
+        "light-aputure-300d-ii"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 99,
+      "section": "灯光设备",
+      "text": "爱图仕MC",
+      "recordIds": [
+        "eq-aputure-爱图仕mc-灯光器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 100,
+      "section": "灯光设备",
+      "text": "LED 可变色温（30cm*30cm）",
+      "recordIds": [
+        "eq-通用-led可变色温-30cm-30cm-灯光器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 101,
+      "section": "灯光设备",
+      "text": "LED 可变色温（30cm*60cm）",
+      "recordIds": [
+        "eq-通用-led可变色温-30cm-60cm-灯光器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 102,
+      "section": "灯光设备",
+      "text": "LED双色温机头灯",
+      "recordIds": [
+        "light-led-on-camera-bicolor"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 103,
+      "section": "灯光设备",
+      "text": "RGB棒灯",
+      "recordIds": [
+        "light-rgb-tube-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 104,
+      "section": "灯光设备",
+      "text": "南光60b/c",
+      "recordIds": [
+        "eq-nanlite-nanlite-led-60b-灯光器材",
+        "light-nanlite60c"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 105,
+      "section": "灯光设备",
+      "text": "LED 布灯",
+      "recordIds": [
+        "light-led-mat-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 106,
+      "section": "灯光设备",
+      "text": "特图利",
+      "recordIds": [
+        "light-dedolight-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 107,
+      "section": "无线拍摄辅助设备",
+      "text": "ARRI SXU-1单轴无线跟焦器",
+      "recordIds": [
+        "eq-arri-arri-sxu-1-摄影机附件"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 108,
+      "section": "无线拍摄辅助设备",
+      "text": "ARRI WCU-4三轴无线跟焦器",
+      "recordIds": [
+        "accessory-wcu4"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 109,
+      "section": "无线拍摄辅助设备",
+      "text": "铁头无线跟焦",
+      "recordIds": [
+        "eq-通用-铁头无线跟焦-摄影机附件"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 110,
+      "section": "无线拍摄辅助设备",
+      "text": "铁头/comtion 变焦伺服",
+      "recordIds": [
+        "accessory-tilta-zoom-servo",
+        "eq-cmotion-cmotion-zoom-control-unit-摄影机附件"
+      ],
+      "status": "mixed",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 111,
+      "section": "无线拍摄辅助设备",
+      "text": "威固无线图传",
+      "recordIds": [
+        "eq-vaxis-威固无线图传-监看"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 112,
+      "section": "无线拍摄辅助设备",
+      "text": "大疆Transmission无线图传",
+      "recordIds": [
+        "video-dji-transmission"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 113,
+      "section": "无线拍摄辅助设备",
+      "text": "威固058/702无线小监",
+      "recordIds": [
+        "eq-vaxis-weigu-storm-058-monitor-监看",
+        "video-vaxis-702-unspecified"
+      ],
+      "status": "mixed",
+      "note": "原文 702 不自动改成现库 072；新增待确认行。",
+      "officialSources": []
+    },
+    {
+      "line": 114,
+      "section": "无线拍摄辅助设备",
+      "text": "smallHD小监",
+      "recordIds": [
+        "video-smallhd-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 115,
+      "section": "无线拍摄辅助设备",
+      "text": "阿童木7寸将军烈焰",
+      "recordIds": [
+        "eq-atomos-atomos-shogun-flame-19-监看"
+      ],
+      "status": "existing",
+      "note": "清单与官方型号均为 7 英寸，纠正现库显示名称的 19 英寸。",
+      "officialSources": [
+        "https://www.atomos-japan.com/wp-content/uploads/2023/09/shogun-flame_manual-jp-1.pdf"
+      ]
+    },
+    {
+      "line": 116,
+      "section": "无线拍摄辅助设备",
+      "text": "阿童木5寸忍者V/史努比",
+      "recordIds": [
+        "video-atomos-ninja-v",
+        "video-atomos-shinobi"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 117,
+      "section": "无线拍摄辅助设备",
+      "text": "5寸/7寸SDI/HDMI小监",
+      "recordIds": [
+        "video-generic-5-sdi-hdmi",
+        "video-generic-7-sdi-hdmi"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 118,
+      "section": "无线拍摄辅助设备",
+      "text": "索尼/尊正/导演监视器",
+      "recordIds": [
+        "eq-sony-索尼大监视器-监看",
+        "eq-通用-尊正大监视器-监看"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 119,
+      "section": "其他辅助设备",
+      "text": "大疆御 无人机",
+      "recordIds": [
+        "cam-dji-mavic-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 120,
+      "section": "其他辅助设备",
+      "text": "大疆如影2稳定器",
+      "recordIds": [
+        "grip-ronin2"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 121,
+      "section": "其他辅助设备",
+      "text": "大疆大师摇轮",
+      "recordIds": [
+        "eq-dji-大疆摇轮-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 122,
+      "section": "其他辅助设备",
+      "text": "如影RS 系列稳定器",
+      "recordIds": [
+        "grip-dji-rs-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 123,
+      "section": "其他辅助设备",
+      "text": "大疆 focus pro 自动跟焦系统",
+      "recordIds": [
+        "accessory-focus-pro"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 124,
+      "section": "其他辅助设备",
+      "text": "铁头铁甲战士二代",
+      "recordIds": [
+        "eq-tilta-tilta-armor-man-2-0-摄影机附件"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 125,
+      "section": "其他辅助设备",
+      "text": "铁头铁甲战士三代",
+      "recordIds": [
+        "eq-tilta-tilta-armor-man-3-0-摄影机附件"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 126,
+      "section": "其他辅助设备",
+      "text": "五代鱼钩",
+      "recordIds": [
+        "grip-fishhook-5-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 127,
+      "section": "其他辅助设备",
+      "text": "莫孚康movcam 先锋 T 重型斯坦尼康",
+      "recordIds": [
+        "eq-nikon-movcam-先锋t-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 128,
+      "section": "其他辅助设备",
+      "text": "黄包车",
+      "recordIds": [
+        "eq-通用-黄包车-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 129,
+      "section": "其他辅助设备",
+      "text": "自拍架",
+      "recordIds": [
+        "eq-通用-selfie-stand-摄影机附件"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 130,
+      "section": "其他辅助设备",
+      "text": "主观头盔",
+      "recordIds": [
+        "eq-通用-subjective-helmet-摄影机附件"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 131,
+      "section": "其他辅助设备",
+      "text": "45度翘板",
+      "recordIds": [
+        "grip-45-tilt-plate"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 132,
+      "section": "其他辅助设备",
+      "text": "万德兰手持小斯",
+      "recordIds": [
+        "grip-wonderland-handheld"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 133,
+      "section": "其他辅助设备",
+      "text": "鲨鱼三轴电动滑轨",
+      "recordIds": [
+        "eq-通用-鲨鱼三轴电动轨-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 134,
+      "section": "其他辅助设备",
+      "text": "鲨鱼滑轨80cm/120cm/轻型小摇臂",
+      "recordIds": [
+        "grip-shark-slider-80",
+        "grip-shark-slider-120",
+        "grip-shark-light-jib"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 135,
+      "section": "其他辅助设备",
+      "text": "青牛轨/青牛电动轨",
+      "recordIds": [
+        "eq-通用-青牛滑轨-移动器材",
+        "grip-qingniu-motor-slider"
+      ],
+      "status": "mixed",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 136,
+      "section": "其他辅助设备",
+      "text": "GFM小滑轨",
+      "recordIds": [
+        "eq-gfm-gfm滑轨-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 137,
+      "section": "其他辅助设备",
+      "text": "MOVMAX 滑轨",
+      "recordIds": [
+        "eq-movmax-movmax-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 138,
+      "section": "其他辅助设备",
+      "text": "GFM U-Bang滑轨",
+      "recordIds": [
+        "eq-gfm-gfm-u-bangi-u-bangi-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 139,
+      "section": "其他辅助设备",
+      "text": "360旋转自拍系统",
+      "recordIds": [
+        "grip-360-selfie-system"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 140,
+      "section": "其他辅助设备",
+      "text": "青峰轨道",
+      "recordIds": [
+        "grip-qingfeng-track"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 141,
+      "section": "其他辅助设备",
+      "text": "青峰重轨",
+      "recordIds": [
+        "grip-qingfeng-heavy-track"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 142,
+      "section": "其他辅助设备",
+      "text": "青峰小摇臂",
+      "recordIds": [
+        "grip-qingfeng-jib"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 143,
+      "section": "其他辅助设备",
+      "text": "GFM7500/7800重型小摇臂",
+      "recordIds": [
+        "eq-gfm-gfm-gf-7500-jib-arm-7500-移动器材",
+        "grip-jib"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 144,
+      "section": "其他辅助设备",
+      "text": "GFM皮轮车带气压立柱",
+      "recordIds": [
+        "eq-通用-皮轮车带气压立柱-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 145,
+      "section": "其他辅助设备",
+      "text": "千足虫",
+      "recordIds": [
+        "eq-通用-centipede-of-2-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 146,
+      "section": "其他辅助设备",
+      "text": "GFM GF8 Xten 摇臂",
+      "recordIds": [
+        "eq-gfm-gf8炮-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 147,
+      "section": "其他辅助设备",
+      "text": "robot vision moco 机械臂拍摄系统（影视飓风同款）",
+      "recordIds": [
+        "grip-robot-vision-moco"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 148,
+      "section": "其他辅助设备",
+      "text": "天蝎23尺伸缩炮",
+      "recordIds": [
+        "grip-scorpio-23"
+      ],
+      "status": "added",
+      "note": "现库曾错误合并到 HOWMOCO；本条保留天蝎名称，避免错误认定为另一品牌。",
+      "officialSources": []
+    },
+    {
+      "line": 149,
+      "section": "其他辅助设备",
+      "text": "青峰 15 尺伸缩炮",
+      "recordIds": [
+        "grip-qingfeng-15"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 150,
+      "section": "其他辅助设备",
+      "text": "NEXT FLY飞猫",
+      "recordIds": [
+        "grip-next-fly"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 151,
+      "section": "其他辅助设备",
+      "text": "MOVMAX N2空气减震臂",
+      "recordIds": [
+        "eq-movmax-movmax-n2-arm-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 152,
+      "section": "其他辅助设备",
+      "text": "MOVMAX N2mini空气减震车拍系统",
+      "recordIds": [
+        "eq-通用-n2mini-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 153,
+      "section": "其他辅助设备",
+      "text": "铁头车拍减震臂",
+      "recordIds": [
+        "grip-tilta-car-arm"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 154,
+      "section": "其他辅助设备",
+      "text": "F7三轴云台（L25/50）",
+      "recordIds": [
+        "eq-通用-f7-l25-移动器材",
+        "eq-通用-f7-l50-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 155,
+      "section": "其他辅助设备",
+      "text": "GFM Primo Dolly车",
+      "recordIds": [
+        "eq-gfm-gf-primo-dolly-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 156,
+      "section": "其他辅助设备",
+      "text": "车载吸盘/车载侧挂",
+      "recordIds": [
+        "eq-通用-车载吸盘-车载侧挂-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 157,
+      "section": "其他辅助设备",
+      "text": "轻型脚架/独脚架",
+      "recordIds": [
+        "eq-通用-轻型脚架-独脚架-移动器材"
+      ],
+      "status": "existing",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 158,
+      "section": "其他辅助设备",
+      "text": "炫光孔雀镜",
+      "recordIds": [
+        "filter-peacock-flare"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 159,
+      "section": "其他辅助设备",
+      "text": "万花筒滤镜",
+      "recordIds": [
+        "filter-kaleidoscope"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 160,
+      "section": "其他辅助设备",
+      "text": "猛犸三方通话",
+      "recordIds": [
+        "accessory-moma-intercom"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 161,
+      "section": "直播导播设备",
+      "text": "索尼MCX500切换台",
+      "recordIds": [
+        "other-sony-mcx500"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 162,
+      "section": "直播导播设备",
+      "text": "天创恒大采集卡",
+      "recordIds": [
+        "other-tianchuang-capture"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 163,
+      "section": "直播导播设备",
+      "text": "高视T80直播盒子",
+      "recordIds": [
+        "other-gaoshi-t80"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    },
+    {
+      "line": 164,
+      "section": "直播导播设备",
+      "text": "阅流 nbox 云监看",
+      "recordIds": [
+        "other-nbox-unspecified"
+      ],
+      "status": "added",
+      "note": "",
+      "officialSources": []
+    }
+  ],
+  "verificationScope": "verified 字段沿用现库命名核验含义；供应商清单确认收录依据，未逐项确认实时库存。"
+}

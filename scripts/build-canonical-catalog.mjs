@@ -1,0 +1,113 @@
+import fs from "node:fs";
+import { normalizeEquipment, mergeEquipment, brandNames, checkedAt } from "./catalog-naming.mjs";
+import { applyReleaseReview } from "./catalog-release-review.mjs";
+import { applyFinalCatalogReview, finalReview } from "./catalog-final-review.mjs";
+import { buildCatalogCards } from "./catalog-card-specs.mjs";
+const root=new URL("../",import.meta.url);
+const read=file=>JSON.parse(fs.readFileSync(new URL(file,root),"utf8"));
+const inventory=read("data/catalog/v4-inventory.json");
+const repairs=read("data/catalog/inventory-repairs.json");
+const additions=read("data/catalog/catalog-additions.json");
+const finalAdditions=read("data/catalog/catalog-additions.v5.1.json");
+const release=read("data/catalog/release-metadata.json");
+if(release.version!==finalReview.version||release.version!==finalAdditions.version)throw new Error('Mismatched release review version');
+const searchReview=read("data/catalog/review-searches.json");
+const rows=structuredClone(inventory.rows);
+const byId=new Map(rows.map(r=>[r.id,r]));
+for(const patch of repairs.patches) {
+  const row=byId.get(patch.id); if(!row)throw new Error(`Missing repair target: ${patch.id}`);
+  Object.assign(row,patch.set??{});
+  row.aliases=row.aliases.filter(a=>!patch.removeAliases.includes(a));
+}
+rows.push(...repairs.additions.map(addition=>{const row={...addition};delete row.recoveredFrom;return row;}));
+rows.push(...additions.rows);
+rows.push(...finalAdditions.rows);
+if(new Set(rows.map(row=>row.id)).size!==rows.length)throw new Error('Duplicate input catalog ID');
+const normalized=rows.map(row => applyFinalCatalogReview(applyReleaseReview(normalizeEquipment(row))));
+for(const patch of finalReview.patches)if(!normalized.some(row=>row.id===patch.id))throw new Error(`Missing final review target: ${patch.id}`);
+const brandCorrections=normalized.flatMap((row,index)=>row.brand!==rows[index].brand?[{id:row.id,originalBrand:rows[index].brand,brand:row.brand,originalName:rows[index].name,name:row.name,status:row.namingStatus,references:row.references.filter(ref=>ref.scope==="brand"),notes:row.reviewNotes}]:[]);
+const result=mergeEquipment(normalized);
+const categoryOrder=["摄影机","镜头","滤镜","摄影机附件","监看","移动器材","灯光器材","录音器材","其他"];
+result.rows.sort((a,b)=>categoryOrder.indexOf(a.category)-categoryOrder.indexOf(b.category)||a.name.localeCompare(b.name,"zh-CN"));
+const ids=new Set();
+for(const row of result.rows) {
+  if(ids.has(row.id))throw new Error(`Duplicate ID: ${row.id}`);ids.add(row.id);
+  if(!row.name || row.name!==[row.brandZh,row.brandEn,row.series,row.model].filter(Boolean).join(" ").replace(/\s+/g," ").trim())throw new Error(`Malformed name: ${row.id}`);
+  if(row.verified&&!row.references.some(r=>r.scope==="model"))throw new Error(`Missing model evidence: ${row.id}`);
+  if(row.published && (!row.englishName || /[\u3400-\u9fff]|待确认|待核验/.test(row.englishName)))throw new Error(`Invalid release English name: ${row.id}`);
+  if(row.published && !["official-model","official-series","generic-function","specific-inventory","user-retained-name"].includes(row.identityBasis))throw new Error(`Unusable release row: ${row.id}`);
+  if(row.published && /待确认|待核验/.test(row.name))throw new Error(`Ambiguous release row: ${row.id}`);
+  if(row.published && row.productStage==='announced')throw new Error(`Unreleased product: ${row.id}`);
+}
+for(const [oldId,newId] of Object.entries(result.redirects))if(ids.has(oldId)||!ids.has(newId))throw new Error(`Invalid redirect: ${oldId}`);
+for(const row of result.rows) for(const replacement of row.replacementIds??[]) {
+ const target=result.rows.find(r=>r.id===(result.redirects[replacement]??replacement));
+ if(!target?.published)throw new Error(`Invalid replacement: ${row.id} -> ${replacement}`);
+}
+const stats={inputRows:rows.length,baselineRows:inventory.rows.length,restoredRows:repairs.additions.length,addedRows:additions.rows.length+finalAdditions.rows.length,finalReviewAddedRows:finalAdditions.rows.length,canonicalRows:result.rows.length,publishedRows:result.rows.filter(r=>r.published).length,archivedRows:result.rows.filter(r=>!r.published).length,mergedRows:result.merged.length,verifiedCanonicalRows:result.rows.filter(r=>r.verified).length,
+  excludedRows:result.rows.filter(r=>!r.published&&r.identityBasis==='unusable').length,
+  supersededRows:result.rows.filter(r=>!r.published&&r.identityBasis==='superseded-for-selection').length,
+  publishedIdentityBasis:Object.fromEntries(["official-model","official-series","specific-inventory","generic-function","user-retained-name"].map(s=>[s,result.rows.filter(r=>r.published&&r.identityBasis===s).length])),
+  correctedRows:result.rows.filter(r=>r.reviewCorrections?.length).length,
+  namingStatuses:Object.fromEntries(["official-model","official-series","pending","generic"].map(s=>[s,result.rows.filter(r=>r.namingStatus===s).length])),
+  categories:Object.fromEntries(categoryOrder.map(c=>[c,result.rows.filter(r=>r.category===c).length]))};
+const typeSource=`// Generated by scripts/build-canonical-catalog.mjs from ${release.version} naming evidence and inventoried stock.
+// Do not edit this file or regenerate names from rental spreadsheets.
+export type CanonicalEquipmentRecord = {
+  id: string;
+  name: string;
+  brand: string;
+  category: "摄影机" | "镜头" | "滤镜" | "摄影机附件" | "监看" | "移动器材" | "灯光器材" | "录音器材" | "其他";
+  subcategory: string;
+  unit: string;
+  costTier: number;
+  aliases: string[];
+  verified: boolean;
+  brandZh?: string;
+  brandEn?: string;
+  series?: string;
+  model?: string;
+  namingStatus?: "official-model" | "official-series" | "pending" | "generic";
+  references?: { url: string; scope: string; language: string; checkedAt: string }[];
+  reviewNotes?: string[];
+  englishName?: string;
+  published?: boolean;
+  releaseReason?: string;
+  reviewedAt?: string;
+  identityBasis?: string;
+  catalogDecision?: string;
+  replacementIds?: string[];
+  inventoryAvailability?: "unconfirmed";
+  lensMount?: "PL" | "LPL" | "E" | "RF" | "EF" | "L" | "DL" | "MFT" | "fixed" | "unknown";
+  productStage?: "released" | "announced";
+  englishNameOverride?: string;
+  finalReviewChanges?: { previousName: string; name: string; previousEnglishName: string; englishName: string; reason: string; source?: string }[];
+  reviewCorrections?: { originalName: string; name: string; source: string; reason: string }[];
+};
+
+export const canonicalEquipment: CanonicalEquipmentRecord[] = [
+${result.rows.map(row=>`${JSON.stringify(row,null,2)} as CanonicalEquipmentRecord`).join(",\n")}
+];
+
+export const publishedEquipment: CanonicalEquipmentRecord[] = canonicalEquipment.filter(row => row.published);
+export const canonicalEquipmentVersion = ${JSON.stringify(release.version)};
+
+export const canonicalEquipmentRedirects: Record<string,string> = ${JSON.stringify(result.redirects,null,2)};
+
+export const canonicalBrandLabels: Record<string,string> = ${JSON.stringify(Object.fromEntries([...new Set(result.rows.map(r=>r.brand))].map(b=>{const r=result.rows.find(r=>r.brand===b);return [b,[r.brandZh,r.brandEn].filter(Boolean).join(" ")||b]})),null,2)};
+
+export const canonicalEquipmentStats = ${JSON.stringify(stats,null,2)} as const;
+`;
+const outputs={
+  "app/equipment-catalog.canonical.ts":typeSource,
+  "data-quality-audit.json":JSON.stringify({version:release.version,checkedAt,...stats,finalReviewFile:release.reviewFile,brandCoverage:finalReview.brands,finalReviewChanges:result.rows.filter(r=>r.finalReviewChanges).map(r=>({id:r.id,changes:r.finalReviewChanges})),officialBrandReferences:brandNames,searchReviewFile:"data/catalog/review-searches.json",searchQueries:searchReview.searches.length,editorialDecisionsFile:"data/catalog/editorial-decisions.json",editorialDecisions:result.rows.filter(r=>r.catalogDecision).map(r=>({id:r.id,name:r.name,decision:r.catalogDecision,published:r.published,replacementIds:r.replacementIds,reason:r.releaseReason})),brandCorrections,specificationCorrections:result.rows.filter(r=>r.reviewCorrections?.length).map(r=>({id:r.id,corrections:r.reviewCorrections})),releaseArchive:result.rows.filter(r=>!r.published).map(r=>({id:r.id,name:r.name,status:r.namingStatus,identityBasis:r.identityBasis,replacementIds:r.replacementIds,reason:r.releaseReason,notes:r.reviewNotes,references:r.references})),publishedCategories:Object.fromEntries(categoryOrder.map(c=>[c,result.rows.filter(r=>r.category===c&&r.published).length])),merges:result.merged,repairs:repairs.patches,restorations:repairs.additions.map(r=>({id:r.id,from:r.recoveredFrom,name:r.name})),pending:result.rows.filter(r=>r.namingStatus==="pending"||r.namingStatus==="official-series").map(r=>({id:r.id,name:r.name,status:r.namingStatus,published:r.published,notes:r.reviewNotes}))},null,2)+"\n",
+  "data/catalog/published.v5.json":JSON.stringify({version:release.version,checkedAt,rows:result.rows.filter(r=>r.published)},null,2)+"\n",
+  "data/catalog/equipment.v5.json":JSON.stringify({version:release.version,checkedAt,rows:result.rows,redirects:result.redirects},null,2)+"\n",
+};
+for(const [file,content] of Object.entries(outputs)) {
+  const url=new URL(file,root);
+  if(process.argv.includes("--check")) {if(fs.readFileSync(url,"utf8")!==content)throw new Error(`Stale output: ${file}`);}
+  else fs.writeFileSync(url,content);
+}
+buildCatalogCards(result.rows, { check: process.argv.includes("--check") });
+console.log(JSON.stringify(stats,null,2));

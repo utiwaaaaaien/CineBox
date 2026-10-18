@@ -1,0 +1,1413 @@
+{
+  "generatedFrom": "historical-project-sources",
+  "sourceFiles": 94,
+  "readableUniqueLists": 93,
+  "formats": {
+    "numbers": 26,
+    "xls": 10,
+    "xlsx": 25,
+    "pdf": 33
+  },
+  "tags": {
+    "cinema_camera": {
+      "label": "电影机机身",
+      "documents": 31
+    },
+    "light_camera": {
+      "label": "轻量机身",
+      "documents": 32
+    },
+    "arri_camera": {
+      "label": "ARRI 机身",
+      "documents": 24
+    },
+    "sony_camera": {
+      "label": "Sony 机身",
+      "documents": 23
+    },
+    "ronin4d": {
+      "label": "Ronin 4D 系统",
+      "documents": 11
+    },
+    "cinema_prime": {
+      "label": "电影定焦镜头组",
+      "documents": 20
+    },
+    "photo_zoom": {
+      "label": "轻量大三元变焦",
+      "documents": 17
+    },
+    "cinema_zoom": {
+      "label": "电影变焦镜头",
+      "documents": 18
+    },
+    "macro_probe": {
+      "label": "微距/探针镜头",
+      "documents": 8
+    },
+    "mattebox": {
+      "label": "遮光斗",
+      "documents": 38
+    },
+    "follow_focus": {
+      "label": "无线跟焦",
+      "documents": 43
+    },
+    "wireless_video": {
+      "label": "无线图传",
+      "documents": 49
+    },
+    "onboard_monitor": {
+      "label": "机头/焦点监看",
+      "documents": 38
+    },
+    "client_monitor": {
+      "label": "导演/客户监看",
+      "documents": 17
+    },
+    "tripod": {
+      "label": "三脚架/液压云台",
+      "documents": 55
+    },
+    "gimbal": {
+      "label": "稳定器",
+      "documents": 37
+    },
+    "slider": {
+      "label": "滑轨",
+      "documents": 38
+    },
+    "dolly": {
+      "label": "轨道车",
+      "documents": 9
+    },
+    "track": {
+      "label": "轨道",
+      "documents": 16
+    },
+    "jib": {
+      "label": "摇臂/伸缩炮",
+      "documents": 22
+    },
+    "filters": {
+      "label": "滤镜系统",
+      "documents": 63
+    },
+    "power": {
+      "label": "供电系统",
+      "documents": 46
+    },
+    "media": {
+      "label": "存储/读卡",
+      "documents": 41
+    },
+    "timecode": {
+      "label": "时码同步",
+      "documents": 1
+    }
+  },
+  "strongPairs": [
+    {
+      "left": "filters",
+      "right": "tripod",
+      "count": 45,
+      "confidence": 0.82
+    },
+    {
+      "left": "tripod",
+      "right": "wireless_video",
+      "count": 45,
+      "confidence": 0.92
+    },
+    {
+      "left": "filters",
+      "right": "wireless_video",
+      "count": 43,
+      "confidence": 0.88
+    },
+    {
+      "left": "power",
+      "right": "tripod",
+      "count": 42,
+      "confidence": 0.91
+    },
+    {
+      "left": "follow_focus",
+      "right": "tripod",
+      "count": 39,
+      "confidence": 0.91
+    },
+    {
+      "left": "media",
+      "right": "tripod",
+      "count": 39,
+      "confidence": 0.95
+    },
+    {
+      "left": "filters",
+      "right": "power",
+      "count": 38,
+      "confidence": 0.83
+    },
+    {
+      "left": "media",
+      "right": "power",
+      "count": 37,
+      "confidence": 0.9
+    },
+    {
+      "left": "filters",
+      "right": "onboard_monitor",
+      "count": 36,
+      "confidence": 0.95
+    },
+    {
+      "left": "slider",
+      "right": "tripod",
+      "count": 36,
+      "confidence": 0.95
+    },
+    {
+      "left": "power",
+      "right": "wireless_video",
+      "count": 36,
+      "confidence": 0.78
+    },
+    {
+      "left": "filters",
+      "right": "gimbal",
+      "count": 35,
+      "confidence": 0.95
+    },
+    {
+      "left": "filters",
+      "right": "mattebox",
+      "count": 35,
+      "confidence": 0.92
+    },
+    {
+      "left": "onboard_monitor",
+      "right": "wireless_video",
+      "count": 35,
+      "confidence": 0.92
+    },
+    {
+      "left": "mattebox",
+      "right": "tripod",
+      "count": 34,
+      "confidence": 0.89
+    },
+    {
+      "left": "follow_focus",
+      "right": "wireless_video",
+      "count": 34,
+      "confidence": 0.79
+    },
+    {
+      "left": "slider",
+      "right": "wireless_video",
+      "count": 34,
+      "confidence": 0.89
+    },
+    {
+      "left": "filters",
+      "right": "media",
+      "count": 34,
+      "confidence": 0.83
+    },
+    {
+      "left": "mattebox",
+      "right": "wireless_video",
+      "count": 33,
+      "confidence": 0.87
+    },
+    {
+      "left": "filters",
+      "right": "follow_focus",
+      "count": 33,
+      "confidence": 0.77
+    },
+    {
+      "left": "onboard_monitor",
+      "right": "tripod",
+      "count": 33,
+      "confidence": 0.87
+    },
+    {
+      "left": "follow_focus",
+      "right": "power",
+      "count": 33,
+      "confidence": 0.77
+    },
+    {
+      "left": "filters",
+      "right": "slider",
+      "count": 32,
+      "confidence": 0.84
+    },
+    {
+      "left": "follow_focus",
+      "right": "slider",
+      "count": 31,
+      "confidence": 0.82
+    },
+    {
+      "left": "mattebox",
+      "right": "power",
+      "count": 31,
+      "confidence": 0.82
+    },
+    {
+      "left": "filters",
+      "right": "light_camera",
+      "count": 30,
+      "confidence": 0.94
+    },
+    {
+      "left": "media",
+      "right": "wireless_video",
+      "count": 30,
+      "confidence": 0.73
+    },
+    {
+      "left": "onboard_monitor",
+      "right": "power",
+      "count": 30,
+      "confidence": 0.79
+    },
+    {
+      "left": "gimbal",
+      "right": "tripod",
+      "count": 29,
+      "confidence": 0.78
+    },
+    {
+      "left": "gimbal",
+      "right": "wireless_video",
+      "count": 29,
+      "confidence": 0.78
+    },
+    {
+      "left": "follow_focus",
+      "right": "mattebox",
+      "count": 29,
+      "confidence": 0.76
+    },
+    {
+      "left": "follow_focus",
+      "right": "media",
+      "count": 29,
+      "confidence": 0.71
+    },
+    {
+      "left": "cinema_camera",
+      "right": "follow_focus",
+      "count": 28,
+      "confidence": 0.9
+    },
+    {
+      "left": "mattebox",
+      "right": "slider",
+      "count": 28,
+      "confidence": 0.74
+    },
+    {
+      "left": "power",
+      "right": "slider",
+      "count": 28,
+      "confidence": 0.74
+    },
+    {
+      "left": "cinema_camera",
+      "right": "tripod",
+      "count": 27,
+      "confidence": 0.87
+    },
+    {
+      "left": "mattebox",
+      "right": "onboard_monitor",
+      "count": 27,
+      "confidence": 0.71
+    },
+    {
+      "left": "gimbal",
+      "right": "light_camera",
+      "count": 26,
+      "confidence": 0.81
+    },
+    {
+      "left": "follow_focus",
+      "right": "onboard_monitor",
+      "count": 26,
+      "confidence": 0.68
+    },
+    {
+      "left": "onboard_monitor",
+      "right": "slider",
+      "count": 26,
+      "confidence": 0.68
+    },
+    {
+      "left": "light_camera",
+      "right": "tripod",
+      "count": 25,
+      "confidence": 0.78
+    },
+    {
+      "left": "cinema_camera",
+      "right": "filters",
+      "count": 25,
+      "confidence": 0.81
+    },
+    {
+      "left": "mattebox",
+      "right": "media",
+      "count": 25,
+      "confidence": 0.66
+    },
+    {
+      "left": "media",
+      "right": "slider",
+      "count": 25,
+      "confidence": 0.66
+    },
+    {
+      "left": "arri_camera",
+      "right": "cinema_camera",
+      "count": 24,
+      "confidence": 1.0
+    },
+    {
+      "left": "arri_camera",
+      "right": "follow_focus",
+      "count": 24,
+      "confidence": 1.0
+    },
+    {
+      "left": "cinema_camera",
+      "right": "mattebox",
+      "count": 24,
+      "confidence": 0.77
+    },
+    {
+      "left": "cinema_camera",
+      "right": "slider",
+      "count": 24,
+      "confidence": 0.77
+    },
+    {
+      "left": "cinema_camera",
+      "right": "wireless_video",
+      "count": 24,
+      "confidence": 0.77
+    },
+    {
+      "left": "media",
+      "right": "onboard_monitor",
+      "count": 24,
+      "confidence": 0.63
+    },
+    {
+      "left": "filters",
+      "right": "sony_camera",
+      "count": 23,
+      "confidence": 1.0
+    },
+    {
+      "left": "light_camera",
+      "right": "sony_camera",
+      "count": 23,
+      "confidence": 1.0
+    },
+    {
+      "left": "arri_camera",
+      "right": "tripod",
+      "count": 23,
+      "confidence": 0.96
+    },
+    {
+      "left": "gimbal",
+      "right": "mattebox",
+      "count": 22,
+      "confidence": 0.59
+    },
+    {
+      "left": "gimbal",
+      "right": "sony_camera",
+      "count": 22,
+      "confidence": 0.96
+    },
+    {
+      "left": "light_camera",
+      "right": "wireless_video",
+      "count": 22,
+      "confidence": 0.69
+    },
+    {
+      "left": "arri_camera",
+      "right": "mattebox",
+      "count": 22,
+      "confidence": 0.92
+    },
+    {
+      "left": "gimbal",
+      "right": "slider",
+      "count": 22,
+      "confidence": 0.59
+    },
+    {
+      "left": "arri_camera",
+      "right": "slider",
+      "count": 21,
+      "confidence": 0.88
+    },
+    {
+      "left": "cinema_camera",
+      "right": "onboard_monitor",
+      "count": 21,
+      "confidence": 0.68
+    },
+    {
+      "left": "filters",
+      "right": "jib",
+      "count": 21,
+      "confidence": 0.95
+    },
+    {
+      "left": "gimbal",
+      "right": "onboard_monitor",
+      "count": 21,
+      "confidence": 0.57
+    },
+    {
+      "left": "cinema_camera",
+      "right": "power",
+      "count": 21,
+      "confidence": 0.68
+    },
+    {
+      "left": "gimbal",
+      "right": "power",
+      "count": 21,
+      "confidence": 0.57
+    },
+    {
+      "left": "arri_camera",
+      "right": "filters",
+      "count": 20,
+      "confidence": 0.83
+    },
+    {
+      "left": "arri_camera",
+      "right": "wireless_video",
+      "count": 20,
+      "confidence": 0.83
+    },
+    {
+      "left": "cinema_prime",
+      "right": "follow_focus",
+      "count": 20,
+      "confidence": 1.0
+    },
+    {
+      "left": "cinema_prime",
+      "right": "tripod",
+      "count": 20,
+      "confidence": 1.0
+    },
+    {
+      "left": "light_camera",
+      "right": "power",
+      "count": 20,
+      "confidence": 0.62
+    },
+    {
+      "left": "cinema_prime",
+      "right": "mattebox",
+      "count": 19,
+      "confidence": 0.95
+    },
+    {
+      "left": "arri_camera",
+      "right": "power",
+      "count": 19,
+      "confidence": 0.79
+    },
+    {
+      "left": "arri_camera",
+      "right": "cinema_prime",
+      "count": 18,
+      "confidence": 0.9
+    },
+    {
+      "left": "arri_camera",
+      "right": "onboard_monitor",
+      "count": 18,
+      "confidence": 0.75
+    },
+    {
+      "left": "cinema_camera",
+      "right": "cinema_prime",
+      "count": 18,
+      "confidence": 0.9
+    },
+    {
+      "left": "cinema_prime",
+      "right": "filters",
+      "count": 18,
+      "confidence": 0.9
+    },
+    {
+      "left": "cinema_prime",
+      "right": "slider",
+      "count": 18,
+      "confidence": 0.9
+    },
+    {
+      "left": "cinema_prime",
+      "right": "wireless_video",
+      "count": 18,
+      "confidence": 0.9
+    },
+    {
+      "left": "gimbal",
+      "right": "jib",
+      "count": 18,
+      "confidence": 0.82
+    },
+    {
+      "left": "gimbal",
+      "right": "media",
+      "count": 18,
+      "confidence": 0.49
+    },
+    {
+      "left": "filters",
+      "right": "photo_zoom",
+      "count": 17,
+      "confidence": 1.0
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "filters",
+      "count": 17,
+      "confidence": 0.94
+    },
+    {
+      "left": "client_monitor",
+      "right": "tripod",
+      "count": 17,
+      "confidence": 1.0
+    },
+    {
+      "left": "client_monitor",
+      "right": "wireless_video",
+      "count": 17,
+      "confidence": 1.0
+    },
+    {
+      "left": "light_camera",
+      "right": "onboard_monitor",
+      "count": 17,
+      "confidence": 0.53
+    },
+    {
+      "left": "gimbal",
+      "right": "photo_zoom",
+      "count": 16,
+      "confidence": 0.94
+    },
+    {
+      "left": "photo_zoom",
+      "right": "tripod",
+      "count": 16,
+      "confidence": 0.94
+    },
+    {
+      "left": "photo_zoom",
+      "right": "wireless_video",
+      "count": 16,
+      "confidence": 0.94
+    },
+    {
+      "left": "sony_camera",
+      "right": "tripod",
+      "count": 16,
+      "confidence": 0.7
+    },
+    {
+      "left": "sony_camera",
+      "right": "wireless_video",
+      "count": 16,
+      "confidence": 0.7
+    },
+    {
+      "left": "cinema_prime",
+      "right": "onboard_monitor",
+      "count": 16,
+      "confidence": 0.8
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "jib",
+      "count": 16,
+      "confidence": 0.89
+    },
+    {
+      "left": "client_monitor",
+      "right": "filters",
+      "count": 16,
+      "confidence": 0.94
+    },
+    {
+      "left": "jib",
+      "right": "tripod",
+      "count": 16,
+      "confidence": 0.73
+    },
+    {
+      "left": "track",
+      "right": "tripod",
+      "count": 16,
+      "confidence": 1.0
+    },
+    {
+      "left": "cinema_camera",
+      "right": "media",
+      "count": 16,
+      "confidence": 0.52
+    },
+    {
+      "left": "light_camera",
+      "right": "media",
+      "count": 16,
+      "confidence": 0.5
+    },
+    {
+      "left": "cinema_prime",
+      "right": "power",
+      "count": 16,
+      "confidence": 0.8
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "gimbal",
+      "count": 15,
+      "confidence": 0.83
+    },
+    {
+      "left": "client_monitor",
+      "right": "onboard_monitor",
+      "count": 15,
+      "confidence": 0.88
+    },
+    {
+      "left": "client_monitor",
+      "right": "slider",
+      "count": 15,
+      "confidence": 0.88
+    },
+    {
+      "left": "filters",
+      "right": "track",
+      "count": 15,
+      "confidence": 0.94
+    },
+    {
+      "left": "jib",
+      "right": "light_camera",
+      "count": 15,
+      "confidence": 0.68
+    },
+    {
+      "left": "jib",
+      "right": "slider",
+      "count": 15,
+      "confidence": 0.68
+    },
+    {
+      "left": "jib",
+      "right": "wireless_video",
+      "count": 15,
+      "confidence": 0.68
+    },
+    {
+      "left": "slider",
+      "right": "track",
+      "count": 15,
+      "confidence": 0.94
+    },
+    {
+      "left": "track",
+      "right": "wireless_video",
+      "count": 15,
+      "confidence": 0.94
+    },
+    {
+      "left": "client_monitor",
+      "right": "power",
+      "count": 15,
+      "confidence": 0.88
+    },
+    {
+      "left": "light_camera",
+      "right": "photo_zoom",
+      "count": 14,
+      "confidence": 0.82
+    },
+    {
+      "left": "photo_zoom",
+      "right": "sony_camera",
+      "count": 14,
+      "confidence": 0.82
+    },
+    {
+      "left": "cinema_camera",
+      "right": "jib",
+      "count": 14,
+      "confidence": 0.64
+    },
+    {
+      "left": "follow_focus",
+      "right": "jib",
+      "count": 14,
+      "confidence": 0.64
+    },
+    {
+      "left": "follow_focus",
+      "right": "track",
+      "count": 14,
+      "confidence": 0.88
+    },
+    {
+      "left": "onboard_monitor",
+      "right": "track",
+      "count": 14,
+      "confidence": 0.88
+    },
+    {
+      "left": "arri_camera",
+      "right": "media",
+      "count": 14,
+      "confidence": 0.58
+    },
+    {
+      "left": "jib",
+      "right": "power",
+      "count": 14,
+      "confidence": 0.64
+    },
+    {
+      "left": "arri_camera",
+      "right": "jib",
+      "count": 13,
+      "confidence": 0.59
+    },
+    {
+      "left": "cinema_camera",
+      "right": "cinema_zoom",
+      "count": 13,
+      "confidence": 0.72
+    },
+    {
+      "left": "cinema_camera",
+      "right": "track",
+      "count": 13,
+      "confidence": 0.81
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "light_camera",
+      "count": 13,
+      "confidence": 0.72
+    },
+    {
+      "left": "client_monitor",
+      "right": "follow_focus",
+      "count": 13,
+      "confidence": 0.76
+    },
+    {
+      "left": "client_monitor",
+      "right": "jib",
+      "count": 13,
+      "confidence": 0.76
+    },
+    {
+      "left": "client_monitor",
+      "right": "mattebox",
+      "count": 13,
+      "confidence": 0.76
+    },
+    {
+      "left": "jib",
+      "right": "mattebox",
+      "count": 13,
+      "confidence": 0.59
+    },
+    {
+      "left": "jib",
+      "right": "onboard_monitor",
+      "count": 13,
+      "confidence": 0.59
+    },
+    {
+      "left": "mattebox",
+      "right": "track",
+      "count": 13,
+      "confidence": 0.81
+    },
+    {
+      "left": "power",
+      "right": "track",
+      "count": 13,
+      "confidence": 0.81
+    },
+    {
+      "left": "arri_camera",
+      "right": "cinema_zoom",
+      "count": 12,
+      "confidence": 0.67
+    },
+    {
+      "left": "arri_camera",
+      "right": "client_monitor",
+      "count": 12,
+      "confidence": 0.71
+    },
+    {
+      "left": "arri_camera",
+      "right": "gimbal",
+      "count": 12,
+      "confidence": 0.5
+    },
+    {
+      "left": "cinema_camera",
+      "right": "client_monitor",
+      "count": 12,
+      "confidence": 0.71
+    },
+    {
+      "left": "cinema_prime",
+      "right": "jib",
+      "count": 12,
+      "confidence": 0.6
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "follow_focus",
+      "count": 12,
+      "confidence": 0.67
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "onboard_monitor",
+      "count": 12,
+      "confidence": 0.67
+    },
+    {
+      "left": "client_monitor",
+      "right": "gimbal",
+      "count": 12,
+      "confidence": 0.71
+    },
+    {
+      "left": "onboard_monitor",
+      "right": "photo_zoom",
+      "count": 12,
+      "confidence": 0.71
+    },
+    {
+      "left": "mattebox",
+      "right": "photo_zoom",
+      "count": 11,
+      "confidence": 0.65
+    },
+    {
+      "left": "arri_camera",
+      "right": "track",
+      "count": 11,
+      "confidence": 0.69
+    },
+    {
+      "left": "cinema_prime",
+      "right": "gimbal",
+      "count": 11,
+      "confidence": 0.55
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "mattebox",
+      "count": 11,
+      "confidence": 0.61
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "tripod",
+      "count": 11,
+      "confidence": 0.61
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "wireless_video",
+      "count": 11,
+      "confidence": 0.61
+    },
+    {
+      "left": "follow_focus",
+      "right": "ronin4d",
+      "count": 11,
+      "confidence": 1.0
+    },
+    {
+      "left": "jib",
+      "right": "sony_camera",
+      "count": 11,
+      "confidence": 0.5
+    },
+    {
+      "left": "jib",
+      "right": "track",
+      "count": 11,
+      "confidence": 0.69
+    },
+    {
+      "left": "light_camera",
+      "right": "ronin4d",
+      "count": 11,
+      "confidence": 1.0
+    },
+    {
+      "left": "onboard_monitor",
+      "right": "sony_camera",
+      "count": 11,
+      "confidence": 0.48
+    },
+    {
+      "left": "ronin4d",
+      "right": "tripod",
+      "count": 11,
+      "confidence": 1.0
+    },
+    {
+      "left": "cinema_prime",
+      "right": "media",
+      "count": 11,
+      "confidence": 0.55
+    },
+    {
+      "left": "media",
+      "right": "photo_zoom",
+      "count": 11,
+      "confidence": 0.65
+    },
+    {
+      "left": "media",
+      "right": "sony_camera",
+      "count": 11,
+      "confidence": 0.48
+    },
+    {
+      "left": "photo_zoom",
+      "right": "power",
+      "count": 11,
+      "confidence": 0.65
+    },
+    {
+      "left": "power",
+      "right": "sony_camera",
+      "count": 11,
+      "confidence": 0.48
+    },
+    {
+      "left": "cinema_prime",
+      "right": "cinema_zoom",
+      "count": 10,
+      "confidence": 0.56
+    },
+    {
+      "left": "cinema_prime",
+      "right": "client_monitor",
+      "count": 10,
+      "confidence": 0.59
+    },
+    {
+      "left": "cinema_prime",
+      "right": "track",
+      "count": 10,
+      "confidence": 0.62
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "slider",
+      "count": 10,
+      "confidence": 0.56
+    },
+    {
+      "left": "client_monitor",
+      "right": "light_camera",
+      "count": 10,
+      "confidence": 0.59
+    },
+    {
+      "left": "gimbal",
+      "right": "track",
+      "count": 10,
+      "confidence": 0.62
+    },
+    {
+      "left": "media",
+      "right": "track",
+      "count": 10,
+      "confidence": 0.62
+    },
+    {
+      "left": "client_monitor",
+      "right": "media",
+      "count": 10,
+      "confidence": 0.59
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "power",
+      "count": 10,
+      "confidence": 0.56
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "sony_camera",
+      "count": 9,
+      "confidence": 0.5
+    },
+    {
+      "left": "dolly",
+      "right": "filters",
+      "count": 9,
+      "confidence": 1.0
+    },
+    {
+      "left": "dolly",
+      "right": "follow_focus",
+      "count": 9,
+      "confidence": 1.0
+    },
+    {
+      "left": "dolly",
+      "right": "jib",
+      "count": 9,
+      "confidence": 1.0
+    },
+    {
+      "left": "dolly",
+      "right": "mattebox",
+      "count": 9,
+      "confidence": 1.0
+    },
+    {
+      "left": "dolly",
+      "right": "tripod",
+      "count": 9,
+      "confidence": 1.0
+    },
+    {
+      "left": "filters",
+      "right": "ronin4d",
+      "count": 9,
+      "confidence": 0.82
+    },
+    {
+      "left": "photo_zoom",
+      "right": "slider",
+      "count": 9,
+      "confidence": 0.53
+    },
+    {
+      "left": "power",
+      "right": "ronin4d",
+      "count": 9,
+      "confidence": 0.82
+    },
+    {
+      "left": "arri_camera",
+      "right": "dolly",
+      "count": 8,
+      "confidence": 0.89
+    },
+    {
+      "left": "cinema_camera",
+      "right": "dolly",
+      "count": 8,
+      "confidence": 0.89
+    },
+    {
+      "left": "cinema_prime",
+      "right": "dolly",
+      "count": 8,
+      "confidence": 0.89
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "client_monitor",
+      "count": 8,
+      "confidence": 0.47
+    },
+    {
+      "left": "client_monitor",
+      "right": "track",
+      "count": 8,
+      "confidence": 0.5
+    },
+    {
+      "left": "dolly",
+      "right": "gimbal",
+      "count": 8,
+      "confidence": 0.89
+    },
+    {
+      "left": "dolly",
+      "right": "slider",
+      "count": 8,
+      "confidence": 0.89
+    },
+    {
+      "left": "dolly",
+      "right": "wireless_video",
+      "count": 8,
+      "confidence": 0.89
+    },
+    {
+      "left": "filters",
+      "right": "macro_probe",
+      "count": 8,
+      "confidence": 1.0
+    },
+    {
+      "left": "macro_probe",
+      "right": "tripod",
+      "count": 8,
+      "confidence": 1.0
+    },
+    {
+      "left": "onboard_monitor",
+      "right": "ronin4d",
+      "count": 8,
+      "confidence": 0.73
+    },
+    {
+      "left": "ronin4d",
+      "right": "wireless_video",
+      "count": 8,
+      "confidence": 0.73
+    },
+    {
+      "left": "dolly",
+      "right": "power",
+      "count": 8,
+      "confidence": 0.89
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "dolly",
+      "count": 7,
+      "confidence": 0.78
+    },
+    {
+      "left": "client_monitor",
+      "right": "dolly",
+      "count": 7,
+      "confidence": 0.78
+    },
+    {
+      "left": "dolly",
+      "right": "onboard_monitor",
+      "count": 7,
+      "confidence": 0.78
+    },
+    {
+      "left": "gimbal",
+      "right": "macro_probe",
+      "count": 7,
+      "confidence": 0.88
+    },
+    {
+      "left": "jib",
+      "right": "macro_probe",
+      "count": 7,
+      "confidence": 0.88
+    },
+    {
+      "left": "macro_probe",
+      "right": "slider",
+      "count": 7,
+      "confidence": 0.88
+    },
+    {
+      "left": "macro_probe",
+      "right": "track",
+      "count": 7,
+      "confidence": 0.88
+    },
+    {
+      "left": "macro_probe",
+      "right": "wireless_video",
+      "count": 7,
+      "confidence": 0.88
+    },
+    {
+      "left": "arri_camera",
+      "right": "ronin4d",
+      "count": 6,
+      "confidence": 0.55
+    },
+    {
+      "left": "cinema_camera",
+      "right": "ronin4d",
+      "count": 6,
+      "confidence": 0.55
+    },
+    {
+      "left": "cinema_prime",
+      "right": "ronin4d",
+      "count": 6,
+      "confidence": 0.55
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "ronin4d",
+      "count": 6,
+      "confidence": 0.55
+    },
+    {
+      "left": "client_monitor",
+      "right": "ronin4d",
+      "count": 6,
+      "confidence": 0.55
+    },
+    {
+      "left": "dolly",
+      "right": "track",
+      "count": 6,
+      "confidence": 0.67
+    },
+    {
+      "left": "follow_focus",
+      "right": "macro_probe",
+      "count": 6,
+      "confidence": 0.75
+    },
+    {
+      "left": "gimbal",
+      "right": "ronin4d",
+      "count": 6,
+      "confidence": 0.55
+    },
+    {
+      "left": "jib",
+      "right": "ronin4d",
+      "count": 6,
+      "confidence": 0.55
+    },
+    {
+      "left": "light_camera",
+      "right": "macro_probe",
+      "count": 6,
+      "confidence": 0.75
+    },
+    {
+      "left": "macro_probe",
+      "right": "onboard_monitor",
+      "count": 6,
+      "confidence": 0.75
+    },
+    {
+      "left": "ronin4d",
+      "right": "slider",
+      "count": 6,
+      "confidence": 0.55
+    },
+    {
+      "left": "macro_probe",
+      "right": "power",
+      "count": 6,
+      "confidence": 0.75
+    },
+    {
+      "left": "client_monitor",
+      "right": "macro_probe",
+      "count": 5,
+      "confidence": 0.62
+    },
+    {
+      "left": "dolly",
+      "right": "light_camera",
+      "count": 5,
+      "confidence": 0.56
+    },
+    {
+      "left": "dolly",
+      "right": "ronin4d",
+      "count": 5,
+      "confidence": 0.56
+    },
+    {
+      "left": "macro_probe",
+      "right": "photo_zoom",
+      "count": 5,
+      "confidence": 0.62
+    },
+    {
+      "left": "macro_probe",
+      "right": "sony_camera",
+      "count": 5,
+      "confidence": 0.62
+    },
+    {
+      "left": "mattebox",
+      "right": "ronin4d",
+      "count": 5,
+      "confidence": 0.45
+    },
+    {
+      "left": "media",
+      "right": "ronin4d",
+      "count": 5,
+      "confidence": 0.45
+    },
+    {
+      "left": "macro_probe",
+      "right": "media",
+      "count": 5,
+      "confidence": 0.62
+    },
+    {
+      "left": "arri_camera",
+      "right": "macro_probe",
+      "count": 4,
+      "confidence": 0.5
+    },
+    {
+      "left": "cinema_camera",
+      "right": "macro_probe",
+      "count": 4,
+      "confidence": 0.5
+    },
+    {
+      "left": "cinema_prime",
+      "right": "macro_probe",
+      "count": 4,
+      "confidence": 0.5
+    },
+    {
+      "left": "cinema_zoom",
+      "right": "macro_probe",
+      "count": 4,
+      "confidence": 0.5
+    },
+    {
+      "left": "macro_probe",
+      "right": "mattebox",
+      "count": 4,
+      "confidence": 0.5
+    }
+  ]
+}

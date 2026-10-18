@@ -1,0 +1,574 @@
+{
+  "checkedAt": "2026-10-07",
+  "role": "recover inventory identities; original labels are evidence of stock only",
+  "patches": [
+    {
+      "id": "cam-alexa-35",
+      "removeAliases": [
+        "阿莱 大画幅定焦镜头 35mm · ARRI Signature Prime 35mm T1.8",
+        "ARRI Signature Prime 35mm T1.8"
+      ]
+    },
+    {
+      "id": "cam-alexa-lf",
+      "removeAliases": [
+        "ARRI Alexa LF EVF目镜"
+      ]
+    },
+    {
+      "id": "cam-alexa-mini",
+      "removeAliases": [
+        "Alexa Mini Nauticam 迷你潜水壳",
+        "ARRI Alexa Mini EVF 目镜"
+      ]
+    },
+    {
+      "id": "cam-alexa-mini-lf",
+      "removeAliases": [
+        "ARRI Alexa Mini LF EVF目镜"
+      ]
+    },
+    {
+      "id": "cam-canon-r5c",
+      "removeAliases": [
+        "佳能单反相机 · Canon R5",
+        "Canon R5"
+      ]
+    },
+    {
+      "id": "lens-angenieux-ez1",
+      "removeAliases": [
+        "Angenieux Type EZ-1 30-90mm/T2.0 安琴变焦镜头",
+        "安琴 变焦镜头 30-90mm · Angenieux EZ-1 30-90mm T2 - PL",
+        "Angenieux EZ-1 30-90mm T2 - PL"
+      ]
+    },
+    {
+      "id": "eq-mamiya-tls-mamiya-645-57mm-t1-6-镜头",
+      "removeAliases": [
+        "Mamiya 645 全画幅复古定焦镜头 · TLS Mamiya 645 57mm T2.3",
+        "TLS Mamiya 645 57mm T2.3"
+      ]
+    },
+    {
+      "id": "lens-nisi-athena",
+      "removeAliases": [
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 14mm T2.4",
+        "NiSi ATHENA 14mm T2.4",
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 25mm T1.9",
+        "NiSi ATHENA 25mm T1.9",
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 35mm T1.9",
+        "NiSi ATHENA 35mm T1.9",
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 50mm T1.9",
+        "NiSi ATHENA 50mm T1.9",
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 85mm T1.9",
+        "NiSi ATHENA 85mm T1.9"
+      ]
+    },
+    {
+      "id": "lens-sony-85",
+      "set": {
+        "name": "SONY FE 85mm F1.4 GM"
+      },
+      "removeAliases": []
+    },
+    {
+      "id": "eq-zeiss-zeiss-supreme-prime-200mm-t2-2-镜头",
+      "removeAliases": [
+        "蔡司 定焦镜头 · ZEISS Supreme Prime 200mm T2.1",
+        "ZEISS Supreme Prime 200mm T2.1"
+      ]
+    },
+    {
+      "id": "eq-通用-ko-optics-artiste-80mm-t1-9-镜头",
+      "removeAliases": [
+        "KO 艺术家70mm 定焦镜头 · KO Optics ARTISTE 80mm Lens T2.8",
+        "KO Optics ARTISTE 80mm Lens T2.8"
+      ]
+    },
+    {
+      "id": "filter-bpm",
+      "removeAliases": [
+        "TIFFEN黑柔/白柔"
+      ]
+    },
+    {
+      "id": "filter-nd",
+      "removeAliases": [
+        "4*5.65 Filter IRND 1.2 灰片",
+        "4*5.65 Filter IRND 1.5 灰片",
+        "4*5.65 Filter IRND 3 灰片",
+        "4*5.65 Filter IRND 6 灰片",
+        "4*5.65 Filter IRND 9 灰片",
+        "4*5.65 Filter ND 3 灰片",
+        "4*5.65 Filter ND 6 灰片",
+        "4*5.65 Filter ND 9 灰片",
+        "软渐变 · Tiffen 4x5.65 ND3,ND6,ND9 Grad SE",
+        "Tiffen 4x5.65 ND3,ND6,ND9 Grad SE",
+        "天芬 软渐变灰滤镜 · Tiffen 4x5.65 ND.3/.6/.9/1.2 Soft Grad Filter",
+        "Tiffen 4x5.65 ND.3/.6/.9/1.2 Soft Grad Filter",
+        "硬渐变 · Tiffen 4x5.65 ND3,ND6,ND9 Grad HE",
+        "Tiffen 4x5.65 ND3,ND6,ND9 Grad HE"
+      ]
+    },
+    {
+      "id": "other-applebox",
+      "removeAliases": [
+        "Apple Box 10cm 苹果箱",
+        "Apple Box 20cm 苹果箱",
+        "Apple Box 30cm 苹果箱",
+        "Apple Box 5cm 苹果箱"
+      ]
+    },
+    {
+      "id": "eq-arri-arri-master-macro-100mm-t2-0-镜头",
+      "set": {
+        "aliases": [
+          "ARRI Master Macro 100mm/T2.0",
+          "ARRI Master Macro 100mm/T2.0 阿莱微距镜头",
+          "阿莱 ARRI Master Prime Macro 100mm T2",
+          "ARRI/ZEISS Macro Master Prime 100mm T2.0",
+          "阿莱/蔡司 大师级 微距定焦镜头 100mm · ARRI/ZEISS Macro Master Prime 100mm T2.0",
+          "ARRI MP百微"
+        ]
+      },
+      "removeAliases": []
+    }
+  ],
+  "additions": [
+    {
+      "id": "v5-restored-0",
+      "name": "ARRI Signature Prime 35mm T1.8",
+      "brand": "ARRI",
+      "category": "镜头",
+      "subcategory": "定焦镜头",
+      "unit": "颗",
+      "costTier": 5,
+      "aliases": [
+        "阿莱 大画幅定焦镜头 35mm · ARRI Signature Prime 35mm T1.8"
+      ],
+      "verified": false,
+      "recoveredFrom": "cam-alexa-35"
+    },
+    {
+      "id": "v5-restored-1",
+      "name": "ARRI Alexa LF EVF目镜",
+      "brand": "ARRI",
+      "category": "摄影机附件",
+      "subcategory": "取景器与机身附件",
+      "unit": "套",
+      "costTier": 4,
+      "aliases": [
+        "ARRI Alexa LF EVF目镜"
+      ],
+      "verified": false,
+      "recoveredFrom": "cam-alexa-lf"
+    },
+    {
+      "id": "v5-restored-2",
+      "name": "Alexa Mini Nauticam 迷你潜水壳",
+      "brand": "ARRI",
+      "category": "摄影机附件",
+      "subcategory": "取景器与机身附件",
+      "unit": "套",
+      "costTier": 4,
+      "aliases": [
+        "Alexa Mini Nauticam 迷你潜水壳"
+      ],
+      "verified": false,
+      "recoveredFrom": "cam-alexa-mini"
+    },
+    {
+      "id": "v5-restored-3",
+      "name": "ARRI Alexa Mini EVF 目镜",
+      "brand": "ARRI",
+      "category": "摄影机附件",
+      "subcategory": "取景器与机身附件",
+      "unit": "套",
+      "costTier": 4,
+      "aliases": [
+        "ARRI Alexa Mini EVF 目镜"
+      ],
+      "verified": false,
+      "recoveredFrom": "cam-alexa-mini"
+    },
+    {
+      "id": "v5-restored-4",
+      "name": "ARRI Alexa Mini LF EVF目镜",
+      "brand": "ARRI",
+      "category": "摄影机附件",
+      "subcategory": "取景器与机身附件",
+      "unit": "套",
+      "costTier": 5,
+      "aliases": [
+        "ARRI Alexa Mini LF EVF目镜"
+      ],
+      "verified": false,
+      "recoveredFrom": "cam-alexa-mini-lf"
+    },
+    {
+      "id": "v5-restored-5",
+      "name": "Angenieux Type EZ-1 30-90mm/T2.0 安琴变焦镜头",
+      "brand": "Angénieux",
+      "category": "镜头",
+      "subcategory": "变焦镜头",
+      "unit": "颗",
+      "costTier": 3,
+      "aliases": [
+        "Angenieux Type EZ-1 30-90mm/T2.0 安琴变焦镜头"
+      ],
+      "verified": false,
+      "recoveredFrom": "lens-angenieux-ez1"
+    },
+    {
+      "id": "v5-restored-6",
+      "name": "Angenieux EZ-1 30-90mm T2 - PL",
+      "brand": "Angénieux",
+      "category": "镜头",
+      "subcategory": "变焦镜头",
+      "unit": "颗",
+      "costTier": 3,
+      "aliases": [
+        "安琴 变焦镜头 30-90mm · Angenieux EZ-1 30-90mm T2 - PL"
+      ],
+      "verified": false,
+      "recoveredFrom": "lens-angenieux-ez1"
+    },
+    {
+      "id": "v5-restored-7",
+      "name": "TLS Mamiya 645 57mm T2.3",
+      "brand": "Mamiya",
+      "category": "镜头",
+      "subcategory": "其他",
+      "unit": "颗",
+      "costTier": 3,
+      "aliases": [
+        "Mamiya 645 全画幅复古定焦镜头 · TLS Mamiya 645 57mm T2.3"
+      ],
+      "verified": false,
+      "recoveredFrom": "eq-mamiya-tls-mamiya-645-57mm-t1-6-镜头"
+    },
+    {
+      "id": "v5-restored-8",
+      "name": "NiSi ATHENA 14mm T2.4",
+      "brand": "NiSi",
+      "category": "镜头",
+      "subcategory": "定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 14mm T2.4"
+      ],
+      "verified": false,
+      "recoveredFrom": "lens-nisi-athena"
+    },
+    {
+      "id": "v5-restored-9",
+      "name": "NiSi ATHENA 25mm T1.9",
+      "brand": "NiSi",
+      "category": "镜头",
+      "subcategory": "定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 25mm T1.9"
+      ],
+      "verified": false,
+      "recoveredFrom": "lens-nisi-athena"
+    },
+    {
+      "id": "v5-restored-10",
+      "name": "NiSi ATHENA 35mm T1.9",
+      "brand": "NiSi",
+      "category": "镜头",
+      "subcategory": "定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 35mm T1.9"
+      ],
+      "verified": false,
+      "recoveredFrom": "lens-nisi-athena"
+    },
+    {
+      "id": "v5-restored-11",
+      "name": "NiSi ATHENA 50mm T1.9",
+      "brand": "NiSi",
+      "category": "镜头",
+      "subcategory": "定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 50mm T1.9"
+      ],
+      "verified": false,
+      "recoveredFrom": "lens-nisi-athena"
+    },
+    {
+      "id": "v5-restored-12",
+      "name": "NiSi ATHENA 85mm T1.9",
+      "brand": "NiSi",
+      "category": "镜头",
+      "subcategory": "定焦镜头",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "耐思 雅典娜 定焦镜头 · NiSi ATHENA 85mm T1.9"
+      ],
+      "verified": false,
+      "recoveredFrom": "lens-nisi-athena"
+    },
+    {
+      "id": "v5-restored-13",
+      "name": "ZEISS Supreme Prime 200mm T2.1",
+      "brand": "ZEISS",
+      "category": "镜头",
+      "subcategory": "Fixed focus lens 定焦镜头",
+      "unit": "颗",
+      "costTier": 3,
+      "aliases": [
+        "蔡司 定焦镜头 · ZEISS Supreme Prime 200mm T2.1"
+      ],
+      "verified": false,
+      "recoveredFrom": "eq-zeiss-zeiss-supreme-prime-200mm-t2-2-镜头"
+    },
+    {
+      "id": "v5-restored-14",
+      "name": "KO Optics ARTISTE 80mm Lens T2.8",
+      "brand": "通用",
+      "category": "镜头",
+      "subcategory": "其他",
+      "unit": "颗",
+      "costTier": 3,
+      "aliases": [
+        "KO 艺术家70mm 定焦镜头 · KO Optics ARTISTE 80mm Lens T2.8"
+      ],
+      "verified": false,
+      "recoveredFrom": "eq-通用-ko-optics-artiste-80mm-t1-9-镜头"
+    },
+    {
+      "id": "v5-restored-15",
+      "name": "TIFFEN黑柔/白柔",
+      "brand": "Tiffen",
+      "category": "滤镜",
+      "subcategory": "柔化滤镜组",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "TIFFEN黑柔/白柔"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-bpm"
+    },
+    {
+      "id": "v5-restored-16",
+      "name": "4*5.65 Filter IRND 1.2 灰片",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "4*5.65 Filter IRND 1.2 灰片"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-17",
+      "name": "4*5.65 Filter IRND 1.5 灰片",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "4*5.65 Filter IRND 1.5 灰片"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-18",
+      "name": "4*5.65 Filter IRND 3 灰片",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "4*5.65 Filter IRND 3 灰片"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-19",
+      "name": "4*5.65 Filter IRND 6 灰片",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "4*5.65 Filter IRND 6 灰片"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-20",
+      "name": "4*5.65 Filter IRND 9 灰片",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "4*5.65 Filter IRND 9 灰片"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-21",
+      "name": "4*5.65 Filter ND 3 灰片",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "4*5.65 Filter ND 3 灰片"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-22",
+      "name": "4*5.65 Filter ND 6 灰片",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "4*5.65 Filter ND 6 灰片"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-23",
+      "name": "4*5.65 Filter ND 9 灰片",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "4*5.65 Filter ND 9 灰片"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-24",
+      "name": "Tiffen 4x5.65 ND3,ND6,ND9 Grad SE",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "软渐变 · Tiffen 4x5.65 ND3,ND6,ND9 Grad SE"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-25",
+      "name": "Tiffen 4x5.65 ND.3/.6/.9/1.2 Soft Grad Filter",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "天芬 软渐变灰滤镜 · Tiffen 4x5.65 ND.3/.6/.9/1.2 Soft Grad Filter"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-26",
+      "name": "Tiffen 4x5.65 ND3,ND6,ND9 Grad HE",
+      "brand": "通用",
+      "category": "滤镜",
+      "subcategory": "ND 与渐变滤镜",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "硬渐变 · Tiffen 4x5.65 ND3,ND6,ND9 Grad HE"
+      ],
+      "verified": false,
+      "recoveredFrom": "filter-nd"
+    },
+    {
+      "id": "v5-restored-27",
+      "name": "Apple Box 10cm 苹果箱",
+      "brand": "通用",
+      "category": "其他",
+      "subcategory": "现场辅助",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "Apple Box 10cm 苹果箱"
+      ],
+      "verified": false,
+      "recoveredFrom": "other-applebox"
+    },
+    {
+      "id": "v5-restored-28",
+      "name": "Apple Box 20cm 苹果箱",
+      "brand": "通用",
+      "category": "其他",
+      "subcategory": "现场辅助",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "Apple Box 20cm 苹果箱"
+      ],
+      "verified": false,
+      "recoveredFrom": "other-applebox"
+    },
+    {
+      "id": "v5-restored-29",
+      "name": "Apple Box 30cm 苹果箱",
+      "brand": "通用",
+      "category": "其他",
+      "subcategory": "现场辅助",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "Apple Box 30cm 苹果箱"
+      ],
+      "verified": false,
+      "recoveredFrom": "other-applebox"
+    },
+    {
+      "id": "v5-restored-30",
+      "name": "Apple Box 5cm 苹果箱",
+      "brand": "通用",
+      "category": "其他",
+      "subcategory": "现场辅助",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "Apple Box 5cm 苹果箱"
+      ],
+      "verified": false,
+      "recoveredFrom": "other-applebox"
+    }
+  ]
+}

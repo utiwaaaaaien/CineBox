@@ -1,0 +1,442 @@
+{
+  "version": "V5",
+  "checkedAt": "2026-10-07",
+  "decisions": {
+    "cam-dji-mavic-unspecified": {
+      "action": "retain",
+      "originalName": "大疆 DJI Mavic 御系列无人机(型号待确认)"
+    },
+    "cam-dji-osmo-action-unspecified": {
+      "action": "retain",
+      "originalName": "大疆 DJI Osmo Action(代际待确认)"
+    },
+    "cam-dji-osmo-pocket-unspecified": {
+      "action": "retain",
+      "originalName": "大疆 DJI Osmo Pocket(代际待确认)"
+    },
+    "cam-360-unspecified": {
+      "action": "retain",
+      "originalName": "通用 360 全景相机(型号待确认)"
+    },
+    "cam-insta360-unspecified": {
+      "action": "retain",
+      "originalName": "影石 Insta360 运动相机(型号待确认)"
+    },
+    "cam-gopro-unspecified": {
+      "action": "retain",
+      "originalName": "GoPro 运动相机(型号待确认)"
+    },
+    "eq-arri-arri-mp-镜头": {
+      "action": "retain",
+      "originalName": "阿莱 ARRI MP"
+    },
+    "eq-arri-arri-sp-镜头": {
+      "action": "retain",
+      "originalName": "阿莱 ARRI SP"
+    },
+    "eq-arri-arri-up-镜头": {
+      "action": "retain",
+      "originalName": "阿莱 ARRI UP"
+    },
+    "eq-laowa-laowa-镜头": {
+      "action": "retain",
+      "originalName": "老蛙 LAOWA 型号待核验"
+    },
+    "eq-sony-sony-135-镜头": {
+      "action": "retain",
+      "originalName": "索尼 SONY 135"
+    },
+    "eq-sony-sony-2-镜头": {
+      "action": "retain",
+      "originalName": "索尼 SONY 2"
+    },
+    "eq-lensbaby-lensbaby-镜头": {
+      "action": "retain",
+      "originalName": "Lensbaby 型号待核验"
+    },
+    "filter-kaleidoscope": {
+      "action": "retain",
+      "originalName": "通用 万花筒滤镜(规格待确认)"
+    },
+    "filter-peacock-flare": {
+      "action": "retain",
+      "originalName": "通用 炫光孔雀镜(规格待确认)"
+    },
+    "eq-dji-dji-osmo-摄影机附件": {
+      "action": "retain",
+      "originalName": "大疆 DJI OSMO"
+    },
+    "accessory-tilta-zoom-servo": {
+      "action": "retain",
+      "originalName": "铁头 TILTA 变焦伺服(型号待确认)"
+    },
+    "eq-通用-360head-360-摄影机附件": {
+      "action": "retain",
+      "originalName": "通用 360Head 360"
+    },
+    "eq-通用-camera-kit-机身套件-摄影机附件": {
+      "action": "retain",
+      "originalName": "通用 Camera kit 机身套件"
+    },
+    "eq-通用-electric-tango-摄影机附件": {
+      "action": "retain",
+      "originalName": "通用 Electric TANGO"
+    },
+    "eq-通用-mini-lf-codex-摄影机附件": {
+      "action": "retain",
+      "originalName": "通用 Mini LF CODEX"
+    },
+    "eq-通用-selfie-swimming-ring-摄影机附件": {
+      "action": "retain",
+      "originalName": "通用 Selfie swimming ring"
+    },
+    "eq-通用-split-suit-摄影机附件": {
+      "action": "retain",
+      "originalName": "通用 Split suit"
+    },
+    "eq-codex-codex-摄影机附件": {
+      "action": "retain",
+      "originalName": "CODEX 型号待核验"
+    },
+    "eq-eartec-eartec-摄影机附件": {
+      "action": "retain",
+      "originalName": "Eartec 型号待核验"
+    },
+    "accessory-moma-intercom": {
+      "action": "retain",
+      "originalName": "MOMA 猛犸三方通话系统(型号待确认)"
+    },
+    "eq-sounddevices-sounddevices-摄影机附件": {
+      "action": "retain",
+      "originalName": "SOUNDDEVICES 型号待核验"
+    },
+    "eq-steadibag-steadibag-摄影机附件": {
+      "action": "retain",
+      "originalName": "Steadibag 型号待核验"
+    },
+    "eq-teris-teris-摄影机附件": {
+      "action": "retain",
+      "originalName": "TERIS 型号待核验"
+    },
+    "eq-tiffen-tiffen-摄影机附件": {
+      "action": "retain",
+      "originalName": "Tiffen 型号待核验"
+    },
+    "eq-sony-索尼大监视器-监看": {
+      "action": "retain",
+      "originalName": "索尼 SONY 大监视器"
+    },
+    "eq-通用-阿童木小监-监看": {
+      "action": "retain",
+      "originalName": "通用 阿童木小监"
+    },
+    "eq-通用-尊正大监视器-监看": {
+      "action": "retain",
+      "originalName": "通用 尊正大监视器"
+    },
+    "eq-通用-interphone-监看": {
+      "action": "retain",
+      "originalName": "通用 Interphone"
+    },
+    "eq-通用-ko-monitor-car-监看": {
+      "action": "retain",
+      "originalName": "通用 KO Monitor car"
+    },
+    "eq-通用-video-emhancer-aja-3g-hd-监看": {
+      "action": "retain",
+      "originalName": "通用 Video Emhancer AJA 3G HD"
+    },
+    "eq-通用-waveform-monitor-监看": {
+      "action": "retain",
+      "originalName": "通用 Waveform Monitor"
+    },
+    "eq-通用-wireless-video-监看": {
+      "action": "retain",
+      "originalName": "通用 Wireless video"
+    },
+    "video-vaxis-702-unspecified": {
+      "action": "retain",
+      "originalName": "威固 Vaxis 702 无线监视器(型号待确认)"
+    },
+    "eq-vaxis-威固无线图传-监看": {
+      "action": "retain",
+      "originalName": "威固 Vaxis 无线图传"
+    },
+    "eq-vaxis-威固无线小监5寸-7寸-监看": {
+      "action": "retain",
+      "originalName": "威固 Vaxis 无线小监5寸/7寸"
+    },
+    "eq-vaxis-威固无线小监视-监看": {
+      "action": "retain",
+      "originalName": "威固 Vaxis 无线小监视"
+    },
+    "video-smallhd-unspecified": {
+      "action": "retain",
+      "originalName": "SmallHD 小监视器(型号待确认)"
+    },
+    "eq-tvlogic-tvlogic-监看": {
+      "action": "retain",
+      "originalName": "TVLogic 型号待核验"
+    },
+    "grip-dji-rs-unspecified": {
+      "action": "retain",
+      "originalName": "大疆 DJI RS 系列稳定器(型号待确认)"
+    },
+    "grip-360-selfie-system": {
+      "action": "retain",
+      "originalName": "通用 360度旋转自拍系统(型号待确认)"
+    },
+    "eq-通用-铁甲战士-移动器材": {
+      "action": "retain",
+      "originalName": "通用 铁甲战士"
+    },
+    "grip-fishhook-5-unspecified": {
+      "action": "retain",
+      "originalName": "通用 五代鱼钩(品牌型号待确认)"
+    },
+    "eq-通用-centipede-of-2-移动器材": {
+      "action": "retain",
+      "originalName": "通用 Centipede of 2"
+    },
+    "eq-通用-chest-package-d-cup-移动器材": {
+      "action": "retain",
+      "originalName": "通用 Chest Package( D cup)"
+    },
+    "eq-通用-electric-rail-kit-移动器材": {
+      "action": "retain",
+      "originalName": "通用 Electric Rail Kit"
+    },
+    "eq-通用-horizontal-ruler-移动器材": {
+      "action": "retain",
+      "originalName": "通用 Horizontal Ruler"
+    },
+    "eq-通用-low-angle-rock-移动器材": {
+      "action": "retain",
+      "originalName": "通用 Low Angle Rock"
+    },
+    "eq-通用-of-bassco-block-移动器材": {
+      "action": "retain",
+      "originalName": "通用 of Bassco Block"
+    },
+    "eq-通用-pancake-移动器材": {
+      "action": "retain",
+      "originalName": "通用 Pancake"
+    },
+    "eq-通用-twister-betz-tools-wave-1-移动器材": {
+      "action": "retain",
+      "originalName": "通用 Twister+Betz-Tools Wave 1"
+    },
+    "grip-wonderland-handheld": {
+      "action": "retain",
+      "originalName": "万德兰 手持小斯(型号待确认)"
+    },
+    "eq-cartoni-加通尼横向左右云台-移动器材": {
+      "action": "retain",
+      "originalName": "Cartoni 加通尼横向左右云台"
+    },
+    "eq-通用-easyrig-5-不要凤头-移动器材": {
+      "action": "retain",
+      "originalName": "Easyrig 5(不要凤头)"
+    },
+    "grip-howmoco": {
+      "action": "retain",
+      "originalName": "HOWMOCO 伸缩炮"
+    },
+    "eq-nikon-movcam-先锋t-移动器材": {
+      "action": "retain",
+      "originalName": "MOVCAM 先锋T"
+    },
+    "eq-movmax-movmax-移动器材": {
+      "action": "retain",
+      "originalName": "MOVMAX 型号待核验"
+    },
+    "grip-next-fly": {
+      "action": "retain",
+      "originalName": "NEXT FLY 飞猫(型号待确认)"
+    },
+    "eq-通用-ninebot-9-移动器材": {
+      "action": "retain",
+      "originalName": "Ninebot 9"
+    },
+    "eq-nikon-斯坦尼康-先锋t-移动器材": {
+      "action": "retain",
+      "originalName": "Steadicam 斯坦尼康 先锋T"
+    },
+    "eq-nikon-steadicam-移动器材": {
+      "action": "retain",
+      "originalName": "Steadicam 型号待核验"
+    },
+    "eq-aputure-aputure-led-灯光器材": {
+      "action": "retain",
+      "originalName": "爱图仕 Aputure LED"
+    },
+    "eq-nanlite-led-rgb-1-灯光器材": {
+      "action": "retain",
+      "originalName": "南光 NANLITE LED RGB 1"
+    },
+    "eq-nanlite-led-rgb-2-灯光器材": {
+      "action": "retain",
+      "originalName": "南光 NANLITE LED RGB 2"
+    },
+    "eq-nanlite-led-rgb-4-灯光器材": {
+      "action": "retain",
+      "originalName": "南光 NANLITE LED RGB 4"
+    },
+    "eq-nanlite-wifi-灯光器材": {
+      "action": "retain",
+      "originalName": "南光 NANLITE WIFI"
+    },
+    "eq-通用-04腿-灯光器材": {
+      "action": "retain",
+      "originalName": "通用 04腿"
+    },
+    "eq-通用-锐鹰18td小布灯-灯光器材": {
+      "action": "retain",
+      "originalName": "通用 锐鹰18TD小布灯"
+    },
+    "eq-通用-锐鹰rgb大布灯-灯光器材": {
+      "action": "exclude",
+      "originalName": "通用 锐鹰RGB大布灯"
+    },
+    "light-led-on-camera-bicolor": {
+      "action": "exclude",
+      "originalName": "通用 双色温 LED 机头灯(型号待确认)"
+    },
+    "light-led-mat-unspecified": {
+      "action": "exclude",
+      "originalName": "通用 LED 布灯(型号待确认)"
+    },
+    "eq-通用-led-lite-灯光器材": {
+      "action": "retain",
+      "originalName": "通用 LED LITE"
+    },
+    "eq-通用-moon-light-灯光器材": {
+      "action": "retain",
+      "originalName": "通用 Moon Light"
+    },
+    "light-rgb-tube-unspecified": {
+      "action": "exclude",
+      "originalName": "通用 RGB 棒灯(型号待确认)"
+    },
+    "eq-通用-studio-fold-297bbase-灯光器材": {
+      "action": "retain",
+      "originalName": "通用 Studio Fold #297BBASE"
+    },
+    "light-dedolight-unspecified": {
+      "action": "retain",
+      "originalName": "Dedolight 特图利灯具(型号待确认)"
+    },
+    "audio-dji-mic-unspecified": {
+      "action": "retain",
+      "originalName": "大疆 DJI 无线麦克风(代际待确认)"
+    },
+    "eq-sony-索尼无线麦-录音器材": {
+      "action": "retain",
+      "originalName": "索尼 SONY 无线麦"
+    },
+    "eq-sony-索尼无线手持麦-录音器材": {
+      "action": "retain",
+      "originalName": "索尼 SONY 无线手持麦"
+    },
+    "eq-sony-索尼小蜜蜂-录音器材": {
+      "action": "retain",
+      "originalName": "索尼 SONY 小蜜蜂"
+    },
+    "audio-timecode-unspecified": {
+      "action": "retain",
+      "originalName": "通用 时码器(型号待确认)"
+    },
+    "eq-通用-章鱼时码器-录音器材": {
+      "action": "retain",
+      "originalName": "通用 章鱼时码器"
+    },
+    "other-tianchuang-capture": {
+      "action": "retain",
+      "originalName": "天创恒达 采集卡(型号待确认)"
+    },
+    "eq-通用-采集卡-其他": {
+      "action": "retain",
+      "originalName": "通用 采集卡"
+    },
+    "eq-通用-小米对讲机-其他": {
+      "action": "retain",
+      "originalName": "通用 小米对讲机"
+    },
+    "v5-tiffen-label-1": {
+      "action": "retain",
+      "originalName": "TIFFEN 白拉丝"
+    },
+    "v5-tiffen-label-2": {
+      "action": "retain",
+      "originalName": "TIFFEN 橙色镜"
+    },
+    "v5-tiffen-label-3": {
+      "action": "retain",
+      "originalName": "TIFFEN稻草"
+    },
+    "v5-tiffen-label-4": {
+      "action": "retain",
+      "originalName": "TIFFEN放大镜"
+    },
+    "v5-tiffen-label-5": {
+      "action": "retain",
+      "originalName": "TIFFEN蓝渐变"
+    },
+    "v5-tiffen-label-6": {
+      "action": "retain",
+      "originalName": "TIFFEN山羊皮"
+    },
+    "v5-tiffen-label-7": {
+      "action": "retain",
+      "originalName": "TIFFEN珊瑚镜"
+    },
+    "v5-tiffen-label-8": {
+      "action": "retain",
+      "originalName": "TIFFEN数码柔"
+    },
+    "v5-tiffen-label-9": {
+      "action": "retain",
+      "originalName": "TIFFEN星光镜"
+    },
+    "v5-tiffen-label-10": {
+      "action": "retain",
+      "originalName": "TIFFEN烟草"
+    },
+    "v5-movmax-slider-label": {
+      "action": "retain",
+      "originalName": "MOVMAX 滑轨"
+    },
+    "v5-movmax-suction-label": {
+      "action": "retain",
+      "originalName": "MOVMAX 吸盘"
+    },
+    "v5-crane-stock-1": {
+      "action": "retain",
+      "originalName": "FILMOTECHNIC 18 Stretch Rocker T6碳纤维伸缩炮"
+    },
+    "v5-crane-stock-2": {
+      "action": "retain",
+      "originalName": "FILMOTECHNIC 22 Stretch Rocker T8碳纤维伸缩炮"
+    },
+    "v5-crane-stock-3": {
+      "action": "retain",
+      "originalName": "MOVIE BIRD 12 Stretch Rocker MB12尺伸缩炮"
+    },
+    "v5-crane-stock-4": {
+      "action": "retain",
+      "originalName": "MOVIE BIRD 17 Stretch Rocker MB17尺伸缩炮"
+    },
+    "v5-crane-stock-5": {
+      "action": "retain",
+      "originalName": "MOVIE BIRD 24 Stretch Rocker MB24尺伸缩炮"
+    },
+    "v5-crane-stock-6": {
+      "action": "retain",
+      "originalName": "MOVIE BIRD 45 Stretch Rocker MB45尺伸缩炮"
+    },
+    "v5-crane-stock-7": {
+      "action": "retain",
+      "originalName": "MOVIE BIRD 50 Stretch Rocker MB50尺伸缩炮"
+    }
+  }
+}

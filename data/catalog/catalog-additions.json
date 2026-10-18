@@ -1,0 +1,406 @@
+{
+  "version": "V5",
+  "rows": [
+    {
+      "id": "v5-dji-mavic-4-pro",
+      "brand": "DJI",
+      "name": "DJI Mavic 4 Pro",
+      "category": "摄影机",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "DJI Mavic 御系列无人机（型号待确认）",
+        "大疆御 无人机"
+      ],
+      "verified": false,
+      "officialProduct": {
+        "series": "Mavic",
+        "model": "4 Pro",
+        "source": "https://store.dji.com/cn/product/dji-mavic-4-pro?set_region=CN",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "v5-dji-osmo-action-6",
+      "brand": "DJI",
+      "name": "DJI Osmo Action 6",
+      "category": "摄影机",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "DJI Osmo Action（代际待确认）",
+        "DJI Osmo Action"
+      ],
+      "verified": false,
+      "officialProduct": {
+        "series": "Osmo Action",
+        "model": "6",
+        "source": "https://store.dji.com/cn/product/osmo-action-6?from=events-2026-0923-sale-cn",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "v5-dji-osmo-pocket-4p",
+      "brand": "DJI",
+      "name": "DJI Osmo Pocket 4P",
+      "category": "摄影机",
+      "subcategory": "",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "DJI Osmo Pocket（代际待确认）",
+        "DJI OSMO Pocket口袋机"
+      ],
+      "verified": false,
+      "officialProduct": {
+        "series": "Osmo Pocket",
+        "model": "4P",
+        "source": "https://store.dji.com/cn/product/osmo-pocket-4p?set_region=CN",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "v5-dji-rs-5",
+      "brand": "DJI",
+      "name": "DJI RS 5",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "DJI RS 系列稳定器（型号待确认）",
+        "如影RS 系列稳定器"
+      ],
+      "verified": false,
+      "officialProduct": {
+        "series": "RS",
+        "model": "5",
+        "source": "https://store.dji.com/cn/product/dji-rs-5?from=store_homepage",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "v5-laowa-probe-zoom-15-24",
+      "brand": "LAOWA",
+      "name": "LAOWA MACRO PROBE ZOOM 15-24mm T8 1.6× Macro",
+      "category": "镜头",
+      "subcategory": "",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "LAOWA",
+        "LAOWA 老蛙 探针镜头"
+      ],
+      "verified": false,
+      "officialProduct": {
+        "series": "MACRO PROBE ZOOM",
+        "model": "15-24mm T8 1.6× Macro",
+        "source": "https://laowacine.com.cn/En/Index/listView/catid/15.html?ccid=7&cfid=&scid=",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "v5-laowa-probe-zoom-15-35",
+      "brand": "LAOWA",
+      "name": "LAOWA MACRO PROBE ZOOM 15-35mm T12 2.3× Macro",
+      "category": "镜头",
+      "subcategory": "",
+      "unit": "颗",
+      "costTier": 2,
+      "aliases": [
+        "LAOWA",
+        "LAOWA 老蛙 探针镜头"
+      ],
+      "verified": false,
+      "officialProduct": {
+        "series": "MACRO PROBE ZOOM",
+        "model": "15-35mm T12 2.3× Macro",
+        "source": "https://laowacine.com.cn/En/Index/listView/catid/15.html?ccid=7&cfid=&scid=",
+        "language": "zh-CN"
+      }
+    },
+    {
+      "id": "v5-aputure-b7c-8-kit",
+      "brand": "Aputure",
+      "name": "Aputure Accent B7c 8-Light Kit",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "APUTURE LED 爱图仕B7C 8件套（爱图仕全彩灯泡套装）"
+      ],
+      "verified": false,
+      "officialProduct": {
+        "model": "Accent B7c 8-Light Kit",
+        "source": "https://aputure.com/en-US/products/accent-b7c-8-light-kit"
+      }
+    },
+    {
+      "id": "v5-aputure-mc-12-kit",
+      "brand": "Aputure",
+      "name": "Aputure MC 12-Light Production Kit",
+      "category": "灯光器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "APUTURE LED 爱图仕MC 12件套"
+      ],
+      "verified": false,
+      "officialProduct": {
+        "model": "MC 12-Light Production Kit",
+        "source": "https://aputure.com/en-US/collections/mini"
+      }
+    },
+    {
+      "id": "v5-tiffen-label-1",
+      "brand": "Tiffen",
+      "name": "TIFFEN 白拉丝",
+      "category": "滤镜",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN 白拉丝"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-tiffen-label-2",
+      "brand": "Tiffen",
+      "name": "TIFFEN 橙色镜",
+      "category": "滤镜",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN 橙色镜"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-tiffen-label-3",
+      "brand": "Tiffen",
+      "name": "TIFFEN稻草",
+      "category": "滤镜",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN稻草"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-tiffen-label-4",
+      "brand": "Tiffen",
+      "name": "TIFFEN放大镜",
+      "category": "滤镜",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN放大镜"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-tiffen-label-5",
+      "brand": "Tiffen",
+      "name": "TIFFEN蓝渐变",
+      "category": "滤镜",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN蓝渐变"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-tiffen-label-6",
+      "brand": "Tiffen",
+      "name": "TIFFEN山羊皮",
+      "category": "摄影机附件",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN山羊皮"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-tiffen-label-7",
+      "brand": "Tiffen",
+      "name": "TIFFEN珊瑚镜",
+      "category": "滤镜",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN珊瑚镜"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-tiffen-label-8",
+      "brand": "Tiffen",
+      "name": "TIFFEN数码柔",
+      "category": "滤镜",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN数码柔"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-tiffen-label-9",
+      "brand": "Tiffen",
+      "name": "TIFFEN星光镜",
+      "category": "滤镜",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN星光镜"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-tiffen-label-10",
+      "brand": "Tiffen",
+      "name": "TIFFEN烟草",
+      "category": "滤镜",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "TIFFEN烟草"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-movmax-slider-label",
+      "brand": "MOVMAX",
+      "name": "MOVMAX 滑轨",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "MOVMAX滑轨"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-movmax-suction-label",
+      "brand": "MOVMAX",
+      "name": "MOVMAX 吸盘",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "MOVMAX吸盘"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-crane-stock-1",
+      "brand": "Filmotechnic",
+      "name": "FILMOTECHNIC 18 Stretch Rocker T6碳纤维伸缩炮",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "FILMOTECHNIC 18 Stretch Rocker T6碳纤维伸缩炮"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-crane-stock-2",
+      "brand": "Filmotechnic",
+      "name": "FILMOTECHNIC 22 Stretch Rocker T8碳纤维伸缩炮",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "FILMOTECHNIC 22 Stretch Rocker T8碳纤维伸缩炮"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-crane-stock-3",
+      "brand": "MovieBird",
+      "name": "MOVIE BIRD 12 Stretch Rocker MB12尺伸缩炮",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "MOVIE BIRD 12 Stretch Rocker MB12尺伸缩炮"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-crane-stock-4",
+      "brand": "MovieBird",
+      "name": "MOVIE BIRD 17 Stretch Rocker MB17尺伸缩炮",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "MOVIE BIRD 17 Stretch Rocker MB17尺伸缩炮"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-crane-stock-5",
+      "brand": "MovieBird",
+      "name": "MOVIE BIRD 24 Stretch Rocker MB24尺伸缩炮",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "MOVIE BIRD 24 Stretch Rocker MB24尺伸缩炮"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-crane-stock-6",
+      "brand": "MovieBird",
+      "name": "MOVIE BIRD 45 Stretch Rocker MB45尺伸缩炮",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "MOVIE BIRD 45 Stretch Rocker MB45尺伸缩炮"
+      ],
+      "verified": false
+    },
+    {
+      "id": "v5-crane-stock-7",
+      "brand": "MovieBird",
+      "name": "MOVIE BIRD 50 Stretch Rocker MB50尺伸缩炮",
+      "category": "移动器材",
+      "subcategory": "",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "MOVIE BIRD 50 Stretch Rocker MB50尺伸缩炮"
+      ],
+      "verified": false
+    }
+  ]
+}
