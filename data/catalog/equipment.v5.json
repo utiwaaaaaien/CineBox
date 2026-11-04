@@ -57285,6 +57285,780 @@
       "identityBasis": "generic-function"
     },
     {
+      "id": "v61-teris-ts-n6",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS-N6",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 N6",
+        "TERIS N6",
+        "TERIS TS-N6"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS-N6",
+      "namingStatus": "pending",
+      "references": [
+        {
+          "url": "https://rtv.ntua.edu.tw/manager_admin/new_file_download.php?Pact=FileDownLoad&Pval=358876",
+          "scope": "institution",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [
+        "身份有实际使用单位或经销资料依据，未获得可对应该版本的原厂型号参数；不能套用PLUS或TS系列参数。"
+      ],
+      "englishName": "TERIS TS-N6",
+      "published": true,
+      "releaseReason": "具体型号有中文渠道或使用单位记录；原厂参数待核验，不代表本地租赁库存",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "specific-inventory",
+      "finalReviewChanges": [
+        {
+          "previousName": "TERIS TS-N6",
+          "name": "图瑞斯 TERIS TS-N6",
+          "previousEnglishName": "TERIS TS-N6",
+          "englishName": "TERIS TS-N6",
+          "reason": "用户要求补充国内常用N6/V12；保留记录身份与版本，官方证据不足时可选但不标已核验。",
+          "source": "https://rtv.ntua.edu.tw/manager_admin/new_file_download.php?Pact=FileDownLoad&Pval=358876"
+        }
+      ]
+    },
+    {
+      "id": "v61-teris-ts-n6-plus",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS-N6 PLUS",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 N6 PLUS 云台",
+        "TERIS TS-N6 PLUS"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS-N6 PLUS",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS-N6 PLUS",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts-n6al-plus",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS-N6AL PLUS",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS-N6AL PLUS",
+        "TERIS TS-N6AL PLUS"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS-N6AL PLUS",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS-N6AL PLUS",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts-n6cf-plus",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS-N6CF PLUS",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS-N6CF PLUS",
+        "TERIS TS-N6CF PLUS"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS-N6CF PLUS",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS-N6CF PLUS",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts-n6cf-q-plus",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS-N6CF-Q PLUS",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS-N6CF-Q PLUS",
+        "TERIS TS-N6CF-Q PLUS"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS-N6CF-Q PLUS",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS-N6CF-Q PLUS",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts100",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS100",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS100 云台",
+        "TERIS TS100"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS100",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS100",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts100al",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS100AL",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS100AL",
+        "TERIS TS100AL"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS100AL",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS100AL",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts100cf",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS100CF",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS100CF",
+        "TERIS TS100CF"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS100CF",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS100CF",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts100cf-q",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS100CF-Q",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS100CF-Q",
+        "TERIS TS100CF-Q"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS100CF-Q",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS100CF-Q",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts120",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS120",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS120 云台",
+        "TERIS TS120"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS120",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS120",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts120al",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS120AL",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS120AL",
+        "TERIS TS120AL"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS120AL",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS120AL",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts120cf",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS120CF",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS120CF",
+        "TERIS TS120CF"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS120CF",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS120CF",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts120cf-q",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS120CF-Q",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS120CF-Q",
+        "TERIS TS120CF-Q"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS120CF-Q",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS120CF-Q",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts150",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS150",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS150 云台",
+        "TERIS TS150"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS150",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS150",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts150al",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS150AL",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS150AL",
+        "TERIS TS150AL"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS150AL",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS150AL",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts150cf",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS150CF",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS150CF",
+        "TERIS TS150CF"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS150CF",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS150CF",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts150cf-q",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS150CF-Q",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS150CF-Q",
+        "TERIS TS150CF-Q"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS150CF-Q",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS150CF-Q",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts300cf",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS300CF",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS300CF",
+        "TERIS TS300CF"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS300CF",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS300CF",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-ts350cf",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TS350CF",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 TS350CF",
+        "TERIS TS350CF"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TS350CF",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TERIS TS350CF",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-teris-tx-v12",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TX-V12",
+      "category": "移动器材",
+      "subcategory": "云台与脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 V12",
+        "TERIS V12",
+        "TERIS TX-V12"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TX-V12",
+      "namingStatus": "pending",
+      "references": [
+        {
+          "url": "https://rtv.ntua.edu.tw/manager_admin/new_file_download.php?Pact=FileDownLoad&Pval=358876",
+          "scope": "institution",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [
+        "身份有实际使用单位或经销资料依据，未获得可对应该版本的原厂型号参数；不能套用PLUS或TS系列参数。"
+      ],
+      "englishName": "TERIS TX-V12",
+      "published": true,
+      "releaseReason": "具体型号有中文渠道或使用单位记录；原厂参数待核验，不代表本地租赁库存",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "specific-inventory",
+      "finalReviewChanges": [
+        {
+          "previousName": "TERIS TX-V12",
+          "name": "图瑞斯 TERIS TX-V12",
+          "previousEnglishName": "TERIS TX-V12",
+          "englishName": "TERIS TX-V12",
+          "reason": "用户要求补充国内常用N6/V12；保留记录身份与版本，官方证据不足时可选但不标已核验。",
+          "source": "https://rtv.ntua.edu.tw/manager_admin/new_file_download.php?Pact=FileDownLoad&Pval=358876"
+        }
+      ]
+    },
+    {
+      "id": "v61-teris-tx-v12-plus",
+      "brand": "TERIS",
+      "name": "图瑞斯 TERIS TX-V12 PLUS",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "图瑞斯 V12 PLUS 云台",
+        "TERIS V12 PLUS",
+        "TERIS TX-V12 PLUS"
+      ],
+      "verified": false,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "图瑞斯",
+      "brandEn": "TERIS",
+      "series": "",
+      "model": "TX-V12 PLUS",
+      "namingStatus": "pending",
+      "references": [
+        {
+          "url": "https://www.bjfqy.com/product/8553.html",
+          "scope": "supplier",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [
+        "身份有实际使用单位或经销资料依据，未获得可对应该版本的原厂型号参数；不能套用PLUS或TS系列参数。"
+      ],
+      "englishName": "TERIS TX-V12 PLUS",
+      "published": true,
+      "releaseReason": "具体型号有中文渠道或使用单位记录；原厂参数待核验，不代表本地租赁库存",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "specific-inventory",
+      "finalReviewChanges": [
+        {
+          "previousName": "TERIS TX-V12 PLUS",
+          "name": "图瑞斯 TERIS TX-V12 PLUS",
+          "previousEnglishName": "TERIS TX-V12 PLUS",
+          "englishName": "TERIS TX-V12 PLUS",
+          "reason": "用户要求补充国内常用N6/V12；保留记录身份与版本，官方证据不足时可选但不标已核验。",
+          "source": "https://www.bjfqy.com/product/8553.html"
+        }
+      ]
+    },
+    {
       "id": "grip-wonderland-handheld",
       "name": "万德兰 手持小斯",
       "brand": "万德兰",
@@ -58540,6 +59314,40 @@
       "identityBasis": "specific-inventory"
     },
     {
+      "id": "v61-gfm-gf-8",
+      "brand": "GFM",
+      "name": "GFM GF-8",
+      "category": "移动器材",
+      "subcategory": "模块化摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "GF8模块化摇臂"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "GFM",
+      "series": "",
+      "model": "GF-8",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.gripfactory.com/products/cranes/gf-8",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "GFM GF-8",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
       "id": "eq-gfm-gfm-gf-8-xten-11m-gf-8-移动器材",
       "name": "GFM GF-8 Xten 11M",
       "brand": "GFM",
@@ -58575,6 +59383,40 @@
           "reason": "规范名将品牌名和库存型号重复拼接；只去掉尾部重复词，保留型号、臂长和现场简称，不改变核验状态。"
         }
       ]
+    },
+    {
+      "id": "v61-gfm-gf-9",
+      "brand": "GFM",
+      "name": "GFM GF-9",
+      "category": "移动器材",
+      "subcategory": "模块化摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "GF9模块化摇臂"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "GFM",
+      "series": "",
+      "model": "GF-9",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.gripfactory.com/products/cranes/gf-9",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "GFM GF-9",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
     },
     {
       "id": "eq-gfm-gf-baby-jib-arm-baby-移动器材",
@@ -58798,6 +59640,41 @@
       "releaseReason": "库存含具体型号或可用规格，保留身份；未确认参数不补造",
       "reviewedAt": "2026-10-07",
       "identityBasis": "specific-inventory"
+    },
+    {
+      "id": "v61-gfm-gf-tripod",
+      "brand": "GFM",
+      "name": "GFM GF-Tripod GF-9200",
+      "category": "移动器材",
+      "subcategory": "重型支撑脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "GFM GF9200",
+        "GFM 重型三脚架"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "GFM",
+      "series": "",
+      "model": "GF-Tripod GF-9200",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.gripfactory.com/products/accessories/gf-9200",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "GFM GF-Tripod GF-9200",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
     },
     {
       "id": "eq-gfm-gf8炮-移动器材",
@@ -60528,6 +61405,251 @@
       "identityBasis": "specific-inventory"
     },
     {
+      "id": "v61-sachtler-aktiv10",
+      "brand": "Sachtler",
+      "name": "Sachtler aktiv10",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "沙雀 aktiv10",
+        "萨拿 aktiv10"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Sachtler",
+      "series": "",
+      "model": "aktiv10",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sachtler.com/en/product/aktiv10/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sachtler aktiv10",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-sachtler-aktiv8",
+      "brand": "Sachtler",
+      "name": "Sachtler aktiv8",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "沙雀 aktiv8",
+        "萨拿 aktiv8"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Sachtler",
+      "series": "",
+      "model": "aktiv8",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sachtler.com/en/product/aktiv8/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sachtler aktiv8",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-sachtler-flowtech100-ms",
+      "brand": "Sachtler",
+      "name": "Sachtler flowtech 100 MS",
+      "category": "移动器材",
+      "subcategory": "脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "沙雀 flowtech100",
+        "萨拿 flowtech100"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Sachtler",
+      "series": "",
+      "model": "flowtech 100 MS",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sachtler.com/en/product/tripod-flowtech-100-ms/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sachtler flowtech 100 MS",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-sachtler-flowtech75-aktiv-ms",
+      "brand": "Sachtler",
+      "name": "Sachtler flowtech 75 aktiv MS",
+      "category": "移动器材",
+      "subcategory": "脚架",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "沙雀 flowtech75",
+        "萨拿 flowtech75"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Sachtler",
+      "series": "",
+      "model": "flowtech 75 aktiv MS",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sachtler.com/en/product/tripod-flowtech-75-aktiv-ms/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sachtler flowtech 75 aktiv MS",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-sachtler-fsb-8-mk-ii",
+      "brand": "Sachtler",
+      "name": "Sachtler FSB 8 Mk II",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "沙雀 FSB8 二代",
+        "萨拿 FSB8 Mk II"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Sachtler",
+      "series": "",
+      "model": "FSB 8 Mk II",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sachtler.com/en/product/fsb-8-mk-ii/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sachtler FSB 8 Mk II",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-sachtler-video-18-s2",
+      "brand": "Sachtler",
+      "name": "Sachtler Video 18 S2",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "沙雀 Video 18 S2",
+        "萨拿 Video 18 S2"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Sachtler",
+      "series": "",
+      "model": "Video 18 S2",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sachtler.com/en/product/video-18-s2/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sachtler Video 18 S2",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-sachtler-video-20-s1",
+      "brand": "Sachtler",
+      "name": "Sachtler Video 20 S1",
+      "category": "移动器材",
+      "subcategory": "液压云台",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "沙雀 Video 20 S1",
+        "萨拿 Video 20 S1"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Sachtler",
+      "series": "",
+      "model": "Video 20 S1",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sachtler.com/en/product/video-20-s1/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sachtler Video 20 S1",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
       "id": "eq-scorpio-super-scorpio-crane-10-移动器材",
       "name": "Scorpio 10′ Telescopic Crane",
       "brand": "Scorpio",
@@ -60578,6 +61700,77 @@
           "source": "https://scorpio.servicevision.es/en/sales/cranes-and-heads/"
         }
       ]
+    },
+    {
+      "id": "v61-scorpio-17",
+      "brand": "Scorpio",
+      "name": "Scorpio 17′ Telescopic Crane",
+      "category": "移动器材",
+      "subcategory": "伸缩摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "天蝎17尺",
+        "Scorpio 17"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Scorpio",
+      "series": "",
+      "model": "17′ Telescopic Crane",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-17-en/scorpio-17/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Scorpio 17′ Telescopic Crane",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-scorpio-23l",
+      "brand": "Scorpio",
+      "name": "Scorpio 23′ L Telescopic Crane",
+      "category": "移动器材",
+      "subcategory": "伸缩摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "天蝎23L",
+        "天蝎23尺轻型",
+        "Scorpio 23L"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Scorpio",
+      "series": "",
+      "model": "23′ L Telescopic Crane",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-23l-en/scorpio-23l-copia/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Scorpio 23′ L Telescopic Crane",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
     },
     {
       "id": "eq-scorpio-super-scorpio-crane-23-移动器材",
@@ -60659,6 +61852,112 @@
       "identityBasis": "specific-inventory"
     },
     {
+      "id": "v61-scorpio-30-plus-7",
+      "brand": "Scorpio",
+      "name": "Scorpio 30′+7′ Telescopic Crane",
+      "category": "移动器材",
+      "subcategory": "伸缩摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "天蝎30+7",
+        "天蝎37尺",
+        "Scorpio 30+7"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Scorpio",
+      "series": "",
+      "model": "30′+7′ Telescopic Crane",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-307-en/scorpio-307/?attachment_id=2863&download_file=kld5rsi1fvhec",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Scorpio 30′+7′ Telescopic Crane",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-scorpio-35",
+      "brand": "Scorpio",
+      "name": "Scorpio 35′ Telescopic Crane",
+      "category": "移动器材",
+      "subcategory": "伸缩摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "天蝎35尺",
+        "Scorpio 35"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Scorpio",
+      "series": "",
+      "model": "35′ Telescopic Crane",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-35-en/scorpio-35/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Scorpio 35′ Telescopic Crane",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-scorpio-38",
+      "brand": "Scorpio",
+      "name": "Scorpio 38′ Telescopic Crane",
+      "category": "移动器材",
+      "subcategory": "伸缩摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "天蝎38尺",
+        "Scorpio 38"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Scorpio",
+      "series": "",
+      "model": "38′ Telescopic Crane",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/gruas-telescopicas/scorpio-38/scorpio-38/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Scorpio 38′ Telescopic Crane",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
       "id": "eq-scorpio-super-scorpio-crane-45-移动器材",
       "name": "Scorpio 45′ Telescopic Crane",
       "brand": "Scorpio",
@@ -60709,6 +62008,111 @@
           "source": "https://scorpio.servicevision.es/en/sales/cranes-and-heads/"
         }
       ]
+    },
+    {
+      "id": "v61-scorpio-55",
+      "brand": "Scorpio",
+      "name": "Scorpio 55′ Telescopic Crane",
+      "category": "移动器材",
+      "subcategory": "伸缩摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "天蝎55尺",
+        "Scorpio 55"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Scorpio",
+      "series": "",
+      "model": "55′ Telescopic Crane",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/gruas-telescopicas/scorpio-55/scorpio-55/?attachment_id=11091&download_file=zupyx3h7juxci",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Scorpio 55′ Telescopic Crane",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-scorpio-78",
+      "brand": "Scorpio",
+      "name": "Scorpio 78′ Telescopic Crane",
+      "category": "移动器材",
+      "subcategory": "伸缩摇臂",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "天蝎78尺",
+        "Scorpio 78"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Scorpio",
+      "series": "",
+      "model": "78′ Telescopic Crane",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-78-3/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Scorpio 78′ Telescopic Crane",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-scorpio-mini-stabilized-v",
+      "brand": "Scorpio",
+      "name": "Scorpio Mini Stabilized V Head",
+      "category": "移动器材",
+      "subcategory": "稳定遥控头",
+      "unit": "台",
+      "costTier": 2,
+      "aliases": [
+        "Mini Scorpio Stabilized V Head",
+        "天蝎 Mini V 稳定头"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "",
+      "brandEn": "Scorpio",
+      "series": "",
+      "model": "Mini Stabilized V Head",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/scorpio-heads/cabezas-estabilizadas/mini-scorpio-stabilized-v-head/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Scorpio Mini Stabilized V Head",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
     },
     {
       "id": "eq-scorpio-scorpio-remote-mini-head-移动器材",
@@ -73473,6 +74877,598 @@
       "catalogDecision": "retain-user-approved-label"
     },
     {
+      "id": "v61-audio-dji-mic2-2tx-kit",
+      "brand": "DJI",
+      "name": "大疆 DJI Mic 2 (2 TX + 1 RX + Charging Case)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "DJI Mic 2 (2 TX + 1 RX + Charging Case)",
+        "大疆麦克风二代",
+        "大疆 Mic 2 (2 TX + 1 RX + Charging Case)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "大疆",
+      "brandEn": "DJI",
+      "series": "",
+      "model": "Mic 2 (2 TX + 1 RX + Charging Case)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://store.dji.com/cn/product/dji-ronin-4d",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://store.dji.com/cn/product/dji-mic-2",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "DJI Mic 2 (2 TX + 1 RX + Charging Case)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-dji-mic3-1tx-kit",
+      "brand": "DJI",
+      "name": "大疆 DJI Mic 3 (1 TX + 1 RX)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "DJI Mic 3 (1 TX + 1 RX)",
+        "大疆麦克风三代 Mic 3 一发一收",
+        "大疆 Mic 3 (1 TX + 1 RX)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "大疆",
+      "brandEn": "DJI",
+      "series": "",
+      "model": "Mic 3 (1 TX + 1 RX)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://store.dji.com/cn/product/dji-ronin-4d",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://store.dji.com/cn/product/dji-mic-3",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "DJI Mic 3 (1 TX + 1 RX)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-dji-mic3-2tx-kit",
+      "brand": "DJI",
+      "name": "大疆 DJI Mic 3 (2 TX + 1 RX + Charging Case)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "DJI Mic 3 (2 TX + 1 RX + Charging Case)",
+        "大疆麦克风三代 Mic 3 两发一收（含充电盒）",
+        "大疆 Mic 3 (2 TX + 1 RX + Charging Case)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "大疆",
+      "brandEn": "DJI",
+      "series": "",
+      "model": "Mic 3 (2 TX + 1 RX + Charging Case)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://store.dji.com/cn/product/dji-ronin-4d",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://store.dji.com/cn/product/dji-mic-3",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "DJI Mic 3 (2 TX + 1 RX + Charging Case)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-dji-mic3-transmitter",
+      "brand": "DJI",
+      "name": "大疆 DJI Mic 3 Transmitter",
+      "category": "录音器材",
+      "subcategory": "无线麦克风发射器",
+      "unit": "个",
+      "costTier": 1,
+      "aliases": [
+        "DJI Mic 3 Transmitter",
+        "大疆麦克风三代 Mic 3 单发射器",
+        "大疆 Mic 3 Transmitter"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "大疆",
+      "brandEn": "DJI",
+      "series": "",
+      "model": "Mic 3 Transmitter",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://store.dji.com/cn/product/dji-ronin-4d",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://store.dji.com/cn/product/dji-mic-3",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "DJI Mic 3 Transmitter",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-dji-mic-mini2-mobile-2tx-kit",
+      "brand": "DJI",
+      "name": "大疆 DJI Mic Mini 2 (2 TX + 1 Mobile RX + Charging Case)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "DJI Mic Mini 2 (2 TX + 1 Mobile RX + Charging Case)",
+        "大疆 Mic Mini 2 手机版",
+        "大疆 Mic Mini 2 (2 TX + 1 Mobile RX + Charging Case)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "大疆",
+      "brandEn": "DJI",
+      "series": "",
+      "model": "Mic Mini 2 (2 TX + 1 Mobile RX + Charging Case)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://store.dji.com/cn/product/dji-ronin-4d",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "DJI Mic Mini 2 (2 TX + 1 Mobile RX + Charging Case)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-dji-mic-mini2-2tx-kit",
+      "brand": "DJI",
+      "name": "大疆 DJI Mic Mini 2 (2 TX + 1 RX + Charging Case)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "DJI Mic Mini 2 (2 TX + 1 RX + Charging Case)",
+        "大疆 Mic Mini 2 标准版",
+        "大疆 Mic Mini 2 (2 TX + 1 RX + Charging Case)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "大疆",
+      "brandEn": "DJI",
+      "series": "",
+      "model": "Mic Mini 2 (2 TX + 1 RX + Charging Case)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://store.dji.com/cn/product/dji-ronin-4d",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "DJI Mic Mini 2 (2 TX + 1 RX + Charging Case)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-dji-mic-mini2s-2tx-kit",
+      "brand": "DJI",
+      "name": "大疆 DJI Mic Mini 2S (2 TX + 1 RX + Charging Case)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "DJI Mic Mini 2S (2 TX + 1 RX + Charging Case)",
+        "大疆 Mic Mini 2S",
+        "大疆 Mic Mini 2S (2 TX + 1 RX + Charging Case)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "大疆",
+      "brandEn": "DJI",
+      "series": "",
+      "model": "Mic Mini 2S (2 TX + 1 RX + Charging Case)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://store.dji.com/cn/product/dji-ronin-4d",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "DJI Mic Mini 2S (2 TX + 1 RX + Charging Case)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-dji-mic-mini2s-transmitter",
+      "brand": "DJI",
+      "name": "大疆 DJI Mic Mini 2S Transmitter",
+      "category": "录音器材",
+      "subcategory": "无线麦克风发射器",
+      "unit": "个",
+      "costTier": 1,
+      "aliases": [
+        "DJI Mic Mini 2S Transmitter",
+        "大疆 Mic Mini 2S",
+        "大疆 Mic Mini 2S Transmitter"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "大疆",
+      "brandEn": "DJI",
+      "series": "",
+      "model": "Mic Mini 2S Transmitter",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://store.dji.com/cn/product/dji-ronin-4d",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "DJI Mic Mini 2S Transmitter",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-rode-ntg5",
+      "brand": "RØDE",
+      "name": "罗德 RØDE NTG5",
+      "category": "录音器材",
+      "subcategory": "枪型麦克风",
+      "unit": "支",
+      "costTier": 1,
+      "aliases": [
+        "罗德 NTG5",
+        "RODE NTG-5",
+        "RODE NTG5",
+        "RØDE NTG5"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "罗德",
+      "brandEn": "RØDE",
+      "series": "",
+      "model": "NTG5",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://edge.rode.com/pdf/page/1857/modules/4396/ntg5_datasheet.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "RØDE NTG5",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-rode-videomic-ntg",
+      "brand": "RØDE",
+      "name": "罗德 RØDE VideoMic NTG",
+      "category": "录音器材",
+      "subcategory": "机上枪型麦克风",
+      "unit": "支",
+      "costTier": 1,
+      "aliases": [
+        "罗德 VideoMic NTG",
+        "RODE Video Mic NTG",
+        "RODE VideoMic NTG",
+        "RØDE VideoMic NTG"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "罗德",
+      "brandEn": "RØDE",
+      "series": "",
+      "model": "VideoMic NTG",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://edge.rode.com/pdf/page/127/modules/8/videomicntg_datasheet.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "RØDE VideoMic NTG",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-rode-wireless-go-gen3",
+      "brand": "RØDE",
+      "name": "罗德 RØDE Wireless GO (Gen 3, 2 TX + 1 RX)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "罗德无线GO三代",
+        "RODE Wireless GO III",
+        "RODE Wireless GO (Gen 3, 2 TX + 1 RX)",
+        "RØDE Wireless GO (Gen 3, 2 TX + 1 RX)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "罗德",
+      "brandEn": "RØDE",
+      "series": "",
+      "model": "Wireless GO (Gen 3, 2 TX + 1 RX)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://rode.com/en-us/products/wireless-go-gen-3",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "RØDE Wireless GO (Gen 3, 2 TX + 1 RX)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-rode-wireless-micro-lightning",
+      "brand": "RØDE",
+      "name": "罗德 RØDE Wireless Micro (Lightning, 2 TX + 1 RX)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "罗德 Wireless Micro Lightning",
+        "RODE Wireless Micro (Lightning, 2 TX + 1 RX)",
+        "RØDE Wireless Micro (Lightning, 2 TX + 1 RX)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "罗德",
+      "brandEn": "RØDE",
+      "series": "",
+      "model": "Wireless Micro (Lightning, 2 TX + 1 RX)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://rode.com/en-us/products/wireless-micro",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "RØDE Wireless Micro (Lightning, 2 TX + 1 RX)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-rode-wireless-micro-usb-c",
+      "brand": "RØDE",
+      "name": "罗德 RØDE Wireless Micro (USB-C, 2 TX + 1 RX)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "罗德 Wireless Micro USB-C",
+        "RODE Wireless Micro (USB-C, 2 TX + 1 RX)",
+        "RØDE Wireless Micro (USB-C, 2 TX + 1 RX)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "罗德",
+      "brandEn": "RØDE",
+      "series": "",
+      "model": "Wireless Micro (USB-C, 2 TX + 1 RX)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://rode.com/en-us/products/wireless-micro",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "RØDE Wireless Micro (USB-C, 2 TX + 1 RX)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-rode-wireless-micro-camera-kit",
+      "brand": "RØDE",
+      "name": "罗德 RØDE Wireless Micro Camera Kit",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "罗德 Wireless Micro 相机套装",
+        "RODE Wireless Micro Camera Kit",
+        "RØDE Wireless Micro Camera Kit"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "罗德",
+      "brandEn": "RØDE",
+      "series": "",
+      "model": "Wireless Micro Camera Kit",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://help.rode.com/hc/en-us/articles/14178923861903-Differences-Between-the-Wireless-Micro-and-the-Wireless-Micro-Camera-Kit",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "RØDE Wireless Micro Camera Kit",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-rode-wireless-pro",
+      "brand": "RØDE",
+      "name": "罗德 RØDE Wireless PRO (2 TX + 1 RX)",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "罗德 Wireless PRO",
+        "RODE WIRELESS PRO",
+        "RODE Wireless PRO (2 TX + 1 RX)",
+        "RØDE Wireless PRO (2 TX + 1 RX)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "罗德",
+      "brandEn": "RØDE",
+      "series": "",
+      "model": "Wireless PRO (2 TX + 1 RX)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://rode.com/en-us/products/wireless-pro",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "RØDE Wireless PRO (2 TX + 1 RX)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
       "id": "eq-通用-罗兰r44录音机-录音器材",
       "name": "罗兰 Roland R-44",
       "brand": "Roland",
@@ -73510,6 +75506,220 @@
       "published": true,
       "releaseReason": "已按厂商型号和官方规格整理",
       "reviewedAt": "2026-10-07",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sennheiser-ewdp-eng-s4-7",
+      "brand": "Sennheiser",
+      "name": "森海塞尔 Sennheiser EW-DP ENG SET (S4-7)",
+      "category": "录音器材",
+      "subcategory": "无线领夹套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "森海塞尔 EW-DP ENG SET (S4-7)",
+        "Sennheiser EW-DP ENG SET (S4-7)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "森海塞尔",
+      "brandEn": "Sennheiser",
+      "series": "",
+      "model": "EW-DP ENG SET (S4-7)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://docs.cloud.sennheiser.com/en-us/ew-d/ew-d/productinfo-ew-dp-set-eng.html",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sennheiser EW-DP ENG SET (S4-7)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sennheiser-ewdp-me2-s4-7",
+      "brand": "Sennheiser",
+      "name": "森海塞尔 Sennheiser EW-DP ME2 SET (S4-7)",
+      "category": "录音器材",
+      "subcategory": "无线领夹套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "森海塞尔 EW-DP ME2 SET (S4-7)",
+        "Sennheiser EW-DP ME2 SET (S4-7)"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "森海塞尔",
+      "brandEn": "Sennheiser",
+      "series": "",
+      "model": "EW-DP ME2 SET (S4-7)",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://docs.cloud.sennheiser.com/en-us/ew-d/ew-d/productinfo-ew-dp-set-me2.html",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sennheiser EW-DP ME2 SET (S4-7)",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sennheiser-mke600",
+      "brand": "Sennheiser",
+      "name": "森海塞尔 Sennheiser MKE 600",
+      "category": "录音器材",
+      "subcategory": "枪型麦克风",
+      "unit": "支",
+      "costTier": 1,
+      "aliases": [
+        "森海塞尔 MKE600",
+        "森海塞尔 MKE 600",
+        "Sennheiser MKE 600"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "森海塞尔",
+      "brandEn": "Sennheiser",
+      "series": "",
+      "model": "MKE 600",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sennheiser.com/globalassets/digizuite/41788-en-sp_1302_v1.0_mke_600_product_specification_en.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sennheiser MKE 600",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sennheiser-mkh8060",
+      "brand": "Sennheiser",
+      "name": "森海塞尔 Sennheiser MKH 8060",
+      "category": "录音器材",
+      "subcategory": "枪型麦克风",
+      "unit": "支",
+      "costTier": 1,
+      "aliases": [
+        "森海塞尔 MKH8060",
+        "森海塞尔 MKH 8060",
+        "Sennheiser MKH 8060"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "森海塞尔",
+      "brandEn": "Sennheiser",
+      "series": "",
+      "model": "MKH 8060",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sennheiser.com/globalassets/digizuite/41838-en-sp_1345_v1.0_mkh_8060_product_specification_en.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sennheiser MKH 8060",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sennheiser-profile-wireless-1ch",
+      "brand": "Sennheiser",
+      "name": "森海塞尔 Sennheiser Profile Wireless 1-Channel Set",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "森海塞尔 Profile Wireless 1通道",
+        "森海塞尔 Profile Wireless 1-Channel Set",
+        "Sennheiser Profile Wireless 1-Channel Set"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "森海塞尔",
+      "brandEn": "Sennheiser",
+      "series": "",
+      "model": "Profile Wireless 1-Channel Set",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sennheiser.com/en-us/catalog/products/drahtlossysteme/profile-wireless-1-channel-set/profile-wireless-1-channel-set-700278",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sennheiser Profile Wireless 1-Channel Set",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sennheiser-profile-wireless-2ch",
+      "brand": "Sennheiser",
+      "name": "森海塞尔 Sennheiser Profile Wireless 2-Channel Set",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "森海塞尔 Profile Wireless 2通道",
+        "森海塞尔 Profile Wireless 2-Channel Set",
+        "Sennheiser Profile Wireless 2-Channel Set"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "森海塞尔",
+      "brandEn": "Sennheiser",
+      "series": "",
+      "model": "Profile Wireless 2-Channel Set",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sennheiser.com/en-au/catalog/products/wireless-systems/profile-wireless-2-channel-set/profile-wireless-2-channel-set-700266",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "Sennheiser Profile Wireless 2-Channel Set",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
       "identityBasis": "official-model"
     },
     {
@@ -73614,6 +75824,212 @@
       "catalogDecision": "retain-user-approved-label"
     },
     {
+      "id": "v61-audio-sony-ecm-l1",
+      "brand": "SONY",
+      "name": "索尼 SONY ECM-L1",
+      "category": "录音器材",
+      "subcategory": "有线领夹麦克风",
+      "unit": "支",
+      "costTier": 1,
+      "aliases": [
+        "SONY ECM-L1",
+        "索尼 ECM-L1"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "索尼",
+      "brandEn": "SONY",
+      "series": "",
+      "model": "ECM-L1",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2021/20211116-1.html",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2024/240912-1.html",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "SONY ECM-L1",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sony-ecm-m1",
+      "brand": "SONY",
+      "name": "索尼 SONY ECM-M1",
+      "category": "录音器材",
+      "subcategory": "机上枪型麦克风",
+      "unit": "支",
+      "costTier": 1,
+      "aliases": [
+        "SONY ECM-M1",
+        "索尼 ECM-M1"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "索尼",
+      "brandEn": "SONY",
+      "series": "",
+      "model": "ECM-M1",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2021/20211116-1.html",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230713-1.html",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "SONY ECM-M1",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sony-ecm-s1",
+      "brand": "SONY",
+      "name": "索尼 SONY ECM-S1",
+      "category": "录音器材",
+      "subcategory": "无线直播麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "SONY ECM-S1",
+        "索尼无线直播麦 ECM-S1",
+        "索尼 ECM-S1"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "索尼",
+      "brandEn": "SONY",
+      "series": "",
+      "model": "ECM-S1",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2021/20211116-1.html",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "SONY ECM-S1",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sony-ecm-w3",
+      "brand": "SONY",
+      "name": "索尼 SONY ECM-W3",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "SONY ECM-W3",
+        "索尼 ECM-W3"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "索尼",
+      "brandEn": "SONY",
+      "series": "",
+      "model": "ECM-W3",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2021/20211116-1.html",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "SONY ECM-W3",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sony-ecm-w3s",
+      "brand": "SONY",
+      "name": "索尼 SONY ECM-W3S",
+      "category": "录音器材",
+      "subcategory": "无线麦克风套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "SONY ECM-W3S",
+        "索尼 ECM-W3S"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "索尼",
+      "brandEn": "SONY",
+      "series": "",
+      "model": "ECM-W3S",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2021/20211116-1.html",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "SONY ECM-W3S",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
+      "identityBasis": "official-model"
+    },
+    {
       "id": "eq-sony-sony-uwp-d11-监看",
       "name": "索尼 SONY UWP-D11",
       "brand": "SONY",
@@ -73650,6 +76066,49 @@
       "published": true,
       "releaseReason": "已按厂商型号和官方规格整理",
       "reviewedAt": "2026-10-07",
+      "identityBasis": "official-model"
+    },
+    {
+      "id": "v61-audio-sony-uwp-d21",
+      "brand": "SONY",
+      "name": "索尼 SONY UWP-D21",
+      "category": "录音器材",
+      "subcategory": "无线领夹套装",
+      "unit": "套",
+      "costTier": 1,
+      "aliases": [
+        "SONY UWP-D21",
+        "索尼 UWP D21",
+        "索尼小蜜蜂 D21",
+        "索尼 UWP-D21"
+      ],
+      "verified": true,
+      "inventoryAvailability": "unconfirmed",
+      "productStage": "released",
+      "brandZh": "索尼",
+      "brandEn": "SONY",
+      "series": "",
+      "model": "UWP-D21",
+      "namingStatus": "official-model",
+      "references": [
+        {
+          "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2021/20211116-1.html",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        },
+        {
+          "url": "https://www.sonystyle.com.cn/professional/products/audio/professional-audio/microphones/wireless-audio/uwp-d-wireless-series/broadcastaudiouwpdseriesmicpackages/uwp-d21.html",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-04"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "SONY UWP-D21",
+      "published": true,
+      "releaseReason": "已按厂商型号和官方规格整理",
+      "reviewedAt": "2026-11-04",
       "identityBasis": "official-model"
     },
     {

@@ -27,3 +27,9 @@ test("representative equipment is classified by real production function", () =>
   assert.equal(classifyEquipment(byId("grip-dolly")).role, "dolly");
   assert.equal(classifyEquipment(byId("grip-track")).role, "track");
 });
+
+test('support legs and sliders are not reclassified by their brand or a generic track subcategory', () => {
+  const fixture = (name,subcategory) => ({id:'test',name,subcategory,brand:'TERIS',category:'移动器材',aliases:[]});
+  assert.equal(classifyEquipment(fixture('TERIS 碳纤维脚架','脚架')).role,'tripod-legs');
+  assert.equal(classifyEquipment(fixture('GFM GF-120cm slider','轨道')).role,'slider');
+});

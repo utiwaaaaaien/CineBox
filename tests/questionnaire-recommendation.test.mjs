@@ -85,3 +85,12 @@ test("night or high-speed work reserves a high-output fixture when lighting is i
   }, canonicalEquipment);
   assert.ok(seed.some((item) => ["light-aputure-600d-pro", "light-arri-m18"].includes(item.id)));
 });
+
+test('legacy recommendations never reintroduce unpublished or missing identities', () => {
+  const hidden = canonicalEquipment.map(item=>({...item,published:false}));
+  assert.deepEqual(buildQuestionnaireOnlySeed(questionnaire,hidden,'cam-alexa-mini'),[]);
+  const narrow = canonicalEquipment.filter(item=>item.id==='cam-sony-fx3');
+  const result = buildQuestionnaireOnlySeed(questionnaire,narrow);
+  assert.ok(result.length);
+  assert.ok(result.every(row=>row.id==='cam-sony-fx3'));
+});

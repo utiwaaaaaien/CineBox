@@ -69,3 +69,19 @@ test('undoing regeneration restores the stale-requirements notice and redo clear
   assert.equal(redo.requirementsChanged, false);
   assert.deepEqual(redo.rows, updated);
 });
+
+test('undo and redo cannot overwrite a newer specification or review decision', () => {
+  const original = [camera, lens];
+  const changed = [{ ...camera, qty: 4 }, lens];
+  const history = recordKitChange({ past: [], future: [] }, original, '数量', 'camera:qty', false, 0);
+  // A later independent resolution edit marks requirements stale at revision 1.
+  const undo = travelKitHistory(history, changed, 'undo', true, 1);
+  assert.deepEqual(undo.rows, original);
+  assert.equal(undo.requirementsChanged, true);
+  // A later explicit review at revision 2 must also survive redo.
+  const redo = travelKitHistory(undo.history, undo.rows, 'redo', false, 2);
+  assert.deepEqual(redo.rows, changed);
+  assert.equal(redo.requirementsChanged, false);
+  const separateRevision = recordKitChange(history, changed, '数量', 'camera:qty', true, 1);
+  assert.equal(separateRevision.past.length, 2);
+});

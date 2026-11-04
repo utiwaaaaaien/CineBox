@@ -1,16 +1,16 @@
 {
   "version": "V6",
   "summary": {
-    "reviewedRows": 2084,
-    "completeRows": 1283,
-    "incompleteRows": 801,
+    "reviewedRows": 2150,
+    "completeRows": 1346,
+    "incompleteRows": 804,
     "reviewStatus": {
       "identity-required": 658,
-      "source-unavailable": 143,
+      "source-unavailable": 146,
       "research-pending": 0
     },
     "seriesReferenceRows": 240,
-    "metrics": 4383,
+    "metrics": 4572,
     "categories": {
       "摄影机": {
         "total": 79,
@@ -33,16 +33,16 @@
         "complete": 37
       },
       "移动器材": {
-        "total": 309,
-        "complete": 89
+        "total": 348,
+        "complete": 125
       },
       "灯光器材": {
         "total": 399,
         "complete": 157
       },
       "录音器材": {
-        "total": 14,
-        "complete": 7
+        "total": 41,
+        "complete": 34
       },
       "其他": {
         "total": 18,
@@ -54,7 +54,8 @@
     "data/catalog/card-specs-v6-camera.json",
     "data/catalog/card-specs-v6-lenses.json",
     "data/catalog/card-specs-v6-lighting.json",
-    "data/catalog/card-specs-v6-grip.json"
+    "data/catalog/card-specs-v6-grip.json",
+    "data/catalog/card-specs-v6-audio.json"
   ],
   "nicknames": [
     {
@@ -5630,6 +5631,36 @@
       "missing": [
         "库存名称「通用 WALTER KLASSEN Sling Shot」未给出制造商和可唯一定位的产品系列，官方规格无法归属。需补充实物铭牌、原始品牌/型号、说明书或清晰接口照片。",
         "当前没有足够信息验证尺寸、承载能力或连接标准；这些数据未查证，不能按同类器材推定。"
+      ]
+    },
+    {
+      "id": "v61-teris-ts-n6",
+      "name": "图瑞斯 TERIS TS-N6",
+      "category": "移动器材",
+      "confirmedMetrics": 0,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "原厂型号或版本参数未取得；不从型号数字推测承重，不将海外TS系列、PLUS与普通款自动视为同一配置。"
+      ]
+    },
+    {
+      "id": "v61-teris-tx-v12",
+      "name": "图瑞斯 TERIS TX-V12",
+      "category": "移动器材",
+      "confirmedMetrics": 0,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "原厂型号或版本参数未取得；不从型号数字推测承重，不将海外TS系列、PLUS与普通款自动视为同一配置。"
+      ]
+    },
+    {
+      "id": "v61-teris-tx-v12-plus",
+      "name": "图瑞斯 TERIS TX-V12 PLUS",
+      "category": "移动器材",
+      "confirmedMetrics": 0,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "原厂型号或版本参数未取得；不从型号数字推测承重，不将海外TS系列、PLUS与普通款自动视为同一配置。"
       ]
     },
     {

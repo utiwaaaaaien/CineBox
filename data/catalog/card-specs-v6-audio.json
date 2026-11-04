@@ -1,0 +1,818 @@
+{
+  "rows": [
+    {
+      "id": "v61-audio-rode-wireless-pro",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "2 发射器 + 1 接收器",
+          "source": "https://help.rode.com/hc/en-us/articles/8378507412879-Wireless-Range-Comparison-Chart",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器内录",
+          "value": "32-bit 浮点；每个发射器32 GB",
+          "source": "https://rode.com/en-us/products/wireless-pro",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "同步",
+          "value": "支持时间码",
+          "source": "https://rode.com/en-us/products/wireless-pro",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "罗德 RØDE Wireless PRO 两发一收",
+        "source": "https://rode.com/en-us/products/wireless-pro",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-rode-wireless-go-gen3",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "2 发射器 + 1 接收器",
+          "source": "https://help.rode.com/hc/en-us/articles/8378507412879-Wireless-Range-Comparison-Chart",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器内录",
+          "value": "32-bit 浮点",
+          "source": "https://help.rode.com/hc/en-us/articles/8378507412879-Wireless-Range-Comparison-Chart",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传输距离",
+          "value": "最远260 m（视距）",
+          "source": "https://help.rode.com/hc/en-us/articles/8378507412879-Wireless-Range-Comparison-Chart",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "罗德 RØDE Wireless GO 第三代 两发一收",
+        "source": "https://rode.com/en-us/products/wireless-go-gen-3",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-rode-wireless-micro-usb-c",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "2 发射器 + 1 接收器",
+          "source": "https://rode.com/en-us/products/wireless-micro",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "手机接口",
+          "value": "USB-C",
+          "source": "https://rode.com/en-us/products/wireless-micro",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "续航",
+          "value": "搭配充电盒最长21小时",
+          "source": "https://rode.com/en-us/products/wireless-micro",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "罗德 RØDE Wireless Micro USB-C 两发一收",
+        "source": "https://rode.com/en-us/products/wireless-micro",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-rode-wireless-micro-lightning",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "2 发射器 + 1 接收器",
+          "source": "https://rode.com/en-us/products/wireless-micro",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "手机接口",
+          "value": "Lightning",
+          "source": "https://rode.com/en-us/products/wireless-micro",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "续航",
+          "value": "搭配充电盒最长21小时",
+          "source": "https://rode.com/en-us/products/wireless-micro",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "罗德 RØDE Wireless Micro Lightning 两发一收",
+        "source": "https://rode.com/en-us/products/wireless-micro",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-rode-wireless-micro-camera-kit",
+      "technicalSpecs": [
+        {
+          "label": "接收器组成",
+          "value": "相机接收器 + USB-C手机接收器",
+          "source": "https://help.rode.com/hc/en-us/articles/14178923861903-Differences-Between-the-Wireless-Micro-and-the-Wireless-Micro-Camera-Kit",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器数量",
+          "value": "2 个",
+          "source": "https://help.rode.com/hc/en-us/articles/14175587495311-Getting-Started-with-the-Wireless-Micro-Camera-Kit",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "频率范围",
+          "value": "20 Hz–20 kHz",
+          "source": "https://help.rode.com/hc/en-us/articles/14178923861903-Differences-Between-the-Wireless-Micro-and-the-Wireless-Micro-Camera-Kit",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "罗德 RØDE Wireless Micro Camera Kit 相机及USB-C手机套装",
+        "source": "https://help.rode.com/hc/en-us/articles/14178923861903-Differences-Between-the-Wireless-Micro-and-the-Wireless-Micro-Camera-Kit",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-rode-ntg5",
+      "technicalSpecs": [
+        {
+          "label": "指向性",
+          "value": "超心形枪型",
+          "source": "https://edge.rode.com/pdf/page/1857/modules/4396/ntg5_datasheet.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "重量",
+          "value": "76 g（麦克风本体）",
+          "source": "https://edge.rode.com/pdf/page/1857/modules/4396/ntg5_datasheet.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "供电",
+          "value": "48 V 幻象；2 mA",
+          "source": "https://edge.rode.com/pdf/page/1857/modules/4396/ntg5_datasheet.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-audio-rode-videomic-ntg",
+      "technicalSpecs": [
+        {
+          "label": "输出",
+          "value": "3.5 mm自适应 + USB-C",
+          "source": "https://edge.rode.com/pdf/page/127/modules/8/videomicntg_datasheet.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "指向性",
+          "value": "超心形",
+          "source": "https://edge.rode.com/pdf/page/127/modules/8/videomicntg_datasheet.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "续航",
+          "value": "内置锂电池，超过30小时",
+          "source": "https://edge.rode.com/pdf/page/127/modules/8/videomicntg_datasheet.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-audio-dji-mic3-2tx-kit",
+      "technicalSpecs": [
+        {
+          "label": "配置",
+          "value": "2 发射器 + 1 接收器",
+          "source": "https://store.dji.com/cn/product/dji-mic-3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "内录",
+          "value": "24-bit/32-bit 浮点双文件",
+          "source": "https://store.dji.com/cn/product/dji-mic-3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器重量",
+          "value": "约12.5 g（不含背夹和磁铁）",
+          "source": "https://store.dji.com/cn/product/dji-mic-3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "大疆 DJI Mic 3 两发一收（含充电盒）",
+        "source": "https://store.dji.com/cn/product/dji-mic-3",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-dji-mic3-1tx-kit",
+      "technicalSpecs": [
+        {
+          "label": "配置",
+          "value": "1 发射器 + 1 接收器",
+          "source": "https://store.dji.com/cn/product/dji-mic-3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "内录",
+          "value": "24-bit/32-bit 浮点双文件",
+          "source": "https://store.dji.com/cn/product/dji-mic-3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器重量",
+          "value": "约12.5 g（不含背夹和磁铁）",
+          "source": "https://store.dji.com/cn/product/dji-mic-3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "大疆 DJI Mic 3 一发一收",
+        "source": "https://store.dji.com/cn/product/dji-mic-3",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-dji-mic3-transmitter",
+      "technicalSpecs": [
+        {
+          "label": "配置",
+          "value": "单个发射器，无接收器",
+          "source": "https://store.dji.com/cn/product/dji-mic-3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "内录",
+          "value": "24-bit/32-bit 浮点双文件",
+          "source": "https://store.dji.com/cn/product/dji-mic-3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器重量",
+          "value": "约12.5 g（不含背夹和磁铁）",
+          "source": "https://store.dji.com/cn/product/dji-mic-3",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "大疆 DJI Mic 3 单发射器",
+        "source": "https://store.dji.com/cn/product/dji-mic-3",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-dji-mic2-2tx-kit",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "2 发射器 + 1 接收器 + 充电盒",
+          "source": "https://store.dji.com/cn/product/dji-mic-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器内录",
+          "value": "24-bit / 32-bit 浮点",
+          "source": "https://store.dji.com/cn/product/dji-mic-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器存储",
+          "value": "8 GB",
+          "source": "https://store.dji.com/cn/product/dji-mic-2",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "大疆 DJI Mic 2 两发一收（含充电盒）",
+        "source": "https://store.dji.com/cn/product/dji-mic-2",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-dji-mic-mini2-2tx-kit",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "2 发射器 + 1 标准接收器 + 充电盒",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器重量",
+          "value": "约11 g（不含背夹和磁铁）",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "降噪",
+          "value": "强、弱两级主动降噪",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "大疆 DJI Mic Mini 2 两发一收（含充电盒）",
+        "source": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-dji-mic-mini2-mobile-2tx-kit",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "2 发射器 + 1 手机版接收器 + 充电盒",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器重量",
+          "value": "约11 g（不含背夹和磁铁）",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "降噪",
+          "value": "强、弱两级主动降噪",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "大疆 DJI Mic Mini 2 手机版两发一收（含充电盒）",
+        "source": "https://store.dji.com/cn/product/dji-mic-mini-2?set_region=CN&vid=218901",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-dji-mic-mini2s-2tx-kit",
+      "technicalSpecs": [
+        {
+          "label": "配置",
+          "value": "2 发射器 + 1 接收器 + 充电盒",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "内录",
+          "value": "支持32-bit 浮点",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器存储",
+          "value": "约14.5 GB；最长28小时为规定模式下内录",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "大疆 DJI Mic Mini 2S 两发一收（含充电盒）",
+        "source": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-dji-mic-mini2s-transmitter",
+      "technicalSpecs": [
+        {
+          "label": "配置",
+          "value": "单个发射器，无接收器",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "内录",
+          "value": "支持32-bit 浮点",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "发射器存储",
+          "value": "约14.5 GB；最长28小时为规定模式下内录",
+          "source": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "大疆 DJI Mic Mini 2S 单发射器",
+        "source": "https://store.dji.com/cn/product/dji-mic-mini-2s?from=store_homepage",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-sony-ecm-w3",
+      "technicalSpecs": [
+        {
+          "label": "配置",
+          "value": "2 发射器 + 1 接收器",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "音频连接",
+          "value": "MI热靴数字音频 / USB-C / 3.5 mm",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "声音处理",
+          "value": "NC降噪及LC低切",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "索尼 SONY ECM-W3 一拖二",
+        "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-sony-ecm-w3s",
+      "technicalSpecs": [
+        {
+          "label": "配置",
+          "value": "1 发射器 + 1 接收器",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "音频连接",
+          "value": "MI热靴数字音频 / USB-C / 3.5 mm",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "声音处理",
+          "value": "NC降噪及LC低切",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "索尼 SONY ECM-W3S 一拖一",
+        "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-sony-ecm-s1",
+      "technicalSpecs": [
+        {
+          "label": "麦克风单元",
+          "value": "3 个14 mm单元",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "连接",
+          "value": "无线相机连接，支持USB直连电脑/手机",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "接口",
+          "value": "兼容MI热靴数字音频",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230928-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-audio-sony-ecm-m1",
+      "technicalSpecs": [
+        {
+          "label": "收音模式",
+          "value": "8 种",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230713-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "录制",
+          "value": "支持4声道安全音轨，需兼容相机",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230713-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "类型",
+          "value": "数字音频枪型麦克风",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2023/20230713-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-audio-sony-ecm-l1",
+      "technicalSpecs": [
+        {
+          "label": "频响",
+          "value": "20 Hz–20 kHz",
+          "source": "https://www.sony.com/electronics/support/audio-video-accessories-microphones/ecm-l1/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "指向性",
+          "value": "全指向",
+          "source": "https://www.sony.com/electronics/support/audio-video-accessories-microphones/ecm-l1/specifications",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "连接及供电",
+          "value": "3.5 mm锁定式，插入式供电",
+          "source": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/product/2024/240912-1.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-audio-sony-uwp-d21",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "UTX-B40 + URX-P40 + ECM-V1BMP",
+          "source": "https://www.sonystyle.com.cn/professional/products/audio/professional-audio/microphones/wireless-audio/uwp-d-wireless-series/broadcastaudiouwpdseriesmicpackages/uwp-d21.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "接收",
+          "value": "双调谐器真分集",
+          "source": "https://www.sonystyle.com.cn/professional/products/audio/professional-audio/microphones/wireless-audio/uwp-d-wireless-series/broadcastaudiouwpdseriesmicpackages/uwp-d21.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "无线系统",
+          "value": "UHF；地区频段按实物核对",
+          "source": "https://www.sonystyle.com.cn/professional/products/audio/professional-audio/microphones/wireless-audio/uwp-d-wireless-series/broadcastaudiouwpdseriesmicpackages/uwp-d21.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-audio-sennheiser-profile-wireless-1ch",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "1 发射器 + 1 双通道接收器",
+          "source": "https://www.sennheiser.com/en-us/catalog/products/drahtlossysteme/profile-wireless-1-channel-set/profile-wireless-1-channel-set-700278",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传输频段",
+          "value": "2.4 GHz",
+          "source": "https://www.sennheiser.com/en-us/catalog/products/drahtlossysteme/profile-wireless-1-channel-set/profile-wireless-1-channel-set-700278",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "内录",
+          "value": "32-bit 浮点（需固件v4.1.0或以上）",
+          "source": "https://docs.cloud.sennheiser.com/en-us/profile-wireless/faq.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "森海塞尔 Sennheiser Profile Wireless 1通道套装",
+        "source": "https://www.sennheiser.com/en-us/catalog/products/drahtlossysteme/profile-wireless-1-channel-set/profile-wireless-1-channel-set-700278",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-sennheiser-profile-wireless-2ch",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "2 发射器 + 1 双通道接收器 + 充电杆",
+          "source": "https://www.sennheiser.com/en-au/catalog/products/wireless-systems/profile-wireless-2-channel-set/profile-wireless-2-channel-set-700266",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "传输频段",
+          "value": "2.4 GHz",
+          "source": "https://www.sennheiser.com/en-au/catalog/products/wireless-systems/profile-wireless-2-channel-set/profile-wireless-2-channel-set-700266",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "内录",
+          "value": "32-bit 浮点（需固件v4.1.0或以上）",
+          "source": "https://docs.cloud.sennheiser.com/en-us/profile-wireless/faq.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04",
+      "displayName": {
+        "value": "森海塞尔 Sennheiser Profile Wireless 2通道套装",
+        "source": "https://www.sennheiser.com/en-au/catalog/products/wireless-systems/profile-wireless-2-channel-set/profile-wireless-2-channel-set-700266",
+        "reason": "明确套装组成、接口、代际或单独组件，避免数量歧义；不改变稳定ID。"
+      }
+    },
+    {
+      "id": "v61-audio-sennheiser-ewdp-me2-s4-7",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "EW-DP EK + EW-D SK + ME 2",
+          "source": "https://docs.cloud.sennheiser.com/en-us/ew-d/ew-d/productinfo-ew-dp-set-me2.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "频段",
+          "value": "S4-7：630–662 MHz",
+          "source": "https://docs.cloud.sennheiser.com/en-us/ew-d/ew-d/productinfo-ew-dp-set-me2.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "麦克风",
+          "value": "ME 2 全指向领夹",
+          "source": "https://docs.cloud.sennheiser.com/en-us/ew-d/ew-d/productinfo-ew-dp-set-me2.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-audio-sennheiser-ewdp-eng-s4-7",
+      "technicalSpecs": [
+        {
+          "label": "套装组成",
+          "value": "EW-DP EK + EW-D SK + ME 2 + EW-DP SKP",
+          "source": "https://docs.cloud.sennheiser.com/en-us/ew-d/ew-d/productinfo-ew-dp-set-eng.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "频段",
+          "value": "S4-7：630–662 MHz",
+          "source": "https://docs.cloud.sennheiser.com/en-us/ew-d/ew-d/productinfo-ew-dp-set-eng.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "接收通道",
+          "value": "单通道；ENG含两个可选发射器，不是双通道同时接收",
+          "source": "https://docs.cloud.sennheiser.com/en-us/ew-d/ew-d/productinfo-ew-dp-set-eng.html",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-audio-sennheiser-mke600",
+      "technicalSpecs": [
+        {
+          "label": "频响",
+          "value": "40 Hz–20 kHz",
+          "source": "https://www.sennheiser.com/globalassets/digizuite/41788-en-sp_1302_v1.0_mke_600_product_specification_en.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "指向性",
+          "value": "超心形 / 叶形",
+          "source": "https://www.sennheiser.com/globalassets/digizuite/41788-en-sp_1302_v1.0_mke_600_product_specification_en.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "供电",
+          "value": "48 V幻象或AA电池",
+          "source": "https://www.sennheiser.com/globalassets/digizuite/41788-en-sp_1302_v1.0_mke_600_product_specification_en.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-audio-sennheiser-mkh8060",
+      "technicalSpecs": [
+        {
+          "label": "频响",
+          "value": "50 Hz–25 kHz",
+          "source": "https://www.sennheiser.com/globalassets/digizuite/41838-en-sp_1345_v1.0_mkh_8060_product_specification_en.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "自噪",
+          "value": "11 dB(A)",
+          "source": "https://www.sennheiser.com/globalassets/digizuite/41838-en-sp_1345_v1.0_mkh_8060_product_specification_en.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "供电",
+          "value": "48 V幻象（P48）",
+          "source": "https://www.sennheiser.com/globalassets/digizuite/41838-en-sp_1345_v1.0_mkh_8060_product_specification_en.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    }
+  ]
+}

@@ -2091,6 +2091,81 @@
       },
       "englishName": "Lightstar / ARRI 24kW Fresnel",
       "reason": "原记录同时写Lightstar和ARRI，不能确定厂商归属；保留24kW聚光灯指代及两品牌线索，不冒充ARRI已核验型号"
+    },
+    {
+      "id": "v61-teris-ts-n6",
+      "set": {
+        "brandZh": "图瑞斯",
+        "brandEn": "TERIS",
+        "series": "",
+        "model": "TS-N6",
+        "published": true,
+        "verified": false,
+        "namingStatus": "pending",
+        "identityBasis": "specific-inventory",
+        "releaseReason": "具体型号有中文渠道或使用单位记录；原厂参数待核验，不代表本地租赁库存",
+        "reviewedAt": "2026-11-04",
+        "reviewNotes": [
+          "身份有实际使用单位或经销资料依据，未获得可对应该版本的原厂型号参数；不能套用PLUS或TS系列参数。"
+        ]
+      },
+      "evidence": {
+        "url": "https://rtv.ntua.edu.tw/manager_admin/new_file_download.php?Pact=FileDownLoad&Pval=358876",
+        "scope": "institution",
+        "language": "zh-CN",
+        "checkedAt": "2026-11-04"
+      },
+      "reason": "用户要求补充国内常用N6/V12；保留记录身份与版本，官方证据不足时可选但不标已核验。"
+    },
+    {
+      "id": "v61-teris-tx-v12",
+      "set": {
+        "brandZh": "图瑞斯",
+        "brandEn": "TERIS",
+        "series": "",
+        "model": "TX-V12",
+        "published": true,
+        "verified": false,
+        "namingStatus": "pending",
+        "identityBasis": "specific-inventory",
+        "releaseReason": "具体型号有中文渠道或使用单位记录；原厂参数待核验，不代表本地租赁库存",
+        "reviewedAt": "2026-11-04",
+        "reviewNotes": [
+          "身份有实际使用单位或经销资料依据，未获得可对应该版本的原厂型号参数；不能套用PLUS或TS系列参数。"
+        ]
+      },
+      "evidence": {
+        "url": "https://rtv.ntua.edu.tw/manager_admin/new_file_download.php?Pact=FileDownLoad&Pval=358876",
+        "scope": "institution",
+        "language": "zh-CN",
+        "checkedAt": "2026-11-04"
+      },
+      "reason": "用户要求补充国内常用N6/V12；保留记录身份与版本，官方证据不足时可选但不标已核验。"
+    },
+    {
+      "id": "v61-teris-tx-v12-plus",
+      "set": {
+        "brandZh": "图瑞斯",
+        "brandEn": "TERIS",
+        "series": "",
+        "model": "TX-V12 PLUS",
+        "published": true,
+        "verified": false,
+        "namingStatus": "pending",
+        "identityBasis": "specific-inventory",
+        "releaseReason": "具体型号有中文渠道或使用单位记录；原厂参数待核验，不代表本地租赁库存",
+        "reviewedAt": "2026-11-04",
+        "reviewNotes": [
+          "身份有实际使用单位或经销资料依据，未获得可对应该版本的原厂型号参数；不能套用PLUS或TS系列参数。"
+        ]
+      },
+      "evidence": {
+        "url": "https://www.bjfqy.com/product/8553.html",
+        "scope": "supplier",
+        "language": "zh-CN",
+        "checkedAt": "2026-11-04"
+      },
+      "reason": "用户要求补充国内常用N6/V12；保留记录身份与版本，官方证据不足时可选但不标已核验。"
     }
   ],
   "preservedNicknames": [
@@ -3896,8 +3971,8 @@
     "date": "2026-10-07",
     "scope": "Research support only; no repository or catalog files changed.",
     "sourceFilesReviewed": [
-      "data/catalog/equipment.v5.json",
-      "data/catalog/v4-inventory.json"
+      "/Users/utiwaaien/Desktop/剧组筹备/CineBox/data/catalog/equipment.v5.json",
+      "/Users/utiwaaien/Desktop/剧组筹备/CineBox/data/catalog/v4-inventory.json"
     ],
     "splitCases": [
       {

@@ -49,3 +49,6 @@ next-env.d.ts
 /.impeccable/
 .openai/hosting.local.json
 *.log
+
+# Generated Cloudflare runtime types (CI regenerates these)
+/worker-configuration.d.ts

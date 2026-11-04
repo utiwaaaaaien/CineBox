@@ -1,30 +1,30 @@
 {
   "version": "V5.1",
   "checkedAt": "2026-10-07",
-  "inputRows": 2190,
+  "inputRows": 2256,
   "baselineRows": 2043,
   "restoredRows": 31,
-  "addedRows": 116,
-  "finalReviewAddedRows": 89,
-  "canonicalRows": 2099,
-  "publishedRows": 2084,
+  "addedRows": 182,
+  "finalReviewAddedRows": 155,
+  "canonicalRows": 2165,
+  "publishedRows": 2150,
   "archivedRows": 15,
   "mergedRows": 91,
-  "verifiedCanonicalRows": 640,
+  "verifiedCanonicalRows": 703,
   "excludedRows": 4,
   "supersededRows": 11,
   "publishedIdentityBasis": {
-    "official-model": 640,
+    "official-model": 703,
     "official-series": 116,
-    "specific-inventory": 818,
+    "specific-inventory": 821,
     "generic-function": 452,
     "user-retained-name": 58
   },
   "correctedRows": 105,
   "namingStatuses": {
-    "official-model": 640,
+    "official-model": 703,
     "official-series": 116,
-    "pending": 897,
+    "pending": 900,
     "generic": 446
   },
   "categories": {
@@ -33,9 +33,9 @@
     "滤镜": 261,
     "摄影机附件": 125,
     "监看": 78,
-    "移动器材": 311,
+    "移动器材": 350,
     "灯光器材": 407,
-    "录音器材": 14,
+    "录音器材": 41,
     "其他": 18
   },
   "finalReviewFile": "data/catalog/review.v5.1.json",
@@ -1599,6 +1599,45 @@
           "englishName": "TILTA Armorman 3.0",
           "reason": "同厂商完整型号、同单位、无记录中的配置差别；统一移动器材分类后按完整身份去重，保留旧ID跳转",
           "source": "https://tilta.com/shop/armor-man-3-0-gimbal-support-system/"
+        }
+      ]
+    },
+    {
+      "id": "v61-teris-ts-n6",
+      "changes": [
+        {
+          "previousName": "TERIS TS-N6",
+          "name": "图瑞斯 TERIS TS-N6",
+          "previousEnglishName": "TERIS TS-N6",
+          "englishName": "TERIS TS-N6",
+          "reason": "用户要求补充国内常用N6/V12；保留记录身份与版本，官方证据不足时可选但不标已核验。",
+          "source": "https://rtv.ntua.edu.tw/manager_admin/new_file_download.php?Pact=FileDownLoad&Pval=358876"
+        }
+      ]
+    },
+    {
+      "id": "v61-teris-tx-v12",
+      "changes": [
+        {
+          "previousName": "TERIS TX-V12",
+          "name": "图瑞斯 TERIS TX-V12",
+          "previousEnglishName": "TERIS TX-V12",
+          "englishName": "TERIS TX-V12",
+          "reason": "用户要求补充国内常用N6/V12；保留记录身份与版本，官方证据不足时可选但不标已核验。",
+          "source": "https://rtv.ntua.edu.tw/manager_admin/new_file_download.php?Pact=FileDownLoad&Pval=358876"
+        }
+      ]
+    },
+    {
+      "id": "v61-teris-tx-v12-plus",
+      "changes": [
+        {
+          "previousName": "TERIS TX-V12 PLUS",
+          "name": "图瑞斯 TERIS TX-V12 PLUS",
+          "previousEnglishName": "TERIS TX-V12 PLUS",
+          "englishName": "TERIS TX-V12 PLUS",
+          "reason": "用户要求补充国内常用N6/V12；保留记录身份与版本，官方证据不足时可选但不标已核验。",
+          "source": "https://www.bjfqy.com/product/8553.html"
         }
       ]
     },
@@ -8467,9 +8506,9 @@
     "滤镜": 261,
     "摄影机附件": 124,
     "监看": 78,
-    "移动器材": 309,
+    "移动器材": 348,
     "灯光器材": 399,
-    "录音器材": 14,
+    "录音器材": 41,
     "其他": 18
   },
   "merges": [
@@ -15883,6 +15922,33 @@
       "published": true,
       "notes": [
         "品牌或具体型号未确认，保留原始规格待核验"
+      ]
+    },
+    {
+      "id": "v61-teris-ts-n6",
+      "name": "图瑞斯 TERIS TS-N6",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "身份有实际使用单位或经销资料依据，未获得可对应该版本的原厂型号参数；不能套用PLUS或TS系列参数。"
+      ]
+    },
+    {
+      "id": "v61-teris-tx-v12",
+      "name": "图瑞斯 TERIS TX-V12",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "身份有实际使用单位或经销资料依据，未获得可对应该版本的原厂型号参数；不能套用PLUS或TS系列参数。"
+      ]
+    },
+    {
+      "id": "v61-teris-tx-v12-plus",
+      "name": "图瑞斯 TERIS TX-V12 PLUS",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "身份有实际使用单位或经销资料依据，未获得可对应该版本的原厂型号参数；不能套用PLUS或TS系列参数。"
       ]
     },
     {

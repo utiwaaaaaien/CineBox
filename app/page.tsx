@@ -9,6 +9,8 @@ import { historyCameraModel } from "./history-camera";
 import { resolveCatalogId, migrateCatalogProjects, migrateCatalogHistory } from "./catalog-identity";
 import { buildEquipmentSeries, type EquipmentSeries } from "./equipment-series";
 import { buildCameraSystemChecks, type CameraSystemCheck, type RuleAddition } from "./camera-system-rules";
+import { useProjectAutosave, readProjectAutosave } from "./use-project-autosave";
+import { readStoredHistory } from "./project-autosave";
 import { appVersion, releaseNotes } from "./release";
 import { SpecField } from "./spec-field";
 import { resolutionOptions, aspectRatioOptions, projectFpsOptions, highSpeedFpsOptions } from "./project-specs";
@@ -16,9 +18,11 @@ import { BrandFilter } from "./brand-filter";
 import { ActionMenu } from "./action-menu";
 import { brandMenuLabels } from "./catalog-brands";
 import { categoryBrands, filterCatalog, copyHistoricalKit, basicSystemProject } from "./direct-selection";
+import { createCustomKitRow, updateCustomKitRow, isBlankCustomKitItem } from "./custom-equipment";
 import { formatShootRange } from "./excel-export";
 import {
   analyzeHistoryProjectText,
+  maxHistoryOverrides,
   extractHistoryProjectFile,
   formatHistoryProjectName,
   sanitizeHistoryOverrides,
@@ -28,6 +32,8 @@ import {
 } from "./project-history";
 import {
   sanitizeProjectRecords,
+  projectCapacityError,
+  historyCapacityError,
   type ProjectCustomEquipment,
   type ProjectKitItem,
   type ProjectStateRecord,
@@ -575,7 +581,7 @@ function addSystemRuleRows(kit: KitItem[], additions: RuleAddition[], reason: st
 }
 
 function completeEssentialCameraSystem(project: ProjectForm, kit: KitItem[]) {
-  const checks = buildCameraSystemChecks(basicSystemProject(project), kit, canonicalEquipment);
+  const checks = buildCameraSystemChecks(basicSystemProject(project), kit.filter((row) => !isBlankCustomKitItem(row)), canonicalEquipment);
   return checks
     .filter((check) => check.autoAdd && check.missing.length)
     .reduce((current, check) => addSystemRuleRows(current, check.missing, `站内系统检查：${check.title}`), kit);
@@ -638,6 +644,8 @@ export default function Home() {
     subcategory: "自定义",
     unit: "件",
   });
+  const [uploadLabel, setUploadLabel] = useState("");
+  const [importingBackup, setImportingBackup] = useState(false);
   const [toast, setToast] = useState("");
   const [swapTargetId, setSwapTargetId] = useState<string | null>(null);
   const [swapQuery, setSwapQuery] = useState("");
@@ -652,12 +660,20 @@ export default function Home() {
   const [analyzingHistory, setAnalyzingHistory] = useState(false);
   const importBackupRef = useRef<HTMLInputElement>(null);
   const importHistoryRef = useRef<HTMLInputElement>(null);
+  const recoverySnapshotRef = useRef<ReturnType<typeof readProjectAutosave>>(null);
+  const latestRecords = useRef({ projects, historyOverrides });
+  useEffect(() => { latestRecords.current = { projects, historyOverrides }; }, [projects, historyOverrides]);
   const dialogTriggerRef = useRef<HTMLElement | null>(null);
+  const uploadBusy = analyzingHistory || importingBackup;
   const modalOpen = Boolean(swapTargetId || historyPreview);
 
   const activeProject = projects.find((item) => item.id === activeProjectId) ?? projects[0];
   const project = activeProject?.form ?? defaultProject;
   const kit = activeProject?.kit ?? emptyKit;
+  const completedKit = useMemo(() => kit.filter((row) => !isBlankCustomKitItem(row)), [kit]);
+
+  const autosavePayload = useMemo(() => ({ projects, activeProjectId, historyOverrides }), [projects, activeProjectId, historyOverrides]);
+  const autosave = useProjectAutosave(hydrated && historyOverridesHydrated, autosavePayload);
 
   useEffect(() => {
     const saved = document.documentElement.dataset.themePreference;
@@ -688,25 +704,45 @@ export default function Home() {
   }, [themePreference]);
 
   useEffect(() => {
-    const saved = window.localStorage.getItem("cinbox-projects-v2");
+    let saved: string | null;
+    let legacy: string | null;
+    try {
+      saved = window.localStorage.getItem("cinbox-projects-v2");
+      legacy = window.localStorage.getItem("cinbox-project");
+    } catch {
+      // Browser storage hydration must finish even when storage is blocked.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setToast("浏览器禁止本地保存，请允许存储或及时导出项目备份");
+      setHydrated(true);
+      return;
+    }
     if (saved) {
       try {
         const state = JSON.parse(saved) as { projects?: unknown; activeProjectId?: unknown };
         const validProjects = sanitizeProjects(state.projects);
         const savedActiveProjectId = typeof state.activeProjectId === "string" ? state.activeProjectId : "";
         if (validProjects.length) {
-          // eslint-disable-next-line react-hooks/set-state-in-effect
           setProjects(validProjects);
           setActiveProjectId(savedActiveProjectId && validProjects.some((item) => item.id === savedActiveProjectId) ? savedActiveProjectId : validProjects[0].id);
           setHydrated(true);
           return;
         }
       } catch {
-        window.localStorage.removeItem("cinbox-projects-v2");
+        // Keep unreadable data available for manual recovery.
       }
     }
 
-    const legacy = window.localStorage.getItem("cinbox-project");
+    const snapshot = readProjectAutosave();
+    const recovered = snapshot ? sanitizeProjects(snapshot.payload.projects) : [];
+    if (snapshot && recovered.length) {
+      recoverySnapshotRef.current = snapshot;
+      setProjects(recovered);
+      setActiveProjectId(recovered.some((record) => record.id === snapshot.payload.activeProjectId) ? snapshot.payload.activeProjectId : recovered[0].id);
+      setToast("本地项目记录不可用，已从自动存档恢复");
+      setHydrated(true);
+      return;
+    }
+
     if (legacy) {
       try {
         const state = JSON.parse(legacy) as { project?: Partial<ProjectForm>; kit?: KitItem[] };
@@ -719,7 +755,7 @@ export default function Home() {
           return;
         }
       } catch {
-        window.localStorage.removeItem("cinbox-project");
+        // Keep legacy data available for manual recovery.
       }
     }
     setProjects((current) => {
@@ -732,14 +768,14 @@ export default function Home() {
 
   useEffect(() => {
     try {
-      const saved = window.localStorage.getItem("cinbox-history-overrides-v1");
-      if (saved) {
-        const parsed: unknown = JSON.parse(saved);
-        // eslint-disable-next-line react-hooks/set-state-in-effect
-        setHistoryOverrides(sanitizeHistoryOverrides(migrateCatalogHistory(parsed), builtInHistoryProfileIds, equipmentIds));
-      }
+      const result = readStoredHistory(window.localStorage,
+        (value) => sanitizeHistoryOverrides(migrateCatalogHistory(value), builtInHistoryProfileIds, equipmentIds),
+        recoverySnapshotRef.current);
+      setHistoryOverrides(result.value);
+      if (result.recovered && !recoverySnapshotRef.current) setToast("历史项目记录不可用，已从自动存档恢复");
+      if (result.failed) setToast("历史项目读取失败，请检查浏览器存储权限或导入备份");
     } catch {
-      window.localStorage.removeItem("cinbox-history-overrides-v1");
+      setToast("历史项目读取失败，请检查浏览器存储权限或导入备份");
     }
     setHistoryOverridesHydrated(true);
   }, []);
@@ -750,7 +786,7 @@ export default function Home() {
     try {
       window.localStorage.setItem("cinbox-projects-v2", JSON.stringify({ projects, activeProjectId }));
     } catch {
-      failureNotice = window.setTimeout(() => setToast("当前设备存储空间不足，请先导出项目备份"), 0);
+      failureNotice = window.setTimeout(() => setToast("本地保存失败，请检查浏览器存储权限并导出项目备份"), 0);
     }
     return () => {
       if (failureNotice !== undefined) window.clearTimeout(failureNotice);
@@ -845,16 +881,16 @@ export default function Home() {
       ...Object.values(historyOverrides).filter((profile) => isImportedHistoryId(profile.id))],
     [historyOverrides],
   );
-  const selectedUnits = kit.reduce((sum, item) => sum + item.qty, 0);
-  const statusCounts = kit.reduce(
+  const selectedUnits = completedKit.reduce((sum, item) => sum + item.qty, 0);
+  const statusCounts = completedKit.reduce(
     (counts, row) => {
       counts[kitItemStatus(row)] += 1;
       return counts;
     },
     { confirmed: 0, recommended: 0, pending: 0, manual: 0 },
   );
-  const checks = useMemo(() => kitChecks(project, kit), [kit, project]);
-  const systemChecks = useMemo(() => buildCameraSystemChecks(basicSystemProject(project), kit, canonicalEquipment), [kit, project]);
+  const checks = useMemo(() => completedKit.length ? kitChecks(project, completedKit) : [], [completedKit, project]);
+  const systemChecks = useMemo(() => buildCameraSystemChecks(basicSystemProject(project), completedKit, canonicalEquipment), [completedKit, project]);
   const missingSystemChecks = systemChecks.filter((check) => check.missing.length);
   const passedSystemChecks = systemChecks.length - missingSystemChecks.length;
   const swapTarget = kit.find((row) => row.id === swapTargetId);
@@ -897,7 +933,7 @@ export default function Home() {
 
   function updateProject(patch: Partial<ProjectForm>) {
     const affectsKit = Object.keys(patch).some((key) => ["cameraCount", "aspectRatio", "screenFormat", "baseFps", "highSpeedFps", "resolution"].includes(key) && JSON.stringify(project[key as keyof ProjectForm]) !== JSON.stringify(patch[key as keyof ProjectForm]));
-    updateActive((current) => ({ ...current, form: { ...current.form, ...patch }, requirementsChanged: current.requirementsChanged || (affectsKit && current.kit.length > 0) }));
+    updateActive((current) => ({ ...current, form: { ...current.form, ...patch }, requirementsChanged: current.requirementsChanged || (affectsKit && current.kit.some((row) => !isBlankCustomKitItem(row))), requirementsRevision: (current.requirementsRevision ?? 0) + (affectsKit ? 1 : 0) }));
   }
 
   function openHistoryProjectPreview(profile: HistoryProfile, trigger: HTMLElement) {
@@ -912,8 +948,8 @@ export default function Home() {
       type: record.form.type, subtitle: `${record.form.days} 天 · ${record.form.cameraCount} 机位`,
       scale: record.form.scale, cameraCount: record.form.cameraCount, styles: [],
       lensStyle: "", screenFormat: record.form.screenFormat,
-      items: record.kit.map((row) => row.id),
-      quantities: Object.fromEntries(record.kit.map((row) => [row.id, row.qty])),
+      items: record.kit.filter((row) => !isBlankCustomKitItem(row)).map((row) => row.id),
+      quantities: Object.fromEntries(record.kit.filter((row) => !isBlankCustomKitItem(row)).map((row) => [row.id, row.qty])),
     } });
   }
 
@@ -928,11 +964,14 @@ export default function Home() {
     const file = event.target.files?.[0];
     event.target.value = "";
     const targetId = historyImportTargetId;
-    if (!file || !targetId) return;
+    if (!file || !targetId || uploadBusy) return;
     setAnalyzingHistory(true);
+    setUploadLabel(`正在读取 ${file.name}…`);
     try {
       const extracted = await extractHistoryProjectFile(file);
       if (!extracted.text.trim()) throw new Error("文件中没有可分析的文字内容");
+      setUploadLabel(`正在识别 ${file.name} 的型号、代际与数量…`);
+      await new Promise<void>((resolve) => window.setTimeout(resolve, 40));
       const analyzed = analyzeHistoryProjectText(extracted.text, file.name, extracted.format, equipment);
       setHistoryPreview({
         targetId,
@@ -944,8 +983,15 @@ export default function Home() {
       setToast(error instanceof Error ? error.message : "文件分析失败，请检查格式后重试");
     } finally {
       setAnalyzingHistory(false);
+      setUploadLabel("");
       setHistoryImportTargetId(null);
     }
+  }
+
+  function canMergeHistory(incoming: Record<string, HistoryProfile>) {
+    const error = historyCapacityError(latestRecords.current.historyOverrides, incoming, maxHistoryOverrides);
+    if (error) { setToast(error); return false; }
+    return true;
   }
 
   function confirmHistoryProjectReplacement() {
@@ -961,13 +1007,14 @@ export default function Home() {
     if (saved) {
       const type = projectTypeForReuse(replacement.type, saved.form.type);
       const needsReview = saved.requirementsChanged || saved.form.cameraCount !== replacement.cameraCount || saved.form.type !== type;
-      setKitHistories((current) => ({ ...current, [saved.id]: recordKitChange(current[saved.id] ?? { past: [], future: [] }, saved.kit, "上传替换器材单", undefined, needsReview) }));
+      setKitHistories((current) => ({ ...current, [saved.id]: recordKitChange(current[saved.id] ?? { past: [], future: [] }, saved.kit, "上传替换器材单", undefined, needsReview, (saved.requirementsRevision ?? 0) + 1) }));
       setProjects((current) => current.map((record) => record.id !== saved.id ? record : {
         ...record, updatedAt: new Date().toISOString(),
         form: { ...record.form, name: replacement.projectName || record.form.name, type, cameraCount: replacement.cameraCount },
-        kit: copyHistoricalKit(replacement, equipmentMap), requirementsChanged: true,
+        kit: copyHistoricalKit(replacement, equipmentMap), requirementsChanged: true, requirementsRevision: (record.requirementsRevision ?? 0) + 1,
       }));
     } else {
+      if (!canMergeHistory({ [historyPreview.targetId]: replacement })) return;
       setHistoryOverrides((current) => ({ ...current, [historyPreview.targetId]: replacement }));
     }
     setHistoryPreview(null);
@@ -985,8 +1032,9 @@ export default function Home() {
     setToast("已恢复内置历史项目");
   }
 
-  const currentHistory = kitHistories[activeProjectId] ?? { past: [], future: [] };
+  const currentHistory = Object.hasOwn(kitHistories, activeProjectId) ? kitHistories[activeProjectId] : { past: [], future: [] };
   const visibleKitGroups = groupedKit.map((group) => ({ ...group, rows: group.rows.filter((row) => {
+    if (isBlankCustomKitItem(row)) return kitCategory === "全部" || row.custom?.category === kitCategory;
     const item = resolveKitEquipment(row);
     return (kitScope === "all" || kitItemStatus(row) === "pending") &&
       (kitCategory === "全部" || item?.category === kitCategory) &&
@@ -996,12 +1044,12 @@ export default function Home() {
   function setKit(next: KitItem[] | ((current: KitItem[]) => KitItem[]), label = "调整器材单", group?: string) {
     const rows = typeof next === "function" ? next(kit) : next;
     if (rows === kit || JSON.stringify(rows) === JSON.stringify(kit)) return;
-    setKitHistories((current) => ({ ...current, [activeProjectId]: recordKitChange(current[activeProjectId] ?? { past: [], future: [] }, kit, label, group, activeProject?.requirementsChanged) }));
+    setKitHistories((current) => ({ ...current, [activeProjectId]: recordKitChange(current[activeProjectId] ?? { past: [], future: [] }, kit, label, group, activeProject?.requirementsChanged, activeProject?.requirementsRevision) }));
     updateActive((current) => ({ ...current, kit: rows }));
   }
 
   function travelKit(direction: "undo" | "redo") {
-    const change = travelKitHistory(currentHistory, kit, direction, activeProject?.requirementsChanged);
+    const change = travelKitHistory(currentHistory, kit, direction, activeProject?.requirementsChanged, activeProject?.requirementsRevision);
     if (!change) return;
     setKitHistories((current) => ({ ...current, [activeProjectId]: change.history }));
     updateActive((current) => ({ ...current, kit: change.rows, requirementsChanged: change.requirementsChanged }));
@@ -1020,6 +1068,11 @@ export default function Home() {
   });
 
   function addToKit(id: string, reason = "手动选材") {
+    if (kit.some((row) => row.id === id)) {
+      setKit((current) => current.filter((row) => row.id !== id), `取消选择 ${equipmentById(id)?.name ?? "器材"}`);
+      setToast("已取消选择，可通过撤销恢复数量与备注");
+      return;
+    }
     if (!activeProject?.basicInfoConfirmed) {
       setQuery(equipmentById(id)?.name || "");
       setCategory("全部"); setBrand("全部"); setEditingBasics(true); setView("library");
@@ -1028,10 +1081,11 @@ export default function Home() {
     }
     if (!equipmentById(id)?.published) return;
     setKit((current) => addKitSelection(current, [{ id, qty: 1, note: "", reason, status: "manual" }]), `加入 ${equipmentById(id)?.name ?? "器材"}`);
-    setToast("已加入器材单；数量在清单中调整");
+    setToast(`已加入「${project.name}」；点击下方“查看器材单”调整数量`);
   }
 
   function toggleSeries(series: EquipmentSeries) {
+    if (!activeProject?.basicInfoConfirmed) { setEditingBasics(true); setView("library"); setToast("请先保存项目基本信息"); return; }
     setKit((current) => addKitSelection(current, series.items.map((item) => ({ id: item.id, qty: 1, note: "", reason: `系列：${series.name}`, status: "manual" }))), `加入 ${series.name} 缺少的器材`);
     setToast(`已补入 ${series.name} 中未选的器材；原有数量和备注已保留`);
   }
@@ -1043,17 +1097,18 @@ export default function Home() {
   function projectSelect(label: string, key: keyof ProjectForm, options: string[]) {
     return <label><span>{label}</span><select value={String(project[key])} onChange={(event) => updateProject({ [key]: event.target.value })}>{options.map((value) => <option key={value}>{value}</option>)}</select></label>;
   }
-  function addCustomItem() {
-    if (!customDraft.name.trim()) {
-      setToast("请先填写自定义器材名称");
+  function addCustomItem(targetCategory: EquipmentCategory) {
+    if (!activeProject?.basicInfoConfirmed) { setView("library"); setEditingBasics(true); setToast("请先保存项目基本信息，再新增器材"); return; }
+    if (!customDraft.name.trim() || !customDraft.unit.trim()) {
+      setToast("请填写器材名称与单位");
       return;
     }
     const id = createId("custom");
     setKit((current) => [
       ...current,
-      { id, qty: 1, note: "", reason: "摄影指导自定义补充", status: "manual", custom: { ...customDraft, name: customDraft.name.trim() } },
+      { id, qty: 1, note: "", reason: "摄影指导自定义补充", status: "manual", custom: { ...customDraft, category: targetCategory, name: customDraft.name.trim(), unit: customDraft.unit.trim(), brand: customDraft.brand.trim() || "通用" } },
     ]);
-    setCustomDraft({ name: "", brand: "通用", category: "其他", subcategory: "自定义", unit: "件" });
+    setCustomDraft({ ...customDraft, name: "" });
     setToast("已添加自定义器材");
   }
 
@@ -1132,7 +1187,14 @@ export default function Home() {
     setToast("项目基本信息已保存，请选择器材");
   }
 
+  function canAddProjects(count = 1) {
+    const error = projectCapacityError(latestRecords.current.projects.length, count);
+    if (error) { setToast(error); return false; }
+    return true;
+  }
+
   function reuseHistoryProject(profile: HistoryProfile) {
+    if (!canAddProjects()) return;
     const next = createProject(`${historyProjectName(profile)} · 新项目`);
     next.form = { ...next.form, type: projectTypeForReuse(profile.type), cameraCount: profile.cameraCount,
       screenFormat: profile.screenFormat, recommendationMode: "history", historyProfileId: profile.id };
@@ -1147,6 +1209,7 @@ export default function Home() {
   }
 
   function reuseSavedProject(record: ProjectRecord) {
+    if (!canAddProjects()) return;
     const next = createProject(`${record.form.name} · 新项目`);
     next.form = { ...record.form, name: next.form.name, shootDate: "", dop: "", contact: "", recommendationMode: "manual" };
     next.kit = record.kit.map((row) => ({ ...row, custom: row.custom ? { ...row.custom } : undefined }));
@@ -1165,6 +1228,7 @@ export default function Home() {
   }
 
   function createNewProject() {
+    if (!canAddProjects()) return;
     const next = createProject(`新项目 ${new Date().toLocaleDateString("zh-CN")}`);
     setProjects((current) => [next, ...current]);
     setActiveProjectId(next.id);
@@ -1180,6 +1244,7 @@ export default function Home() {
   }
 
   function duplicateProject(record: ProjectRecord) {
+    if (!canAddProjects()) return;
     const now = new Date().toISOString();
     const copy: ProjectRecord = {
       ...record,
@@ -1221,7 +1286,7 @@ export default function Home() {
   }
 
   async function exportExcel() {
-    if (!kit.length) {
+    if (!completedKit.length) {
       setToast("器材单为空，暂时无法导出");
       return;
     }
@@ -1321,19 +1386,24 @@ export default function Home() {
   async function importProjectBackup(event: ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
     event.target.value = "";
-    if (!file) return;
+    if (!file || uploadBusy) return;
     if (file.size > maxBackupFileBytes) {
       setToast("无法导入：项目备份不能超过 10 MB");
       return;
     }
+    setImportingBackup(true);
+    setUploadLabel(`正在导入 ${file.name}…`);
     try {
+      await new Promise<void>((resolve) => window.setTimeout(resolve, 40));
       const rawPayload: unknown = JSON.parse(await file.text());
       if (!rawPayload || typeof rawPayload !== "object" || Array.isArray(rawPayload)) throw new Error("invalid backup");
       const payload = rawPayload as { version?: unknown; projects?: unknown; historyOverrides?: unknown };
       if (payload.version !== undefined && payload.version !== 2) throw new Error("unsupported backup");
       const imported = sanitizeProjects(payload.projects, projects.map((item) => item.id));
       if (!imported.length) throw new Error("empty backup");
+      if (!canAddProjects(imported.length)) return;
       const importedHistory = sanitizeHistoryOverrides(migrateCatalogHistory(payload.historyOverrides), builtInHistoryProfileIds, equipmentIds);
+      if (!canMergeHistory(importedHistory)) return;
       setProjects((current) => [...imported, ...current]);
       setHistoryOverrides((current) => ({ ...current, ...importedHistory }));
       setActiveProjectId(imported[0].id);
@@ -1342,7 +1412,48 @@ export default function Home() {
       setToast(`已导入并合并 ${imported.length} 个项目${historyLabel}`);
     } catch {
       setToast("无法导入：请选择 CineBox 导出的项目备份");
-    }
+    } finally { setImportingBackup(false); setUploadLabel(""); }
+  }
+
+  function addBlankCustomRow(targetCategory: EquipmentCategory) {
+    setKitQuery("");
+    setKitScope("all");
+    const row = createCustomKitRow(createId("custom"), targetCategory);
+    setKit((current) => [...current, row], `新增${targetCategory}自定义行`);
+    window.setTimeout(() => {
+      const input = document.getElementById(`custom-name-${row.id}`);
+      input?.focus({ preventScroll: true });
+      input?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }, 0);
+  }
+
+  function updateCustomRow(row: KitItem, patch: Partial<CustomEquipment>) {
+    setKit((current) => current.map((item) => item.id === row.id ? { ...updateCustomKitRow(item, patch), userAdjusted: true, status: "manual" as const } : item), "编辑自定义器材", `${row.id}:custom:${Object.keys(patch).join(",")}`);
+  }
+
+  function restoreAutosave() {
+    const snapshot = readProjectAutosave();
+    if (!snapshot) { setToast("当前设备暂无可恢复的自动存档"); return; }
+    const payload = snapshot.payload as { projects?: unknown; activeProjectId?: unknown; historyOverrides?: unknown };
+    const restored = sanitizeProjects(payload.projects);
+    if (!restored.length) { setToast("自动存档无有效项目，请导入项目备份"); return; }
+    if (!window.confirm(`恢复 ${new Date(snapshot.savedAt).toLocaleString("zh-CN")} 的自动存档？当前项目与历史项目将替换为存档内容。`)) return;
+    setProjects(restored);
+    setActiveProjectId(restored.some((record) => record.id === payload.activeProjectId) ? payload.activeProjectId as string : restored[0].id);
+    setHistoryOverrides(sanitizeHistoryOverrides(migrateCatalogHistory(payload.historyOverrides), builtInHistoryProfileIds, equipmentIds));
+    setKitHistories({}); setView("projects"); setToast("已恢复自动存档");
+  }
+
+  function renderCustomEquipment(targetCategory: EquipmentCategory) {
+    return <section className="custom-item-panel custom-item-flat" aria-label="新增自定义器材">
+      <header><h3>新增自定义器材</h3><span>归入{targetCategory}</span></header>
+      <form className="custom-item-fields" onSubmit={(event) => { event.preventDefault(); addCustomItem(targetCategory); }}>
+        <label><span>器材名称</span><input required maxLength={240} aria-label="库外器材名称" value={customDraft.name} onChange={(event) => setCustomDraft({ ...customDraft, name: event.target.value })} placeholder="填写名称与规格" /></label>
+        <label><span>品牌</span><input maxLength={120} aria-label="库外器材品牌" value={customDraft.brand} onChange={(event) => setCustomDraft({ ...customDraft, brand: event.target.value })} placeholder="品牌" /></label>
+        <label><span>单位</span><input required maxLength={20} aria-label="库外器材单位" value={customDraft.unit} onChange={(event) => setCustomDraft({ ...customDraft, unit: event.target.value })} placeholder="件" /></label>
+        <button type="submit" className="button primary">加入当前项目</button>
+      </form>
+    </section>;
   }
 
   function renderProjectBasics(destination: "library" | "history") {
@@ -1421,14 +1532,14 @@ export default function Home() {
           <span>当前项目</span>
           <button className={view === "kit" ? "current-project-link active" : "current-project-link"} aria-current={view === "kit" ? "page" : undefined} onClick={() => setView("kit")}>
             <strong>{project.name}</strong>
-            <small>{project.days} 天 · {project.cameraCount} 机位 · {kit.length} 项器材</small>
+            <small>{project.days} 天 · {project.cameraCount} 机位 · {completedKit.length} 项器材</small>
             <span>打开项目</span>
           </button>
         </div>
 
         <div className="sidebar-foot">
           <span className="status-dot" />
-          <span>项目自动保存在当前设备</span>
+          <span role="status">{autosave.error || (autosave.savedAt ? `自动存档 ${new Date(autosave.savedAt).toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" })}` : "即时保存 · 每分钟自动存档")}</span>
         </div>
       </aside>
 
@@ -1438,7 +1549,7 @@ export default function Home() {
             <h1>{pageTitle[view]}</h1>
           </div>
           <div className="header-actions">
-            <button className="header-project" onClick={() => setView("kit")} aria-label={`打开当前器材单：${project.name}，${kit.length} 项器材`} title={project.name}><span>当前器材单 · {kit.length} 项</span><strong>{project.name}</strong></button>
+            <button className="header-project" onClick={() => setView("kit")} aria-label={`打开当前器材单：${project.name}，${completedKit.length} 项器材`} title={project.name}><span>当前器材单 · {completedKit.length} 项</span><strong>{project.name}</strong></button>
             <ActionMenu className="theme-menu" label="颜色模式" trigger={<ThemeIcon mode={themePreference ?? "system"} />} chevron={false}>
             <div className="theme-switcher" role="radiogroup" aria-label="颜色模式" onKeyDown={handleRadioKeys}>
               {themeOptions.map((option) => (
@@ -1478,7 +1589,8 @@ export default function Home() {
               <div className="lead-actions">
                 <ActionMenu label="项目备份" trigger="备份">
                   <button className="button ghost" onClick={exportProjectBackup}>导出项目备份</button>
-                  <button className="button ghost" onClick={() => importBackupRef.current?.click()}>导入并合并</button>
+                  <button className="button ghost" disabled={uploadBusy} onClick={() => importBackupRef.current?.click()}>{importingBackup ? "正在导入…" : "导入并合并"}</button>
+                  <button className="button ghost" disabled={uploadBusy} onClick={restoreAutosave}>恢复自动存档</button>
                 </ActionMenu>
                 <input ref={importBackupRef} className="visually-hidden" type="file" accept="application/json,.json" onChange={importProjectBackup} />
                 <button className="button primary" onClick={createNewProject}><ControlIcon kind="plus" />新建项目</button>
@@ -1516,7 +1628,7 @@ export default function Home() {
                     <span className="project-open-hint">填写信息 / 选器材 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" /></svg></span>
                   </button>
                   <dl>
-                    <div><dt>器材项目</dt><dd>{record.kit.length}</dd></div>
+                    <div><dt>器材项目</dt><dd>{record.kit.filter((row) => !isBlankCustomKitItem(row)).length}</dd></div>
                     <div><dt>拍摄日期</dt><dd>{record.form.shootDate || "待定"}</dd></div>
                     <div><dt>摄影指导</dt><dd>{record.form.dop || "待定"}</dd></div>
                   </dl>
@@ -1535,21 +1647,21 @@ export default function Home() {
 
         {view === "history" && (
           <section className="history-view">
-            <div className="page-lead"><p>预览器材配置，复用为新项目。</p><button className="button primary" disabled={analyzingHistory} onClick={(event) => chooseHistoryProjectFile(createId("imported-history"), event.currentTarget)}><ControlIcon kind="plus" />上传历史项目</button></div>
+            <div className="page-lead"><p>预览器材配置，复用为新项目。</p><button className="button primary" disabled={uploadBusy} onClick={(event) => chooseHistoryProjectFile(createId("imported-history"), event.currentTarget)}><ControlIcon kind="plus" />{analyzingHistory ? "正在读取与识别…" : "上传历史项目"}</button></div>
             <input ref={importHistoryRef} className="visually-hidden" type="file"
               accept=".pdf,.xls,.xlsx,.xlsm,.xlsb,.ods,.csv,.json,.txt,.md,application/pdf,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/csv,text/plain,application/json"
               onChange={importHistoryProject} />
             <div className="history-card-grid">
-              {projects.filter((record) => record.kit.length).map((record) => <article className="history-card" key={record.id}>
+              {projects.filter((record) => record.kit.filter((row) => !isBlankCustomKitItem(row)).length).map((record) => <article className="history-card" key={record.id}>
                 <h3>{record.form.name}</h3>
                 <dl className="history-card-stats">
-                  <div><dt>器材</dt><dd>{record.kit.length}<span>项</span></dd></div>
+                  <div><dt>器材</dt><dd>{record.kit.filter((row) => !isBlankCustomKitItem(row)).length}<span>项</span></dd></div>
                   <div><dt>机位</dt><dd>{record.form.cameraCount}<span>个</span></dd></div>
-                  <div><dt>型号</dt><dd className="history-camera-model">{historyCameraModel(record.kit, equipmentMap) || "—"}</dd></div>
+                  <div><dt>型号</dt><dd className="history-camera-model">{historyCameraModel(record.kit.filter((row) => !isBlankCustomKitItem(row)), equipmentMap) || "—"}</dd></div>
                 </dl>
                 <div className="history-card-actions">
                   <button aria-label={`预览${record.form.name}`} onClick={(event) => openSavedProjectPreview(record, event.currentTarget)}>预览</button>
-                  <button disabled={analyzingHistory} onClick={(event) => chooseHistoryProjectFile(record.id, event.currentTarget)}>{analyzingHistory && historyImportTargetId === record.id ? "正在分析…" : "上传替换"}</button>
+                  <button disabled={uploadBusy} onClick={(event) => chooseHistoryProjectFile(record.id, event.currentTarget)}>{analyzingHistory && historyImportTargetId === record.id ? "正在分析…" : "上传替换"}</button>
                   <button className="history-reuse" onClick={() => reuseSavedProject(record)}>复用该项目</button>
                 </div>
               </article>)}
@@ -1562,7 +1674,7 @@ export default function Home() {
                 </dl>
                 <div className="history-card-actions">
                   <button aria-label={`预览${historyProjectName(profile)}`} onClick={(event) => openHistoryProjectPreview(profile, event.currentTarget)}>预览</button>
-                  <button disabled={analyzingHistory} onClick={(event) => chooseHistoryProjectFile(profile.id, event.currentTarget)}>{analyzingHistory && historyImportTargetId === profile.id ? "正在分析…" : "上传替换"}</button>
+                  <button disabled={uploadBusy} onClick={(event) => chooseHistoryProjectFile(profile.id, event.currentTarget)}>{analyzingHistory && historyImportTargetId === profile.id ? "正在分析…" : "上传替换"}</button>
                   <button className="history-reuse" disabled={!profile.items.length} onClick={() => reuseHistoryProject(profile)}>复用该项目</button>
                 </div>
               </article>)}
@@ -1574,7 +1686,7 @@ export default function Home() {
         {(view === "library" || view === "catalog") && (
           <section className="library-view">
             {view === "catalog" && <div className="page-lead"><p>按品类与品牌浏览全部器材。</p></div>}
-            {view === "library" && <div className="project-flow-bar"><button onClick={() => setView("projects")}>返回项目管理</button><button onClick={() => setView("kit")}>查看该项目器材单 · {kit.length} 项</button></div>}
+            {view === "library" && <div className="project-flow-bar"><button onClick={() => setView("projects")}>返回项目管理</button><button onClick={() => setView("kit")}>查看该项目器材单 · {completedKit.length} 项</button></div>}
             {view === "library" && renderProjectBasics("library")}
             {(view === "catalog" || activeProject?.basicInfoConfirmed && !editingBasics) && <>
 
@@ -1637,7 +1749,7 @@ export default function Home() {
                             {series.items.map((item) => {
                               const selected = kit.some((row) => row.id === item.id);
                               return (
-                                <button key={item.id} className={selected ? "series-item selected" : "series-item"} disabled={selected} onClick={() => toggleSeriesItem(item, series.name)} aria-pressed={selected}>
+                                <button key={item.id} className={selected ? "series-item selected" : "series-item"} onClick={() => toggleSeriesItem(item, series.name)} aria-pressed={selected}>
                                   <span className="selection-box">{selected ? "✓" : ""}</span><span><strong>{item.name}</strong><small>{item.unit}</small></span>
                                 </button>
                               );
@@ -1654,8 +1766,10 @@ export default function Home() {
 
             <div className="result-meta">
               <span>找到 <b>{formatCount(filteredEquipment.length)}</b> 个标准条目</span>
-              <span>已加入的器材不会重复增加数量</span>
+              <span>点击“已加入”可取消，数量在器材单中调整</span>
             </div>
+
+            {renderCustomEquipment(category === "全部" ? "其他" : category)}
 
             <div className="equipment-list">
               <div className="equipment-list-head"><span>器材名称 / 技术指标</span><span>操作</span></div>
@@ -1673,7 +1787,7 @@ export default function Home() {
                       </dl>
                     </div>
                     <div className="equipment-actions">
-                      <button className={inKit ? "row-add added" : "row-add"} disabled={inKit} aria-label={`${inKit ? "已加入" : "加入"}${name}`} onClick={() => addToKit(item.id)}>{inKit ? "已加入" : "加入"}</button>
+                      <button className={inKit ? "row-add added" : "row-add"} aria-pressed={inKit} title={inKit ? "再次点击取消选择；可撤销恢复" : "加入当前项目"} aria-label={`${inKit ? "取消选择" : "加入"}${name}`} onClick={() => addToKit(item.id)}>{inKit ? "已加入 · 取消" : "加入"}</button>
                     </div>
                   </article>
                 );
@@ -1698,7 +1812,7 @@ export default function Home() {
                 <p>{project.type} · {project.days} 天 · {project.cameraCount} 机位 · {project.resolution} · {project.aspectRatio} · {project.baseFps}fps</p>
               </div>
               <div className="kit-metrics">
-                <div><strong>{kit.length}</strong><span>器材项目</span></div>
+                <div><strong>{completedKit.length}</strong><span>器材项目</span></div>
                 <div><strong>{selectedUnits}</strong><span>合计数量</span></div>
 
               </div>
@@ -1710,7 +1824,7 @@ export default function Home() {
                 <button
                   className="button primary"
                   onClick={exportExcel}
-                  disabled={exportingExcel || !kit.length}
+                  disabled={exportingExcel || !completedKit.length}
                   aria-busy={exportingExcel}
                   title="生成 .xlsx 并选择保存位置"
                 >
@@ -1722,15 +1836,15 @@ export default function Home() {
             {!!kit.length && <div className="kit-review-toolbar">
               <label className="search-field"><ControlIcon kind="search" /><input aria-label="搜索当前器材单" value={kitQuery} onChange={(event) => setKitQuery(event.target.value)} placeholder="搜索型号或备注" /></label>
               <div className="segmented" role="group" aria-label="清单筛选">
-                <button aria-pressed={kitScope === "all"} className={kitScope === "all" ? "active" : ""} onClick={() => setKitScope("all")}>全部 {kit.length}</button>
+                <button aria-pressed={kitScope === "all"} className={kitScope === "all" ? "active" : ""} onClick={() => setKitScope("all")}>全部 {completedKit.length}</button>
                 <button aria-pressed={kitScope === "pending"} className={kitScope === "pending" ? "active" : ""} onClick={() => setKitScope("pending")}>待确认 {statusCounts.pending}</button>
               </div>
               <select aria-label="筛选清单类别" value={kitCategory} onChange={(event) => setKitCategory(event.target.value as typeof kitCategory)}>{["全部", ...categories].map((name) => <option key={name}>{name}</option>)}</select>
               <small>导出包含完整器材清单</small>
             </div>}
 
-            {activeProject?.requirementsChanged && <div className="requirements-notice" role="status"><div><strong>拍摄规格已修改</strong><p>请核对现有器材与最新的机位、分辨率及帧率要求。</p></div><button className="button ghost" onClick={() => updateActive((current) => ({ ...current, requirementsChanged: false }))}>已核对清单</button></div>}
-            {!!kit.length && (
+            {activeProject?.requirementsChanged && <div className="requirements-notice" role="status"><div><strong>拍摄规格已修改</strong><p>请核对现有器材与最新的机位、分辨率及帧率要求。</p></div><button className="button ghost" onClick={() => updateActive((current) => ({ ...current, requirementsChanged: false, requirementsRevision: (current.requirementsRevision ?? 0) + 1 }))}>已核对清单</button></div>}
+            {!!completedKit.length && (
               <details className="kit-brief-details"><summary>项目基本信息 · {project.resolution} / {project.aspectRatio} / {project.baseFps}fps</summary><section className="decision-brief-strip" aria-label="项目基本信息摘要">
                 <div><span>拍摄周期</span><strong>{formatShootRange(project.shootDate, project.days)}</strong><small>{project.days} 天 · {project.cameraCount} 机位</small></div>
                 <div><span>拍摄参数</span><strong>{project.resolution} · {project.aspectRatio}</strong><small>{project.baseFps}fps{project.highSpeedFps > project.baseFps ? ` / 升格 ${project.highSpeedFps}fps` : ""}</small></div>
@@ -1739,7 +1853,7 @@ export default function Home() {
               </section></details>
             )}
 
-            {!!kit.length && missingSystemChecks.length > 0 && (
+            {!!completedKit.length && missingSystemChecks.length > 0 && (
               <section className="system-audit-panel has-missing">
                 <header>
                   <div><h3>{missingSystemChecks.length} 组配套项目待补充</h3><p>补充后可撤销，兼容性与数量仍需确认。</p></div>
@@ -1758,7 +1872,7 @@ export default function Home() {
               </section>
             )}
 
-            {!!kit.length && !missingSystemChecks.length && (
+            {!!completedKit.length && systemChecks.length > 0 && !missingSystemChecks.length && (
               <section className={statusCounts.pending ? "audit-pass-strip has-pending" : "audit-pass-strip"} aria-label="摄影系统基础覆盖">
                 <span className="audit-pass-icon">{statusCounts.pending ? "!" : "✓"}</span>
                 <div><strong>{statusCounts.pending ? `基础配套已列入；还有 ${statusCounts.pending} 项待确认` : "基础配套已列入"}</strong><small>供电、存储、镜头控制、监看与承托均已有对应项；“待确认”器材仍需在测试日和租赁方复核。</small></div>
@@ -1766,25 +1880,14 @@ export default function Home() {
               </section>
             )}
 
-            {!!kit.length && checks.length > 0 && (
+            {!!completedKit.length && checks.length > 0 && (
               <div className={checks.some((item) => item.level === "warning") ? "dop-checks has-warning" : "dop-checks"}>
                 <div><strong>{checks.length ? "发单前还有几项需要确认" : "基础配置检查通过"}</strong></div>
                 <ul>{checks.map((check) => <li className={check.level} key={check.text}>{check.text}</li>)}</ul>
               </div>
             )}
 
-            <details className="custom-item-panel">
-              <summary><strong>添加库外器材或消耗品</strong><b>展开</b></summary>
-              <div className="custom-item-fields">
-                <input aria-label="库外器材名称" value={customDraft.name} onChange={(event) => setCustomDraft({ ...customDraft, name: event.target.value })} placeholder="器材名称" />
-                <input aria-label="库外器材品牌" value={customDraft.brand} onChange={(event) => setCustomDraft({ ...customDraft, brand: event.target.value })} placeholder="品牌" />
-                <select aria-label="库外器材类别" value={customDraft.category} onChange={(event) => setCustomDraft({ ...customDraft, category: event.target.value as EquipmentCategory })}>
-                  {categories.map((name) => <option key={name}>{name}</option>)}
-                </select>
-                <input aria-label="库外器材单位" value={customDraft.unit} onChange={(event) => setCustomDraft({ ...customDraft, unit: event.target.value })} placeholder="单位" />
-                <button className="button ghost" onClick={addCustomItem}>加入器材单</button>
-              </div>
-            </details>
+            {!kit.length && renderCustomEquipment("其他")}
 
             {!kit.length ? (
               <div className="empty-state large">
@@ -1797,10 +1900,22 @@ export default function Home() {
                 {!visibleKitGroups.length && <div className="empty-state"><strong>没有符合筛选的器材</strong><button className="button ghost" onClick={() => { setKitQuery(""); setKitScope("all"); setKitCategory("全部"); }}>显示全部器材</button></div>}
                 {visibleKitGroups.map((group, groupIndex) => (
                   <section className="kit-group" key={group.name}>
-                    <header><div><span>{String(groupIndex + 1).padStart(2, "0")}</span><h3>{group.name}</h3></div><small>{group.rows.length} 项</small></header>
+                    <header><div><span>{String(groupIndex + 1).padStart(2, "0")}</span><h3>{group.name}</h3></div><div className="kit-group-actions"><small>{group.rows.filter((row) => !isBlankCustomKitItem(row)).length} 项</small><button className="button ghost" aria-label={`在${group.name}下新增自定义器材`} onClick={() => addBlankCustomRow(group.name)}>新增器材</button></div></header>
                     <div className="kit-table-head"><span>设备名称</span><span>数量</span><span>单位</span><span>备注</span><span>操作</span></div>
-                    {group.rows.map((row) => {
+                    {group.rows.map((row, rowIndex) => {
                       const item = resolveKitEquipment(row)!;
+                      if (row.custom) return (
+                        <div className="kit-row custom-kit-row" key={row.id}>
+                          <div className="custom-kit-identity">
+                            <label><span>器材名称</span><input id={`custom-name-${row.id}`} aria-label={`${group.name}自定义器材${rowIndex + 1}名称`} maxLength={240} value={row.custom.name} placeholder="填写器材名称与规格" onChange={(event) => updateCustomRow(row, { name: event.target.value })} /></label>
+                            <label><span>品牌</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}品牌`} maxLength={120} value={row.custom.brand} placeholder="品牌" onBlur={() => { if (!row.custom?.brand.trim()) updateCustomRow(row, { brand: "通用" }); }} onChange={(event) => updateCustomRow(row, { brand: event.target.value })} /></label>
+                          </div>
+                          <label className="custom-kit-quantity"><span>数量</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} /></label>
+                          <label className="custom-kit-unit"><span>单位</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}单位`} maxLength={20} value={row.custom.unit} placeholder="件" onBlur={() => { if (!row.custom?.unit.trim()) updateCustomRow(row, { unit: "件" }); }} onChange={(event) => updateCustomRow(row, { unit: event.target.value })} /></label>
+                          <label className="custom-kit-note"><span>备注</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}备注`} maxLength={2000} value={row.note} placeholder="添加备注" onChange={(event) => updateKit(row.id, { note: event.target.value })} /></label>
+                          <div className="kit-row-actions">{!isBlankCustomKitItem(row) && (kitItemStatus(row) === "pending" || kitItemStatus(row) === "recommended") && <button className="swap-button" aria-label={`确认${item.name}`} onClick={() => updateKit(row.id, { status: "confirmed" })}>确认</button>}<button className="remove-button" aria-label={`删除${group.name}自定义器材${rowIndex + 1}`} onClick={() => setKit((current) => current.filter((itemRow) => itemRow.id !== row.id), "删除自定义器材行")}><ControlIcon kind="close" /></button></div>
+                        </div>
+                      );
                       return (
                         <div className="kit-row" key={row.id}>
                           <div className="kit-item-name">
@@ -1827,6 +1942,7 @@ export default function Home() {
                         </div>
                       );
                     })}
+                    {group.rows.some(isBlankCustomKitItem) && <p className="custom-row-help">空白行不计入数量，也不会导出。</p>}
                   </section>
                 ))}
               </div>
@@ -1903,7 +2019,7 @@ export default function Home() {
             <header>
               <div>
                 <h2 id="history-preview-title">{historyPreview.mode === "analysis" ? isImportedHistoryId(historyPreview.targetId) && !historyOverrides[historyPreview.targetId] ? "确认新增历史项目" : "确认上传替换" : historyProjectName(historyPreview.profile)}</h2>
-                <p>{historyPreview.mode === "analysis" ? "核对识别的器材、数量与项目名称，再保存为历史项目。" : `历史项目 · ${historyProjectName(historyPreview.profile)}｜${historyPreview.profile.subtitle}`}</p>
+                <p>{historyPreview.mode === "analysis" ? "核对识别的器材、数量与项目名称，再保存为历史项目。未匹配的型号不会自动加入，请对照原文件补充。" : `历史项目 · ${historyProjectName(historyPreview.profile)}｜${historyPreview.profile.subtitle}`}</p>
               </div>
               <button aria-label="关闭历史项目预览" onClick={() => setHistoryPreview(null)}><ControlIcon kind="close" /></button>
             </header>
@@ -1956,7 +2072,7 @@ export default function Home() {
                 <header><div><h3>器材清单</h3></div><strong>{historyPreview.profile.items.length}<small> 项</small></strong></header>
                 <div>
                   {historyPreview.profile.items.map((id, index) => {
-                    const row = historyPreview.record?.kit[index];
+                    const row = historyPreview.record?.kit.find((row) => row.id === id);
                     const item = row ? resolveKitEquipment(row) : equipmentById(id);
                     if (!item) return null;
                     return (
@@ -1989,7 +2105,7 @@ export default function Home() {
                 {historyPreview.mode === "analysis" ? (
                   <button type="button" className="button primary" disabled={!historyPreview.profile.items.length} onClick={confirmHistoryProjectReplacement}>{isImportedHistoryId(historyPreview.targetId) && !historyOverrides[historyPreview.targetId] ? "保存历史项目" : "确认分析并替换"}</button>
                 ) : (
-                  <button type="button" className="button primary" disabled={analyzingHistory} onClick={() => chooseHistoryProjectFile(historyPreview.targetId)}>上传并替换</button>
+                  <button type="button" className="button primary" disabled={uploadBusy} onClick={() => chooseHistoryProjectFile(historyPreview.targetId)}>上传并替换</button>
                 )}
               </div>
             </footer>
@@ -1997,6 +2113,11 @@ export default function Home() {
         </div>
       )}
 
+      {(view === "library" || view === "catalog") && activeProject?.basicInfoConfirmed && <aside className="selection-checkout" aria-label="当前项目选材进度">
+        <div><strong>{project.name}</strong><span role="status">已选 {completedKit.length} 项 · 合计 {selectedUnits} · 点击已加入可取消</span></div>
+        <button className="button primary" onClick={() => { setKitQuery(""); setKitCategory("全部"); setKitScope("all"); setView("kit"); }}>查看器材单 · {completedKit.length} 项</button>
+      </aside>}
+      {uploadBusy && <div className="upload-progress" role="status" aria-live="polite" aria-busy="true"><span className="loading-spinner" aria-hidden="true" /><div><strong>{uploadLabel}</strong><span>请稍候，完成后会显示核对结果</span></div></div>}
       {toast && <div className="toast" role="status">{toast}</div>}
     </main>
   );

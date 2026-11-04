@@ -85,12 +85,13 @@ function roleFromCategory(item: CanonicalEquipmentRecord, text: string): Equipme
   }
   if (item.category === "移动器材") {
     if (/摄影车|道莱车|轨道车/i.test(text) || (/dolly/i.test(text) && !/track|轨/i.test(text))) return "dolly";
+    if (/slider|滑轨|u-bangi/i.test(text)) return "slider";
     if (/track|直轨|弯轨|轨道/i.test(text)) return "track";
-    if (/slider|滑轨/i.test(text)) return "slider";
     if (/jib|crane|摇臂|伸缩炮|howmoco/i.test(text)) return "jib";
     if (/ronin|rs\s*[2345]|gimbal|稳定器|遥控头|remote\s*head/i.test(text)) return "gimbal";
-    if (/head|云台|2575|2065|teris|图瑞斯/i.test(text)) return "tripod-head";
-    if (/tripod|脚架|高低脚|baby\s*legs|tall\s*legs/i.test(text)) return "tripod-legs";
+    const identity = `${item.name} ${item.subcategory}`;
+    if (/tripod|脚架|高低脚|baby\s*legs|tall\s*legs/i.test(identity) && !/head|云台/i.test(identity)) return "tripod-legs";
+    if (/head|云台|2575|2065|teris|图瑞斯/i.test(identity)) return "tripod-head";
     return "accessory";
   }
   if (/电池|battery|charger|充电|v-?mount|gold\s*mount|tb\s*50/i.test(text)) return "power";

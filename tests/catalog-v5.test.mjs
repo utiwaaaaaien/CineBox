@@ -232,3 +232,11 @@ test("official corrections do not invent mount configurations or conflate them",
   assert.match(fixtures[0].name, /PL口/); assert.match(fixtures[1].name, /E口/);
   assert.equal(mergeEquipment(fixtures).rows.length, 2);
 });
+
+test("history migration preserves quantities above 99 through backup restore", () => {
+  const input = { saved: { items: [oldId, retainedId], quantities: { [oldId]: 120, [retainedId]: 80 } } };
+  const migrated = migrateCatalogHistory(input);
+  assert.deepEqual(migrated.saved.items, [retainedId]);
+  assert.equal(migrated.saved.quantities[retainedId], 200);
+  assert.deepEqual(migrateCatalogHistory(migrated), migrated);
+});

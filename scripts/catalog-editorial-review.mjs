@@ -54,7 +54,7 @@ export function prepareEditorialRow(input) {
  if(row.officialProduct) {
   const evidence=row.officialProduct;
   row={...row,brandZh:evidence.brandZh??row.brandZh,brandEn:evidence.brandEn??row.brandEn,series:evidence.series??'',model:evidence.model,namingStatus:'official-model',verified:true,reviewNotes:[]};
-  row.references=[...row.references,{url:evidence.source,scope:'model',language:evidence.language??'en',checkedAt}];
+  row.references=[...row.references,{url:evidence.source,scope:'model',language:evidence.language??'en',checkedAt:evidence.checkedAt??checkedAt}];
   delete row.officialProduct;
  }
  // Foreign-product aliases are restored as separate selectable identities.

@@ -60,6 +60,7 @@ export type CameraSystemCheck = {
 type AdditionSpec = RuleAddition & {
   match: RegExp;
   minimum?: number;
+  availableQuantity?: number;
 };
 
 function customAddition(
@@ -96,7 +97,9 @@ export function buildCameraSystemChecks(
   const cameraRows = rows.filter((entry) => entry.item?.category === "摄影机");
   const cameraUnits = Math.max(project.cameraCount, cameraRows.reduce((sum, entry) => sum + entry.row.qty, 0), 1);
   const hasCamera = cameraRows.length > 0;
-  const hasRonin4D = /ronin\s*4d|如影\s*4d/i.test(allText);
+  const roninUnits = cameraRows.reduce((sum, entry) => /ronin\s*4d|如影\s*4d/i.test(entry.text) ? sum + entry.row.qty : sum, 0);
+  const miniLfUnits = cameraRows.reduce((sum, entry) => /(?:arri|alexa).*mini\s*lf/i.test(entry.text) ? sum + entry.row.qty : sum, 0);
+  const hasRonin4D = roninUnits > 0;
   const hasArri = /arri|alexa/i.test(cameraRows.map((entry) => entry.text).join(" "));
   const hasRed = /\bred\b|v-?raptor|komodo/i.test(cameraRows.map((entry) => entry.text).join(" "));
   const hasCinemaBody = hasArri || hasRed || /venice|burano/i.test(cameraRows.map((entry) => entry.text).join(" "));
@@ -131,7 +134,7 @@ export function buildCameraSystemChecks(
     autoAdd: boolean,
     specs: AdditionSpec[],
   ) => {
-    const missing = specs.filter((spec) => quantityMatching(spec.match) < (spec.minimum ?? spec.qty));
+    const missing = specs.filter((spec) => (spec.availableQuantity ?? quantityMatching(spec.match)) < (spec.minimum ?? spec.qty));
     const canAdd = missing.every(spec => spec.custom || catalogMap.get(spec.id)?.published !== false);
     rules.push({ id, title, detail, evidence, severity, autoAdd: autoAdd && canAdd, missing, total: specs.length });
   };
@@ -141,20 +144,20 @@ export function buildCameraSystemChecks(
     if (hasRonin4D) {
       powerSpecs.push({
         id: "accessory-tb50",
-        qty: Math.max(6, batterySets),
-        minimum: Math.max(6, batterySets),
+        qty: Math.max(6, batterySets) * roninUnits,
+        minimum: Math.max(6, batterySets) * roninUnits,
         note: project.manualSelection ? "核对实际拍摄时长、供电方式和电池周转，数量由摄影指导确认" : `按每日 ${hoursPerDay} 小时与${project.powerAccess ?? "部分市电"}确认充电周转`,
         label: "DJI TB50 智能电池",
         match: /tb\s*50/i,
       });
     }
-    if (!hasRonin4D || cameraRows.some((entry) => !/ronin\s*4d|如影\s*4d/i.test(entry.text))) {
+    if (cameraUnits > roninUnits) {
       powerSpecs.push(customAddition(
         "rule-camera-power",
         "摄影机电池、充电器与供电线套装",
         "摄影机附件",
         "供电",
-        Math.max(1, cameraUnits - (hasRonin4D ? 1 : 0)),
+        Math.max(1, cameraUnits - roninUnits),
         project.manualSelection ? "确认电压、接口、容量及实际工作时长；电池数量在发单前核对" : `确认电压、接口、容量；按每日 ${hoursPerDay} 小时准备约 ${batterySets} 组周转`,
         /摄影机电池|camera\s*batter|v-?mount|gold\s*mount|供电线套装/i,
       ));
@@ -171,22 +174,23 @@ export function buildCameraSystemChecks(
 
     const mediaSpecs: AdditionSpec[] = [];
     if (hasRonin4D) {
-      mediaSpecs.push({ id: "accessory-prossd", qty: mediaSets, minimum: mediaSets, note: project.manualSelection ? `按 ${project.resolution ?? "4K"} / ${project.baseFps ?? 25}fps 核对实际码率与容量，数量在测试日确认` : `按 ${project.resolution ?? "4K"} / ${project.recordingFormat ?? "高质量母版"} / ${shootingRatio}:1 估算并在测试日复核`, label: "DJI PROSSD 1TB", match: /prossd/i });
+      mediaSpecs.push({ id: "accessory-prossd", qty: mediaSets * roninUnits, minimum: mediaSets * roninUnits, note: project.manualSelection ? `按 ${project.resolution ?? "4K"} / ${project.baseFps ?? 25}fps 核对实际码率与容量，数量在测试日确认` : `按 ${project.resolution ?? "4K"} / ${project.recordingFormat ?? "高质量母版"} / ${shootingRatio}:1 估算并在测试日复核`, label: "DJI PROSSD 1TB", match: /prossd/i });
     }
-    if (hasArri && /mini\s*lf/i.test(allText)) {
+    if (miniLfUnits > 0) {
       mediaSpecs.push(
-        { id: "eq-codex-codex-960gb-mini-lf-摄影机附件", qty: mediaSets, note: project.manualSelection ? `按 ${project.resolution ?? "4K"} / ${project.baseFps ?? 25}fps 核对实际码率与容量，数量在测试日确认` : `按 ${project.resolution ?? "4K"} / ${project.recordingFormat ?? "高质量母版"} / ${shootingRatio}:1 估算并在测试日复核`, label: "CODEX 960GB MINI LF", match: /codex\s*960gb|mini\s*lf\s*codex/i },
+        { id: "eq-codex-codex-960gb-mini-lf-摄影机附件", qty: mediaSets * miniLfUnits, note: project.manualSelection ? `按 ${project.resolution ?? "4K"} / ${project.baseFps ?? 25}fps 核对实际码率与容量，数量在测试日确认` : `按 ${project.resolution ?? "4K"} / ${project.recordingFormat ?? "高质量母版"} / ${shootingRatio}:1 估算并在测试日复核`, label: "CODEX 960GB MINI LF", match: /codex\s*960gb|mini\s*lf\s*codex/i },
         { id: "eq-codex-codex-reader-摄影机附件", qty: 1, note: "确认雷电/数据接口", label: "CODEX Reader", match: /codex\s*reader/i },
       );
-    } else if (!hasRonin4D || cameraRows.length > 1) {
+    }
+    if (cameraUnits > roninUnits + miniLfUnits) {
       mediaSpecs.push(customAddition(
         "rule-camera-media",
-        "摄影机存储卡、读卡器与备份周转",
+        "其他机型存储卡、读卡器与备份周转",
         "摄影机附件",
         "存储",
-        1,
+        Math.max(1, cameraUnits - roninUnits - miniLfUnits),
         project.manualSelection ? `按 ${project.resolution ?? "4K"}、${project.baseFps ?? 25}fps 核对机型、实际码率与备份周转` : `按 ${project.resolution ?? "4K"}、${isHighSpeed ? `${project.highSpeedFps ?? "高"}fps` : `${project.baseFps ?? 25}fps`}、${shootingRatio}:1 拍摄比计算`,
-        /codex|prossd|cfexpress|cfast|red\s*ssd|摄影机存储|读卡器/i,
+        /摄影机存储|其他机型存储|存储卡.*读卡器.*备份/i,
       ));
     }
     addRule(
@@ -268,12 +272,21 @@ export function buildCameraSystemChecks(
       videoSpecs,
     );
 
+    const supportUnits = { heads: 0, legs: 0 };
+    for (const entry of rows) {
+      if (entry.item?.category !== "移动器材") continue;
+      const identity = `${entry.item.name} ${entry.item.subcategory}`;
+      const role = classifyEquipment(entry.item as RuleEquipment).role;
+      const system = /三脚架系统|云台脚架套装|云台与脚架|tripod\s*(?:system|kit)/i.test(identity);
+      if (system || role === "tripod-head") supportUnits.heads += entry.row.qty;
+      if (system || role === "tripod-legs") supportUnits.legs += entry.row.qty;
+    }
     const supportSpecs: AdditionSpec[] = cinemaSystem
       ? [
-        { id: "grip-oconnor2575", qty: Math.max(1, Math.min(cameraUnits, 2)), minimum: Math.max(1, Math.min(cameraUnits, 2)), note: "确认负载、碗口和快装板", label: "OConnor 2575D 液压云台", match: /2575|2065|oconnor/i },
-        { id: "grip-ronford-legs", qty: Math.max(1, Math.min(cameraUnits, 2)), minimum: Math.max(1, Math.min(cameraUnits, 2)), note: "高脚、矮脚与低机位组合", label: "Ronford 高低脚组合", match: /ronford|高低脚|高脚|矮脚/i },
+        { id: "grip-oconnor2575", qty: cameraUnits, minimum: cameraUnits, availableQuantity: supportUnits.heads, note: "确认负载、碗口和快装板", label: "OConnor 2575D 液压云台", match: /2575|2065|oconnor/i },
+        { id: "grip-ronford-legs", qty: cameraUnits, minimum: cameraUnits, availableQuantity: supportUnits.legs, note: "高脚、矮脚与低机位组合", label: "Ronford 高低脚组合", match: /ronford|高低脚|高脚|矮脚/i },
       ]
-      : [{ id: "grip-teris", qty: cameraUnits, minimum: cameraUnits, note: "每个常规机位一套基础承托", label: "TERIS V20 三脚架系统", match: /teris|图瑞斯|三脚架|液压云台/i }];
+      : [{ id: "grip-teris", qty: cameraUnits, minimum: cameraUnits, availableQuantity: Math.min(supportUnits.heads, supportUnits.legs), note: "每个常规机位一套基础承托", label: "TERIS V20 三脚架系统", match: /teris|图瑞斯|三脚架|液压云台/i }];
     addRule(
       "camera-support",
       "机身承托与高低机位",
@@ -361,6 +374,12 @@ export function buildCameraSystemChecks(
       .filter((item): item is RuleEquipment => Boolean(item));
     const cameraMounts = [...new Set(cameraCatalogRows.map((item) => classifyEquipment(item).lensMount).filter((mount) => mount !== "unknown"))];
     const lensMounts = [...new Set(lensCatalogRows.map((item) => classifyEquipment(item).lensMount).filter((mount) => mount !== "unknown"))];
+    const mountIsExplicit = (item: RuleEquipment) => Boolean(item.lensMount && item.lensMount !== "unknown") || /\b(?:lpl|pl|rf|ef)\b|[ERFPL]+口|e-mount/i.test(`${item.name} ${item.subcategory}`);
+    const mountsNeedVerification = [...cameraCatalogRows, ...lensCatalogRows].some((item) => !mountIsExplicit(item));
+    if (lensCatalogRows.length && mountsNeedVerification) {
+      addRule("camera-mount-verification", "核对机身与镜头的实装卡口", "部分器材没有记录实装卡口，品牌或型号推测不能证明兼容，请核对转接环和租赁配置。", "以实物和租赁配置为准；原生卡口、改口及转接配置分别确认。", "warning", false,
+        [customAddition("rule-mount-verification", "机身与镜头实装卡口核验", "其他", "测试计划", 1, "记录每套机身、镜头及转接件的实际卡口", /实装卡口核验/i)]);
+    }
     const needsMountAdapter = cameraMounts.length && lensMounts.some((lensMount) => !cameraMounts.includes(lensMount));
     if (needsMountAdapter) {
       const cameraMountLabel = cameraMounts.join("/");
@@ -368,7 +387,7 @@ export function buildCameraSystemChecks(
       addRule(
         "camera-lens-mount",
         "机身与镜头卡口兼容",
-        `当前机身识别为 ${cameraMountLabel} 卡口，镜头包含 ${lensMountLabel} 卡口。需要确认可用转接、法兰距、后组空间与镜头支撑。`,
+        `按${mountsNeedVerification ? "名称推测（未核验）" : "已记录配置"}，机身为 ${cameraMountLabel}，镜头包含 ${lensMountLabel} 卡口。需要确认实装卡口、可用转接、法兰距、后组空间与镜头支撑。`,
         "卡口转接不是只看能否安装；电影镜头还要确认法兰距、15/19mm 杆位、镜头支撑和稳定器重心。",
         "warning",
         false,

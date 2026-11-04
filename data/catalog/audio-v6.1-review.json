@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-11-04",
+  "newIds": [
+    "v61-audio-rode-wireless-pro",
+    "v61-audio-rode-wireless-go-gen3",
+    "v61-audio-rode-wireless-micro-usb-c",
+    "v61-audio-rode-wireless-micro-lightning",
+    "v61-audio-rode-wireless-micro-camera-kit",
+    "v61-audio-rode-ntg5",
+    "v61-audio-rode-videomic-ntg",
+    "v61-audio-dji-mic3-2tx-kit",
+    "v61-audio-dji-mic3-1tx-kit",
+    "v61-audio-dji-mic3-transmitter",
+    "v61-audio-dji-mic2-2tx-kit",
+    "v61-audio-dji-mic-mini2-2tx-kit",
+    "v61-audio-dji-mic-mini2-mobile-2tx-kit",
+    "v61-audio-dji-mic-mini2s-2tx-kit",
+    "v61-audio-dji-mic-mini2s-transmitter",
+    "v61-audio-sony-ecm-w3",
+    "v61-audio-sony-ecm-w3s",
+    "v61-audio-sony-ecm-s1",
+    "v61-audio-sony-ecm-m1",
+    "v61-audio-sony-ecm-l1",
+    "v61-audio-sony-uwp-d21",
+    "v61-audio-sennheiser-profile-wireless-1ch",
+    "v61-audio-sennheiser-profile-wireless-2ch",
+    "v61-audio-sennheiser-ewdp-me2-s4-7",
+    "v61-audio-sennheiser-ewdp-eng-s4-7",
+    "v61-audio-sennheiser-mke600",
+    "v61-audio-sennheiser-mkh8060"
+  ],
+  "packages": {
+    "v61-audio-rode-wireless-pro": {
+      "tx": 2,
+      "rx": 1
+    },
+    "v61-audio-rode-wireless-go-gen3": {
+      "tx": 2,
+      "rx": 1
+    },
+    "v61-audio-rode-wireless-micro-usb-c": {
+      "tx": 2,
+      "rx": 1,
+      "connector": "USB-C"
+    },
+    "v61-audio-rode-wireless-micro-lightning": {
+      "tx": 2,
+      "rx": 1,
+      "connector": "Lightning"
+    },
+    "v61-audio-rode-wireless-micro-camera-kit": {
+      "tx": 2,
+      "rx": 2
+    },
+    "v61-audio-dji-mic3-2tx-kit": {
+      "tx": 2,
+      "rx": 1,
+      "case": 1
+    },
+    "v61-audio-dji-mic3-1tx-kit": {
+      "tx": 1,
+      "rx": 1
+    },
+    "v61-audio-dji-mic3-transmitter": {
+      "tx": 1,
+      "rx": 0
+    },
+    "v61-audio-dji-mic2-2tx-kit": {
+      "tx": 2,
+      "rx": 1,
+      "case": 1
+    },
+    "v61-audio-dji-mic-mini2-2tx-kit": {
+      "tx": 2,
+      "rx": 1,
+      "case": 1,
+      "receiverType": "standard"
+    },
+    "v61-audio-dji-mic-mini2-mobile-2tx-kit": {
+      "tx": 2,
+      "rx": 1,
+      "case": 1,
+      "receiverType": "mobile"
+    },
+    "v61-audio-dji-mic-mini2s-2tx-kit": {
+      "tx": 2,
+      "rx": 1
+    },
+    "v61-audio-dji-mic-mini2s-transmitter": {
+      "tx": 1,
+      "rx": 0
+    },
+    "v61-audio-sony-ecm-w3": {
+      "tx": 2,
+      "rx": 1
+    },
+    "v61-audio-sony-ecm-w3s": {
+      "tx": 1,
+      "rx": 1
+    },
+    "v61-audio-sony-uwp-d21": {
+      "tx": 1,
+      "rx": 1,
+      "regionBand": "unspecified"
+    },
+    "v61-audio-sennheiser-profile-wireless-1ch": {
+      "tx": 1,
+      "rx": 1,
+      "receiverChannels": 2
+    },
+    "v61-audio-sennheiser-profile-wireless-2ch": {
+      "tx": 2,
+      "rx": 1,
+      "receiverChannels": 2
+    },
+    "v61-audio-sennheiser-ewdp-me2-s4-7": {
+      "tx": 1,
+      "rx": 1,
+      "receiverChannels": 1,
+      "band": "630–662 MHz"
+    },
+    "v61-audio-sennheiser-ewdp-eng-s4-7": {
+      "tx": 2,
+      "rx": 1,
+      "receiverChannels": 1,
+      "band": "630–662 MHz"
+    }
+  },
+  "notes": [
+    "新增官方型号不代表供应商库存；单发射器、接收器、套装及代际分别保留ID。",
+    "UHF频段按明确记录保留；Sony UWP-D21未指定地区频段，不假定与任意地区发射器通用。",
+    "Profile Wireless 32-bit float需固件v4.1.0及以上，不将固件升级当新代际。"
+  ]
+}

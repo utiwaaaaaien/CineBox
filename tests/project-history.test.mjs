@@ -133,7 +133,7 @@ test("keeps only valid custom history replacements", () => {
   assert.equal(saved["slot-a"].projectName, "已保存项目名");
   assert.equal(saved["slot-a"].cameraCount, 8);
   assert.deepEqual(saved["slot-a"].items, ["cam-fx3"]);
-  assert.equal(saved["slot-a"].quantities["cam-fx3"], 99);
+  assert.equal(saved["slot-a"].quantities["cam-fx3"], 120);
   assert.equal(saved["slot-a"].source.importedAt, "2026-07-27T00:00:00.000Z");
 });
 
@@ -282,4 +282,82 @@ test("preserves an explicitly supplied custom history name", () => {
   assert.equal(saved["slot-a"].label, "TVC 器材单");
   assert.equal(saved["slot-a"].projectName, "自定义广告器材单");
   assert.equal(saved["slot-a"].customName, "自定义广告器材单");
+});
+
+test("preserves generations and rejects unknown model suffixes and ambiguous aliases", () => {
+  const models = [
+    { id: "base", name: "SONY Camera", category: "摄影机" },
+    { id: "second", name: "SONY Camera II", category: "摄影机", aliases: ["SONY Camera"] },
+    { id: "third", name: "SONY Camera III", category: "摄影机", aliases: ["SONY Camera"] },
+    { id: "fx3", name: "SONY FX3", category: "摄影机" },
+    { id: "a", name: "甲厂监视器", category: "监看", aliases: ["小监视器"] },
+    { id: "b", name: "乙厂监视器", category: "监看", aliases: ["小监视器"] },
+  ];
+  const analyze = (text) => analyzeHistoryProjectText(text, "test.txt", "TXT", models);
+  assert.deepEqual(analyze("SONY Camera 二代 2台\nSONY Camera Mark III ×3").items, ["second", "third"]);
+  assert.deepEqual(analyze("SONY Camera 二代 2台\nSONY Camera Mark III ×3").quantities, { second: 2, third: 3 });
+  assert.deepEqual(analyze("SONY Camera").items, ["base"]);
+  assert.deepEqual(analyze("SONY Camera IV\nSONY FX30\n小监视器").items, []);
+  assert.equal(analyze("SONY FX3").quantities, undefined);
+});
+
+test("adds repeated rows, keeps same-row quantities separate and handles Chinese and zero quantities", () => {
+  const result = analyzeHistoryProjectText([
+    "SONY FX3×2；DJI RS 4 Pro×3",
+    "SONY FX3 两台",
+    "DJI RS 4 Pro 数量：十",
+    "SONY FE 24-70mm F2.8 GM II 数量：0",
+  ].join("\n"), "test.txt", "TXT", catalog);
+  assert.deepEqual(result.items, ["cam-fx3", "grip-rs4"]);
+  assert.deepEqual(result.quantities, { "cam-fx3": 4, "grip-rs4": 13 });
+  const separateLines = analyzeHistoryProjectText("SONY\nFX3", "test.txt", "TXT", catalog);
+  assert.deepEqual(separateLines.items, []);
+});
+
+test("reads quantity columns before prices or notes, including quoted CSV cells", () => {
+  const result = analyzeHistoryProjectText([
+    "器材,数量,单价,备注",
+    '"SONY FX3",2,800,"含附件,两天"',
+    '"DJI RS 4 Pro",3,500,"含配件"',
+  ].join("\n"), "test.csv", "CSV", catalog);
+  assert.deepEqual(result.quantities, { "cam-fx3": 2, "grip-rs4": 3 });
+});
+
+test('import and restoration preserve quantities above 99 and bound at the project limit', () => {
+  const result = analyzeHistoryProjectText('型号,数量\nSONY FX3,120\nDJI RS 4 Pro,999', 'many.csv', 'CSV', catalog);
+  assert.deepEqual(result.quantities, { 'cam-fx3': 120, 'grip-rs4': 999 });
+  assert.equal(analyzeHistoryProjectText('SONY FX3 数量:1000', 'many.txt', 'TXT', catalog).quantities['cam-fx3'], 999);
+  const saved = sanitizeHistoryOverrides({'slot-a': {...result, cameraCount: NaN}}, new Set(['slot-a']), new Set(catalog.map(item => item.id)));
+  assert.equal(saved['slot-a'].quantities['cam-fx3'], 120);
+  assert.equal(saved['slot-a'].cameraCount, 1);
+});
+
+test('oversized text and spreadsheets fail explicitly instead of silently dropping equipment', async () => {
+  await assert.rejects(extractHistoryProjectFile(new File(['x'.repeat(300001)],'large.txt')),/超过 30 万字/);
+  const workbook = XLSX.utils.book_new();
+  for(let i=0;i<31;i++) XLSX.utils.book_append_sheet(workbook,XLSX.utils.aoa_to_sheet([['SONY FX3',1]]),`sheet${i}`);
+  await assert.rejects(extractHistoryProjectFile(new File([XLSX.write(workbook,{type:'array',bookType:'xlsx'})],'many.xlsx')),/超过 30 张工作表/);
+  const wide = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wide,XLSX.utils.aoa_to_sheet([Array.from({length:101},()=>1)]),'wide');
+  await assert.rejects(extractHistoryProjectFile(new File([XLSX.write(wide,{type:'array',bookType:'xlsx'})],'wide.xlsx')),/超过 10000 行或 100 列/);
+});
+
+test("ambiguous full names block shorter aliases instead of guessing a category", async () => {
+  const { publishedEquipment } = await import("../app/equipment-catalog.canonical.ts");
+  const ambiguousNames = ["通用 肩架", "通用 题字器"];
+  for (const name of ambiguousNames) {
+    const identities = publishedEquipment.filter(item => item.name === name);
+    assert.equal(identities.length, 2);
+    assert.equal(new Set(identities.map(item => item.category)).size, 2);
+    const analysis = analyzeHistoryProjectText(`${name},2`, "test.csv", "CSV", publishedEquipment);
+    assert.deepEqual(analysis.items, []);
+  }
+  const isolated = [
+    { id: "a", name: "通用 肩架", category: "摄影机附件" },
+    { id: "b", name: "通用 肩架", category: "移动器材", aliases: ["肩架"] },
+    { id: "camera", name: "SONY FX3", category: "摄影机" },
+  ];
+  const analysis = analyzeHistoryProjectText("通用 肩架,2\nSONY FX3,3", "test.csv", "CSV", isolated);
+  assert.deepEqual(analysis.items, ["camera"]);
+  assert.equal(analysis.quantities.camera, 3);
 });

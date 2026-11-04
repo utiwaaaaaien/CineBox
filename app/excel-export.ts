@@ -1,3 +1,4 @@
+import { isValidDateOnly } from "./project-state.ts";
 import type { CellObject, SheetData, SheetOptions } from "write-excel-file/browser";
 
 export type ExcelExportProject = {
@@ -62,6 +63,7 @@ const white = "#FFFFFF";
 
 function cell(value: CellObject["value"], overrides: CellObject = {}): CellObject {
   return {
+    type: typeof value === "string" ? String : undefined,
     value,
     borderColor: black,
     borderStyle: "thin",
@@ -84,6 +86,7 @@ function formatDate(date: Date) {
 
 export function formatShootRange(shootDate: string, days: number) {
   if (!shootDate) return "待定";
+  if (!isValidDateOnly(shootDate)) return "日期无效，请核对";
   const start = new Date(`${shootDate}T00:00:00`);
   if (Number.isNaN(start.getTime())) return shootDate;
   const safeDays = Math.max(1, Number.isFinite(days) ? Math.floor(days) : 1);
@@ -102,7 +105,7 @@ export function safeExcelFileName(projectName: string) {
   const safeName =
     projectName
       .trim()
-      .replace(/[\\/:*?"<>|]/g, "-")
+      .replace(/[\\/:*?"<>|\u0000-\u001f\u007f]/g, "-")
       .replace(/\s+/g, " ")
       .replace(/[.\s]+$/g, "")
       .slice(0, 80) || "摄影器材单";
@@ -110,6 +113,7 @@ export function safeExcelFileName(projectName: string) {
 }
 
 export function buildEquipmentWorkbook(project: ExcelExportProject, groups: ExcelExportGroup[], _review?: ExcelSystemReview) {
+  void _review; // Kept for callers using the former optional review argument.
   const hasShootingSpecs = Boolean(
     project.resolution ||
       project.aspectRatio ||
@@ -181,7 +185,10 @@ export function buildEquipmentWorkbook(project: ExcelExportProject, groups: Exce
     ]);
   }
 
-  groups.forEach((group) => {
+  const populatedGroups = groups
+    .map((group) => ({ ...group, rows: group.rows.filter((item) => item.name.trim()) }))
+    .filter((group) => group.rows.length);
+  populatedGroups.forEach((group) => {
     rows.push(
       mergedRow(categoryLabels[group.name] ?? `${group.name}_MISC`, {
         backgroundColor: sectionGray,

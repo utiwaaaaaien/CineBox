@@ -169,3 +169,41 @@ test('restores the unmet requirement review notice with an existing project', ()
   assert.equal(restored.requirementsChanged, true);
   assert.equal(restored.kit.length, 1);
 });
+
+test("repairs inherited-object project ids before they can index undo history", () => {
+  const restored = sanitizeProjectRecords(["__proto__", "constructor", "toString"].map(id => ({ id, form: { name: id }, kit: [] })), options);
+  const history = {};
+  for (const project of restored) {
+    assert.equal(Object.hasOwn(Object.prototype, project.id), false);
+    assert.equal(history[project.id], undefined);
+  }
+});
+
+test("restoration preserves every pre-existing project beyond the new-project limit", async () => {
+  const { maxProjectCount, projectCapacityError } = await import("../app/project-state.ts");
+  const input = Array.from({ length: maxProjectCount + 1 }, (_, index) => ({ id: `saved-${index}`, form: { name: `保留项目 ${index}` }, kit: [] }));
+  const restored = sanitizeProjectRecords(input, options);
+  assert.equal(restored.length, input.length);
+  assert.equal(restored.at(-1).form.name, `保留项目 ${maxProjectCount}`);
+  assert.equal(projectCapacityError(maxProjectCount - 1, 1), null);
+  assert.match(projectCapacityError(1, maxProjectCount), /不能超过 500/);
+});
+
+test("rejects impossible calendar dates in restored project forms", () => {
+  const dateOptions = { ...options, defaultForm: { ...defaultForm, shootDate: "" } };
+  for (const date of ["2026-02-31", "2026-02-29", "2026-13-01", "not-a-date"]) {
+    const [restored] = sanitizeProjectRecords([{ id: 'dated', form: { shootDate: date } }], dateOptions);
+    assert.equal(restored.form.shootDate, "");
+  }
+  const [leap] = sanitizeProjectRecords([{ id: 'dated', form: { shootDate: "2028-02-29" } }], dateOptions);
+  assert.equal(leap.form.shootDate, "2028-02-29");
+});
+
+test("a full historical archive permits replacing a slot but rejects a new slot atomically", async () => {
+  const { historyCapacityError } = await import("../app/project-state.ts");
+  const current = Object.fromEntries(Array.from({ length: 500 }, (_, index) => [`slot-${index}`, { name: `历史 ${index}` }]));
+  const before = JSON.stringify(current);
+  assert.equal(historyCapacityError(current, { "slot-0": { name: "替换内置项目" } }, 500), null);
+  assert.match(historyCapacityError(current, { "new-slot": {} }, 500), /产生 501 个/);
+  assert.equal(JSON.stringify(current), before);
+});

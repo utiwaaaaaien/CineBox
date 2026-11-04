@@ -1,7 +1,22 @@
-export const appVersion = "V6";
+export const appVersion = "V6.1";
 
 // Add each new release to the beginning of this list, keeping earlier entries.
 export const releaseNotes = [{
+  version: "V6.1",
+  date: "2026-11-04",
+  items: [
+    "自定义器材合并为直接填写区，分类跟随当前品类，无需展开或下拉选择。",
+    "器材单各分类可就地新增空白行，支持直接编辑与自动存档，导出忽略空白行。",
+    "扩充 RØDE、SONY、DJI、森海塞尔录音型号，保留发射器、接收器与套装边界。",
+    "点击已加入可取消选择，持续显示当前项目器材单入口与选材数量。",
+    "保留即时保存，新增每分钟自动存档、保存状态与恢复入口。",
+    "上传与导入显示处理状态，优化设备代际与数量识别。",
+    "移动器材累计补充 39 项，含 TERIS N6、V12 及不同云台、脚架套装。",
+    "修复项目容量、异常备份 ID、撤销复核标记、快照恢复及数量截断问题。",
+    "承托区分单独云台与脚架套装，混合机型按实际数量核对存储和供电。",
+    "更新文件解析与运行框架安全依赖，补齐类型检查。",
+  ],
+}, {
   version: "V6",
   date: "2026-10-18",
   items: [

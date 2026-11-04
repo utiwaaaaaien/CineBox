@@ -129,6 +129,6 @@ export function amendPublication(input,lensRules,exactModels) {
   en=core?`${core} ${categoryEnglish[row.category]}`:categoryEnglish[row.category];
   row.reviewNotes=[...row.reviewNotes,'英文行采用可识别型号和功能译名；未确认的品牌英文名或昵称不编造译名'];
  }
- row.englishName=en.replace(/\s+/g,' ').trim();row.reviewedAt=checkedAt;
+ row.englishName=en.replace(/\s+/g,' ').trim();row.reviewedAt=input.officialProduct?.checkedAt??checkedAt;
  return row;
 }

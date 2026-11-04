@@ -114,3 +114,39 @@ test('system completion preserves old catalog recognition and cannot automatical
   assert.equal(media.autoAdd, false);
   assert.ok(media.missing.some(row => /Reader/i.test(row.label)));
 });
+
+test('a standalone head cannot satisfy a complete tripod system', () => {
+  const head = {id:'test-head',name:'TERIS N6 液压云台',brand:'TERIS',category:'移动器材',subcategory:'液压云台',aliases:[],published:true};
+  const tripod = {id:'test-legs',name:'TERIS 碳纤维脚架',brand:'TERIS',category:'移动器材',subcategory:'三脚架',aliases:[],published:true};
+  const fixture = [...canonicalEquipment,head,tripod];
+  const checks = rows => buildCameraSystemChecks({...project,manualSelection:true},[{id:'cam-sony-fx3',qty:1},...rows],fixture).find(check=>check.id==='camera-support');
+  assert.ok(checks([{id:head.id,qty:1}]).missing.length);
+  assert.equal(checks([{id:head.id,qty:1},{id:tripod.id,qty:1}]).missing.length,0);
+});
+
+test('cinema support covers every camera and accepts equivalent heads and legs', () => {
+  const tripod = {id:'test-legs',name:'Sachtler 碳纤维脚架',brand:'Sachtler',category:'移动器材',subcategory:'三脚架',aliases:[],published:true};
+  const head = {id:'test-head',name:'Sachtler 液压云台',brand:'Sachtler',category:'移动器材',subcategory:'液压云台',aliases:[],published:true};
+  const fixture = [...canonicalEquipment,tripod,head];
+  const get = quantity => buildCameraSystemChecks({...project,cameraCount:3},[{id:'cam-alexa-mini',qty:3},{id:head.id,qty:quantity},{id:tripod.id,qty:quantity}],fixture).find(check=>check.id==='camera-support');
+  assert.equal(get(3).missing.length,0);
+  assert.equal(get(2).missing.length,2);
+  assert.ok(get(2).missing.every(row=>row.qty===3));
+});
+
+test('mixed bodies retain each media requirement and scale by body quantity', () => {
+  const checks = buildCameraSystemChecks({...project,manualSelection:true,cameraCount:5},[{id:'cam-alexa-mini-lf',qty:2},{id:'cam-ronin4d',qty:2},{id:'cam-sony-fx3',qty:1}],canonicalEquipment);
+  const media = checks.find(row=>row.id==='recording-media').missing;
+  assert.equal(media.find(row=>row.id==='accessory-prossd').qty,4);
+  assert.equal(media.find(row=>row.id==='eq-codex-codex-960gb-mini-lf-摄影机附件').qty,4);
+  assert.ok(media.some(row=>row.id==='rule-camera-media'));
+  assert.equal(checks.find(row=>row.id==='camera-power').missing.find(row=>row.id==='accessory-tb50').qty,12);
+});
+
+test('matching brand-derived mounts cannot silently pass without actual configuration', () => {
+  const checks = buildCameraSystemChecks(project,[{id:'cam-alexa-mini',qty:1},{id:'lens-zeiss-supreme',qty:1}],canonicalEquipment);
+  const verification = checks.find(row=>row.id==='camera-mount-verification');
+  assert.ok(verification?.missing.length);
+  assert.equal(verification.autoAdd,false);
+  assert.match(verification.detail,/没有记录实装卡口/);
+});

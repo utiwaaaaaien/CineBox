@@ -1,29 +1,29 @@
 import type { ProjectKitItem } from "./project-state";
 
 export type KitHistory<Category extends string = string> = {
-  past: Array<{ rows: ProjectKitItem<Category>[]; label: string; group?: string; requirementsChanged?: boolean }>;
-  future: Array<{ rows: ProjectKitItem<Category>[]; label: string; requirementsChanged?: boolean }>;
+  past: Array<{ rows: ProjectKitItem<Category>[]; label: string; group?: string; requirementsChanged?: boolean; requirementsRevision?: number }>;
+  future: Array<{ rows: ProjectKitItem<Category>[]; label: string; requirementsChanged?: boolean; requirementsRevision?: number }>;
 };
 
-export function recordKitChange<Category extends string>(history: KitHistory<Category>, before: ProjectKitItem<Category>[], label: string, group?: string, requirementsChanged = false): KitHistory<Category> {
+export function recordKitChange<Category extends string>(history: KitHistory<Category>, before: ProjectKitItem<Category>[], label: string, group?: string, requirementsChanged = false, requirementsRevision = 0): KitHistory<Category> {
   const previous = history.past.at(-1);
-  const past = group && previous?.group === group && !history.future.length
+  const past = group && previous?.group === group && (previous.requirementsRevision ?? 0) === requirementsRevision && !history.future.length
     ? history.past
-    : [...history.past, { rows: before, label, group, requirementsChanged }].slice(-30);
+    : [...history.past, { rows: before, label, group, requirementsChanged, requirementsRevision }].slice(-30);
   return { past, future: [] };
 }
 
-export function travelKitHistory<Category extends string>(history: KitHistory<Category>, current: ProjectKitItem<Category>[], direction: "undo" | "redo", requirementsChanged = false) {
+export function travelKitHistory<Category extends string>(history: KitHistory<Category>, current: ProjectKitItem<Category>[], direction: "undo" | "redo", requirementsChanged = false, requirementsRevision = 0) {
   const source = direction === "undo" ? history.past : history.future;
   const entry = source.at(-1);
   if (!entry) return undefined;
   return {
     rows: entry.rows,
     label: entry.label,
-    requirementsChanged: entry.requirementsChanged ?? false,
+    requirementsChanged: (entry.requirementsRevision ?? 0) === requirementsRevision ? entry.requirementsChanged ?? false : requirementsChanged,
     history: direction === "undo"
-      ? { past: history.past.slice(0, -1), future: [...history.future, { rows: current, label: entry.label, requirementsChanged }] }
-      : { past: [...history.past, { rows: current, label: entry.label, requirementsChanged }], future: history.future.slice(0, -1) },
+      ? { past: history.past.slice(0, -1), future: [...history.future, { rows: current, label: entry.label, requirementsChanged, requirementsRevision }] }
+      : { past: [...history.past, { rows: current, label: entry.label, requirementsChanged, requirementsRevision }], future: history.future.slice(0, -1) },
   };
 }
 

@@ -7655,6 +7655,1005 @@
       ],
       "checkedAt": "2026-10-17",
       "reviewStatus": "source-unavailable"
+    },
+    {
+      "id": "v61-teris-ts300cf",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "30 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "100 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "800–1910 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts350cf",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "40 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "150 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "800–1910 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-scorpio-17",
+      "technicalSpecs": [
+        {
+          "label": "最大臂长",
+          "value": "5.3 m",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-17-en/scorpio-17/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "下悬载荷",
+          "value": "60 kg",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-17-en/scorpio-17/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "上置载荷",
+          "value": "40 kg",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-17-en/scorpio-17/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-scorpio-23l",
+      "technicalSpecs": [
+        {
+          "label": "最大臂长",
+          "value": "7.16 m",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-23l-en/scorpio-23l-copia/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最小臂长",
+          "value": "1.4 m",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-23l-en/scorpio-23l-copia/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "额定载荷",
+          "value": "40 kg（上置或下悬）",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-23l-en/scorpio-23l-copia/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-scorpio-30-plus-7",
+      "technicalSpecs": [
+        {
+          "label": "最大臂长",
+          "value": "9 m；加延长件 11 m",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-307-en/scorpio-307/?attachment_id=2863&download_file=kld5rsi1fvhec",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "下悬载荷",
+          "value": "30′ 配置 70 kg；37′ 配置 45 kg",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-307-en/scorpio-307/?attachment_id=2863&download_file=kld5rsi1fvhec",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "上置载荷",
+          "value": "30 kg",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-307-en/scorpio-307/?attachment_id=2863&download_file=kld5rsi1fvhec",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-scorpio-35",
+      "technicalSpecs": [
+        {
+          "label": "最大臂长",
+          "value": "10.75 m",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-35-en/scorpio-35/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最小臂长",
+          "value": "2.1 m",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-35-en/scorpio-35/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "额定载荷",
+          "value": "40 kg（上置或下悬）",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-35-en/scorpio-35/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-scorpio-38",
+      "technicalSpecs": [
+        {
+          "label": "最大臂长",
+          "value": "11.58 m",
+          "source": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/gruas-telescopicas/scorpio-38/scorpio-38/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "下悬载荷",
+          "value": "70 kg",
+          "source": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/gruas-telescopicas/scorpio-38/scorpio-38/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "上置载荷",
+          "value": "45 kg",
+          "source": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/gruas-telescopicas/scorpio-38/scorpio-38/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-scorpio-55",
+      "technicalSpecs": [
+        {
+          "label": "最大臂长",
+          "value": "16.75 m",
+          "source": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/gruas-telescopicas/scorpio-55/scorpio-55/?attachment_id=11091&download_file=zupyx3h7juxci",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最小臂长",
+          "value": "2.4 m",
+          "source": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/gruas-telescopicas/scorpio-55/scorpio-55/?attachment_id=11091&download_file=zupyx3h7juxci",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "55尺载荷",
+          "value": "40 kg（上置或下悬）；短臂配置另核",
+          "source": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/gruas-telescopicas/scorpio-55/scorpio-55/?attachment_id=11091&download_file=zupyx3h7juxci",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-scorpio-78",
+      "technicalSpecs": [
+        {
+          "label": "最大臂长",
+          "value": "23.75 m",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-78-3/?attachment_id=11021&download_file=e1mg24enf8dvr",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最小臂长",
+          "value": "3.38 m",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-78-3/?attachment_id=11021&download_file=e1mg24enf8dvr",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "额定载荷",
+          "value": "78′ 配置 60 kg；拆末节至64′ 配置 90 kg",
+          "source": "https://scorpio.servicevision.es/en/product/grips-en/telescopic-cranes/scorpio-78-3/?attachment_id=11021&download_file=e1mg24enf8dvr",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-gfm-gf-8",
+      "technicalSpecs": [
+        {
+          "label": "最大遥控高度",
+          "value": "9.3 m（标准 GF-8）",
+          "source": "https://www.gripfactory.com/products/cranes/gf-8",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "遥控载荷",
+          "value": "最高 50 kg；按组装长度核对",
+          "source": "https://www.gripfactory.com/products/cranes/gf-8",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "支点高度",
+          "value": "1.5 / 1.8 m",
+          "source": "https://www.gripfactory.com/products/cranes/gf-8",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-gfm-gf-9",
+      "technicalSpecs": [
+        {
+          "label": "最大遥控高度",
+          "value": "10.1 m（底车配置，25 kg载荷）",
+          "source": "https://www.gripfactory.com/products/cranes/gf-9",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "载荷范围",
+          "value": "25–45 kg，随组装长度变化",
+          "source": "https://www.gripfactory.com/products/cranes/gf-9",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "最小组装长度",
+          "value": "1 m",
+          "source": "https://www.gripfactory.com/products/cranes/gf-9",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-sachtler-video-18-s2",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "2–22 kg",
+          "source": "https://www.sachtler.com/en/product/video-18-s2/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "100 mm",
+          "source": "https://www.sachtler.com/en/product/video-18-s2/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "4.1 kg",
+          "source": "https://www.sachtler.com/en/product/video-18-s2/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-sachtler-video-20-s1",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "2–28 kg",
+          "source": "https://www.sachtler.com/en/product/video-20-s1/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "100 mm",
+          "source": "https://www.sachtler.com/en/product/video-20-s1/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "4.1 kg",
+          "source": "https://www.sachtler.com/en/product/video-20-s1/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-sachtler-aktiv8",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "0–12 kg（重心高100 mm）",
+          "source": "https://www.sachtler.com/en/product/aktiv8/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "75 mm",
+          "source": "https://www.sachtler.com/en/product/aktiv8/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "2.7 kg",
+          "source": "https://www.sachtler.com/en/product/aktiv8/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-sachtler-aktiv10",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "0–12 kg（重心高100 mm）",
+          "source": "https://www.sachtler.com/en/product/aktiv10/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "100 mm",
+          "source": "https://www.sachtler.com/en/product/aktiv10/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "2.9 kg",
+          "source": "https://www.sachtler.com/en/product/aktiv10/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts-n6-plus",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "7 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "75 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "2.18 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts-n6al-plus",
+      "technicalSpecs": [
+        {
+          "label": "球碗直径",
+          "value": "75 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "铝合金",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "720–1610 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts-n6cf-plus",
+      "technicalSpecs": [
+        {
+          "label": "球碗直径",
+          "value": "75 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "碳纤维",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "720–1610 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts-n6cf-q-plus",
+      "technicalSpecs": [
+        {
+          "label": "球碗直径",
+          "value": "75 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "碳纤维",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "675–1770 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts-n6",
+      "technicalSpecs": [],
+      "checkedAt": "2026-11-04",
+      "missing": [
+        "原厂型号或版本参数未取得；不从型号数字推测承重，不将海外TS系列、PLUS与普通款自动视为同一配置。"
+      ],
+      "reviewStatus": "source-unavailable"
+    },
+    {
+      "id": "v61-teris-tx-v12",
+      "technicalSpecs": [],
+      "checkedAt": "2026-11-04",
+      "missing": [
+        "原厂型号或版本参数未取得；不从型号数字推测承重，不将海外TS系列、PLUS与普通款自动视为同一配置。"
+      ],
+      "reviewStatus": "source-unavailable"
+    },
+    {
+      "id": "v61-teris-tx-v12-plus",
+      "technicalSpecs": [],
+      "checkedAt": "2026-11-04",
+      "missing": [
+        "原厂型号或版本参数未取得；不从型号数字推测承重，不将海外TS系列、PLUS与普通款自动视为同一配置。"
+      ],
+      "reviewStatus": "source-unavailable"
+    },
+    {
+      "id": "v61-teris-ts100",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "12 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "100 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "2.67 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts100al",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "12 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "铝合金",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "670–1760 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts100cf",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "12 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "碳纤维",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "670–1760 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts100cf-q",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "12 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "碳纤维",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "670–1760 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts120",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "15 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "100 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "3.09 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts120al",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "15 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "铝合金",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "690–1780 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts120cf",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "15 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "碳纤维",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "690–1780 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts120cf-q",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "15 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "碳纤维",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "695–1780 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts150",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "20 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "100 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "3.56 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts150al",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "20 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "铝合金",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "690–1780 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts150cf",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "20 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "碳纤维",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "690–1780 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-teris-ts150cf-q",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "20 kg",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚管材质",
+          "value": "碳纤维",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "690–1780 mm",
+          "source": "https://www.dedoweigertfilm.de/dwf-wAssets/img/Products/Teris/Teris_product_brochure_2021_V3.pdf",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-sachtler-flowtech75-aktiv-ms",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "0–20 kg（脚架，不含云台）",
+          "source": "https://www.sachtler.com/en/product/tripod-flowtech-75-aktiv-ms/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "75 mm",
+          "source": "https://www.sachtler.com/en/product/tripod-flowtech-75-aktiv-ms/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "63–157 cm（带中撑）",
+          "source": "https://www.sachtler.com/en/product/tripod-flowtech-75-aktiv-ms/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-sachtler-flowtech100-ms",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "0–30 kg（脚架，不含云台）",
+          "source": "https://www.sachtler.com/en/product/tripod-flowtech-100-ms/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "100 mm",
+          "source": "https://www.sachtler.com/en/product/tripod-flowtech-100-ms/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "52–155 cm（带中撑）",
+          "source": "https://www.sachtler.com/en/product/tripod-flowtech-100-ms/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-sachtler-fsb-8-mk-ii",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "0–12 kg（重心高100 mm）",
+          "source": "https://www.sachtler.com/en/product/fsb-8-mk-ii/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "球碗直径",
+          "value": "75 mm",
+          "source": "https://www.sachtler.com/en/product/fsb-8-mk-ii/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "2.6 kg",
+          "source": "https://www.sachtler.com/en/product/fsb-8-mk-ii/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-gfm-gf-tripod",
+      "technicalSpecs": [
+        {
+          "label": "额定载荷",
+          "value": "最高400 kg（按安装配置核对）",
+          "source": "https://www.gripfactory.com/products/accessories/gf-9200",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "工作高度",
+          "value": "79–132 cm",
+          "source": "https://www.gripfactory.com/products/accessories/gf-9200",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "脚架重量",
+          "value": "21 kg",
+          "source": "https://www.gripfactory.com/products/accessories/gf-9200",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "v61-scorpio-mini-stabilized-v",
+      "technicalSpecs": [
+        {
+          "label": "最大摄影机载荷",
+          "value": "20 kg",
+          "source": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/scorpio-heads/cabezas-estabilizadas/mini-scorpio-stabilized-v-head/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "云台重量",
+          "value": "20 kg",
+          "source": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/scorpio-heads/cabezas-estabilizadas/mini-scorpio-stabilized-v-head/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        },
+        {
+          "label": "供电",
+          "value": "30 V DC",
+          "source": "https://scorpio.servicevision.es/es/producto/gruas-y-cabezas/scorpio-heads/cabezas-estabilizadas/mini-scorpio-stabilized-v-head/",
+          "provenance": "manufacturer",
+          "scope": "model"
+        }
+      ],
+      "checkedAt": "2026-11-04"
     }
   ],
   "sources": [

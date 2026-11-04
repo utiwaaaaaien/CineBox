@@ -8,7 +8,9 @@ CineBox helps camera teams define shooting requirements, reuse past project conf
 
 [Live site](https://utiwaaaaaien.github.io/CineBox/) · [简体中文](README.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [MIT License](LICENSE)
 
-![Version V6](https://img.shields.io/badge/version-V6-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+![Version V6.1](https://img.shields.io/badge/version-V6.1-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+
+V6.1 adds direct custom entry, draft kit rows, selection toggling, one-minute local snapshots and upload states, plus 39 grip and 27 audio entries. See the [changelog](CHANGELOG.md) and [release notes](docs/releases/v6.1.0.md).
 
 ## Features
 

@@ -96,9 +96,10 @@ function defined(ids: Array<string | undefined>) {
 
 export function buildQuestionnaireOnlySeed(
   project: QuestionnaireRecommendationProject,
-  catalog: readonly CanonicalEquipmentRecord[],
+  inputCatalog: readonly CanonicalEquipmentRecord[],
   cameraOverrideId?: string,
 ): RecommendationSeedItem[] {
+  const catalog = inputCatalog.filter((item) => item.published !== false);
   const items: RecommendationSeedItem[] = [];
   const add = (ids: string[], reason: string) => ids.forEach((id) => items.push({ id, reason }));
   const sceneConditions = project.sceneConditions ?? [];
@@ -224,5 +225,6 @@ export function buildQuestionnaireOnlySeed(
     ]), `技术条件：${sceneConditions.includes("夜外") ? "夜外" : ""}${sceneConditions.includes("夜外") && isHighSpeed ? " + " : ""}${isHighSpeed ? `${highSpeedFps || "高"}fps` : ""} · 预留高输出灯具`);
   }
 
-  return uniqueSeed(items);
+  const selectableIds = new Set(catalog.map((item) => item.id));
+  return uniqueSeed(items).filter((item) => selectableIds.has(item.id));
 }

@@ -53,8 +53,8 @@ export function migrateCatalogHistory(value: unknown): unknown {
     for (const oldId of new Set(items)) {
       const id = resolveCatalogId(oldId);
       const rawQty = Object.hasOwn(inputQuantities, oldId) ? inputQuantities[oldId] : 1;
-      const qty = typeof rawQty === "number" && Number.isFinite(rawQty) ? Math.min(99, Math.max(1, Math.round(rawQty))) : 1;
-      quantities.set(id, Math.min(99, (quantities.get(id) || 0) + qty));
+      const qty = typeof rawQty === "number" && Number.isFinite(rawQty) ? Math.min(999, Math.max(1, Math.round(rawQty))) : 1;
+      quantities.set(id, Math.min(999, (quantities.get(id) || 0) + qty));
     }
     return [key, { ...profile, items: [...new Set(items.map(resolveCatalogId))], quantities: Object.fromEntries(quantities) }];
   }));

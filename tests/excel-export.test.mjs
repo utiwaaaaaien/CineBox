@@ -120,3 +120,62 @@ test("exports only the equipment sheet and ignores optional system review data",
   assert.equal(workbook.rows[2][0].value, "项目：《测试/项目》    类型：剧情片");
   assert.equal(workbook.rows[2][4].value, "3 天 / 2 机位");
 });
+
+test('user text is explicitly exported as text and control characters cannot enter filenames', () => {
+  const workbook = buildEquipmentWorkbook({...project,notes:'=HYPERLINK("https://example.test")'},[{name:'其他',rows:[{name:'=1+1',qty:1,unit:'@test',note:'+cmd'}]}]);
+  for (const row of workbook.rows) for (const cell of row) {
+    if (cell && typeof cell.value==='string') assert.equal(cell.type,String);
+  }
+  assert.doesNotMatch(safeExcelFileName('测试\u0000\n文件'),/[\u0000-\u001f\u007f]/);
+});
+
+test('invalid calendar dates are never silently shifted to a different shooting day', () => {
+  assert.equal(formatShootRange('2026-02-31',2),'日期无效，请核对');
+  assert.equal(formatShootRange('2024-02-29',2),'2024.02.29-03.01');
+});
+
+test('generated Excel bytes preserve formula-like text and large quantities through a real roundtrip', async () => {
+  const [{default:writeXlsxFile},XLSX] = await Promise.all([import('write-excel-file/browser'),import('xlsx')]);
+  const workbook = buildEquipmentWorkbook(project,[{name:'其他',rows:[{name:'=1+1',qty:120,unit:'件',note:'+客户备注'}]}]);
+  const blob = await writeXlsxFile(workbook.sheets).toBlob();
+  const reopened = XLSX.read(await blob.arrayBuffer());
+  const sheet = reopened.Sheets[reopened.SheetNames[0]];
+  assert.equal(sheet.B6.t,'s');
+  assert.equal(sheet.B6.v,'=1+1');
+  assert.equal(sheet.B6.f,undefined);
+  assert.equal(sheet.C6.v,120);
+  assert.equal(sheet.E6.v,'+客户备注');
+});
+
+test('blank custom rows and empty categories never enter real Excel bytes or change valid equipment data', async () => {
+  const [{ default: writeXlsxFile }, XLSX] = await Promise.all([import('write-excel-file/browser'), import('xlsx')]);
+  const mixedGroups = [
+    { name: '摄影机', rows: [{ name: '', qty: 999, unit: '台', note: '空白摄影机不得导出' }] },
+    { name: '移动器材', rows: [
+      { name: '  ', qty: 999, unit: '件', note: '首个空白不得导出' },
+      { name: '自备滑轨', qty: 120, unit: '套', note: '保留客户备注' },
+      { name: '', qty: 999, unit: '件', note: '中间空白不得导出' },
+      { name: '伸缩摇臂', qty: 2, unit: '套', note: '保留长度' },
+      { name: '\t\n', qty: 999, unit: '件', note: '末尾空白不得导出' },
+    ] },
+    { name: '灯光器材', rows: [] },
+  ];
+  const original = JSON.stringify(mixedGroups);
+  const workbook = buildEquipmentWorkbook(project, mixedGroups);
+  assert.equal(JSON.stringify(mixedGroups), original);
+  assert.equal(workbook.rows[4][0].value, '移动_GRIP');
+  assert.equal(workbook.rows[5][0].rowSpan, 2);
+  assert.equal(workbook.rows.length, 8);
+  const blob = await writeXlsxFile(workbook.sheets).toBlob();
+  const reopened = XLSX.read(await blob.arrayBuffer());
+  const sheet = reopened.Sheets[reopened.SheetNames[0]];
+  const cells = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+  assert.deepEqual(cells[5].slice(1), ['自备滑轨', 120, '套', '保留客户备注']);
+  assert.deepEqual(cells[6].slice(1), ['伸缩摇臂', 2, '套', '保留长度']);
+  const serialized = JSON.stringify(cells);
+  assert.doesNotMatch(serialized, /摄影机_CAMERA|灯光_LIGHTING|不得导出|999/);
+  assert.equal(cells.filter(row => typeof row[2] === 'number').length, 2);
+  const allBlank = buildEquipmentWorkbook(project, [mixedGroups[0]]);
+  assert.equal(allBlank.rows.length, 5);
+  assert.equal(allBlank.rows.at(-1)[0].value, '备注_REMARK');
+});

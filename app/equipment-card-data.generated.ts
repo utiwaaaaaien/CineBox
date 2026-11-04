@@ -30044,6 +30044,453 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     "technicalSpecs": [],
     "checkedAt": "2026-10-17"
   },
+  "v61-teris-ts-n6": {
+    "name": "图瑞斯 TERIS TS-N6",
+    "technicalSpecs": [],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts-n6-plus": {
+    "name": "图瑞斯 TERIS TS-N6 PLUS",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "7 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "75 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "2.18 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts-n6al-plus": {
+    "name": "图瑞斯 TERIS TS-N6AL PLUS",
+    "technicalSpecs": [
+      {
+        "label": "球碗直径",
+        "value": "75 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "铝合金",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "720–1610 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts-n6cf-plus": {
+    "name": "图瑞斯 TERIS TS-N6CF PLUS",
+    "technicalSpecs": [
+      {
+        "label": "球碗直径",
+        "value": "75 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "碳纤维",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "720–1610 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts-n6cf-q-plus": {
+    "name": "图瑞斯 TERIS TS-N6CF-Q PLUS",
+    "technicalSpecs": [
+      {
+        "label": "球碗直径",
+        "value": "75 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "碳纤维",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "675–1770 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts100": {
+    "name": "图瑞斯 TERIS TS100",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "12 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "100 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "2.67 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts100al": {
+    "name": "图瑞斯 TERIS TS100AL",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "12 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "铝合金",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "670–1760 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts100cf": {
+    "name": "图瑞斯 TERIS TS100CF",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "12 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "碳纤维",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "670–1760 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts100cf-q": {
+    "name": "图瑞斯 TERIS TS100CF-Q",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "12 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "碳纤维",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "670–1760 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts120": {
+    "name": "图瑞斯 TERIS TS120",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "15 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "100 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "3.09 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts120al": {
+    "name": "图瑞斯 TERIS TS120AL",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "15 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "铝合金",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "690–1780 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts120cf": {
+    "name": "图瑞斯 TERIS TS120CF",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "15 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "碳纤维",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "690–1780 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts120cf-q": {
+    "name": "图瑞斯 TERIS TS120CF-Q",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "15 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "碳纤维",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "695–1780 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts150": {
+    "name": "图瑞斯 TERIS TS150",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "20 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "100 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "3.56 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts150al": {
+    "name": "图瑞斯 TERIS TS150AL",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "20 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "铝合金",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "690–1780 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts150cf": {
+    "name": "图瑞斯 TERIS TS150CF",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "20 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "碳纤维",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "690–1780 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts150cf-q": {
+    "name": "图瑞斯 TERIS TS150CF-Q",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "20 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚管材质",
+        "value": "碳纤维",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "690–1780 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts300cf": {
+    "name": "图瑞斯 TERIS TS300CF",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "30 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "100 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "800–1910 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-ts350cf": {
+    "name": "图瑞斯 TERIS TS350CF",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "40 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "150 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "800–1910 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-tx-v12": {
+    "name": "图瑞斯 TERIS TX-V12",
+    "technicalSpecs": [],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-teris-tx-v12-plus": {
+    "name": "图瑞斯 TERIS TX-V12 PLUS",
+    "technicalSpecs": [],
+    "checkedAt": "2026-11-04"
+  },
   "grip-wonderland-handheld": {
     "name": "万德兰 手持小斯",
     "technicalSpecs": [],
@@ -30923,6 +31370,30 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     "seriesLabel": "GF-Jib 系列",
     "checkedAt": "2026-10-17"
   },
+  "v61-gfm-gf-8": {
+    "name": "GFM GF-8",
+    "technicalSpecs": [
+      {
+        "label": "最大遥控高度",
+        "value": "9.3 m（标准 GF-8）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "遥控载荷",
+        "value": "最高 50 kg；按组装长度核对",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "支点高度",
+        "value": "1.5 / 1.8 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
   "eq-gfm-gfm-gf-8-xten-11m-gf-8-移动器材": {
     "name": "GFM GF-8 Xten 11M",
     "technicalSpecs": [
@@ -30947,6 +31418,30 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     ],
     "seriesLabel": "GF-8 / GF-8 Xten 系列",
     "checkedAt": "2026-10-17"
+  },
+  "v61-gfm-gf-9": {
+    "name": "GFM GF-9",
+    "technicalSpecs": [
+      {
+        "label": "最大遥控高度",
+        "value": "10.1 m（底车配置，25 kg载荷）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "载荷范围",
+        "value": "25–45 kg，随组装长度变化",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "最小组装长度",
+        "value": "1 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
   },
   "eq-gfm-gf-baby-jib-arm-baby-移动器材": {
     "name": "GFM GF-Baby Jib",
@@ -31122,6 +31617,30 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     ],
     "seriesLabel": "GFM GF-Steel Track 系列",
     "checkedAt": "2026-10-17"
+  },
+  "v61-gfm-gf-tripod": {
+    "name": "GFM GF-Tripod GF-9200",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "最高400 kg（按安装配置核对）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "79–132 cm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "脚架重量",
+        "value": "21 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
   },
   "eq-gfm-gf8炮-移动器材": {
     "name": "GFM GF8炮",
@@ -31923,6 +32442,174 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     ],
     "checkedAt": "2026-10-17"
   },
+  "v61-sachtler-aktiv10": {
+    "name": "Sachtler aktiv10",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "0–12 kg（重心高100 mm）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "100 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "2.9 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-sachtler-aktiv8": {
+    "name": "Sachtler aktiv8",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "0–12 kg（重心高100 mm）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "75 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "2.7 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-sachtler-flowtech100-ms": {
+    "name": "Sachtler flowtech 100 MS",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "0–30 kg（脚架，不含云台）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "100 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "52–155 cm（带中撑）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-sachtler-flowtech75-aktiv-ms": {
+    "name": "Sachtler flowtech 75 aktiv MS",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "0–20 kg（脚架，不含云台）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "75 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "工作高度",
+        "value": "63–157 cm（带中撑）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-sachtler-fsb-8-mk-ii": {
+    "name": "Sachtler FSB 8 Mk II",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "0–12 kg（重心高100 mm）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "75 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "2.6 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-sachtler-video-18-s2": {
+    "name": "Sachtler Video 18 S2",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "2–22 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "100 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "4.1 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-sachtler-video-20-s1": {
+    "name": "Sachtler Video 20 S1",
+    "technicalSpecs": [
+      {
+        "label": "额定载荷",
+        "value": "2–28 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "球碗直径",
+        "value": "100 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "4.1 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
   "eq-scorpio-super-scorpio-crane-10-移动器材": {
     "name": "Scorpio 10′ Telescopic Crane",
     "technicalSpecs": [
@@ -31946,6 +32633,54 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
       }
     ],
     "checkedAt": "2026-10-17"
+  },
+  "v61-scorpio-17": {
+    "name": "Scorpio 17′ Telescopic Crane",
+    "technicalSpecs": [
+      {
+        "label": "最大臂长",
+        "value": "5.3 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "下悬载荷",
+        "value": "60 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "上置载荷",
+        "value": "40 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-scorpio-23l": {
+    "name": "Scorpio 23′ L Telescopic Crane",
+    "technicalSpecs": [
+      {
+        "label": "最大臂长",
+        "value": "7.16 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "最小臂长",
+        "value": "1.4 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "额定载荷",
+        "value": "40 kg（上置或下悬）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
   },
   "eq-scorpio-super-scorpio-crane-23-移动器材": {
     "name": "Scorpio 23′ Telescopic Crane",
@@ -31995,6 +32730,78 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     ],
     "checkedAt": "2026-10-17"
   },
+  "v61-scorpio-30-plus-7": {
+    "name": "Scorpio 30′+7′ Telescopic Crane",
+    "technicalSpecs": [
+      {
+        "label": "最大臂长",
+        "value": "9 m；加延长件 11 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "下悬载荷",
+        "value": "30′ 配置 70 kg；37′ 配置 45 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "上置载荷",
+        "value": "30 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-scorpio-35": {
+    "name": "Scorpio 35′ Telescopic Crane",
+    "technicalSpecs": [
+      {
+        "label": "最大臂长",
+        "value": "10.75 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "最小臂长",
+        "value": "2.1 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "额定载荷",
+        "value": "40 kg（上置或下悬）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-scorpio-38": {
+    "name": "Scorpio 38′ Telescopic Crane",
+    "technicalSpecs": [
+      {
+        "label": "最大臂长",
+        "value": "11.58 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "下悬载荷",
+        "value": "70 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "上置载荷",
+        "value": "45 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
   "eq-scorpio-super-scorpio-crane-45-移动器材": {
     "name": "Scorpio 45′ Telescopic Crane",
     "technicalSpecs": [
@@ -32018,6 +32825,78 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
       }
     ],
     "checkedAt": "2026-10-17"
+  },
+  "v61-scorpio-55": {
+    "name": "Scorpio 55′ Telescopic Crane",
+    "technicalSpecs": [
+      {
+        "label": "最大臂长",
+        "value": "16.75 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "最小臂长",
+        "value": "2.4 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "55尺载荷",
+        "value": "40 kg（上置或下悬）；短臂配置另核",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-scorpio-78": {
+    "name": "Scorpio 78′ Telescopic Crane",
+    "technicalSpecs": [
+      {
+        "label": "最大臂长",
+        "value": "23.75 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "最小臂长",
+        "value": "3.38 m",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "额定载荷",
+        "value": "78′ 配置 60 kg；拆末节至64′ 配置 90 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-scorpio-mini-stabilized-v": {
+    "name": "Scorpio Mini Stabilized V Head",
+    "technicalSpecs": [
+      {
+        "label": "最大摄影机载荷",
+        "value": "20 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台重量",
+        "value": "20 kg",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "供电",
+        "value": "30 V DC",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
   },
   "eq-scorpio-scorpio-remote-mini-head-移动器材": {
     "name": "Scorpio Remote Mini head",
@@ -38328,6 +39207,366 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     "technicalSpecs": [],
     "checkedAt": "2026-10-17"
   },
+  "v61-audio-dji-mic2-2tx-kit": {
+    "name": "大疆 DJI Mic 2 两发一收（含充电盒）",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "2 发射器 + 1 接收器 + 充电盒",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器内录",
+        "value": "24-bit / 32-bit 浮点",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器存储",
+        "value": "8 GB",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-dji-mic3-1tx-kit": {
+    "name": "大疆 DJI Mic 3 一发一收",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "1 发射器 + 1 接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "内录",
+        "value": "24-bit/32-bit 浮点双文件",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器重量",
+        "value": "约12.5 g（不含背夹和磁铁）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-dji-mic3-2tx-kit": {
+    "name": "大疆 DJI Mic 3 两发一收（含充电盒）",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "2 发射器 + 1 接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "内录",
+        "value": "24-bit/32-bit 浮点双文件",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器重量",
+        "value": "约12.5 g（不含背夹和磁铁）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-dji-mic3-transmitter": {
+    "name": "大疆 DJI Mic 3 单发射器",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "单个发射器，无接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "内录",
+        "value": "24-bit/32-bit 浮点双文件",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器重量",
+        "value": "约12.5 g（不含背夹和磁铁）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-dji-mic-mini2-mobile-2tx-kit": {
+    "name": "大疆 DJI Mic Mini 2 手机版两发一收（含充电盒）",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "2 发射器 + 1 手机版接收器 + 充电盒",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器重量",
+        "value": "约11 g（不含背夹和磁铁）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "降噪",
+        "value": "强、弱两级主动降噪",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-dji-mic-mini2-2tx-kit": {
+    "name": "大疆 DJI Mic Mini 2 两发一收（含充电盒）",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "2 发射器 + 1 标准接收器 + 充电盒",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器重量",
+        "value": "约11 g（不含背夹和磁铁）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "降噪",
+        "value": "强、弱两级主动降噪",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-dji-mic-mini2s-2tx-kit": {
+    "name": "大疆 DJI Mic Mini 2S 两发一收（含充电盒）",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "2 发射器 + 1 接收器 + 充电盒",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "内录",
+        "value": "支持32-bit 浮点",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器存储",
+        "value": "约14.5 GB；最长28小时为规定模式下内录",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-dji-mic-mini2s-transmitter": {
+    "name": "大疆 DJI Mic Mini 2S 单发射器",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "单个发射器，无接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "内录",
+        "value": "支持32-bit 浮点",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器存储",
+        "value": "约14.5 GB；最长28小时为规定模式下内录",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-rode-ntg5": {
+    "name": "罗德 RØDE NTG5",
+    "technicalSpecs": [
+      {
+        "label": "指向性",
+        "value": "超心形枪型",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "重量",
+        "value": "76 g（麦克风本体）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "供电",
+        "value": "48 V 幻象；2 mA",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-rode-videomic-ntg": {
+    "name": "罗德 RØDE VideoMic NTG",
+    "technicalSpecs": [
+      {
+        "label": "输出",
+        "value": "3.5 mm自适应 + USB-C",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "指向性",
+        "value": "超心形",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "续航",
+        "value": "内置锂电池，超过30小时",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-rode-wireless-go-gen3": {
+    "name": "罗德 RØDE Wireless GO 第三代 两发一收",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "2 发射器 + 1 接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器内录",
+        "value": "32-bit 浮点",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "传输距离",
+        "value": "最远260 m（视距）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-rode-wireless-micro-lightning": {
+    "name": "罗德 RØDE Wireless Micro Lightning 两发一收",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "2 发射器 + 1 接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "手机接口",
+        "value": "Lightning",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "续航",
+        "value": "搭配充电盒最长21小时",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-rode-wireless-micro-usb-c": {
+    "name": "罗德 RØDE Wireless Micro USB-C 两发一收",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "2 发射器 + 1 接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "手机接口",
+        "value": "USB-C",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "续航",
+        "value": "搭配充电盒最长21小时",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-rode-wireless-micro-camera-kit": {
+    "name": "罗德 RØDE Wireless Micro Camera Kit 相机及USB-C手机套装",
+    "technicalSpecs": [
+      {
+        "label": "接收器组成",
+        "value": "相机接收器 + USB-C手机接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器数量",
+        "value": "2 个",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "频率范围",
+        "value": "20 Hz–20 kHz",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-rode-wireless-pro": {
+    "name": "罗德 RØDE Wireless PRO 两发一收",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "2 发射器 + 1 接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "发射器内录",
+        "value": "32-bit 浮点；每个发射器32 GB",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "同步",
+        "value": "支持时间码",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
   "eq-通用-罗兰r44录音机-录音器材": {
     "name": "罗兰 Roland R-44",
     "technicalSpecs": [
@@ -38351,6 +39590,150 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
       }
     ],
     "checkedAt": "2026-10-17"
+  },
+  "v61-audio-sennheiser-ewdp-eng-s4-7": {
+    "name": "森海塞尔 Sennheiser EW-DP ENG SET (S4-7)",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "EW-DP EK + EW-D SK + ME 2 + EW-DP SKP",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "频段",
+        "value": "S4-7：630–662 MHz",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "接收通道",
+        "value": "单通道；ENG含两个可选发射器，不是双通道同时接收",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-sennheiser-ewdp-me2-s4-7": {
+    "name": "森海塞尔 Sennheiser EW-DP ME2 SET (S4-7)",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "EW-DP EK + EW-D SK + ME 2",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "频段",
+        "value": "S4-7：630–662 MHz",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "麦克风",
+        "value": "ME 2 全指向领夹",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-sennheiser-mke600": {
+    "name": "森海塞尔 Sennheiser MKE 600",
+    "technicalSpecs": [
+      {
+        "label": "频响",
+        "value": "40 Hz–20 kHz",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "指向性",
+        "value": "超心形 / 叶形",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "供电",
+        "value": "48 V幻象或AA电池",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-sennheiser-mkh8060": {
+    "name": "森海塞尔 Sennheiser MKH 8060",
+    "technicalSpecs": [
+      {
+        "label": "频响",
+        "value": "50 Hz–25 kHz",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "自噪",
+        "value": "11 dB(A)",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "供电",
+        "value": "48 V幻象（P48）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-sennheiser-profile-wireless-1ch": {
+    "name": "森海塞尔 Sennheiser Profile Wireless 1通道套装",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "1 发射器 + 1 双通道接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "传输频段",
+        "value": "2.4 GHz",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "内录",
+        "value": "32-bit 浮点（需固件v4.1.0或以上）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-sennheiser-profile-wireless-2ch": {
+    "name": "森海塞尔 Sennheiser Profile Wireless 2通道套装",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "2 发射器 + 1 双通道接收器 + 充电杆",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "传输频段",
+        "value": "2.4 GHz",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "内录",
+        "value": "32-bit 浮点（需固件v4.1.0或以上）",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
   },
   "eq-sony-索尼无线麦-录音器材": {
     "name": "索尼 SONY 无线麦",
@@ -38387,6 +39770,126 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     "seriesLabel": "SONY UWP / UWP-D领夹系统（库存代际未定）",
     "checkedAt": "2026-10-17"
   },
+  "v61-audio-sony-ecm-l1": {
+    "name": "索尼 SONY ECM-L1",
+    "technicalSpecs": [
+      {
+        "label": "频响",
+        "value": "20 Hz–20 kHz",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "指向性",
+        "value": "全指向",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "连接及供电",
+        "value": "3.5 mm锁定式，插入式供电",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-sony-ecm-m1": {
+    "name": "索尼 SONY ECM-M1",
+    "technicalSpecs": [
+      {
+        "label": "收音模式",
+        "value": "8 种",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "录制",
+        "value": "支持4声道安全音轨，需兼容相机",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "类型",
+        "value": "数字音频枪型麦克风",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-sony-ecm-s1": {
+    "name": "索尼 SONY ECM-S1",
+    "technicalSpecs": [
+      {
+        "label": "麦克风单元",
+        "value": "3 个14 mm单元",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "连接",
+        "value": "无线相机连接，支持USB直连电脑/手机",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "接口",
+        "value": "兼容MI热靴数字音频",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-sony-ecm-w3": {
+    "name": "索尼 SONY ECM-W3 一拖二",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "2 发射器 + 1 接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "音频连接",
+        "value": "MI热靴数字音频 / USB-C / 3.5 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "声音处理",
+        "value": "NC降噪及LC低切",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
+  "v61-audio-sony-ecm-w3s": {
+    "name": "索尼 SONY ECM-W3S 一拖一",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "1 发射器 + 1 接收器",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "音频连接",
+        "value": "MI热靴数字音频 / USB-C / 3.5 mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "声音处理",
+        "value": "NC降噪及LC低切",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
+  },
   "eq-sony-sony-uwp-d11-监看": {
     "name": "索尼 SONY UWP-D11",
     "technicalSpecs": [
@@ -38410,6 +39913,30 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
       }
     ],
     "checkedAt": "2026-10-17"
+  },
+  "v61-audio-sony-uwp-d21": {
+    "name": "索尼 SONY UWP-D21",
+    "technicalSpecs": [
+      {
+        "label": "套装组成",
+        "value": "UTX-B40 + URX-P40 + ECM-V1BMP",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "接收",
+        "value": "双调谐器真分集",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "无线系统",
+        "value": "UHF；地区频段按实物核对",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-04"
   },
   "eq-通用-录音机-h6n-录音器材": {
     "name": "录音机 · H6N",

@@ -34,6 +34,12 @@ jobs:
       - run: pnpm run catalog:check
       - run: pnpm run catalog:cards:check
       - run: pnpm test
+      - name: Generate runtime types
+        run: pnpm exec wrangler types worker-configuration.d.ts --include-env false --config dist/server/wrangler.json
+        env:
+          WRANGLER_WRITE_LOGS: "false"
+          WRANGLER_LOG_PATH: .wrangler/wrangler.log
+      - run: pnpm run typecheck
       - run: pnpm lint
       - name: Build and verify static Pages site
         run: pnpm run build:pages
@@ -56,3 +62,28 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v4
         id: deployment
+
+  release:
+    needs: deploy
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - name: Publish CineBox V6.1 release after Pages succeeds
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if [ "$(node -p "require('./package.json').version")" != "6.1.0" ]; then
+            echo "Skipping V6.1 release for another package version"
+            exit 0
+          fi
+          if gh release view v6.1.0 >/dev/null 2>&1; then
+            echo "v6.1.0 already exists; preserving it"
+          else
+            gh release create v6.1.0 --target "$GITHUB_SHA" --title "CineBox V6.1" --notes-file docs/releases/v6.1.0.md
+          fi

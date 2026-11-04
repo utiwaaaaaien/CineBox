@@ -1,6 +1,6 @@
 {
   "name": "cinebox-camera-kit",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "private": true,
   "packageManager": "pnpm@11.9.0",
   "engines": {
@@ -17,16 +17,18 @@
     "catalog:check": "node scripts/build-canonical-catalog.mjs --check",
     "catalog:cards:check": "node scripts/catalog-card-specs.mjs --check --require-reviewed",
     "catalog:cards:complete": "node scripts/catalog-card-specs.mjs --check --require-complete",
-    "build:pages": "node scripts/build-pages.mjs"
+    "build:pages": "node scripts/build-pages.mjs",
+    "typecheck": "tsc --noEmit",
+    "types:generate": "pnpm run build && wrangler types worker-configuration.d.ts --include-env false --config dist/server/wrangler.json"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
-    "next": "16.2.6",
-    "pdfjs-dist": "^6.1.200",
-    "react": "19.2.6",
-    "react-dom": "19.2.6",
+    "next": "16.4.1",
+    "pdfjs-dist": "6.2.108",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "write-excel-file": "^4.1.1",
-    "xlsx": "^0.18.5"
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.37.1",
@@ -38,12 +40,12 @@
     "@vitejs/plugin-rsc": "0.5.26",
     "drizzle-kit": "0.31.10",
     "eslint": "9.39.4",
-    "eslint-config-next": "16.2.6",
-    "react-server-dom-webpack": "19.2.6",
+    "eslint-config-next": "16.4.1",
+    "react-server-dom-webpack": "19.2.8",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3",
     "vinext": "0.0.50",
-    "vite": "8.0.13",
+    "vite": "8.1.6",
     "wrangler": "4.92.0"
   },
   "type": "module",

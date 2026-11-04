@@ -13,8 +13,8 @@ export function applyFinalCatalogReview(input) {
  row.name=[row.brandZh,row.brandEn,row.series,row.model].filter(Boolean).join(' ').replace(/\s+/g,' ').trim();
  row.aliases=[...new Set([...input.aliases.filter(a=>!(patch.removeAliases??[]).includes(a)),...(patch.addAliases??[]),...(row.name!==previousName?[previousName]:[])])].filter(a=>a!==row.name);
  if(patch.evidence) {
-  const {url,scope='model',language='en'}=patch.evidence;
-  row.references=[...row.references,{url,scope,language,checkedAt}];
+  const {url,scope='model',language='en',checkedAt:evidenceDate=checkedAt}=patch.evidence;
+  row.references=[...row.references,{url,scope,language,checkedAt:evidenceDate}];
   if(scope==='model'||scope==='series') {
    row.namingStatus=scope==='model'?'official-model':'official-series';
    row.verified=scope==='model';

@@ -7,6 +7,7 @@ export async function checkPages({ basePath = "/CineBox" } = {}) {
   const html = await readFile(resolve(root, "index.html"), "utf8");
   assert.match(html, /<title>CineBox<\/title>/);
   assert.match(html, /项目管理/);
+  assert.match(html, /V6\.1/);
   assert.match(html, /__VINEXT_RSC_DONE__/);
 
   const resources = [...html.matchAll(/(?:src|href)="([^"#]+)"/g)]

@@ -1,3 +1,24 @@
+export const maxProjectCount = 500;
+
+export function projectCapacityError(existing: number, incoming = 1): string | null {
+  return existing + incoming > maxProjectCount
+    ? `项目总数不能超过 ${maxProjectCount} 个（当前 ${existing} 个，本次新增 ${incoming} 个）。请先导出备份并删除不再需要的项目。`
+    : null;
+}
+
+export function historyCapacityError(current: object, incoming: object, limit: number): string | null {
+  const total = new Set([...Object.keys(current), ...Object.keys(incoming)]).size;
+  return total > limit
+    ? `历史项目存档不能超过 ${limit} 个，本次操作会产生 ${total} 个。请先导出备份并整理历史存档。`
+    : null;
+}
+
+export function isValidDateOnly(value: string) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = new Date(`${value}T00:00:00.000Z`);
+  return Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === value;
+}
+
 export type ProjectKitStatus = "confirmed" | "recommended" | "pending" | "manual";
 
 export type ProjectCustomEquipment<Category extends string = string> = {
@@ -16,6 +37,7 @@ export type ProjectKitItem<Category extends string = string> = {
   status?: ProjectKitStatus;
   custom?: ProjectCustomEquipment<Category>;
   userAdjusted?: boolean;
+  draft?: boolean;
 };
 
 export type ProjectStateRecord<Form extends object, Category extends string = string> = {
@@ -26,6 +48,7 @@ export type ProjectStateRecord<Form extends object, Category extends string = st
   createdAt: string;
   updatedAt: string;
   requirementsChanged?: boolean;
+  requirementsRevision?: number;
   basicInfoConfirmed?: boolean;
 };
 
@@ -110,6 +133,7 @@ function sanitizeForm<Form extends object>(
     }
 
     if (typeof fallback === "string" && typeof candidate === "string") {
+      if (String(key) === "shootDate" && candidate && !isValidDateOnly(candidate)) continue;
       const allowedValues = allowedStringValues?.[key];
       if (!allowedValues || allowedValues.includes(candidate)) {
         result[key] = candidate.slice(0, maxFormStringLength) as Form[keyof Form];
@@ -128,11 +152,12 @@ function sanitizeForm<Form extends object>(
 function sanitizeCustomEquipment<Category extends string>(
   value: unknown,
   isCategory: (value: string) => value is Category,
+  allowBlankName = false,
 ): ProjectCustomEquipment<Category> | undefined {
   if (!isRecord(value)) return undefined;
   const name = nonEmptyString(value.name, "");
   const category = optionalString(value.category);
-  if (!name || !isCategory(category)) return undefined;
+  if ((!name && !(allowBlankName && typeof value.name === "string")) || !isCategory(category)) return undefined;
 
   return {
     name: name.slice(0, 240),
@@ -160,7 +185,7 @@ export function sanitizeKitItems<Category extends string>(
     const knownEquipment = options.isKnownEquipmentId(id);
     const custom = knownEquipment
       ? undefined
-      : sanitizeCustomEquipment<Category>(candidate.custom, options.isCategory);
+      : sanitizeCustomEquipment<Category>(candidate.custom, options.isCategory, candidate.draft === true);
     if (!knownEquipment && !custom) continue;
 
     const rawQuantity = typeof candidate.qty === "number" && Number.isFinite(candidate.qty)
@@ -178,6 +203,7 @@ export function sanitizeKitItems<Category extends string>(
       status,
       custom,
       userAdjusted: candidate.userAdjusted === true || undefined,
+      ...(custom && !custom.name.trim() ? { draft: true } : {}),
     });
     seenIds.add(id);
   }
@@ -195,11 +221,12 @@ export function sanitizeProjectRecords<Form extends object, Category extends str
   const projects: ProjectStateRecord<Form, Category>[] = [];
   const usedIds = new Set<string>(options.reservedIds);
 
-  for (const candidate of value.slice(0, 500)) {
+  // Restore all saved records, including older states that exceeded the creation limit.
+  for (const candidate of value) {
     if (!isRecord(candidate) || !isRecord(candidate.form)) continue;
 
     let id = nonEmptyString(candidate.id, "").slice(0, 240);
-    if (!id || usedIds.has(id)) {
+    if (!id || Object.prototype.hasOwnProperty.call(Object.prototype, id) || usedIds.has(id)) {
       do {
         id = options.createId("project");
       } while (usedIds.has(id));
@@ -222,6 +249,7 @@ export function sanitizeProjectRecords<Form extends object, Category extends str
       createdAt: validTimestamp(candidate.createdAt, timestamp),
       updatedAt: validTimestamp(candidate.updatedAt, timestamp),
       requirementsChanged: candidate.requirementsChanged === true,
+      requirementsRevision: typeof candidate.requirementsRevision === "number" && Number.isSafeInteger(candidate.requirementsRevision) && candidate.requirementsRevision >= 0 ? candidate.requirementsRevision : 0,
       basicInfoConfirmed: typeof candidate.basicInfoConfirmed === "boolean" ? candidate.basicInfoConfirmed : Array.isArray(candidate.kit) && candidate.kit.length > 0,
     });
   }

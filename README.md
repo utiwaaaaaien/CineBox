@@ -8,7 +8,9 @@ CineBox 帮助摄影团队整理拍摄需求、复用历史项目、挑选器材
 
 [在线使用](https://utiwaaaaaien.github.io/CineBox/) · [English](README.en.md) · [版本记录](CHANGELOG.md) · [参与贡献](CONTRIBUTING.md) · [MIT 许可证](LICENSE)
 
-![Version V6](https://img.shields.io/badge/version-V6-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+![Version V6.1](https://img.shields.io/badge/version-V6.1-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+
+V6.1 新增分类内直接填写、空白器材行、点击取消选择、每分钟本机存档及上传处理状态；补充39项移动器材和27项录音型号。详见[版本记录](CHANGELOG.md)及[本次发布说明](docs/releases/v6.1.0.md)。
 
 ## 主要功能
 

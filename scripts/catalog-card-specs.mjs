@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { pathToFileURL } from "node:url";
 
 const root = new URL("../", import.meta.url);
-const evidenceFiles = ["camera", "lenses", "lighting", "grip"].map(group => `data/catalog/card-specs-v6-${group}.json`);
+const evidenceFiles = ["camera", "lenses", "lighting", "grip", "audio"].map(group => `data/catalog/card-specs-v6-${group}.json`);
 const read = path => JSON.parse(fs.readFileSync(new URL(path, root), "utf8"));
 const metricKind = label => /^(设计画幅|系列画幅|覆盖画幅|画幅覆盖|画幅)$/.test(label) ? "画幅" : label;
 

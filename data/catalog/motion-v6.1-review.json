@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-11-04",
+  "newIds": [
+    "v61-teris-ts300cf",
+    "v61-teris-ts350cf",
+    "v61-scorpio-17",
+    "v61-scorpio-23l",
+    "v61-scorpio-30-plus-7",
+    "v61-scorpio-35",
+    "v61-scorpio-38",
+    "v61-scorpio-55",
+    "v61-scorpio-78",
+    "v61-gfm-gf-8",
+    "v61-gfm-gf-9",
+    "v61-sachtler-video-18-s2",
+    "v61-sachtler-video-20-s1",
+    "v61-sachtler-aktiv8",
+    "v61-sachtler-aktiv10"
+  ],
+  "notes": [
+    "TERIS 使用原厂 2021 V3 产品目录（Dedo Weigert Film 托管），不将 TS350CF 与 TS350CF-CINE 或国内 V 系列自动合并。",
+    "Scorpio 23、23L、30+7、38 分别保留身份；型号来源为具体产品页面或技术资料。",
+    "GFM GF-8/GF-9 为模块化摇臂，不标为拍摄中可伸缩的伸缩炮。原有 GF-8 Xten、GF-16 和未指定配置旧记录保持。",
+    "所有新增型号库存未确认；没有依据不补造实物配置。",
+    "Sachtler Video 18 S2 / Video 20 S1 / aktiv8 / aktiv10 是单独液压云台，不冒充配有特定脚管的完整脚架套装；球碗及负荷根据当前型号官网核验。",
+    "继续收录24项：16个TERIS原厂目录明确型号、3个N6/V12中文使用/渠道身份（verified=false）、3个Sachtler、1个GFM、1个Scorpio。TS系列与国内V系列不自动合并。"
+  ],
+  "extensionIds": [
+    "v61-teris-ts-n6-plus",
+    "v61-teris-ts-n6al-plus",
+    "v61-teris-ts-n6cf-plus",
+    "v61-teris-ts-n6cf-q-plus",
+    "v61-teris-ts-n6",
+    "v61-teris-tx-v12",
+    "v61-teris-tx-v12-plus",
+    "v61-teris-ts100",
+    "v61-teris-ts100al",
+    "v61-teris-ts100cf",
+    "v61-teris-ts100cf-q",
+    "v61-teris-ts120",
+    "v61-teris-ts120al",
+    "v61-teris-ts120cf",
+    "v61-teris-ts120cf-q",
+    "v61-teris-ts150",
+    "v61-teris-ts150al",
+    "v61-teris-ts150cf",
+    "v61-teris-ts150cf-q",
+    "v61-sachtler-flowtech75-aktiv-ms",
+    "v61-sachtler-flowtech100-ms",
+    "v61-sachtler-fsb-8-mk-ii",
+    "v61-gfm-gf-tripod",
+    "v61-scorpio-mini-stabilized-v"
+  ],
+  "pendingIds": [
+    "v61-teris-ts-n6",
+    "v61-teris-tx-v12",
+    "v61-teris-tx-v12-plus"
+  ]
+}

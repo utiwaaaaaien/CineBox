@@ -5,7 +5,7 @@ export const commonBrandsByCategory: Record<string, readonly string[]> = {
   滤镜: ["Tiffen", "NiSi", "Schneider", "ARRI", "ZEISS", "Canon", "通用"],
   摄影机附件: ["ARRI", "TILTA", "DJI", "OConnor", "Preston", "cmotion", "CODEX", "Lexar", "SWIT", "MOVCAM", "MOVMAX", "通用"],
   监看: ["SmallHD", "TVLogic", "ATOMOS", "Zunzheng", "Flanders Scientific", "SONY", "Vaxis", "SWIT", "Transvideo"],
-  移动器材: ["DJI", "OConnor", "Sachtler", "Cartoni", "Steadicam", "Easyrig", "TILTA", "Chapman", "GFM", "Panther", "通用"],
+  移动器材: ["TERIS", "Scorpio", "GFM", "Sachtler", "DJI", "OConnor", "Cartoni", "Steadicam", "Easyrig", "TILTA", "Chapman", "Panther", "通用"],
   灯光器材: ["ARRI", "Aputure", "Nanlite", "NANLUX", "Astera", "Kino Flo", "amaran", "Creamsource", "Lightstar", "利帅", "Falcon Eyes", "通用"],
   录音器材: ["Sennheiser", "Schoeps", "SOUNDDEVICES", "RØDE", "ZOOM", "SONY", "DJI", "Roland", "通用"],
   其他: ["DJI", "ARRI", "TILTA", "SWIT", "通用"],
