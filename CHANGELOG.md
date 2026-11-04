@@ -4,6 +4,16 @@
 
 User-facing release notes. `app/release.ts` defines the application version; the underlying catalog keeps its own version and identity compatibility rules.
 
+## V6.1 小修 / Maintenance update — 2026-11-04
+
+- 自定义器材行保留器材名、数量、单位和备注，移除独立品牌输入。
+- 器材名联想每次最多显示5项，候选列表与输入框同宽。
+- 应用版本保持6.1.0，本次修正通过main和GitHub Pages更新，保留原v6.1.0标签。
+
+- Custom rows contain equipment name, quantity, unit and notes, with no separate brand input.
+- Equipment name suggestions show up to five items and match the input width.
+- Application version remains 6.1.0. The correction is published through main and GitHub Pages while preserving the original v6.1.0 tag.
+
 ## V6.1 — 2026-11-04
 
 - 自定义器材可直接填写；器材单各分类可新增空白行，随项目保存，导出自动跳过未填写名称的行。

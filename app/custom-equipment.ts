@@ -38,3 +38,36 @@ export function updateCustomKitRow<Category extends string>(
   else delete next.draft;
   return next;
 }
+
+export function applyEquipmentSuggestion<Category extends string>(
+  rows: ProjectKitItem<Category>[],
+  draftId: string,
+  suggestion: { id: string; name: string; unit?: string },
+): ProjectKitItem<Category>[] {
+  const draftIndex = rows.findIndex((row) => row.id === draftId && row.custom);
+  if (draftIndex < 0) return rows;
+  const source = rows[draftIndex];
+  const existingIndex = rows.findIndex((row, index) => index !== draftIndex && row.id === suggestion.id);
+  if (existingIndex >= 0) {
+    const existing = rows[existingIndex];
+    const total = existing.qty + source.qty;
+    const notes = [...new Set([existing.note, source.note].filter((note) => note.trim()))];
+    // Put overflow evidence first so a later note-length bound cannot hide it.
+    if (total > 999) notes.unshift(`合并前合计 ${total}，超过单行上限，请核对数量`);
+    return rows.flatMap((row, index) => {
+      if (index === draftIndex) return [];
+      if (index !== existingIndex) return [row];
+      return [{ ...existing, qty: Math.min(999, total), note: notes.join("；"), status: "manual" as const, userAdjusted: true }];
+    });
+  }
+  return rows.map((row, index) => {
+    if (index !== draftIndex) return row;
+    const selected = {
+      ...source, id: suggestion.id, reason: `从联想选择：${suggestion.name}`,
+      status: "manual" as const, userAdjusted: true,
+    };
+    delete selected.custom;
+    delete selected.draft;
+    return selected;
+  });
+}

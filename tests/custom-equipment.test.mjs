@@ -79,3 +79,62 @@ test("custom edits enforce persistent field limits while preserving untouched ro
   assert.equal(changed.custom.category, "移动器材");
   assert.equal(isBlankCustomKitItem({}), false);
 });
+
+test("applying a suggestion keeps quantity and note, adopts canonical identity and remains restorable", async () => {
+  const { applyEquipmentSuggestion } = await import("../app/custom-equipment.ts");
+  const blank = { ...row(), qty: 120, note: "保留租赁备注" };
+  const rows = [blank, createCustomKitRow("other", "移动器材")];
+  const selected = applyEquipmentSuggestion(rows, blank.id, { id: "camera", name: "SONY FX3", unit: "台" });
+  assert.equal(selected[0].id, "camera");
+  assert.equal(selected[0].qty, 120);
+  assert.equal(selected[0].note, "保留租赁备注");
+  assert.equal(selected[0].reason, "从联想选择：SONY FX3");
+  assert.equal(selected[0].status, "manual");
+  assert.equal(selected[0].userAdjusted, true);
+  assert.equal("custom" in selected[0], false);
+  assert.equal("draft" in selected[0], false);
+  assert.equal(selected[1], rows[1]);
+  assert.equal(blank.draft, true);
+  assert.equal(blank.id, "custom-a");
+  const restored = sanitizeProjectRecords(JSON.parse(JSON.stringify([{ id: "p", form: {}, kit: selected }])), options)[0].kit;
+  assert.equal(restored[0].id, "camera");
+  assert.equal(restored[0].qty, 120);
+  assert.equal(restored[1].draft, true);
+  const history = recordKitChange({ past: [], future: [] }, rows, "从联想选择器材");
+  const undo = travelKitHistory(history, selected, "undo");
+  assert.deepEqual(undo.rows, rows);
+  assert.equal(undo.rows[0].draft, true);
+});
+
+test("choosing already-selected equipment combines quantities and unique notes without replacing existing reasons", async () => {
+  const { applyEquipmentSuggestion } = await import("../app/custom-equipment.ts");
+  const existing = { id: "camera", qty: 2, note: "A机配件", reason: "此前人工确认", status: "confirmed" };
+  const blank = { ...row(), qty: 3, note: "B机配件" };
+  const unrelated = createCustomKitRow("other", "移动器材");
+  const selected = applyEquipmentSuggestion([blank, existing, unrelated], blank.id, { id: "camera", name: "SONY FX3" });
+  assert.deepEqual(selected.map(item => item.id), ["camera", "other"]);
+  assert.equal(selected[0].qty, 5);
+  assert.equal(selected[0].note, "A机配件；B机配件");
+  assert.equal(selected[0].reason, "此前人工确认");
+  assert.equal(selected[0].status, "manual");
+  assert.equal(selected[0].userAdjusted, true);
+  assert.equal(selected[1], unrelated);
+  assert.equal(existing.qty, 2);
+  const sameNote = applyEquipmentSuggestion([existing, { ...blank, note: existing.note }], blank.id, { id: "camera", name: "SONY FX3" });
+  assert.equal(sameNote[0].note, "A机配件");
+});
+
+test("suggestion conflicts retain overflow evidence and ignore absent or non-custom source rows", async () => {
+  const { applyEquipmentSuggestion } = await import("../app/custom-equipment.ts");
+  const existing = { id: "camera", qty: 800, note: "原备注", reason: "原理由", status: "manual" };
+  const blank = { ...row(), qty: 700, note: "新增备注" };
+  const rows = [existing, blank];
+  const selected = applyEquipmentSuggestion(rows, blank.id, { id: "camera", name: "SONY FX3" });
+  assert.equal(selected.length, 1);
+  assert.equal(selected[0].qty, 999);
+  assert.match(selected[0].note, /合并前合计 1500.*请核对数量/);
+  assert.ok(selected[0].note.includes("原备注") && selected[0].note.includes("新增备注"));
+  assert.equal(selected[0].reason, "原理由");
+  assert.equal(applyEquipmentSuggestion(rows, "missing", { id: "camera", name: "SONY FX3" }), rows);
+  assert.equal(applyEquipmentSuggestion(rows, "camera", { id: "other-camera", name: "其他相机" }), rows);
+});

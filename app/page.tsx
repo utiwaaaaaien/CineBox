@@ -18,7 +18,8 @@ import { BrandFilter } from "./brand-filter";
 import { ActionMenu } from "./action-menu";
 import { brandMenuLabels } from "./catalog-brands";
 import { categoryBrands, filterCatalog, copyHistoricalKit, basicSystemProject } from "./direct-selection";
-import { createCustomKitRow, updateCustomKitRow, isBlankCustomKitItem } from "./custom-equipment";
+import { createCustomKitRow, updateCustomKitRow, isBlankCustomKitItem, applyEquipmentSuggestion } from "./custom-equipment";
+import { EquipmentNameInput } from "./equipment-name-input";
 import { formatShootRange } from "./excel-export";
 import {
   analyzeHistoryProjectText,
@@ -646,6 +647,9 @@ export default function Home() {
   });
   const [uploadLabel, setUploadLabel] = useState("");
   const [importingBackup, setImportingBackup] = useState(false);
+  const [customQuantity, setCustomQuantity] = useState(1);
+  const [customNote, setCustomNote] = useState("");
+  const [customSuggestionId, setCustomSuggestionId] = useState<string | null>(null);
   const [toast, setToast] = useState("");
   const [swapTargetId, setSwapTargetId] = useState<string | null>(null);
   const [swapQuery, setSwapQuery] = useState("");
@@ -1104,12 +1108,15 @@ export default function Home() {
       return;
     }
     const id = createId("custom");
-    setKit((current) => [
-      ...current,
-      { id, qty: 1, note: "", reason: "摄影指导自定义补充", status: "manual", custom: { ...customDraft, category: targetCategory, name: customDraft.name.trim(), unit: customDraft.unit.trim(), brand: customDraft.brand.trim() || "通用" } },
-    ]);
+    const row: KitItem = { id, qty: customQuantity, note: customNote, reason: "摄影指导自定义补充", status: "manual", custom: { ...customDraft, category: targetCategory, name: customDraft.name.trim(), unit: customDraft.unit.trim(), brand: customDraft.brand.trim() || "通用" } };
+    const suggestion = equipment.find((item) => item.id === customSuggestionId && item.category === targetCategory && item.published);
+    setKit((current) => {
+      const rows = [...current, row];
+      return suggestion?.published && suggestion.category === targetCategory ? applyEquipmentSuggestion(rows, id, suggestion) : rows;
+    }, "新增器材");
     setCustomDraft({ ...customDraft, name: "" });
-    setToast("已添加自定义器材");
+    setCustomQuantity(1); setCustomNote(""); setCustomSuggestionId(null);
+    setToast(suggestion ? "已加入所选器材；重复器材的数量与备注已合并" : "已添加自定义器材");
   }
 
   function updateKit(id: string, patch: Partial<KitItem>) {
@@ -1448,9 +1455,12 @@ export default function Home() {
     return <section className="custom-item-panel custom-item-flat" aria-label="新增自定义器材">
       <header><h3>新增自定义器材</h3><span>归入{targetCategory}</span></header>
       <form className="custom-item-fields" onSubmit={(event) => { event.preventDefault(); addCustomItem(targetCategory); }}>
-        <label><span>器材名称</span><input required maxLength={240} aria-label="库外器材名称" value={customDraft.name} onChange={(event) => setCustomDraft({ ...customDraft, name: event.target.value })} placeholder="填写名称与规格" /></label>
-        <label><span>品牌</span><input maxLength={120} aria-label="库外器材品牌" value={customDraft.brand} onChange={(event) => setCustomDraft({ ...customDraft, brand: event.target.value })} placeholder="品牌" /></label>
-        <label><span>单位</span><input required maxLength={20} aria-label="库外器材单位" value={customDraft.unit} onChange={(event) => setCustomDraft({ ...customDraft, unit: event.target.value })} placeholder="件" /></label>
+        <label><span>器材名</span><EquipmentNameInput key={targetCategory} label="库外器材名称" value={customDraft.name} category={targetCategory} catalog={equipment} required
+          onChange={(name) => { setCustomDraft({ ...customDraft, name, brand: "通用" }); setCustomSuggestionId(null); }}
+          onSelect={(item) => { setCustomDraft({ ...customDraft, name: item.name, brand: item.brand, unit: item.unit }); setCustomSuggestionId(item.id); }} /></label>
+        <label><span>数量</span><input aria-label="库外器材数量" required type="number" min={1} max={999} value={customQuantity} onChange={(event) => setCustomQuantity(clampInteger(Number(event.target.value), 1, 999))} /></label>
+        <label><span>单位</span><input required maxLength={20} aria-label="库外器材单位" value={customDraft.unit} onChange={(event) => { setCustomDraft({ ...customDraft, unit: event.target.value }); setCustomSuggestionId(null); }} placeholder="件" /></label>
+        <label><span>备注</span><input aria-label="库外器材备注" maxLength={2000} value={customNote} onChange={(event) => setCustomNote(event.target.value)} placeholder="添加备注" /></label>
         <button type="submit" className="button primary">加入当前项目</button>
       </form>
     </section>;
@@ -1907,8 +1917,9 @@ export default function Home() {
                       if (row.custom) return (
                         <div className="kit-row custom-kit-row" key={row.id}>
                           <div className="custom-kit-identity">
-                            <label><span>器材名称</span><input id={`custom-name-${row.id}`} aria-label={`${group.name}自定义器材${rowIndex + 1}名称`} maxLength={240} value={row.custom.name} placeholder="填写器材名称与规格" onChange={(event) => updateCustomRow(row, { name: event.target.value })} /></label>
-                            <label><span>品牌</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}品牌`} maxLength={120} value={row.custom.brand} placeholder="品牌" onBlur={() => { if (!row.custom?.brand.trim()) updateCustomRow(row, { brand: "通用" }); }} onChange={(event) => updateCustomRow(row, { brand: event.target.value })} /></label>
+                            <label><span>器材名</span><EquipmentNameInput id={`custom-name-${row.id}`} label={`${group.name}自定义器材${rowIndex + 1}名称`} value={row.custom.name} category={group.name} catalog={equipment}
+                              onChange={(name) => updateCustomRow(row, { name })}
+                              onSelect={(candidate) => { setKit((current) => applyEquipmentSuggestion(current, row.id, candidate), `选择 ${candidate.name}`); setToast("已选择器材，数量与备注保留；重复项自动合并"); }} /></label>
                           </div>
                           <label className="custom-kit-quantity"><span>数量</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} /></label>
                           <label className="custom-kit-unit"><span>单位</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}单位`} maxLength={20} value={row.custom.unit} placeholder="件" onBlur={() => { if (!row.custom?.unit.trim()) updateCustomRow(row, { unit: "件" }); }} onChange={(event) => updateCustomRow(row, { unit: event.target.value })} /></label>
