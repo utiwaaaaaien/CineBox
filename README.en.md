@@ -1,6 +1,6 @@
 <p align="center"><img src="public/brand/cinebox-logo-v2-128.png" width="96" height="96" alt="CineBox" /></p>
 
-# CineBox V6
+# CineBox V6.1
 
 **A camera equipment and production planning workspace.**
 
@@ -10,7 +10,9 @@ CineBox helps camera teams define shooting requirements, reuse past project conf
 
 ![Version V6.1](https://img.shields.io/badge/version-V6.1-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
-V6.1 adds direct custom entry, draft kit rows, selection toggling, one-minute local snapshots and upload states, plus 39 grip and 27 audio entries. See the [changelog](CHANGELOG.md) and [release notes](docs/releases/v6.1.0.md).
+V6.1 supports direct equipment name, quantity, unit and note entry, with up to five category-specific suggestions aligned to the name input. It also adds draft kit rows, selection toggling, one-minute local snapshots and upload states, plus 39 grip and 27 audio entries. See the [changelog](CHANGELOG.md) and [release notes](docs/releases/v6.1.0.md).
+
+Current fixes are maintained on [main](https://github.com/utiwaaaaaien/CineBox/tree/main) and the live site. The `v6.1.0` tag and automatic Release source downloads preserve the initial release and exclude later maintenance fixes; use main for the current code.
 
 ## Features
 
@@ -41,9 +43,9 @@ Import files are parsed in the browser. PDF import requires extractable text; sc
 
 ## Catalog scope
 
-V6 offers **2,084 selectable equipment entries**. The canonical catalog retains **2,099 equipment identity records** for old project recovery and ID compatibility. These counts serve different purposes.
+V6.1 offers **2,150 selectable equipment entries**. The canonical catalog retains **2,165 equipment identity records** for old project recovery and ID compatibility. These counts serve different purposes.
 
-The release records 4,383 card specifications. There are 1,283 entries with three specifications and **801 entries with fewer than three confirmed specifications**. A total of 240 entries use series references with an explicit scope; this count overlaps with the completeness counts. Unconfirmed specifications remain blank in the UI. Sources and gap explanations are retained in `data/catalog/card-specs-v6-*.json` and the audit files.
+The release records 4,572 card specifications. There are 1,346 entries with three specifications and **804 entries with fewer than three confirmed specifications**. A total of 240 entries use series references with an explicit scope; this count overlaps with the completeness counts. Unconfirmed specifications remain blank in the UI. Sources and gap explanations are retained in `data/catalog/card-specs-v6-*.json` and the audit files.
 
 The catalog combines manufacturer documentation, documented inventory configurations, and generic items with an identifiable purpose. Publication status and manufacturer verification status are tracked separately. It does not provide live stock, pricing, or rental availability. Series references do not establish the capabilities of an unspecified model or generation. Confirm the exact configuration, recording mode, and supplier availability before a shoot.
 
@@ -75,7 +77,7 @@ pnpm start
 | `pnpm lint` | Run ESLint |
 | `pnpm run catalog:check` | Check generated canonical data against its maintained inputs |
 | `pnpm run catalog:cards:check` | Check V6 specification output and research status, allowing documented gaps |
-| `pnpm run catalog:cards:complete` | Require three specifications for every selectable entry; currently reports 801 gaps |
+| `pnpm run catalog:cards:complete` | Require three specifications for every selectable entry; currently reports 804 gaps |
 | `pnpm run catalog:build` | Regenerate canonical catalog and audit records after editing maintained inputs |
 
 Do not edit generated catalog files directly. Equipment identity changes must preserve old ID mappings and verify project restoration, quantities, notes, and export. See [AGENTS.md](AGENTS.md) for repository-specific rules.

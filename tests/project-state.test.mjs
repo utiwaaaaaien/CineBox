@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { addOrIncrementKitItem, mergeGeneratedKit, sanitizeProjectRecords } from "../app/project-state.ts";
+import { addOrIncrementKitItem, mergeGeneratedKit, sanitizeProjectRecords, maxKitItemCount, kitCapacityError, maxKitNoteInputLength, mergeKitNotes } from "../app/project-state.ts";
 
 const defaultForm = {
   name: "未命名项目",
@@ -89,7 +89,7 @@ test("repairs duplicate project ids and ignores non-project values", () => {
   assert.equal(projects[1].id, "project-repaired-1");
 });
 
-test("rejects unsupported form options and bounds restored text", () => {
+test("rejects unsupported form options and bounds form/reason text while preserving existing notes", () => {
   const longText = "长".repeat(12_000);
   const [project] = sanitizeProjectRecords([
     {
@@ -115,7 +115,7 @@ test("rejects unsupported form options and bounds restored text", () => {
   assert.equal(project.form.type, "企业宣传片");
   assert.equal(project.form.baseFps, 25);
   assert.deepEqual(project.form.captureStyle, ["稳定器"]);
-  assert.equal(project.kit[0].note.length, 2_000);
+  assert.equal(project.kit[0].note, longText);
   assert.equal(project.kit[0].reason.length, 1_000);
   assert.equal(project.createdAt, "2026-07-26T00:00:00.000Z");
 });
@@ -206,4 +206,47 @@ test("a full historical archive permits replacing a slot but rejects a new slot 
   assert.equal(historyCapacityError(current, { "slot-0": { name: "替换内置项目" } }, 500), null);
   assert.match(historyCapacityError(current, { "new-slot": {} }, 500), /产生 501 个/);
   assert.equal(JSON.stringify(current), before);
+});
+
+test("legacy historical archives above capacity still permit replacement but explicitly reject growth", async () => {
+  const { historyCapacityError } = await import("../app/project-state.ts");
+  const current = Object.fromEntries(Array.from({ length: 501 }, (_, index) => [`legacy-${index}`, { name: `历史 ${index}` }]));
+  const before = JSON.stringify(current);
+  assert.equal(historyCapacityError(current, { "legacy-500": { name: "更新备注与配置" } }, 500), null);
+  assert.equal(historyCapacityError(current, {}, 500), null);
+  assert.match(historyCapacityError(current, { "new-slot": {} }, 500), /产生 502 个/);
+  const reduced = Object.fromEntries(Object.entries(current).slice(0, 499));
+  assert.equal(historyCapacityError(reduced, { "new-slot": {} }, 500), null);
+  assert.equal(JSON.stringify(current), before);
+});
+
+test("restoration keeps all valid saved kit rows beyond the creation limit, including rows after malformed entries", () => {
+  const savedRows = Array.from({ length: maxKitItemCount + 2 }, (_, index) => ({
+    id: `saved-custom-${index}`, qty: 1, note: `备注 ${index}`,
+    custom: { name: `自备器材 ${index}`, brand: "自备", category: "其他", subcategory: "自定义", unit: "件" },
+  }));
+  const [restored] = sanitizeProjectRecords([{ id: "large-project", form: {}, kit: [null, { id: "unknown" }, ...savedRows] }], options);
+  assert.equal(restored.kit.length, savedRows.length);
+  assert.deepEqual(restored.kit.map(row => row.id), savedRows.map(row => row.id));
+  assert.equal(restored.kit.at(-1).note, savedRows.at(-1).note);
+  const [roundtrip] = sanitizeProjectRecords(JSON.parse(JSON.stringify([restored])), options);
+  assert.deepEqual(roundtrip.kit, restored.kit);
+});
+
+test("kit creation/import boundaries reject additions explicitly while legacy over-capacity projects remain editable", () => {
+  assert.equal(kitCapacityError(maxKitItemCount - 1), null);
+  assert.match(kitCapacityError(maxKitItemCount), /不能超过 5000 项/);
+  assert.match(kitCapacityError(0, maxKitItemCount + 1), /本次新增 5001 项/);
+  assert.match(kitCapacityError(maxKitItemCount + 2, 1), /当前 5002 项/);
+  assert.equal(kitCapacityError(maxKitItemCount + 2, 0), null);
+  assert.equal(kitCapacityError(maxKitItemCount + 2, -1), null);
+});
+
+test("restoring notes preserves complete existing strings independently of the manual-input limit", () => {
+  assert.equal(maxKitNoteInputLength, 2_000);
+  const note = `  ${"机位备注🎬".repeat(3_000)}\n末尾需保留  `;
+  const [restored] = sanitizeProjectRecords([{ id: "long-note", form: {}, kit: [{ id: "cam-a", note }, { id: "lens-a", note: { invalid: true } }] }], options);
+  assert.equal(restored.kit[0].note, note);
+  assert.equal(restored.kit[1].note, "");
+  assert.equal(mergeKitNotes("", note, note, " \n "), `${note}； \n `);
 });

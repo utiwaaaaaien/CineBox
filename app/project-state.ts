@@ -1,4 +1,18 @@
 export const maxProjectCount = 500;
+export const maxKitItemCount = 5_000;
+// This bounds newly typed input, not historical or combined notes on restore.
+export const maxKitNoteInputLength = 2_000;
+
+export function kitCapacityError(existing: number, incoming = 1): string | null {
+  return incoming > 0 && existing + incoming > maxKitItemCount
+    ? `单个项目的器材单不能超过 ${maxKitItemCount} 项（当前 ${existing} 项，本次新增 ${incoming} 项）。请先导出备份并整理器材单。`
+    : null;
+}
+
+/** Combine distinct notes without applying the manual-input length limit. */
+export function mergeKitNotes(...notes: string[]): string {
+  return [...new Set(notes.filter((note) => note !== ""))].join("；");
+}
 
 export function projectCapacityError(existing: number, incoming = 1): string | null {
   return existing + incoming > maxProjectCount
@@ -7,8 +21,9 @@ export function projectCapacityError(existing: number, incoming = 1): string | n
 }
 
 export function historyCapacityError(current: object, incoming: object, limit: number): string | null {
-  const total = new Set([...Object.keys(current), ...Object.keys(incoming)]).size;
-  return total > limit
+  const currentIds = Object.keys(current);
+  const total = new Set([...currentIds, ...Object.keys(incoming)]).size;
+  return total > limit && total > currentIds.length
     ? `历史项目存档不能超过 ${limit} 个，本次操作会产生 ${total} 个。请先导出备份并整理历史存档。`
     : null;
 }
@@ -177,7 +192,9 @@ export function sanitizeKitItems<Category extends string>(
   const result: ProjectKitItem<Category>[] = [];
   const seenIds = new Set<string>();
 
-  for (const candidate of value.slice(0, 5_000)) {
+  // Capacity limits apply when creating/importing rows, never while recovering
+  // an existing project: older projects can already contain more than the limit.
+  for (const candidate of value) {
     if (!isRecord(candidate)) continue;
     const id = nonEmptyString(candidate.id, "").slice(0, 240);
     if (!id || seenIds.has(id)) continue;
@@ -198,7 +215,9 @@ export function sanitizeKitItems<Category extends string>(
     result.push({
       id,
       qty: Math.min(999, Math.max(1, Math.round(rawQuantity))),
-      note: optionalString(candidate.note).slice(0, 2_000),
+      // Existing standard rows and merged suggestions can exceed the input cap.
+      // Preserve their complete notes across browser restore and backup import.
+      note: optionalString(candidate.note),
       reason: optionalString(candidate.reason, custom ? "恢复的自定义器材" : "恢复的器材").slice(0, 1_000),
       status,
       custom,

@@ -35,6 +35,8 @@ import {
   sanitizeProjectRecords,
   projectCapacityError,
   historyCapacityError,
+  kitCapacityError,
+  maxKitNoteInputLength,
   type ProjectCustomEquipment,
   type ProjectKitItem,
   type ProjectStateRecord,
@@ -1047,9 +1049,12 @@ export default function Home() {
 
   function setKit(next: KitItem[] | ((current: KitItem[]) => KitItem[]), label = "调整器材单", group?: string) {
     const rows = typeof next === "function" ? next(kit) : next;
-    if (rows === kit || JSON.stringify(rows) === JSON.stringify(kit)) return;
+    if (rows === kit || JSON.stringify(rows) === JSON.stringify(kit)) return true;
+    const capacityError = kitCapacityError(kit.length, rows.length - kit.length);
+    if (capacityError) { setToast(capacityError); return false; }
     setKitHistories((current) => ({ ...current, [activeProjectId]: recordKitChange(current[activeProjectId] ?? { past: [], future: [] }, kit, label, group, activeProject?.requirementsChanged, activeProject?.requirementsRevision) }));
     updateActive((current) => ({ ...current, kit: rows }));
+    return true;
   }
 
   function travelKit(direction: "undo" | "redo") {
@@ -1084,13 +1089,13 @@ export default function Home() {
       return;
     }
     if (!equipmentById(id)?.published) return;
-    setKit((current) => addKitSelection(current, [{ id, qty: 1, note: "", reason, status: "manual" }]), `加入 ${equipmentById(id)?.name ?? "器材"}`);
+    if (!setKit((current) => addKitSelection(current, [{ id, qty: 1, note: "", reason, status: "manual" }]), `加入 ${equipmentById(id)?.name ?? "器材"}`)) return;
     setToast(`已加入「${project.name}」；点击下方“查看器材单”调整数量`);
   }
 
   function toggleSeries(series: EquipmentSeries) {
     if (!activeProject?.basicInfoConfirmed) { setEditingBasics(true); setView("library"); setToast("请先保存项目基本信息"); return; }
-    setKit((current) => addKitSelection(current, series.items.map((item) => ({ id: item.id, qty: 1, note: "", reason: `系列：${series.name}`, status: "manual" }))), `加入 ${series.name} 缺少的器材`);
+    if (!setKit((current) => addKitSelection(current, series.items.map((item) => ({ id: item.id, qty: 1, note: "", reason: `系列：${series.name}`, status: "manual" }))), `加入 ${series.name} 缺少的器材`)) return;
     setToast(`已补入 ${series.name} 中未选的器材；原有数量和备注已保留`);
   }
 
@@ -1110,10 +1115,10 @@ export default function Home() {
     const id = createId("custom");
     const row: KitItem = { id, qty: customQuantity, note: customNote, reason: "摄影指导自定义补充", status: "manual", custom: { ...customDraft, category: targetCategory, name: customDraft.name.trim(), unit: customDraft.unit.trim(), brand: customDraft.brand.trim() || "通用" } };
     const suggestion = equipment.find((item) => item.id === customSuggestionId && item.category === targetCategory && item.published);
-    setKit((current) => {
+    if (!setKit((current) => {
       const rows = [...current, row];
       return suggestion?.published && suggestion.category === targetCategory ? applyEquipmentSuggestion(rows, id, suggestion) : rows;
-    }, "新增器材");
+    }, "新增器材")) return;
     setCustomDraft({ ...customDraft, name: "" });
     setCustomQuantity(1); setCustomNote(""); setCustomSuggestionId(null);
     setToast(suggestion ? "已加入所选器材；重复器材的数量与备注已合并" : "已添加自定义器材");
@@ -1176,13 +1181,13 @@ export default function Home() {
   }
 
   function addMissingSystemRule(check: CameraSystemCheck) {
-    setKit((current) => addSystemRuleRows(current, check.missing, `站内系统检查：${check.title}`));
+    if (!setKit((current) => addSystemRuleRows(current, check.missing, `站内系统检查：${check.title}`))) return;
     setToast(`已补齐：${check.title}`);
   }
 
   function completeAllSystemRules() {
     const next = missingSystemChecks.reduce((rows, check) => addSystemRuleRows(rows, check.missing, `站内系统检查：${check.title}`), kit);
-    setKit(next, "一键补齐配套项目");
+    if (!setKit(next, "一键补齐配套项目")) return;
     setToast("已将缺少的配套项加入器材单，请确认兼容性与数量");
   }
 
@@ -1409,6 +1414,10 @@ export default function Home() {
       const imported = sanitizeProjects(payload.projects, projects.map((item) => item.id));
       if (!imported.length) throw new Error("empty backup");
       if (!canAddProjects(imported.length)) return;
+      for (const record of imported) {
+        const error = kitCapacityError(0, record.kit.length);
+        if (error) { setToast(`无法导入「${record.form.name}」：${error}`); return; }
+      }
       const importedHistory = sanitizeHistoryOverrides(migrateCatalogHistory(payload.historyOverrides), builtInHistoryProfileIds, equipmentIds);
       if (!canMergeHistory(importedHistory)) return;
       setProjects((current) => [...imported, ...current]);
@@ -1426,7 +1435,7 @@ export default function Home() {
     setKitQuery("");
     setKitScope("all");
     const row = createCustomKitRow(createId("custom"), targetCategory);
-    setKit((current) => [...current, row], `新增${targetCategory}自定义行`);
+    if (!setKit((current) => [...current, row], `新增${targetCategory}自定义行`)) return;
     window.setTimeout(() => {
       const input = document.getElementById(`custom-name-${row.id}`);
       input?.focus({ preventScroll: true });
@@ -1460,7 +1469,7 @@ export default function Home() {
           onSelect={(item) => { setCustomDraft({ ...customDraft, name: item.name, brand: item.brand, unit: item.unit }); setCustomSuggestionId(item.id); }} /></label>
         <label><span>数量</span><input aria-label="库外器材数量" required type="number" min={1} max={999} value={customQuantity} onChange={(event) => setCustomQuantity(clampInteger(Number(event.target.value), 1, 999))} /></label>
         <label><span>单位</span><input required maxLength={20} aria-label="库外器材单位" value={customDraft.unit} onChange={(event) => { setCustomDraft({ ...customDraft, unit: event.target.value }); setCustomSuggestionId(null); }} placeholder="件" /></label>
-        <label><span>备注</span><input aria-label="库外器材备注" maxLength={2000} value={customNote} onChange={(event) => setCustomNote(event.target.value)} placeholder="添加备注" /></label>
+        <label><span>备注</span><input aria-label="库外器材备注" maxLength={maxKitNoteInputLength} value={customNote} onChange={(event) => setCustomNote(event.target.value)} placeholder="添加备注" /></label>
         <button type="submit" className="button primary">加入当前项目</button>
       </form>
     </section>;
@@ -1923,7 +1932,7 @@ export default function Home() {
                           </div>
                           <label className="custom-kit-quantity"><span>数量</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} /></label>
                           <label className="custom-kit-unit"><span>单位</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}单位`} maxLength={20} value={row.custom.unit} placeholder="件" onBlur={() => { if (!row.custom?.unit.trim()) updateCustomRow(row, { unit: "件" }); }} onChange={(event) => updateCustomRow(row, { unit: event.target.value })} /></label>
-                          <label className="custom-kit-note"><span>备注</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}备注`} maxLength={2000} value={row.note} placeholder="添加备注" onChange={(event) => updateKit(row.id, { note: event.target.value })} /></label>
+                          <label className="custom-kit-note"><span>备注</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}备注`} maxLength={Math.max(maxKitNoteInputLength, row.note.length)} value={row.note} placeholder="添加备注" onChange={(event) => updateKit(row.id, { note: event.target.value })} /></label>
                           <div className="kit-row-actions">{!isBlankCustomKitItem(row) && (kitItemStatus(row) === "pending" || kitItemStatus(row) === "recommended") && <button className="swap-button" aria-label={`确认${item.name}`} onClick={() => updateKit(row.id, { status: "confirmed" })}>确认</button>}<button className="remove-button" aria-label={`删除${group.name}自定义器材${rowIndex + 1}`} onClick={() => setKit((current) => current.filter((itemRow) => itemRow.id !== row.id), "删除自定义器材行")}><ControlIcon kind="close" /></button></div>
                         </div>
                       );
@@ -1945,7 +1954,7 @@ export default function Home() {
                           </div>
                           <input aria-label={`${item.name}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} />
                           <span>{item.unit}</span>
-                          <input aria-label={`${item.name}备注`} value={row.note} onChange={(event) => updateKit(row.id, { note: event.target.value })} placeholder="添加备注" />
+                          <input aria-label={`${item.name}备注`} maxLength={Math.max(maxKitNoteInputLength, row.note.length)} value={row.note} onChange={(event) => updateKit(row.id, { note: event.target.value })} placeholder="添加备注" />
                           <div className="kit-row-actions">
                             <button className="swap-button" onClick={(event) => openSwap(row.id, event.currentTarget)}>更换</button>
                             <button className="remove-button" aria-label={`删除${item.name}`} onClick={() => { setKit((current) => current.filter((itemRow) => itemRow.id !== row.id), `移除 ${item.name}`); setToast(`已移除 ${item.name}，可撤销`); }}><ControlIcon kind="close" /></button>
@@ -2008,7 +2017,7 @@ export default function Home() {
                 })}</ul></section>;
               })}
               <button className="button ghost" onClick={() => setSwapPreview(null)}>返回选型</button>
-              <button autoFocus className="button primary" onClick={() => { setKit(swapPreview.rows, `联动替换 ${swapPreview.name}`); setSwapTargetId(null); setSwapPreview(null); setToast("换机完成；可撤销，兼容项仍需复核"); }}>应用这些变化</button>
+              <button autoFocus className="button primary" onClick={() => { if (!setKit(swapPreview.rows, `联动替换 ${swapPreview.name}`)) return; setSwapTargetId(null); setSwapPreview(null); setToast("换机完成；可撤销，兼容项仍需复核"); }}>应用这些变化</button>
             </div>}
             {swapCustom && <form id="swap-custom-form" className="swap-custom-form" onSubmit={(event) => { event.preventDefault(); replaceWithCustom(); }}>
               <p>将当前项目中的此项替换为自定义器材，保留数量和备注。器材兼容性需自行确认。</p>

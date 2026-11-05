@@ -138,3 +138,39 @@ test("suggestion conflicts retain overflow evidence and ignore absent or non-cus
   assert.equal(applyEquipmentSuggestion(rows, "missing", { id: "camera", name: "SONY FX3" }), rows);
   assert.equal(applyEquipmentSuggestion(rows, "camera", { id: "other-camera", name: "其他相机" }), rows);
 });
+
+test("merging two full-length notes preserves all text through backup, autosave, restore and undo", async () => {
+  const { applyEquipmentSuggestion } = await import("../app/custom-equipment.ts");
+  const existing = { id: "camera", qty: 800, note: "原".repeat(2_000), reason: "原理由", status: "confirmed" };
+  const draft = { ...row(), qty: 700, note: "新".repeat(2_000) };
+  const before = [existing, draft];
+  const combined = applyEquipmentSuggestion(before, draft.id, { id: "camera", name: "SONY FX3" });
+  const expectedNote = `合并前合计 1500，超过单行上限，请核对数量；${existing.note}；${draft.note}`;
+  assert.equal(combined[0].note, expectedNote);
+  const payload = { projects: [{ id: "p", form: {}, kit: combined }], activeProjectId: "p", historyOverrides: {} };
+  const restored = sanitizeProjectRecords(JSON.parse(JSON.stringify(payload.projects)), options);
+  assert.equal(restored[0].kit[0].note, expectedNote);
+  const storageValues = new Map();
+  const storage = { getItem: key => storageValues.get(key) ?? null, setItem: (key, value) => storageValues.set(key, value) };
+  assert.equal(createProjectAutosaveWriter(storage).save(payload).error, null);
+  const autosaved = sanitizeProjectRecords(readProjectAutosave(storage).payload.projects, options);
+  assert.equal(autosaved[0].kit[0].note, expectedNote);
+  const history = recordKitChange({ past: [], future: [] }, before, "合并器材");
+  const undo = travelKitHistory(history, combined, "undo");
+  assert.deepEqual(undo.rows, before);
+  const redo = travelKitHistory(undo.history, undo.rows, "redo");
+  assert.equal(redo.rows[0].note, expectedNote);
+  assert.equal(existing.note.length, 2_000);
+  assert.equal(draft.note.length, 2_000);
+});
+
+test("suggestions keep pre-existing notes above the input cap and retain meaningful whitespace verbatim", async () => {
+  const { applyEquipmentSuggestion } = await import("../app/custom-equipment.ts");
+  const note = `\n${"既有备注".repeat(2_000)}  `;
+  const existing = { id: "camera", qty: 1, note, reason: "人工备注", status: "manual" };
+  const draft = { ...row(), note: " \n " };
+  const combined = applyEquipmentSuggestion([existing, draft], draft.id, { id: "camera", name: "SONY FX3" });
+  assert.equal(combined[0].note, `${note}；${draft.note}`);
+  const restored = sanitizeProjectRecords([{ id: "p", form: {}, kit: combined }], options);
+  assert.equal(restored[0].kit[0].note, combined[0].note);
+});

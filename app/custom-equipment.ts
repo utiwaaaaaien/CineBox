@@ -1,4 +1,5 @@
 import type { ProjectCustomEquipment, ProjectKitItem } from "./project-state.ts";
+import { mergeKitNotes } from "./project-state.ts";
 
 /** Unnamed custom rows remain editable drafts and never represent equipment. */
 export function isBlankCustomKitItem(row: Pick<ProjectKitItem, "custom">) {
@@ -51,13 +52,15 @@ export function applyEquipmentSuggestion<Category extends string>(
   if (existingIndex >= 0) {
     const existing = rows[existingIndex];
     const total = existing.qty + source.qty;
-    const notes = [...new Set([existing.note, source.note].filter((note) => note.trim()))];
-    // Put overflow evidence first so a later note-length bound cannot hide it.
-    if (total > 999) notes.unshift(`合并前合计 ${total}，超过单行上限，请核对数量`);
+    const note = mergeKitNotes(
+      ...(total > 999 ? [`合并前合计 ${total}，超过单行上限，请核对数量`] : []),
+      existing.note,
+      source.note,
+    );
     return rows.flatMap((row, index) => {
       if (index === draftIndex) return [];
       if (index !== existingIndex) return [row];
-      return [{ ...existing, qty: Math.min(999, total), note: notes.join("；"), status: "manual" as const, userAdjusted: true }];
+      return [{ ...existing, qty: Math.min(999, total), note, status: "manual" as const, userAdjusted: true }];
     });
   }
   return rows.map((row, index) => {

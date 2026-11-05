@@ -163,7 +163,7 @@ test("accepts generated imported history ids and continues to accept built-in id
   assert.equal(saved[importedId].id, importedId);
 });
 
-test("rejects unsafe ids and invalid formats, preserves legacy source defaults, and caps at 500", () => {
+test("rejects unsafe ids and invalid formats, preserves legacy source defaults and all valid history records", () => {
   const source = {
     fileName: "project.xlsx",
     format: "XLSX",
@@ -195,7 +195,7 @@ test("rejects unsafe ids and invalid formats, preserves legacy source defaults, 
     new Set([...catalog.map((item) => item.id), "constructor"]),
   );
 
-  assert.equal(Object.keys(saved).length, 500);
+  assert.equal(Object.keys(saved).length, 503);
   assert.equal(Object.hasOwn(saved, "__proto__"), false);
   assert.equal(Object.hasOwn(saved, "constructor"), false);
   assert.equal(Object.hasOwn(saved, "imported-history-1785110400000-badsource"), false);
@@ -360,4 +360,65 @@ test("ambiguous full names block shorter aliases instead of guessing a category"
   const analysis = analyzeHistoryProjectText("通用 肩架,2\nSONY FX3,3", "test.csv", "CSV", isolated);
   assert.deepEqual(analysis.items, ["camera"]);
   assert.equal(analysis.quantities.camera, 3);
+});
+
+async function analyzeJsonFile(value, equipment = catalog) {
+  const file = new File([JSON.stringify(value)], '历史器材.json', { type: 'application/json' });
+  const extracted = await extractHistoryProjectFile(file);
+  assert.equal(extracted.format, 'JSON');
+  return analyzeHistoryProjectText(extracted.text, file.name, extracted.format, equipment);
+}
+
+test('JSON file rows retain name and qty association rather than defaulting every model to one', async () => {
+  const result = await analyzeJsonFile([{ name: 'SONY FX3', qty: 3, price: 800, note: '数量：99，DJI RS 4 Pro 备用' }]);
+  assert.deepEqual(result.items, ['cam-fx3']);
+  assert.equal(result.quantities['cam-fx3'], 3);
+  assert.equal(result.cameraCount, 3);
+});
+
+test('nested JSON arrays sum repeated equipment and preserve explicit zero and quantity field aliases', async () => {
+  const result = await analyzeJsonFile({
+    name: 'SONY FX3 器材清单',
+    notes: 'SONY FX3 数量：88',
+    price: 'SONY FX3 数量：99',
+    data: { groups: [
+      { name: '摄影机', rows: [{ name: 'SONY FX3', qty: 3 }, { name: 'SONY FX3', quantity: '2台' }] },
+      { name: '镜头', items: [{ 名称: 'SONY FE 24-70mm F2.8 GM II', 数量: 0 }] },
+      { equipment: [{ equipment_name: 'DJI RS 4 Pro', QUANTITY: 4, price: 900, notes: '数量：88' }] },
+    ] },
+  });
+  assert.deepEqual(result.items, ['cam-fx3', 'grip-rs4']);
+  assert.deepEqual(result.quantities, { 'cam-fx3': 5, 'grip-rs4': 4 });
+  const noQty = await analyzeJsonFile([{ name: 'SONY FX3', price: 500, note: '数量：20' }]);
+  assert.deepEqual(noQty.items, ['cam-fx3']);
+  assert.equal(noQty.quantities, undefined);
+});
+
+test('JSON file extraction keeps generations separate and handles names with commas and line breaks', async () => {
+  const equipment = [
+    { id: 'second', name: 'SONY Camera II', category: '摄影机' },
+    { id: 'third', name: 'SONY Camera III', category: '摄影机' },
+    { id: 'comma', name: 'Acme Filter, Kit', category: '滤镜' },
+  ];
+  const result = await analyzeJsonFile({ equipment: [
+    { name: 'SONY\nCamera II', qty: 2 },
+    { name: 'SONY Camera III', quantity: 3 },
+    { name: 'Acme Filter,\nKit', 数量: 4 },
+  ] }, equipment);
+  assert.deepEqual(result.items, ['second', 'third', 'comma']);
+  assert.deepEqual(result.quantities, { second: 2, third: 3, comma: 4 });
+});
+
+test('JSON text wrappers and string arrays remain compatible with plain-text model matching', async () => {
+  for (const value of [
+    'SONY FX3 ×3\nDJI RS 4 Pro ×2',
+    { text: 'SONY FX3 ×3\nDJI RS 4 Pro ×2' },
+    ['SONY FX3 ×3', 'DJI RS 4 Pro ×2'],
+  ]) {
+    const result = await analyzeJsonFile(value);
+    assert.deepEqual(result.quantities, { 'cam-fx3': 3, 'grip-rs4': 2 });
+  }
+  for (const qty of [-1, 1.5, '3 x 800', null]) {
+    await assert.rejects(analyzeJsonFile([{ name: 'SONY FX3', qty }]), /JSON 器材数量无效/);
+  }
 });

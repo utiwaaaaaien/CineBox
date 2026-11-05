@@ -381,7 +381,8 @@ export function sanitizeHistoryOverrides(
     const items = Array.isArray(raw.items)
       ? [...new Set(raw.items.filter((item): item is string => typeof item === "string" && !isUnsafeId(item) && knownEquipmentIds.has(item)))]
       : [];
-    if (!items.length || Object.keys(result).length >= maxHistoryOverrides) continue;
+    // Preserve existing records; operation boundaries enforce archive capacity before writes.
+    if (!items.length) continue;
     const type = typeof raw.type === "string" && raw.type.trim() ? raw.type.trim().slice(0, 80) : "自定义项目";
     const customName = typeof raw.customName === "string" ? readableFileName(raw.customName).slice(0, 80) : "";
     const projectName = typeof raw.projectName === "string"
@@ -421,6 +422,52 @@ export function sanitizeHistoryOverrides(
     };
   }
   return result;
+}
+
+class HistoryJsonQuantityError extends Error {}
+
+function historyJsonText(value: unknown): string {
+  const lines: string[] = [];
+  const keyOf = (key: string) => key.normalize("NFKC").toLowerCase().replace(/[_\s-]/g, "");
+  const nameKeys = ["name", "equipmentname", "器材名称", "设备名称", "名称", "model", "型号"];
+  const quantityKeys = ["qty", "quantity", "数量"];
+  const metadataKeys = new Set(["price", "unitprice", "cost", "amount", "total", "note", "notes", "remark", "remarks", "单价", "价格", "金额", "总价", "备注"]);
+  const visit = (node: unknown) => {
+    if (typeof node === "string") { lines.push(node); return; }
+    if (Array.isArray(node)) { node.forEach(visit); return; }
+    if (!isObject(node)) return;
+    const entries = Object.entries(node);
+    const field = (keys: string[]) => keys.map((key) => entries.find(([name]) => keyOf(name) === key)).find(Boolean);
+    const nameField = field(nameKeys);
+    const quantityField = field(quantityKeys);
+    const containsNestedData = entries.some(([, child]) => child !== null && typeof child === "object");
+    if (nameField && typeof nameField[1] === "string" && (quantityField || !containsNestedData)) {
+      let quantity = 1;
+      if (quantityField) {
+        const raw = quantityField[1];
+        const numericText = typeof raw === "string"
+          ? raw.trim().match(/^([0-9]+|[一二两三四五六七八九十]{1,3})\s*(?:台|支|套|件|组|个|只|块|卷|条|根|米|pcs?)?$/i)?.[1]
+          : undefined;
+        if (typeof raw === "number" && Number.isSafeInteger(raw) && raw >= 0) quantity = raw;
+        else if (numericText !== undefined) quantity = quantityNumber(numericText);
+        else throw new HistoryJsonQuantityError("JSON 器材数量无效：qty、quantity 或数量必须为非负整数");
+      }
+      // Emit one physical row per JSON object. Quotes protect commas in names;
+      // line breaks in a model are layout whitespace, not a new inventory entry.
+      const name = nameField[1].replace(/[\r\n\t]+/g, " ").replace(/"/g, '""');
+      lines.push("器材名称\t数量", `"${name}"\t${quantity}`);
+      return;
+    }
+    for (const [key, child] of entries) {
+      // Price/notes are metadata, not extra inventory rows or quantity fields.
+      if (metadataKeys.has(keyOf(key))) continue;
+      // A container's project/category name is not an additional inventory row.
+      if (containsNestedData && nameKeys.includes(keyOf(key))) continue;
+      visit(child);
+    }
+  };
+  visit(value);
+  return lines.join("\n");
 }
 
 function fileExtension(fileName: string) {
@@ -495,11 +542,11 @@ export async function extractHistoryProjectFile(file: File) {
   if (extension === "json") {
     try {
       const parsed: unknown = JSON.parse(raw);
-      const text = JSON.stringify(parsed, null, 2);
+      const text = historyJsonText(parsed);
       if (text.length > maxExtractedTextLength) throw new HistoryFileLimitError("文件文字量超过 30 万字，请拆分后导入");
       return { text, format: "JSON" };
     } catch (error) {
-      if (error instanceof HistoryFileLimitError) throw error;
+      if (error instanceof HistoryFileLimitError || error instanceof HistoryJsonQuantityError) throw error;
       throw new Error("无法读取 JSON：请确认文件内容是有效的 JSON 数据");
     }
   }

@@ -3,8 +3,9 @@ export const appVersion = "V6.1";
 // Add each new release to the beginning of this list, keeping earlier entries.
 export const releaseNotes = [{
   version: "V6.1",
-  date: "2026-11-04",
+  date: "2026-11-05",
   items: [
+    "修复 JSON 历史清单数量关联、联想合并长备注恢复和超限备份静默裁剪。",
     "新增器材改为器材名、数量、单位、备注单行输入，移除品牌字段。",
     "器材名支持当前分类联想，最多5项，同宽候选框支持键盘与鼠标选择。",
     "自定义器材合并为直接填写区，分类跟随当前品类，无需展开或下拉选择。",
