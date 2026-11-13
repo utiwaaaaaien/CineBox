@@ -1,6 +1,6 @@
 <p align="center"><img src="public/brand/cinebox-logo-v2-128.png" width="96" height="96" alt="CineBox" /></p>
 
-# CineBox V6.1
+# CineBox V6.2
 
 **A camera equipment and production planning workspace.**
 
@@ -8,9 +8,9 @@ CineBox helps camera teams define shooting requirements, reuse past project conf
 
 [Live site](https://utiwaaaaaien.github.io/CineBox/) · [简体中文](README.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [MIT License](LICENSE)
 
-![Version V6.1](https://img.shields.io/badge/version-V6.1-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+![Version V6.2](https://img.shields.io/badge/version-V6.2-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
-V6.1 supports direct equipment name, quantity, unit and note entry, with up to five category-specific suggestions aligned to the name input. It also adds draft kit rows, selection toggling, one-minute local snapshots and upload states, plus 39 grip and 27 audio entries. See the [changelog](CHANGELOG.md) and [release notes](docs/releases/v6.1.0.md).
+V6.2 matches equipment keywords in any order, sorts lenses by focal length, tracks selected categories, and previews the kit within the selection view. See the [changelog](CHANGELOG.md) and [release notes](docs/releases/v6.2.0.md).
 
 Current fixes are maintained on [main](https://github.com/utiwaaaaaien/CineBox/tree/main) and the live site. The `v6.1.0` tag and automatic Release source downloads preserve the initial release and exclude later maintenance fixes; use main for the current code.
 
@@ -20,7 +20,7 @@ Current fixes are maintained on [main](https://github.com/utiwaaaaaien/CineBox/t
 - **Project reuse:** preview and reuse included real project configurations, or import Excel and text PDFs to create historical project cards after reviewing the parsed list.
 - **Equipment selection:** browse categories, brands, and series; search Chinese names, English models, and aliases; view documented technical specifications on equipment cards.
 - **Kit editing:** adjust quantities and notes, add equipment outside the catalog, review and complete supporting items, and undo or redo edits.
-- **Export and backup:** export Excel kit lists and review information; use JSON backups to transfer and restore projects and custom historical data.
+- **Export and backup:** export kit lists as PDF, DOCX, PNG, or XLSX. Use JSON backups to transfer and restore projects and custom historical data.
 - **Responsive interface:** desktop and mobile layouts with light and dark themes.
 
 The application currently has a **Chinese interface**. This English README does not imply that a complete English UI is available.

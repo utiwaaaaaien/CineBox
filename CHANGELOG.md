@@ -4,6 +4,16 @@
 
 User-facing release notes. `app/release.ts` defines the application version; the underlying catalog keeps its own version and identity compatibility rules.
 
+## V6.2 — 2026-11-13
+
+- 乱序搜索器材品牌、型号和焦段，按焦段数字升序浏览镜头。
+- 在品牌筛选上方查看已选类别进度，从底部浮栏预览器材单。
+- 支持 PDF、DOCX、PNG、XLSX 导出。
+
+- Search equipment by brand, model, and focal length in any order, and browse lenses in ascending focal length.
+- Track selected categories above the brand filters and preview the kit from the selection bar.
+- Export as PDF, DOCX, PNG, or XLSX.
+
 ## V6.1 审查修复 / Review fixes — 2026-11-05
 
 - 修复 JSON 历史清单中名称与数量关联，保留重复项累加及零数量，拒绝明确非法数量。

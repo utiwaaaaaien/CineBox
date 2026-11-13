@@ -1,7 +1,16 @@
-export const appVersion = "V6.1";
+export const appVersion = "V6.2";
 
 // Add each new release to the beginning of this list, keeping earlier entries.
 export const releaseNotes = [{
+  version: "V6.2",
+  date: "2026-11-13",
+  items: [
+    "器材库搜索和新增器材联想支持品牌、型号及焦段乱序匹配。",
+    "镜头按起始焦段升序排列，起始焦段相同则按结束焦段排序。",
+    "品牌筛选上方显示已选类别进度，选材浮栏可原地预览器材单。",
+    "器材单支持 PDF、Word（DOCX）、PNG 和 Excel（XLSX）导出。",
+  ],
+}, {
   version: "V6.1",
   date: "2026-11-05",
   items: [

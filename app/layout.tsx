@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "CineBox",
-    description: "项目管理、历史配置复用、按品类与品牌选材及 Excel 导出。",
+    description: "项目管理、历史配置复用、按品类与品牌选材，支持 PDF、DOCX、PNG 和 XLSX 导出。",
     images: [publicAsset("/brand/icon-v2-1024.png")],
   },
 };

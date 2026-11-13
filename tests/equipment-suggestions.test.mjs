@@ -62,3 +62,17 @@ test('real published catalogue suggestions resolve a common microphone spelling 
   assert.ok(results.length > 0 && results.length <= 5);
   assert.ok(results.every(item => item.category === '录音器材' && publishedEquipment.includes(item)));
 });
+
+test('custom equipment suggestions find both keyword orders and normalized zoom ranges', () => {
+  for (const query of ['索尼 24-70', '24-70 索尼', '索尼　２４ｍｍ—７０ｍｍ']) {
+    const suggestions = suggestEquipment(publishedEquipment, '镜头', query);
+    assert.ok(suggestions.some((item) => item.id === 'lens-sony-2470'));
+    assert.ok(suggestions.every((item) => item.brand === 'SONY' && item.name.includes('24-70mm')));
+  }
+  for (const query of ['阿莱 LF', 'LF 阿莱']) {
+    const suggestions = suggestEquipment(publishedEquipment, '摄影机', query);
+    assert.ok(suggestions.some((item) => item.id === 'cam-alexa-lf'));
+    assert.ok(suggestions.some((item) => item.id === 'cam-alexa-mini-lf'));
+    assert.ok(suggestions.every((item) => item.brand === 'ARRI'));
+  }
+});

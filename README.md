@@ -1,6 +1,6 @@
 <p align="center"><img src="public/brand/cinebox-logo-v2-128.png" width="96" height="96" alt="CineBox" /></p>
 
-# CineBox V6.1
+# CineBox V6.2
 
 **摄影器材 · 项目工作台**
 
@@ -8,9 +8,9 @@ CineBox 帮助摄影团队整理拍摄需求、复用历史项目、挑选器材
 
 [在线使用](https://utiwaaaaaien.github.io/CineBox/) · [English](README.en.md) · [版本记录](CHANGELOG.md) · [参与贡献](CONTRIBUTING.md) · [MIT 许可证](LICENSE)
 
-![Version V6.1](https://img.shields.io/badge/version-V6.1-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+![Version V6.2](https://img.shields.io/badge/version-V6.2-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
-V6.1 支持器材名、数量、单位、备注直接填写；器材名按当前分类联想，最多显示5项同宽候选。新增空白器材行、点击取消选择、每分钟本机存档及上传处理状态；补充39项移动器材和27项录音型号。详见[版本记录](CHANGELOG.md)及[本次发布说明](docs/releases/v6.1.0.md)。
+V6.2 支持乱序器材检索、镜头焦段升序、已选类别进度和器材单原地预览。详见[版本记录](CHANGELOG.md)及[本次发布说明](docs/releases/v6.2.0.md)。
 
 当前修正随 [main 源码](https://github.com/utiwaaaaaien/CineBox/tree/main)和在线站点持续更新。`v6.1.0` 标签及 Release 的自动源码下载保留首次发布版本，不包含后续小修；需要当前修正请使用 main。
 
@@ -20,7 +20,7 @@ V6.1 支持器材名、数量、单位、备注直接填写；器材名按当前
 - **历史项目复用**：预览内置真实项目的配置，复用为新项目；也可导入 Excel 或文字 PDF，经预览确认后生成历史项目。
 - **器材选材**：按品类、品牌和系列浏览，支持中文名称、英文型号及别名搜索；已确认的技术指标显示在卡片中。
 - **清单调整**：修改数量与备注，添加库外器材，检查配套项目并补齐，支持撤销与重做。
-- **导出与备份**：导出 Excel 器材清单与检查信息；通过 JSON 项目备份迁移、恢复项目及自定义历史资料。
+- **导出与备份**：将器材单导出为 PDF、DOCX、PNG 或 XLSX。通过 JSON 项目备份迁移、恢复项目及自定义历史资料。
 - **桌面与手机**：适配不同屏幕，提供浅色与深色主题。
 
 应用当前使用**中文界面**。英文 README 用于介绍项目，应用尚未提供完整英文界面。

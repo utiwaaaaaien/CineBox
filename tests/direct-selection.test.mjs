@@ -6,6 +6,7 @@ import { buildCameraSystemChecks } from '../app/camera-system-rules.ts';
 import { buildEquipmentWorkbook } from '../app/excel-export.ts';
 import { sanitizeProjectRecords } from '../app/project-state.ts';
 import { brandMenuLabels } from '../app/catalog-brands.ts';
+import { buildEquipmentSeries } from '../app/equipment-series.ts';
 
 const project = { name: 'V5.5 回归', type: '剧情片', shootDate: '2026-10-07', days: 3, cameraCount: 2, dop: '', contact: '', notes: '', scale: '完整', monitoring: '完整监看', captureStyle: ['高帧率', '轨道车'], sceneConditions: ['反光材质', '风沙/飞沫'], baseFps: 25, highSpeedFps: 0, resolution: '6K', aspectRatio: '2.39:1', screenFormat: '横屏', powerAccess: '无市电', narrativeViewpoint: '人物主观', visualTone: '低饱和柔和', contrastStyle: '高反差', movementIntent: '人物跟随' };
 const catalogMap = new Map(canonicalEquipment.map((item) => [item.id, item]));
@@ -40,12 +41,41 @@ test('common brands have category-specific priority and translated menu labels p
   assert.ok(filterCatalog(publishedEquipment, { category: '全部', brand: '全部', query: '瑞德', namingFilter: '全部' }).length);
 });
 
-test('search preserves English and old aliases without preference ranking', () => {
+test('search preserves English and old aliases and retains non-lens order', () => {
   const item = publishedEquipment.find((item) => item.aliases?.length && item.englishName);
   for (const query of [item.englishName, item.aliases[0]]) {
     assert.ok(filterCatalog(publishedEquipment, { category: '全部', brand: '全部', query, namingFilter: '全部' }).some((match) => match.id === item.id));
   }
-  assert.deepEqual(filterCatalog(publishedEquipment, { category: '全部', brand: '全部', query: '', namingFilter: '全部' }).map((item) => item.id), publishedEquipment.map((item) => item.id));
+  const all = filterCatalog(publishedEquipment, { category: '全部', brand: '全部', query: '', namingFilter: '全部' });
+  assert.deepEqual(new Set(all), new Set(publishedEquipment));
+  assert.deepEqual(all.filter((item) => item.category !== '镜头'), publishedEquipment.filter((item) => item.category !== '镜头'));
+});
+
+test('catalogue keyword search combines brand and model in any order without mistaking a longer focal length for the query', () => {
+  const search = (query) => filterCatalog(publishedEquipment, { category: '全部', brand: '全部', query, namingFilter: '全部' }).map((item) => item.id);
+  const sony = search('索尼 24-70');
+  assert.ok(sony.includes('lens-sony-2470'));
+  assert.ok(sony.every((id) => catalogMap.get(id).brand === 'SONY' && catalogMap.get(id).name.includes('24-70mm')));
+  for (const query of ['24-70 索尼', '２４ｍｍ – ７０ｍｍ　索尼', '索尼２４－７０']) {
+    assert.deepEqual(search(query), sony);
+  }
+  const arri = search('阿莱 LF');
+  assert.ok(arri.includes('cam-alexa-lf') && arri.includes('cam-alexa-mini-lf'));
+  assert.deepEqual(search('LF 阿莱'), arri);
+  assert.ok(!arri.includes('cam-alexa-mini'));
+  assert.ok(search('索尼 FX').includes('cam-sony-fx3'));
+});
+
+test('lenses sort by focal length and then the zoom endpoint, keeping accessories without a focal length at the end', () => {
+  const names = ['ARRI Master Prime 100mm T1.3', 'ARRI Master Prime 9.5mm T2.8', 'ARRI Master Prime 9mm T2.8',
+    'ARRI Master Prime 9–18mm', 'ARRI Master Prime 9–14mm', 'ARRI Master Prime 1.4× Extender'];
+  const items = names.map((name, index) => ({ name, id: `example-${index}`, brand: 'ARRI', category: '镜头', aliases: [] }));
+  const original = items.slice();
+  const ordered = [2, 4, 3, 1, 0, 5].map((index) => items[index].id);
+  const matches = filterCatalog(items, { category: '镜头', brand: '全部', query: '', namingFilter: '全部' });
+  assert.deepEqual(matches.map((item) => item.id), ordered);
+  assert.deepEqual(buildEquipmentSeries(items)[0].items.map((item) => item.id), ordered);
+  assert.deepEqual(items, original);
 });
 
 test('history copying preserves original quantities and retired identities without camera scaling', () => {

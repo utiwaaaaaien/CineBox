@@ -73,17 +73,20 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
-      - name: Publish CineBox V6.1 release after Pages succeeds
+      - name: Publish CineBox release after Pages succeeds
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          if [ "$(node -p "require('./package.json').version")" != "6.1.0" ]; then
-            echo "Skipping V6.1 release for another package version"
+          version="$(node -p "require('./package.json').version")"
+          tag="v${version}"
+          notes="docs/releases/${tag}.md"
+          if [ ! -f "$notes" ]; then
+            echo "Skipping release without notes for $tag"
             exit 0
           fi
-          if gh release view v6.1.0 >/dev/null 2>&1; then
-            echo "v6.1.0 already exists; preserving it"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "$tag already exists; preserving it"
           else
-            gh release create v6.1.0 --target "$GITHUB_SHA" --title "CineBox V6.1" --notes-file docs/releases/v6.1.0.md
+            gh release create "$tag" --target "$GITHUB_SHA" --title "CineBox V${version%.0}" --notes-file "$notes"
           fi

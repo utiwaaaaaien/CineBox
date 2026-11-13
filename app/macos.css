@@ -359,6 +359,12 @@ html[data-theme="dark"] .button.primary b { color: #142338; background: rgba(20,
 .history-card-actions button.history-reuse { padding-inline: 8px; text-align: center; color: var(--accent-dark); background: var(--accent-soft); font-weight: 600; }
 .history-card-actions button:disabled { opacity: .45; }
 .history-view > .history-local-note { padding: 0 var(--page-gutter) 32px; font-size: .8125rem; color: var(--muted); }
+.category-progress { display: grid; gap: 6px; margin: 4px var(--page-gutter) 8px; }
+.category-progress label { color: var(--ink-2); font-size: .75rem; font-weight: 600; }
+.category-progress progress { appearance: none; display: block; width: 100%; height: 4px; border: 0; border-radius: 4px; overflow: hidden; background: var(--surface-3); color: var(--accent-dark); }
+.category-progress progress::-webkit-progress-bar { background: var(--surface-3); }
+.category-progress progress::-webkit-progress-value { background: var(--accent-dark); }
+.category-progress progress::-moz-progress-bar { background: var(--accent-dark); }
 .brand-filter { padding: 8px var(--page-gutter) 16px; }
 .brand-filter-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
 .brand-filter-heading > span { font-size: .875rem; font-weight: 600; color: var(--ink-2); }
@@ -513,7 +519,21 @@ html[data-theme="dark"] .button.primary b { color: #142338; background: rgba(20,
 /* V6.1: visible selection checkout and file processing feedback. */
 .library-view { padding-bottom: 140px; }
 .selection-checkout { position: fixed; inset: auto 24px 24px calc(var(--sidebar-width) + 24px); z-index: 45; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
-.selection-checkout > div { display: grid; gap: 5px; min-width: 0; }
+.selection-checkout > :first-child { display: grid; gap: 5px; min-width: 0; }
+.selection-checkout-actions, .kit-export-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.kit-export-controls select { min-height: 44px; border: 1px solid var(--line); border-radius: 8px; padding: 0 8px; background: var(--surface); color: var(--ink); }
+.kit-preview-dialog { width: min(720px, 100%); grid-template-rows: auto minmax(0, 1fr); }
+.kit-preview-dialog h2 { margin-top: 0; }
+.kit-preview-dialog header > div { min-width: 0; overflow-wrap: anywhere; }
+.kit-preview-body { overflow: auto; padding: 4px clamp(16px, 4vw, 24px) 20px; }
+.kit-preview-body:focus-visible { outline-offset: -3px; }
+.kit-preview-group h3 { display: flex; gap: 8px; align-items: baseline; margin: 16px 0 0; padding: 9px 12px; border-radius: 8px; background: var(--surface-2); font-size: .9rem; }
+.kit-preview-group h3 small, .kit-preview-group li p, .kit-preview-empty { color: var(--muted); font-size: .8125rem; }
+.kit-preview-group ul { margin: 0; padding: 0; list-style: none; }
+.kit-preview-group li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: .875rem; }
+.kit-preview-group li strong, .kit-preview-group li p { overflow-wrap: anywhere; }
+.kit-preview-group li span { max-width: 9em; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.kit-preview-group li p { grid-column: 1 / -1; margin: 0; white-space: pre-wrap; }
 .selection-checkout strong { font-size: .9375rem; overflow-wrap: anywhere; }
 .selection-checkout span { color: var(--muted); font-size: .8125rem; }
 .selection-checkout .button { flex-shrink: 0; min-height: 44px; }
@@ -542,7 +562,7 @@ html[data-theme="dark"] .button.primary b { color: #142338; background: rgba(20,
 @media (max-width: 600px) {
   .selection-checkout { padding: 12px; gap: 8px; left: 12px; right: 12px; flex-wrap: wrap; }
   .selection-checkout > div { flex: 1 1 100%; }
-  .selection-checkout .button { width: 100%; }
+  .selection-checkout-actions .button { flex: 1 1 auto; }
   .selection-checkout span { font-size: .75rem; }
   .app-shell:has(.selection-checkout) .toast { bottom: calc(var(--mobile-nav-clearance) + 170px); }
   .result-meta .button { width: 100%; }

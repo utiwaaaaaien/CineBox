@@ -20,7 +20,9 @@ import { brandMenuLabels } from "./catalog-brands";
 import { categoryBrands, filterCatalog, copyHistoricalKit, basicSystemProject } from "./direct-selection";
 import { createCustomKitRow, updateCustomKitRow, isBlankCustomKitItem, applyEquipmentSuggestion } from "./custom-equipment";
 import { EquipmentNameInput } from "./equipment-name-input";
-import { formatShootRange } from "./excel-export";
+import { createEquipmentMatcher } from "./equipment-search";
+import { formatShootRange, safeExcelFileName, type ExcelExportGroup } from "./excel-export";
+import type { KitDocumentFormat } from "./kit-document-export";
 import {
   analyzeHistoryProjectText,
   maxHistoryOverrides,
@@ -116,6 +118,15 @@ type SaveFilePickerWindow = Window & {
     }>;
   }) => Promise<SaveFileHandle>;
 };
+
+type KitExportFormat = "xlsx" | KitDocumentFormat;
+
+const kitExportFormats = {
+  pdf: { label: "PDF", mime: "application/pdf" },
+  docx: { label: "Word（DOCX）", mime: "application/vnd.openxmlformats-officedocument.wordprocessingml.document" },
+  png: { label: "PNG", mime: "image/png" },
+  xlsx: { label: "Excel（XLSX）", mime: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" },
+} as const;
 
 type HistoryProfile = HistoryProjectProfile;
 type HistoryPreviewState = {
@@ -658,7 +669,9 @@ export default function Home() {
   const swapComposing = useRef(false);
   const [swapCustom, setSwapCustom] = useState<CustomEquipment | null>(null);
   const [swapScope, setSwapScope] = useState<"recommended" | "brand" | "all">("recommended");
-  const [exportingExcel, setExportingExcel] = useState(false);
+  const [kitExportFormat, setKitExportFormat] = useState<KitExportFormat>("xlsx");
+  const [exportingKit, setExportingKit] = useState(false);
+  const [kitPreviewOpen, setKitPreviewOpen] = useState(false);
   const [historyOverrides, setHistoryOverrides] = useState<Record<string, HistoryProfile>>({});
   const [historyOverridesHydrated, setHistoryOverridesHydrated] = useState(false);
   const [historyPreview, setHistoryPreview] = useState<HistoryPreviewState | null>(null);
@@ -671,7 +684,7 @@ export default function Home() {
   useEffect(() => { latestRecords.current = { projects, historyOverrides }; }, [projects, historyOverrides]);
   const dialogTriggerRef = useRef<HTMLElement | null>(null);
   const uploadBusy = analyzingHistory || importingBackup;
-  const modalOpen = Boolean(swapTargetId || historyPreview);
+  const modalOpen = Boolean(swapTargetId || historyPreview || kitPreviewOpen);
 
   const activeProject = projects.find((item) => item.id === activeProjectId) ?? projects[0];
   const project = activeProject?.form ?? defaultProject;
@@ -828,6 +841,7 @@ export default function Home() {
       if (event.key === "Escape") {
         setSwapTargetId(null);
         setHistoryPreview(null);
+        setKitPreviewOpen(false);
       } else if (event.key === "Tab") {
         const controls = focusable();
         const first = controls[0];
@@ -882,6 +896,15 @@ export default function Home() {
     [kit],
   );
 
+  const kitDocumentGroups = useMemo<ExcelExportGroup[]>(() =>
+    groupedKit.flatMap((group) => {
+      const rows = group.rows.filter((row) => !isBlankCustomKitItem(row)).map((row) => {
+        const item = resolveKitEquipment(row)!;
+        return { name: item.name, qty: row.qty, unit: item.unit, note: row.note };
+      });
+      return rows.length ? [{ name: group.name, rows }] : [];
+    }), [groupedKit]);
+
   const historyProfiles = useMemo(
     () => [...builtInHistoryProfiles.map((profile) => historyOverrides[profile.id] ?? profile),
       ...Object.values(historyOverrides).filter((profile) => isImportedHistoryId(profile.id))],
@@ -907,11 +930,11 @@ export default function Home() {
   const swapCostTier = swapTargetItem?.costTier ?? 3;
   const swapCandidates = (() => {
     if (!swapCategory) return [];
-    const normalized = swapQuery.trim().toLowerCase();
+    const normalized = swapQuery.trim();
     const existing = new Set(kit.map((row) => row.id));
     return equipment
       .filter((item) => item.category === swapCategory && !existing.has(item.id))
-      .filter((item) => !normalized || [item.name, item.brand, item.subcategory, ...(item.aliases ?? [])].join(" ").toLowerCase().includes(normalized))
+      .filter(createEquipmentMatcher(normalized))
       .filter((item) => normalized || swapScope === "all" || (swapScope === "brand" ? item.brand === swapBrand : item.subcategory === swapSubcategory || item.brand === swapBrand))
       .sort((left, right) => {
         const leftScore = (left.subcategory === swapSubcategory ? 10 : 0) + (left.brand === swapBrand ? 4 : 0) - Math.abs(left.costTier - swapCostTier);
@@ -1297,87 +1320,70 @@ export default function Home() {
     setToast("项目已删除");
   }
 
-  async function exportExcel() {
-    if (!completedKit.length) {
+  async function exportKit() {
+    if (!kitDocumentGroups.length) {
       setToast("器材单为空，暂时无法导出");
       return;
     }
-    if (exportingExcel) return;
+    if (exportingKit) return;
 
-    setExportingExcel(true);
+    const format = kitExportFormat;
+    const { label, mime } = kitExportFormats[format];
+    const fileStem = safeExcelFileName(project.name).slice(0, -".xlsx".length);
+    setExportingKit(true);
     try {
-      const [{ default: writeXlsxFile }, { buildEquipmentWorkbook }] = await Promise.all([
-        import("write-excel-file/browser"),
-        import("./excel-export"),
-      ]);
-      const workbook = buildEquipmentWorkbook(
-        project,
-        groupedKit.map((group) => ({
-          name: group.name,
-          rows: group.rows.map((row) => {
-            const item = resolveKitEquipment(row)!;
-            return { name: item.name, qty: row.qty, unit: item.unit, note: row.note };
-          }),
-        })),
-        {
-          statusSummary: `${activeProject?.requirementsChanged ? "拍摄规格已修改，请复核清单。 " : ""}已确认 ${statusCounts.confirmed} · 历史 / 配套 ${statusCounts.recommended} · 待确认 ${statusCounts.pending} · 手动添加 ${statusCounts.manual}`,
-          checks: systemChecks.map((check) => ({
-            title: check.title,
-            level: check.missing.length ? (check.severity === "warning" ? "待确认" : "建议") : "已覆盖",
-            detail: check.detail,
-            missing: check.missing.map((item) => `${item.label}${item.qty > 1 ? ` ×${item.qty}` : ""}`).join("、"),
-          })),
-          equipment: kit.map((row) => ({
-            name: resolveKitEquipment(row)?.name ?? row.id,
-            status: statusLabels[kitItemStatus(row)],
-            reason: row.reason,
-          })),
-        },
-      );
       const savePickerWindow = window as SaveFilePickerWindow;
-      const fileHandle = savePickerWindow.showSaveFilePicker
-        ? await savePickerWindow.showSaveFilePicker({
-            suggestedName: workbook.fileName,
-            types: [
-              {
-                description: "Excel 工作簿",
-                accept: {
-                  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [".xlsx"],
-                },
-              },
-            ],
-          })
-        : null;
-      const blob = await writeXlsxFile(workbook.sheets, {
-        fontFamily: "Arial",
-        fontSize: 10,
-      }).toBlob();
+      let fileHandle: SaveFileHandle | undefined;
+      if (format !== "png" && savePickerWindow.showSaveFilePicker) {
+        try {
+          fileHandle = await savePickerWindow.showSaveFilePicker({
+            suggestedName: `${fileStem}.${format}`,
+            types: [{ description: label, accept: { [mime]: [`.${format}`] } }],
+          });
+        } catch (error) {
+          if (!(error instanceof DOMException) || error.name !== "SecurityError") throw error;
+        }
+      }
+
+      let blob: Blob;
+      let extension: KitExportFormat | "zip" = format;
+      if (format === "xlsx") {
+        const [{ default: writeXlsxFile }, { buildEquipmentWorkbook }] = await Promise.all([
+          import("write-excel-file/browser"),
+          import("./excel-export"),
+        ]);
+        const { sheets } = buildEquipmentWorkbook(project, kitDocumentGroups);
+        blob = await writeXlsxFile(sheets, { fontFamily: "Arial", fontSize: 10 }).toBlob();
+      } else {
+        const { buildKitDocument } = await import("./kit-document-export");
+        ({ blob, extension } = await buildKitDocument(format, project, kitDocumentGroups));
+      }
 
       if (fileHandle) {
         const writable = await fileHandle.createWritable();
         await writable.write(blob);
         await writable.close();
-        setToast("Excel 已保存到所选位置");
+        setToast(`${label} 已保存`);
       } else {
         const url = URL.createObjectURL(blob);
         const anchor = document.createElement("a");
         anchor.href = url;
-        anchor.download = workbook.fileName;
+        anchor.download = `${fileStem}.${extension}`;
         document.body.appendChild(anchor);
         anchor.click();
         anchor.remove();
         window.setTimeout(() => URL.revokeObjectURL(url), 1_000);
-        setToast("Excel 已下载；保存位置由浏览器设置决定");
+        setToast(extension === "zip" ? "PNG 分页已打包下载" : `${label} 已下载`);
       }
     } catch (error) {
       if (error instanceof DOMException && error.name === "AbortError") {
         setToast("已取消保存");
       } else {
-        console.error("Excel export failed", error);
-        setToast("Excel 生成失败，请重试");
+        console.error("Equipment list export failed", error);
+        setToast(`${label} 导出失败，请重试`);
       }
     } finally {
-      setExportingExcel(false);
+      setExportingKit(false);
     }
   }
 
@@ -1712,7 +1718,7 @@ export default function Home() {
             <div className="filter-bar">
               <label className="search-field">
                 <ControlIcon kind="search" />
-                <input value={query} onChange={(event) => { setQuery(event.target.value); setVisibleCount(72); setSeriesVisibleCount(12); }} placeholder="搜索品牌、系列、型号、中英文旧名称或用途" aria-label="搜索器材" />
+                <input value={query} onChange={(event) => { setQuery(event.target.value); setVisibleCount(72); setSeriesVisibleCount(12); }} placeholder="搜索器材，例如：索尼 24-70、阿莱 LF" aria-label="搜索器材" />
               </label>
               <label className="select-field">
                 <span>器材类型</span>
@@ -1741,6 +1747,10 @@ export default function Home() {
               ))}
             </div>
 
+            {activeProject?.basicInfoConfirmed && <div className="category-progress">
+              <label htmlFor="category-progress-bar">已选 {kitDocumentGroups.length} / {categories.length} 个类别</label>
+              <progress id="category-progress-bar" value={kitDocumentGroups.length} max={categories.length} />
+            </div>}
             <BrandFilter key={category} brands={brands} labels={menuLabels} category={category} selected={brand} onSelect={(name) => { setBrand(name); setVisibleCount(72); setSeriesVisibleCount(12); }} />
 
             {view === "library" && !!filteredSeries.length && (
@@ -1840,15 +1850,15 @@ export default function Home() {
                 <button className="button ghost" onClick={() => setView("library")}>添加器材</button>
                 <span className={missingSystemChecks.length ? "inline-audit-status warning" : "inline-audit-status"}>配套覆盖 {passedSystemChecks}/{systemChecks.length || "—"} · 待确认 {statusCounts.pending}
                 </span>
-                <button
-                  className="button primary"
-                  onClick={exportExcel}
-                  disabled={exportingExcel || !completedKit.length}
-                  aria-busy={exportingExcel}
-                  title="生成 .xlsx 并选择保存位置"
-                >
-                  {exportingExcel ? "正在生成…" : "导出 Excel"}
-                </button>
+                <div className="kit-export-controls">
+                  <select aria-label="器材单导出格式" value={kitExportFormat} disabled={exportingKit || !kitDocumentGroups.length}
+                    onChange={(event) => setKitExportFormat(event.target.value as KitExportFormat)}>
+                    {Object.entries(kitExportFormats).map(([format, { label }]) => <option key={format} value={format}>{label}</option>)}
+                  </select>
+                  <button className="button primary" onClick={exportKit} disabled={exportingKit || !kitDocumentGroups.length} aria-busy={exportingKit}>
+                    {exportingKit ? "正在生成…" : "导出器材单"}
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -2133,9 +2143,36 @@ export default function Home() {
         </div>
       )}
 
-      {(view === "library" || view === "catalog") && activeProject?.basicInfoConfirmed && <aside className="selection-checkout" aria-label="当前项目选材进度">
+      {kitPreviewOpen && (
+        <div className="history-preview-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setKitPreviewOpen(false); }}>
+          <section className="history-preview-dialog kit-preview-dialog" role="dialog" aria-modal="true" aria-labelledby="kit-preview-title">
+            <header>
+              <div><h2 id="kit-preview-title">器材单预览</h2><p>{project.name} · {completedKit.length} 项 · 合计 {selectedUnits}</p></div>
+              <button type="button" aria-label="关闭器材单预览" onClick={() => setKitPreviewOpen(false)}><ControlIcon kind="close" /></button>
+            </header>
+            <div className="kit-preview-body" tabIndex={0} role="region" aria-label="器材明细">
+              {kitDocumentGroups.length ? kitDocumentGroups.map((group) => (
+                <section className="kit-preview-group" key={group.name}>
+                  <h3>{group.name} <small>{group.rows.length} 项</small></h3>
+                  <ul>{group.rows.map((row, index) => (
+                    <li key={index}>
+                      <strong>{row.name}</strong><span>{row.qty} {row.unit}</span>
+                      {row.note && <p>{row.note}</p>}
+                    </li>
+                  ))}</ul>
+                </section>
+              )) : <p className="kit-preview-empty">当前器材单为空</p>}
+            </div>
+          </section>
+        </div>
+      )}
+
+      {(view === "library" || view === "catalog") && activeProject?.basicInfoConfirmed && <aside className="selection-checkout" aria-label="当前项目选材进度" inert={modalOpen}>
         <div><strong>{project.name}</strong><span role="status">已选 {completedKit.length} 项 · 合计 {selectedUnits} · 点击已加入可取消</span></div>
-        <button className="button primary" onClick={() => { setKitQuery(""); setKitCategory("全部"); setKitScope("all"); setView("kit"); }}>查看器材单 · {completedKit.length} 项</button>
+        <div className="selection-checkout-actions">
+          <button className="button ghost" aria-haspopup="dialog" onClick={(event) => { dialogTriggerRef.current = event.currentTarget; setKitPreviewOpen(true); }}>预览器材单</button>
+          <button className="button primary" onClick={() => { setKitQuery(""); setKitCategory("全部"); setKitScope("all"); setView("kit"); }}>查看器材单 · {completedKit.length} 项</button>
+        </div>
       </aside>}
       {uploadBusy && <div className="upload-progress" role="status" aria-live="polite" aria-busy="true"><span className="loading-spinner" aria-hidden="true" /><div><strong>{uploadLabel}</strong><span>请稍候，完成后会显示核对结果</span></div></div>}
       {toast && <div className="toast" role="status">{toast}</div>}

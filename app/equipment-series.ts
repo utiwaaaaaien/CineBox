@@ -1,4 +1,5 @@
 import type { CanonicalEquipmentRecord } from "./equipment-catalog.canonical";
+import { compareEquipmentFocalLength } from "./equipment-focal-length.ts";
 
 export type EquipmentSeries = {
   id: string;
@@ -112,7 +113,12 @@ export function buildEquipmentSeries(items: readonly CanonicalEquipmentRecord[])
 
   return [...groups.values()]
     .filter((series) => series.items.length > 1)
-    .map((series) => ({ ...series, items: series.items.sort((a, b) => a.name.localeCompare(b.name, "zh-CN")) }))
-    .filter((series) => series.items.length > 1)
+    .map((series) => ({
+      ...series,
+      items: series.items.sort((a, b) =>
+        (series.category === "镜头" ? compareEquipmentFocalLength(a, b) : 0) ||
+        a.name.localeCompare(b.name, "zh-CN", { numeric: true }),
+      ),
+    }))
     .sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name, "zh-CN"));
 }
