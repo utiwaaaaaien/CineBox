@@ -1,6 +1,6 @@
 <p align="center"><img src="public/brand/cinebox-logo-v2-128.png" width="96" height="96" alt="CineBox" /></p>
 
-# CineBox V6.2
+# CineBox V6.2.1
 
 **A camera equipment and production planning workspace.**
 
@@ -8,7 +8,7 @@ CineBox helps camera teams define shooting requirements, reuse past project conf
 
 [Live site](https://utiwaaaaaien.github.io/CineBox/) · [简体中文](README.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [MIT License](LICENSE)
 
-![Version V6.2](https://img.shields.io/badge/version-V6.2-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+![Version V6.2.1](https://img.shields.io/badge/version-V6.2.1-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
 V6.2 matches equipment keywords in any order, sorts lenses by focal length, tracks selected categories, and previews the kit within the selection view. See the [changelog](CHANGELOG.md) and [release notes](docs/releases/v6.2.0.md).
 

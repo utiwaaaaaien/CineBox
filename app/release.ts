@@ -1,7 +1,14 @@
-export const appVersion = "V6.2";
+export const appVersion = "V6.2.1";
 
 // Add each new release to the beginning of this list, keeping earlier entries.
 export const releaseNotes = [{
+  version: "V6.2.1",
+  date: "2026-11-13",
+  items: [
+    "统一新增自定义器材表单与器材单顶部操作区的控件高度和对齐。",
+    "器材确认状态可点击切换，待确认数量与筛选同步更新。",
+  ],
+}, {
   version: "V6.2",
   date: "2026-11-13",
   items: [

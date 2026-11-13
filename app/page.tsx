@@ -447,13 +447,6 @@ const sceneConditionOptions = [
   ["风沙/飞沫", "镜头前组与机身防护"],
 ];
 
-const statusLabels: Record<NonNullable<KitItem["status"]>, string> = {
-  confirmed: "已确认",
-  recommended: "历史 / 配套",
-  pending: "待确认",
-  manual: "手动添加",
-};
-
 const defaultProject: ProjectForm = {
   recommendationMode: "manual",
   historyProfileId: "",
@@ -622,13 +615,8 @@ function kitChecks(project: ProjectForm, kit: KitItem[]) {
   return checks;
 }
 
-function kitItemStatus(row: KitItem): NonNullable<KitItem["status"]> {
-  if (row.status && statusLabels[row.status]) return row.status;
-  const reason = typeof row.reason === "string" ? row.reason : "";
-  if (row.custom) return reason.includes("系统检查") ? "pending" : "manual";
-  return reason.includes("手动") || reason.includes("器材库") || reason.includes("分类配置") || reason.includes("系列")
-    ? "manual"
-    : "recommended";
+function kitConfirmationLabel(row: KitItem) {
+  return row.status === "confirmed" ? "已确认" : "待确认";
 }
 
 export default function Home() {
@@ -911,13 +899,8 @@ export default function Home() {
     [historyOverrides],
   );
   const selectedUnits = completedKit.reduce((sum, item) => sum + item.qty, 0);
-  const statusCounts = completedKit.reduce(
-    (counts, row) => {
-      counts[kitItemStatus(row)] += 1;
-      return counts;
-    },
-    { confirmed: 0, recommended: 0, pending: 0, manual: 0 },
-  );
+  const confirmedCount = completedKit.filter((row) => row.status === "confirmed").length;
+  const pendingCount = completedKit.length - confirmedCount;
   const checks = useMemo(() => completedKit.length ? kitChecks(project, completedKit) : [], [completedKit, project]);
   const systemChecks = useMemo(() => buildCameraSystemChecks(basicSystemProject(project), completedKit, canonicalEquipment), [completedKit, project]);
   const missingSystemChecks = systemChecks.filter((check) => check.missing.length);
@@ -1065,7 +1048,7 @@ export default function Home() {
   const visibleKitGroups = groupedKit.map((group) => ({ ...group, rows: group.rows.filter((row) => {
     if (isBlankCustomKitItem(row)) return kitCategory === "全部" || row.custom?.category === kitCategory;
     const item = resolveKitEquipment(row);
-    return (kitScope === "all" || kitItemStatus(row) === "pending") &&
+    return (kitScope === "all" || row.status !== "confirmed") &&
       (kitCategory === "全部" || item?.category === kitCategory) &&
       (!kitQuery.trim() || `${item?.name} ${item?.brand} ${row.note}`.toLowerCase().includes(kitQuery.trim().toLowerCase()));
   }) })).filter((group) => group.rows.length);
@@ -1149,6 +1132,17 @@ export default function Home() {
 
   function updateKit(id: string, patch: Partial<KitItem>) {
     setKit((current) => current.map((row) => (row.id === id ? { ...row, ...patch, userAdjusted: true } : row)), `修改 ${resolveKitEquipment(kit.find((row) => row.id === id)!)?.name ?? "器材"}`, `${id}:${Object.keys(patch).join(",")}`);
+  }
+
+  function renderKitConfirmation(row: KitItem, name: string) {
+    const confirmed = row.status === "confirmed";
+    return <button
+      type="button"
+      className={`kit-status status-${confirmed ? "confirmed" : "pending"}`}
+      aria-label={`${name}确认状态`}
+      aria-pressed={confirmed}
+      onClick={() => updateKit(row.id, { status: confirmed ? "pending" : "confirmed" })}
+    >{kitConfirmationLabel(row)}</button>;
   }
 
   function openSwap(id: string, trigger: HTMLElement) {
@@ -1848,7 +1842,7 @@ export default function Home() {
               <div className="kit-actions">
                 <button className="button ghost" onClick={() => editProjectBasics()}>项目基本信息</button>
                 <button className="button ghost" onClick={() => setView("library")}>添加器材</button>
-                <span className={missingSystemChecks.length ? "inline-audit-status warning" : "inline-audit-status"}>配套覆盖 {passedSystemChecks}/{systemChecks.length || "—"} · 待确认 {statusCounts.pending}
+                <span className={missingSystemChecks.length ? "inline-audit-status warning" : "inline-audit-status"}>配套覆盖 {passedSystemChecks}/{systemChecks.length || "—"} · 待确认 {pendingCount}
                 </span>
                 <div className="kit-export-controls">
                   <select aria-label="器材单导出格式" value={kitExportFormat} disabled={exportingKit || !kitDocumentGroups.length}
@@ -1866,7 +1860,7 @@ export default function Home() {
               <label className="search-field"><ControlIcon kind="search" /><input aria-label="搜索当前器材单" value={kitQuery} onChange={(event) => setKitQuery(event.target.value)} placeholder="搜索型号或备注" /></label>
               <div className="segmented" role="group" aria-label="清单筛选">
                 <button aria-pressed={kitScope === "all"} className={kitScope === "all" ? "active" : ""} onClick={() => setKitScope("all")}>全部 {completedKit.length}</button>
-                <button aria-pressed={kitScope === "pending"} className={kitScope === "pending" ? "active" : ""} onClick={() => setKitScope("pending")}>待确认 {statusCounts.pending}</button>
+                <button aria-pressed={kitScope === "pending"} className={kitScope === "pending" ? "active" : ""} onClick={() => setKitScope("pending")}>待确认 {pendingCount}</button>
               </div>
               <select aria-label="筛选清单类别" value={kitCategory} onChange={(event) => setKitCategory(event.target.value as typeof kitCategory)}>{["全部", ...categories].map((name) => <option key={name}>{name}</option>)}</select>
               <small>导出包含完整器材清单</small>
@@ -1878,7 +1872,7 @@ export default function Home() {
                 <div><span>拍摄周期</span><strong>{formatShootRange(project.shootDate, project.days)}</strong><small>{project.days} 天 · {project.cameraCount} 机位</small></div>
                 <div><span>拍摄参数</span><strong>{project.resolution} · {project.aspectRatio}</strong><small>{project.baseFps}fps{project.highSpeedFps > project.baseFps ? ` / 升格 ${project.highSpeedFps}fps` : ""}</small></div>
                 <div><span>摄影指导</span><strong>{project.dop || "待定"}</strong><small>{project.contact || "联系方式待定"}</small></div>
-                <div className="decision-statuses"><span>清单状态</span><strong>{statusCounts.confirmed} 已确认 · {statusCounts.pending} 待确认</strong><small>{statusCounts.manual} 手动添加</small></div>
+                <div className="decision-statuses"><span>清单状态</span><strong>{confirmedCount} 已确认 · {pendingCount} 待确认</strong></div>
               </section></details>
             )}
 
@@ -1902,9 +1896,9 @@ export default function Home() {
             )}
 
             {!!completedKit.length && systemChecks.length > 0 && !missingSystemChecks.length && (
-              <section className={statusCounts.pending ? "audit-pass-strip has-pending" : "audit-pass-strip"} aria-label="摄影系统基础覆盖">
-                <span className="audit-pass-icon">{statusCounts.pending ? "!" : "✓"}</span>
-                <div><strong>{statusCounts.pending ? `基础配套已列入；还有 ${statusCounts.pending} 项待确认` : "基础配套已列入"}</strong><small>供电、存储、镜头控制、监看与承托均已有对应项；“待确认”器材仍需在测试日和租赁方复核。</small></div>
+              <section className={pendingCount ? "audit-pass-strip has-pending" : "audit-pass-strip"} aria-label="摄影系统基础覆盖">
+                <span className="audit-pass-icon">{pendingCount ? "!" : "✓"}</span>
+                <div><strong>{pendingCount ? `基础配套已列入；还有 ${pendingCount} 项待确认` : "基础配套已列入"}</strong><small>供电、存储、镜头控制、监看与承托均已有对应项；“待确认”器材仍需在测试日和租赁方复核。</small></div>
                 <b>{passedSystemChecks}/{systemChecks.length}</b>
               </section>
             )}
@@ -1939,11 +1933,12 @@ export default function Home() {
                             <label><span>器材名</span><EquipmentNameInput id={`custom-name-${row.id}`} label={`${group.name}自定义器材${rowIndex + 1}名称`} value={row.custom.name} category={group.name} catalog={equipment}
                               onChange={(name) => updateCustomRow(row, { name })}
                               onSelect={(candidate) => { setKit((current) => applyEquipmentSuggestion(current, row.id, candidate), `选择 ${candidate.name}`); setToast("已选择器材，数量与备注保留；重复项自动合并"); }} /></label>
+                            {!isBlankCustomKitItem(row) && renderKitConfirmation(row, item.name)}
                           </div>
                           <label className="custom-kit-quantity"><span>数量</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} /></label>
                           <label className="custom-kit-unit"><span>单位</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}单位`} maxLength={20} value={row.custom.unit} placeholder="件" onBlur={() => { if (!row.custom?.unit.trim()) updateCustomRow(row, { unit: "件" }); }} onChange={(event) => updateCustomRow(row, { unit: event.target.value })} /></label>
                           <label className="custom-kit-note"><span>备注</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}备注`} maxLength={Math.max(maxKitNoteInputLength, row.note.length)} value={row.note} placeholder="添加备注" onChange={(event) => updateKit(row.id, { note: event.target.value })} /></label>
-                          <div className="kit-row-actions">{!isBlankCustomKitItem(row) && (kitItemStatus(row) === "pending" || kitItemStatus(row) === "recommended") && <button className="swap-button" aria-label={`确认${item.name}`} onClick={() => updateKit(row.id, { status: "confirmed" })}>确认</button>}<button className="remove-button" aria-label={`删除${group.name}自定义器材${rowIndex + 1}`} onClick={() => setKit((current) => current.filter((itemRow) => itemRow.id !== row.id), "删除自定义器材行")}><ControlIcon kind="close" /></button></div>
+                          <div className="kit-row-actions"><button className="remove-button" aria-label={`删除${group.name}自定义器材${rowIndex + 1}`} onClick={() => setKit((current) => current.filter((itemRow) => itemRow.id !== row.id), "删除自定义器材行")}><ControlIcon kind="close" /></button></div>
                         </div>
                       );
                       return (
@@ -1951,14 +1946,7 @@ export default function Home() {
                           <div className="kit-item-name">
                             <div className="kit-name-line">
                               <strong>{item.name}</strong>
-                              <select
-                                className={`kit-status status-${kitItemStatus(row)}`}
-                                aria-label={`${item.name}确认状态`}
-                                value={kitItemStatus(row)}
-                                onChange={(event) => updateKit(row.id, { status: event.target.value as KitItem["status"] })}
-                              >
-                                {(Object.keys(statusLabels) as Array<NonNullable<KitItem["status"]>>).map((status) => <option key={status} value={status}>{statusLabels[status]}</option>)}
-                              </select>
+                              {renderKitConfirmation(row, item.name)}
                             </div>
                             <small>{item.brand} · {item.subcategory}</small><em>{row.reason}</em>
                           </div>
@@ -2021,8 +2009,8 @@ export default function Home() {
                 const rows = describeKitChange(kit, swapPreview.rows)[key];
                 return <section key={key}><h4>{label} {rows.length} 项</h4><ul>{rows.map((row) => {
                   const before = kit.find((item) => item.id === row.id);
-                  return <li key={row.id}><strong>{resolveKitEquipment(row)?.name}</strong> × {row.qty} · {statusLabels[kitItemStatus(row)]}
-                    {key === "changed" && before && <small>原数量 {before.qty} · 原状态 {statusLabels[kitItemStatus(before)]}{before.note !== row.note ? ` · 备注：${before.note || "空"} → ${row.note || "空"}` : ""}</small>}
+                  return <li key={row.id}><strong>{resolveKitEquipment(row)?.name}</strong> × {row.qty} · {kitConfirmationLabel(row)}
+                    {key === "changed" && before && <small>原数量 {before.qty} · 原状态 {kitConfirmationLabel(before)}{before.note !== row.note ? ` · 备注：${before.note || "空"} → ${row.note || "空"}` : ""}</small>}
                   </li>;
                 })}</ul></section>;
               })}

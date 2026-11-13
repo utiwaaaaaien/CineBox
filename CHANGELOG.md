@@ -4,6 +4,14 @@
 
 User-facing release notes. `app/release.ts` defines the application version; the underlying catalog keeps its own version and identity compatibility rules.
 
+## V6.2.1 — 2026-11-13
+
+- 统一新增自定义器材表单和器材单顶部操作区的控件高度和对齐。
+- 点击器材状态可在已确认和待确认之间切换。待确认统计和筛选同步更新。
+
+- Align controls and use a consistent height in the custom equipment form and kit toolbar.
+- Toggle equipment confirmation with a click. Pending counts and filters update immediately.
+
 ## V6.2 — 2026-11-13
 
 - 乱序搜索器材品牌、型号和焦段，按焦段数字升序浏览镜头。
