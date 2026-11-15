@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import { pathToFileURL } from "node:url";
 
+import { specialtyCardEvidence } from "./catalog-v63.mjs";
+
 const root = new URL("../", import.meta.url);
 const evidenceFiles = ["camera", "lenses", "lighting", "grip", "audio"].map(group => `data/catalog/card-specs-v6-${group}.json`);
 const read = path => JSON.parse(fs.readFileSync(new URL(path, root), "utf8"));
@@ -23,11 +25,13 @@ export function catalogCardName(row, reviewed) {
   return { name: nickname ? `${name}（${nickname.name}）` : name, nickname };
 }
 
-export function buildCatalogCards(catalog, { check = false, requireComplete = false, requireReviewed = false } = {}) {
+export function buildCatalogCards(catalog, { check = false, requireComplete = false, requireReviewed = false, redirects = {} } = {}) {
   const ids = new Set(catalog.map(row => row.id));
   const evidence = new Map();
-  for (const file of evidenceFiles) {
-    for (const row of read(file).rows) {
+  for (const batch of [...evidenceFiles.map(file => read(file).rows), specialtyCardEvidence]) {
+    for (const row of batch) {
+      // Retain the selected identity’s card evidence when a reviewed alias is merged.
+      if (Object.hasOwn(redirects, row.id)) continue;
       if (!ids.has(row.id)) throw new Error(`Unknown card evidence ID: ${row.id}`);
       if (evidence.has(row.id)) throw new Error(`Duplicate card evidence ID: ${row.id}`);
       if (!Array.isArray(row.technicalSpecs) || row.technicalSpecs.length > 3) throw new Error(`Invalid card metrics: ${row.id}`);
@@ -94,5 +98,6 @@ export function buildCatalogCards(catalog, { check = false, requireComplete = fa
 }
 
 if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) {
-  console.log(JSON.stringify(buildCatalogCards(read("data/catalog/equipment.v5.json").rows, { check: process.argv.includes("--check"), requireComplete: process.argv.includes("--require-complete"), requireReviewed: process.argv.includes("--require-reviewed") }), null, 2));
+  const catalog = read("data/catalog/equipment.v5.json");
+  console.log(JSON.stringify(buildCatalogCards(catalog.rows, { redirects: catalog.redirects, check: process.argv.includes("--check"), requireComplete: process.argv.includes("--require-complete"), requireReviewed: process.argv.includes("--require-reviewed") }), null, 2));
 }

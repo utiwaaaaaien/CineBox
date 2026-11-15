@@ -95,15 +95,16 @@ export function buildEquipmentSeries(items: readonly CanonicalEquipmentRecord[])
   for (const item of items) {
     const haystack = `${item.name} ${(item.aliases ?? []).join(" ")}`;
     const rule = seriesRules.find((candidate) => candidate.category === item.category && candidate.match.test(haystack));
-    if (!rule) continue;
+    const name = (item.id.startsWith("v63-") && item.series) || rule?.name;
+    if (!name) continue;
 
-    const key = `${item.category}:${item.brand}:${rule.name}`;
+    const key = `${item.category}:${item.brand}:${name}`;
     const current = groups.get(key);
     if (current) current.items.push(item);
     else {
       groups.set(key, {
         id: slug(key),
-        name: rule.name,
+        name,
         brand: item.brand,
         category: item.category,
         items: [item],

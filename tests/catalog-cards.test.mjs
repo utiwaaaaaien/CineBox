@@ -1,13 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { catalogCardName, buildCatalogCards } from "../scripts/catalog-card-specs.mjs";
-import { canonicalEquipment, publishedEquipment } from "../app/equipment-catalog.canonical.ts";
+import { canonicalEquipment, canonicalEquipmentRedirects, publishedEquipment } from "../app/equipment-catalog.canonical.ts";
 import { equipmentCardData } from "../app/equipment-card-data.generated.ts";
 
 test("card display data covers every selectable identity without changing project identities", () => {
   assert.deepEqual(Object.keys(equipmentCardData).sort(), publishedEquipment.map(row => row.id).sort());
   const before = JSON.stringify(canonicalEquipment);
-  const summary = buildCatalogCards(canonicalEquipment, { check: true, requireReviewed: true });
+  const summary = buildCatalogCards(canonicalEquipment, { redirects: canonicalEquipmentRedirects, check: true, requireReviewed: true });
   assert.equal(JSON.stringify(canonicalEquipment), before);
   assert.equal(summary.reviewedRows, publishedEquipment.length);
   for (const card of Object.values(equipmentCardData)) {
@@ -32,11 +32,11 @@ test("card names preserve variants and add only reviewed industry nicknames", ()
 });
 
 test("the strict completeness gate reports remaining specification gaps", () => {
-  const summary = buildCatalogCards(canonicalEquipment, { check: true });
+  const summary = buildCatalogCards(canonicalEquipment, { redirects: canonicalEquipmentRedirects, check: true });
   if (summary.incompleteRows) {
-    assert.throws(() => buildCatalogCards(canonicalEquipment, { check: true, requireComplete: true }), /V6 card release blocked/);
+    assert.throws(() => buildCatalogCards(canonicalEquipment, { redirects: canonicalEquipmentRedirects, check: true, requireComplete: true }), /V6 card release blocked/);
   } else {
-    assert.doesNotThrow(() => buildCatalogCards(canonicalEquipment, { check: true, requireComplete: true }));
+    assert.doesNotThrow(() => buildCatalogCards(canonicalEquipment, { redirects: canonicalEquipmentRedirects, check: true, requireComplete: true }));
   }
 });
 

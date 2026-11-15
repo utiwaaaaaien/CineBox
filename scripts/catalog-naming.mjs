@@ -295,10 +295,10 @@ export function identityKey(row) {
   return [row.category,row.brand,row.unit,row.name.normalize("NFKC").toLowerCase().replace(/\s/g,"")].join("|");
 }
 
-export function mergeEquipment(rows) {
+export function mergeEquipment(rows, preferred = new Set()) {
   const map=new Map(), redirects={}, merged=[];
   // Existing stable application IDs take precedence over generated inventory IDs.
-  const rank = row => row.id.startsWith("v51-") ? 3 : row.id.startsWith("v5-restored-") ? 2 : row.id.startsWith("eq-") ? 1 : 0;
+  const rank = row => preferred.has(row.id) ? -1 : row.id.startsWith("v51-") ? 3 : row.id.startsWith("v5-restored-") ? 2 : row.id.startsWith("eq-") ? 1 : 0;
   const ordered=[...rows].sort((a,b)=>rank(a)-rank(b));
   for(const row of ordered) {
     const key=identityKey(row), current=map.get(key);

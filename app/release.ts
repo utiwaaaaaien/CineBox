@@ -1,7 +1,15 @@
-export const appVersion = "V6.2.1";
+export const appVersion = "V6.3";
 
 // Add each new release to the beginning of this list, keeping earlier entries.
 export const releaseNotes = [{
+  version: "V6.3",
+  date: "2026-11-15",
+  items: [
+    "新增铁头、优篮子、Falcam、耐司和斯莫格配件，按遮光斗、跟焦、供电、滤镜及支撑等用途归类。",
+    "新增影鼎风格化改装镜头，可按原光学系列和焦段查找，卡片注明参数表所列卡口。",
+    "合并已确认的跨类重复记录，复核减重支撑和跟焦分类，保留旧项目器材 ID 映射。",
+  ],
+}, {
   version: "V6.2.1",
   date: "2026-11-13",
   items: [

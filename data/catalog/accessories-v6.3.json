@@ -1,0 +1,990 @@
+{
+  "checkedAt": "2026-11-15",
+  "rows": [
+    {
+      "id": "v63-mb-t16",
+      "brand": "TILTA",
+      "brandZh": "铁头",
+      "series": "Mirage",
+      "model": "Matte Box MB-T16",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "source": "https://tilta.com/wp-content/uploads/2023/04/Tilta-Mirage-Matte-Box.pdf",
+      "language": "en",
+      "aliases": [
+        "铁头 幻境 MB-T16"
+      ],
+      "metrics": [
+        [
+          "配置",
+          "基础套装"
+        ],
+        [
+          "随附转接环",
+          "67 / 72 / 77 / 82mm"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-mb-t16-a",
+      "brand": "TILTA",
+      "brandZh": "铁头",
+      "series": "Mirage",
+      "model": "Matte Box VND Kit MB-T16-A",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "source": "https://tilta.com/wp-content/uploads/2023/04/Tilta-Mirage-Matte-Box.pdf",
+      "language": "en",
+      "aliases": [
+        "铁头 幻境 MB-T16-A"
+      ],
+      "metrics": [
+        [
+          "配置",
+          "含可变 ND"
+        ],
+        [
+          "随附转接环",
+          "67 / 72 / 77 / 82mm"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-mb-t16-b",
+      "brand": "TILTA",
+      "brandZh": "铁头",
+      "series": "Mirage",
+      "model": "Matte Box Motorized VND Kit MB-T16-B",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "source": "https://tilta.com/wp-content/uploads/2023/04/Tilta-Mirage-Matte-Box.pdf",
+      "language": "en",
+      "aliases": [
+        "铁头 幻境 MB-T16-B"
+      ],
+      "metrics": [
+        [
+          "配置",
+          "含无线马达及可变 ND"
+        ],
+        [
+          "随附转接环",
+          "67 / 72 / 77 / 82mm"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-nucleus-nano-ii",
+      "brand": "TILTA",
+      "brandZh": "铁头",
+      "series": "Nucleus Nano II",
+      "model": "Wireless Lens Control System",
+      "subcategory": "无线跟焦",
+      "unit": "套",
+      "source": "https://tilta.com/shop/nucleus-nano-ii-wireless-lens-control-system/",
+      "language": "en",
+      "aliases": [
+        "铁头 原力 N II 无线跟焦",
+        "Nucleus N2"
+      ],
+      "metrics": [],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-2268",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "Quick Release Kit 2268",
+      "subcategory": "快装系统",
+      "unit": "套",
+      "source": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+      "language": "en",
+      "aliases": [
+        "Ulanzi Falcam 2268",
+        "优篮子 隼 F38 快装套组 2268"
+      ],
+      "metrics": [
+        [
+          "快装系统",
+          "F38"
+        ],
+        [
+          "部件",
+          "快装套组"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-2269",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "Arca Compatible Top Plate 2269",
+      "subcategory": "快装系统",
+      "unit": "个",
+      "source": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+      "language": "en",
+      "aliases": [
+        "Ulanzi Falcam 2269",
+        "优篮子 隼 F38 上板 2269"
+      ],
+      "metrics": [
+        [
+          "快装系统",
+          "F38"
+        ],
+        [
+          "部件",
+          "上板"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-2465",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "PD Compatible Top Plate 2465",
+      "subcategory": "快装系统",
+      "unit": "个",
+      "source": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+      "language": "en",
+      "aliases": [
+        "Ulanzi Falcam 2465",
+        "优篮子 隼 F38 上板 2465"
+      ],
+      "metrics": [
+        [
+          "快装系统",
+          "F38"
+        ],
+        [
+          "部件",
+          "上板"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-2270",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "Bottom Plate 2270",
+      "subcategory": "快装系统",
+      "unit": "个",
+      "source": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+      "language": "en",
+      "aliases": [
+        "Ulanzi Falcam 2270",
+        "优篮子 隼 F38 底座 2270"
+      ],
+      "metrics": [
+        [
+          "快装系统",
+          "F38"
+        ],
+        [
+          "部件",
+          "底座"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-f38b3404",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "Multi-Hole Quick Release Kit F38B3404",
+      "subcategory": "快装系统",
+      "unit": "套",
+      "source": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+      "language": "en",
+      "aliases": [
+        "Ulanzi Falcam F38B3404",
+        "优篮子 隼 F38 多孔快装套组 F38B3404"
+      ],
+      "metrics": [
+        [
+          "快装系统",
+          "F38"
+        ],
+        [
+          "部件",
+          "多孔快装套组"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-mt-44-2502b",
+      "brand": "Ulanzi",
+      "brandZh": "优篮子",
+      "series": "MT-44",
+      "model": "Extendable Vlog Tripod 2502B",
+      "subcategory": "三脚架",
+      "unit": "套",
+      "source": "https://www.ulanzi.com/en-sg/products/ulanzi-mt-44-extendable-vlog-tripod-2502b",
+      "language": "en",
+      "aliases": [
+        "优篮子 MT44 三脚架"
+      ],
+      "metrics": [
+        [
+          "结构",
+          "六节伸缩"
+        ]
+      ],
+      "category": "移动器材"
+    },
+    {
+      "id": "v63-3196",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "",
+      "model": "Mini Matte Box 3196",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "source": "https://www.smallrig.com/smallrig-mini-matte-box-3196.html",
+      "language": "en",
+      "aliases": [
+        "斯莫格 3196 遮光斗"
+      ],
+      "metrics": [
+        [
+          "插片尺寸",
+          "4×5.65″"
+        ],
+        [
+          "插片厚度上限",
+          "4mm"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-3575",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "",
+      "model": "Mini Matte Box Lite 3575",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "source": "https://www.smallrig.com/smallrig-mini-matte-box-lite-3575.html",
+      "language": "en",
+      "aliases": [
+        "斯莫格 3575 遮光斗"
+      ],
+      "metrics": [],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-3873",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "",
+      "model": "Magic Arm Dual Ball Heads 3873",
+      "subcategory": "魔术手臂",
+      "unit": "个",
+      "source": "https://static.smallrig.com/mall/img/public/5muf9dm0irb-1751250368814_.pdf",
+      "language": "en",
+      "aliases": [
+        "斯莫格 3873 怪手"
+      ],
+      "metrics": [
+        [
+          "两端接口",
+          "1/4″-20 螺丝"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-3875",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "",
+      "model": "Magic Arm Dual Ball Heads 3875",
+      "subcategory": "魔术手臂",
+      "unit": "个",
+      "source": "https://static.smallrig.com/mall/img/public/adz02u811rb-1751251470655_.pdf",
+      "language": "en",
+      "aliases": [
+        "斯莫格 3875 怪手"
+      ],
+      "metrics": [
+        [
+          "两端接口",
+          "1/4″-20 螺丝 / NATO 夹座"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-vb99-3580",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "VB99",
+      "model": "Mini V Mount Battery 3580",
+      "subcategory": "供电",
+      "unit": "块",
+      "source": "https://www.smallrig.com/VB99-mini-V-Mount-Battery-3580.html",
+      "language": "en",
+      "aliases": [
+        "斯莫格 VB99 V口电池 3580"
+      ],
+      "metrics": [
+        [
+          "容量",
+          "99Wh"
+        ],
+        [
+          "USB-C PD 功率",
+          "最高 65W"
+        ],
+        [
+          "标称电压",
+          "14.8V"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-vb99-3580b",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "VB99",
+      "model": "Mini V Mount Battery 3580B",
+      "subcategory": "供电",
+      "unit": "块",
+      "source": "https://www.smallrig.com/smallrig-vb99-mini-v-mount-battery-3580.html",
+      "language": "en",
+      "aliases": [
+        "斯莫格 VB99 V口电池 3580B"
+      ],
+      "metrics": [
+        [
+          "容量",
+          "98.872Wh"
+        ],
+        [
+          "USB-C PD 功率",
+          "最高 100W"
+        ],
+        [
+          "标称电压",
+          "14.54V"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-nisi-c5-starter",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5",
+      "model": "Matte Box Starter Kit",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "source": "https://www.nisioptics.com/c5-cinema-matte-kit",
+      "language": "zh-CN",
+      "aliases": [
+        "耐司 C5 遮光斗 基础套装"
+      ],
+      "metrics": [
+        [
+          "夹装外径",
+          "95mm"
+        ],
+        [
+          "插片尺寸",
+          "4×4″ / 4×5.65″"
+        ],
+        [
+          "随附转接环",
+          "67 / 72 / 77 / 82mm"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-nisi-c5-filmmaker",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5",
+      "model": "Matte Box Filmmaker Kit",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "source": "https://www.nisioptics.com/c5-cinema-matte-kit",
+      "language": "zh-CN",
+      "aliases": [
+        "耐司 C5 遮光斗 视频套装"
+      ],
+      "metrics": [
+        [
+          "夹装外径",
+          "95mm"
+        ],
+        [
+          "插片尺寸",
+          "4×4″ / 4×5.65″"
+        ],
+        [
+          "随附转接环",
+          "67 / 72 / 77 / 82mm"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-nisi-c5-cinema",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5",
+      "model": "Matte Box Cinema Kit",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "source": "https://www.nisioptics.com/c5-cinema-matte-kit",
+      "language": "zh-CN",
+      "aliases": [
+        "耐司 C5 遮光斗 电影套装"
+      ],
+      "metrics": [
+        [
+          "夹装外径",
+          "95mm"
+        ],
+        [
+          "插片尺寸",
+          "4×4″ / 4×5.65″"
+        ],
+        [
+          "随附转接环",
+          "67 / 72 / 77 / 82mm"
+        ]
+      ],
+      "category": "摄影机附件"
+    },
+    {
+      "id": "v63-nisi-c5-vnd",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5 True Color",
+      "model": "VND 1–5 Stops",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/c5-cinema-matte-kit",
+      "language": "zh-CN",
+      "aliases": [
+        "耐司 C5 可变 ND 1-5档"
+      ],
+      "metrics": [
+        [
+          "减光范围",
+          "1–5 档"
+        ],
+        [
+          "适配遮光斗",
+          "NiSi C5"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-c5-pl",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5 True Color",
+      "model": "Rotating PL",
+      "subcategory": "偏振镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/c5-cinema-matte-kit",
+      "language": "zh-CN",
+      "aliases": [
+        "耐司 C5 旋转偏振镜"
+      ],
+      "metrics": [
+        [
+          "类型",
+          "旋转偏振镜"
+        ],
+        [
+          "适配遮光斗",
+          "NiSi C5"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-03",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 0.3",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 4x565 0.3"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "4×5.65″"
+        ],
+        [
+          "光学密度",
+          "0.3"
+        ],
+        [
+          "减光档数",
+          "1 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-06",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 0.6",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 4x565 0.6"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "4×5.65″"
+        ],
+        [
+          "光学密度",
+          "0.6"
+        ],
+        [
+          "减光档数",
+          "2 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-09",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 0.9",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 4x565 0.9"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "4×5.65″"
+        ],
+        [
+          "光学密度",
+          "0.9"
+        ],
+        [
+          "减光档数",
+          "3 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-12",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 1.2",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 4x565 1.2"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "4×5.65″"
+        ],
+        [
+          "光学密度",
+          "1.2"
+        ],
+        [
+          "减光档数",
+          "4 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-15",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 1.5",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 4x565 1.5"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "4×5.65″"
+        ],
+        [
+          "光学密度",
+          "1.5"
+        ],
+        [
+          "减光档数",
+          "5 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-18",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 1.8",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 4x565 1.8"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "4×5.65″"
+        ],
+        [
+          "光学密度",
+          "1.8"
+        ],
+        [
+          "减光档数",
+          "6 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-21",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 2.1",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 4x565 2.1"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "4×5.65″"
+        ],
+        [
+          "光学密度",
+          "2.1"
+        ],
+        [
+          "减光档数",
+          "7 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-24",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 2.4",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 4x565 2.4"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "4×5.65″"
+        ],
+        [
+          "光学密度",
+          "2.4"
+        ],
+        [
+          "减光档数",
+          "8 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-03",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 0.3",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 66x66 0.3"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "6.6×6.6″"
+        ],
+        [
+          "光学密度",
+          "0.3"
+        ],
+        [
+          "减光档数",
+          "1 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-06",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 0.6",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 66x66 0.6"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "6.6×6.6″"
+        ],
+        [
+          "光学密度",
+          "0.6"
+        ],
+        [
+          "减光档数",
+          "2 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-09",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 0.9",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 66x66 0.9"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "6.6×6.6″"
+        ],
+        [
+          "光学密度",
+          "0.9"
+        ],
+        [
+          "减光档数",
+          "3 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-12",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 1.2",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 66x66 1.2"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "6.6×6.6″"
+        ],
+        [
+          "光学密度",
+          "1.2"
+        ],
+        [
+          "减光档数",
+          "4 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-15",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 1.5",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 66x66 1.5"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "6.6×6.6″"
+        ],
+        [
+          "光学密度",
+          "1.5"
+        ],
+        [
+          "减光档数",
+          "5 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-18",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 1.8",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 66x66 1.8"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "6.6×6.6″"
+        ],
+        [
+          "光学密度",
+          "1.8"
+        ],
+        [
+          "减光档数",
+          "6 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-21",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 2.1",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 66x66 2.1"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "6.6×6.6″"
+        ],
+        [
+          "光学密度",
+          "2.1"
+        ],
+        [
+          "减光档数",
+          "7 档"
+        ]
+      ],
+      "category": "滤镜"
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-24",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 2.4",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "source": "https://www.nisioptics.com/cinema-fs-nd",
+      "language": "zh-CN",
+      "aliases": [
+        "NiSi FSND 66x66 2.4"
+      ],
+      "metrics": [
+        [
+          "尺寸",
+          "6.6×6.6″"
+        ],
+        [
+          "光学密度",
+          "2.4"
+        ],
+        [
+          "减光档数",
+          "8 档"
+        ]
+      ],
+      "category": "滤镜"
+    }
+  ]
+}

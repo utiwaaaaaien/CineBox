@@ -1,6 +1,6 @@
 <p align="center"><img src="public/brand/cinebox-logo-v2-128.png" width="96" height="96" alt="CineBox" /></p>
 
-# CineBox V6.2.1
+# CineBox V6.3
 
 **摄影器材 · 项目工作台**
 
@@ -8,7 +8,7 @@ CineBox 帮助摄影团队整理拍摄需求、复用历史项目、挑选器材
 
 [在线使用](https://utiwaaaaaien.github.io/CineBox/) · [English](README.en.md) · [版本记录](CHANGELOG.md) · [参与贡献](CONTRIBUTING.md) · [MIT 许可证](LICENSE)
 
-![Version V6.2.1](https://img.shields.io/badge/version-V6.2.1-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+![Version V6.3](https://img.shields.io/badge/version-V6.3-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
 V6.2 支持乱序器材检索、镜头焦段升序、已选类别进度和器材单原地预览。详见[版本记录](CHANGELOG.md)及[本次发布说明](docs/releases/v6.2.0.md)。
 
@@ -43,7 +43,7 @@ V6 重新整理了历史项目卡片的信息顺序与操作入口，器材卡�
 
 ## 器材数据的边界
 
-V6.1 选材入口包含 **2,150 条器材记录**；底层规范目录保留 **2,165 条完整身份记录**，用于恢复旧项目及兼容旧 ID。这两个数字反映不同用途。
+详见 [V6.3 专项数据与分类审查](docs/V6.3-catalog-review.md)。V6.3 选材入口包含 **2,306 条器材记录**；底层规范目录保留 **2,321 条完整身份记录**，用于恢复旧项目及兼容旧 ID。这两个数字反映不同用途。
 
 本版记录 4,572 项卡片技术指标，1,346 条器材具备三项指标，**804 条尚未达到三项完整指标**。240 条使用标注适用范围的系列参考指标，该统计与完整条目数有交集。未确定的指标在界面留空，来源与缺口原因保存在 `data/catalog/card-specs-v6-*.json` 及审计文件中。
 

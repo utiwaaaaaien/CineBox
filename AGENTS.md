@@ -13,3 +13,5 @@ V5.1复核入口为 `data/catalog/review.v5.1.json` 与 `data/catalog/catalog-ad
 新选材仅使用 `publishedEquipment`；完整 `canonicalEquipment` 用于旧项目恢复。型号和系列明确的小规格冲突按官方资料纠正后保留；具体库存配置及用途明确的通用用品可选，但不冒充厂商已核验。只有无法确定身份或用途的笼统名称移出新入口。`published` 与 `verified` 分别维护。
 
 用户确认的保留例外与最新系列选择见 `scripts/catalog-editorial-review.mjs` 和 `data/catalog/editorial-decisions.json`：品牌无明确系列保留原名，特殊器材与辅助功能用品保留，笼统无型号灯具排除。最新系列型号使用新 ID，不重写旧项目的未指定型号记录；保留 `replacementIds` 与审核理由。
+
+V6.3 专项数据维护入口是 `data/catalog/accessories-v6.3.json`、`data/catalog/ying-ding-v6.3.json`、`data/catalog/classification-v6.3.json`。通过 `scripts/catalog-v63.mjs` 生成目录、卡片及分类审计。供应商参数表按页记录出处；多个可选接口不能推断为当前装机接口。跨类重复只按已审核的完整身份映射合并。

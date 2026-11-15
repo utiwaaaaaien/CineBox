@@ -344,7 +344,7 @@ test('oversized text and spreadsheets fail explicitly instead of silently droppi
 
 test("ambiguous full names block shorter aliases instead of guessing a category", async () => {
   const { publishedEquipment } = await import("../app/equipment-catalog.canonical.ts");
-  const ambiguousNames = ["通用 肩架", "通用 题字器"];
+  const ambiguousNames = ["通用 铝管", "通用 移动脚手架"];
   for (const name of ambiguousNames) {
     const identities = publishedEquipment.filter(item => item.name === name);
     assert.equal(identities.length, 2);

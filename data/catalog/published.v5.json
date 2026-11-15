@@ -24740,6 +24740,4764 @@
       "identityBasis": "official-series"
     },
     {
+      "id": "v63-yd-canon-fd-nfd-135mm-f2-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (NFD)",
+      "model": "135mm F2 EF",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 135mm F2 EF",
+      "englishName": "Ying Ding Canon FD (NFD) 135mm F2 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (NFD) 135mm F2 EF Cine Mod",
+        "北京影鼎 Canon FD (NFD) 135mm",
+        "影鼎 Canon FD (NFD) 轻量化改装 135mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=14",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-15mm-fisheye-f2-8-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (NFD)",
+      "model": "15mm Fisheye F2.8 EF",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 15mm Fisheye F2.8 EF",
+      "englishName": "Ying Ding Canon FD (NFD) 15mm Fisheye F2.8 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 鱼眼镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (NFD) 15mm Fisheye F2.8 EF Cine Mod",
+        "北京影鼎 Canon FD (NFD) 15mm Fisheye",
+        "影鼎 Canon FD (NFD) 轻量化改装 15mm Fisheye"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=14",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-20mm-f2-8-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (NFD)",
+      "model": "20mm F2.8 EF",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 20mm F2.8 EF",
+      "englishName": "Ying Ding Canon FD (NFD) 20mm F2.8 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (NFD) 20mm F2.8 EF Cine Mod",
+        "北京影鼎 Canon FD (NFD) 20mm",
+        "影鼎 Canon FD (NFD) 轻量化改装 20mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=14",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-24mm-f2-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (NFD)",
+      "model": "24mm F2 EF",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 24mm F2 EF",
+      "englishName": "Ying Ding Canon FD (NFD) 24mm F2 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (NFD) 24mm F2 EF Cine Mod",
+        "北京影鼎 Canon FD (NFD) 24mm",
+        "影鼎 Canon FD (NFD) 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=14",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-28mm-f2-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (NFD)",
+      "model": "28mm F2 EF",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 28mm F2 EF",
+      "englishName": "Ying Ding Canon FD (NFD) 28mm F2 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (NFD) 28mm F2 EF Cine Mod",
+        "北京影鼎 Canon FD (NFD) 28mm",
+        "影鼎 Canon FD (NFD) 轻量化改装 28mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=14",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-50mm-f1-4-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (NFD)",
+      "model": "50mm F1.4 EF",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 50mm F1.4 EF",
+      "englishName": "Ying Ding Canon FD (NFD) 50mm F1.4 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (NFD) 50mm F1.4 EF Cine Mod",
+        "北京影鼎 Canon FD (NFD) 50mm",
+        "影鼎 Canon FD (NFD) 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=14",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-85mm-f1-2-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (NFD)",
+      "model": "85mm F1.2 EF",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 85mm F1.2 EF",
+      "englishName": "Ying Ding Canon FD (NFD) 85mm F1.2 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (NFD) 85mm F1.2 EF Cine Mod",
+        "北京影鼎 Canon FD (NFD) 85mm",
+        "影鼎 Canon FD (NFD) 轻量化改装 85mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=14",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-100mm-f2-8-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (SSC)",
+      "model": "100mm F2.8 EF",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 100mm F2.8 EF",
+      "englishName": "Ying Ding Canon FD (SSC) 100mm F2.8 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (SSC) 100mm F2.8 EF Cine Mod",
+        "北京影鼎 Canon FD (SSC) 100mm",
+        "影鼎 Canon FD (SSC) 轻量化改装 100mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=13",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-135mm-f2-5-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (SSC)",
+      "model": "135mm F2.5 EF",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 135mm F2.5 EF",
+      "englishName": "Ying Ding Canon FD (SSC) 135mm F2.5 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (SSC) 135mm F2.5 EF Cine Mod",
+        "北京影鼎 Canon FD (SSC) 135mm",
+        "影鼎 Canon FD (SSC) 轻量化改装 135mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=13",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-17mm-f4-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (SSC)",
+      "model": "17mm F4 EF",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 17mm F4 EF",
+      "englishName": "Ying Ding Canon FD (SSC) 17mm F4 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (SSC) 17mm F4 EF Cine Mod",
+        "北京影鼎 Canon FD (SSC) 17mm",
+        "影鼎 Canon FD (SSC) 轻量化改装 17mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=13",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-200mm-f2-8-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (SSC)",
+      "model": "200mm F2.8 EF",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 200mm F2.8 EF",
+      "englishName": "Ying Ding Canon FD (SSC) 200mm F2.8 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (SSC) 200mm F2.8 EF Cine Mod",
+        "北京影鼎 Canon FD (SSC) 200mm",
+        "影鼎 Canon FD (SSC) 轻量化改装 200mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=13",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-20mm-f2-8-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (SSC)",
+      "model": "20mm F2.8 EF",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 20mm F2.8 EF",
+      "englishName": "Ying Ding Canon FD (SSC) 20mm F2.8 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (SSC) 20mm F2.8 EF Cine Mod",
+        "北京影鼎 Canon FD (SSC) 20mm",
+        "影鼎 Canon FD (SSC) 轻量化改装 20mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=13",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-24mm-f2-8-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (SSC)",
+      "model": "24mm F2.8 EF",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 24mm F2.8 EF",
+      "englishName": "Ying Ding Canon FD (SSC) 24mm F2.8 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (SSC) 24mm F2.8 EF Cine Mod",
+        "北京影鼎 Canon FD (SSC) 24mm",
+        "影鼎 Canon FD (SSC) 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=13",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-35mm-f2-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (SSC)",
+      "model": "35mm F2 EF",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 35mm F2 EF",
+      "englishName": "Ying Ding Canon FD (SSC) 35mm F2 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (SSC) 35mm F2 EF Cine Mod",
+        "北京影鼎 Canon FD (SSC) 35mm",
+        "影鼎 Canon FD (SSC) 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=13",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-55mm-f1-2-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (SSC)",
+      "model": "55mm F1.2 EF",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 55mm F1.2 EF",
+      "englishName": "Ying Ding Canon FD (SSC) 55mm F1.2 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (SSC) 55mm F1.2 EF Cine Mod",
+        "北京影鼎 Canon FD (SSC) 55mm",
+        "影鼎 Canon FD (SSC) 轻量化改装 55mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=13",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-85mm-f1-2-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Canon FD (SSC)",
+      "model": "85mm F1.2 EF",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 85mm F1.2 EF",
+      "englishName": "Ying Ding Canon FD (SSC) 85mm F1.2 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Canon FD (SSC) 85mm F1.2 EF Cine Mod",
+        "北京影鼎 Canon FD (SSC) 85mm",
+        "影鼎 Canon FD (SSC) 轻量化改装 85mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=13",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-135mm-t3-6-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Carl Zeiss Jena",
+      "model": "135mm T3.6 PL",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 135mm T3.6 PL",
+      "englishName": "Ying Ding Carl Zeiss Jena 135mm T3.6 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Carl Zeiss Jena 135mm T3.6 PL Cine Mod",
+        "北京影鼎 Carl Zeiss Jena 135mm",
+        "影鼎 Carl Zeiss Jena 轻量化改装 135mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=3",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-20mm-t2-9-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Carl Zeiss Jena",
+      "model": "20mm T2.9 PL",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 20mm T2.9 PL",
+      "englishName": "Ying Ding Carl Zeiss Jena 20mm T2.9 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Carl Zeiss Jena 20mm T2.9 PL Cine Mod",
+        "北京影鼎 Carl Zeiss Jena 20mm",
+        "影鼎 Carl Zeiss Jena 轻量化改装 20mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=3",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-28mm-t2-9-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Carl Zeiss Jena",
+      "model": "28mm T2.9 PL",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 28mm T2.9 PL",
+      "englishName": "Ying Ding Carl Zeiss Jena 28mm T2.9 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Carl Zeiss Jena 28mm T2.9 PL Cine Mod",
+        "北京影鼎 Carl Zeiss Jena 28mm",
+        "影鼎 Carl Zeiss Jena 轻量化改装 28mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=3",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-35mm-t2-5-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Carl Zeiss Jena",
+      "model": "35mm T2.5 PL",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 35mm T2.5 PL",
+      "englishName": "Ying Ding Carl Zeiss Jena 35mm T2.5 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Carl Zeiss Jena 35mm T2.5 PL Cine Mod",
+        "北京影鼎 Carl Zeiss Jena 35mm",
+        "影鼎 Carl Zeiss Jena 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=3",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-50mm-t1-9-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Carl Zeiss Jena",
+      "model": "50mm T1.9 PL",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 50mm T1.9 PL",
+      "englishName": "Ying Ding Carl Zeiss Jena 50mm T1.9 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Carl Zeiss Jena 50mm T1.9 PL Cine Mod",
+        "北京影鼎 Carl Zeiss Jena 50mm",
+        "影鼎 Carl Zeiss Jena 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=3",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-80mm-t1-9-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Carl Zeiss Jena",
+      "model": "80mm T1.9 PL",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 80mm T1.9 PL",
+      "englishName": "Ying Ding Carl Zeiss Jena 80mm T1.9 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Carl Zeiss Jena 80mm T1.9 PL Cine Mod",
+        "北京影鼎 Carl Zeiss Jena 80mm",
+        "影鼎 Carl Zeiss Jena 轻量化改装 80mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=3",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-10mm-f2-8-t3-1",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Laowa",
+      "model": "10mm F2.8 / T3.1",
+      "name": "影鼎 Ying Ding Laowa 10mm F2.8 / T3.1",
+      "englishName": "Ying Ding Laowa 10mm F2.8 / T3.1 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Laowa 10mm F2.8 / T3.1 Cine Mod",
+        "北京影鼎 Laowa 10mm",
+        "影鼎 Laowa 轻量化改装 10mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=18",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-12mm-t2-9-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Laowa",
+      "model": "12mm T2.9 PL",
+      "name": "影鼎 Ying Ding Laowa 12mm T2.9 PL",
+      "englishName": "Ying Ding Laowa 12mm T2.9 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Laowa 12mm T2.9 PL Cine Mod",
+        "北京影鼎 Laowa 12mm",
+        "影鼎 Laowa 轻量化改装 12mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=18",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-15mm-f2-8-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Laowa",
+      "model": "15mm F2.8 M",
+      "name": "影鼎 Ying Ding Laowa 15mm F2.8 M",
+      "englishName": "Ying Ding Laowa 15mm F2.8 M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Laowa 15mm F2.8 M Cine Mod",
+        "北京影鼎 Laowa 15mm",
+        "影鼎 Laowa 轻量化改装 15mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=18",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-15mm-macro-t4-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Laowa",
+      "model": "15mm Macro T4 PL",
+      "name": "影鼎 Ying Ding Laowa 15mm Macro T4 PL",
+      "englishName": "Ying Ding Laowa 15mm Macro T4 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 微距镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Laowa 15mm Macro T4 PL Cine Mod",
+        "北京影鼎 Laowa 15mm Macro",
+        "影鼎 Laowa 轻量化改装 15mm Macro"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=18",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-9mm-f5-6-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Laowa",
+      "model": "9mm F5.6 PL",
+      "name": "影鼎 Ying Ding Laowa 9mm F5.6 PL",
+      "englishName": "Ying Ding Laowa 9mm F5.6 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Laowa 9mm F5.6 PL Cine Mod",
+        "北京影鼎 Laowa 9mm",
+        "影鼎 Laowa 轻量化改装 9mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=18",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-135mm-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica M0.8",
+      "model": "135mm M",
+      "name": "影鼎 Ying Ding Leica M0.8 135mm M",
+      "englishName": "Ying Ding Leica M0.8 135mm M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica M0.8 135mm M Cine Mod",
+        "北京影鼎 Leica M0.8 135mm",
+        "影鼎 Leica M0.8 轻量化改装 135mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=11",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-21mm-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica M0.8",
+      "model": "21mm M",
+      "name": "影鼎 Ying Ding Leica M0.8 21mm M",
+      "englishName": "Ying Ding Leica M0.8 21mm M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica M0.8 21mm M Cine Mod",
+        "北京影鼎 Leica M0.8 21mm",
+        "影鼎 Leica M0.8 轻量化改装 21mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=11",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-24mm-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica M0.8",
+      "model": "24mm M",
+      "name": "影鼎 Ying Ding Leica M0.8 24mm M",
+      "englishName": "Ying Ding Leica M0.8 24mm M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica M0.8 24mm M Cine Mod",
+        "北京影鼎 Leica M0.8 24mm",
+        "影鼎 Leica M0.8 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=11",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-35mm-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica M0.8",
+      "model": "35mm M",
+      "name": "影鼎 Ying Ding Leica M0.8 35mm M",
+      "englishName": "Ying Ding Leica M0.8 35mm M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica M0.8 35mm M Cine Mod",
+        "北京影鼎 Leica M0.8 35mm",
+        "影鼎 Leica M0.8 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=11",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-50mm-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica M0.8",
+      "model": "50mm M",
+      "name": "影鼎 Ying Ding Leica M0.8 50mm M",
+      "englishName": "Ying Ding Leica M0.8 50mm M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica M0.8 50mm M Cine Mod",
+        "北京影鼎 Leica M0.8 50mm",
+        "影鼎 Leica M0.8 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=11",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-75mm-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica M0.8",
+      "model": "75mm M",
+      "name": "影鼎 Ying Ding Leica M0.8 75mm M",
+      "englishName": "Ying Ding Leica M0.8 75mm M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica M0.8 75mm M Cine Mod",
+        "北京影鼎 Leica M0.8 75mm",
+        "影鼎 Leica M0.8 轻量化改装 75mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=11",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-90mm-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica M0.8",
+      "model": "90mm M",
+      "name": "影鼎 Ying Ding Leica M0.8 90mm M",
+      "englishName": "Ying Ding Leica M0.8 90mm M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica M0.8 90mm M Cine Mod",
+        "北京影鼎 Leica M0.8 90mm",
+        "影鼎 Leica M0.8 轻量化改装 90mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=11",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-elmarit-r-19mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica R",
+      "model": "ELMARIT-R 19mm F2.8",
+      "name": "影鼎 Ying Ding Leica R ELMARIT-R 19mm F2.8",
+      "englishName": "Ying Ding Leica R ELMARIT-R 19mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica R ELMARIT-R 19mm F2.8 Cine Mod",
+        "北京影鼎 Leica R 19mm",
+        "影鼎 Leica R 轻量化改装 19mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=10",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-elmarit-r-24mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica R",
+      "model": "ELMARIT-R 24mm F2.8",
+      "name": "影鼎 Ying Ding Leica R ELMARIT-R 24mm F2.8",
+      "englishName": "Ying Ding Leica R ELMARIT-R 24mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica R ELMARIT-R 24mm F2.8 Cine Mod",
+        "北京影鼎 Leica R 24mm",
+        "影鼎 Leica R 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=10",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-elmarit-r-28mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica R",
+      "model": "ELMARIT-R 28mm F2.8",
+      "name": "影鼎 Ying Ding Leica R ELMARIT-R 28mm F2.8",
+      "englishName": "Ying Ding Leica R ELMARIT-R 28mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica R ELMARIT-R 28mm F2.8 Cine Mod",
+        "北京影鼎 Leica R 28mm",
+        "影鼎 Leica R 轻量化改装 28mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=10",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-summicron-r-35mm-f2",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica R",
+      "model": "Summicron-R 35mm F2",
+      "name": "影鼎 Ying Ding Leica R Summicron-R 35mm F2",
+      "englishName": "Ying Ding Leica R Summicron-R 35mm F2 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica R Summicron-R 35mm F2 Cine Mod",
+        "北京影鼎 Leica R 35mm",
+        "影鼎 Leica R 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=10",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-summicron-r-50mm-f2",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica R",
+      "model": "Summicron-R 50mm F2",
+      "name": "影鼎 Ying Ding Leica R Summicron-R 50mm F2",
+      "englishName": "Ying Ding Leica R Summicron-R 50mm F2 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica R Summicron-R 50mm F2 Cine Mod",
+        "北京影鼎 Leica R 50mm",
+        "影鼎 Leica R 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=10",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-summicron-r-90mm-f2",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica R",
+      "model": "Summicron-R 90mm F2",
+      "name": "影鼎 Ying Ding Leica R Summicron-R 90mm F2",
+      "englishName": "Ying Ding Leica R Summicron-R 90mm F2 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica R Summicron-R 90mm F2 Cine Mod",
+        "北京影鼎 Leica R 90mm",
+        "影鼎 Leica R 轻量化改装 90mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=10",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-super-elmar-r-15mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Leica R",
+      "model": "Super-Elmar-R 15mm F3.5",
+      "name": "影鼎 Ying Ding Leica R Super-Elmar-R 15mm F3.5",
+      "englishName": "Ying Ding Leica R Super-Elmar-R 15mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Leica R Super-Elmar-R 15mm F3.5 Cine Mod",
+        "北京影鼎 Leica R 15mm",
+        "影鼎 Leica R 轻量化改装 15mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=10",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-110mm-f2-8-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Mamiya Sekor-C",
+      "model": "110mm F2.8 PL",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 110mm F2.8 PL",
+      "englishName": "Ying Ding Mamiya Sekor-C 110mm F2.8 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Mamiya Sekor-C 110mm F2.8 PL Cine Mod",
+        "北京影鼎 Mamiya Sekor-C 110mm",
+        "影鼎 Mamiya Sekor-C 轻量化改装 110mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=12",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-150mm-f2-8-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Mamiya Sekor-C",
+      "model": "150mm F2.8 LPL",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 150mm F2.8 LPL",
+      "englishName": "Ying Ding Mamiya Sekor-C 150mm F2.8 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Mamiya Sekor-C 150mm F2.8 LPL Cine Mod",
+        "北京影鼎 Mamiya Sekor-C 150mm",
+        "影鼎 Mamiya Sekor-C 轻量化改装 150mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=12",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-24mm-f4-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Mamiya Sekor-C",
+      "model": "24mm F4 PL",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 24mm F4 PL",
+      "englishName": "Ying Ding Mamiya Sekor-C 24mm F4 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Mamiya Sekor-C 24mm F4 PL Cine Mod",
+        "北京影鼎 Mamiya Sekor-C 24mm",
+        "影鼎 Mamiya Sekor-C 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=12",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-35mm-f3-5-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Mamiya Sekor-C",
+      "model": "35mm F3.5 PL",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 35mm F3.5 PL",
+      "englishName": "Ying Ding Mamiya Sekor-C 35mm F3.5 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Mamiya Sekor-C 35mm F3.5 PL Cine Mod",
+        "北京影鼎 Mamiya Sekor-C 35mm",
+        "影鼎 Mamiya Sekor-C 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=12",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-45mm-f2-8-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Mamiya Sekor-C",
+      "model": "45mm F2.8 PL",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 45mm F2.8 PL",
+      "englishName": "Ying Ding Mamiya Sekor-C 45mm F2.8 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Mamiya Sekor-C 45mm F2.8 PL Cine Mod",
+        "北京影鼎 Mamiya Sekor-C 45mm",
+        "影鼎 Mamiya Sekor-C 轻量化改装 45mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=12",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-55mm-f2-8-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Mamiya Sekor-C",
+      "model": "55mm F2.8 PL",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 55mm F2.8 PL",
+      "englishName": "Ying Ding Mamiya Sekor-C 55mm F2.8 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Mamiya Sekor-C 55mm F2.8 PL Cine Mod",
+        "北京影鼎 Mamiya Sekor-C 55mm",
+        "影鼎 Mamiya Sekor-C 轻量化改装 55mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=12",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-70mm-f2-8-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Mamiya Sekor-C",
+      "model": "70mm F2.8 PL",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 70mm F2.8 PL",
+      "englishName": "Ying Ding Mamiya Sekor-C 70mm F2.8 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Mamiya Sekor-C 70mm F2.8 PL Cine Mod",
+        "北京影鼎 Mamiya Sekor-C 70mm",
+        "影鼎 Mamiya Sekor-C 轻量化改装 70mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=12",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-80mm-f1-9-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Mamiya Sekor-C",
+      "model": "80mm F1.9 PL",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 80mm F1.9 PL",
+      "englishName": "Ying Ding Mamiya Sekor-C 80mm F1.9 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Mamiya Sekor-C 80mm F1.9 PL Cine Mod",
+        "北京影鼎 Mamiya Sekor-C 80mm",
+        "影鼎 Mamiya Sekor-C 轻量化改装 80mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=12",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-35mm-f1-4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI",
+      "model": "35mm F1.4",
+      "name": "影鼎 Ying Ding Nikkor AI 35mm F1.4",
+      "englishName": "Ying Ding Nikkor AI 35mm F1.4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI 35mm F1.4 Cine Mod",
+        "北京影鼎 Nikkor AI 35mm",
+        "影鼎 Nikkor AI 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-105mm-f1-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI-S",
+      "model": "105mm F1.8",
+      "name": "影鼎 Ying Ding Nikkor AI-S 105mm F1.8",
+      "englishName": "Ying Ding Nikkor AI-S 105mm F1.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI-S 105mm F1.8 Cine Mod",
+        "北京影鼎 Nikkor AI-S 105mm",
+        "影鼎 Nikkor AI-S 轻量化改装 105mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-135mm-f2-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI-S",
+      "model": "135mm F2.0",
+      "name": "影鼎 Ying Ding Nikkor AI-S 135mm F2.0",
+      "englishName": "Ying Ding Nikkor AI-S 135mm F2.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI-S 135mm F2.0 Cine Mod",
+        "北京影鼎 Nikkor AI-S 135mm",
+        "影鼎 Nikkor AI-S 轻量化改装 135mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-15mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI-S",
+      "model": "15mm F3.5",
+      "name": "影鼎 Ying Ding Nikkor AI-S 15mm F3.5",
+      "englishName": "Ying Ding Nikkor AI-S 15mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI-S 15mm F3.5 Cine Mod",
+        "北京影鼎 Nikkor AI-S 15mm",
+        "影鼎 Nikkor AI-S 轻量化改装 15mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-18mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI-S",
+      "model": "18mm F3.5",
+      "name": "影鼎 Ying Ding Nikkor AI-S 18mm F3.5",
+      "englishName": "Ying Ding Nikkor AI-S 18mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI-S 18mm F3.5 Cine Mod",
+        "北京影鼎 Nikkor AI-S 18mm",
+        "影鼎 Nikkor AI-S 轻量化改装 18mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-20mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI-S",
+      "model": "20mm F2.8",
+      "name": "影鼎 Ying Ding Nikkor AI-S 20mm F2.8",
+      "englishName": "Ying Ding Nikkor AI-S 20mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI-S 20mm F2.8 Cine Mod",
+        "北京影鼎 Nikkor AI-S 20mm",
+        "影鼎 Nikkor AI-S 轻量化改装 20mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-24mm-f2-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI-S",
+      "model": "24mm F2.0",
+      "name": "影鼎 Ying Ding Nikkor AI-S 24mm F2.0",
+      "englishName": "Ying Ding Nikkor AI-S 24mm F2.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI-S 24mm F2.0 Cine Mod",
+        "北京影鼎 Nikkor AI-S 24mm",
+        "影鼎 Nikkor AI-S 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-28mm-f2-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI-S",
+      "model": "28mm F2.0",
+      "name": "影鼎 Ying Ding Nikkor AI-S 28mm F2.0",
+      "englishName": "Ying Ding Nikkor AI-S 28mm F2.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI-S 28mm F2.0 Cine Mod",
+        "北京影鼎 Nikkor AI-S 28mm",
+        "影鼎 Nikkor AI-S 轻量化改装 28mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-50mm-f1-2",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI-S",
+      "model": "50mm F1.2",
+      "name": "影鼎 Ying Ding Nikkor AI-S 50mm F1.2",
+      "englishName": "Ying Ding Nikkor AI-S 50mm F1.2 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI-S 50mm F1.2 Cine Mod",
+        "北京影鼎 Nikkor AI-S 50mm",
+        "影鼎 Nikkor AI-S 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-85mm-f1-4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor AI-S",
+      "model": "85mm F1.4",
+      "name": "影鼎 Ying Ding Nikkor AI-S 85mm F1.4",
+      "englishName": "Ying Ding Nikkor AI-S 85mm F1.4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor AI-S 85mm F1.4 Cine Mod",
+        "北京影鼎 Nikkor AI-S 85mm",
+        "影鼎 Nikkor AI-S 轻量化改装 85mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=16",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-24mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor Non-AI",
+      "model": "24mm F2.8",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 24mm F2.8",
+      "englishName": "Ying Ding Nikkor Non-AI 24mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor Non-AI 24mm F2.8 Cine Mod",
+        "北京影鼎 Nikkor Non-AI 24mm",
+        "影鼎 Nikkor Non-AI 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=15",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-28mm-f2-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor Non-AI",
+      "model": "28mm F2.0",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 28mm F2.0",
+      "englishName": "Ying Ding Nikkor Non-AI 28mm F2.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor Non-AI 28mm F2.0 Cine Mod",
+        "北京影鼎 Nikkor Non-AI 28mm",
+        "影鼎 Nikkor Non-AI 轻量化改装 28mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=15",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-35mm-f2-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor Non-AI",
+      "model": "35mm F2.0",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 35mm F2.0",
+      "englishName": "Ying Ding Nikkor Non-AI 35mm F2.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor Non-AI 35mm F2.0 Cine Mod",
+        "北京影鼎 Nikkor Non-AI 35mm",
+        "影鼎 Nikkor Non-AI 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=15",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-50mm-f1-4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor Non-AI",
+      "model": "50mm F1.4",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 50mm F1.4",
+      "englishName": "Ying Ding Nikkor Non-AI 50mm F1.4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor Non-AI 50mm F1.4 Cine Mod",
+        "北京影鼎 Nikkor Non-AI 50mm",
+        "影鼎 Nikkor Non-AI 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=15",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-55mm-f1-2",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor Non-AI",
+      "model": "55mm F1.2",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 55mm F1.2",
+      "englishName": "Ying Ding Nikkor Non-AI 55mm F1.2 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor Non-AI 55mm F1.2 Cine Mod",
+        "北京影鼎 Nikkor Non-AI 55mm",
+        "影鼎 Nikkor Non-AI 轻量化改装 55mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=15",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-58mm-f1-4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor Non-AI",
+      "model": "58mm F1.4",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 58mm F1.4",
+      "englishName": "Ying Ding Nikkor Non-AI 58mm F1.4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor Non-AI 58mm F1.4 Cine Mod",
+        "北京影鼎 Nikkor Non-AI 58mm",
+        "影鼎 Nikkor Non-AI 轻量化改装 58mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=15",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-85mm-f1-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Nikkor Non-AI",
+      "model": "85mm F1.8",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 85mm F1.8",
+      "englishName": "Ying Ding Nikkor Non-AI 85mm F1.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Nikkor Non-AI 85mm F1.8 Cine Mod",
+        "北京影鼎 Nikkor Non-AI 85mm",
+        "影鼎 Nikkor Non-AI 轻量化改装 85mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=15",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-100mm-f2-8-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Olympus ZUIKO OM",
+      "model": "100mm F2.8 LPL",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 100mm F2.8 LPL",
+      "englishName": "Ying Ding Olympus ZUIKO OM 100mm F2.8 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Olympus ZUIKO OM 100mm F2.8 LPL Cine Mod",
+        "北京影鼎 Olympus ZUIKO OM 100mm",
+        "影鼎 Olympus ZUIKO OM 轻量化改装 100mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=2",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-135mm-f2-8-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Olympus ZUIKO OM",
+      "model": "135mm F2.8 LPL",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 135mm F2.8 LPL",
+      "englishName": "Ying Ding Olympus ZUIKO OM 135mm F2.8 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Olympus ZUIKO OM 135mm F2.8 LPL Cine Mod",
+        "北京影鼎 Olympus ZUIKO OM 135mm",
+        "影鼎 Olympus ZUIKO OM 轻量化改装 135mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=2",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-18mm-f3-5-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Olympus ZUIKO OM",
+      "model": "18mm F3.5 LPL",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 18mm F3.5 LPL",
+      "englishName": "Ying Ding Olympus ZUIKO OM 18mm F3.5 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Olympus ZUIKO OM 18mm F3.5 LPL Cine Mod",
+        "北京影鼎 Olympus ZUIKO OM 18mm",
+        "影鼎 Olympus ZUIKO OM 轻量化改装 18mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=2",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-24mm-f2-0-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Olympus ZUIKO OM",
+      "model": "24mm F2.0 LPL",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 24mm F2.0 LPL",
+      "englishName": "Ying Ding Olympus ZUIKO OM 24mm F2.0 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Olympus ZUIKO OM 24mm F2.0 LPL Cine Mod",
+        "北京影鼎 Olympus ZUIKO OM 24mm",
+        "影鼎 Olympus ZUIKO OM 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=2",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-35mm-f2-0-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Olympus ZUIKO OM",
+      "model": "35mm F2.0 LPL",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 35mm F2.0 LPL",
+      "englishName": "Ying Ding Olympus ZUIKO OM 35mm F2.0 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Olympus ZUIKO OM 35mm F2.0 LPL Cine Mod",
+        "北京影鼎 Olympus ZUIKO OM 35mm",
+        "影鼎 Olympus ZUIKO OM 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=2",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-50mm-f1-4-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Olympus ZUIKO OM",
+      "model": "50mm F1.4 LPL",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 50mm F1.4 LPL",
+      "englishName": "Ying Ding Olympus ZUIKO OM 50mm F1.4 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Olympus ZUIKO OM 50mm F1.4 LPL Cine Mod",
+        "北京影鼎 Olympus ZUIKO OM 50mm",
+        "影鼎 Olympus ZUIKO OM 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=2",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-50mm-macro-f2-0-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Olympus ZUIKO OM",
+      "model": "50mm Macro F2.0 LPL",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 50mm Macro F2.0 LPL",
+      "englishName": "Ying Ding Olympus ZUIKO OM 50mm Macro F2.0 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 微距镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Olympus ZUIKO OM 50mm Macro F2.0 LPL Cine Mod",
+        "北京影鼎 Olympus ZUIKO OM 50mm Macro",
+        "影鼎 Olympus ZUIKO OM 轻量化改装 50mm Macro"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=2",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-55mm-f1-2-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Olympus ZUIKO OM",
+      "model": "55mm F1.2 LPL",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 55mm F1.2 LPL",
+      "englishName": "Ying Ding Olympus ZUIKO OM 55mm F1.2 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Olympus ZUIKO OM 55mm F1.2 LPL Cine Mod",
+        "北京影鼎 Olympus ZUIKO OM 55mm",
+        "影鼎 Olympus ZUIKO OM 轻量化改装 55mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=2",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-85mm-f2-0-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Olympus ZUIKO OM",
+      "model": "85mm F2.0 LPL",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 85mm F2.0 LPL",
+      "englishName": "Ying Ding Olympus ZUIKO OM 85mm F2.0 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Olympus ZUIKO OM 85mm F2.0 LPL Cine Mod",
+        "北京影鼎 Olympus ZUIKO OM 85mm",
+        "影鼎 Olympus ZUIKO OM 轻量化改装 85mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=2",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-150mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 645-A SMC",
+      "model": "150mm F3.5",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 150mm F3.5",
+      "englishName": "Ying Ding Pentax 645-A SMC 150mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax 645-A SMC 150mm F3.5 Cine Mod",
+        "北京影鼎 Pentax 645-A SMC 150mm",
+        "影鼎 Pentax 645-A SMC 轻量化改装 150mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=9",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-35mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 645-A SMC",
+      "model": "35mm F3.5",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 35mm F3.5",
+      "englishName": "Ying Ding Pentax 645-A SMC 35mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax 645-A SMC 35mm F3.5 Cine Mod",
+        "北京影鼎 Pentax 645-A SMC 35mm",
+        "影鼎 Pentax 645-A SMC 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=9",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-45mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 645-A SMC",
+      "model": "45mm F2.8",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 45mm F2.8",
+      "englishName": "Ying Ding Pentax 645-A SMC 45mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax 645-A SMC 45mm F2.8 Cine Mod",
+        "北京影鼎 Pentax 645-A SMC 45mm",
+        "影鼎 Pentax 645-A SMC 轻量化改装 45mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=9",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-55mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 645-A SMC",
+      "model": "55mm F2.8",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 55mm F2.8",
+      "englishName": "Ying Ding Pentax 645-A SMC 55mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax 645-A SMC 55mm F2.8 Cine Mod",
+        "北京影鼎 Pentax 645-A SMC 55mm",
+        "影鼎 Pentax 645-A SMC 轻量化改装 55mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=9",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-75mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 645-A SMC",
+      "model": "75mm F2.8",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 75mm F2.8",
+      "englishName": "Ying Ding Pentax 645-A SMC 75mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax 645-A SMC 75mm F2.8 Cine Mod",
+        "北京影鼎 Pentax 645-A SMC 75mm",
+        "影鼎 Pentax 645-A SMC 轻量化改装 75mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=9",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-105mm-f2-4-f22-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 67",
+      "model": "105mm F2.4-F22 LPL",
+      "name": "影鼎 Ying Ding Pentax 67 105mm F2.4-F22 LPL",
+      "englishName": "Ying Ding Pentax 67 105mm F2.4-F22 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Pentax 67 105mm F2.4-F22 LPL Cine Mod",
+        "北京影鼎 Pentax 67 105mm",
+        "影鼎 Pentax 67 轻量化改装 105mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=8",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-35mm-f4-5-f22-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 67",
+      "model": "35mm F4.5-F22 LPL",
+      "name": "影鼎 Ying Ding Pentax 67 35mm F4.5-F22 LPL",
+      "englishName": "Ying Ding Pentax 67 35mm F4.5-F22 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Pentax 67 35mm F4.5-F22 LPL Cine Mod",
+        "北京影鼎 Pentax 67 35mm",
+        "影鼎 Pentax 67 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=8",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-45mm-f4-0-f22-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 67",
+      "model": "45mm F4.0-F22 LPL",
+      "name": "影鼎 Ying Ding Pentax 67 45mm F4.0-F22 LPL",
+      "englishName": "Ying Ding Pentax 67 45mm F4.0-F22 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Pentax 67 45mm F4.0-F22 LPL Cine Mod",
+        "北京影鼎 Pentax 67 45mm",
+        "影鼎 Pentax 67 轻量化改装 45mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=8",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-55mm-f3-5-f22-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 67",
+      "model": "55mm F3.5-F22 LPL",
+      "name": "影鼎 Ying Ding Pentax 67 55mm F3.5-F22 LPL",
+      "englishName": "Ying Ding Pentax 67 55mm F3.5-F22 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Pentax 67 55mm F3.5-F22 LPL Cine Mod",
+        "北京影鼎 Pentax 67 55mm",
+        "影鼎 Pentax 67 轻量化改装 55mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=8",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-75mm-f4-5-f22-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 67",
+      "model": "75mm F4.5-F22 LPL",
+      "name": "影鼎 Ying Ding Pentax 67 75mm F4.5-F22 LPL",
+      "englishName": "Ying Ding Pentax 67 75mm F4.5-F22 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Pentax 67 75mm F4.5-F22 LPL Cine Mod",
+        "北京影鼎 Pentax 67 75mm",
+        "影鼎 Pentax 67 轻量化改装 75mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=8",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-90mm-f2-8-f22-lpl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax 67",
+      "model": "90mm F2.8-F22 LPL",
+      "name": "影鼎 Ying Ding Pentax 67 90mm F2.8-F22 LPL",
+      "englishName": "Ying Ding Pentax 67 90mm F2.8-F22 LPL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "LPL",
+      "aliases": [
+        "Ying Ding Pentax 67 90mm F2.8-F22 LPL Cine Mod",
+        "北京影鼎 Pentax 67 90mm",
+        "影鼎 Pentax 67 轻量化改装 90mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=8",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-15mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax A",
+      "model": "15mm F3.5",
+      "name": "影鼎 Ying Ding Pentax A 15mm F3.5",
+      "englishName": "Ying Ding Pentax A 15mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax A 15mm F3.5 Cine Mod",
+        "北京影鼎 Pentax A 15mm",
+        "影鼎 Pentax A 轻量化改装 15mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=7",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-20mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax A",
+      "model": "20mm F2.8",
+      "name": "影鼎 Ying Ding Pentax A 20mm F2.8",
+      "englishName": "Ying Ding Pentax A 20mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax A 20mm F2.8 Cine Mod",
+        "北京影鼎 Pentax A 20mm",
+        "影鼎 Pentax A 轻量化改装 20mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=7",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-24-50mm-f4-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax A",
+      "model": "24-50mm F4.0",
+      "name": "影鼎 Ying Ding Pentax A 24-50mm F4.0",
+      "englishName": "Ying Ding Pentax A 24-50mm F4.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 变焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax A 24-50mm F4.0 Cine Mod",
+        "北京影鼎 Pentax A 24-50mm",
+        "影鼎 Pentax A 轻量化改装 24-50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=7",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-24mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax A",
+      "model": "24mm F2.8",
+      "name": "影鼎 Ying Ding Pentax A 24mm F2.8",
+      "englishName": "Ying Ding Pentax A 24mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax A 24mm F2.8 Cine Mod",
+        "北京影鼎 Pentax A 24mm",
+        "影鼎 Pentax A 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=7",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-28mm-f2-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax A",
+      "model": "28mm F2.0",
+      "name": "影鼎 Ying Ding Pentax A 28mm F2.0",
+      "englishName": "Ying Ding Pentax A 28mm F2.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax A 28mm F2.0 Cine Mod",
+        "北京影鼎 Pentax A 28mm",
+        "影鼎 Pentax A 轻量化改装 28mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=7",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-35mm-f2-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax A",
+      "model": "35mm F2.0",
+      "name": "影鼎 Ying Ding Pentax A 35mm F2.0",
+      "englishName": "Ying Ding Pentax A 35mm F2.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax A 35mm F2.0 Cine Mod",
+        "北京影鼎 Pentax A 35mm",
+        "影鼎 Pentax A 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=7",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-50mm-f1-2",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax A",
+      "model": "50mm F1.2",
+      "name": "影鼎 Ying Ding Pentax A 50mm F1.2",
+      "englishName": "Ying Ding Pentax A 50mm F1.2 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax A 50mm F1.2 Cine Mod",
+        "北京影鼎 Pentax A 50mm",
+        "影鼎 Pentax A 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=7",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-50mm-f1-4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax A",
+      "model": "50mm F1.4",
+      "name": "影鼎 Ying Ding Pentax A 50mm F1.4",
+      "englishName": "Ying Ding Pentax A 50mm F1.4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax A 50mm F1.4 Cine Mod",
+        "北京影鼎 Pentax A 50mm",
+        "影鼎 Pentax A 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=7",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-85mm-f1-4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax A",
+      "model": "85mm F1.4",
+      "name": "影鼎 Ying Ding Pentax A 85mm F1.4",
+      "englishName": "Ying Ding Pentax A 85mm F1.4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax A 85mm F1.4 Cine Mod",
+        "北京影鼎 Pentax A 85mm",
+        "影鼎 Pentax A 轻量化改装 85mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=7",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-15mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax K",
+      "model": "15mm F3.5",
+      "name": "影鼎 Ying Ding Pentax K 15mm F3.5",
+      "englishName": "Ying Ding Pentax K 15mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax K 15mm F3.5 Cine Mod",
+        "北京影鼎 Pentax K 15mm",
+        "影鼎 Pentax K 轻量化改装 15mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=6",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-18mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax K",
+      "model": "18mm F3.5",
+      "name": "影鼎 Ying Ding Pentax K 18mm F3.5",
+      "englishName": "Ying Ding Pentax K 18mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax K 18mm F3.5 Cine Mod",
+        "北京影鼎 Pentax K 18mm",
+        "影鼎 Pentax K 轻量化改装 18mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=6",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-24mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax K",
+      "model": "24mm F2.8",
+      "name": "影鼎 Ying Ding Pentax K 24mm F2.8",
+      "englishName": "Ying Ding Pentax K 24mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax K 24mm F2.8 Cine Mod",
+        "北京影鼎 Pentax K 24mm",
+        "影鼎 Pentax K 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=6",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-30mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax K",
+      "model": "30mm F2.8",
+      "name": "影鼎 Ying Ding Pentax K 30mm F2.8",
+      "englishName": "Ying Ding Pentax K 30mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax K 30mm F2.8 Cine Mod",
+        "北京影鼎 Pentax K 30mm",
+        "影鼎 Pentax K 轻量化改装 30mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=6",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-35mm-f2-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax K",
+      "model": "35mm F2.0",
+      "name": "影鼎 Ying Ding Pentax K 35mm F2.0",
+      "englishName": "Ying Ding Pentax K 35mm F2.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax K 35mm F2.0 Cine Mod",
+        "北京影鼎 Pentax K 35mm",
+        "影鼎 Pentax K 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=6",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-50mm-f1-2",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax K",
+      "model": "50mm F1.2",
+      "name": "影鼎 Ying Ding Pentax K 50mm F1.2",
+      "englishName": "Ying Ding Pentax K 50mm F1.2 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax K 50mm F1.2 Cine Mod",
+        "北京影鼎 Pentax K 50mm",
+        "影鼎 Pentax K 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=6",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-50mm-f1-4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax K",
+      "model": "50mm F1.4",
+      "name": "影鼎 Ying Ding Pentax K 50mm F1.4",
+      "englishName": "Ying Ding Pentax K 50mm F1.4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax K 50mm F1.4 Cine Mod",
+        "北京影鼎 Pentax K 50mm",
+        "影鼎 Pentax K 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=6",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-55mm-f1-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax K",
+      "model": "55mm F1.8",
+      "name": "影鼎 Ying Ding Pentax K 55mm F1.8",
+      "englishName": "Ying Ding Pentax K 55mm F1.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax K 55mm F1.8 Cine Mod",
+        "北京影鼎 Pentax K 55mm",
+        "影鼎 Pentax K 轻量化改装 55mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=6",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-85mm-f1-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Pentax K",
+      "model": "85mm F1.8",
+      "name": "影鼎 Ying Ding Pentax K 85mm F1.8",
+      "englishName": "Ying Ding Pentax K 85mm F1.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Pentax K 85mm F1.8 Cine Mod",
+        "北京影鼎 Pentax K 85mm",
+        "影鼎 Pentax K 轻量化改装 85mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=6",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-105mm-f2-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Takumar",
+      "model": "105mm F2.8",
+      "name": "影鼎 Ying Ding Takumar 105mm F2.8",
+      "englishName": "Ying Ding Takumar 105mm F2.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Takumar 105mm F2.8 Cine Mod",
+        "北京影鼎 Takumar 105mm",
+        "影鼎 Takumar 轻量化改装 105mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=5",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-135mm-f2-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Takumar",
+      "model": "135mm F2.5",
+      "name": "影鼎 Ying Ding Takumar 135mm F2.5",
+      "englishName": "Ying Ding Takumar 135mm F2.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Takumar 135mm F2.5 Cine Mod",
+        "北京影鼎 Takumar 135mm",
+        "影鼎 Takumar 轻量化改装 135mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=5",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-15mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Takumar",
+      "model": "15mm F3.5",
+      "name": "影鼎 Ying Ding Takumar 15mm F3.5",
+      "englishName": "Ying Ding Takumar 15mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Takumar 15mm F3.5 Cine Mod",
+        "北京影鼎 Takumar 15mm",
+        "影鼎 Takumar 轻量化改装 15mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=5",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-17mm-fisheye-f4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Takumar",
+      "model": "17mm Fisheye F4",
+      "name": "影鼎 Ying Ding Takumar 17mm Fisheye F4",
+      "englishName": "Ying Ding Takumar 17mm Fisheye F4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 鱼眼镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Takumar 17mm Fisheye F4 Cine Mod",
+        "北京影鼎 Takumar 17mm Fisheye",
+        "影鼎 Takumar 轻量化改装 17mm Fisheye"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=5",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-24mm-f3-5",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Takumar",
+      "model": "24mm F3.5",
+      "name": "影鼎 Ying Ding Takumar 24mm F3.5",
+      "englishName": "Ying Ding Takumar 24mm F3.5 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Takumar 24mm F3.5 Cine Mod",
+        "北京影鼎 Takumar 24mm",
+        "影鼎 Takumar 轻量化改装 24mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=5",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-35mm-f2-0",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Takumar",
+      "model": "35mm F2.0",
+      "name": "影鼎 Ying Ding Takumar 35mm F2.0",
+      "englishName": "Ying Ding Takumar 35mm F2.0 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Takumar 35mm F2.0 Cine Mod",
+        "北京影鼎 Takumar 35mm",
+        "影鼎 Takumar 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=5",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-50mm-f1-4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Takumar",
+      "model": "50mm F1.4",
+      "name": "影鼎 Ying Ding Takumar 50mm F1.4",
+      "englishName": "Ying Ding Takumar 50mm F1.4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Takumar 50mm F1.4 Cine Mod",
+        "北京影鼎 Takumar 50mm",
+        "影鼎 Takumar 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=5",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-55mm-f1-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Takumar",
+      "model": "55mm F1.8",
+      "name": "影鼎 Ying Ding Takumar 55mm F1.8",
+      "englishName": "Ying Ding Takumar 55mm F1.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Takumar 55mm F1.8 Cine Mod",
+        "北京影鼎 Takumar 55mm",
+        "影鼎 Takumar 轻量化改装 55mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=5",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-85mm-f1-8",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Takumar",
+      "model": "85mm F1.8",
+      "name": "影鼎 Ying Ding Takumar 85mm F1.8",
+      "englishName": "Ying Ding Takumar 85mm F1.8 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Takumar 85mm F1.8 Cine Mod",
+        "北京影鼎 Takumar 85mm",
+        "影鼎 Takumar 轻量化改装 85mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=5",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-15mm-f4-5-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Voigtländer VM",
+      "model": "15mm F4.5 M",
+      "name": "影鼎 Ying Ding Voigtländer VM 15mm F4.5 M",
+      "englishName": "Ying Ding Voigtländer VM 15mm F4.5 M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Voigtländer VM 15mm F4.5 M Cine Mod",
+        "北京影鼎 Voigtländer VM 15mm",
+        "影鼎 Voigtländer VM 轻量化改装 15mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=1",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-21mm-asph-f1-4-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Voigtländer VM",
+      "model": "21mm ASPH F1.4 M",
+      "name": "影鼎 Ying Ding Voigtländer VM 21mm ASPH F1.4 M",
+      "englishName": "Ying Ding Voigtländer VM 21mm ASPH F1.4 M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Voigtländer VM 21mm ASPH F1.4 M Cine Mod",
+        "北京影鼎 Voigtländer VM 21mm ASPH",
+        "影鼎 Voigtländer VM 轻量化改装 21mm ASPH"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=1",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-28mm-asph-f1-5-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Voigtländer VM",
+      "model": "28mm ASPH F1.5 M",
+      "name": "影鼎 Ying Ding Voigtländer VM 28mm ASPH F1.5 M",
+      "englishName": "Ying Ding Voigtländer VM 28mm ASPH F1.5 M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Voigtländer VM 28mm ASPH F1.5 M Cine Mod",
+        "北京影鼎 Voigtländer VM 28mm ASPH",
+        "影鼎 Voigtländer VM 轻量化改装 28mm ASPH"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=1",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-35mm-asph-f1-2-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Voigtländer VM",
+      "model": "35mm ASPH F1.2 M",
+      "name": "影鼎 Ying Ding Voigtländer VM 35mm ASPH F1.2 M",
+      "englishName": "Ying Ding Voigtländer VM 35mm ASPH F1.2 M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Voigtländer VM 35mm ASPH F1.2 M Cine Mod",
+        "北京影鼎 Voigtländer VM 35mm ASPH",
+        "影鼎 Voigtländer VM 轻量化改装 35mm ASPH"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=1",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-40mm-asph-f1-2-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Voigtländer VM",
+      "model": "40mm ASPH F1.2 M",
+      "name": "影鼎 Ying Ding Voigtländer VM 40mm ASPH F1.2 M",
+      "englishName": "Ying Ding Voigtländer VM 40mm ASPH F1.2 M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Voigtländer VM 40mm ASPH F1.2 M Cine Mod",
+        "北京影鼎 Voigtländer VM 40mm ASPH",
+        "影鼎 Voigtländer VM 轻量化改装 40mm ASPH"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=1",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-50mm-asph-f1-0-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Voigtländer VM",
+      "model": "50mm ASPH F1.0 M",
+      "name": "影鼎 Ying Ding Voigtländer VM 50mm ASPH F1.0 M",
+      "englishName": "Ying Ding Voigtländer VM 50mm ASPH F1.0 M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Voigtländer VM 50mm ASPH F1.0 M Cine Mod",
+        "北京影鼎 Voigtländer VM 50mm ASPH",
+        "影鼎 Voigtländer VM 轻量化改装 50mm ASPH"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=1",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-55mm-f1-4",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Voigtländer VM",
+      "model": "55mm F1.4",
+      "name": "影鼎 Ying Ding Voigtländer VM 55mm F1.4",
+      "englishName": "Ying Ding Voigtländer VM 55mm F1.4 Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Voigtländer VM 55mm F1.4 Cine Mod",
+        "北京影鼎 Voigtländer VM 55mm",
+        "影鼎 Voigtländer VM 轻量化改装 55mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=1",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-75mm-f1-8-m",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Voigtländer VM",
+      "model": "75mm F1.8 M",
+      "name": "影鼎 Ying Ding Voigtländer VM 75mm F1.8 M",
+      "englishName": "Ying Ding Voigtländer VM 75mm F1.8 M Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "unknown",
+      "aliases": [
+        "Ying Ding Voigtländer VM 75mm F1.8 M Cine Mod",
+        "北京影鼎 Voigtländer VM 75mm",
+        "影鼎 Voigtländer VM 轻量化改装 75mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=1",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-yashica-yashinon-dx-28mm-f2-8-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Yashica Yashinon-DX",
+      "model": "28mm F2.8 EF",
+      "name": "影鼎 Ying Ding Yashica Yashinon-DX 28mm F2.8 EF",
+      "englishName": "Ying Ding Yashica Yashinon-DX 28mm F2.8 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Yashica Yashinon-DX 28mm F2.8 EF Cine Mod",
+        "北京影鼎 Yashica Yashinon-DX 28mm",
+        "影鼎 Yashica Yashinon-DX 轻量化改装 28mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=17",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-yashica-yashinon-dx-35mm-f2-8-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Yashica Yashinon-DX",
+      "model": "35mm F2.8 EF",
+      "name": "影鼎 Ying Ding Yashica Yashinon-DX 35mm F2.8 EF",
+      "englishName": "Ying Ding Yashica Yashinon-DX 35mm F2.8 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Yashica Yashinon-DX 35mm F2.8 EF Cine Mod",
+        "北京影鼎 Yashica Yashinon-DX 35mm",
+        "影鼎 Yashica Yashinon-DX 轻量化改装 35mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=17",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-yashica-yashinon-dx-50mm-f1-4-ef",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Yashica Yashinon-DX",
+      "model": "50mm F1.4 EF",
+      "name": "影鼎 Ying Ding Yashica Yashinon-DX 50mm F1.4 EF",
+      "englishName": "Ying Ding Yashica Yashinon-DX 50mm F1.4 EF Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "EF",
+      "aliases": [
+        "Ying Ding Yashica Yashinon-DX 50mm F1.4 EF Cine Mod",
+        "北京影鼎 Yashica Yashinon-DX 50mm",
+        "影鼎 Yashica Yashinon-DX 轻量化改装 50mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=17",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-zeiss-biotar-rehouse-75mm-f1-5-f22-pl",
+      "brand": "Ying Ding",
+      "brandZh": "影鼎",
+      "brandEn": "Ying Ding",
+      "series": "Zeiss Biotar Rehouse",
+      "model": "75mm F1.5-F22 PL",
+      "name": "影鼎 Ying Ding Zeiss Biotar Rehouse 75mm F1.5-F22 PL",
+      "englishName": "Ying Ding Zeiss Biotar Rehouse 75mm F1.5-F22 PL Cine Mod",
+      "category": "镜头",
+      "subcategory": "风格化改装 · 定焦镜头",
+      "unit": "支",
+      "costTier": 2,
+      "lensMount": "PL",
+      "aliases": [
+        "Ying Ding Zeiss Biotar Rehouse 75mm F1.5-F22 PL Cine Mod",
+        "北京影鼎 Zeiss Biotar Rehouse 75mm",
+        "影鼎 Zeiss Biotar Rehouse 轻量化改装 75mm"
+      ],
+      "verified": false,
+      "published": true,
+      "namingStatus": "pending",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "北京影鼎轻量化改装镜头参数表.pdf#page=4",
+          "scope": "inventory",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "specific-inventory",
+      "releaseReason": "影鼎参数表记录的具体改装配置；未推断原厂规格或实时库存",
+      "reviewNotes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "原表最近对焦的英制与公制值冲突，缺失项留空。"
+      ]
+    },
+    {
       "id": "lens-zhile-133-set",
       "name": "至乐 1.33×25/35/50/75/100mm 全画幅变形镜头组",
       "brand": "至乐",
@@ -36480,6 +41238,600 @@
       "identityBasis": "specific-inventory"
     },
     {
+      "id": "v63-nisi-c5-pl",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5 True Color",
+      "model": "Rotating PL",
+      "subcategory": "偏振镜",
+      "unit": "片",
+      "aliases": [
+        "耐司 C5 旋转偏振镜"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi C5 True Color Rotating PL",
+      "englishName": "NiSi C5 True Color Rotating PL",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/c5-cinema-matte-kit",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-c5-vnd",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5 True Color",
+      "model": "VND 1–5 Stops",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "耐司 C5 可变 ND 1-5档"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi C5 True Color VND 1–5 Stops",
+      "englishName": "NiSi C5 True Color VND 1–5 Stops",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/c5-cinema-matte-kit",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-03",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 0.3",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 4x565 0.3"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 4×5.65″ ND 0.3",
+      "englishName": "NiSi FS ND 4×5.65″ ND 0.3",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-06",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 0.6",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 4x565 0.6"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 4×5.65″ ND 0.6",
+      "englishName": "NiSi FS ND 4×5.65″ ND 0.6",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-09",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 0.9",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 4x565 0.9"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 4×5.65″ ND 0.9",
+      "englishName": "NiSi FS ND 4×5.65″ ND 0.9",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-12",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 1.2",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 4x565 1.2"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 4×5.65″ ND 1.2",
+      "englishName": "NiSi FS ND 4×5.65″ ND 1.2",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-15",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 1.5",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 4x565 1.5"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 4×5.65″ ND 1.5",
+      "englishName": "NiSi FS ND 4×5.65″ ND 1.5",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-18",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 1.8",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 4x565 1.8"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 4×5.65″ ND 1.8",
+      "englishName": "NiSi FS ND 4×5.65″ ND 1.8",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-21",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 2.1",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 4x565 2.1"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 4×5.65″ ND 2.1",
+      "englishName": "NiSi FS ND 4×5.65″ ND 2.1",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-4x565-24",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "4×5.65″ ND 2.4",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 4x565 2.4"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 4×5.65″ ND 2.4",
+      "englishName": "NiSi FS ND 4×5.65″ ND 2.4",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-03",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 0.3",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 66x66 0.3"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 6.6×6.6″ ND 0.3",
+      "englishName": "NiSi FS ND 6.6×6.6″ ND 0.3",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-06",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 0.6",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 66x66 0.6"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 6.6×6.6″ ND 0.6",
+      "englishName": "NiSi FS ND 6.6×6.6″ ND 0.6",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-09",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 0.9",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 66x66 0.9"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 6.6×6.6″ ND 0.9",
+      "englishName": "NiSi FS ND 6.6×6.6″ ND 0.9",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-12",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 1.2",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 66x66 1.2"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 6.6×6.6″ ND 1.2",
+      "englishName": "NiSi FS ND 6.6×6.6″ ND 1.2",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-15",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 1.5",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 66x66 1.5"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 6.6×6.6″ ND 1.5",
+      "englishName": "NiSi FS ND 6.6×6.6″ ND 1.5",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-18",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 1.8",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 66x66 1.8"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 6.6×6.6″ ND 1.8",
+      "englishName": "NiSi FS ND 6.6×6.6″ ND 1.8",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-21",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 2.1",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 66x66 2.1"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 6.6×6.6″ ND 2.1",
+      "englishName": "NiSi FS ND 6.6×6.6″ ND 2.1",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-fsnd-66x66-24",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "FS ND",
+      "model": "6.6×6.6″ ND 2.4",
+      "subcategory": "ND 滤镜",
+      "unit": "片",
+      "aliases": [
+        "NiSi FSND 66x66 2.4"
+      ],
+      "category": "滤镜",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi FS ND 6.6×6.6″ ND 2.4",
+      "englishName": "NiSi FS ND 6.6×6.6″ ND 2.4",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/cinema-fs-nd",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
       "id": "eq-nisi-nisi-yellow-light-blocker-滤镜",
       "name": "耐司 NiSi YELLOW LIGHT BLOCKER",
       "brand": "NiSi",
@@ -46598,6 +51950,303 @@
       "identityBasis": "specific-inventory"
     },
     {
+      "id": "v63-nisi-c5-cinema",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5",
+      "model": "Matte Box Cinema Kit",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "aliases": [
+        "耐司 C5 遮光斗 电影套装"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi C5 Matte Box Cinema Kit",
+      "englishName": "NiSi C5 Matte Box Cinema Kit",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/c5-cinema-matte-kit",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-c5-filmmaker",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5",
+      "model": "Matte Box Filmmaker Kit",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "aliases": [
+        "耐司 C5 遮光斗 视频套装"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi C5 Matte Box Filmmaker Kit",
+      "englishName": "NiSi C5 Matte Box Filmmaker Kit",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/c5-cinema-matte-kit",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nisi-c5-starter",
+      "brand": "NiSi",
+      "brandZh": "耐司",
+      "series": "C5",
+      "model": "Matte Box Starter Kit",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "aliases": [
+        "耐司 C5 遮光斗 基础套装"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "NiSi",
+      "name": "耐司 NiSi C5 Matte Box Starter Kit",
+      "englishName": "NiSi C5 Matte Box Starter Kit",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.nisioptics.com/c5-cinema-matte-kit",
+          "scope": "model",
+          "language": "zh-CN",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-3873",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "",
+      "model": "Magic Arm Dual Ball Heads 3873",
+      "subcategory": "魔术手臂",
+      "unit": "个",
+      "aliases": [
+        "斯莫格 3873 怪手"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "SmallRig",
+      "name": "斯莫格 SmallRig Magic Arm Dual Ball Heads 3873",
+      "englishName": "SmallRig Magic Arm Dual Ball Heads 3873",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://static.smallrig.com/mall/img/public/5muf9dm0irb-1751250368814_.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-3875",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "",
+      "model": "Magic Arm Dual Ball Heads 3875",
+      "subcategory": "魔术手臂",
+      "unit": "个",
+      "aliases": [
+        "斯莫格 3875 怪手"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "SmallRig",
+      "name": "斯莫格 SmallRig Magic Arm Dual Ball Heads 3875",
+      "englishName": "SmallRig Magic Arm Dual Ball Heads 3875",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://static.smallrig.com/mall/img/public/adz02u811rb-1751251470655_.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-3196",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "",
+      "model": "Mini Matte Box 3196",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "aliases": [
+        "斯莫格 3196 遮光斗"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "SmallRig",
+      "name": "斯莫格 SmallRig Mini Matte Box 3196",
+      "englishName": "SmallRig Mini Matte Box 3196",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.smallrig.com/smallrig-mini-matte-box-3196.html",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-3575",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "",
+      "model": "Mini Matte Box Lite 3575",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "aliases": [
+        "斯莫格 3575 遮光斗"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "SmallRig",
+      "name": "斯莫格 SmallRig Mini Matte Box Lite 3575",
+      "englishName": "SmallRig Mini Matte Box Lite 3575",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.smallrig.com/smallrig-mini-matte-box-lite-3575.html",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-vb99-3580",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "VB99",
+      "model": "Mini V Mount Battery 3580",
+      "subcategory": "供电",
+      "unit": "块",
+      "aliases": [
+        "斯莫格 VB99 V口电池 3580"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "SmallRig",
+      "name": "斯莫格 SmallRig VB99 Mini V Mount Battery 3580",
+      "englishName": "SmallRig VB99 Mini V Mount Battery 3580",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.smallrig.com/VB99-mini-V-Mount-Battery-3580.html",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-vb99-3580b",
+      "brand": "SmallRig",
+      "brandZh": "斯莫格",
+      "series": "VB99",
+      "model": "Mini V Mount Battery 3580B",
+      "subcategory": "供电",
+      "unit": "块",
+      "aliases": [
+        "斯莫格 VB99 V口电池 3580B"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "SmallRig",
+      "name": "斯莫格 SmallRig VB99 Mini V Mount Battery 3580B",
+      "englishName": "SmallRig VB99 Mini V Mount Battery 3580B",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.smallrig.com/smallrig-vb99-mini-v-mount-battery-3580.html",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
       "id": "eq-sony-sony-dvf-el200-摄影机附件",
       "name": "索尼 SONY DVF-EL200",
       "brand": "SONY",
@@ -46738,45 +52387,11 @@
       "catalogDecision": "retain-user-approved-label"
     },
     {
-      "id": "eq-tilta-tilta-armor-man-2-0-摄影机附件",
-      "name": "铁头 TILTA Armor-man 2.0",
-      "brand": "TILTA",
-      "category": "摄影机附件",
-      "subcategory": "其他附件",
-      "unit": "套",
-      "costTier": 2,
-      "aliases": [
-        "Tilta Armor-man 2.0",
-        "Tilta Armor-man 2.0 铁甲战士 2.0",
-        "铁头铁甲战士二代"
-      ],
-      "verified": false,
-      "brandZh": "铁头",
-      "brandEn": "TILTA",
-      "series": "",
-      "model": "Armor-man 2.0",
-      "namingStatus": "pending",
-      "references": [
-        {
-          "url": "https://cdn.tilta.com/wp-content/uploads/2023/01/28191111/TA-LSP8.pdf",
-          "scope": "brand",
-          "language": "zh-CN",
-          "checkedAt": "2026-10-07"
-        }
-      ],
-      "reviewNotes": [],
-      "englishName": "TILTA Armor-man 2.0",
-      "published": true,
-      "releaseReason": "库存含具体型号或可用规格，保留身份；未确认参数不补造",
-      "reviewedAt": "2026-10-07",
-      "identityBasis": "specific-inventory"
-    },
-    {
       "id": "eq-tilta-tilta-max-wireless-focus-2-axis-摄影机附件",
       "name": "铁头 TILTA MAX Wireless Focus 2-Axis",
       "brand": "TILTA",
       "category": "摄影机附件",
-      "subcategory": "其他附件",
+      "subcategory": "无线跟焦",
       "unit": "套",
       "costTier": 2,
       "aliases": [
@@ -46805,11 +52420,144 @@
       "identityBasis": "specific-inventory"
     },
     {
+      "id": "v63-mb-t16",
+      "brand": "TILTA",
+      "brandZh": "铁头",
+      "series": "Mirage",
+      "model": "Matte Box MB-T16",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "aliases": [
+        "铁头 幻境 MB-T16"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "TILTA",
+      "name": "铁头 TILTA Mirage Matte Box MB-T16",
+      "englishName": "TILTA Mirage Matte Box MB-T16",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://tilta.com/wp-content/uploads/2023/04/Tilta-Mirage-Matte-Box.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-mb-t16-b",
+      "brand": "TILTA",
+      "brandZh": "铁头",
+      "series": "Mirage",
+      "model": "Matte Box Motorized VND Kit MB-T16-B",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "aliases": [
+        "铁头 幻境 MB-T16-B"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "TILTA",
+      "name": "铁头 TILTA Mirage Matte Box Motorized VND Kit MB-T16-B",
+      "englishName": "TILTA Mirage Matte Box Motorized VND Kit MB-T16-B",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://tilta.com/wp-content/uploads/2023/04/Tilta-Mirage-Matte-Box.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-mb-t16-a",
+      "brand": "TILTA",
+      "brandZh": "铁头",
+      "series": "Mirage",
+      "model": "Matte Box VND Kit MB-T16-A",
+      "subcategory": "遮光斗",
+      "unit": "套",
+      "aliases": [
+        "铁头 幻境 MB-T16-A"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "TILTA",
+      "name": "铁头 TILTA Mirage Matte Box VND Kit MB-T16-A",
+      "englishName": "TILTA Mirage Matte Box VND Kit MB-T16-A",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://tilta.com/wp-content/uploads/2023/04/Tilta-Mirage-Matte-Box.pdf",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-nucleus-nano-ii",
+      "brand": "TILTA",
+      "brandZh": "铁头",
+      "series": "Nucleus Nano II",
+      "model": "Wireless Lens Control System",
+      "subcategory": "无线跟焦",
+      "unit": "套",
+      "aliases": [
+        "铁头 原力 N II 无线跟焦",
+        "Nucleus N2"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "TILTA",
+      "name": "铁头 TILTA Nucleus Nano II Wireless Lens Control System",
+      "englishName": "TILTA Nucleus Nano II Wireless Lens Control System",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://tilta.com/shop/nucleus-nano-ii-wireless-lens-control-system/",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
       "id": "eq-通用-tilta-nucleus-m-摄影机附件",
       "name": "铁头 TILTA NUCLEUS-M",
       "brand": "TILTA",
       "category": "摄影机附件",
-      "subcategory": "跟焦马达",
+      "subcategory": "无线跟焦",
       "unit": "套",
       "costTier": 2,
       "aliases": [
@@ -47033,60 +52781,6 @@
       "identityBasis": "generic-function"
     },
     {
-      "id": "eq-通用-hi-hat-摄影机附件",
-      "name": "通用 低脚架",
-      "brand": "通用",
-      "category": "摄影机附件",
-      "subcategory": "其他附件",
-      "unit": "套",
-      "costTier": 2,
-      "aliases": [
-        "通用 Hi-hat",
-        "Hi-hat",
-        "Hi-hat 香炉脚"
-      ],
-      "verified": false,
-      "brandZh": "通用",
-      "brandEn": "",
-      "series": "",
-      "model": "低脚架",
-      "namingStatus": "generic",
-      "references": [],
-      "reviewNotes": [],
-      "englishName": "Hi-hat",
-      "published": true,
-      "releaseReason": "功能及规格足以选材，保留通用器材",
-      "reviewedAt": "2026-10-07",
-      "identityBasis": "generic-function"
-    },
-    {
-      "id": "eq-通用-shoulder-摄影机附件",
-      "name": "通用 肩架",
-      "brand": "通用",
-      "category": "摄影机附件",
-      "subcategory": "其他附件",
-      "unit": "套",
-      "costTier": 2,
-      "aliases": [
-        "通用 Shoulder",
-        "Shoulder",
-        "Shoulder Set 肩扛支架"
-      ],
-      "verified": false,
-      "brandZh": "通用",
-      "brandEn": "",
-      "series": "",
-      "model": "肩架",
-      "namingStatus": "generic",
-      "references": [],
-      "reviewNotes": [],
-      "englishName": "Shoulder",
-      "published": true,
-      "releaseReason": "功能及规格足以选材，保留通用器材",
-      "reviewedAt": "2026-10-07",
-      "identityBasis": "generic-function"
-    },
-    {
       "id": "eq-通用-spreader-摄影机附件",
       "name": "通用 脚架撑杆",
       "brand": "通用",
@@ -47141,33 +52835,6 @@
       "identityBasis": "generic-function"
     },
     {
-      "id": "eq-通用-wooden-triangle-摄影机附件",
-      "name": "通用 三角木",
-      "brand": "通用",
-      "category": "摄影机附件",
-      "subcategory": "其他附件",
-      "unit": "套",
-      "costTier": 2,
-      "aliases": [
-        "通用 Wooden Triangle",
-        "Wooden Triangle",
-        "Wooden Triangle 木三角"
-      ],
-      "verified": false,
-      "brandZh": "通用",
-      "brandEn": "",
-      "series": "",
-      "model": "三角木",
-      "namingStatus": "generic",
-      "references": [],
-      "reviewNotes": [],
-      "englishName": "Wooden Triangle",
-      "published": true,
-      "releaseReason": "功能及规格足以选材，保留通用器材",
-      "reviewedAt": "2026-10-07",
-      "identityBasis": "generic-function"
-    },
-    {
       "id": "eq-通用-铁头无线跟焦-摄影机附件",
       "name": "通用 铁头无线跟焦",
       "brand": "通用",
@@ -47189,33 +52856,6 @@
         "英文行采用可识别型号和功能译名；未确认的品牌英文名或昵称不编造译名"
       ],
       "englishName": "Wireless Follow Focus Camera Accessory",
-      "published": true,
-      "releaseReason": "功能及规格足以选材，保留通用器材",
-      "reviewedAt": "2026-10-07",
-      "identityBasis": "generic-function"
-    },
-    {
-      "id": "eq-通用-walk-up-scaffold-1m-1m-摄影机附件",
-      "name": "通用 移动脚手架 1M×1M",
-      "brand": "通用",
-      "category": "摄影机附件",
-      "subcategory": "其他附件",
-      "unit": "套",
-      "costTier": 2,
-      "aliases": [
-        "通用 Walk-Up Scaffold 1M×1M",
-        "Walk-Up Scaffold 1M×1M",
-        "Walk-Up Scaffold 1M×1M 摄影高台"
-      ],
-      "verified": false,
-      "brandZh": "通用",
-      "brandEn": "",
-      "series": "",
-      "model": "移动脚手架 1M×1M",
-      "namingStatus": "generic",
-      "references": [],
-      "reviewNotes": [],
-      "englishName": "Walk-Up Scaffold 1M×1M",
       "published": true,
       "releaseReason": "功能及规格足以选材，保留通用器材",
       "reviewedAt": "2026-10-07",
@@ -48233,6 +53873,176 @@
       "releaseReason": "库存含具体型号或可用规格，保留身份；未确认参数不补造",
       "reviewedAt": "2026-10-07",
       "identityBasis": "specific-inventory"
+    },
+    {
+      "id": "v63-2269",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "Arca Compatible Top Plate 2269",
+      "subcategory": "快装系统",
+      "unit": "个",
+      "aliases": [
+        "Ulanzi Falcam 2269",
+        "优篮子 隼 F38 上板 2269"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "Falcam",
+      "name": "Falcam F38 Arca Compatible Top Plate 2269",
+      "englishName": "Falcam F38 Arca Compatible Top Plate 2269",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-2270",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "Bottom Plate 2270",
+      "subcategory": "快装系统",
+      "unit": "个",
+      "aliases": [
+        "Ulanzi Falcam 2270",
+        "优篮子 隼 F38 底座 2270"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "Falcam",
+      "name": "Falcam F38 Bottom Plate 2270",
+      "englishName": "Falcam F38 Bottom Plate 2270",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-f38b3404",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "Multi-Hole Quick Release Kit F38B3404",
+      "subcategory": "快装系统",
+      "unit": "套",
+      "aliases": [
+        "Ulanzi Falcam F38B3404",
+        "优篮子 隼 F38 多孔快装套组 F38B3404"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "Falcam",
+      "name": "Falcam F38 Multi-Hole Quick Release Kit F38B3404",
+      "englishName": "Falcam F38 Multi-Hole Quick Release Kit F38B3404",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-2465",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "PD Compatible Top Plate 2465",
+      "subcategory": "快装系统",
+      "unit": "个",
+      "aliases": [
+        "Ulanzi Falcam 2465",
+        "优篮子 隼 F38 上板 2465"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "Falcam",
+      "name": "Falcam F38 PD Compatible Top Plate 2465",
+      "englishName": "Falcam F38 PD Compatible Top Plate 2465",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
+    },
+    {
+      "id": "v63-2268",
+      "brand": "Falcam",
+      "brandZh": "",
+      "series": "F38",
+      "model": "Quick Release Kit 2268",
+      "subcategory": "快装系统",
+      "unit": "套",
+      "aliases": [
+        "Ulanzi Falcam 2268",
+        "优篮子 隼 F38 快装套组 2268"
+      ],
+      "category": "摄影机附件",
+      "brandEn": "Falcam",
+      "name": "Falcam F38 Quick Release Kit 2268",
+      "englishName": "Falcam F38 Quick Release Kit 2268",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
     },
     {
       "id": "eq-hme-hme-mb300-wireless-headset-system-hme-摄影机附件",
@@ -49710,33 +55520,6 @@
       ]
     },
     {
-      "id": "eq-通用-french-flag-w-arm-监看",
-      "name": "通用 带臂遮光旗",
-      "brand": "通用",
-      "category": "监看",
-      "subcategory": "其他",
-      "unit": "套",
-      "costTier": 1,
-      "aliases": [
-        "通用 French Flag w/Arm",
-        "French Flag w/Arm",
-        "法国旗 · French Flag w/Arm"
-      ],
-      "verified": false,
-      "brandZh": "通用",
-      "brandEn": "",
-      "series": "",
-      "model": "带臂遮光旗",
-      "namingStatus": "generic",
-      "references": [],
-      "reviewNotes": [],
-      "englishName": "French Flag w/Arm",
-      "published": true,
-      "releaseReason": "功能及规格足以选材，保留通用器材",
-      "reviewedAt": "2026-10-07",
-      "identityBasis": "generic-function"
-    },
-    {
       "id": "eq-通用-director-s-chair-监看",
       "name": "通用 导演椅",
       "brand": "通用",
@@ -49882,7 +55665,8 @@
       "aliases": [
         "通用 teleprompter",
         "teleprompter",
-        "提词器 · teleprompter"
+        "提词器 · teleprompter",
+        "题字器"
       ],
       "verified": false,
       "brandZh": "通用",
@@ -52648,11 +58432,45 @@
       "identityBasis": "specific-inventory"
     },
     {
+      "id": "eq-tilta-tilta-armor-man-2-0-摄影机附件",
+      "name": "铁头 TILTA Armor-man 2.0",
+      "brand": "TILTA",
+      "category": "移动器材",
+      "subcategory": "辅助减重器",
+      "unit": "套",
+      "costTier": 2,
+      "aliases": [
+        "Tilta Armor-man 2.0",
+        "Tilta Armor-man 2.0 铁甲战士 2.0",
+        "铁头铁甲战士二代"
+      ],
+      "verified": false,
+      "brandZh": "铁头",
+      "brandEn": "TILTA",
+      "series": "",
+      "model": "Armor-man 2.0",
+      "namingStatus": "pending",
+      "references": [
+        {
+          "url": "https://cdn.tilta.com/wp-content/uploads/2023/01/28191111/TA-LSP8.pdf",
+          "scope": "brand",
+          "language": "zh-CN",
+          "checkedAt": "2026-10-07"
+        }
+      ],
+      "reviewNotes": [],
+      "englishName": "TILTA Armor-man 2.0",
+      "published": true,
+      "releaseReason": "库存含具体型号或可用规格，保留身份；未确认参数不补造",
+      "reviewedAt": "2026-10-07",
+      "identityBasis": "specific-inventory"
+    },
+    {
       "id": "eq-tilta-tilta-armor-man-3-0-摄影机附件",
       "name": "铁头 TILTA Armorman 3.0",
       "brand": "TILTA",
       "category": "移动器材",
-      "subcategory": "其他附件",
+      "subcategory": "辅助减重器",
       "unit": "套",
       "costTier": 2,
       "aliases": [
@@ -53216,7 +59034,10 @@
       "aliases": [
         "通用 Hi-Hat",
         "Hi-Hat",
-        "地锅 · Hi-Hat"
+        "地锅 · Hi-Hat",
+        "通用 Hi-hat",
+        "Hi-hat",
+        "Hi-hat 香炉脚"
       ],
       "verified": false,
       "brandZh": "通用",
@@ -53476,9 +59297,12 @@
       "category": "移动器材",
       "subcategory": "移动设备",
       "unit": "套",
-      "costTier": 1,
+      "costTier": 2,
       "aliases": [
-        "肩架"
+        "肩架",
+        "通用 Shoulder",
+        "Shoulder",
+        "Shoulder Set 肩扛支架"
       ],
       "verified": false,
       "brandZh": "通用",
@@ -54506,7 +60330,10 @@
       "aliases": [
         "通用 Walk-Up Scaffold 1M×1M1M×1M",
         "Walk-Up Scaffold 1M×1M1M×1M",
-        "Walk-Up Scaffold 1M×1M1M×1M 高台"
+        "Walk-Up Scaffold 1M×1M1M×1M 高台",
+        "通用 Walk-Up Scaffold 1M×1M",
+        "Walk-Up Scaffold 1M×1M",
+        "Walk-Up Scaffold 1M×1M 摄影高台"
       ],
       "verified": false,
       "brandZh": "通用",
@@ -57835,6 +63662,39 @@
       "reviewedAt": "2026-10-07",
       "identityBasis": "user-retained-name",
       "catalogDecision": "retain-user-approved-label"
+    },
+    {
+      "id": "v63-mt-44-2502b",
+      "brand": "Ulanzi",
+      "brandZh": "优篮子",
+      "series": "MT-44",
+      "model": "Extendable Vlog Tripod 2502B",
+      "subcategory": "三脚架",
+      "unit": "套",
+      "aliases": [
+        "优篮子 MT44 三脚架"
+      ],
+      "category": "移动器材",
+      "brandEn": "Ulanzi",
+      "name": "优篮子 Ulanzi MT-44 Extendable Vlog Tripod 2502B",
+      "englishName": "Ulanzi MT-44 Extendable Vlog Tripod 2502B",
+      "costTier": 2,
+      "verified": true,
+      "published": true,
+      "namingStatus": "official-model",
+      "reviewedAt": "2026-11-15",
+      "inventoryAvailability": "unconfirmed",
+      "references": [
+        {
+          "url": "https://www.ulanzi.com/en-sg/products/ulanzi-mt-44-extendable-vlog-tripod-2502b",
+          "scope": "model",
+          "language": "en",
+          "checkedAt": "2026-11-15"
+        }
+      ],
+      "identityBasis": "official-model",
+      "releaseReason": "厂商资料确认该型号或配置",
+      "reviewNotes": []
     },
     {
       "id": "eq-bassco-bassco-blocks-移动器材",
@@ -76203,31 +82063,6 @@
       "references": [],
       "reviewNotes": [],
       "englishName": "Camera Helmet",
-      "published": true,
-      "releaseReason": "功能及规格足以选材，保留通用器材",
-      "reviewedAt": "2026-10-07",
-      "identityBasis": "generic-function"
-    },
-    {
-      "id": "eq-通用-题字器-其他",
-      "name": "通用 题字器",
-      "brand": "通用",
-      "category": "其他",
-      "subcategory": "其他辅助设备",
-      "unit": "套",
-      "costTier": 2,
-      "aliases": [
-        "题字器"
-      ],
-      "verified": false,
-      "brandZh": "通用",
-      "brandEn": "",
-      "series": "",
-      "model": "题字器",
-      "namingStatus": "generic",
-      "references": [],
-      "reviewNotes": [],
-      "englishName": "Teleprompter",
       "published": true,
       "releaseReason": "功能及规格足以选材，保留通用器材",
       "reviewedAt": "2026-10-07",

@@ -1,42 +1,168 @@
 {
   "version": "V5.1",
   "checkedAt": "2026-10-07",
-  "inputRows": 2256,
+  "inputRows": 2418,
+  "specialtyRows": 162,
   "baselineRows": 2043,
   "restoredRows": 31,
   "addedRows": 182,
   "finalReviewAddedRows": 155,
-  "canonicalRows": 2165,
-  "publishedRows": 2150,
+  "canonicalRows": 2321,
+  "publishedRows": 2306,
   "archivedRows": 15,
-  "mergedRows": 91,
-  "verifiedCanonicalRows": 703,
+  "mergedRows": 97,
+  "verifiedCanonicalRows": 740,
   "excludedRows": 4,
   "supersededRows": 11,
   "publishedIdentityBasis": {
-    "official-model": 703,
+    "official-model": 740,
     "official-series": 116,
-    "specific-inventory": 821,
-    "generic-function": 452,
+    "specific-inventory": 946,
+    "generic-function": 446,
     "user-retained-name": 58
   },
   "correctedRows": 105,
   "namingStatuses": {
-    "official-model": 703,
+    "official-model": 740,
     "official-series": 116,
-    "pending": 900,
-    "generic": 446
+    "pending": 1025,
+    "generic": 440
   },
   "categories": {
     "摄影机": 82,
-    "镜头": 803,
-    "滤镜": 261,
-    "摄影机附件": 125,
-    "监看": 78,
-    "移动器材": 350,
+    "镜头": 928,
+    "滤镜": 279,
+    "摄影机附件": 138,
+    "监看": 77,
+    "移动器材": 352,
     "灯光器材": 407,
     "录音器材": 41,
-    "其他": 18
+    "其他": 17
+  },
+  "classificationReview": {
+    "version": "V6.3",
+    "reclassifications": [
+      {
+        "id": "eq-tilta-tilta-armor-man-2-0-摄影机附件",
+        "category": "移动器材",
+        "subcategory": "辅助减重器",
+        "reason": "稳定器减重支撑系统归入移动器材"
+      },
+      {
+        "id": "eq-tilta-tilta-armor-man-3-0-摄影机附件",
+        "category": "移动器材",
+        "subcategory": "辅助减重器",
+        "reason": "稳定器减重支撑系统归入移动器材"
+      },
+      {
+        "id": "eq-通用-tilta-max-armor-man-移动器材",
+        "category": "移动器材",
+        "subcategory": "辅助减重器",
+        "reason": "历史条目未标代际，保留独立记录"
+      },
+      {
+        "id": "eq-通用-tilta-nucleus-m-摄影机附件",
+        "category": "摄影机附件",
+        "subcategory": "无线跟焦",
+        "reason": "无线镜头控制套组，保留原代际"
+      },
+      {
+        "id": "eq-tilta-tilta-max-wireless-focus-2-axis-摄影机附件",
+        "category": "摄影机附件",
+        "subcategory": "无线跟焦",
+        "reason": "两轴无线跟焦配置保持独立"
+      }
+    ],
+    "merges": [
+      {
+        "from": "eq-通用-french-flag-w-arm-监看",
+        "into": "eq-通用-french-flag-w-arm-摄影机附件",
+        "reason": "同为带臂遮光旗，归摄影机附件"
+      },
+      {
+        "from": "eq-通用-hi-hat-摄影机附件",
+        "into": "eq-通用-hi-hat-移动器材",
+        "reason": "同为 Hi-Hat 低脚架，归移动器材"
+      },
+      {
+        "from": "eq-通用-shoulder-摄影机附件",
+        "into": "eq-通用-肩架-移动器材",
+        "reason": "同为通用肩架，归移动器材"
+      },
+      {
+        "from": "eq-通用-wooden-triangle-摄影机附件",
+        "into": "eq-通用-wooden-triangle-移动器材",
+        "reason": "同为通用承托三角木，归移动器材"
+      },
+      {
+        "from": "eq-通用-walk-up-scaffold-1m-1m-摄影机附件",
+        "into": "eq-通用-walk-up-scaffold-1m-1m1m-1m-移动器材",
+        "reason": "同为 1m×1m 移动脚手架，归移动器材"
+      },
+      {
+        "from": "eq-通用-题字器-其他",
+        "into": "eq-通用-teleprompter-监看",
+        "reason": "同为通用提词器，归监看"
+      }
+    ],
+    "remainingCandidates": [
+      [
+        {
+          "id": "eq-magliner-magliner-trolley-摄影机附件",
+          "name": "Magliner Trolley",
+          "category": "摄影机附件",
+          "unit": "套"
+        },
+        {
+          "id": "eq-通用-magliner-trolley-监看",
+          "name": "Magliner Trolley",
+          "category": "监看",
+          "unit": "套"
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-aluminum-tube-移动器材",
+          "name": "通用 铝管",
+          "category": "移动器材",
+          "unit": "套"
+        },
+        {
+          "id": "eq-通用-aluminum-pipe-灯光器材",
+          "name": "通用 铝管",
+          "category": "灯光器材",
+          "unit": "套"
+        }
+      ],
+      [
+        {
+          "id": "eq-通用-walk-up-scaffolds-移动器材",
+          "name": "通用 移动脚手架",
+          "category": "移动器材",
+          "unit": "套"
+        },
+        {
+          "id": "eq-通用-walk-up-scaffold-灯光器材",
+          "name": "通用 移动脚手架",
+          "category": "灯光器材",
+          "unit": "套"
+        }
+      ],
+      [
+        {
+          "id": "eq-gfm-gf-primo-dolly-移动器材",
+          "name": "GFM GF-Primo Dolly",
+          "category": "移动器材",
+          "unit": "节"
+        },
+        {
+          "id": "eq-gfm-gf-primo-dollyprimo-移动器材",
+          "name": "GFM GF-Primo Dolly",
+          "category": "移动器材",
+          "unit": "套"
+        }
+      ]
+    ]
   },
   "finalReviewFile": "data/catalog/review.v5.1.json",
   "brandCoverage": [
@@ -8502,14 +8628,14 @@
   ],
   "publishedCategories": {
     "摄影机": 79,
-    "镜头": 802,
-    "滤镜": 261,
-    "摄影机附件": 124,
-    "监看": 78,
-    "移动器材": 348,
+    "镜头": 927,
+    "滤镜": 279,
+    "摄影机附件": 137,
+    "监看": 77,
+    "移动器材": 350,
     "灯光器材": 399,
     "录音器材": 41,
-    "其他": 18
+    "其他": 17
   },
   "merges": [
     {
@@ -8975,6 +9101,36 @@
       "reason": "分类、品牌、单位及完整规范名称相同"
     },
     {
+      "removedId": "eq-通用-hi-hat-摄影机附件",
+      "retainedId": "eq-通用-hi-hat-移动器材",
+      "name": "通用 低脚架",
+      "reason": "同为 Hi-Hat 低脚架，归移动器材"
+    },
+    {
+      "removedId": "eq-通用-shoulder-摄影机附件",
+      "retainedId": "eq-通用-肩架-移动器材",
+      "name": "通用 肩架",
+      "reason": "同为通用肩架，归移动器材"
+    },
+    {
+      "removedId": "eq-通用-walk-up-scaffold-1m-1m-摄影机附件",
+      "retainedId": "eq-通用-walk-up-scaffold-1m-1m1m-1m-移动器材",
+      "name": "通用 移动脚手架 1M×1M",
+      "reason": "同为 1m×1m 移动脚手架，归移动器材"
+    },
+    {
+      "removedId": "eq-通用-wooden-triangle-摄影机附件",
+      "retainedId": "eq-通用-wooden-triangle-移动器材",
+      "name": "通用 三角木",
+      "reason": "同为通用承托三角木，归移动器材"
+    },
+    {
+      "removedId": "eq-通用-french-flag-w-arm-监看",
+      "retainedId": "eq-通用-french-flag-w-arm-摄影机附件",
+      "name": "通用 带臂遮光旗",
+      "reason": "同为带臂遮光旗，归摄影机附件"
+    },
+    {
       "removedId": "eq-通用-video-device-pix-e7-监看",
       "retainedId": "eq-video-devices-video-devices-pix-e7-monitor-监看",
       "name": "Video Devices PIX-E7",
@@ -9045,6 +9201,12 @@
       "retainedId": "eq-aputure-aputure-bi-color-ls-300x-灯光器材",
       "name": "爱图仕 Aputure 光风暴 LS 300x",
       "reason": "分类、品牌、单位及完整规范名称相同"
+    },
+    {
+      "removedId": "eq-通用-题字器-其他",
+      "retainedId": "eq-通用-teleprompter-监看",
+      "name": "通用 题字器",
+      "reason": "同为通用提词器，归监看"
     },
     {
       "removedId": "v5-restored-0",
@@ -11032,6 +11194,1139 @@
       "published": true,
       "notes": [
         "系列、焦段及光圈已有厂商依据；卡口沿用具体库存记录，不推测改装配置"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-135mm-f2-ef",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 135mm F2 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-15mm-fisheye-f2-8-ef",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 15mm Fisheye F2.8 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-20mm-f2-8-ef",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 20mm F2.8 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-24mm-f2-ef",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 24mm F2 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-28mm-f2-ef",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 28mm F2 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-50mm-f1-4-ef",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 50mm F1.4 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-nfd-85mm-f1-2-ef",
+      "name": "影鼎 Ying Ding Canon FD (NFD) 85mm F1.2 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-100mm-f2-8-ef",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 100mm F2.8 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-135mm-f2-5-ef",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 135mm F2.5 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-17mm-f4-ef",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 17mm F4 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-200mm-f2-8-ef",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 200mm F2.8 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-20mm-f2-8-ef",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 20mm F2.8 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-24mm-f2-8-ef",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 24mm F2.8 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-35mm-f2-ef",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 35mm F2 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-55mm-f1-2-ef",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 55mm F1.2 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-canon-fd-ssc-85mm-f1-2-ef",
+      "name": "影鼎 Ying Ding Canon FD (SSC) 85mm F1.2 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-135mm-t3-6-pl",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 135mm T3.6 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-20mm-t2-9-pl",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 20mm T2.9 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-28mm-t2-9-pl",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 28mm T2.9 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-35mm-t2-5-pl",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 35mm T2.5 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-50mm-t1-9-pl",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 50mm T1.9 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-carl-zeiss-jena-80mm-t1-9-pl",
+      "name": "影鼎 Ying Ding Carl Zeiss Jena 80mm T1.9 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-10mm-f2-8-t3-1",
+      "name": "影鼎 Ying Ding Laowa 10mm F2.8 / T3.1",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-12mm-t2-9-pl",
+      "name": "影鼎 Ying Ding Laowa 12mm T2.9 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-15mm-f2-8-m",
+      "name": "影鼎 Ying Ding Laowa 15mm F2.8 M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-15mm-macro-t4-pl",
+      "name": "影鼎 Ying Ding Laowa 15mm Macro T4 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-laowa-9mm-f5-6-pl",
+      "name": "影鼎 Ying Ding Laowa 9mm F5.6 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-135mm-m",
+      "name": "影鼎 Ying Ding Leica M0.8 135mm M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-21mm-m",
+      "name": "影鼎 Ying Ding Leica M0.8 21mm M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-24mm-m",
+      "name": "影鼎 Ying Ding Leica M0.8 24mm M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-35mm-m",
+      "name": "影鼎 Ying Ding Leica M0.8 35mm M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-50mm-m",
+      "name": "影鼎 Ying Ding Leica M0.8 50mm M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-75mm-m",
+      "name": "影鼎 Ying Ding Leica M0.8 75mm M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-m0-8-90mm-m",
+      "name": "影鼎 Ying Ding Leica M0.8 90mm M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "影鼎资料注明该配置与 ALEXA Mini 有后组干涉，须核对具体机身。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-elmarit-r-19mm-f2-8",
+      "name": "影鼎 Ying Ding Leica R ELMARIT-R 19mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-elmarit-r-24mm-f2-8",
+      "name": "影鼎 Ying Ding Leica R ELMARIT-R 24mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-elmarit-r-28mm-f2-8",
+      "name": "影鼎 Ying Ding Leica R ELMARIT-R 28mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-summicron-r-35mm-f2",
+      "name": "影鼎 Ying Ding Leica R Summicron-R 35mm F2",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-summicron-r-50mm-f2",
+      "name": "影鼎 Ying Ding Leica R Summicron-R 50mm F2",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-summicron-r-90mm-f2",
+      "name": "影鼎 Ying Ding Leica R Summicron-R 90mm F2",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-leica-r-super-elmar-r-15mm-f3-5",
+      "name": "影鼎 Ying Ding Leica R Super-Elmar-R 15mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-110mm-f2-8-pl",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 110mm F2.8 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-150mm-f2-8-lpl",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 150mm F2.8 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-24mm-f4-pl",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 24mm F4 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-35mm-f3-5-pl",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 35mm F3.5 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-45mm-f2-8-pl",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 45mm F2.8 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-55mm-f2-8-pl",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 55mm F2.8 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-70mm-f2-8-pl",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 70mm F2.8 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-mamiya-sekor-c-80mm-f1-9-pl",
+      "name": "影鼎 Ying Ding Mamiya Sekor-C 80mm F1.9 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-35mm-f1-4",
+      "name": "影鼎 Ying Ding Nikkor AI 35mm F1.4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-105mm-f1-8",
+      "name": "影鼎 Ying Ding Nikkor AI-S 105mm F1.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-135mm-f2-0",
+      "name": "影鼎 Ying Ding Nikkor AI-S 135mm F2.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-15mm-f3-5",
+      "name": "影鼎 Ying Ding Nikkor AI-S 15mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-18mm-f3-5",
+      "name": "影鼎 Ying Ding Nikkor AI-S 18mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-20mm-f2-8",
+      "name": "影鼎 Ying Ding Nikkor AI-S 20mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-24mm-f2-0",
+      "name": "影鼎 Ying Ding Nikkor AI-S 24mm F2.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-28mm-f2-0",
+      "name": "影鼎 Ying Ding Nikkor AI-S 28mm F2.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-50mm-f1-2",
+      "name": "影鼎 Ying Ding Nikkor AI-S 50mm F1.2",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-ai-s-85mm-f1-4",
+      "name": "影鼎 Ying Ding Nikkor AI-S 85mm F1.4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-24mm-f2-8",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 24mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-28mm-f2-0",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 28mm F2.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-35mm-f2-0",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 35mm F2.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-50mm-f1-4",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 50mm F1.4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-55mm-f1-2",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 55mm F1.2",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-58mm-f1-4",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 58mm F1.4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-nikkor-non-ai-85mm-f1-8",
+      "name": "影鼎 Ying Ding Nikkor Non-AI 85mm F1.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-100mm-f2-8-lpl",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 100mm F2.8 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-135mm-f2-8-lpl",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 135mm F2.8 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-18mm-f3-5-lpl",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 18mm F3.5 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-24mm-f2-0-lpl",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 24mm F2.0 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-35mm-f2-0-lpl",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 35mm F2.0 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-50mm-f1-4-lpl",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 50mm F1.4 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-50mm-macro-f2-0-lpl",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 50mm Macro F2.0 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-55mm-f1-2-lpl",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 55mm F1.2 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-olympus-zuiko-om-85mm-f2-0-lpl",
+      "name": "影鼎 Ying Ding Olympus ZUIKO OM 85mm F2.0 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-150mm-f3-5",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 150mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-35mm-f3-5",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 35mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-45mm-f2-8",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 45mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-55mm-f2-8",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 55mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-645-a-smc-75mm-f2-8",
+      "name": "影鼎 Ying Ding Pentax 645-A SMC 75mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-105mm-f2-4-f22-lpl",
+      "name": "影鼎 Ying Ding Pentax 67 105mm F2.4-F22 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-35mm-f4-5-f22-lpl",
+      "name": "影鼎 Ying Ding Pentax 67 35mm F4.5-F22 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-45mm-f4-0-f22-lpl",
+      "name": "影鼎 Ying Ding Pentax 67 45mm F4.0-F22 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-55mm-f3-5-f22-lpl",
+      "name": "影鼎 Ying Ding Pentax 67 55mm F3.5-F22 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-75mm-f4-5-f22-lpl",
+      "name": "影鼎 Ying Ding Pentax 67 75mm F4.5-F22 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-67-90mm-f2-8-f22-lpl",
+      "name": "影鼎 Ying Ding Pentax 67 90mm F2.8-F22 LPL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-15mm-f3-5",
+      "name": "影鼎 Ying Ding Pentax A 15mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-20mm-f2-8",
+      "name": "影鼎 Ying Ding Pentax A 20mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-24-50mm-f4-0",
+      "name": "影鼎 Ying Ding Pentax A 24-50mm F4.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-24mm-f2-8",
+      "name": "影鼎 Ying Ding Pentax A 24mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-28mm-f2-0",
+      "name": "影鼎 Ying Ding Pentax A 28mm F2.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-35mm-f2-0",
+      "name": "影鼎 Ying Ding Pentax A 35mm F2.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-50mm-f1-2",
+      "name": "影鼎 Ying Ding Pentax A 50mm F1.2",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-50mm-f1-4",
+      "name": "影鼎 Ying Ding Pentax A 50mm F1.4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-a-85mm-f1-4",
+      "name": "影鼎 Ying Ding Pentax A 85mm F1.4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-15mm-f3-5",
+      "name": "影鼎 Ying Ding Pentax K 15mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-18mm-f3-5",
+      "name": "影鼎 Ying Ding Pentax K 18mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-24mm-f2-8",
+      "name": "影鼎 Ying Ding Pentax K 24mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-30mm-f2-8",
+      "name": "影鼎 Ying Ding Pentax K 30mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-35mm-f2-0",
+      "name": "影鼎 Ying Ding Pentax K 35mm F2.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-50mm-f1-2",
+      "name": "影鼎 Ying Ding Pentax K 50mm F1.2",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-50mm-f1-4",
+      "name": "影鼎 Ying Ding Pentax K 50mm F1.4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-55mm-f1-8",
+      "name": "影鼎 Ying Ding Pentax K 55mm F1.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-pentax-k-85mm-f1-8",
+      "name": "影鼎 Ying Ding Pentax K 85mm F1.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-105mm-f2-8",
+      "name": "影鼎 Ying Ding Takumar 105mm F2.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-135mm-f2-5",
+      "name": "影鼎 Ying Ding Takumar 135mm F2.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-15mm-f3-5",
+      "name": "影鼎 Ying Ding Takumar 15mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-17mm-fisheye-f4",
+      "name": "影鼎 Ying Ding Takumar 17mm Fisheye F4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-24mm-f3-5",
+      "name": "影鼎 Ying Ding Takumar 24mm F3.5",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-35mm-f2-0",
+      "name": "影鼎 Ying Ding Takumar 35mm F2.0",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-50mm-f1-4",
+      "name": "影鼎 Ying Ding Takumar 50mm F1.4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-55mm-f1-8",
+      "name": "影鼎 Ying Ding Takumar 55mm F1.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-takumar-85mm-f1-8",
+      "name": "影鼎 Ying Ding Takumar 85mm F1.8",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-15mm-f4-5-m",
+      "name": "影鼎 Ying Ding Voigtländer VM 15mm F4.5 M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-21mm-asph-f1-4-m",
+      "name": "影鼎 Ying Ding Voigtländer VM 21mm ASPH F1.4 M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-28mm-asph-f1-5-m",
+      "name": "影鼎 Ying Ding Voigtländer VM 28mm ASPH F1.5 M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-35mm-asph-f1-2-m",
+      "name": "影鼎 Ying Ding Voigtländer VM 35mm ASPH F1.2 M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-40mm-asph-f1-2-m",
+      "name": "影鼎 Ying Ding Voigtländer VM 40mm ASPH F1.2 M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-50mm-asph-f1-0-m",
+      "name": "影鼎 Ying Ding Voigtländer VM 50mm ASPH F1.0 M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-55mm-f1-4",
+      "name": "影鼎 Ying Ding Voigtländer VM 55mm F1.4",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-75mm-f1-8-m",
+      "name": "影鼎 Ying Ding Voigtländer VM 75mm F1.8 M",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-yashica-yashinon-dx-28mm-f2-8-ef",
+      "name": "影鼎 Ying Ding Yashica Yashinon-DX 28mm F2.8 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-yashica-yashinon-dx-35mm-f2-8-ef",
+      "name": "影鼎 Ying Ding Yashica Yashinon-DX 35mm F2.8 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-yashica-yashinon-dx-50mm-f1-4-ef",
+      "name": "影鼎 Ying Ding Yashica Yashinon-DX 50mm F1.4 EF",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。"
+      ]
+    },
+    {
+      "id": "v63-yd-zeiss-biotar-rehouse-75mm-f1-5-f22-pl",
+      "name": "影鼎 Ying Ding Zeiss Biotar Rehouse 75mm F1.5-F22 PL",
+      "status": "pending",
+      "published": true,
+      "notes": [
+        "影鼎改装配置；多卡口为来源所列选项，实际装机需确认。",
+        "原表最近对焦的英制与公制值冲突，缺失项留空。"
       ]
     },
     {
@@ -14799,13 +16094,6 @@
       "notes": []
     },
     {
-      "id": "eq-tilta-tilta-armor-man-2-0-摄影机附件",
-      "name": "铁头 TILTA Armor-man 2.0",
-      "status": "pending",
-      "published": true,
-      "notes": []
-    },
-    {
       "id": "eq-tilta-tilta-max-wireless-focus-2-axis-摄影机附件",
       "name": "铁头 TILTA MAX Wireless Focus 2-Axis",
       "status": "pending",
@@ -15774,6 +17062,13 @@
       "notes": [
         "英文行采用可识别型号和功能译名；未确认的品牌英文名或昵称不编造译名"
       ]
+    },
+    {
+      "id": "eq-tilta-tilta-armor-man-2-0-摄影机附件",
+      "name": "铁头 TILTA Armor-man 2.0",
+      "status": "pending",
+      "published": true,
+      "notes": []
     },
     {
       "id": "eq-通用-tilta-max-armor-man-移动器材",

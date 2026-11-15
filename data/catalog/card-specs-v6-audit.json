@@ -1,40 +1,40 @@
 {
   "version": "V6",
   "summary": {
-    "reviewedRows": 2150,
-    "completeRows": 1346,
-    "incompleteRows": 804,
+    "reviewedRows": 2306,
+    "completeRows": 1489,
+    "incompleteRows": 817,
     "reviewStatus": {
-      "identity-required": 658,
-      "source-unavailable": 146,
+      "identity-required": 653,
+      "source-unavailable": 164,
       "research-pending": 0
     },
     "seriesReferenceRows": 240,
-    "metrics": 4572,
+    "metrics": 5031,
     "categories": {
       "摄影机": {
         "total": 79,
         "complete": 76
       },
       "镜头": {
-        "total": 802,
-        "complete": 683
+        "total": 927,
+        "complete": 805
       },
       "滤镜": {
-        "total": 261,
-        "complete": 171
+        "total": 279,
+        "complete": 187
       },
       "摄影机附件": {
-        "total": 124,
-        "complete": 61
+        "total": 137,
+        "complete": 65
       },
       "监看": {
-        "total": 78,
+        "total": 77,
         "complete": 37
       },
       "移动器材": {
-        "total": 348,
-        "complete": 125
+        "total": 350,
+        "complete": 126
       },
       "灯光器材": {
         "total": 399,
@@ -45,7 +45,7 @@
         "complete": 34
       },
       "其他": {
-        "total": 18,
+        "total": 17,
         "complete": 2
       }
     }
@@ -752,6 +752,36 @@
           "field": "尚缺2项代表技术指标",
           "reason": "库存名称无法唯一确认型号、代际、原厂卡口或改装状态，现有资料无法可靠归属到具体系列；需补充实物铭牌、系列名或配置。"
         }
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-15mm-f4-5-m",
+      "name": "影鼎 Ying Ding Voigtländer VM 15mm F4.5 M",
+      "category": "镜头",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-yd-voigtlander-vm-55mm-f1-4",
+      "name": "影鼎 Ying Ding Voigtländer VM 55mm F1.4",
+      "category": "镜头",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-yd-zeiss-biotar-rehouse-75mm-f1-5-f22-pl",
+      "name": "影鼎 Ying Ding Zeiss Biotar Rehouse 75mm F1.5-F22 PL",
+      "category": "镜头",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
       ]
     },
     {
@@ -1672,6 +1702,26 @@
       "reviewStatus": "identity-required",
       "missing": [
         "库存名称不足以确认滤镜的完整系列/光学版本、制造代际或实际安装规格；需补实物标签、完整型号或配置。"
+      ]
+    },
+    {
+      "id": "v63-nisi-c5-pl",
+      "name": "耐司 NiSi C5 True Color Rotating PL",
+      "category": "滤镜",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-nisi-c5-vnd",
+      "name": "耐司 NiSi C5 True Color VND 1–5 Stops",
+      "category": "滤镜",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
       ]
     },
     {
@@ -2728,6 +2778,46 @@
       ]
     },
     {
+      "id": "v63-3873",
+      "name": "斯莫格 SmallRig Magic Arm Dual Ball Heads 3873",
+      "category": "摄影机附件",
+      "confirmedMetrics": 1,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-3875",
+      "name": "斯莫格 SmallRig Magic Arm Dual Ball Heads 3875",
+      "category": "摄影机附件",
+      "confirmedMetrics": 1,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-3196",
+      "name": "斯莫格 SmallRig Mini Matte Box 3196",
+      "category": "摄影机附件",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-3575",
+      "name": "斯莫格 SmallRig Mini Matte Box Lite 3575",
+      "category": "摄影机附件",
+      "confirmedMetrics": 0,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
       "id": "eq-sony-venice-split-back-helmet-摄影机附件",
       "name": "索尼 SONY Venice Split Back Helmet",
       "category": "摄影机附件",
@@ -2755,6 +2845,46 @@
       "reviewStatus": "source-unavailable",
       "missing": [
         "库存未标明伺服型号；所附官方参考TA-LSP8为Left Side PD Handle，不是可确认的变焦伺服规格页。需提供马达铭牌、SKU或控制器/镜头系统型号。"
+      ]
+    },
+    {
+      "id": "v63-mb-t16",
+      "name": "铁头 TILTA Mirage Matte Box MB-T16",
+      "category": "摄影机附件",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-mb-t16-b",
+      "name": "铁头 TILTA Mirage Matte Box Motorized VND Kit MB-T16-B",
+      "category": "摄影机附件",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-mb-t16-a",
+      "name": "铁头 TILTA Mirage Matte Box VND Kit MB-T16-A",
+      "category": "摄影机附件",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-nucleus-nano-ii",
+      "name": "铁头 TILTA Nucleus Nano II Wireless Lens Control System",
+      "category": "摄影机附件",
+      "confirmedMetrics": 0,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
       ]
     },
     {
@@ -2811,28 +2941,6 @@
       ]
     },
     {
-      "id": "eq-通用-hi-hat-摄影机附件",
-      "name": "低脚架",
-      "category": "摄影机附件",
-      "confirmedMetrics": 0,
-      "reviewStatus": "identity-required",
-      "missing": [
-        "库存名称「通用 低脚架」未给出制造商和可唯一定位的产品系列，官方规格无法归属。需补充实物铭牌、原始品牌/型号、说明书或清晰接口照片。",
-        "当前没有足够信息验证尺寸、承载能力或连接标准；这些数据未查证，不能按同类器材推定。"
-      ]
-    },
-    {
-      "id": "eq-通用-shoulder-摄影机附件",
-      "name": "肩架",
-      "category": "摄影机附件",
-      "confirmedMetrics": 0,
-      "reviewStatus": "identity-required",
-      "missing": [
-        "库存名称「通用 肩架」未给出制造商和可唯一定位的产品系列，官方规格无法归属。需补充实物铭牌、原始品牌/型号、说明书或清晰接口照片。",
-        "当前没有足够信息验证尺寸、承载能力或连接标准；这些数据未查证，不能按同类器材推定。"
-      ]
-    },
-    {
       "id": "eq-通用-spreader-摄影机附件",
       "name": "脚架撑杆",
       "category": "摄影机附件",
@@ -2855,17 +2963,6 @@
       ]
     },
     {
-      "id": "eq-通用-wooden-triangle-摄影机附件",
-      "name": "三角木",
-      "category": "摄影机附件",
-      "confirmedMetrics": 0,
-      "reviewStatus": "identity-required",
-      "missing": [
-        "库存名称「通用 三角木」未给出制造商和可唯一定位的产品系列，官方规格无法归属。需补充实物铭牌、原始品牌/型号、说明书或清晰接口照片。",
-        "当前没有足够信息验证尺寸、承载能力或连接标准；这些数据未查证，不能按同类器材推定。"
-      ]
-    },
-    {
       "id": "eq-通用-铁头无线跟焦-摄影机附件",
       "name": "铁头无线跟焦",
       "category": "摄影机附件",
@@ -2874,16 +2971,6 @@
       "missing": [
         "库存名称「通用 铁头无线跟焦」未给出制造商和可唯一定位的产品系列，官方规格无法归属。需补充实物铭牌、原始品牌/型号、说明书或清晰接口照片。",
         "当前没有足够信息验证尺寸、承载能力或连接标准；这些数据未查证，不能按同类器材推定。"
-      ]
-    },
-    {
-      "id": "eq-通用-walk-up-scaffold-1m-1m-摄影机附件",
-      "name": "移动脚手架 1M×1M",
-      "category": "摄影机附件",
-      "confirmedMetrics": 1,
-      "reviewStatus": "source-unavailable",
-      "missing": [
-        "库存目录未提供可对应制造商型号的身份信息，无法核实未记录的尺寸、载荷或接口指标。"
       ]
     },
     {
@@ -3077,6 +3164,56 @@
       "reviewStatus": "source-unavailable",
       "missing": [
         "当前已核对的官方资料未提供足够的该型号技术参数；目录名称中可解析的规格已按库存证据记录。"
+      ]
+    },
+    {
+      "id": "v63-2269",
+      "name": "Falcam F38 Arca Compatible Top Plate 2269",
+      "category": "摄影机附件",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-2270",
+      "name": "Falcam F38 Bottom Plate 2270",
+      "category": "摄影机附件",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-f38b3404",
+      "name": "Falcam F38 Multi-Hole Quick Release Kit F38B3404",
+      "category": "摄影机附件",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-2465",
+      "name": "Falcam F38 PD Compatible Top Plate 2465",
+      "category": "摄影机附件",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
+      ]
+    },
+    {
+      "id": "v63-2268",
+      "name": "Falcam F38 Quick Release Kit 2268",
+      "category": "摄影机附件",
+      "confirmedMetrics": 2,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
       ]
     },
     {
@@ -3398,19 +3535,6 @@
       "name": "6.6′′×6.6′′雨刷装置",
       "category": "监看",
       "confirmedMetrics": 1,
-      "reviewStatus": "identity-required",
-      "missing": [
-        {
-          "field": "未确认的技术指标",
-          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
-        }
-      ]
-    },
-    {
-      "id": "eq-通用-french-flag-w-arm-监看",
-      "name": "带臂遮光旗",
-      "category": "监看",
-      "confirmedMetrics": 0,
       "reviewStatus": "identity-required",
       "missing": [
         {
@@ -5671,6 +5795,16 @@
       "reviewStatus": "identity-required",
       "missing": [
         "万德兰公开资料存在MAG204等多个手持稳定器产品；库存“小斯”俗称无法确认是否为MAG204或其他型号，需铭牌/SKU。"
+      ]
+    },
+    {
+      "id": "v63-mt-44-2502b",
+      "name": "优篮子 Ulanzi MT-44 Extendable Vlog Tripod 2502B",
+      "category": "移动器材",
+      "confirmedMetrics": 1,
+      "reviewStatus": "source-unavailable",
+      "missing": [
+        "来源未确认其余可展示指标"
       ]
     },
     {
@@ -9058,19 +9192,6 @@
     {
       "id": "eq-通用-摄影头盔-其他",
       "name": "摄影头盔",
-      "category": "其他",
-      "confirmedMetrics": 0,
-      "reviewStatus": "identity-required",
-      "missing": [
-        {
-          "field": "未确认的技术指标",
-          "reason": "库存缺少可辨识的完整型号、系列或配置，现有名称只支持已列明的指标；保留记录并显示规格待确认。"
-        }
-      ]
-    },
-    {
-      "id": "eq-通用-题字器-其他",
-      "name": "题字器",
       "category": "其他",
       "confirmedMetrics": 0,
       "reviewStatus": "identity-required",

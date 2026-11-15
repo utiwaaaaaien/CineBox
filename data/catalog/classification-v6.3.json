@@ -1,0 +1,18 @@
+{
+  "version": "V6.3",
+  "reclassifications": [
+    {"id":"eq-tilta-tilta-armor-man-2-0-摄影机附件","category":"移动器材","subcategory":"辅助减重器","reason":"稳定器减重支撑系统归入移动器材"},
+    {"id":"eq-tilta-tilta-armor-man-3-0-摄影机附件","category":"移动器材","subcategory":"辅助减重器","reason":"稳定器减重支撑系统归入移动器材"},
+    {"id":"eq-通用-tilta-max-armor-man-移动器材","category":"移动器材","subcategory":"辅助减重器","reason":"历史条目未标代际，保留独立记录"},
+    {"id":"eq-通用-tilta-nucleus-m-摄影机附件","category":"摄影机附件","subcategory":"无线跟焦","reason":"无线镜头控制套组，保留原代际"},
+    {"id":"eq-tilta-tilta-max-wireless-focus-2-axis-摄影机附件","category":"摄影机附件","subcategory":"无线跟焦","reason":"两轴无线跟焦配置保持独立"}
+  ],
+  "merges": [
+    {"from":"eq-通用-french-flag-w-arm-监看","into":"eq-通用-french-flag-w-arm-摄影机附件","reason":"同为带臂遮光旗，归摄影机附件"},
+    {"from":"eq-通用-hi-hat-摄影机附件","into":"eq-通用-hi-hat-移动器材","reason":"同为 Hi-Hat 低脚架，归移动器材"},
+    {"from":"eq-通用-shoulder-摄影机附件","into":"eq-通用-肩架-移动器材","reason":"同为通用肩架，归移动器材"},
+    {"from":"eq-通用-wooden-triangle-摄影机附件","into":"eq-通用-wooden-triangle-移动器材","reason":"同为通用承托三角木，归移动器材"},
+    {"from":"eq-通用-walk-up-scaffold-1m-1m-摄影机附件","into":"eq-通用-walk-up-scaffold-1m-1m1m-1m-移动器材","reason":"同为 1m×1m 移动脚手架，归移动器材"},
+    {"from":"eq-通用-题字器-其他","into":"eq-通用-teleprompter-监看","reason":"同为通用提词器，归监看"}
+  ]
+}

@@ -13344,6 +13344,2988 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     ],
     "checkedAt": "2026-10-17"
   },
+  "v63-yd-canon-fd-nfd-135mm-f2-ef": {
+    "name": "影鼎 Ying Ding Canon FD (NFD) 135mm F2 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "4.5ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-nfd-15mm-fisheye-f2-8-ef": {
+    "name": "影鼎 Ying Ding Canon FD (NFD) 15mm Fisheye F2.8 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "71mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.7ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-nfd-20mm-f2-8-ef": {
+    "name": "影鼎 Ying Ding Canon FD (NFD) 20mm F2.8 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.9ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-nfd-24mm-f2-ef": {
+    "name": "影鼎 Ying Ding Canon FD (NFD) 24mm F2 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-nfd-28mm-f2-ef": {
+    "name": "影鼎 Ying Ding Canon FD (NFD) 28mm F2 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-nfd-50mm-f1-4-ef": {
+    "name": "影鼎 Ying Ding Canon FD (NFD) 50mm F1.4 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "110mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-nfd-85mm-f1-2-ef": {
+    "name": "影鼎 Ying Ding Canon FD (NFD) 85mm F1.2 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "3ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-ssc-100mm-f2-8-ef": {
+    "name": "影鼎 Ying Ding Canon FD (SSC) 100mm F2.8 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "3.5ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-ssc-135mm-f2-5-ef": {
+    "name": "影鼎 Ying Ding Canon FD (SSC) 135mm F2.5 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "5ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-ssc-17mm-f4-ef": {
+    "name": "影鼎 Ying Ding Canon FD (SSC) 17mm F4 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.9ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-ssc-200mm-f2-8-ef": {
+    "name": "影鼎 Ying Ding Canon FD (SSC) 200mm F2.8 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "6ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-ssc-20mm-f2-8-ef": {
+    "name": "影鼎 Ying Ding Canon FD (SSC) 20mm F2.8 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.9ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-ssc-24mm-f2-8-ef": {
+    "name": "影鼎 Ying Ding Canon FD (SSC) 24mm F2.8 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-ssc-35mm-f2-ef": {
+    "name": "影鼎 Ying Ding Canon FD (SSC) 35mm F2 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-ssc-55mm-f1-2-ef": {
+    "name": "影鼎 Ying Ding Canon FD (SSC) 55mm F1.2 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "2ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-canon-fd-ssc-85mm-f1-2-ef": {
+    "name": "影鼎 Ying Ding Canon FD (SSC) 85mm F1.2 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "3ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-carl-zeiss-jena-135mm-t3-6-pl": {
+    "name": "影鼎 Ying Ding Carl Zeiss Jena 135mm T3.6 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "95mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.06m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-carl-zeiss-jena-20mm-t2-9-pl": {
+    "name": "影鼎 Ying Ding Carl Zeiss Jena 20mm T2.9 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "95mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.1m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-carl-zeiss-jena-28mm-t2-9-pl": {
+    "name": "影鼎 Ying Ding Carl Zeiss Jena 28mm T2.9 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "95mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.2m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-carl-zeiss-jena-35mm-t2-5-pl": {
+    "name": "影鼎 Ying Ding Carl Zeiss Jena 35mm T2.5 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "95mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.19m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-carl-zeiss-jena-50mm-t1-9-pl": {
+    "name": "影鼎 Ying Ding Carl Zeiss Jena 50mm T1.9 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "95mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.38m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-carl-zeiss-jena-80mm-t1-9-pl": {
+    "name": "影鼎 Ying Ding Carl Zeiss Jena 80mm T1.9 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "95mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.63m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-laowa-10mm-f2-8-t3-1": {
+    "name": "影鼎 Ying Ding Laowa 10mm F2.8 / T3.1",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "95mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.13m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-laowa-12mm-t2-9-pl": {
+    "name": "影鼎 Ying Ding Laowa 12mm T2.9 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "100mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.23m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-laowa-15mm-f2-8-m": {
+    "name": "影鼎 Ying Ding Laowa 15mm F2.8 M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "77mm / 80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.16m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-laowa-15mm-macro-t4-pl": {
+    "name": "影鼎 Ying Ding Laowa 15mm Macro T4 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "95mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-laowa-9mm-f5-6-pl": {
+    "name": "影鼎 Ying Ding Laowa 9mm F5.6 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.16m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-m0-8-135mm-m": {
+    "name": "影鼎 Ying Ding Leica M0.8 135mm M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "150cm (5ft)",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-m0-8-21mm-m": {
+    "name": "影鼎 Ying Ding Leica M0.8 21mm M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "70cm (2.3ft)",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-m0-8-24mm-m": {
+    "name": "影鼎 Ying Ding Leica M0.8 24mm M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "70cm (2.3ft)",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-m0-8-35mm-m": {
+    "name": "影鼎 Ying Ding Leica M0.8 35mm M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "70cm (2.3ft)",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-m0-8-50mm-m": {
+    "name": "影鼎 Ying Ding Leica M0.8 50mm M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "70cm (2.3ft)",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-m0-8-75mm-m": {
+    "name": "影鼎 Ying Ding Leica M0.8 75mm M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "70cm (2.3ft)",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-m0-8-90mm-m": {
+    "name": "影鼎 Ying Ding Leica M0.8 90mm M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "100cm (3.3ft)",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-r-elmarit-r-19mm-f2-8": {
+    "name": "影鼎 Ying Ding Leica R ELMARIT-R 19mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "R / E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "82mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-r-elmarit-r-24mm-f2-8": {
+    "name": "影鼎 Ying Ding Leica R ELMARIT-R 24mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "R / E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-r-elmarit-r-28mm-f2-8": {
+    "name": "影鼎 Ying Ding Leica R ELMARIT-R 28mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "R / E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-r-summicron-r-35mm-f2": {
+    "name": "影鼎 Ying Ding Leica R Summicron-R 35mm F2",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "R / E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-r-summicron-r-50mm-f2": {
+    "name": "影鼎 Ying Ding Leica R Summicron-R 50mm F2",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "R / E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-r-summicron-r-90mm-f2": {
+    "name": "影鼎 Ying Ding Leica R Summicron-R 90mm F2",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "R / E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.7m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-leica-r-super-elmar-r-15mm-f3-5": {
+    "name": "影鼎 Ying Ding Leica R Super-Elmar-R 15mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "R / E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "82mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.16m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-mamiya-sekor-c-110mm-f2-8-pl": {
+    "name": "影鼎 Ying Ding Mamiya Sekor-C 110mm F2.8 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "4ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-mamiya-sekor-c-150mm-f2-8-lpl": {
+    "name": "影鼎 Ying Ding Mamiya Sekor-C 150mm F2.8 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "5ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-mamiya-sekor-c-24mm-f4-pl": {
+    "name": "影鼎 Ying Ding Mamiya Sekor-C 24mm F4 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "100mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.25ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-mamiya-sekor-c-35mm-f3-5-pl": {
+    "name": "影鼎 Ying Ding Mamiya Sekor-C 35mm F3.5 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.5ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-mamiya-sekor-c-45mm-f2-8-pl": {
+    "name": "影鼎 Ying Ding Mamiya Sekor-C 45mm F2.8 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.75ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-mamiya-sekor-c-55mm-f2-8-pl": {
+    "name": "影鼎 Ying Ding Mamiya Sekor-C 55mm F2.8 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.75ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-mamiya-sekor-c-70mm-f2-8-pl": {
+    "name": "影鼎 Ying Ding Mamiya Sekor-C 70mm F2.8 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "3ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-mamiya-sekor-c-80mm-f1-9-pl": {
+    "name": "影鼎 Ying Ding Mamiya Sekor-C 80mm F1.9 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "2.25ft",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-35mm-f1-4": {
+    "name": "影鼎 Ying Ding Nikkor AI 35mm F1.4",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-s-105mm-f1-8": {
+    "name": "影鼎 Ying Ding Nikkor AI-S 105mm F1.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-s-135mm-f2-0": {
+    "name": "影鼎 Ying Ding Nikkor AI-S 135mm F2.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-s-15mm-f3-5": {
+    "name": "影鼎 Ying Ding Nikkor AI-S 15mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "89mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-s-18mm-f3-5": {
+    "name": "影鼎 Ying Ding Nikkor AI-S 18mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-s-20mm-f2-8": {
+    "name": "影鼎 Ying Ding Nikkor AI-S 20mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-s-24mm-f2-0": {
+    "name": "影鼎 Ying Ding Nikkor AI-S 24mm F2.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-s-28mm-f2-0": {
+    "name": "影鼎 Ying Ding Nikkor AI-S 28mm F2.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-s-50mm-f1-2": {
+    "name": "影鼎 Ying Ding Nikkor AI-S 50mm F1.2",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-ai-s-85mm-f1-4": {
+    "name": "影鼎 Ying Ding Nikkor AI-S 85mm F1.4",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.85m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-non-ai-24mm-f2-8": {
+    "name": "影鼎 Ying Ding Nikkor Non-AI 24mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-non-ai-28mm-f2-0": {
+    "name": "影鼎 Ying Ding Nikkor Non-AI 28mm F2.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-non-ai-35mm-f2-0": {
+    "name": "影鼎 Ying Ding Nikkor Non-AI 35mm F2.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.35m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-non-ai-50mm-f1-4": {
+    "name": "影鼎 Ying Ding Nikkor Non-AI 50mm F1.4",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.6m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-non-ai-55mm-f1-2": {
+    "name": "影鼎 Ying Ding Nikkor Non-AI 55mm F1.2",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-non-ai-58mm-f1-4": {
+    "name": "影鼎 Ying Ding Nikkor Non-AI 58mm F1.4",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.6m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-nikkor-non-ai-85mm-f1-8": {
+    "name": "影鼎 Ying Ding Nikkor Non-AI 85mm F1.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "E / LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-olympus-zuiko-om-100mm-f2-8-lpl": {
+    "name": "影鼎 Ying Ding Olympus ZUIKO OM 100mm F2.8 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.9m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-olympus-zuiko-om-135mm-f2-8-lpl": {
+    "name": "影鼎 Ying Ding Olympus ZUIKO OM 135mm F2.8 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-olympus-zuiko-om-18mm-f3-5-lpl": {
+    "name": "影鼎 Ying Ding Olympus ZUIKO OM 18mm F3.5 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-olympus-zuiko-om-24mm-f2-0-lpl": {
+    "name": "影鼎 Ying Ding Olympus ZUIKO OM 24mm F2.0 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-olympus-zuiko-om-35mm-f2-0-lpl": {
+    "name": "影鼎 Ying Ding Olympus ZUIKO OM 35mm F2.0 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-olympus-zuiko-om-50mm-f1-4-lpl": {
+    "name": "影鼎 Ying Ding Olympus ZUIKO OM 50mm F1.4 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-olympus-zuiko-om-50mm-macro-f2-0-lpl": {
+    "name": "影鼎 Ying Ding Olympus ZUIKO OM 50mm Macro F2.0 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.24m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-olympus-zuiko-om-55mm-f1-2-lpl": {
+    "name": "影鼎 Ying Ding Olympus ZUIKO OM 55mm F1.2 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-olympus-zuiko-om-85mm-f2-0-lpl": {
+    "name": "影鼎 Ying Ding Olympus ZUIKO OM 85mm F2.0 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.9m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-645-a-smc-150mm-f3-5": {
+    "name": "影鼎 Ying Ding Pentax 645-A SMC 150mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "Pentax 645 (LPL / EF)",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.4m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-645-a-smc-35mm-f3-5": {
+    "name": "影鼎 Ying Ding Pentax 645-A SMC 35mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "Pentax 645 (LPL / EF)",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-645-a-smc-45mm-f2-8": {
+    "name": "影鼎 Ying Ding Pentax 645-A SMC 45mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "Pentax 645 (LPL / EF)",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-645-a-smc-55mm-f2-8": {
+    "name": "影鼎 Ying Ding Pentax 645-A SMC 55mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "Pentax 645 (LPL / EF)",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-645-a-smc-75mm-f2-8": {
+    "name": "影鼎 Ying Ding Pentax 645-A SMC 75mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "Pentax 645 (LPL / EF)",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.6m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-67-105mm-f2-4-f22-lpl": {
+    "name": "影鼎 Ying Ding Pentax 67 105mm F2.4-F22 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "110mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-67-35mm-f4-5-f22-lpl": {
+    "name": "影鼎 Ying Ding Pentax 67 35mm F4.5-F22 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "100mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.4m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-67-45mm-f4-0-f22-lpl": {
+    "name": "影鼎 Ying Ding Pentax 67 45mm F4.0-F22 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "110mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.37m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-67-55mm-f3-5-f22-lpl": {
+    "name": "影鼎 Ying Ding Pentax 67 55mm F3.5-F22 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "110mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-67-75mm-f4-5-f22-lpl": {
+    "name": "影鼎 Ying Ding Pentax 67 75mm F4.5-F22 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "110mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.70m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-67-90mm-f2-8-f22-lpl": {
+    "name": "影鼎 Ying Ding Pentax 67 90mm F2.8-F22 LPL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "LPL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "110mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.65m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-a-15mm-f3-5": {
+    "name": "影鼎 Ying Ding Pentax A 15mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "78mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-a-20mm-f2-8": {
+    "name": "影鼎 Ying Ding Pentax A 20mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-a-24-50mm-f4-0": {
+    "name": "影鼎 Ying Ding Pentax A 24-50mm F4.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.4m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-a-24mm-f2-8": {
+    "name": "影鼎 Ying Ding Pentax A 24mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-a-28mm-f2-0": {
+    "name": "影鼎 Ying Ding Pentax A 28mm F2.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-a-35mm-f2-0": {
+    "name": "影鼎 Ying Ding Pentax A 35mm F2.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-a-50mm-f1-2": {
+    "name": "影鼎 Ying Ding Pentax A 50mm F1.2",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-a-50mm-f1-4": {
+    "name": "影鼎 Ying Ding Pentax A 50mm F1.4",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-a-85mm-f1-4": {
+    "name": "影鼎 Ying Ding Pentax A 85mm F1.4",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.85m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-k-15mm-f3-5": {
+    "name": "影鼎 Ying Ding Pentax K 15mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "K（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（外径）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-k-18mm-f3-5": {
+    "name": "影鼎 Ying Ding Pentax K 18mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "K（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-k-24mm-f2-8": {
+    "name": "影鼎 Ying Ding Pentax K 24mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "K（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-k-30mm-f2-8": {
+    "name": "影鼎 Ying Ding Pentax K 30mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "K（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-k-35mm-f2-0": {
+    "name": "影鼎 Ying Ding Pentax K 35mm F2.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "K（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.35m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-k-50mm-f1-2": {
+    "name": "影鼎 Ying Ding Pentax K 50mm F1.2",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "K（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-k-50mm-f1-4": {
+    "name": "影鼎 Ying Ding Pentax K 50mm F1.4",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "K（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-k-55mm-f1-8": {
+    "name": "影鼎 Ying Ding Pentax K 55mm F1.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "K（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-pentax-k-85mm-f1-8": {
+    "name": "影鼎 Ying Ding Pentax K 85mm F1.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "K（原生） / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.85m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-takumar-105mm-f2-8": {
+    "name": "影鼎 Ying Ding Takumar 105mm F2.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M42 / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.2m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-takumar-135mm-f2-5": {
+    "name": "影鼎 Ying Ding Takumar 135mm F2.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M42 / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "1.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-takumar-15mm-f3-5": {
+    "name": "影鼎 Ying Ding Takumar 15mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "A / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "78mm",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.3m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-takumar-17mm-fisheye-f4": {
+    "name": "影鼎 Ying Ding Takumar 17mm Fisheye F4",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M42 / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "59mm（原表注明不可上斗）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.2m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-takumar-24mm-f3-5": {
+    "name": "影鼎 Ying Ding Takumar 24mm F3.5",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M42 / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.25m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-takumar-35mm-f2-0": {
+    "name": "影鼎 Ying Ding Takumar 35mm F2.0",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M42 / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.4m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-takumar-50mm-f1-4": {
+    "name": "影鼎 Ying Ding Takumar 50mm F1.4",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M42 / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-takumar-55mm-f1-8": {
+    "name": "影鼎 Ying Ding Takumar 55mm F1.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M42 / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.45m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-takumar-85mm-f1-8": {
+    "name": "影鼎 Ying Ding Takumar 85mm F1.8",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M42 / LPL / E",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.8m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-voigtlander-vm-15mm-f4-5-m": {
+    "name": "影鼎 Ying Ding Voigtländer VM 15mm F4.5 M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-voigtlander-vm-21mm-asph-f1-4-m": {
+    "name": "影鼎 Ying Ding Voigtländer VM 21mm ASPH F1.4 M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-voigtlander-vm-28mm-asph-f1-5-m": {
+    "name": "影鼎 Ying Ding Voigtländer VM 28mm ASPH F1.5 M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-voigtlander-vm-35mm-asph-f1-2-m": {
+    "name": "影鼎 Ying Ding Voigtländer VM 35mm ASPH F1.2 M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-voigtlander-vm-40mm-asph-f1-2-m": {
+    "name": "影鼎 Ying Ding Voigtländer VM 40mm ASPH F1.2 M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-voigtlander-vm-50mm-asph-f1-0-m": {
+    "name": "影鼎 Ying Ding Voigtländer VM 50mm ASPH F1.0 M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.9m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-voigtlander-vm-55mm-f1-4": {
+    "name": "影鼎 Ying Ding Voigtländer VM 55mm F1.4",
+    "technicalSpecs": [
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.5m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-voigtlander-vm-75mm-f1-8-m": {
+    "name": "影鼎 Ying Ding Voigtländer VM 75mm F1.8 M",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "M",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.9m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-yashica-yashinon-dx-28mm-f2-8-ef": {
+    "name": "影鼎 Ying Ding Yashica Yashinon-DX 28mm F2.8 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.4m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-yashica-yashinon-dx-35mm-f2-8-ef": {
+    "name": "影鼎 Ying Ding Yashica Yashinon-DX 35mm F2.8 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.4m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-yashica-yashinon-dx-50mm-f1-4-ef": {
+    "name": "影鼎 Ying Ding Yashica Yashinon-DX 50mm F1.4 EF",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "EF",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm（77mm 内螺纹）",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "最近对焦",
+        "value": "0.6m",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-yd-zeiss-biotar-rehouse-75mm-f1-5-f22-pl": {
+    "name": "影鼎 Ying Ding Zeiss Biotar Rehouse 75mm F1.5-F22 PL",
+    "technicalSpecs": [
+      {
+        "label": "卡口（原表）",
+        "value": "PL",
+        "provenance": "inventory",
+        "scope": "model"
+      },
+      {
+        "label": "前口径",
+        "value": "80mm",
+        "provenance": "inventory",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
   "lens-zhile-133-set": {
     "name": "至乐 1.33×25/35/50/75/100mm 全画幅变形镜头组",
     "technicalSpecs": [
@@ -20047,6 +23029,426 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     ],
     "checkedAt": "2026-10-17"
   },
+  "v63-nisi-c5-pl": {
+    "name": "耐司 NiSi C5 True Color Rotating PL",
+    "technicalSpecs": [
+      {
+        "label": "类型",
+        "value": "旋转偏振镜",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "适配遮光斗",
+        "value": "NiSi C5",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-c5-vnd": {
+    "name": "耐司 NiSi C5 True Color VND 1–5 Stops",
+    "technicalSpecs": [
+      {
+        "label": "减光范围",
+        "value": "1–5 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "适配遮光斗",
+        "value": "NiSi C5",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-4x565-03": {
+    "name": "耐司 NiSi FS ND 4×5.65″ ND 0.3",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "0.3",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "1 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-4x565-06": {
+    "name": "耐司 NiSi FS ND 4×5.65″ ND 0.6",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "0.6",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "2 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-4x565-09": {
+    "name": "耐司 NiSi FS ND 4×5.65″ ND 0.9",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "0.9",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "3 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-4x565-12": {
+    "name": "耐司 NiSi FS ND 4×5.65″ ND 1.2",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "1.2",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "4 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-4x565-15": {
+    "name": "耐司 NiSi FS ND 4×5.65″ ND 1.5",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "1.5",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "5 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-4x565-18": {
+    "name": "耐司 NiSi FS ND 4×5.65″ ND 1.8",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "1.8",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "6 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-4x565-21": {
+    "name": "耐司 NiSi FS ND 4×5.65″ ND 2.1",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "2.1",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "7 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-4x565-24": {
+    "name": "耐司 NiSi FS ND 4×5.65″ ND 2.4",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "2.4",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "8 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-66x66-03": {
+    "name": "耐司 NiSi FS ND 6.6×6.6″ ND 0.3",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "6.6×6.6″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "0.3",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "1 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-66x66-06": {
+    "name": "耐司 NiSi FS ND 6.6×6.6″ ND 0.6",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "6.6×6.6″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "0.6",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "2 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-66x66-09": {
+    "name": "耐司 NiSi FS ND 6.6×6.6″ ND 0.9",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "6.6×6.6″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "0.9",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "3 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-66x66-12": {
+    "name": "耐司 NiSi FS ND 6.6×6.6″ ND 1.2",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "6.6×6.6″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "1.2",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "4 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-66x66-15": {
+    "name": "耐司 NiSi FS ND 6.6×6.6″ ND 1.5",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "6.6×6.6″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "1.5",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "5 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-66x66-18": {
+    "name": "耐司 NiSi FS ND 6.6×6.6″ ND 1.8",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "6.6×6.6″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "1.8",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "6 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-66x66-21": {
+    "name": "耐司 NiSi FS ND 6.6×6.6″ ND 2.1",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "6.6×6.6″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "2.1",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "7 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-fsnd-66x66-24": {
+    "name": "耐司 NiSi FS ND 6.6×6.6″ ND 2.4",
+    "technicalSpecs": [
+      {
+        "label": "尺寸",
+        "value": "6.6×6.6″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "光学密度",
+        "value": "2.4",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "减光档数",
+        "value": "8 档",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
   "eq-nisi-nisi-yellow-light-blocker-滤镜": {
     "name": "耐司 NiSi YELLOW LIGHT BLOCKER",
     "technicalSpecs": [
@@ -25971,6 +29373,173 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     "technicalSpecs": [],
     "checkedAt": "2026-10-17"
   },
+  "v63-nisi-c5-cinema": {
+    "name": "耐司 NiSi C5 Matte Box Cinema Kit",
+    "technicalSpecs": [
+      {
+        "label": "夹装外径",
+        "value": "95mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "插片尺寸",
+        "value": "4×4″ / 4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "随附转接环",
+        "value": "67 / 72 / 77 / 82mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-c5-filmmaker": {
+    "name": "耐司 NiSi C5 Matte Box Filmmaker Kit",
+    "technicalSpecs": [
+      {
+        "label": "夹装外径",
+        "value": "95mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "插片尺寸",
+        "value": "4×4″ / 4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "随附转接环",
+        "value": "67 / 72 / 77 / 82mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nisi-c5-starter": {
+    "name": "耐司 NiSi C5 Matte Box Starter Kit",
+    "technicalSpecs": [
+      {
+        "label": "夹装外径",
+        "value": "95mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "插片尺寸",
+        "value": "4×4″ / 4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "随附转接环",
+        "value": "67 / 72 / 77 / 82mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-3873": {
+    "name": "斯莫格 SmallRig Magic Arm Dual Ball Heads 3873",
+    "technicalSpecs": [
+      {
+        "label": "两端接口",
+        "value": "1/4″-20 螺丝",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-3875": {
+    "name": "斯莫格 SmallRig Magic Arm Dual Ball Heads 3875",
+    "technicalSpecs": [
+      {
+        "label": "两端接口",
+        "value": "1/4″-20 螺丝 / NATO 夹座",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-3196": {
+    "name": "斯莫格 SmallRig Mini Matte Box 3196",
+    "technicalSpecs": [
+      {
+        "label": "插片尺寸",
+        "value": "4×5.65″",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "插片厚度上限",
+        "value": "4mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-3575": {
+    "name": "斯莫格 SmallRig Mini Matte Box Lite 3575",
+    "technicalSpecs": [],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-vb99-3580": {
+    "name": "斯莫格 SmallRig VB99 Mini V Mount Battery 3580",
+    "technicalSpecs": [
+      {
+        "label": "容量",
+        "value": "99Wh",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "USB-C PD 功率",
+        "value": "最高 65W",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "标称电压",
+        "value": "14.8V",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-vb99-3580b": {
+    "name": "斯莫格 SmallRig VB99 Mini V Mount Battery 3580B",
+    "technicalSpecs": [
+      {
+        "label": "容量",
+        "value": "98.872Wh",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "USB-C PD 功率",
+        "value": "最高 100W",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "标称电压",
+        "value": "14.54V",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
   "eq-sony-sony-dvf-el200-摄影机附件": {
     "name": "索尼 SONY DVF-EL200",
     "technicalSpecs": [
@@ -26010,30 +29579,6 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     "technicalSpecs": [],
     "checkedAt": "2026-10-17"
   },
-  "eq-tilta-tilta-armor-man-2-0-摄影机附件": {
-    "name": "铁头 TILTA Armor-man 2.0",
-    "technicalSpecs": [
-      {
-        "label": "支撑结构",
-        "value": "可调节背心搭配左右两支弹簧臂",
-        "provenance": "manufacturer",
-        "scope": "model"
-      },
-      {
-        "label": "张力调节",
-        "value": "每侧弹簧臂各带2个张力调节旋钮",
-        "provenance": "manufacturer",
-        "scope": "model"
-      },
-      {
-        "label": "云台连接",
-        "value": "支持顶部手柄式三轴云台支撑杯及环形云台转接件",
-        "provenance": "manufacturer",
-        "scope": "model"
-      }
-    ],
-    "checkedAt": "2026-10-17"
-  },
   "eq-tilta-tilta-max-wireless-focus-2-axis-摄影机附件": {
     "name": "铁头 TILTA MAX Wireless Focus 2-Axis",
     "technicalSpecs": [
@@ -26058,6 +29603,65 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     ],
     "seriesLabel": "Tilta Nucleus-M 系列",
     "checkedAt": "2026-10-17"
+  },
+  "v63-mb-t16": {
+    "name": "铁头 TILTA Mirage Matte Box MB-T16",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "基础套装",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "随附转接环",
+        "value": "67 / 72 / 77 / 82mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-mb-t16-b": {
+    "name": "铁头 TILTA Mirage Matte Box Motorized VND Kit MB-T16-B",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "含无线马达及可变 ND",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "随附转接环",
+        "value": "67 / 72 / 77 / 82mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-mb-t16-a": {
+    "name": "铁头 TILTA Mirage Matte Box VND Kit MB-T16-A",
+    "technicalSpecs": [
+      {
+        "label": "配置",
+        "value": "含可变 ND",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "随附转接环",
+        "value": "67 / 72 / 77 / 82mm",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-nucleus-nano-ii": {
+    "name": "铁头 TILTA Nucleus Nano II Wireless Lens Control System",
+    "technicalSpecs": [],
+    "checkedAt": "2026-11-15"
   },
   "eq-通用-tilta-nucleus-m-摄影机附件": {
     "name": "铁头 TILTA NUCLEUS-M",
@@ -26172,16 +29776,6 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     "technicalSpecs": [],
     "checkedAt": "2026-10-17"
   },
-  "eq-通用-hi-hat-摄影机附件": {
-    "name": "低脚架",
-    "technicalSpecs": [],
-    "checkedAt": "2026-10-17"
-  },
-  "eq-通用-shoulder-摄影机附件": {
-    "name": "肩架",
-    "technicalSpecs": [],
-    "checkedAt": "2026-10-17"
-  },
   "eq-通用-spreader-摄影机附件": {
     "name": "脚架撑杆",
     "technicalSpecs": [],
@@ -26192,26 +29786,9 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     "technicalSpecs": [],
     "checkedAt": "2026-10-17"
   },
-  "eq-通用-wooden-triangle-摄影机附件": {
-    "name": "三角木",
-    "technicalSpecs": [],
-    "checkedAt": "2026-10-17"
-  },
   "eq-通用-铁头无线跟焦-摄影机附件": {
     "name": "铁头无线跟焦",
     "technicalSpecs": [],
-    "checkedAt": "2026-10-17"
-  },
-  "eq-通用-walk-up-scaffold-1m-1m-摄影机附件": {
-    "name": "移动脚手架 1M×1M",
-    "technicalSpecs": [
-      {
-        "label": "目录名称标注规格",
-        "value": "1M",
-        "provenance": "inventory",
-        "scope": "model"
-      }
-    ],
     "checkedAt": "2026-10-17"
   },
   "eq-通用-h-d-hat-bowl-base-摄影机附件": {
@@ -26768,6 +30345,96 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     ],
     "seriesLabel": "Easyrig Vario 5 系列",
     "checkedAt": "2026-10-17"
+  },
+  "v63-2269": {
+    "name": "Falcam F38 Arca Compatible Top Plate 2269",
+    "technicalSpecs": [
+      {
+        "label": "快装系统",
+        "value": "F38",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "部件",
+        "value": "上板",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-2270": {
+    "name": "Falcam F38 Bottom Plate 2270",
+    "technicalSpecs": [
+      {
+        "label": "快装系统",
+        "value": "F38",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "部件",
+        "value": "底座",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-f38b3404": {
+    "name": "Falcam F38 Multi-Hole Quick Release Kit F38B3404",
+    "technicalSpecs": [
+      {
+        "label": "快装系统",
+        "value": "F38",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "部件",
+        "value": "多孔快装套组",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-2465": {
+    "name": "Falcam F38 PD Compatible Top Plate 2465",
+    "technicalSpecs": [
+      {
+        "label": "快装系统",
+        "value": "F38",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "部件",
+        "value": "上板",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
+  },
+  "v63-2268": {
+    "name": "Falcam F38 Quick Release Kit 2268",
+    "technicalSpecs": [
+      {
+        "label": "快装系统",
+        "value": "F38",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "部件",
+        "value": "快装套组",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
   },
   "eq-hme-hme-mb300-wireless-headset-system-hme-摄影机附件": {
     "name": "HME MB300 Wireless Headset System",
@@ -27398,11 +31065,6 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
       }
     ],
     "seriesLabel": "ATOMOS Ninja / Shinobi机顶监视器系列",
-    "checkedAt": "2026-10-17"
-  },
-  "eq-通用-french-flag-w-arm-监看": {
-    "name": "带臂遮光旗",
-    "technicalSpecs": [],
     "checkedAt": "2026-10-17"
   },
   "eq-通用-director-s-chair-监看": {
@@ -28824,6 +32486,30 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
       }
     ],
     "seriesLabel": "Tilta Hydra Arm 系列参考",
+    "checkedAt": "2026-10-17"
+  },
+  "eq-tilta-tilta-armor-man-2-0-摄影机附件": {
+    "name": "铁头 TILTA Armor-man 2.0",
+    "technicalSpecs": [
+      {
+        "label": "支撑结构",
+        "value": "可调节背心搭配左右两支弹簧臂",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "张力调节",
+        "value": "每侧弹簧臂各带2个张力调节旋钮",
+        "provenance": "manufacturer",
+        "scope": "model"
+      },
+      {
+        "label": "云台连接",
+        "value": "支持顶部手柄式三轴云台支撑杯及环形云台转接件",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
     "checkedAt": "2026-10-17"
   },
   "eq-tilta-tilta-armor-man-3-0-摄影机附件": {
@@ -30495,6 +34181,18 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
     "name": "万德兰 手持小斯",
     "technicalSpecs": [],
     "checkedAt": "2026-10-17"
+  },
+  "v63-mt-44-2502b": {
+    "name": "优篮子 Ulanzi MT-44 Extendable Vlog Tripod 2502B",
+    "technicalSpecs": [
+      {
+        "label": "结构",
+        "value": "六节伸缩",
+        "provenance": "manufacturer",
+        "scope": "model"
+      }
+    ],
+    "checkedAt": "2026-11-15"
   },
   "eq-bassco-bassco-blocks-移动器材": {
     "name": "Bassco Blocks",
@@ -40176,11 +43874,6 @@ export const equipmentCardData: Record<string, CatalogCardRecord> = {
   },
   "eq-通用-摄影头盔-其他": {
     "name": "摄影头盔",
-    "technicalSpecs": [],
-    "checkedAt": "2026-10-17"
-  },
-  "eq-通用-题字器-其他": {
-    "name": "题字器",
     "technicalSpecs": [],
     "checkedAt": "2026-10-17"
   },

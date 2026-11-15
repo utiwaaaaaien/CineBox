@@ -4,6 +4,12 @@
 
 User-facing release notes. `app/release.ts` defines the application version; the underlying catalog keeps its own version and identity compatibility rules.
 
+## V6.3 — 2026-11-15
+
+- 新增 37 项影视配件与 125 项影鼎风格化改装镜头。
+- 复核带臂遮光旗、低脚架、肩架等跨类记录，合并 6 项并保留旧项目 ID 映射。
+- Added 37 accessories and 125 Ying Ding cine-mod lenses, and reconciled six cross-category duplicates.
+
 ## V6.2.1 — 2026-11-13
 
 - 统一新增自定义器材表单和器材单顶部操作区的控件高度和对齐。
