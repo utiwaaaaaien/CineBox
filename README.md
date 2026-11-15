@@ -1,6 +1,6 @@
 <p align="center"><img src="public/brand/cinebox-logo-v2-128.png" width="96" height="96" alt="CineBox" /></p>
 
-# CineBox V6.3
+# CineBox V6.4
 
 **摄影器材 · 项目工作台**
 
@@ -8,9 +8,9 @@ CineBox 帮助摄影团队整理拍摄需求、复用历史项目、挑选器材
 
 [在线使用](https://utiwaaaaaien.github.io/CineBox/) · [English](README.en.md) · [版本记录](CHANGELOG.md) · [参与贡献](CONTRIBUTING.md) · [MIT 许可证](LICENSE)
 
-![Version V6.3](https://img.shields.io/badge/version-V6.3-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+![Version V6.4](https://img.shields.io/badge/version-V6.4-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
-V6.2 支持乱序器材检索、镜头焦段升序、已选类别进度和器材单原地预览。详见[版本记录](CHANGELOG.md)及[本次发布说明](docs/releases/v6.2.0.md)。
+V6.4 新增项目空状态、导航中的新增入口和取景框对焦动效。详见[本次发布说明](docs/releases/v6.4.0.md)。
 
 当前修正随 [main 源码](https://github.com/utiwaaaaaien/CineBox/tree/main)和在线站点持续更新。`v6.1.0` 标签及 Release 的自动源码下载保留首次发布版本，不包含后续小修；需要当前修正请使用 main。
 

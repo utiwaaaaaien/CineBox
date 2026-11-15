@@ -647,3 +647,102 @@ html[data-theme="dark"] .button.primary b { color: #142338; background: rgba(20,
   .custom-item-flat .custom-item-fields > :nth-child(3) { grid-column: 3; grid-row: 2; }
   .custom-item-flat .custom-item-fields > :nth-child(4) { grid-column: 1; grid-row: 2; }
 }
+
+/* V6.4: project entry and motion. */
+.sidebar-new-project .button {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-inline: 12px;
+  color: var(--accent-dark);
+}
+.sidebar-new-project .button:hover,
+.nav-item.compact-new-project:hover {
+  background: var(--accent-soft);
+}
+.nav-item.compact-new-project { display: none; color: var(--accent-dark); }
+
+.projects-view .project-empty {
+  min-height: 232px;
+  margin: 12px var(--page-gutter) 32px;
+  padding: 24px 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+}
+.project-empty > strong { font-size: 1rem; }
+.project-empty-mark {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 56px;
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+.project-empty-mark svg { width: 100%; height: 100%; overflow: visible; }
+.project-empty-mark .frame-cross { color: var(--accent-dark); }
+
+@media (max-width: 900px) {
+  .main-nav:has(.compact-new-project) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .nav-item.compact-new-project { display: flex; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-shell {
+    --focus-ease: cubic-bezier(.16, 1, .3, 1);
+    --motion-feedback: 140ms;
+    --motion-panel: 300ms;
+    --motion-focus: 500ms;
+  }
+
+  .project-empty-mark .frame-left {
+    --frame-travel: -5px;
+    animation: frame-focus var(--motion-focus) var(--focus-ease);
+  }
+  .project-empty-mark .frame-right {
+    --frame-travel: 5px;
+    animation: frame-focus var(--motion-focus) var(--focus-ease);
+  }
+  .project-empty-mark .frame-cross {
+    animation: frame-lock var(--motion-focus) ease-out;
+  }
+  .app-shell .project-basics[open] > form,
+  .app-shell .swap-dialog,
+  .app-shell .history-preview-dialog {
+    animation: panel-focus var(--motion-panel) var(--focus-ease);
+  }
+
+  .project-open-hint svg {
+    transition: transform var(--motion-feedback) var(--focus-ease);
+  }
+  .project-open:focus-visible .project-open-hint svg { transform: translateX(4px); }
+
+  .sidebar-new-project .button,
+  .compact-new-project,
+  .projects-view .lead-actions > .button.primary,
+  .equipment-actions .row-add {
+    transition: transform var(--motion-feedback) var(--focus-ease),
+      background-color var(--motion-feedback) ease, color var(--motion-feedback) ease;
+  }
+  .sidebar-new-project .button:active,
+  .compact-new-project:active,
+  .projects-view .lead-actions > .button.primary:active:not(:disabled),
+  .equipment-actions .row-add:active {
+    transform: scale(.97);
+  }
+
+  @media (hover: hover) {
+    .project-open:hover .project-open-hint svg { transform: translateX(4px); }
+  }
+}
+
+@keyframes frame-focus {
+  from { transform: translateX(var(--frame-travel)); opacity: .5; }
+}
+@keyframes frame-lock {
+  0%, 25% { opacity: .2; }
+  60% { opacity: 1; }
+}
+@keyframes panel-focus {
+  from { opacity: .78; transform: translateY(8px); }
+}

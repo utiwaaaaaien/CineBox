@@ -21,7 +21,8 @@ export function readProjectAutosave(storage?: AutosaveStorage): ProjectAutosave 
     const value = snapshot as Partial<ProjectAutosave>;
     if (value.version !== 1 || typeof value.savedAt !== "string" || !Number.isFinite(Date.parse(value.savedAt))) return null;
     const payload = value.payload;
-    if (!payload || !Array.isArray(payload.projects) || !payload.projects.length ||
+    if (!payload || !Array.isArray(payload.projects) ||
+      (!payload.projects.length && payload.activeProjectId !== "") ||
       typeof payload.activeProjectId !== "string" || !payload.historyOverrides ||
       typeof payload.historyOverrides !== "object" || Array.isArray(payload.historyOverrides)) return null;
     return value as ProjectAutosave;

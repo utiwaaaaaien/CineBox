@@ -38,8 +38,8 @@ test("server-renders the CineBox application shell", async () => {
   assert.match(html, /项目管理/);
   assert.doesNotMatch(html, /分类配置|CATEGORY WALKTHROUGH/);
   assert.match(html, /总器材库/);
-  assert.match(html, /当前项目/);
-  assert.match(html, /当前器材单/);
+  assert.match(html, /正在读取项目/);
+  assert.doesNotMatch(html, /未命名项目|打开当前器材单/);
   assert.doesNotMatch(html, /selection-routes/);
   assert.match(html, /颜色模式/);
   assert.match(html, /跟随系统/);
@@ -47,7 +47,7 @@ test("server-renders the CineBox application shell", async () => {
   assert.match(html, /深色模式/);
   assert.match(html, /选择器材方式/);
   assert.doesNotMatch(html, /确定拍摄需求|按需求生成|创作意图与预算参考|拍摄规格与供电/);
-  assert.match(html, /撤销清单修改/);
+  assert.doesNotMatch(html, /撤销清单修改/);
   assert.match(html, /选择器材/);
   assert.doesNotMatch(html, /画面方向|成片画幅|DOP DECISION BRIEF/);
   assert.match(html, /新建项目/);

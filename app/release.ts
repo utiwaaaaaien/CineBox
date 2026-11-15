@@ -1,7 +1,15 @@
-export const appVersion = "V6.3";
+export const appVersion = "V6.4";
 
 // Add each new release to the beginning of this list, keeping earlier entries.
 export const releaseNotes = [{
+  version: "V6.4",
+  date: "2026-11-15",
+  items: [
+    "项目管理为空时显示「当前无项目」，左侧边栏和手机导航提供「新增项目」。",
+    "删除最后一个项目后保留空状态，刷新页面也不会生成占位项目。",
+    "新增取景框对焦、表单与弹窗过渡及按钮反馈，遵循系统的减少动态效果设置。",
+  ],
+}, {
   version: "V6.3",
   date: "2026-11-15",
   items: [

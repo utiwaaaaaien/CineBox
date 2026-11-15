@@ -528,7 +528,7 @@ function sanitizeProjects(value: unknown, reservedIds?: Iterable<string>) {
   });
 }
 
-function createProject(name = "未命名项目"): ProjectRecord {
+function createProject(name: string): ProjectRecord {
   const now = new Date().toISOString();
   return {
     id: createId("project"),
@@ -541,15 +541,26 @@ function createProject(name = "未命名项目"): ProjectRecord {
   };
 }
 
-const initialProject: ProjectRecord = {
-  id: "project-initial",
-  form: { ...defaultProject },
-  kit: [],
-  basicInfoConfirmed: false,
-  status: "active",
-  createdAt: "1970-01-01T00:00:00.000Z",
-  updatedAt: "1970-01-01T00:00:00.000Z",
-};
+function readProjectCollection(value: unknown, reservedIds?: Iterable<string>) {
+  if (!Array.isArray(value)) return null;
+  const records = sanitizeProjects(value, reservedIds);
+  if (value.length && !records.length) return null;
+
+  // Older versions seeded this exact empty record before the first user action.
+  return records.filter((record) => !(
+    record.id === "project-initial" &&
+    record.createdAt === "1970-01-01T00:00:00.000Z" &&
+    record.updatedAt === record.createdAt &&
+    record.status === "active" && !record.basicInfoConfirmed && !record.kit.length &&
+    !record.requirementsRevision && !record.requirementsChanged &&
+    Object.entries(defaultProject).every(([key, value]) =>
+      JSON.stringify(record.form[key as keyof ProjectForm]) === JSON.stringify(value))
+  ));
+}
+
+function currentProjectId(records: readonly ProjectRecord[], preferred: unknown) {
+  return records.find((record) => record.id === preferred)?.id ?? records[0]?.id ?? "";
+}
 
 function clampInteger(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, Number.isFinite(value) ? Math.round(value) : min));
@@ -622,8 +633,8 @@ function kitConfirmationLabel(row: KitItem) {
 export default function Home() {
   const [view, setView] = useState<View>("projects");
   const [themePreference, setThemePreference] = useState<ThemePreference | null>(null);
-  const [projects, setProjects] = useState<ProjectRecord[]>(() => [initialProject]);
-  const [activeProjectId, setActiveProjectId] = useState(initialProject.id);
+  const [projects, setProjects] = useState<ProjectRecord[]>([]);
+  const [activeProjectId, setActiveProjectId] = useState("");
   const [hydrated, setHydrated] = useState(false);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<"全部" | EquipmentCategory>("全部");
@@ -726,11 +737,10 @@ export default function Home() {
     if (saved) {
       try {
         const state = JSON.parse(saved) as { projects?: unknown; activeProjectId?: unknown };
-        const validProjects = sanitizeProjects(state.projects);
-        const savedActiveProjectId = typeof state.activeProjectId === "string" ? state.activeProjectId : "";
-        if (validProjects.length) {
+        const validProjects = readProjectCollection(state.projects);
+        if (validProjects) {
           setProjects(validProjects);
-          setActiveProjectId(savedActiveProjectId && validProjects.some((item) => item.id === savedActiveProjectId) ? savedActiveProjectId : validProjects[0].id);
+          setActiveProjectId(currentProjectId(validProjects, state.activeProjectId));
           setHydrated(true);
           return;
         }
@@ -740,11 +750,11 @@ export default function Home() {
     }
 
     const snapshot = readProjectAutosave();
-    const recovered = snapshot ? sanitizeProjects(snapshot.payload.projects) : [];
-    if (snapshot && recovered.length) {
+    const recovered = snapshot && readProjectCollection(snapshot.payload.projects);
+    if (snapshot && recovered) {
       recoverySnapshotRef.current = snapshot;
       setProjects(recovered);
-      setActiveProjectId(recovered.some((record) => record.id === snapshot.payload.activeProjectId) ? snapshot.payload.activeProjectId : recovered[0].id);
+      setActiveProjectId(currentProjectId(recovered, snapshot.payload.activeProjectId));
       setToast("本地项目记录不可用，已从自动存档恢复");
       setHydrated(true);
       return;
@@ -765,11 +775,6 @@ export default function Home() {
         // Keep legacy data available for manual recovery.
       }
     }
-    setProjects((current) => {
-      const first = current[0] ?? createProject();
-      setActiveProjectId(first.id);
-      return [first];
-    });
     setHydrated(true);
   }, []);
 
@@ -1082,6 +1087,17 @@ export default function Home() {
     return () => window.removeEventListener("keydown", shortcut);
   });
 
+  function openProjectSetup(message: string) {
+    if (!activeProject) {
+      setView("projects");
+      setToast("请先新增项目，再加入器材");
+      return;
+    }
+    setEditingBasics(true);
+    setView("library");
+    setToast(message);
+  }
+
   function addToKit(id: string, reason = "手动选材") {
     if (kit.some((row) => row.id === id)) {
       setKit((current) => current.filter((row) => row.id !== id), `取消选择 ${equipmentById(id)?.name ?? "器材"}`);
@@ -1090,8 +1106,8 @@ export default function Home() {
     }
     if (!activeProject?.basicInfoConfirmed) {
       setQuery(equipmentById(id)?.name || "");
-      setCategory("全部"); setBrand("全部"); setEditingBasics(true); setView("library");
-      setToast("请先保存当前项目的基本信息，再加入此器材");
+      setCategory("全部"); setBrand("全部");
+      openProjectSetup("请先保存当前项目的基本信息，再加入此器材");
       return;
     }
     if (!equipmentById(id)?.published) return;
@@ -1100,7 +1116,7 @@ export default function Home() {
   }
 
   function toggleSeries(series: EquipmentSeries) {
-    if (!activeProject?.basicInfoConfirmed) { setEditingBasics(true); setView("library"); setToast("请先保存项目基本信息"); return; }
+    if (!activeProject?.basicInfoConfirmed) { openProjectSetup("请先保存项目基本信息"); return; }
     if (!setKit((current) => addKitSelection(current, series.items.map((item) => ({ id: item.id, qty: 1, note: "", reason: `系列：${series.name}`, status: "manual" }))), `加入 ${series.name} 缺少的器材`)) return;
     setToast(`已补入 ${series.name} 中未选的器材；原有数量和备注已保留`);
   }
@@ -1113,7 +1129,7 @@ export default function Home() {
     return <label><span>{label}</span><select value={String(project[key])} onChange={(event) => updateProject({ [key]: event.target.value })}>{options.map((value) => <option key={value}>{value}</option>)}</select></label>;
   }
   function addCustomItem(targetCategory: EquipmentCategory) {
-    if (!activeProject?.basicInfoConfirmed) { setView("library"); setEditingBasics(true); setToast("请先保存项目基本信息，再新增器材"); return; }
+    if (!activeProject?.basicInfoConfirmed) { openProjectSetup("请先保存项目基本信息，再新增器材"); return; }
     if (!customDraft.name.trim() || !customDraft.unit.trim()) {
       setToast("请填写器材名称与单位");
       return;
@@ -1217,6 +1233,7 @@ export default function Home() {
   }
 
   function canAddProjects(count = 1) {
+    if (!hydrated) return false;
     const error = projectCapacityError(latestRecords.current.projects.length, count);
     if (error) { setToast(error); return false; }
     return true;
@@ -1303,14 +1320,14 @@ export default function Home() {
   function deleteProject(record: ProjectRecord) {
     if (!window.confirm(`确定删除“${record.form.name}”？此操作无法撤销。`)) return;
     const remaining = projects.filter((item) => item.id !== record.id);
-    if (!remaining.length) {
-      const replacement = createProject();
-      setProjects([replacement]);
-      setActiveProjectId(replacement.id);
-    } else {
-      setProjects(remaining);
-      if (activeProjectId === record.id) setActiveProjectId(remaining[0].id);
-    }
+    setProjects(remaining);
+    setActiveProjectId(currentProjectId(remaining, activeProjectId));
+    setKitHistories((current) => {
+      const next = { ...current };
+      delete next[record.id];
+      return next;
+    });
+    if (!remaining.length) setEditingBasics(false);
     setToast("项目已删除");
   }
 
@@ -1411,8 +1428,8 @@ export default function Home() {
       if (!rawPayload || typeof rawPayload !== "object" || Array.isArray(rawPayload)) throw new Error("invalid backup");
       const payload = rawPayload as { version?: unknown; projects?: unknown; historyOverrides?: unknown };
       if (payload.version !== undefined && payload.version !== 2) throw new Error("unsupported backup");
-      const imported = sanitizeProjects(payload.projects, projects.map((item) => item.id));
-      if (!imported.length) throw new Error("empty backup");
+      const imported = readProjectCollection(payload.projects, latestRecords.current.projects.map((item) => item.id));
+      if (!imported) throw new Error("invalid project collection");
       if (!canAddProjects(imported.length)) return;
       for (const record of imported) {
         const error = kitCapacityError(0, record.kit.length);
@@ -1422,7 +1439,7 @@ export default function Home() {
       if (!canMergeHistory(importedHistory)) return;
       setProjects((current) => [...imported, ...current]);
       setHistoryOverrides((current) => ({ ...current, ...importedHistory }));
-      setActiveProjectId(imported[0].id);
+      if (imported.length) setActiveProjectId(imported[0].id);
       setView("projects");
       const historyLabel = Object.keys(importedHistory).length ? `，含 ${Object.keys(importedHistory).length} 个自定义历史项目` : "";
       setToast(`已导入并合并 ${imported.length} 个项目${historyLabel}`);
@@ -1450,12 +1467,12 @@ export default function Home() {
   function restoreAutosave() {
     const snapshot = readProjectAutosave();
     if (!snapshot) { setToast("当前设备暂无可恢复的自动存档"); return; }
-    const payload = snapshot.payload as { projects?: unknown; activeProjectId?: unknown; historyOverrides?: unknown };
-    const restored = sanitizeProjects(payload.projects);
-    if (!restored.length) { setToast("自动存档无有效项目，请导入项目备份"); return; }
+    const payload = snapshot.payload;
+    const restored = readProjectCollection(payload.projects);
+    if (!restored) { setToast("自动存档无有效项目，请导入项目备份"); return; }
     if (!window.confirm(`恢复 ${new Date(snapshot.savedAt).toLocaleString("zh-CN")} 的自动存档？当前项目与历史项目将替换为存档内容。`)) return;
     setProjects(restored);
-    setActiveProjectId(restored.some((record) => record.id === payload.activeProjectId) ? payload.activeProjectId as string : restored[0].id);
+    setActiveProjectId(currentProjectId(restored, payload.activeProjectId));
     setHistoryOverrides(sanitizeHistoryOverrides(migrateCatalogHistory(payload.historyOverrides), builtInHistoryProfileIds, equipmentIds));
     setKitHistories({}); setView("projects"); setToast("已恢复自动存档");
   }
@@ -1545,16 +1562,21 @@ export default function Home() {
               {target === "projects" && <em>{projects.filter((item) => item.status === "active").length}</em>}
             </button>
           ))}
+          {hydrated && !activeProject && <button className="nav-item compact-new-project" onClick={createNewProject}>
+            <span className="nav-index"><ControlIcon kind="plus" /></span><span>新增项目</span>
+          </button>}
         </nav>
 
-        <div className="sidebar-project">
+        {activeProject ? <div className="sidebar-project">
           <span>当前项目</span>
           <button className={view === "kit" ? "current-project-link active" : "current-project-link"} aria-current={view === "kit" ? "page" : undefined} onClick={() => setView("kit")}>
             <strong>{project.name}</strong>
             <small>{project.days} 天 · {project.cameraCount} 机位 · {completedKit.length} 项器材</small>
             <span>打开项目</span>
           </button>
-        </div>
+        </div> : hydrated && <div className="sidebar-project sidebar-new-project">
+          <button className="button ghost" onClick={createNewProject}><ControlIcon kind="plus" />新增项目</button>
+        </div>}
 
         <div className="sidebar-foot">
           <span className="status-dot" />
@@ -1568,7 +1590,7 @@ export default function Home() {
             <h1>{pageTitle[view]}</h1>
           </div>
           <div className="header-actions">
-            <button className="header-project" onClick={() => setView("kit")} aria-label={`打开当前器材单：${project.name}，${completedKit.length} 项器材`} title={project.name}><span>当前器材单 · {completedKit.length} 项</span><strong>{project.name}</strong></button>
+            {activeProject && <button className="header-project" onClick={() => setView("kit")} aria-label={`打开当前器材单：${project.name}，${completedKit.length} 项器材`} title={project.name}><span>当前器材单 · {completedKit.length} 项</span><strong>{project.name}</strong></button>}
             <ActionMenu className="theme-menu" label="颜色模式" trigger={<ThemeIcon mode={themePreference ?? "system"} />} chevron={false}>
             <div className="theme-switcher" role="radiogroup" aria-label="颜色模式" onKeyDown={handleRadioKeys}>
               {themeOptions.map((option) => (
@@ -1589,15 +1611,15 @@ export default function Home() {
               ))}
             </div>
             </ActionMenu>
-            <div className="undo-controls" role="group" aria-label="器材单修改历史">
+            {activeProject && <div className="undo-controls" role="group" aria-label="器材单修改历史">
               <button disabled={!currentHistory.past.length} onClick={() => travelKit("undo")} aria-label="撤销清单修改" title={`撤销：${currentHistory.past.at(-1)?.label ?? "暂无修改"} · ⌘Z`}><ControlIcon kind="undo" /></button>
               <button disabled={!currentHistory.future.length} onClick={() => travelKit("redo")} aria-label="重做清单修改" title="重做 · ⇧⌘Z"><ControlIcon kind="redo" /></button>
-            </div>
+            </div>}
           </div>
         </header>
 
         {view === "projects" && (
-          <section className="projects-view">
+          <section className="projects-view" aria-busy={!hydrated}>
             <div className="page-lead">
               <div>
                 <h2>你的项目</h2>
@@ -1612,11 +1634,11 @@ export default function Home() {
                   <button className="button ghost" disabled={uploadBusy} onClick={restoreAutosave}>恢复自动存档</button>
                 </ActionMenu>
                 <input ref={importBackupRef} className="visually-hidden" type="file" accept="application/json,.json" onChange={importProjectBackup} />
-                <button className="button primary" onClick={createNewProject}><ControlIcon kind="plus" />新建项目</button>
+                <button className="button primary" disabled={!hydrated} onClick={createNewProject}><ControlIcon kind="plus" />新建项目</button>
               </div>
             </div>
 
-            <div className="project-toolbar">
+            {projects.length > 0 && <div className="project-toolbar">
               <div className="segmented">
                 {([["active", "进行中"], ["archived", "已归档"], ["all", "全部"]] as const).map(([value, label]) => (
                   <button key={value} className={projectFilter === value ? "active" : ""} onClick={() => setProjectFilter(value)}>
@@ -1629,9 +1651,9 @@ export default function Home() {
                 <ControlIcon kind="search" />
                 <input value={projectQuery} onChange={(event) => setProjectQuery(event.target.value)} placeholder="搜索项目、类型、摄影指导" aria-label="搜索项目" />
               </label>
-            </div>
+            </div>}
 
-            <div className="project-grid">
+            {filteredProjects.length > 0 && <div className="project-grid">
               {filteredProjects.map((record) => (
                 <article className={record.id === activeProjectId ? "project-card current" : "project-card"} key={record.id}>
                   <div className="project-card-top">
@@ -1659,8 +1681,20 @@ export default function Home() {
                   </div>
                 </article>
               ))}
-            </div>
-            {!filteredProjects.length && <div className="empty-state"><strong>没有匹配的项目</strong><span>调整筛选，或创建一个新项目。</span></div>}
+            </div>}
+            {projects.length > 0 && !filteredProjects.length && <div className="empty-state"><strong>没有匹配的项目</strong><span>调整筛选，或创建一个新项目。</span></div>}
+            {!hydrated && <div className="empty-state">正在读取项目…</div>}
+            {hydrated && !projects.length && <div className="empty-state project-empty" role="status">
+              <div className="project-empty-mark" aria-hidden="true">
+                <svg viewBox="0 0 64 48" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path className="frame-left" d="M8 15V8h8M8 33v7h8" />
+                  <path className="frame-right" d="M56 15V8h-8m8 25v7h-8" />
+                  <path className="frame-cross" d="M32 20v8m-4-4h8" />
+                </svg>
+              </div>
+              <strong>当前无项目</strong>
+              <span>新建项目即可填写拍摄信息和准备器材单。</span>
+            </div>}
           </section>
         )}
 
@@ -1706,7 +1740,7 @@ export default function Home() {
           <section className="library-view">
             {view === "catalog" && <div className="page-lead"><p>按品类与品牌浏览全部器材。</p></div>}
             {view === "library" && <div className="project-flow-bar"><button onClick={() => setView("projects")}>返回项目管理</button><button onClick={() => setView("kit")}>查看该项目器材单 · {completedKit.length} 项</button></div>}
-            {view === "library" && renderProjectBasics("library")}
+            {view === "library" && activeProject && renderProjectBasics("library")}
             {(view === "catalog" || activeProject?.basicInfoConfirmed && !editingBasics) && <>
 
             <div className="filter-bar">
@@ -1827,7 +1861,7 @@ export default function Home() {
           </section>
         )}
 
-        {view === "kit" && (
+        {view === "kit" && activeProject && (
           <section className="kit-view">
             <div className="kit-overview">
               <div>

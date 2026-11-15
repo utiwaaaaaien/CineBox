@@ -51,6 +51,13 @@ test("missing, corrupt, incompatible or inaccessible snapshots do not throw", ()
   assert.equal(readProjectAutosave(), null);
 });
 
+test("an intentionally empty project collection is recoverable with its history", () => {
+  const storage = memoryStorage();
+  const empty = { projects: [], activeProjectId: "", historyOverrides: { saved: { quantities: {} } } };
+  createProjectAutosaveWriter(storage).save(empty);
+  assert.deepEqual(readProjectAutosave(storage)?.payload, empty);
+});
+
 test("history recovers independently from missing and corrupt storage without replacing valid current history", async () => {
   const { readStoredHistory } = await import("../app/project-autosave.ts");
   const storage = memoryStorage();

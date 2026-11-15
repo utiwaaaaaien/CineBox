@@ -4,6 +4,12 @@
 
 User-facing release notes. `app/release.ts` defines the application version; the underlying catalog keeps its own version and identity compatibility rules.
 
+## V6.4 — 2026-11-15
+
+- 项目为空时显示「当前无项目」，可通过左侧边栏或手机导航新增项目。删除最后一个项目后，刷新页面仍显示空状态。
+- 取景框对焦、表单与弹窗过渡以及按钮反馈遵循系统的减少动态效果设置。
+- An empty workspace shows a create action in the sidebar or mobile navigation. Deleting the last project stays empty after reload. Motion follows the system preference.
+
 ## V6.3 — 2026-11-15
 
 - 新增 37 项影视配件与 125 项影鼎风格化改装镜头。
