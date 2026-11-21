@@ -14,7 +14,7 @@ import { readStoredHistory } from "./project-autosave";
 import { appVersion, releaseNotes } from "./release";
 import { SpecField } from "./spec-field";
 import { resolutionOptions, aspectRatioOptions, projectFpsOptions, highSpeedFpsOptions } from "./project-specs";
-import { BrandFilter } from "./brand-filter";
+import { CatalogChoice, type CatalogOption } from "./catalog-choice";
 import { ActionMenu } from "./action-menu";
 import { brandMenuLabels } from "./catalog-brands";
 import { categoryBrands, filterCatalog, copyHistoricalKit, basicSystemProject } from "./direct-selection";
@@ -605,27 +605,6 @@ function completeEssentialCameraSystem(project: ProjectForm, kit: KitItem[]) {
     .reduce((current, check) => addSystemRuleRows(current, check.missing, `站内系统检查：${check.title}`), kit);
 }
 
-function kitChecks(project: ProjectForm, kit: KitItem[]) {
-  const resolved = kit.map(resolveKitEquipment).filter(Boolean);
-  const hasCategory = (category: EquipmentCategory) => resolved.some((item) => item?.category === category);
-  const text = resolved.map((item) => item?.name).join(" ");
-  const checks: { level: "warning" | "info"; text: string }[] = [];
-  if (!hasCategory("摄影机")) checks.push({ level: "warning", text: "尚未选择摄影机机身。" });
-  if (!hasCategory("镜头")) checks.push({ level: "warning", text: "尚未选择镜头或镜头组。" });
-  if (!hasCategory("移动器材")) checks.push({ level: "warning", text: "缺少基础云台、脚架或机身支撑。" });
-  if (!hasCategory("监看")) checks.push({ level: "warning", text: "缺少机头或导演监看方案。" });
-  if (hasCategory("摄影机") && !/电池|battery|供电|v口|gold mount/i.test(text)) {
-    checks.push({ level: "info", text: "请确认电池数量、充电器、供电线和机身电压。" });
-  }
-  if (hasCategory("摄影机") && !/ssd|储存|存储|cfexpress|codex|prossd|卡/i.test(text)) {
-    checks.push({ level: "info", text: "请确认录制介质、读卡器与每日素材容量。" });
-  }
-  if (project.cameraCount > 1 && !/时码|timecode|tentacle|锁相|genlock/i.test(text)) {
-    checks.push({ level: "info", text: "多机位项目建议确认时码同步与机间色彩测试。" });
-  }
-  return checks;
-}
-
 function kitConfirmationLabel(row: KitItem) {
   return row.status === "confirmed" ? "已确认" : "待确认";
 }
@@ -641,11 +620,8 @@ export default function Home() {
   const [brand, setBrand] = useState("全部");
   const [namingFilter, setNamingFilter] = useState("全部");
   const [visibleCount, setVisibleCount] = useState(72);
-  const [seriesVisibleCount, setSeriesVisibleCount] = useState(12);
+  const [seriesId, setSeriesId] = useState("");
   const [editingBasics, setEditingBasics] = useState(false);
-  const [kitQuery, setKitQuery] = useState("");
-  const [kitScope, setKitScope] = useState<"all" | "pending">("all");
-  const [kitCategory, setKitCategory] = useState<"全部" | EquipmentCategory>("全部");
   const [kitHistories, setKitHistories] = useState<Record<string, KitHistory<EquipmentCategory>>>({});
   const [swapPreview, setSwapPreview] = useState<{ rows: KitItem[]; name: string } | null>(null);
   const [projectFilter, setProjectFilter] = useState<"all" | "active" | "archived">("active");
@@ -668,7 +644,7 @@ export default function Home() {
   const swapComposing = useRef(false);
   const [swapCustom, setSwapCustom] = useState<CustomEquipment | null>(null);
   const [swapScope, setSwapScope] = useState<"recommended" | "brand" | "all">("recommended");
-  const [kitExportFormat, setKitExportFormat] = useState<KitExportFormat>("xlsx");
+  const [projectExportFormat, setProjectExportFormat] = useState<KitExportFormat | "json">("xlsx");
   const [exportingKit, setExportingKit] = useState(false);
   const [kitPreviewOpen, setKitPreviewOpen] = useState(false);
   const [historyOverrides, setHistoryOverrides] = useState<Record<string, HistoryProfile>>({});
@@ -856,12 +832,15 @@ export default function Home() {
     };
   }, [modalOpen]);
 
+  const selectingForProject = view === "library" && Boolean(activeProject?.basicInfoConfirmed) && !editingBasics;
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
-  }, [activeProjectId, view]);
+  }, [activeProjectId, selectingForProject, view]);
 
-  const menuLabels = useMemo(() => brandMenuLabels(equipment, canonicalBrandLabels), []);
-  const brands = useMemo(() => categoryBrands(equipment, category, menuLabels), [category, menuLabels]);
+  const menuLabels = useMemo(() => brandMenuLabels(equipment), []);
+  const brandOptions = useMemo(() => categoryBrands(equipment, category, menuLabels).map((name) => ({
+    value: name, label: name === "全部" ? "全部品牌" : menuLabels[name] ?? name,
+  })), [category, menuLabels]);
   const filteredEquipment = useMemo(
     () => filterCatalog(equipment, { category, brand, query, namingFilter }),
     [brand, category, query, namingFilter],
@@ -874,9 +853,25 @@ export default function Home() {
     }).filter((series) =>
       (category === "全部" || series.category === category) &&
       (brand === "全部" || series.brand === brand) &&
-      series.items.some((item) => resultIds.has(item.id)),
+      series.items.length > 0 &&
+      (series.id === seriesId || series.items.some((item) => resultIds.has(item.id))),
     );
-  }, [brand, category, filteredEquipment, namingFilter]);
+  }, [brand, category, filteredEquipment, namingFilter, seriesId]);
+  const seriesOptions = useMemo<CatalogOption[]>(() => {
+    const nameCounts = new Map<string, number>();
+    for (const { name } of filteredSeries) nameCounts.set(name, (nameCounts.get(name) ?? 0) + 1);
+    return [{ value: "", label: "全部系列" }, ...filteredSeries.map((series) => ({
+      value: series.id,
+      label: (nameCounts.get(series.name) ?? 0) > 1 ? `${series.brand} · ${series.name}` : series.name,
+    }))];
+  }, [filteredSeries]);
+  const activeSeries = view === "library" ? filteredSeries.find((series) => series.id === seriesId) : undefined;
+  const equipmentResults = useMemo(() => {
+    if (!activeSeries) return filteredEquipment;
+    const ids = new Set(activeSeries.items.map((item) => item.id));
+    return filteredEquipment.filter((item) => ids.has(item.id));
+  }, [activeSeries, filteredEquipment]);
+  const seriesItemsToAdd = activeSeries?.items.filter((item) => !kit.some((row) => row.id === item.id)).length ?? 0;
 
   const groupedKit = useMemo(
     () =>
@@ -904,12 +899,9 @@ export default function Home() {
     [historyOverrides],
   );
   const selectedUnits = completedKit.reduce((sum, item) => sum + item.qty, 0);
-  const confirmedCount = completedKit.filter((row) => row.status === "confirmed").length;
-  const pendingCount = completedKit.length - confirmedCount;
-  const checks = useMemo(() => completedKit.length ? kitChecks(project, completedKit) : [], [completedKit, project]);
+  const pendingCount = completedKit.filter((row) => row.status !== "confirmed").length;
   const systemChecks = useMemo(() => buildCameraSystemChecks(basicSystemProject(project), completedKit, canonicalEquipment), [completedKit, project]);
   const missingSystemChecks = systemChecks.filter((check) => check.missing.length);
-  const passedSystemChecks = systemChecks.length - missingSystemChecks.length;
   const swapTarget = kit.find((row) => row.id === swapTargetId);
   const swapTargetItem = swapTarget ? resolveKitEquipment(swapTarget) : undefined;
   const swapCategory = swapTargetItem?.category;
@@ -1050,14 +1042,6 @@ export default function Home() {
   }
 
   const currentHistory = Object.hasOwn(kitHistories, activeProjectId) ? kitHistories[activeProjectId] : { past: [], future: [] };
-  const visibleKitGroups = groupedKit.map((group) => ({ ...group, rows: group.rows.filter((row) => {
-    if (isBlankCustomKitItem(row)) return kitCategory === "全部" || row.custom?.category === kitCategory;
-    const item = resolveKitEquipment(row);
-    return (kitScope === "all" || row.status !== "confirmed") &&
-      (kitCategory === "全部" || item?.category === kitCategory) &&
-      (!kitQuery.trim() || `${item?.name} ${item?.brand} ${row.note}`.toLowerCase().includes(kitQuery.trim().toLowerCase()));
-  }) })).filter((group) => group.rows.length);
-
   function setKit(next: KitItem[] | ((current: KitItem[]) => KitItem[]), label = "调整器材单", group?: string) {
     const rows = typeof next === "function" ? next(kit) : next;
     if (rows === kit || JSON.stringify(rows) === JSON.stringify(kit)) return true;
@@ -1106,23 +1090,19 @@ export default function Home() {
     }
     if (!activeProject?.basicInfoConfirmed) {
       setQuery(equipmentById(id)?.name || "");
-      setCategory("全部"); setBrand("全部");
+      setCategory("全部"); setBrand("全部"); setSeriesId("");
       openProjectSetup("请先保存当前项目的基本信息，再加入此器材");
       return;
     }
     if (!equipmentById(id)?.published) return;
     if (!setKit((current) => addKitSelection(current, [{ id, qty: 1, note: "", reason, status: "manual" }]), `加入 ${equipmentById(id)?.name ?? "器材"}`)) return;
-    setToast(`已加入「${project.name}」；点击下方“查看器材单”调整数量`);
+    setToast(`已加入「${project.name}」，可在器材单调整数量`);
   }
 
-  function toggleSeries(series: EquipmentSeries) {
+  function addSeriesToKit(series: EquipmentSeries) {
     if (!activeProject?.basicInfoConfirmed) { openProjectSetup("请先保存项目基本信息"); return; }
     if (!setKit((current) => addKitSelection(current, series.items.map((item) => ({ id: item.id, qty: 1, note: "", reason: `系列：${series.name}`, status: "manual" }))), `加入 ${series.name} 缺少的器材`)) return;
     setToast(`已补入 ${series.name} 中未选的器材；原有数量和备注已保留`);
-  }
-
-  function toggleSeriesItem(item: Equipment, seriesName: string) {
-    addToKit(item.id, `系列单选：${seriesName}`);
   }
 
   function projectSelect(label: string, key: keyof ProjectForm, options: string[]) {
@@ -1148,6 +1128,13 @@ export default function Home() {
 
   function updateKit(id: string, patch: Partial<KitItem>) {
     setKit((current) => current.map((row) => (row.id === id ? { ...row, ...patch, userAdjusted: true } : row)), `修改 ${resolveKitEquipment(kit.find((row) => row.id === id)!)?.name ?? "器材"}`, `${id}:${Object.keys(patch).join(",")}`);
+  }
+
+  function confirmKitItems() {
+    if (!pendingCount) return;
+    const next = kit.map((row) => isBlankCustomKitItem(row) || row.status === "confirmed"
+      ? row : { ...row, status: "confirmed" as const, userAdjusted: true });
+    if (setKit(next, "一键确认器材")) setToast(`已确认 ${pendingCount} 项器材，可撤销`);
   }
 
   function renderKitConfirmation(row: KitItem, name: string) {
@@ -1331,14 +1318,22 @@ export default function Home() {
     setToast("项目已删除");
   }
 
-  async function exportKit() {
+  function exportCurrentProject() {
+    if (!activeProject) return;
+    if (projectExportFormat === "json") {
+      exportProjectBackup(activeProject);
+    } else {
+      void exportKit(projectExportFormat);
+    }
+  }
+
+  async function exportKit(format: KitExportFormat) {
     if (!kitDocumentGroups.length) {
       setToast("器材单为空，暂时无法导出");
       return;
     }
     if (exportingKit) return;
 
-    const format = kitExportFormat;
     const { label, mime } = kitExportFormats[format];
     const fileStem = safeExcelFileName(project.name).slice(0, -".xlsx".length);
     setExportingKit(true);
@@ -1398,13 +1393,19 @@ export default function Home() {
     }
   }
 
-  function exportProjectBackup() {
-    const payload = JSON.stringify({ version: 2, exportedAt: new Date().toISOString(), projects, historyOverrides }, null, 2);
+  function exportProjectBackup(record?: ProjectRecord) {
+    const payload = JSON.stringify({
+      version: 2,
+      exportedAt: new Date().toISOString(),
+      projects: record ? [record] : projects,
+      historyOverrides: record ? {} : historyOverrides,
+    }, null, 2);
     const blob = new Blob([payload], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = `CineBox-项目备份-${new Date().toISOString().slice(0, 10)}.json`;
+    anchor.download = record ? safeExcelFileName(record.form.name).replace(/-摄影器材单\.xlsx$/, "-项目备份.json")
+      : `CineBox-项目备份-${new Date().toISOString().slice(0, 10)}.json`;
     document.body.appendChild(anchor);
     anchor.click();
     anchor.remove();
@@ -1449,8 +1450,6 @@ export default function Home() {
   }
 
   function addBlankCustomRow(targetCategory: EquipmentCategory) {
-    setKitQuery("");
-    setKitScope("all");
     const row = createCustomKitRow(createId("custom"), targetCategory);
     if (!setKit((current) => [...current, row], `新增${targetCategory}自定义行`)) return;
     window.setTimeout(() => {
@@ -1492,16 +1491,16 @@ export default function Home() {
     </section>;
   }
 
-  function renderProjectBasics(destination: "library" | "history") {
+  function renderProjectBasics() {
     const ready = Boolean(activeProject?.basicInfoConfirmed);
     return <details className="project-basics" open={!ready || editingBasics} onToggle={(event) => { if (ready) setEditingBasics(event.currentTarget.open); }}>
       <summary><div><strong>{ready && !editingBasics ? project.name : "项目基本信息"}</strong><span>{project.days} 天 · {project.cameraCount} 机位 · {project.resolution} / {project.aspectRatio} / {project.baseFps}fps</span></div><b>{ready ? editingBasics ? "收起" : "编辑" : "填写后开始"}</b></summary>
       <form className="questionnaire-form basics-form" onSubmit={(event) => { event.preventDefault(); saveProjectBasics(); }}>
-        <fieldset><legend>项目与排期</legend><div className="form-grid four">
+        <fieldset><legend>项目与排期</legend><div className="form-grid four basics-schedule">
           <label className="wide-field"><span>项目名称</span><input required maxLength={200} value={project.name} onChange={(event) => updateProject({ name: event.target.value })} placeholder="例如：品牌春季 TVC" /></label>
           {projectSelect("项目类型", "type", ["企业宣传片", "艺人视频", "TVC", "剧情片", "MV", "纪录片"])}
           {projectSelect("项目分类", "category", ["商业项目", "剧情项目", "艺人内容", "纪录内容", "个人创作", "其他"])}
-          <label><span>拍摄开始日期</span><input type="date" value={project.shootDate} onInput={(event) => updateProject({ shootDate: event.currentTarget.value })} onChange={(event) => updateProject({ shootDate: event.target.value })} /><small>{project.shootDate ? `拍摄周期：${formatShootRange(project.shootDate, project.days)}` : "日期待定时可留空"}</small></label>
+          <label className="wide-field"><span>拍摄开始日期</span><input type="date" value={project.shootDate} onInput={(event) => updateProject({ shootDate: event.currentTarget.value })} onChange={(event) => updateProject({ shootDate: event.target.value })} /><small>{project.shootDate ? `拍摄周期：${formatShootRange(project.shootDate, project.days)}` : "日期待定时可留空"}</small></label>
           <label><span>拍摄天数</span><input type="number" min={1} max={60} value={project.days} onChange={(event) => updateProject({ days: clampInteger(Number(event.target.value), 1, 60) })} /></label>
           <label><span>机位数量</span><select value={project.cameraCount} onChange={(event) => updateProject({ cameraCount: Number(event.target.value) })}>{[1,2,3,4,5,6,7,8].map((value) => <option key={value} value={value}>{value === 1 ? "单机" : value === 2 ? "双机" : `${value} 机位`}</option>)}</select></label>
         </div></fieldset>
@@ -1512,14 +1511,70 @@ export default function Home() {
           <SpecField key={`${activeProjectId}-speed`} label="升格采集帧率" value={project.highSpeedFps} options={highSpeedFpsOptions} numeric min={1} max={10000} onChange={(value) => updateProject({ highSpeedFps: Number(value) })} />
 
         </div><p className="spec-note">项目帧率用于时间线与交付；升格为采集帧率。实际录制规格与升格上限，请按机型、传感器模式及编码格式确认。</p></fieldset>
-        <details className="form-disclosure"><summary><strong>联络与备注</strong><span>{project.dop || "摄影指导待定"}</span></summary><div className="form-grid four">
+        <fieldset className="basics-contact"><legend>联络与备注</legend><div className="form-grid four">
           <label className="wide-field"><span>摄影指导</span><input value={project.dop} onChange={(event) => updateProject({ dop: event.target.value })} /></label>
           <label className="wide-field"><span>联系方式</span><input value={project.contact} onChange={(event) => updateProject({ contact: event.target.value })} /></label>
           <label className="full-field"><span>补充说明</span><textarea value={project.notes} onChange={(event) => updateProject({ notes: event.target.value })} rows={3} /></label>
-        </div></details>
-        <div className="basics-submit"><small>器材单将使用以上项目信息。</small><button className="button primary" type="submit" disabled={!project.name.trim()}>{destination === "history" ? "保存基本信息" : ready ? "保存并继续选器材" : "开始选择器材"}</button></div>
+        </div></fieldset>
+        <div className="basics-submit"><button className="button primary" type="submit" disabled={!project.name.trim()}>{ready ? "保存并继续选器材" : "开始选择器材"}</button></div>
       </form>
     </details>;
+  }
+
+  function renderSelectionSummary() {
+    return <section className="selection-summary" aria-label="当前项目选材进度">
+      <div className="selection-project">
+        <h2 title={project.name}>{project.name}</h2>
+        <p>{project.days} 天 · {project.cameraCount} 机位 · {project.resolution} · {project.aspectRatio} · {project.baseFps} fps</p>
+      </div>
+      <div className="selection-actions">
+        <span role="status">已选 {completedKit.length} 项 · 合计 {selectedUnits} 件</span>
+        <button className="button ghost" onClick={() => editProjectBasics()}>编辑项目</button>
+        <button className="button ghost" aria-haspopup="dialog" onClick={(event) => { dialogTriggerRef.current = event.currentTarget; setKitPreviewOpen(true); }}>预览器材单</button>
+        <button className="button primary" onClick={() => setView("kit")}>查看器材单</button>
+      </div>
+    </section>;
+  }
+
+  function renderCatalogFilters() {
+    return <div className="catalog-filters">
+      <div className="filter-bar">
+        <label className="search-field">
+          <ControlIcon kind="search" />
+          <input value={query} onChange={(event) => { setQuery(event.target.value); setVisibleCount(72); }} placeholder="搜索器材，例如：索尼 24-70、阿莱 LF" aria-label="搜索器材" />
+        </label>
+        <label className="select-field">
+          <span>器材类型</span>
+          <select aria-label="器材类型" value={namingFilter} onChange={(event) => { setNamingFilter(event.target.value); setVisibleCount(72); setSeriesId(""); }}>
+            <option value="全部">全部</option><option value="official-model">品牌型号</option><option value="generic">通用器材</option>
+          </select>
+        </label>
+        <button className="button ghost" onClick={() => { setQuery(""); setCategory("全部"); setBrand("全部"); setNamingFilter("全部"); setVisibleCount(72); setSeriesId(""); }}>清除</button>
+      </div>
+
+      <div className="category-picker">
+        <label className="select-field"><span>品类</span>
+          <select aria-label="选择器材品类" value={category} onChange={(event) => { setCategory(event.target.value as typeof category); setBrand("全部"); setVisibleCount(72); setSeriesId(""); }}>
+            {["全部", ...categories].map((name) => <option key={name} value={name}>{name} · {name === "全部" ? equipment.length : equipment.filter((item) => item.category === name).length}</option>)}
+          </select>
+        </label>
+      </div>
+      <div className="category-strip" aria-label="器材分类">
+        <button className={category === "全部" ? "category-tab active" : "category-tab"} aria-pressed={category === "全部"} onClick={() => { setCategory("全部"); setBrand("全部"); setVisibleCount(72); setSeriesId(""); }}>
+          <span>全部</span><b>{equipment.length}</b>
+        </button>
+        {categories.map((name) => (
+          <button key={name} className={category === name ? "category-tab active" : "category-tab"} aria-pressed={category === name} onClick={() => { setCategory(name); setBrand("全部"); setVisibleCount(72); setSeriesId(""); }}>
+            <span>{name}</span><b>{equipment.filter((item) => item.category === name).length}</b>
+          </button>
+        ))}
+      </div>
+
+      {activeProject?.basicInfoConfirmed && <div className="category-progress">
+        <label htmlFor="category-progress-bar">已选 {kitDocumentGroups.length} / {categories.length} 个类别</label>
+        <progress id="category-progress-bar" value={kitDocumentGroups.length} max={categories.length} />
+      </div>}
+    </div>;
   }
 
   const pageTitle: Record<View, string> = {
@@ -1552,7 +1607,7 @@ export default function Home() {
             <button key={target} className={view === target || target === "projects" && view === "library" ? "nav-item active" : "nav-item"} aria-current={view === target || target === "projects" && view === "library" ? "page" : undefined} onClick={() => {
               if (target === "catalog") {
                 setCategory("全部"); setBrand("全部"); setQuery(""); setNamingFilter("全部");
-                setVisibleCount(72); setSeriesVisibleCount(12);
+                setVisibleCount(72); setSeriesId("");
               }
               setView(target);
             }}>
@@ -1585,12 +1640,13 @@ export default function Home() {
       </aside>
 
       <section className="workspace" id="workspace-content" tabIndex={-1} aria-label={pageTitle[view]} inert={modalOpen}>
+        <div className="workspace-top">
         <header className="workspace-header">
           <div>
             <h1>{pageTitle[view]}</h1>
           </div>
           <div className="header-actions">
-            {activeProject && <button className="header-project" onClick={() => setView("kit")} aria-label={`打开当前器材单：${project.name}，${completedKit.length} 项器材`} title={project.name}><span>当前器材单 · {completedKit.length} 项</span><strong>{project.name}</strong></button>}
+            {activeProject && !selectingForProject && !(view === "catalog" && activeProject.basicInfoConfirmed) && <button className="header-project" onClick={() => setView("kit")} aria-label={`打开当前器材单：${project.name}，${completedKit.length} 项器材`} title={project.name}><span>当前器材单 · {completedKit.length} 项</span><strong>{project.name}</strong></button>}
             <ActionMenu className="theme-menu" label="颜色模式" trigger={<ThemeIcon mode={themePreference ?? "system"} />} chevron={false}>
             <div className="theme-switcher" role="radiogroup" aria-label="颜色模式" onKeyDown={handleRadioKeys}>
               {themeOptions.map((option) => (
@@ -1617,6 +1673,12 @@ export default function Home() {
             </div>}
           </div>
         </header>
+        {selectingForProject && <section className="selection-toolbar" aria-label="器材选择与筛选">
+          <div className="project-flow-bar"><button onClick={() => setView("projects")}>返回项目管理</button></div>
+          {renderSelectionSummary()}
+          {renderCatalogFilters()}
+        </section>}
+        </div>
 
         {view === "projects" && (
           <section className="projects-view" aria-busy={!hydrated}>
@@ -1629,7 +1691,7 @@ export default function Home() {
               </div>
               <div className="lead-actions">
                 <ActionMenu label="项目备份" trigger="备份">
-                  <button className="button ghost" onClick={exportProjectBackup}>导出项目备份</button>
+                  <button className="button ghost" onClick={() => exportProjectBackup()}>导出项目备份</button>
                   <button className="button ghost" disabled={uploadBusy} onClick={() => importBackupRef.current?.click()}>{importingBackup ? "正在导入…" : "导入并合并"}</button>
                   <button className="button ghost" disabled={uploadBusy} onClick={restoreAutosave}>恢复自动存档</button>
                 </ActionMenu>
@@ -1739,98 +1801,35 @@ export default function Home() {
         {(view === "library" || view === "catalog") && (
           <section className="library-view">
             {view === "catalog" && <div className="page-lead"><p>按品类与品牌浏览全部器材。</p></div>}
-            {view === "library" && <div className="project-flow-bar"><button onClick={() => setView("projects")}>返回项目管理</button><button onClick={() => setView("kit")}>查看该项目器材单 · {completedKit.length} 项</button></div>}
-            {view === "library" && activeProject && renderProjectBasics("library")}
-            {(view === "catalog" || activeProject?.basicInfoConfirmed && !editingBasics) && <>
-
-            <div className="filter-bar">
-              <label className="search-field">
-                <ControlIcon kind="search" />
-                <input value={query} onChange={(event) => { setQuery(event.target.value); setVisibleCount(72); setSeriesVisibleCount(12); }} placeholder="搜索器材，例如：索尼 24-70、阿莱 LF" aria-label="搜索器材" />
-              </label>
-              <label className="select-field">
-                <span>器材类型</span>
-                <select aria-label="器材类型" value={namingFilter} onChange={(event) => { setNamingFilter(event.target.value); setVisibleCount(72); setSeriesVisibleCount(12); }}>
-                  <option value="全部">全部</option><option value="official-model">品牌型号</option><option value="generic">通用器材</option>
-                </select>
-              </label>
-              <button className="button ghost" onClick={() => { setQuery(""); setCategory("全部"); setBrand("全部"); setNamingFilter("全部"); setVisibleCount(72); setSeriesVisibleCount(12); }}>清除</button>
+            {view === "library" && !selectingForProject && <>
+              <div className="project-flow-bar"><button onClick={() => setView("projects")}>返回项目管理</button></div>
+              {activeProject && renderProjectBasics()}
+            </>}
+            {view === "catalog" && <>
+              {activeProject?.basicInfoConfirmed && renderSelectionSummary()}
+              {renderCatalogFilters()}
+            </>}
+            {(view === "catalog" || selectingForProject) && <>
+            <div className={view === "library" ? "catalog-choices paired" : "catalog-choices"}>
+              <CatalogChoice key={category} kind="品牌" options={brandOptions} selected={brand}
+                onSelect={(name) => { setBrand(name); setSeriesId(""); setVisibleCount(72); }} />
+              {view === "library" && <CatalogChoice key={`${category}-${brand}`} kind="系列" options={seriesOptions} selected={seriesId}
+                onSelect={(id) => { setSeriesId(id); setVisibleCount(72); }} />}
             </div>
-
-            <div className="category-picker">
-              <label className="select-field"><span>品类</span>
-                <select aria-label="选择器材品类" value={category} onChange={(event) => { setCategory(event.target.value as typeof category); setBrand("全部"); setVisibleCount(72); setSeriesVisibleCount(12); }}>
-                  {["全部", ...categories].map((name) => <option key={name} value={name}>{name} · {name === "全部" ? equipment.length : equipment.filter((item) => item.category === name).length}</option>)}
-                </select>
-              </label>
-            </div>
-            <div className="category-strip" aria-label="器材分类">
-              <button className={category === "全部" ? "category-tab active" : "category-tab"} aria-pressed={category === "全部"} onClick={() => { setCategory("全部"); setBrand("全部"); setVisibleCount(72); setSeriesVisibleCount(12); }}>
-                <span>全部</span><b>{equipment.length}</b>
-              </button>
-              {categories.map((name) => (
-                <button key={name} className={category === name ? "category-tab active" : "category-tab"} aria-pressed={category === name} onClick={() => { setCategory(name); setBrand("全部"); setVisibleCount(72); setSeriesVisibleCount(12); }}>
-                  <span>{name}</span><b>{equipment.filter((item) => item.category === name).length}</b>
-                </button>
-              ))}
-            </div>
-
-            {activeProject?.basicInfoConfirmed && <div className="category-progress">
-              <label htmlFor="category-progress-bar">已选 {kitDocumentGroups.length} / {categories.length} 个类别</label>
-              <progress id="category-progress-bar" value={kitDocumentGroups.length} max={categories.length} />
-            </div>}
-            <BrandFilter key={category} brands={brands} labels={menuLabels} category={category} selected={brand} onSelect={(name) => { setBrand(name); setVisibleCount(72); setSeriesVisibleCount(12); }} />
-
-            {view === "library" && !!filteredSeries.length && (
-              <details className="series-browser" >
-                <summary className="series-heading">
-                  <h3 id="series-heading">按系列补充器材</h3>
-                  <span>{filteredSeries.length} 个系列</span>
-                  <b className="series-expand">展开</b><b className="series-collapse">收起</b>
-                </summary>
-                <div className="series-grid">
-                  {filteredSeries.slice(0, seriesVisibleCount).map((series) => {
-                    const selectedCount = series.items.filter((item) => kit.some((row) => row.id === item.id)).length;
-                    const allSelected = selectedCount === series.items.length;
-                    return (
-                      <article className="series-card" key={series.id} data-series-id={series.id}>
-                        <div className="series-card-head">
-                          <div className="series-title"><span>{canonicalBrandLabels[series.brand] ?? series.brand}</span><h4>{series.name}</h4><small>{selectedCount} / {series.items.length} 已选</small></div>
-                          <button className={allSelected ? "series-all selected" : "series-all"} disabled={allSelected} onClick={() => toggleSeries(series)} aria-label={`补入 ${series.name} 未选器材`}>
-                            {allSelected ? "已全部加入" : `补入 ${series.items.length - selectedCount} 项`}
-                          </button>
-                        </div>
-                        <details className="series-details">
-                          <summary>选择其中几件 <span>⌄</span></summary>
-                          <div className="series-items">
-                            {series.items.map((item) => {
-                              const selected = kit.some((row) => row.id === item.id);
-                              return (
-                                <button key={item.id} className={selected ? "series-item selected" : "series-item"} onClick={() => toggleSeriesItem(item, series.name)} aria-pressed={selected}>
-                                  <span className="selection-box">{selected ? "✓" : ""}</span><span><strong>{item.name}</strong><small>{item.unit}</small></span>
-                                </button>
-                              );
-                            })}
-                          </div>
-                        </details>
-                      </article>
-                    );
-                  })}
-                </div>
-                {seriesVisibleCount < filteredSeries.length && <button className="series-more" onClick={() => setSeriesVisibleCount((count) => count + 12)}>再显示 12 个系列</button>}
-              </details>
-            )}
 
             <div className="result-meta">
-              <span>找到 <b>{formatCount(filteredEquipment.length)}</b> 个标准条目</span>
-              <span>点击“已加入”可取消，数量在器材单中调整</span>
+              <span role="status">找到 <b>{formatCount(equipmentResults.length)}</b> 个标准条目</span>
+              {activeSeries ? <button type="button" className="button ghost" disabled={!seriesItemsToAdd}
+                onClick={() => addSeriesToKit(activeSeries)}>
+                {seriesItemsToAdd ? `补入该系列 ${seriesItemsToAdd} 项` : "该系列已全部加入"}
+              </button> : <span>点击“已加入”可取消，数量在器材单中调整</span>}
             </div>
 
             {renderCustomEquipment(category === "全部" ? "其他" : category)}
 
             <div className="equipment-list">
               <div className="equipment-list-head"><span>器材名称 / 技术指标</span><span>操作</span></div>
-              {filteredEquipment.slice(0, visibleCount).map((item) => {
+              {equipmentResults.slice(0, visibleCount).map((item) => {
                 const inKit = kit.some((row) => row.id === item.id);
                 const card = equipmentCardData[item.id];
                 const name = card?.name || item.name;
@@ -1851,97 +1850,48 @@ export default function Home() {
               })}
             </div>
 
-            {visibleCount < filteredEquipment.length && (
+            {visibleCount < equipmentResults.length && (
               <button className="load-more" onClick={() => setVisibleCount((count) => count + 72)}>
-                显示更多 · 还剩 {formatCount(filteredEquipment.length - visibleCount)} 条
+                显示更多 · 还剩 {formatCount(equipmentResults.length - visibleCount)} 条
               </button>
             )}
-            {!filteredEquipment.length && <div className="empty-state"><strong>没有找到匹配器材</strong><span>试试旧称、英文型号或更换品牌筛选。</span></div>}
+            {!equipmentResults.length && <div className="empty-state"><strong>没有找到匹配器材</strong><span>试试旧称、英文型号，或调整筛选条件。</span></div>}
             </>}
           </section>
         )}
 
         {view === "kit" && activeProject && (
           <section className="kit-view">
-            <div className="kit-overview">
+            <header className="kit-overview">
               <div>
                 <h2>{project.name}</h2>
-                <p>{project.type} · {project.days} 天 · {project.cameraCount} 机位 · {project.resolution} · {project.aspectRatio} · {project.baseFps}fps</p>
+                <p>{project.type} · {project.days} 天 · {project.cameraCount} 机位 · {project.resolution} · {project.aspectRatio} · {project.baseFps} fps</p>
               </div>
-              <div className="kit-metrics">
-                <div><strong>{completedKit.length}</strong><span>器材项目</span></div>
-                <div><strong>{selectedUnits}</strong><span>合计数量</span></div>
-
+              <div className="kit-overview-actions">
+                <p className="kit-totals"><strong>{completedKit.length}</strong> 项器材 · 合计 <strong>{selectedUnits}</strong> 件</p>
+                <button className="button ghost" onClick={() => editProjectBasics()}>编辑项目</button>
               </div>
-              <div className="kit-actions">
-                <button className="button ghost" onClick={() => editProjectBasics()}>项目基本信息</button>
-                <button className="button ghost" onClick={() => setView("library")}>添加器材</button>
-                <span className={missingSystemChecks.length ? "inline-audit-status warning" : "inline-audit-status"}>配套覆盖 {passedSystemChecks}/{systemChecks.length || "—"} · 待确认 {pendingCount}
-                </span>
-                <div className="kit-export-controls">
-                  <select aria-label="器材单导出格式" value={kitExportFormat} disabled={exportingKit || !kitDocumentGroups.length}
-                    onChange={(event) => setKitExportFormat(event.target.value as KitExportFormat)}>
-                    {Object.entries(kitExportFormats).map(([format, { label }]) => <option key={format} value={format}>{label}</option>)}
-                  </select>
-                  <button className="button primary" onClick={exportKit} disabled={exportingKit || !kitDocumentGroups.length} aria-busy={exportingKit}>
-                    {exportingKit ? "正在生成…" : "导出器材单"}
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {!!kit.length && <div className="kit-review-toolbar">
-              <label className="search-field"><ControlIcon kind="search" /><input aria-label="搜索当前器材单" value={kitQuery} onChange={(event) => setKitQuery(event.target.value)} placeholder="搜索型号或备注" /></label>
-              <div className="segmented" role="group" aria-label="清单筛选">
-                <button aria-pressed={kitScope === "all"} className={kitScope === "all" ? "active" : ""} onClick={() => setKitScope("all")}>全部 {completedKit.length}</button>
-                <button aria-pressed={kitScope === "pending"} className={kitScope === "pending" ? "active" : ""} onClick={() => setKitScope("pending")}>待确认 {pendingCount}</button>
-              </div>
-              <select aria-label="筛选清单类别" value={kitCategory} onChange={(event) => setKitCategory(event.target.value as typeof kitCategory)}>{["全部", ...categories].map((name) => <option key={name}>{name}</option>)}</select>
-              <small>导出包含完整器材清单</small>
-            </div>}
+            </header>
 
             {activeProject?.requirementsChanged && <div className="requirements-notice" role="status"><div><strong>拍摄规格已修改</strong><p>请核对现有器材与最新的机位、分辨率及帧率要求。</p></div><button className="button ghost" onClick={() => updateActive((current) => ({ ...current, requirementsChanged: false, requirementsRevision: (current.requirementsRevision ?? 0) + 1 }))}>已核对清单</button></div>}
-            {!!completedKit.length && (
-              <details className="kit-brief-details"><summary>项目基本信息 · {project.resolution} / {project.aspectRatio} / {project.baseFps}fps</summary><section className="decision-brief-strip" aria-label="项目基本信息摘要">
-                <div><span>拍摄周期</span><strong>{formatShootRange(project.shootDate, project.days)}</strong><small>{project.days} 天 · {project.cameraCount} 机位</small></div>
-                <div><span>拍摄参数</span><strong>{project.resolution} · {project.aspectRatio}</strong><small>{project.baseFps}fps{project.highSpeedFps > project.baseFps ? ` / 升格 ${project.highSpeedFps}fps` : ""}</small></div>
-                <div><span>摄影指导</span><strong>{project.dop || "待定"}</strong><small>{project.contact || "联系方式待定"}</small></div>
-                <div className="decision-statuses"><span>清单状态</span><strong>{confirmedCount} 已确认 · {pendingCount} 待确认</strong></div>
-              </section></details>
-            )}
-
             {!!completedKit.length && missingSystemChecks.length > 0 && (
               <section className="system-audit-panel has-missing">
                 <header>
-                  <div><h3>{missingSystemChecks.length} 组配套项目待补充</h3><p>补充后可撤销，兼容性与数量仍需确认。</p></div>
-                  <button className="button primary" onClick={completeAllSystemRules}>一键补齐</button>
+                  <h3>{missingSystemChecks.length} 组配套待补齐</h3>
+                  <button className="button primary" onClick={completeAllSystemRules}>一键补齐配套</button>
                 </header>
-                <details className="system-audit-details"><summary>查看缺少项目与配置依据</summary><div className="system-audit-grid">
+                <details className="system-audit-details">
+                  <summary>查看缺少的配套</summary>
+                  <ul className="system-missing-list">
                     {missingSystemChecks.map((check) => (
-                      <article className={check.severity} key={check.id}>
-                        <div><span>{check.severity === "warning" ? "必需检查" : "建议检查"}</span><h4>{check.title}</h4><p>{check.detail}</p></div>
-                        <div className="missing-items"><span>当前缺少</span><strong>{check.missing.map((item) => `${item.label}${item.qty > 1 ? ` ×${item.qty}` : ""}`).join("、")}</strong></div>
-                        <details><summary>配置依据</summary><p>{check.evidence}</p></details>
-                        <button onClick={() => addMissingSystemRule(check)}>{check.autoAdd ? "补齐配套项" : "加入待确认清单"} · {check.missing.length} 项</button>
-                      </article>
+                      <li key={check.id}>
+                        <span>{check.missing.map((item) => item.label).join("、")}</span>
+                        <button className="button ghost" onClick={() => addMissingSystemRule(check)}>补齐配套</button>
+                      </li>
                     ))}
-                  </div></details>
+                  </ul>
+                </details>
               </section>
-            )}
-
-            {!!completedKit.length && systemChecks.length > 0 && !missingSystemChecks.length && (
-              <section className={pendingCount ? "audit-pass-strip has-pending" : "audit-pass-strip"} aria-label="摄影系统基础覆盖">
-                <span className="audit-pass-icon">{pendingCount ? "!" : "✓"}</span>
-                <div><strong>{pendingCount ? `基础配套已列入；还有 ${pendingCount} 项待确认` : "基础配套已列入"}</strong><small>供电、存储、镜头控制、监看与承托均已有对应项；“待确认”器材仍需在测试日和租赁方复核。</small></div>
-                <b>{passedSystemChecks}/{systemChecks.length}</b>
-              </section>
-            )}
-
-            {!!completedKit.length && checks.length > 0 && (
-              <div className={checks.some((item) => item.level === "warning") ? "dop-checks has-warning" : "dop-checks"}>
-                <div><strong>{checks.length ? "发单前还有几项需要确认" : "基础配置检查通过"}</strong></div>
-                <ul>{checks.map((check) => <li className={check.level} key={check.text}>{check.text}</li>)}</ul>
-              </div>
             )}
 
             {!kit.length && renderCustomEquipment("其他")}
@@ -1954,10 +1904,9 @@ export default function Home() {
               </div>
             ) : (
               <div className="kit-groups">
-                {!visibleKitGroups.length && <div className="empty-state"><strong>没有符合筛选的器材</strong><button className="button ghost" onClick={() => { setKitQuery(""); setKitScope("all"); setKitCategory("全部"); }}>显示全部器材</button></div>}
-                {visibleKitGroups.map((group, groupIndex) => (
-                  <section className="kit-group" key={group.name}>
-                    <header><div><span>{String(groupIndex + 1).padStart(2, "0")}</span><h3>{group.name}</h3></div><div className="kit-group-actions"><small>{group.rows.filter((row) => !isBlankCustomKitItem(row)).length} 项</small><button className="button ghost" aria-label={`在${group.name}下新增自定义器材`} onClick={() => addBlankCustomRow(group.name)}>新增器材</button></div></header>
+                {groupedKit.map((group) => (
+                  <section className="kit-group" key={group.name} data-category={group.name}>
+                    <header><h3>{group.name}</h3><div className="kit-group-actions"><small>{group.rows.filter((row) => !isBlankCustomKitItem(row)).length} 项</small><button className="button ghost" aria-label={`在${group.name}下新增自定义器材`} onClick={() => addBlankCustomRow(group.name)}>新增器材</button></div></header>
                     <div className="kit-table-head"><span>设备名称</span><span>数量</span><span>单位</span><span>备注</span><span>操作</span></div>
                     {group.rows.map((row, rowIndex) => {
                       const item = resolveKitEquipment(row)!;
@@ -1982,7 +1931,7 @@ export default function Home() {
                               <strong>{item.name}</strong>
                               {renderKitConfirmation(row, item.name)}
                             </div>
-                            <small>{item.brand} · {item.subcategory}</small><em>{row.reason}</em>
+                            <small>{item.brand} · {item.subcategory}</small>
                           </div>
                           <input aria-label={`${item.name}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} />
                           <span>{item.unit}</span>
@@ -1999,6 +1948,24 @@ export default function Home() {
                 ))}
               </div>
             )}
+            <footer className="kit-footer" aria-label="器材单操作">
+              {completedKit.length > 0 && <p role="status">{pendingCount ? `${pendingCount} 项器材待确认` : "器材已全部确认"}</p>}
+              <div className="kit-footer-actions">
+                <button className="button ghost" onClick={confirmKitItems} disabled={!pendingCount}>一键确认</button>
+                <button className="button ghost" onClick={() => { setEditingBasics(false); setView("library"); }}>新增器材</button>
+                <div className="kit-export-controls">
+                  <select aria-label="导出格式" value={projectExportFormat} disabled={exportingKit}
+                    onChange={(event) => setProjectExportFormat(event.target.value as KitExportFormat | "json")}>
+                    {Object.entries(kitExportFormats).map(([format, { label }]) => <option key={format} value={format}>{label}</option>)}
+                    <option value="json">项目备份（JSON）</option>
+                  </select>
+                  <button className="button primary" onClick={exportCurrentProject}
+                    disabled={exportingKit || projectExportFormat !== "json" && !kitDocumentGroups.length} aria-busy={exportingKit}>
+                    {exportingKit ? "正在生成…" : "导出项目"}
+                  </button>
+                </div>
+              </div>
+            </footer>
           </section>
         )}
       </section>
@@ -2189,13 +2156,6 @@ export default function Home() {
         </div>
       )}
 
-      {(view === "library" || view === "catalog") && activeProject?.basicInfoConfirmed && <aside className="selection-checkout" aria-label="当前项目选材进度" inert={modalOpen}>
-        <div><strong>{project.name}</strong><span role="status">已选 {completedKit.length} 项 · 合计 {selectedUnits} · 点击已加入可取消</span></div>
-        <div className="selection-checkout-actions">
-          <button className="button ghost" aria-haspopup="dialog" onClick={(event) => { dialogTriggerRef.current = event.currentTarget; setKitPreviewOpen(true); }}>预览器材单</button>
-          <button className="button primary" onClick={() => { setKitQuery(""); setKitCategory("全部"); setKitScope("all"); setView("kit"); }}>查看器材单 · {completedKit.length} 项</button>
-        </div>
-      </aside>}
       {uploadBusy && <div className="upload-progress" role="status" aria-live="polite" aria-busy="true"><span className="loading-spinner" aria-hidden="true" /><div><strong>{uploadLabel}</strong><span>请稍候，完成后会显示核对结果</span></div></div>}
       {toast && <div className="toast" role="status">{toast}</div>}
     </main>

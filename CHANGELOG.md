@@ -4,6 +4,21 @@
 
 User-facing release notes. `app/release.ts` defines the application version; the underlying catalog keeps its own version and identity compatibility rules.
 
+## V6.5.1 — 2026-11-21
+
+- 品牌和系列默认等高单排，展开可查看全部。点选系列可筛出对应器材。
+- 移除器材单条目的来源文案，缩小类别间距，支持长型号换行。
+- 调整展开和确认反馈，遵循系统减少动态效果设置。
+- Brand and series pickers now share a single-row layout and expand to show all options. Selecting a series filters the catalog.
+- Kit rows omit source labels, wrap long model names, and use tighter spacing. Disclosure and confirmation feedback respect reduced motion.
+
+## V6.5 — 2026-11-21
+
+- 联络与备注直接显示，选材进度与筛选合并到固定顶部。
+- 简化配套提示，器材单底部增加一键确认、新增器材和导出项目。
+- Contact fields are visible in the project form. Selection progress and filters share a sticky toolbar.
+- Kit review uses shorter accessory prompts and puts bulk confirmation, equipment selection, and export in the footer.
+
 ## V6.4 — 2026-11-15
 
 - 项目为空时显示「当前无项目」，可通过左侧边栏或手机导航新增项目。删除最后一个项目后，刷新页面仍显示空状态。

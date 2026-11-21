@@ -27,14 +27,19 @@ test('brand menu contains exactly the brands in the selected published category'
 test('common brands have category-specific priority and translated menu labels preserve identities', () => {
   assert.deepEqual(categoryBrands(publishedEquipment, '摄影机', canonicalBrandLabels).slice(0, 5), ['全部', 'ARRI', 'SONY', 'RED', 'Canon']);
   assert.deepEqual(categoryBrands(publishedEquipment, '镜头', canonicalBrandLabels).slice(0, 5), ['全部', 'Cooke', 'ZEISS', 'Angénieux', 'Leica']);
-  const labels = brandMenuLabels(publishedEquipment, canonicalBrandLabels);
-  assert.equal(labels.ARRI, '阿莱 ARRI');
-  assert.equal(labels.RED, '瑞德 RED');
-  assert.equal(labels['Angénieux'], '安琴 Angénieux');
-  assert.equal(labels.Leitz, '徕兹 Leitz');
+  const labels = brandMenuLabels(publishedEquipment);
+  assert.equal(labels.ARRI, 'ARRI｜阿莱');
+  assert.equal(labels.RED, 'RED');
+  assert.equal(labels['Angénieux'], 'Angénieux｜安琴');
+  assert.equal(labels.Leitz, 'Leitz｜徕兹');
+  assert.equal(labels.Tiffen, 'Tiffen｜蒂芬');
+  assert.equal(labels.NANLUX, 'NANLUX');
+  const officialNameMatches = filterCatalog(publishedEquipment, { category: '滤镜', brand: 'Tiffen', query: '蒂芬', namingFilter: '全部' });
+  assert.ok(officialNameMatches.length);
+  assert.equal(labels.RØDE, 'RØDE');
   assert.equal(labels['通用'], '通用');
   const before = JSON.stringify(publishedEquipment);
-  brandMenuLabels(publishedEquipment, canonicalBrandLabels);
+  brandMenuLabels(publishedEquipment);
   assert.equal(JSON.stringify(publishedEquipment), before);
   assert.ok(filterCatalog(publishedEquipment, { category: '摄影机', brand: 'RED', query: '', namingFilter: '全部' }).length);
   assert.ok(filterCatalog(publishedEquipment, { category: '全部', brand: '全部', query: '瑞德', namingFilter: '全部' }).every((item) => item.brand === 'RED'));

@@ -1,7 +1,23 @@
-export const appVersion = "V6.4";
+export const appVersion = "V6.5.1";
 
 // Add each new release to the beginning of this list, keeping earlier entries.
 export const releaseNotes = [{
+  version: "V6.5.1",
+  date: "2026-11-21",
+  items: [
+    "品牌与系列使用等高单排选择器，展开可浏览完整选项，点选系列即可筛出相应器材。",
+    "器材单移除各条目的来源文案，收紧分类间距，长型号可换行。",
+    "统一选择器与器材确认的操作反馈，支持系统减少动态效果设置。",
+  ],
+}, {
+  version: "V6.5",
+  date: "2026-11-21",
+  items: [
+    "项目信息表单直接显示联络字段，选材页顶部固定项目摘要、选材进度与筛选。",
+    "品牌默认单排，展开可查看全部；有厂商中文名称时显示英文与中文。系列展开后可纵向滚动。",
+    "器材单简化配套提示，以颜色区分类别，底部提供一键确认、新增器材和导出项目。",
+  ],
+}, {
   version: "V6.4",
   date: "2026-11-15",
   items: [

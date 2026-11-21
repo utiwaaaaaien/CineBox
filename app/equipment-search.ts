@@ -1,4 +1,4 @@
-import { menuTranslationEvidence } from "./catalog-brands.ts";
+import { menuTranslationEvidence, officialMenuLabels } from "./catalog-brands.ts";
 
 export type SearchableEquipment = {
   name: string;
@@ -36,7 +36,8 @@ function indexEquipment(item: SearchableEquipment) {
   if (cached) return cached;
   const fields = [
     item.name, item.englishName, item.brand, item.brandZh, item.brandEn,
-    menuTranslationEvidence[item.brand]?.chinese, item.series, item.model, ...(item.aliases ?? []),
+    officialMenuLabels[item.brand], menuTranslationEvidence[item.brand]?.chinese,
+    item.series, item.model, ...(item.aliases ?? []),
   ].filter((value): value is string => !!value).map(normalizeSearch);
   const description = normalizeSearch([item.category, item.subcategory].filter(Boolean).join(" "));
   const words = new Set([...fields, description].flatMap(searchTerms));
