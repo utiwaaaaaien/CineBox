@@ -1,6 +1,6 @@
 <p align="center"><img src="public/brand/cinebox-logo-v2-128.png" width="96" height="96" alt="CineBox" /></p>
 
-# CineBox V6.2.1
+# CineBox V6.4
 
 **A camera equipment and production planning workspace.**
 
@@ -8,9 +8,9 @@ CineBox helps camera teams define shooting requirements, reuse past project conf
 
 [Live site](https://utiwaaaaaien.github.io/CineBox/) · [简体中文](README.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [MIT License](LICENSE)
 
-![Version V6.2.1](https://img.shields.io/badge/version-V6.2.1-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+![Version V6.4](https://img.shields.io/badge/version-V6.4-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
-V6.2 matches equipment keywords in any order, sorts lenses by focal length, tracks selected categories, and previews the kit within the selection view. See the [changelog](CHANGELOG.md) and [release notes](docs/releases/v6.2.0.md).
+V6.4 adds a project empty state, a new project entry point in the navigation, and a viewfinder focus animation. See the [release notes](docs/releases/v6.4.0.md).
 
 Current fixes are maintained on [main](https://github.com/utiwaaaaaien/CineBox/tree/main) and the live site. The `v6.1.0` tag and automatic Release source downloads preserve the initial release and exclude later maintenance fixes; use main for the current code.
 
@@ -43,13 +43,13 @@ Import files are parsed in the browser. PDF import requires extractable text; sc
 
 ## Catalog scope
 
-V6.1 offers **2,150 selectable equipment entries**. The canonical catalog retains **2,165 equipment identity records** for old project recovery and ID compatibility. These counts serve different purposes.
+The V6.3 catalog offers **2,306 selectable equipment entries**. The canonical catalog retains **2,321 equipment identity records** for old project recovery and ID compatibility. These counts serve different purposes.
 
 The release records 4,572 card specifications. There are 1,346 entries with three specifications and **804 entries with fewer than three confirmed specifications**. A total of 240 entries use series references with an explicit scope; this count overlaps with the completeness counts. Unconfirmed specifications remain blank in the UI. Sources and gap explanations are retained in `data/catalog/card-specs-v6-*.json` and the audit files.
 
 The catalog combines manufacturer documentation, documented inventory configurations, and generic items with an identifiable purpose. Publication status and manufacturer verification status are tracked separately. It does not provide live stock, pricing, or rental availability. Series references do not establish the capabilities of an unspecified model or generation. Confirm the exact configuration, recording mode, and supplier availability before a shoot.
 
-For the maintenance approach, see the [catalog naming policy](docs/catalog-naming-policy.md), [V5.1 review](docs/V5.1-catalog-review.md), and [V6 coverage record](docs/V6-implementation.md), in Chinese.
+For the maintenance approach, see the [V6.3 catalog review](docs/V6.3-catalog-review.md), [catalog naming policy](docs/catalog-naming-policy.md), [V5.1 review](docs/V5.1-catalog-review.md), and [V6 coverage record](docs/V6-implementation.md), in Chinese.
 
 ## Run locally
 
