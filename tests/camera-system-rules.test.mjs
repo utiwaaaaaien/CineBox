@@ -86,24 +86,21 @@ test("camera and lens mount mismatch becomes a pending compatibility check", () 
   assert.equal(result.missing[0]?.custom?.subcategory, "卡口与镜头支撑");
 });
 
-test("high-speed and dual-format choices create workflow tests, not false confirmations", () => {
+test("retired supplement rules produce no checks or additions in formerly matching projects", () => {
   const checks = buildCameraSystemChecks({
-    ...project,
-    captureStyle: ["高帧率"],
-    baseFps: 25,
-    highSpeedFps: 100,
-    resolution: "4K",
-    recordingFormat: "RAW / 高码率",
-    shootingRatio: 20,
+    ...project, captureStyle: ["高帧率"], baseFps: 25, highSpeedFps: 100,
     screenFormat: "横竖双版本",
-  }, [{ id: "cam-red-vraptor", qty: 1 }], canonicalEquipment);
+  }, [
+    { id: "cam-alexa-mini", qty: 1 },
+    { id: "lens-zeiss-supreme", qty: 1 },
+    { id: "grip-jib", qty: 1 },
+  ], canonicalEquipment);
 
-  const highSpeed = checks.find((item) => item.id === "high-speed-workflow");
-  const dualFormat = checks.find((item) => item.id === "dual-format-framing");
-  assert.equal(highSpeed?.autoAdd, false);
-  assert.match(highSpeed?.detail ?? "", /照度、码率、存储、回片和机身散热/);
-  assert.equal(dualFormat?.autoAdd, false);
-  assert.match(dualFormat?.detail ?? "", /开放门记录、横竖安全框/);
+  const retired = ["camera-mount-verification", "high-speed-workflow", "dual-format-framing", "remote-head-control"];
+  assert.ok(checks.every(({ id }) => !retired.includes(id)));
+  assert.ok(checks.some(({ id }) => id === "set-support"), "jibs still trigger the separate set support rule");
+  const suggestions = checks.flatMap(({ missing }) => missing.map(({ id }) => id));
+  assert.ok(suggestions.every((id) => !["rule-mount-verification", "rule-high-speed-test", "rule-dual-format-test", "grip-ronin2", "eq-dji-dji-master-wheels-摄影机附件"].includes(id)));
 });
 
 test('system completion preserves old catalog recognition and cannot automatically add archived records', () => {
@@ -141,12 +138,4 @@ test('mixed bodies retain each media requirement and scale by body quantity', ()
   assert.equal(media.find(row=>row.id==='eq-codex-codex-960gb-mini-lf-摄影机附件').qty,4);
   assert.ok(media.some(row=>row.id==='rule-camera-media'));
   assert.equal(checks.find(row=>row.id==='camera-power').missing.find(row=>row.id==='accessory-tb50').qty,12);
-});
-
-test('matching brand-derived mounts cannot silently pass without actual configuration', () => {
-  const checks = buildCameraSystemChecks(project,[{id:'cam-alexa-mini',qty:1},{id:'lens-zeiss-supreme',qty:1}],canonicalEquipment);
-  const verification = checks.find(row=>row.id==='camera-mount-verification');
-  assert.ok(verification?.missing.length);
-  assert.equal(verification.autoAdd,false);
-  assert.match(verification.detail,/没有记录实装卡口/);
 });

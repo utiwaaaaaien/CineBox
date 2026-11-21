@@ -10,7 +10,7 @@ CineBox helps camera teams define shooting requirements, reuse past project conf
 
 ![Version V6.6](https://img.shields.io/badge/version-V6.6-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
-V6.6 unifies catalog browsing and project selection, exposes all 15 equipment supplement rules for review, and aligns kit fields across item types. See the [release notes](docs/releases/v6.6.0.md).
+V6.6 unifies catalog browsing and project selection, streamlines equipment checks to 11 rules, and aligns kit fields across item types. See the [release notes](docs/releases/v6.6.0.md).
 
 ## Get started
 

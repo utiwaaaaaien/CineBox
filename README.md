@@ -10,7 +10,7 @@ CineBox 帮助摄影团队整理拍摄需求、复用历史项目、挑选器材
 
 ![Version V6.6](https://img.shields.io/badge/version-V6.6-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
-V6.6 统一总器材库与项目选材，器材单可审查 15 条配套规则，并统一各类器材的字段位置。详见[本次发布说明](docs/releases/v6.6.0.md)。
+V6.6 统一总器材库与项目选材，将配套规则精简为 11 条，并统一各类器材的字段位置。详见[本次发布说明](docs/releases/v6.6.0.md)。
 
 ## 开始使用
 

@@ -99,9 +99,9 @@ test('old questionnaire preferences do not affect manual compatibility checks', 
   const neutral = { ...project, scale: '轻量', monitoring: '精简监看', captureStyle: [], sceneConditions: [], powerAccess: '稳定市电' };
   const checks = buildCameraSystemChecks(basicSystemProject(project), kit, canonicalEquipment);
   assert.deepEqual(checks, buildCameraSystemChecks(basicSystemProject(neutral), kit, canonicalEquipment));
-  assert.ok(!checks.some((check) => ['filter-protection', 'high-speed-workflow', 'set-support'].includes(check.id)));
+  assert.ok(!checks.some((check) => ['filter-protection', 'set-support'].includes(check.id)));
   assert.ok(checks.some((check) => check.id === 'multi-camera-sync'));
-  assert.ok(buildCameraSystemChecks(basicSystemProject({ ...project, highSpeedFps: 120 }), kit, canonicalEquipment).some((check) => check.id === 'high-speed-workflow'));
+  assert.deepEqual(buildCameraSystemChecks(basicSystemProject({ ...project, highSpeedFps: 120 }), kit, canonicalEquipment), checks);
   assert.ok(!JSON.stringify(checks).includes('10:1'));
 });
 

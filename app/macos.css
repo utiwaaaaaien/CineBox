@@ -968,31 +968,6 @@ button.catalog-chip[aria-pressed="true"] {
   color: var(--muted);
   overflow-wrap: anywhere;
 }
-.system-rule-review {
-  margin: 12px var(--page-gutter) 20px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface);
-}
-.system-rule-review > summary {
-  min-height: 44px;
-  padding: 12px 16px;
-  border-radius: inherit;
-  color: var(--accent-dark);
-  cursor: pointer;
-  font-weight: 600;
-  font-size: .9375rem;
-}
-.system-rule-review[open] > summary { border-bottom: 1px solid var(--line); border-radius: 12px 12px 0 0; }
-.system-rule-review > :not(summary) { margin-inline: 16px; }
-.system-rule-review-list { padding: 0; list-style: none; }
-.system-rule-review-list > li { padding-block: 12px; border-top: 1px solid var(--line); }
-.system-rule-review-list h4, .system-rule-review-list h3 { margin: 0; font-size: .9375rem; }
-.system-rule-review-list :is(p, dl) { margin: 6px 0; font-size: .875rem; overflow-wrap: anywhere; }
-.system-rule-review-list dt { margin-top: 8px; font-weight: 600; }
-.system-rule-review-list dd { margin: 3px 0 0; }
-.system-rule-review-status { color: var(--muted); font-variant-numeric: tabular-nums; }
-
 @media (max-width: 700px) {
   .kit-group .kit-row {
     grid-template-columns: minmax(52px, 1fr) minmax(52px, 1fr) 100px;
@@ -1008,19 +983,3 @@ button.catalog-chip[aria-pressed="true"] {
   .kit-note { grid-area: note; }
   .kit-row .kit-row-actions { grid-area: actions; min-height: 44px; }
 }
-.system-rule-review > summary > span { float: inline-end; color: var(--muted); font-weight: 400; }
-.system-rule-review-body { padding-block: 12px 4px; }
-.system-rule-review-body > p { margin-block: 0 8px; color: var(--muted); font-size: .875rem; line-height: 1.6; }
-.system-rule-review-list > li { padding-block: 0; }
-.system-rule-review-list summary {
-  min-height: 44px;
-  padding-block: 10px;
-  color: var(--ink);
-  cursor: pointer;
-  font-size: .875rem;
-}
-.system-rule-review-list summary strong { margin-inline-end: 8px; }
-.system-rule-review-list dl { padding: 0 0 12px 16px; }
-.system-rule-review-list dd ul { margin-block: 4px 0; padding-inline-start: 20px; }
-.system-rule-review-status[data-state="missing"] { color: var(--warning); }
-.system-rule-review-status[data-state="covered"] { color: var(--success); }

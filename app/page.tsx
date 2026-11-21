@@ -15,7 +15,6 @@ import { appVersion, releaseNotes } from "./release";
 import { SpecField } from "./spec-field";
 import { resolutionOptions, aspectRatioOptions, projectFpsOptions, highSpeedFpsOptions } from "./project-specs";
 import { CatalogChoice, type CatalogOption } from "./catalog-choice";
-import { SystemRuleReview } from "./system-rule-review";
 import { ActionMenu } from "./action-menu";
 import { brandMenuLabels } from "./catalog-brands";
 import { categoryBrands, filterCatalog, copyHistoricalKit, basicSystemProject } from "./direct-selection";
@@ -1897,8 +1896,6 @@ export default function Home() {
                 </details>
               </section>
             )}
-
-            <SystemRuleReview checks={systemChecks} />
 
             {!kit.length && renderCustomEquipment("其他")}
 

@@ -320,23 +320,6 @@ export function buildCameraSystemChecks(
     );
   }
 
-  if (hasJib) {
-    addRule(
-      "remote-head-control",
-      "摇臂/伸缩炮的遥控机头链",
-      "摇臂或伸缩炮上机后，需要遥控机头、摇轮、无线跟焦、图传与配重同时到位。",
-      "历史剧情片器材单会将伸缩摇臂、遥控机头、摇轮、无线跟焦和图传组成完整遥控链。",
-      "warning",
-      true,
-      [
-        { id: "grip-ronin2", qty: 1, note: "确认承重、供电和安装板", label: "DJI Ronin 2 遥控机头", match: /ronin\s*2|如影\s*2/i },
-        { id: "eq-dji-dji-master-wheels-摄影机附件", qty: 1, note: "遥控云台操作", label: "DJI Master Wheels", match: /master\s*wheels|大师摇轮/i },
-        { id: "accessory-wcu4", qty: 1, note: "遥控对焦", label: "ARRI WCU-4 无线跟焦器", match: /wcu\s*-?\s*4|无线跟焦/i },
-        { id: "video-vaxis2000", qty: 1, note: "遥控构图与焦点监看", label: "Vaxis Storm 2000 无线图传", match: /图传|vaxis.*2000|storm\s*2000|teradek|transmission/i },
-      ],
-    );
-  }
-
   if (hasCamera && project.cameraCount > 1) {
     addRule(
       "multi-camera-sync",
@@ -376,10 +359,6 @@ export function buildCameraSystemChecks(
     const lensMounts = [...new Set(lensCatalogRows.map((item) => classifyEquipment(item).lensMount).filter((mount) => mount !== "unknown"))];
     const mountIsExplicit = (item: RuleEquipment) => Boolean(item.lensMount && item.lensMount !== "unknown") || /\b(?:lpl|pl|rf|ef)\b|[ERFPL]+口|e-mount/i.test(`${item.name} ${item.subcategory}`);
     const mountsNeedVerification = [...cameraCatalogRows, ...lensCatalogRows].some((item) => !mountIsExplicit(item));
-    if (lensCatalogRows.length && mountsNeedVerification) {
-      addRule("camera-mount-verification", "核对机身与镜头的实装卡口", "部分器材没有记录实装卡口，品牌或型号推测不能证明兼容，请核对转接环和租赁配置。", "以实物和租赁配置为准；原生卡口、改口及转接配置分别确认。", "warning", false,
-        [customAddition("rule-mount-verification", "机身与镜头实装卡口核验", "其他", "测试计划", 1, "记录每套机身、镜头及转接件的实际卡口", /实装卡口核验/i)]);
-    }
     const needsMountAdapter = cameraMounts.length && lensMounts.some((lensMount) => !cameraMounts.includes(lensMount));
     if (needsMountAdapter) {
       const cameraMountLabel = cameraMounts.join("/");
@@ -404,50 +383,6 @@ export function buildCameraSystemChecks(
         ],
       );
     }
-  }
-
-  if (isHighSpeed) {
-    addRule(
-      "high-speed-workflow",
-      "高帧率的光量、存储与散热",
-      `${project.highSpeedFps ?? "高"}fps 会同时增加照度、码率、存储、回片和机身散热压力，不能只更换摄影机。`,
-      project.manualSelection ? `当前拍摄规格：${project.resolution ?? "4K"} / ${project.baseFps ?? 25}fps，升格 ${project.highSpeedFps}fps。` : `当前按 ${project.resolution ?? "4K"} / ${project.recordingFormat ?? "高质量母版"} / ${shootingRatio}:1 拍摄比估算。`,
-      "warning",
-      false,
-      [
-        customAddition(
-          "rule-high-speed-test",
-          "高帧率曝光、频闪、存储与散热测试",
-          "其他",
-          "测试计划",
-          1,
-          "测试目标帧率、快门角度、灯具频闪、单卡时长和连续录制温度",
-          /高帧率.*测试|high.?speed.*test|频闪.*存储.*散热/i,
-        ),
-      ],
-    );
-  }
-
-  if (project.screenFormat === "横竖双版本") {
-    addRule(
-      "dual-format-framing",
-      "横竖双版本的开放门与安全框",
-      "横竖双版本需要在测试日确认开放门记录、横竖安全框、字幕安全区与导演监看显示方式。",
-      "双版本不是简单后期裁切；构图余量、传感器读取方式和现场监看必须一起确认。",
-      "info",
-      false,
-      [
-        customAddition(
-          "rule-dual-format-test",
-          "横竖双构图安全框与开放门测试",
-          "其他",
-          "测试计划",
-          1,
-          "确认横版、竖版与字幕安全区，截图留档",
-          /横竖.*安全框|开放门.*测试|dual.?format.*test/i,
-        ),
-      ],
-    );
   }
 
   return rules;
