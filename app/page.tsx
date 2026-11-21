@@ -15,6 +15,7 @@ import { appVersion, releaseNotes } from "./release";
 import { SpecField } from "./spec-field";
 import { resolutionOptions, aspectRatioOptions, projectFpsOptions, highSpeedFpsOptions } from "./project-specs";
 import { CatalogChoice, type CatalogOption } from "./catalog-choice";
+import { SystemRuleReview } from "./system-rule-review";
 import { ActionMenu } from "./action-menu";
 import { brandMenuLabels } from "./catalog-brands";
 import { categoryBrands, filterCatalog, copyHistoricalKit, basicSystemProject } from "./direct-selection";
@@ -833,6 +834,7 @@ export default function Home() {
   }, [modalOpen]);
 
   const selectingForProject = view === "library" && Boolean(activeProject?.basicInfoConfirmed) && !editingBasics;
+  const browsingEquipment = view === "catalog" || selectingForProject;
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
   }, [activeProjectId, selectingForProject, view]);
@@ -865,7 +867,7 @@ export default function Home() {
       label: (nameCounts.get(series.name) ?? 0) > 1 ? `${series.brand} · ${series.name}` : series.name,
     }))];
   }, [filteredSeries]);
-  const activeSeries = view === "library" ? filteredSeries.find((series) => series.id === seriesId) : undefined;
+  const activeSeries = browsingEquipment ? filteredSeries.find((series) => series.id === seriesId) : undefined;
   const equipmentResults = useMemo(() => {
     if (!activeSeries) return filteredEquipment;
     const ids = new Set(activeSeries.items.map((item) => item.id));
@@ -1605,10 +1607,6 @@ export default function Home() {
             ["catalog", "总器材库"],
           ] as [View, string][]).map(([target, label]) => (
             <button key={target} className={view === target || target === "projects" && view === "library" ? "nav-item active" : "nav-item"} aria-current={view === target || target === "projects" && view === "library" ? "page" : undefined} onClick={() => {
-              if (target === "catalog") {
-                setCategory("全部"); setBrand("全部"); setQuery(""); setNamingFilter("全部");
-                setVisibleCount(72); setSeriesId("");
-              }
               setView(target);
             }}>
               <span className="nav-index"><NavigationIcon view={target} /></span>
@@ -1646,7 +1644,7 @@ export default function Home() {
             <h1>{pageTitle[view]}</h1>
           </div>
           <div className="header-actions">
-            {activeProject && !selectingForProject && !(view === "catalog" && activeProject.basicInfoConfirmed) && <button className="header-project" onClick={() => setView("kit")} aria-label={`打开当前器材单：${project.name}，${completedKit.length} 项器材`} title={project.name}><span>当前器材单 · {completedKit.length} 项</span><strong>{project.name}</strong></button>}
+            {activeProject && !browsingEquipment && <button className="header-project" onClick={() => setView("kit")} aria-label={`打开当前器材单：${project.name}，${completedKit.length} 项器材`} title={project.name}><span>当前器材单 · {completedKit.length} 项</span><strong>{project.name}</strong></button>}
             <ActionMenu className="theme-menu" label="颜色模式" trigger={<ThemeIcon mode={themePreference ?? "system"} />} chevron={false}>
             <div className="theme-switcher" role="radiogroup" aria-label="颜色模式" onKeyDown={handleRadioKeys}>
               {themeOptions.map((option) => (
@@ -1673,9 +1671,20 @@ export default function Home() {
             </div>}
           </div>
         </header>
-        {selectingForProject && <section className="selection-toolbar" aria-label="器材选择与筛选">
+        {browsingEquipment && <section className="selection-toolbar" aria-label="器材选择与筛选">
           <div className="project-flow-bar"><button onClick={() => setView("projects")}>返回项目管理</button></div>
-          {renderSelectionSummary()}
+          {activeProject?.basicInfoConfirmed ? renderSelectionSummary() : (
+            <section className="selection-summary" aria-label="当前项目选材进度">
+              <div className="selection-project">
+                <h2>{activeProject ? project.name : "尚未选择项目"}</h2>
+                <p>{activeProject ? "保存项目信息后，可将器材加入当前项目。" : "新建项目后即可保存选材。"}</p>
+              </div>
+              <button className="button primary" disabled={!hydrated}
+                onClick={() => activeProject ? editProjectBasics() : createNewProject()}>
+                {activeProject ? "填写项目信息" : "新增项目"}
+              </button>
+            </section>
+          )}
           {renderCatalogFilters()}
         </section>}
         </div>
@@ -1800,21 +1809,16 @@ export default function Home() {
 
         {(view === "library" || view === "catalog") && (
           <section className="library-view">
-            {view === "catalog" && <div className="page-lead"><p>按品类与品牌浏览全部器材。</p></div>}
             {view === "library" && !selectingForProject && <>
               <div className="project-flow-bar"><button onClick={() => setView("projects")}>返回项目管理</button></div>
               {activeProject && renderProjectBasics()}
             </>}
-            {view === "catalog" && <>
-              {activeProject?.basicInfoConfirmed && renderSelectionSummary()}
-              {renderCatalogFilters()}
-            </>}
-            {(view === "catalog" || selectingForProject) && <>
-            <div className={view === "library" ? "catalog-choices paired" : "catalog-choices"}>
+            {browsingEquipment && <>
+            <div className="catalog-choices paired">
               <CatalogChoice key={category} kind="品牌" options={brandOptions} selected={brand}
                 onSelect={(name) => { setBrand(name); setSeriesId(""); setVisibleCount(72); }} />
-              {view === "library" && <CatalogChoice key={`${category}-${brand}`} kind="系列" options={seriesOptions} selected={seriesId}
-                onSelect={(id) => { setSeriesId(id); setVisibleCount(72); }} />}
+              <CatalogChoice key={`${category}-${brand}`} kind="系列" options={seriesOptions} selected={seriesId}
+                onSelect={(id) => { setSeriesId(id); setVisibleCount(72); }} />
             </div>
 
             <div className="result-meta">
@@ -1894,6 +1898,8 @@ export default function Home() {
               </section>
             )}
 
+            <SystemRuleReview checks={systemChecks} />
+
             {!kit.length && renderCustomEquipment("其他")}
 
             {!kit.length ? (
@@ -1910,35 +1916,48 @@ export default function Home() {
                     <div className="kit-table-head"><span>设备名称</span><span>数量</span><span>单位</span><span>备注</span><span>操作</span></div>
                     {group.rows.map((row, rowIndex) => {
                       const item = resolveKitEquipment(row)!;
-                      if (row.custom) return (
-                        <div className="kit-row custom-kit-row" key={row.id}>
-                          <div className="custom-kit-identity">
-                            <label><span>器材名</span><EquipmentNameInput id={`custom-name-${row.id}`} label={`${group.name}自定义器材${rowIndex + 1}名称`} value={row.custom.name} category={group.name} catalog={equipment}
-                              onChange={(name) => updateCustomRow(row, { name })}
-                              onSelect={(candidate) => { setKit((current) => applyEquipmentSuggestion(current, row.id, candidate), `选择 ${candidate.name}`); setToast("已选择器材，数量与备注保留；重复项自动合并"); }} /></label>
-                            {!isBlankCustomKitItem(row) && renderKitConfirmation(row, item.name)}
-                          </div>
-                          <label className="custom-kit-quantity"><span>数量</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} /></label>
-                          <label className="custom-kit-unit"><span>单位</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}单位`} maxLength={20} value={row.custom.unit} placeholder="件" onBlur={() => { if (!row.custom?.unit.trim()) updateCustomRow(row, { unit: "件" }); }} onChange={(event) => updateCustomRow(row, { unit: event.target.value })} /></label>
-                          <label className="custom-kit-note"><span>备注</span><input aria-label={`${group.name}自定义器材${rowIndex + 1}备注`} maxLength={Math.max(maxKitNoteInputLength, row.note.length)} value={row.note} placeholder="添加备注" onChange={(event) => updateKit(row.id, { note: event.target.value })} /></label>
-                          <div className="kit-row-actions"><button className="remove-button" aria-label={`删除${group.name}自定义器材${rowIndex + 1}`} onClick={() => setKit((current) => current.filter((itemRow) => itemRow.id !== row.id), "删除自定义器材行")}><ControlIcon kind="close" /></button></div>
-                        </div>
-                      );
+                      const custom = row.custom;
+                      const name = custom ? `${group.name}自定义器材${rowIndex + 1}` : item.name;
                       return (
-                        <div className="kit-row" key={row.id}>
+                        <div className={custom ? "kit-row custom-kit-row" : "kit-row"} key={row.id}>
                           <div className="kit-item-name">
-                            <div className="kit-name-line">
-                              <strong>{item.name}</strong>
-                              {renderKitConfirmation(row, item.name)}
-                            </div>
-                            <small>{item.brand} · {item.subcategory}</small>
+                            {custom ? (
+                              <div className="custom-kit-identity">
+                                <EquipmentNameInput id={`custom-name-${row.id}`} label={`${name}名称`} value={custom.name} category={group.name} catalog={equipment}
+                                  onChange={(value) => updateCustomRow(row, { name: value })}
+                                  onSelect={(candidate) => { setKit((current) => applyEquipmentSuggestion(current, row.id, candidate), `选择 ${candidate.name}`); setToast("已选择器材，数量与备注保留；重复项自动合并"); }} />
+                                {!isBlankCustomKitItem(row) && renderKitConfirmation(row, item.name)}
+                              </div>
+                            ) : <>
+                              <div className="kit-name-line">
+                                <strong>{item.name}</strong>
+                                {renderKitConfirmation(row, item.name)}
+                              </div>
+                              <small>{item.brand} · {item.subcategory}</small>
+                            </>}
                           </div>
-                          <input aria-label={`${item.name}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} />
-                          <span>{item.unit}</span>
-                          <input aria-label={`${item.name}备注`} maxLength={Math.max(maxKitNoteInputLength, row.note.length)} value={row.note} onChange={(event) => updateKit(row.id, { note: event.target.value })} placeholder="添加备注" />
+                          <label className="kit-field kit-quantity">
+                            <span className="kit-field-label">数量</span>
+                            <input aria-label={`${name}数量`} type="number" min={1} max={999} value={row.qty} onChange={(event) => updateKit(row.id, { qty: clampInteger(Number(event.target.value), 1, 999) })} />
+                          </label>
+                          {custom ? (
+                            <label className="kit-field kit-unit">
+                              <span className="kit-field-label">单位</span>
+                              <input aria-label={`${name}单位`} maxLength={20} value={custom.unit} placeholder="件" onBlur={() => { if (!custom.unit.trim()) updateCustomRow(row, { unit: "件" }); }} onChange={(event) => updateCustomRow(row, { unit: event.target.value })} />
+                            </label>
+                          ) : (
+                            <div className="kit-field kit-unit"><span className="kit-field-label">单位</span><span className="kit-unit-value">{item.unit}</span></div>
+                          )}
+                          <label className="kit-field kit-note">
+                            <span className="kit-field-label">备注</span>
+                            <input aria-label={`${name}备注`} maxLength={Math.max(maxKitNoteInputLength, row.note.length)} value={row.note} onChange={(event) => updateKit(row.id, { note: event.target.value })} placeholder="添加备注" />
+                          </label>
                           <div className="kit-row-actions">
-                            <button className="swap-button" onClick={(event) => openSwap(row.id, event.currentTarget)}>更换</button>
-                            <button className="remove-button" aria-label={`删除${item.name}`} onClick={() => { setKit((current) => current.filter((itemRow) => itemRow.id !== row.id), `移除 ${item.name}`); setToast(`已移除 ${item.name}，可撤销`); }}><ControlIcon kind="close" /></button>
+                            {!custom && <button className="swap-button" onClick={(event) => openSwap(row.id, event.currentTarget)}>更换</button>}
+                            <button className="remove-button" aria-label={`删除${name}`} onClick={() => {
+                              setKit((current) => current.filter((itemRow) => itemRow.id !== row.id), custom ? "删除自定义器材行" : `移除 ${item.name}`);
+                              if (!custom) setToast(`已移除 ${item.name}，可撤销`);
+                            }}><ControlIcon kind="close" /></button>
                           </div>
                         </div>
                       );

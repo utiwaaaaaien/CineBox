@@ -1,6 +1,6 @@
 {
   "name": "cinebox-camera-kit",
-  "version": "6.5.1",
+  "version": "6.6.0",
   "private": true,
   "packageManager": "pnpm@11.9.0",
   "engines": {

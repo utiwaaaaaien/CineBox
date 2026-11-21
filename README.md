@@ -1,6 +1,6 @@
 <p align="center"><img src="public/brand/cinebox-logo-v2-128.png" width="96" height="96" alt="CineBox" /></p>
 
-# CineBox V6.5.1
+# CineBox V6.6
 
 **摄影器材 · 项目工作台**
 
@@ -8,9 +8,9 @@ CineBox 帮助摄影团队整理拍摄需求、复用历史项目、挑选器材
 
 [在线使用](https://utiwaaaaaien.github.io/CineBox/) · [English](README.en.md) · [版本记录](CHANGELOG.md) · [参与贡献](CONTRIBUTING.md) · [MIT 许可证](LICENSE)
 
-![Version V6.5.1](https://img.shields.io/badge/version-V6.5.1-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
+![Version V6.6](https://img.shields.io/badge/version-V6.6-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
-V6.5.1 统一品牌和系列选择器，精简器材单，并调整展开与确认反馈。详见[本次发布说明](docs/releases/v6.5.1.md)。
+V6.6 统一总器材库与项目选材，器材单可审查 15 条配套规则，并统一各类器材的字段位置。详见[本次发布说明](docs/releases/v6.6.0.md)。
 
 ## 开始使用
 

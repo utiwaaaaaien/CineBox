@@ -1,7 +1,15 @@
-export const appVersion = "V6.5.1";
+export const appVersion = "V6.6";
 
 // Add each new release to the beginning of this list, keeping earlier entries.
 export const releaseNotes = [{
+  version: "V6.6",
+  date: "2026-11-21",
+  items: [
+    "总器材库与选择器材共用搜索、品类、品牌、系列以及项目选材操作，切换保留筛选。",
+    "器材单新增完整配套规则审查入口，可查看触发条件、补齐项目、数量和当前状态。",
+    "目录器材、自定义器材和补齐器材统一名称、数量、单位、备注与操作的位置。",
+  ],
+}, {
   version: "V6.5.1",
   date: "2026-11-21",
   items: [

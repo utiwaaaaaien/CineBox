@@ -4,6 +4,15 @@
 
 User-facing release notes. `app/release.ts` defines the application version; the underlying catalog keeps its own version and identity compatibility rules.
 
+## V6.6 — 2026-11-21
+
+- 总器材库和项目选材共用搜索、品类、品牌、系列和选材操作，切换时保留筛选条件。
+- 器材单可审查全部 15 条配套规则，包括触发条件、目标数量、联动方式和当前项目状态。
+- 目录器材、自定义器材与配套补齐器材采用统一的字段布局。
+- The catalog and the project picker share filters and selection controls. Switching views retains the filters.
+- Review all 15 supplement rules with their triggers, target quantities, linked replacement behavior, and current status.
+- Standard, custom, and supplemental equipment use the same field layout.
+
 ## V6.5.1 — 2026-11-21
 
 - 品牌和系列默认等高单排，展开可查看全部。点选系列可筛出对应器材。
