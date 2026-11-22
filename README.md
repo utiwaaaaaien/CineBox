@@ -6,7 +6,7 @@
 
 CineBox 帮助摄影团队整理拍摄需求、复用历史项目、挑选器材并导出清单。把项目排期、拍摄规格和器材配置放在同一个工作台，方便筹备时逐项核对。
 
-[在线使用](https://utiwaaaaaien.github.io/CineBox/) · [English](README.en.md) · [版本记录](CHANGELOG.md) · [参与贡献](CONTRIBUTING.md) · [MIT 许可证](LICENSE)
+[在线使用](https://utiwaaaaaien.github.io/CineBox/) · [English](README.en.md) · [最新发行版](https://github.com/utiwaaaaaien/CineBox/releases/latest) · [版本记录](CHANGELOG.md) · [参与贡献](CONTRIBUTING.md) · [MIT 许可证](LICENSE)
 
 ![Version V6.6](https://img.shields.io/badge/version-V6.6-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
