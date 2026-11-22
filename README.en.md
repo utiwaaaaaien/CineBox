@@ -6,7 +6,7 @@
 
 CineBox helps camera teams define shooting requirements, reuse past project configurations, select equipment, and export kit lists. Project dates, shooting specifications, and equipment choices stay together for review during preparation.
 
-[Live site](https://utiwaaaaaien.github.io/CineBox/) · [简体中文](README.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [MIT License](LICENSE)
+[Live site](https://utiwaaaaaien.github.io/CineBox/) · [简体中文](README.md) · [Latest release](https://github.com/utiwaaaaaien/CineBox/releases/latest) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [MIT License](LICENSE)
 
 ![Version V6.6](https://img.shields.io/badge/version-V6.6-176b5b) ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
